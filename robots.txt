@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /img/
+Disallow: /vinay/
+Disallow: /political/
+Disallow: /stats/
+Disallow: /images/
+Disallow: /cv/cover/
+Disallow: /cv/docs/
+Disallow: /cv/images/
+Disallow: /cv/old-cv/
+Disallow: /cv/pdf/
+Disallow: /cv/misc/
+Disallow: /web/
