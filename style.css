@@ -16,9 +16,10 @@ body {
   margin: 0;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #ffffff;
-  font-size: 1em;
-  color: #777777;
+  font-size: 1rem;
+  color: #333;
   line-height: 1.3em;
+  font-weight: 400;
 }
 
 h1 {
