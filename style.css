@@ -64,21 +64,25 @@ a:link   {
   font-family: 'Raleway', 'Noto Sans', Helvetica, Arial, sans-serif;
 	text-decoration:none;
 	color:#000;
+	font-size: 1.1em;
 }
 
 a:visited{
 	text-decoration:none;
 	color:#000;
+	font-size: 1.1em;
 }
 
 a:active {
 	text-decoration:none;
 	color:#000;
+	font-size: 1.1em;
 }
 
 a:hover  {
-	color:#000;
 	text-decoration:none;
+	color:#000;
+	font-size: 1.1em;
 }
 
 ol{
