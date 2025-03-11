@@ -62,25 +62,25 @@ h6 { /* h6 is special... */
 /* general navigation and font */
 a:link   {
 	text-decoration:none;
-	color:#777;
+	color:#555;
 	font-size: 1.1em;
 }
 
 a:visited{
 	text-decoration:none;
-	color:#777;
+	color:#555;
 	font-size: 1.1em;
 }
 
 a:active {
 	text-decoration:none;
-	color: #777;
+	color: #555;
 	font-size: 1.1em;
 }
 
 a:hover  {
 	text-decoration:none;
-	color: #777;
+	color: #555;
 	font-size: 1.1em;
 }
 
