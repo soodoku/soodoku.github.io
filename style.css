@@ -16,10 +16,9 @@ body {
   margin: 0;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: #ffffff;
-  font-size: 1rem;
+  font-size: 1em;
   color: #333;
   line-height: 1.3em;
-  font-weight: 400;
 }
 
 h1 {
@@ -81,7 +80,7 @@ a:active {
 
 a:hover  {
 	text-decoration:none;
-	color: #555;
+	color: #;
 	font-size: 1.1em;
 }
 
