@@ -63,21 +63,21 @@ h6 { /* h6 is special... */
 a:link   {
   font-family: 'Raleway', 'Noto Sans', Helvetica, Arial, sans-serif;
 	text-decoration:none;
-	color:#333;
+	color:#000;
 }
 
 a:visited{
 	text-decoration:none;
-	color:#333;
+	color:#000;
 }
 
 a:active {
 	text-decoration:none;
-	color:#333;
+	color:#000;
 }
 
 a:hover  {
-	color:#333;
+	color:#000;
 	text-decoration:none;
 }
 
