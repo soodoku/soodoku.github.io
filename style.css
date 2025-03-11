@@ -17,14 +17,15 @@ body {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   background: #ffffff;
   font-size: 0.75em;
-  color: #333333;
+  color: #777777;
   line-height: 1.3em;
 }
 
 h1 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  color:#555555;
-  line-height: 1.3em;
+  color:#777777;
+  line-height: 1.15em;
+  font-weight: 300; /* Bold for headers */
   font-size:3.5em;
 }
 
