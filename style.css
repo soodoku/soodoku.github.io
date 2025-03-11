@@ -86,6 +86,13 @@ ol{
 	margin:1.1em 0 0 0;
 }
 
+ul{
+	list-style: none;
+	list-style-image: url('/images/bullet.png');
+	line-height: 1.5;
+	margin:1.1em 0 0 0;
+}
+
 #smallspace{
 	margin:0 0 0 0;
 }
