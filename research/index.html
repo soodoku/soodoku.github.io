@@ -76,6 +76,48 @@ details p {
 
 </style>
 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  details {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin: 1em 0;
+    padding: 0.3em 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #333;
+  }
+
+  summary::before {
+    content: "▸";
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    color: #666;
+  }
+
+  details[open] summary::before {
+    content: "▾";
+  }
+
+  details > div {
+    margin-top: 0.5em;
+    padding-left: 1.5em;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+</style>
+
 </head>
 
 <body bgcolor="#ffffff" background="images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -572,13 +614,15 @@ details p {
   </ol>
 </ul>
 
-<details>
-  <summary>How does near-isotonic regression work?</summary>
-  <p>
-    Nearly-isotonic regression reda
-  </p>
-</details>
 
+<details>
+  <summary>What is Projection Pursuit?</summary>
+  <div>
+    Projection Pursuit is a dimensionality reduction technique that finds projections
+    of high-dimensional data which optimize criteria like reconstruction accuracy or 
+    structure preservation. It’s useful when non-linear or interpretable structure matters.
+  </div>
+</details>
 </td></tr></table>
 </body>
 </html>
