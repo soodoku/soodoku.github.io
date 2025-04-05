@@ -32,43 +32,48 @@
     .open + .list {
       display: block;
     }
-  </style>
 
-  <style>
-.toggle-container {
-  margin: 0.5em 0;
-}
-
-.toggle-label {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  padding-left: 1.2em;
-  font-weight: 500;
+<style>
+details {
+  margin: 1em 0;
+  font-family: system-ui, sans-serif;
   font-size: 1rem;
+  border-left: 2px solid #ddd;
+  padding-left: 0.75em;
 }
 
-.toggle-label::before {
-  content: '▶';
-  position: absolute;
-  left: 0;
+details summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+details summary::before {
+  content: "▸";
+  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 0.5em;
   transition: transform 0.2s ease;
+  color: #666;
 }
 
-.toggle-input:checked + .toggle-label::before {
+details[open] summary::before {
   transform: rotate(90deg);
+  color: #444;
 }
 
-.toggle-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 1.2em;
+details summary:hover {
+  color: #000;
 }
 
-.toggle-input:checked ~ .toggle-content {
-  max-height: 1000px; /* Arbitrary big number for animation */
+details p {
+  margin-top: 0.5em;
+  color: #444;
+  line-height: 1.5;
 }
+
 </style>
 
 </head>
@@ -567,15 +572,12 @@
   </ol>
 </ul>
 
-<div class="toggle-container">
-  <input type="checkbox" class="toggle-input" id="toggle1" hidden>
-  <label class="toggle-label" for="toggle1">• More about the methodology</label>
-  <div class="toggle-content">
-    <p>
-      The analysis is based on a near-isotonic calibration framework. We relax monotonicity slightly to better accommodate noise without overfitting.
-    </p>
-  </div>
-</div>
+<details>
+  <summary>How does near-isotonic regression work?</summary>
+  <p>
+    Nearly-isotonic regression relaxes the strict monotonicity constraint of isotonic regression by introducing a regularization parameter. This allows small violations while preserving overall order.
+  </p>
+</details>
 
 </td></tr></table>
 </body>
