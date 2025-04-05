@@ -33,6 +33,44 @@
       display: block;
     }
   </style>
+
+  <style>
+.toggle-container {
+  margin: 0.5em 0;
+}
+
+.toggle-label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 1.2em;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.toggle-label::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  transition: transform 0.2s ease;
+}
+
+.toggle-input:checked + .toggle-label::before {
+  transform: rotate(90deg);
+}
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 1.2em;
+}
+
+.toggle-input:checked ~ .toggle-content {
+  max-height: 1000px; /* Arbitrary big number for animation */
+}
+</style>
+
 </head>
 
 <body bgcolor="#ffffff" background="images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -94,6 +132,8 @@
 	<li><p>&#128230; <a href="https://github.com/gojiplus/rmcp/">rmcp: R Econometrics MCP Community Server</a></p></li>
 
 	<li><p>&#128230; <a href="https://github.com/soodoku/guess">guess: Latent Class Model for Correction For Guessing</a></p></li>
+
+	<li><p>&#128230; <a href="https://github.com/soodoku/calibre">calibre: Advanced Calibration Models</a></p></li>
 
 </ol>
 
@@ -520,13 +560,22 @@
 </ol>
 
 
-
 <li id = "highlight">OTHER
 	<ol>
 	<li><p><a href="papers/scaling.pdf">Scaling ML Products at Startups: A Practioner's Guide</a><br>
   	With Atul Dhingra.</p></li>
   </ol>
 </ul>
+
+<div class="toggle-container">
+  <input type="checkbox" class="toggle-input" id="toggle1" hidden>
+  <label class="toggle-label" for="toggle1">• More about the methodology</label>
+  <div class="toggle-content">
+    <p>
+      The analysis is based on a near-isotonic calibration framework. We relax monotonicity slightly to better accommodate noise without overfitting.
+    </p>
+  </div>
+</div>
 
 </td></tr></table>
 </body>
