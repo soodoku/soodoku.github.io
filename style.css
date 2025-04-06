@@ -69,27 +69,17 @@ details {
 details summary {
   list-style: none;
   cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 1.8em; /* Space for the arrow */
 }
 
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Category toggle styling */
-details.category-toggle {
-  margin: 1em 0 1em 1.5em;
-}
-
-details.category-toggle summary {
-  display: block;
-  position: relative;
-  padding-left: 1.8em;
-  font-weight: 500;
-  text-align: left;
-}
-
-details.category-toggle summary::before {
-  content: "⌄";
+details summary::before {
+  content: "⌄"; 
   font-size: 1.6em;
   position: absolute;
   left: 0;
@@ -101,63 +91,49 @@ details.category-toggle summary::before {
   line-height: 0.5;
 }
 
-details.category-toggle[open] summary::before {
+details[open] summary::before {
   transform: rotate(180deg);
 }
 
-details.category-toggle > ol {
-  margin-top: 0.5em;
-  padding-left: 0.5em;
+/* Category toggle specific styles */
+.category-toggle {
+  /* Add any specific styling for category toggles here */
 }
 
-/* Article toggle styling - specifically target details inside li */
-li > details:not(.category-toggle) {
+/* Article toggle specific styles - target direct children of category toggles */
+.category-toggle details {
   margin: 0.5em 0 0.5em 0;
 }
 
-li > details:not(.category-toggle) summary {
-  display: block;
-  position: relative;
-  padding-left: 1.8em;
+/* Prevent nested toggles from inheriting parent state */
+.category-toggle[open] details summary::before {
+  transform: rotate(0deg); /* Keep arrow pointing down when parent is open */
 }
 
-li > details:not(.category-toggle) summary::before {
-  content: "⌄";
-  font-size: 1.6em;
-  position: absolute;
-  left: 0;
-  top: -0.1em;
-  transition: transform 0.3s ease;
-  color: #333;
-  transform: rotate(0deg);
-  vertical-align: middle;
-  line-height: 0.5;
-}
-
-li > details:not(.category-toggle)[open] summary::before {
-  transform: rotate(180deg);
-}
-
-/* Style the content that appears when toggled */
-li > details:not(.category-toggle) > div {
-  margin-top: 0.5em;
-  padding-left: 1.5em;
-  color: #333;
-  font-weight: 400;
-  line-height: 1.6;
+.category-toggle[open] details[open] summary::before {
+  transform: rotate(180deg); /* Only flip when this specific toggle is open */
 }
 
 /* Make title and coauthor align at the same position */
-li > details:not(.category-toggle) summary > a {
+details summary > a {
   display: inline-block;
 }
 
-li > details:not(.category-toggle) summary .coauthor {
+details summary .coauthor {
   display: block;
   margin-top: 0.3em;
   font-size: 0.9em;
   color: #555;
   line-height: 1.4;
+}
+
+/* Style the content that appears when toggled */
+details > div {
+  margin-top: 0.5em;
+  padding-left: 1.5em;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* Highlighted list style */
