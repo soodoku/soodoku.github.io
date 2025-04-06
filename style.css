@@ -79,17 +79,18 @@ details summary::-webkit-details-marker {
 
 /* Add custom arrow */
 details summary::before {
-  content: "▸";
-  font-size: 0.8em;
+  content: "⌄";  /* Unicode down chevron character */
+  font-size: 1.2em;
   margin-right: 0.5em;
   display: inline-block;
   transition: transform 0.2s ease;
   color: #666;
+  transform: rotate(-90deg); /* Rotate to point right when closed */
 }
 
 /* Change arrow when open */
 details[open] summary::before {
-  content: "▾";
+  transform: rotate(0deg); /* Point down when open */
 }
 
 /* Style the summary content */
@@ -123,12 +124,12 @@ details > div {
 
 /* Highlighted list style */
 #highlight {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #444;
   font-weight: 500;
-  margin-top: 1.2em;
+  margin-top: 1em;
   font-family: 'Lato', sans-serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
   position: relative;
 }
 
