@@ -63,13 +63,13 @@ li {
   margin: .2em 0;
 }
 
-/* Toggle details styling */
+//* Toggle details styling */
 details {
   margin: 1em 0;
   font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
   padding: 0.3em 0;
-  border-bottom: 1px solid #e0e0e0;
+  /* Removed border-bottom */
 }
 
 details summary {
