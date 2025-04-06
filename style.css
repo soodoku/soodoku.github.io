@@ -61,7 +61,7 @@ li {
 
 /* Base styles for all details elements */
 details {
-  margin: 1em 0 1em 1.5em;
+  margin: 1em 0 1em 2em; /* Increased left margin from 1.5em to 2em */
   font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
 }
@@ -97,43 +97,21 @@ details[open] summary::before {
 
 /* Category toggle specific styles */
 .category-toggle {
-  /* Add any specific styling for category toggles here */
+  /* Any specific styling for category toggles here */
 }
 
-/* Article toggle specific styles - target direct children of category toggles */
-.category-toggle details {
-  margin: 0.5em 0 0.5em 0;
+/* Article toggle specific styles - add indentation for nested toggles */
+.category-toggle > details {
+  margin-left: 2.5em; /* Additional indentation for nested toggles */
 }
 
 /* Prevent nested toggles from inheriting parent state */
-.category-toggle[open] details summary::before {
+.category-toggle[open] > details summary::before {
   transform: rotate(0deg); /* Keep arrow pointing down when parent is open */
 }
 
-.category-toggle[open] details[open] summary::before {
+.category-toggle[open] > details[open] summary::before {
   transform: rotate(180deg); /* Only flip when this specific toggle is open */
-}
-
-/* Make title and coauthor align at the same position */
-details summary > a {
-  display: inline-block;
-}
-
-details summary .coauthor {
-  display: block;
-  margin-top: 0.3em;
-  font-size: 0.9em;
-  color: #555;
-  line-height: 1.4;
-}
-
-/* Style the content that appears when toggled */
-details > div {
-  margin-top: 0.5em;
-  padding-left: 1.5em;
-  color: #333;
-  font-weight: 400;
-  line-height: 1.6;
 }
 
 /* Highlighted list style */
