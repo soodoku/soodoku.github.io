@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gaurav Sood - Research & Software</title>
+  
+  <!-- Import Lato font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: #ffffff;
+      font-size: 0.95em;
+      color: #555;
+      line-height: 1.6em;
+      padding: 1em; /* Add some padding around the page */
+    }
+    
+    a {
+      text-decoration: none;
+      color: #555;
+      font-size: 1em;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #000;
+    }
+    
+    ul, ol {
+      padding-left: 1.5em;
+      line-height: 1.5;
+    }
+    li {
+      margin: 0.2em 0;
+    }
+    
+    /* Category toggle styling */
+    details.category-toggle {
+      margin: 1em 0 1em 1.5em; /* top and left margin */
+      font-size: 1rem;
+    }
+    details.category-toggle summary {
+      cursor: pointer;
+      font-weight: 500;
+      list-style: none;
+      position: relative;
+      padding-left: 1.2em; /* room for the arrow */
+      text-align: left;
+    }
+    details.category-toggle summary::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.8em;
+      transition: transform 0.2s ease;
+      color: #666;
+    }
+    details.category-toggle[open] summary::before {
+      transform: rotate(90deg);
+    }
+    details.category-toggle > ol {
+      margin-top: 0.5em;
+    }
+    
+    /* Paper toggle styling */
+    details.paper-toggle {
+      margin: 0.8em 0 0.8em 1.5em;
+      font-size: 0.95rem;
+    }
+    details.paper-toggle summary {
+      cursor: pointer;
+      font-weight: 500;
+      list-style: none;
+      position: relative;
+      padding-left: 1.2em;
+      text-align: left;
+    }
+    details.paper-toggle summary::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 0.8em;
+      transition: transform 0.2s ease;
+      color: #666;
+    }
+    details.paper-toggle[open] summary::before {
+      content: "▾";
+      transform: rotate(0deg);
+    }
+    /* Coauthor and abstract */
+    .paper-toggle .coauthor {
+      display: block;
+      margin-top: 0.3em;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    .paper-toggle .abstract {
+      margin-top: 0.6em;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #333;
+      padding-left: 1.2em;
+    }
+    
+    /* Highlighted category style */
+    #highlight {
+      font-size: 0.9rem;
+      color: #555;
+      font-weight: 400;
+      margin-top: 1em;
+      font-family: 'Lato', sans-serif;
+      line-height: 1.5em;
+      position: relative;
+      letter-spacing: 0.05em;
+      list-style-type: none; /* Remove bullet */
+      margin-left: 1.2em; /* Indentation */
+    }
+    #highlight::before {
+      content: none; /* No arrow for static category headers if not toggling individually */
+    }
+    
+    /* Misc styling for other text elements (if needed) */
+    .highlight {
+      color: #990000;
+      font-weight: 600;
+      font-size: 0.9em;
+      letter-spacing: 0.05em;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Category: Econometrics, Sampling, and Data Collection -->
+  <details class="category-toggle" open>
+    <summary>ECONOMETRICS, SAMPLING, AND DATA COLLECTION</summary>
+    <ol>
+      <li>
+        <details class="paper-toggle">
+          <summary>
+            <a href="papers/benchmark.pdf">A Benchmark For Benchmarks</a>
+          </summary>
+          <div class="abstract">
+            Brief abstract content goes here...
+          </div>
+        </details>
+      </li>
+      <li>
+        <details class="paper-toggle">
+          <summary>
+            <a href="https://github.com/matmulai/econometric_bench">Econometric Bench: AI Benchmark for Econometrics</a>
+          </summary>
+          <div class="abstract">
+            Brief abstract content goes here...
+          </div>
+        </details>
+      </li>
+      <!-- More paper toggles as needed -->
+    </ol>
+  </details>
+  
+  <!-- Category: Online Safety -->
+  <details class="category-toggle" open>
+    <summary>ONLINE SAFETY</summary>
+    <ol>
+      <li>
+        <details class="paper-toggle">
+          <summary>
+            <a href="https://github.com/themains/pwned/">Pwned: How Often Are Americans' Online Accounts Breached?</a>
+            <br>
+            <span class="coauthor">With Ken Cor. <i>ACM Web Science Conference,</i> 2019.<br>
+            <span class="highlight">RELATED</span>: <a href="https://rud.is/b/2018/07/29/ggplot-doodling-with-hibp-breaches/">Bob Rudis Analyzes Exposure by Breach</a></span>
+          </summary>
+          <div class="abstract">
+            Brief abstract content goes here...
+          </div>
+        </details>
+      </li>
+      <!-- More paper toggles for this category -->
+    </ol>
+  </details>
+  
+  <!-- Additional categories (e.g., Tools, Meta Science, etc.) can be added in a similar way -->
+  
+</body>
+</html>
