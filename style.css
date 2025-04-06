@@ -63,35 +63,47 @@ li {
   margin: .2em 0;
 }
 
-/* Your existing toggle styling */
-details {
+.paper-container {
   margin: 1em 0 1em 1.5em;
   font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
-  padding: 0.3em 0;
 }
-details summary {
-  cursor: pointer;
-  display: flex;
-  align-items: flex-start; /* Changed from center to flex-start */
-  flex-direction: column; /* Added this to stack elements vertically */
+
+.paper-title {
+  display: block;
   font-weight: 500;
-  color: #333;
-  list-style: none;
+  margin-bottom: 0.3em;
 }
-details summary::before {
+
+.coauthor {
+  display: block;
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+.abstract-toggle {
+  margin-top: 0.5em;
+  cursor: pointer;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.abstract-toggle::before {
   content: "▸";
   font-size: 0.8em;
-  margin-right: 0.5em;
+  margin-right: 0.3em;
   transition: transform 0.2s ease;
-  color: #666;
-  position: absolute; /* Position the arrow absolutely */
-  margin-left: -1em; /* Pull it to the left */
 }
-details[open] summary::before {
+
+.abstract-toggle.open::before {
   content: "▾";
 }
-details > div {
+
+.abstract {
+  display: none;
   margin-top: 0.5em;
   padding-left: 1.5em;
   color: #555;
@@ -99,16 +111,8 @@ details > div {
   line-height: 1.6;
 }
 
-/* New styles for summary content */
-.summary-title {
-  margin-bottom: 0.3em; /* Add spacing between title and author info */
-  display: block; /* Ensure it's a block element */
-}
-.coauthor {
-  display: block; /* Ensure it's a block element */
-  font-size: 0.9em;
-  color: #666;
-  line-height: 1.4;
+.abstract.visible {
+  display: block;
 }
 
 /* Highlighted list style */
