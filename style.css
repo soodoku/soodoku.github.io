@@ -141,7 +141,7 @@ details > div {
   line-height: 1.6;
 }
 
-/* Category toggle styling - updated to match details/summary style */
+/* Category toggle styling - improved arrow alignment */
 details.category-toggle {
   margin: 1em 0 1em 1.5em;
   font-family: 'Lato', sans-serif;
@@ -157,16 +157,18 @@ details.category-toggle summary::-webkit-details-marker {
   display: none;
 }
 
-/* Add custom arrow */
+/* Add custom arrow with better alignment */
 details.category-toggle summary::before {
   content: "⌄";  /* Unicode down chevron character */
   font-size: 1.6em;
   position: absolute;
   left: 0;
-  top: -0.1em;
+  top: -0.1em; /* Same top value as your details toggle */
   transition: transform 0.3s ease;
   color: #333;
   transform: rotate(-90deg); /* Start rotated for right-facing arrow */
+  vertical-align: middle; /* Add this for better alignment */
+  line-height: 0.5; /* Add this for better vertical positioning */
 }
 
 /* Change arrow when open */
