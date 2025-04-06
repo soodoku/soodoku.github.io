@@ -14,6 +14,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
 <link href="/style.css" rel="stylesheet" type="text/css">
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.toggle-button');
+  const abstract = document.querySelector('.abstract');
+  
+  toggleButton.addEventListener('click', function() {
+    // Toggle abstract visibility
+    abstract.classList.toggle('visible');
+    
+    // Change arrow direction
+    if (abstract.classList.contains('visible')) {
+      toggleButton.textContent = '▾';
+    } else {
+      toggleButton.textContent = '▸';
+    }
+  });
+});
+</script>
+
 </head>
 
 <body bgcolor="#ffffff" background="images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -472,20 +491,27 @@
 <li id = "highlight">PROVISION OF PUBLIC GOODS
 
 <div class="paper-container">
-
-  <div class="paper-title">
-  <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf">
-    StreetSense: Learning from Google Street View
-  </a></div>
-
-  <div class="coauthor">
-    With Suriyan Laohaprapanon and Kimberly Ortleb.
-    <a href="https://arxiv.org/pdf/1807.06075.pdf">arXiv.org</a><br>
-    🗃 <a href="https://github.com/geosensing/streetsense">Replication Materials</a>
+  <div class="paper-header">
+    <!-- Toggle arrow -->
+    <div class="toggle-button">▸</div>
+    
+    <!-- Paper information (always visible) -->
+    <div class="paper-info">
+      <div class="paper-title">
+        <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf">
+          StreetSense: Learning from Google Street View
+        </a>
+      </div>
+      <div class="coauthor">
+        With Suriyan Laohaprapanon and Kimberly Ortleb.
+        <a href="https://arxiv.org/pdf/1807.06075.pdf">arXiv.org</a><br>
+        🗃 <a href="https://github.com/geosensing/streetsense">Replication Materials</a>
+      </div>
+    </div>
   </div>
-
-  <div class="abstract-toggle"></div>
-  	<div class="abstract">How good are the public services and the public infrastructure? Does their quality
+  
+  <!-- Hidden abstract that appears when toggled -->
+  <div class="abstract">How good are the public services and the public infrastructure? Does their quality
 		vary by income? These are vital questions—they shed light on how well the government
 		is doing its job, the consequences of disparities in local funding, etc. But there is little
 		good data on many of these questions. We fill this gap by describing a scalable method

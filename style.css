@@ -69,6 +69,25 @@ li {
   font-size: 0.95rem;
 }
 
+.paper-header {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.toggle-button {
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #666;
+  margin-right: 0.3em;
+  min-width: 1em;
+  padding-top: 0.2em; /* Align with the first line of text */
+}
+
+.paper-info {
+  flex: 1;
+}
+
 .paper-title {
   display: block;
   font-weight: 500;
@@ -82,30 +101,11 @@ li {
   line-height: 1.4;
 }
 
-.abstract-toggle {
-  margin-top: 0.5em;
-  cursor: pointer;
-  color: #666;
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.9em;
-}
-
-.abstract-toggle::before {
-  content: "▸";
-  font-size: 0.8em;
-  margin-right: 0.3em;
-  transition: transform 0.2s ease;
-}
-
-.abstract-toggle.open::before {
-  content: "▾";
-}
-
 .abstract {
   display: none;
   margin-top: 0.5em;
-  padding-left: 1.5em;
+  margin-left: 1.3em;
+  padding-left: 0.2em;
   color: #555;
   font-weight: 400;
   line-height: 1.6;
