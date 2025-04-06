@@ -123,6 +123,7 @@ details > div {
 }
 
 /* Highlighted list style */
+/* Highlighted list style */
 #highlight {
   font-size: 0.9rem;
   color: #444;
@@ -132,13 +133,18 @@ details > div {
   line-height: 1.5em;
   position: relative;
 }
-
 #highlight::before {
   content: "▸";
   position: absolute;
   left: -1.2em;
   color: #444;
   font-size: 1em;
+}
+
+/* Highlight span styling */
+.highlight {
+  color: #990000; /* Dark red color */
+  font-weight: 600; /* Slightly higher font weight */
 }
 
 /* Coauthor + abstract styles */
