@@ -1,103 +1,241 @@
+/* latin */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-/* Base */
+@font-face {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* Body */
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   background: #ffffff;
   font-size: 1em;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.3em;
 }
 
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: 'Lato', sans-serif;
-  color: #555;
-  font-weight: 700;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  line-height: 1.2;
+  color:#777777;
+  line-height: .75em;
+  font-weight: 300;
+  font-size:3.5em;
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.2em; }
-h5 { font-size: 1em; }
-h6 { font-size: 0.9em; font-weight: 400; color: #666; }
-
-/* Links */
-a {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-}
-a:hover {
-  color: #000;
-  text-decoration: underline;
+h3 {
+  font-family: 'Lato', sans-serif;
+	font-size:1.3em;
+	line-height:1.2em;
+	color:#777777;
+	font-weight:800;
+	padding:0;
+	margin:0;
 }
 
-/* Lists */
-ul, ol {
-  padding-left: 1.5em;
+h4 {
+  font-family: 'Lato', sans-serif;
+	font-size:1.1em;
+	line-height:1.1em;
+	color:#777777;
+	font-weight:700;
+	padding:0;
+	margin:0;
+}
+
+h6 { /* h6 is special... */
+ font-family: 'Lato', sans-serif;
+ font-size: 2em;
+ line-height:1.3em;
+ font-weight: 300;
+ color: #555;
+ margin: 0em 0em 1.2em 1.2em;
+}
+
+
+/* general navigation and font */
+a:link   {
+	text-decoration:none;
+	color:#555;
+}
+
+a:visited{
+	text-decoration:none;
+	color:#555;
+}
+
+a:active {
+	text-decoration:none;
+	color: #555;
+}
+
+a:hover  {
+	text-decoration:none;
+	color: #;
+}
+
+ol{
+	line-height: 1.5;
+	margin:1.1em 0 0 0;
+}
+
+ul{
+	list-style: none;
+	list-style-image: url('/images/bullet.png');
+	line-height: 1.5;
+	padding-left: 1.5em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+#smallspace{
+	margin:0 0 0 0;
+}
+
+#indentsmallspace{
+	margin:0 .5em .5em 1em;
+	padding-left: .7em;
+	list-style: disc;
+}
+
 li {
-  margin-bottom: 0.4em;
+	margin:.2em 0em 0em 0em;
 }
 
-/* Toggle Details */
-details.paper-toggle {
-  margin: 1em 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  color: #333;
-}
-details.paper-toggle summary {
-  cursor: pointer;
-  font-weight: 500;
-  padding-left: 1.2em;
-  position: relative;
-  list-style: none;
-  text-align: left;
-  line-height: 1.5;
-}
-details.paper-toggle summary::marker {
-  display: none;
-}
-details.paper-toggle summary::before {
-  content: "\25B8";
-  position: absolute;
-  left: 0;
-  top: 0.1em;
-  font-size: 0.8em;
-  transition: transform 0.2s ease;
-  color: #666;
-}
-details.paper-toggle[open] summary::before {
-  transform: rotate(90deg);
-}
-details.paper-toggle .abstract {
-  font-weight: 300;
-  font-size: 0.95em;
-  line-height: 1.6;
-  color: #444;
-  padding-left: 1.2em;
-  margin-top: 0.3em;
+#smalllinespace{
+	margin:.3em 0em .2em 0em;
 }
 
-/* Misc Helpers */
-.highlight {
-  color: #9d000d;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  font-size: 0.95em;
+#smallspace ul{
+	margin: 0;
+	padding: 0;
 }
 
-.footer {
-  font-size: 0.75em;
-  color: #222;
-  font-family: 'Lato', sans-serif;
+ul ol {
+  list-style-type: decimal;
 }
+
+.new {
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	font-family:Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	margin-left: 30px;
+	margin-top: 5px;
+	}
+
+table, .small,.contentarea{
+	color:#000000;
+	font-size:11px;
+	text-decoration:none;
+	font-family:Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	}
+
+/* global navigation */
+a.global {color: #eecc00; text-decoration: none;}
+a:visited.global {color: #eecc33; text-decoration: none;}
+a:hover.global {color: #ffdd00; text-decoration: underline;}
+a:active.global {color: #eecc00; text-decoration: underline;}
+
+.highlight{
+	line-height: 2;
+	font-size: .9em;
+	letter-spacing: 0.08em;
+	/* #9F000F */
+	color: #9d000d;
+	font-weight: 600;
+	font-family: tahoma;
+	margin: 0em 0em 0em .1em;
+	display: inline
+}
+
+/* footer font */
+.footer	{
+	font-size: 9px;
+	font-family: verdana, arial, sans-serif;
+	color: #222222
+}
+
+/* subheading font */
+.subheading	{
+	font-size: 11px;
+	font-family: verdana, arial, sans-serif;
+	color: #003300;
+	font-weight: bold
+}
+
+/* CV */
+
+#vita .margin {
+ float: left;
+ width: 115px;
+ margin-right: 15px;
+ padding-left: 5px;
+ text-align: right;
+}
+
+#vita .body {
+ margin-left: 135px;
+}
+
+.cvbg
+{
+background:url(/webexp/images/bg-top.gif);
+text-align:right;
+}
+
+.cvbold{
+	color:#333333;
+	font-size:11.5px;
+	text-decoration:none;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	}
+.cvtitle{
+	color:#000000;
+	font-size:1.1em;
+	line-height:1.1em;
+	text-decoration:none;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif, "MS sans serif";
+	}
+
+/* resume navigation */
+a.home {
+	font-size:1.1em;
+	text-decoration: none;
+	}
+
+a.cv {
+	color: #0000aa;
+	text-decoration: none;
+	}
+a:visited.cv {
+	color: #0000aa;
+	text-decoration: none;}
+a:hover.cv {
+	color: #000066;
+	text-decoration: none;
+	background-color: #e8ebef;}
+a:active.cv {color: #000066; text-decoration: underline;}
+
+.smallbold{
+	font-family:Verdana,Arial,Helvetica,sans-serif,"MS sans serif";
+	font-size:11px;
+	color:#333333;
+	text-decoration:none;
+	font-weight: bold;}
+
+
+
+/* Portfolio */
+.portfoliobg
+{
+background:url(/portfolio/img/bg.gif);
+text-align:right;
+}
+
+
