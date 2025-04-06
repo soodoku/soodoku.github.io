@@ -101,23 +101,39 @@ details[open] summary::before {
 /* Style the summary content */
 details summary {
   cursor: pointer;
-  display: block; /* Changed from inline-block to block for better paragraph feel */
-  padding-left: 1.5em; /* Add consistent padding for the entire summary */
-  text-indent: -1.5em; /* Negative text indent to create a hanging indent for the arrow */
+  display: block;
+  position: relative;
+  padding-left: 1.8em; /* Space for the arrow */
 }
 
-/* Make child elements of summary stack vertically */
+/* Position the arrow */
+details summary::before {
+  content: "⌄"; 
+  font-size: 1.6em;
+  position: absolute;
+  left: 0;
+  top: -0.1em;
+  transition: transform 0.3s ease;
+  color: #666;
+  transform: rotate(0deg);
+}
+
+/* Change arrow when open */
+details[open] summary::before {
+  transform: rotate(180deg);
+}
+
+/* Make title and coauthor align at the same position */
 details summary > a {
-  display: inline; /* Keep title as inline */
+  display: inline-block;
 }
 
 details summary .coauthor {
-  display: block; /* Stack the coauthor info below */
+  display: block;
   margin-top: 0.3em;
   font-size: 0.9em;
   color: #666;
   line-height: 1.4;
-  margin-left: 0; /* Remove left margin so text aligns with title */
 }
 
 /* Style the content that appears when toggled */
