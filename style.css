@@ -148,8 +148,8 @@ details > div {
 /* Highlighted list style */
 #highlight {
   font-size: 0.9rem;
-  color: #444;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
   margin-top: 1em;
   font-family: 'Lato', sans-serif;
   line-height: 1.5em;
