@@ -145,6 +145,8 @@ details > div {
 .highlight {
   color: #990000; /* Dark red color */
   font-weight: 600; /* Slightly higher font weight */
+  font-size: 0.9em; /* Slightly smaller font size */
+  letter-spacing: 0.05em; /* Slightly larger character spacing */
 }
 
 /* Coauthor + abstract styles */
