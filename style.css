@@ -154,15 +154,16 @@ details > div {
   font-family: 'Lato', sans-serif;
   line-height: 1.5em;
   position: relative;
-  letter-spacing: 0.05em; 
+  letter-spacing: 0.05em;
+  list-style-type: none; /* Remove the bullet */
+  margin-left: 1.2em; /* Add proper indentation */
 }
+
+/* Remove the triangle marker */
 #highlight::before {
-  content: "▸";
-  position: absolute;
-  left: -1.2em;
-  color: #444;
-  font-size: 1em;
+  content: none; /* Remove the arrow content */
 }
+
 
 /* Highlight span styling */
 .highlight {
