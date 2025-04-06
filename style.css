@@ -59,51 +59,30 @@ li {
   margin: .2em 0;
 }
 
-/* CSS-only toggle solution */
+/* Base styles for all details elements */
 details {
   margin: 1em 0 1em 1.5em;
   font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
 }
 
-/* Remove default arrow */
 details summary {
   list-style: none;
+  cursor: pointer;
 }
+
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Add custom arrow */
-details summary::before {
-  content: "⌄";  /* Unicode down chevron character */
-  font-size: 1.6em;
-  margin-right: 0.5em;
-  display: inline-block;
-  transition: transform 0.3s ease;
-  color: #333;
-  transform: rotate(0deg); /* Point down by default */
-  vertical-align: middle;
-  line-height: 0.5; /* Reduced line height to pull it up */
-  position: relative;
-  top: -0.1em; /* Slight upward adjustment */
-}
-
-/* Change arrow when open */
-details[open] summary::before {
-  transform: rotate(180deg); /* Flip to point up when open */
-}
-
-/* Style the summary content */
-details summary {
-  cursor: pointer;
+/* Article details toggle (more specific) */
+details:not(.category-toggle) summary {
   display: block;
   position: relative;
   padding-left: 1.8em; /* Space for the arrow */
 }
 
-/* Position the arrow */
-details summary::before {
+details:not(.category-toggle) summary::before {
   content: "⌄"; 
   font-size: 1.6em;
   position: absolute;
@@ -112,19 +91,19 @@ details summary::before {
   transition: transform 0.3s ease;
   color: #333;
   transform: rotate(0deg);
+  vertical-align: middle;
+  line-height: 0.5;
 }
 
-/* Change arrow when open */
-details[open] summary::before {
+details:not(.category-toggle)[open] summary::before {
   transform: rotate(180deg);
 }
 
-/* Make title and coauthor align at the same position */
-details summary > a {
+details:not(.category-toggle) summary > a {
   display: inline-block;
 }
 
-details summary .coauthor {
+details:not(.category-toggle) summary .coauthor {
   display: block;
   margin-top: 0.3em;
   font-size: 0.9em;
@@ -132,8 +111,7 @@ details summary .coauthor {
   line-height: 1.4;
 }
 
-/* Style the content that appears when toggled */
-details > div {
+details:not(.category-toggle) > div {
   margin-top: 0.5em;
   padding-left: 1.5em;
   color: #333;
@@ -141,52 +119,32 @@ details > div {
   line-height: 1.6;
 }
 
-/* Category toggle styling - fixed alignment and direction */
-details.category-toggle {
-  margin: 1em 0 1em 1.5em;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.95rem;
-}
-
-/* Remove default arrow */
+/* Category toggle styling - with non-conflicting selectors */
 details.category-toggle summary {
-  list-style: none;
+  display: block;
+  position: relative;
+  padding-left: 1.8em;
+  font-weight: 500;
+  text-align: left;
 }
 
-details.category-toggle summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Add custom arrow with better alignment - pointing DOWN when closed */
 details.category-toggle summary::before {
-  content: "⌄";  /* Unicode down chevron character */
+  content: "⌄";
   font-size: 1.6em;
   position: absolute;
   left: 0;
   top: -0.1em;
   transition: transform 0.3s ease;
   color: #333;
-  transform: rotate(0deg); /* Point DOWN by default (like your details toggle) */
+  transform: rotate(0deg);
   vertical-align: middle;
   line-height: 0.5;
 }
 
-/* Change arrow when open - flip to point UP when open */
 details.category-toggle[open] summary::before {
-  transform: rotate(180deg); /* Flip to point UP when open (like your details toggle) */
+  transform: rotate(180deg);
 }
 
-/* Style the summary content */
-details.category-toggle summary {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  padding-left: 1.8em; /* Space for the arrow */
-  font-weight: 500;
-  text-align: left;
-}
-
-/* Style for the content inside */
 details.category-toggle > ol {
   margin-top: 0.5em;
   padding-left: 0.5em;
