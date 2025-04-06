@@ -154,6 +154,7 @@ details > div {
   font-family: 'Lato', sans-serif;
   line-height: 1.5em;
   position: relative;
+  letter-spacing: 0.05em; 
 }
 #highlight::before {
   content: "▸";
