@@ -25,22 +25,17 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2em;
-}
-
-h4 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 1.8em;
+	font-size: 1.8em;
   color: #444;
   margin: 0 0 1.2em 1.2em;
 }
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #444;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  font-weight: 500;
 }
 
 a:hover {
