@@ -6,38 +6,35 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   background: #ffffff;
-  font-size: 1em;
+  font-size: 0.95em;
   color: #333;
   line-height: 1.6em;
 }
 
 h1, h3, h4, h6 {
   font-family: 'Lato', sans-serif;
-  color: #777;
+  color: #444;
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 3.5em;
-  font-weight: 300;
+  font-size: 3.2em;
   line-height: .75em;
 }
 
 h3 {
-  font-size: 1.3em;
-  font-weight: 800;
+  font-size: 1.2em;
 }
 
 h4 {
-  font-size: 1.1em;
-  font-weight: 700;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 2em;
-  font-weight: 300;
-  color: #555;
+  font-size: 1.8em;
+  color: #444;
   margin: 0 0 1.2em 1.2em;
 }
 
@@ -54,6 +51,7 @@ ul {
   list-style: none;
   padding-left: 1.5em;
   line-height: 1.5;
+  list-style-image: url('/images/bullet.png');
 }
 
 ol {
@@ -69,7 +67,7 @@ li {
 details {
   margin: 1em 0;
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   padding: 0.3em 0;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -78,7 +76,7 @@ details summary {
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-weight: 700;
+  font-weight: 500;
   color: #333;
   list-style: none;
 }
@@ -105,9 +103,9 @@ details > div {
 
 /* Highlighted list style */
 #highlight {
-  font-size: 1rem;
-  color: #9d000d;
-  font-weight: 600;
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 500;
   margin-top: 1.2em;
   font-family: 'Lato', sans-serif;
   line-height: 1.8em;
@@ -118,14 +116,14 @@ details > div {
   content: "▸";
   position: absolute;
   left: -1.2em;
-  color: #9d000d;
+  color: #444;
   font-size: 1em;
 }
 
 /* Coauthor + abstract styles */
 .coauthor {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
   margin-top: 2px;
   line-height: 1.4;
@@ -133,7 +131,7 @@ details > div {
 
 .abstract {
   margin-top: 0.6em;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #444;
   padding-left: 1.2em;
