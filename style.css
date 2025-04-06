@@ -75,51 +75,11 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Article details toggle (more specific) */
-details:not(.category-toggle) summary {
-  display: block;
-  position: relative;
-  padding-left: 1.8em; /* Space for the arrow */
+/* Category toggle styling */
+details.category-toggle {
+  margin: 1em 0 1em 1.5em;
 }
 
-details:not(.category-toggle) summary::before {
-  content: "⌄"; 
-  font-size: 1.6em;
-  position: absolute;
-  left: 0;
-  top: -0.1em;
-  transition: transform 0.3s ease;
-  color: #333;
-  transform: rotate(0deg);
-  vertical-align: middle;
-  line-height: 0.5;
-}
-
-details:not(.category-toggle)[open] summary::before {
-  transform: rotate(180deg);
-}
-
-details:not(.category-toggle) summary > a {
-  display: inline-block;
-}
-
-details:not(.category-toggle) summary .coauthor {
-  display: block;
-  margin-top: 0.3em;
-  font-size: 0.9em;
-  color: #555;
-  line-height: 1.4;
-}
-
-details:not(.category-toggle) > div {
-  margin-top: 0.5em;
-  padding-left: 1.5em;
-  color: #333;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-/* Category toggle styling - with non-conflicting selectors */
 details.category-toggle summary {
   display: block;
   position: relative;
@@ -148,6 +108,56 @@ details.category-toggle[open] summary::before {
 details.category-toggle > ol {
   margin-top: 0.5em;
   padding-left: 0.5em;
+}
+
+/* Article toggle styling - specifically target details inside li */
+li > details:not(.category-toggle) {
+  margin: 0.5em 0 0.5em 0;
+}
+
+li > details:not(.category-toggle) summary {
+  display: block;
+  position: relative;
+  padding-left: 1.8em;
+}
+
+li > details:not(.category-toggle) summary::before {
+  content: "⌄";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0;
+  top: -0.1em;
+  transition: transform 0.3s ease;
+  color: #333;
+  transform: rotate(0deg);
+  vertical-align: middle;
+  line-height: 0.5;
+}
+
+li > details:not(.category-toggle)[open] summary::before {
+  transform: rotate(180deg);
+}
+
+/* Style the content that appears when toggled */
+li > details:not(.category-toggle) > div {
+  margin-top: 0.5em;
+  padding-left: 1.5em;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Make title and coauthor align at the same position */
+li > details:not(.category-toggle) summary > a {
+  display: inline-block;
+}
+
+li > details:not(.category-toggle) summary .coauthor {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
 }
 
 /* Highlighted list style */
