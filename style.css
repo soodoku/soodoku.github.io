@@ -46,7 +46,7 @@ a:hover {
     width: 2px;
     height: 1.5em; /* taller for better alignment */
     background-color: #000; /* subtle and clean */
-    margin: 0 0.75em; /* more spacing on left and right */
+    margin: 0 0.5em; /* more spacing on left and right */
     vertical-align: middle;
 }
 
