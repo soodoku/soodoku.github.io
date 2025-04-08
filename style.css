@@ -63,31 +63,23 @@ a:hover {
             text-decoration: underline;
         }
 
-ul {
-  list-style: none;
+ol {
   margin-top: 0;
   padding-left: 1.5em;
   margin-left: 0;
   line-height: 1.5;
 }
 
-ul li {
+ol li {
   position: relative;
   padding-left: 0.5em;
 }
 
-ul li::before {
-  content: '>';
+ol li::before {
   color: #888;
   position: absolute;
   left: -1em;
   font-size: 0.8em;
-}
-
-ol {
-	list-style-type: none;  
-  line-height: 1.5;
-  margin: 1.1em 0 0 0;
 }
 
 
