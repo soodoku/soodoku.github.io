@@ -40,20 +40,14 @@ a {
 a:hover {
   color: #000;
 }
-
 .link-separator {
-            width: .3px;
-            height: 1.1em;
-            background: repeating-linear-gradient(
-                to bottom,
-                #000,
-                #000 1px,
-                transparent 1px,
-                transparent 2px
-            );
-            margin: 0 0.5em;
-        }
-
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background-color: #ccc; /* soft gray, easy on the eyes */
+    margin: 0 0.6em;
+    vertical-align: middle;
+}
 ul {
   margin-top: 0;
   padding-left: 1.5em;
