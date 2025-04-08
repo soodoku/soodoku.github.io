@@ -42,8 +42,8 @@ a:hover {
 }
 
 .link-separator {
-            width: 1.5px;
-            height: 1.2em;
+            width: 1px;
+            height: 1em;
             background: repeating-linear-gradient(
                 to bottom,
                 #000,
