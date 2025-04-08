@@ -52,13 +52,14 @@ ul {
 
 ul li {
   position: relative;
+  padding-left: 0.5em;
 }
 
 ul li::before {
-  content: '•';
+  content: '>';
   color: #888;
   position: absolute;
-  left: -0.8em;
+  left: -1em;
   font-size: 0.8em;
 }
 
