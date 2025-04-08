@@ -41,11 +41,17 @@ a:hover {
   color: #000;
 }
 
+
 ul {
+  list-style: none;
   margin-top: 0;
   padding-left: 1.5em;
-  margin-left: 1 em;
+  margin-left: 0;
   line-height: 1.5;
+}
+
+ul li {
+  position: relative;
 }
 
 ul li::before {
