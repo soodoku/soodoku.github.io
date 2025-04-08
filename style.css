@@ -44,7 +44,7 @@ a:hover {
     display: inline-block;
     width: 1px;
     height: 1em;
-    background-color: #ccc; /* soft gray, easy on the eyes */
+    background-color: #000; /* soft gray, easy on the eyes */
     margin: 0 0.6em;
     vertical-align: middle;
 }
