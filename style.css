@@ -43,9 +43,9 @@ a:hover {
 
 .link-separator {
     display: inline-block;
-    width: 2px;
+    width: 1.5px;
     height: 1.5em; /* taller for better alignment */
-    background-color: #000; /* subtle and clean */
+    background-color: #555; /* subtle and clean */
     margin: 0 0.5em; /* more spacing on left and right */
     vertical-align: middle;
 }
