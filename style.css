@@ -42,8 +42,8 @@ a:hover {
 }
 
 .link-separator {
-            width: 1px;
-            height: 1em;
+            width: .3px;
+            height: 1.1em;
             background: repeating-linear-gradient(
                 to bottom,
                 #000,
@@ -67,7 +67,6 @@ ul li {
 }
 
 ul li::before {
-  content: '>';
   color: #888;
   position: absolute;
   left: -1em;
