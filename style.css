@@ -43,12 +43,13 @@ a:hover {
 
 .link-separator {
     display: inline-block;
-    width: 1.5px;
-    height: 1.5em; /* taller for better alignment */
-    background-color: #555; /* subtle and clean */
+    border-left: 1.5px dotted #888; 
+    height: 1.25em; /* taller for better alignment */
+    background-color: #333; /* subtle and clean */
     margin: 0 0.5em; /* more spacing on left and right */
     vertical-align: middle;
 }
+
 
 ul {
   margin-top: 0;
