@@ -47,6 +47,14 @@ ul {
   line-height: 1.5;
 }
 
+ul li::before {
+  content: '•';
+  color: #888;
+  position: absolute;
+  left: -0.8em;
+  font-size: 0.8em;
+}
+
 ol {
 	list-style-type: none;  
   line-height: 1.5;
