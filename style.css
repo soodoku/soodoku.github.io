@@ -40,14 +40,16 @@ a {
 a:hover {
   color: #000;
 }
+
 .link-separator {
     display: inline-block;
     width: 1px;
     height: 1.5em; /* taller for better alignment */
-    background-color: #ccc; /* subtle and clean */
+    background-color: #000; /* subtle and clean */
     margin: 0 0.75em; /* more spacing on left and right */
     vertical-align: middle;
 }
+
 ul {
   margin-top: 0;
   padding-left: 1.5em;
