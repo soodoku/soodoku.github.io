@@ -194,3 +194,45 @@ details[open] summary::before {
   color: #000;
   font-family: 'Lato', sans-serif;
 }
+
+/* Container setup */
+.container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #007acc;
+}
+
+/* Main content styling */
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
