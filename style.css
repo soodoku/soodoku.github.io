@@ -223,7 +223,7 @@ details[open] summary::before {
 .sidebar ul li a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .sidebar ul li a:hover {
