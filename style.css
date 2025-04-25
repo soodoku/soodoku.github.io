@@ -81,7 +81,7 @@ li {
 details {
   margin: 1em 0 1em 2em; /* Increased left margin from 1.5em to 2em */
   font-family: 'Droid Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 details summary {
@@ -98,7 +98,7 @@ details summary::-webkit-details-marker {
 
 details summary::before {
   content: "⌄"; 
-  font-size: 1.6em;
+  font-size: 1.3em;
   position: absolute;
   left: 0;
   top: -0.1em;
