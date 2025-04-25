@@ -80,7 +80,7 @@ li {
 /* Base styles for all details elements */
 details {
   margin: 1em 0 1em 2em; /* Increased left margin from 1.5em to 2em */
-  font-family: 'Lato', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 0.95rem;
 }
 
