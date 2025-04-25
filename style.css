@@ -206,7 +206,7 @@ details[open] summary::before {
 
 /* Sidebar styling */
 .sidebar {
-  width: 300px;
+  width: 250px;
   box-sizing: border-box;
   margin-top: 40px;    /* Adds vertical offset */
   margin-left: 40px;   /* Adds horizontal offset */
