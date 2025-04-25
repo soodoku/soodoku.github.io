@@ -207,6 +207,8 @@ details[open] summary::before {
   width: 220px;
   padding: 20px;
   box-sizing: border-box;
+  margin-top: 40px;    /* Adds vertical offset */
+  margin-left: 40px;   /* Adds horizontal offset */
 }
 
 .sidebar ul {
