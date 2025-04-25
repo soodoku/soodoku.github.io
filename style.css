@@ -81,7 +81,7 @@ li {
 details {
   margin: 1em 0 1em 2em; /* Increased left margin from 1.5em to 2em */
   font-family: 'Droid Sans', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 details summary {
@@ -138,7 +138,6 @@ details[open] summary::before {
   color: #555;
   font-weight: 400;
   margin-top: 1em;
-  font-family: 'Lato', sans-serif;
   line-height: 1.5em;
   position: relative;
   letter-spacing: 0.05em;
