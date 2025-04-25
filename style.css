@@ -253,4 +253,11 @@ details[open] summary::before {
   font-family: 'Lato', sans-serif;
 }
 
+.site-title .first {
+  color: #005f9e;  /* bold blue for 'g' */
+}
+
+.site-title .last {
+  color: #111;  /* neutral black for 'sood' */
+}
 
