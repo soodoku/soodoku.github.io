@@ -211,7 +211,7 @@ details[open] summary::before {
   box-sizing: border-box;
   margin-top: 40px;    /* Adds vertical offset */
   margin-left: 40px;   /* Adds horizontal offset */
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
 .sidebar ul {
@@ -246,7 +246,7 @@ details[open] summary::before {
 }
 
 .site-title {
-  font-size: 3.2em;
+  font-size: 2em;
   font-weight: 400;
   margin-bottom: 20px;
   line-height: 1em;
