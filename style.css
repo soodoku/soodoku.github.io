@@ -1,5 +1,7 @@
 /* Import Lato font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Sans&display=swap');
+
 
 /* Global styles */
 body {
@@ -214,10 +216,14 @@ details[open] summary::before {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  font-family: 'Droid Sans', sans-serif;
+
 }
 
 .sidebar ul li {
   margin-bottom: 10px;
+  font-family: 'Droid Sans', sans-serif;
+
 }
 
 .sidebar ul li a {
@@ -246,4 +252,5 @@ details[open] summary::before {
   color: #003366; /* deep blue */
   font-family: 'Lato', sans-serif;
 }
+
 
