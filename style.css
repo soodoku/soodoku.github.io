@@ -205,10 +205,8 @@ details[open] summary::before {
 /* Sidebar styling */
 .sidebar {
   width: 220px;
-  background-color: #f4f4f4;
   padding: 20px;
   box-sizing: border-box;
-  border-right: 1px solid #ccc;
 }
 
 .sidebar ul {
