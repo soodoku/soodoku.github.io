@@ -216,13 +216,14 @@ details[open] summary::before {
 
 .sidebar ul {
   list-style: none;
-  padding: 0;
+  padding: 5;
   font-family: 'Droid Sans', sans-serif;
 
 }
 
 .sidebar ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding: 5;
   font-family: 'Droid Sans', sans-serif;
 
 }
