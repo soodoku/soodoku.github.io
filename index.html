@@ -1,52 +1,955 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><script>window._wordtune_extension_installed = true;</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Gaurav Sood - Research & Software</title>
 
-<title>gaurav sood</title>
-<meta name="distribution" content="global">
-<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="rating" content="General">
-<meta name="revisit- after" content="14 days">
-<link rel="shortcut icon" href="https://gsood.com/images/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="revisit- after" content="14 days" />
+	<meta name="distribution" content="global" />
+	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
+	<meta name="rating" content="General" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J4YPWB96VY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J4YPWB96VY');
-</script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
 <link href="/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.toggle-button');
+  const abstract = document.querySelector('.abstract');
+  
+  toggleButton.addEventListener('click', function() {
+    // Toggle abstract visibility
+    abstract.classList.toggle('visible');
+    
+    // Change arrow direction
+    if (abstract.classList.contains('visible')) {
+      toggleButton.textContent = '▾';
+    } else {
+      toggleButton.textContent = '▸';
+    }
+  });
+});
+</script>
+
 </head>
-<body>
-<img src="/images/spacer.gif" alt="spacer" height="50"><br>
-<table width="95%" bgcolor="#ffffff" cellpadding="25" cellspacing="30" border="0">
-  <tbody><tr>
-   <td align="left" width="100%">
-		 <img src="/images/spacer.gif" alt="spacer" height="170px"><br>
-			  <h1>gaurav sood</h1><br>
-        <a href="https://gojiberries.io/" class="home">BLOG</a>&nbsp;|&nbsp;<a href="https://gsood.com/research/" class="home">RESEARCH &amp; SOFTWARE</a>
-         <br>
-          <p>
-          <span style="display:block; width:450px;line-height: 170%;">
-          </span>
-          </p>
-    </td>
-    </tr>
-    <tr>
-        <td>
-          <img src="/images/spacer.gif" alt="spacer" height="50"><br>
-        </td>
-        <td></td>
-      </tr>
-</tbody></table>
+
+<body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
+
+
+<div class="container">
+  <nav class="sidebar">
+  	<div class="site-title">gaurav sood</div>
+    <ul>
+      <li><a href="/research">DATA, RESEARCH, AND SOFTWARE</a></li>
+      <li><a href="https://gojiberries.io">BLOG</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+   
+<table cellspacing=10 cellpadding=10 width=800px><tr><td>
+<br>
+<h3>DATA, RESEARCH, AND SOFTWARE</h3>
+<div id="research">
+
+<details class="category-toggle">
+    <summary>ECONOMETRICS AND DATA COLLECTION</summary>
+
+			<details>
+			  <summary><p><a href="papers/benchmark.pdf" target = "_blank">A Benchmark For Benchmarks</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary><a href = "https://github.com/matmulai/econometric_bench" target = "_blank">Econometric Bench: AI Benchmark for Econometrics</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary><a href="https://github.com/soodoku/bagged_fsr/" target = "_blank">Bagged FSR: Rehabilitating Forward Stepwise Regression</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary><a href="papers/turk.pdf" target = "_blank">The Micro-Task Market for "Lemons": Collecting Data on Amazon's Mechanical Turk</a><br>
+				With Doug Ahler and Carrie Roush. <i>Political Science Research and Methods,</i> 2021.<br>
+				&#x1F5C3;  <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK" target = "_blank">Replication Materials</a>
+				</summary>
+			  	<div class="abstract">While Amazon’s Mechanical Turk (MTurk) has reduced the cost of collecting original
+					data, in 2018, researchers noted the potential existence of a large number of bad actors
+					on the platform. To evaluate data quality on MTurk, we fielded three surveys between
+					2018 and 2020. While find no evidence of a “bot epidemic,” significant portions of the
+					data—between 25%-35%—are of dubious quality. While the number of IP addresses
+					that completed the survey multiple times or circumvented location requirements fell
+					almost 50% over time, suspicious IP addresses are more prevalent on MTurk than on
+					other platforms. Furthermore, many respondents appear to respond humorously or
+					insincerely, and this behavior increased over 200% from 2018-2020. Importantly, these
+					low-quality responses attenuate observed treatment effects by magnitudes ranging from
+					approximately 10-30%.</div>
+			</details>
+
+			<details>
+			  <summary>&#128230; <a href="https://github.com/soodoku/incline" target = "_blank">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf" target = "_blank">Optimal Data Collection When Strata and Strata Variances Are Known</a><br>
+				With Ken Cor.</summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary>&#128230; <a href="https://github.com/geosensing/geo_sampling" target = "_blank">Geo-sampling: Sampling Randomly From the Streets</a><br>
+				With Suriyan Laohaprapanon.</summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary>&#128230; <a href="https://github.com/geosensing/allocator" target = "_blank">Allocator: Optimal Itineraries For Spatially Distributed Tasks</a><br>With Suriyan Laohaprapanon.</summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary>&#128230; <a href="https://github.com/gojiplus/reporoulette" target = "_blank">reporoulette: Randomly Sample GitHub Repositories</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+			
+			<details>
+			  <summary>&#128230; <a href="https://github.com/gojiplus/pyppur" target = "_blank">pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss</a></summary>
+			  	<div class="abstract">pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion.</div>
+			</details>
+
+			<details>
+			  <summary>&#128230; <a href="https://github.com/gojiplus/rmcp/" target = "_blank">rmcp: R Econometrics MCP Community Server</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+			  <summary><a href="papers/guess.pdf" target = "_blank">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br>
+					With Ken Cor. <i>Political Analysis</i>. 24(2): 226&ndash;242, 2016. <br>
+				&#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/HZHVCU" target = "_blank">Replication Materials</a><br>
+				<span class="highlight">REVIEW</span>:  '... a real contribution to the literature.' &mdash; <a href="http://web.stanford.edu/~haertel/" target = "_blank">Ed Haertel</a><br>
+				<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/soodoku/guess" target = "_blank">R Package</a> for implementing the method. </summary>
+			  	<div class="abstract">Guessing on closed-ended knowledge items is common. Under likely to hold
+					assumptions, in presence of guessing, the most common estimator of learning,
+					difference between pre- and post-process scores, is negatively biased. To
+					account for guessing related error, we develop a latent class model of how
+					people respond to knowledge questions and identify the model with the mild
+					assumption that people do not lose knowledge over short periods of time. A
+					Monte Carlo simulation over a broad range of informative processes and
+					knowledge items shows that the simple difference score is negatively biased and
+					the method we develop here, unbiased. To demonstrate its use, we apply our
+					model to data from Deliberative Polls. We find that estimates of learning once
+					adjusted for guessing are about 13% higher. Adjusting for guessing also
+					eliminates the gender gap in learning, and halves the pre-deliberation gender
+					gap on political knowledge.</div>
+			</details>
+
+			<details>
+			  <summary><a href="papers/k_gains.pdf" target = "_blank">Measuring Learning in Informative Processes</a><br>
+				With Robert Luskin and Ariel Helfer.</summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary>&#128230; <a href="https://github.com/gojiplus/calibre" target = "_blank">calibre: Advanced Calibration Models</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+		</details>
+  
+  <!-- Category: Online Safety -->
+  <details class="category-toggle">
+    <summary>ONLINE SAFETY</summary>
+
+			<details>
+			  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/pwned/master/ms/pwned.pdf" target = "_blank">Pwned: How Often Are Americans' Online Accounts Breached?</a><br>
+			  	With Ken Cor. <i>ACM Web Science Conference,</i> 2019<br>
+				&#x1F5C3; <a href="https://github.com/themains/pwned/">Replication Materials</a><br>
+				  <span class="highlight">RELATED</span>: <a href = "https://rud.is/b/2018/07/29/ggplot-doodling-with-hibp-breaches/">Bob Rudis Analyzes Exposure by Breach</a>; &nbsp; <a href="https://github.com/themains/reg_breach">I Have Been Pwned: Evidence from the Florida Voter Registration Data</a>
+				  </summary>
+			  	<div class="abstract">News about massive data breaches is increasingly common. But
+					what proportion of Americans are exposed in these breaches is still
+					unknown. We combine data from a large, representative sample of
+					American adults (n = 5,000), recruited by YouGov, with data from
+					Have I Been Pwned to estimate the lower bound of the number of
+					times Americans’ private information has been exposed. We find
+					that at least 82.84% of Americans have had their private information,
+					such as account credentials, Social Security Number, etc., exposed.
+					On average, Americans’ private information has been exposed in at
+					least three breaches. The better educated, the middle-aged, women,
+					and Whites are more likely to have had their accounts breached
+					than the complementary groups.</div>
+			</details>
+
+		  <details>
+			  <summary>&#128230; <a href="https://github.com/themains/piedomains">Piedomains: Predict the Kind of Content Hosted by a Domain</a><br>
+			  	With Rajashekar Chintalapati.<br>
+					<span class="highlight">RELATED</span>: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf">Domain Knowledge: Predicting the Kind of Content Hosted by a Domain.</a><br>
+					With Suriyan Laohaprapanon. <i>Complex, Intelligent and Software Intensive Systems (CISIS), 2020.</i></summary>
+			  	<div class="abstract">The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage.</div>
+			</details>
+
+		    <details>
+				  <summary><a href="https://github.com/themains/password">Pass-Fail: Using a Password Generator to Improve Password Strength</a><br>
+				    With Rajashekar Chintalapati</summary>
+				  	<div class="abstract"></div>
+			</details>
+
+		    <details>
+				  <summary><a href="papers/pwned_politicians.pdf">How Often is Politicians' Data Breached? Evidence from HIBP</a><br>
+				    	With Lucas Shen.<br> 
+				    	&#x1F5C3; <a href = "https://github.com/themains/pwned_pols">Replication Materials</a></summary>
+				  	<div class="abstract"></div>
+			</details>
+
+		  <details>
+				  <summary><a href="papers/bad_domains.pdf">Bad Domains: Exposure to Malicious Content Online</a><br>
+				    	With Lucas Shen.<br> 
+				    	&#x1F5C3; <a href = "https://github.com/themains/bad_domains/">Replication Materials</a></summary>
+				  	<div class="abstract"></div>
+			</details>
+
+		    <details>
+				  <summary>&#128230; <a href="https://github.com/themains/know_your_ip/">Know Your IP</a><br>
+				    With Suriyan Laohaprapanon</summary>
+				  	<div class="abstract"></div>
+			</details>
+
+		    <details>
+				  <summary>&#128230; <a href="https://github.com/themains/virustotal">virustotal: R Client for the VirusTotal Public API 2.0</a></summary>
+				  	<div class="abstract"></div>
+			</details>
+
+		  <details>
+				  <summary><a href="papers/social_proof_stars.pdf">Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads</a><br>With Lucas Shen.<br>
+					&#x1F5C3; <a href="https://github.com/soodoku/social_proof_stars/">Replication Materials</a></summary>
+				  	<div class="abstract">Open-source software is widely used in commercial applications. Pair that with the
+						fact that when choosing open-source software for a new problem, developers often use
+						social proof as a cue. These two facts raise concern that bad actors can game social
+						proof metrics to induce the use of malign software. We study the question using two
+						field experiments. On the largest developer platform, GitHub, we buy ‘stars’ for a
+						random set of GitHub repositories of new Python packages and estimate their impact
+						on package downloads. We find no discernible impact. In another field experiment,
+						we manipulate the number of human downloads for Python packages. Again, we find
+						little effect.</div>
+			</details>
+
+			<details>
+				  <summary><a href="https://github.com/themains/private_blacklight/">Shedding <i>Blacklight</i> on Online Privacy: Tracking and KeyLogging on the Internet</a></summary>
+				  	<div class="abstract"></div>
+			</details>
+	</details>
+  
+  <details class="category-toggle">
+    <summary>TOOLS</summary>
+
+		  <details>
+		  <summary>&#128230; <a href="https://github.com/gojiplus/lost_years">Lost Years: Expected Number of Years Lost</a><br>
+		  With Suriyan Laohaprapanon.</summary>
+		  	<div class="abstract"></div>
+			</details>
+
+		  <details>
+		  <summary>&#128230; <a href="https://github.com/pvbhanuteja/repaper">repaper: convert photo of a form to a web based form or an editable pdf form</a><br>
+		  With Bhanu Teja.</summary>
+		  	<div class="abstract"></div>
+			</details>
+		  	
+			<details>
+		  <summary>&#128230; <a href="https://github.com/in-rolls/indicate">indicate: transliterate indic languages to english</a><br>
+			With Rajashekar Chintalapati.</summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href ="https://github.com/matmulai/layoutlens">LayoutLens: AI-Assisted UI Testing</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary>&#128230; <a href="https://github.com/gojiplus/bloomjoin">BloomJoin: Bloom Filter Based Joins</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary>&#128241; <a href="https://github.com/gojiplus/adjacent/">Adjacent — Related Repositories Recommender</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary>&#128241; <a href="https://github.com/gojiplus/advertiser">Advertiser: Promote Your GitHub Repositories on BlueSky</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary>&#128230; <a href="https://github.com/gojiplus/tuber">🍠 tuber: Access YouTube API via R</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+	</details>
+  
+  <details class="category-toggle">
+    <summary>META SCIENCE</summary>
+
+
+	<details>
+  <summary><a href="papers/noise_review.pdf">Review of "Noise: A Flaw in Human Judgment"</a><br>
+	 With Andrew Gelman. <i>Chance.</i> 2024.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/recite/sig_fault/main/ms/niewenhuis.pdf">Significant Error: Citations to Research With Publicized Statistical Errors</a><br>  With Ken Cor.<br>
+	&#x1F5C3;  <a href="https://github.com/recite/sig_fault/">Replication Materials</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/recite/propagation_of_error/master/ms/error.pdf">Propagation of Error: Approving Citations to Problematic Research</a><br>
+	With Ken Cor.<br>
+  &#x1F5C3;  <a href="https://github.com/recite/propagation_of_error/" target = "_blank">Replication Materials</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary>&#128241; <a href="https://github.com/recite/retract" target = "_blank">Get Notified When Cited Article is Retracted</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="http://github.com/recite/re-cite.org" target = "_blank">Highlight Citations to Retracted Articles</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/recite/softverse" target = "_blank">Softverse: Auto-compute Citations to Software From Replication Files</a><br>
+		&#127760; <a href = "https://softwarecite.com/" target = "_blank">softwarecite.com</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/recite/user" target = "_blank">user: Auto-compute Citations to Software From GitHub</a><br>
+		<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/recite/countpy" target = "_blank">Python metrics</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+  <details>
+  <summary><a href="https://github.com/soodoku/autosum" target = "_blank">AutoSum: Summarize Publications Automatically and Discover Miscitations</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/soodoku/quant-discipline" target = "_blank">By the Numbers: Toward More Precise Numerical Summaries of Results</a><br>
+		With Andrew Guess. <i>The Political Methodologist. 24(1): 2016</i></summary>
+  	<div class="abstract"></div>
+	</details>
+
+ 	<details>
+  <summary><a href="https://github.com/soodoku/meta_apsr" target = "_blank">The Review: Production and Consumption of APSR Articles</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/soodoku/superdf" target = "_blank">superdf: Save Metadata with the Data in R and Python DataFrames</a></summary>
+  	<div class="abstract"></div>
+	</details>	
+
+	<details>
+  <summary><a href="https://github.com/soodoku/not_to_code" target = "_blank">Not to Code: Evidence From Static Code Analysis of Replication Scripts</a></summary>
+  	<div class="abstract"></div>
+	</details></details>
+  
+  <!-- Category: Online Safety -->
+  <details class="category-toggle">
+    <summary>NAMES</summary>
+
+		<details>
+  <summary><a href="https://github.com/appeler/ethnicolr_v2" target = "_blank">Predicting Race and Ethnicity From Sequence of Characters in a Name</a><br>
+			With Rajashekar Chintalapati and Suriyan Laohaprapanon. <a href="https://arxiv.org/abs/1805.02109" target = "_blank">arXiv.org</a><br>
+		<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/appeler/ethnicolr" target = "_blank">Python Package</a> for implementing the method.<br>
+    <span class="highlight">PRESS</span>: <a href ="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target = "_blank">InfoQ</a> | <a href="https://www.youtube.com/watch?v=fuHAPENWVIU?" target = "_blank">AnacondaCON presentation (Video)</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary><a href="https://github.com/appeler/soundnames" target = "_blank">Sound Names: Classify Names Based on Sequence of Sounds</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary><a href="https://github.com/appeler/clarifai_gender" target = "_blank">Graphic Names: Classify Names Using Google Image Search and Clarifai</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary>&#128230; <a href="https://github.com/appeler/naampy" target = "_blank">Naampy: Infer Sociodemographic Characteristics from Indian Names</a><br>
+  	With Rajashekar Chintalapati and Suriyan Laohaprapanon.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary>&#128230; <a href="https://github.com/appeler/pranaam" target = "_blank">Pranaam: Predict Religion From Name</a><br>
+  	With Rajashekar Chintalapati.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+    <details>
+  <summary>&#128230; <a href="https://github.com/appeler/naamkaran" target = "_blank">naamkaran: a generative model for names</a><br>
+  		With Rajashekar Chintalapati.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+    <details>
+  <summary>&#128230; <a href="https://github.com/appeler/parsernaam" target = "_blank">parsernaam: ML-assisted name parser</a><br>
+  		With Rajashekar Chintalapati.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary>&#128230; <a href="https://github.com/appeler/instate" target = "_blank">instate: predict spoken language from last name</a><br>
+  		With Rajashekar Chintalapati and Atul Dhingra.<br>
+		  <span class="highlight">RELATED</span>: <a href="papers/instate.pdf" target = "_blank">Instate: Predict the State of Residence from Last Name.</a><br>
+		  With Atul Dhingra.
+  </summary>
+  	<div class="abstract"></div>
+	</details>
+	</details>
+  
+  <details class="category-toggle">
+    <summary>DECISION MAKING</summary>
+	
+		<details class="category-toggle">
+    <summary>GROUP AFFECT</summary>
+
+
+			<details>
+		  <summary><a href="papers/inter_group_prejudice.pdf" target = "_blank">Inter-group Prejudice</a><br></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/AffectNotIdeology.pdf" target = "_blank">Affect, Not Ideology: A Social Identity Perspective on Polarization </a><br>
+			With Shanto Iyengar and Yphtach Lelkes. <i>Public Opinion Quarterly.</i> 76(3), 405&ndash;431, 2012.<br>
+			&#x1F5C3; <a href="https://github.com/soodoku/party_time/" target = "_blank">Replication Materials</a><br>
+			<span class="highlight">RELATED</span>: <a href="http://gojiberries.io/sorted-or-polarized/" target = "_blank">Sort of Sorted But Definitely Cold</a>, <a href="http://gojiberries.io/the-order-of-feelings/">The Order of Feelings</a>, <a href = "http://gojiberries.io/mass-affective-polarization/" target = "_blank">Affectively Polarized?</a>, <a href = "http://gojiberries.io/2017/12/02/party-time/">Party Time</a><br>
+			<span class="highlight">PRESS</span>: <a href="press/NYT.POQ.pdf" target = "_blank">The New York Times</a>, <a href="press/WP.POQ.pdf" target = "_blank">The Washington Post</a>, <a href="press/MJ.POQ.pdf">Mother Jones</a>, <a href="press/AffectVox.pdf" target = "_blank">Vox</a>, etc.</summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/partisanComposition.pdf">The Parties in our Heads: Misperceptions About Party Composition and Their Consequences</a><br>
+			With Doug Ahler. <i>The Journal of Politics</i>. 80(3), 964&ndash;981, 2018.<br>
+			&#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/CLMQ8E">Replication Materials</a><br>
+			<span class="highlight">PRESS</span>: <a href="press/pcomp_538.pdf" target = "_blank">FiveThirtyEight</a>, <a href="press/PCompVox.pdf">Vox</a>, <a href="press/PCompWP_2.pdf" target = "_blank">The Washington Post</a>, <a href="press/PCompWP_3.pdf">The Washington Post (2)</a>, <a href="press/PCompCSMonitor.pdf" target = "_blank">Christian Science Monitor</a>, <a href="press/TheHillPComp.pdf">The Hill</a>, <a href = "https://www.tptoriginals.org/how-well-do-you-know-the-other-party/" target = "_blank">PBS (Twin Cities)</a><br>
+			<span class="highlight">RELATED</span>: <a href="papers/guesswho.pdf">The Partisans in our Heads</a> | <a href="http://dx.doi.org/10.7910/DVN/YJYU7Q">Data and Scripts</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/typecast.pdf" target = "_blank">Typecast: A Routine Mental Shortcut Causes Party Stereotyping</a><br>
+			With Doug Ahler. <i>Political Behavior.</i> 2022. <br>
+			&#x1F5C3; <a href="https://github.com/soodoku/typecast" target = "_blank">Replication Materials</a> | <a href="papers/typecast_si.pdf" target = "_blank">Appendix</a><br>
+			<span class="highlight">PRESS</span>: <a href="press/typecast_hxa.pdf" target = "_blank">Heterodox Academy</a>
+			</summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/inNout.pdf" target = "_blank">All in the Eye of the Beholder: Partisan Affect and Ideological Accountability</a><br>
+			With Shanto Iyengar.<br>
+			In <i>The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge.</i> 2018.<br>
+			&#x1F5C3; <a href="https://github.com/soodoku/in-n-out" target = "_blank">Replication Materials</a><br>
+			<span class="highlight">RELATED</span>: <a href="http://gsood.com/research/papers/moving_further.pdf" target = "_blank">Still Close: Perceived Ideological Distance to Own and Main Opposing Party</a>, <a href="http://gojiberries.io/moving-further-away-from-the-out-party/" target = "_blank">2012 Blog Post</a><br>
+			<span class="highlight">PRESS</span>: <a href="press/InOut_NYT.pdf" target = "_blank">The New York Times</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/ComingToDislike.pdf" target = "_blank">Coming to Dislike Your Opponents: The Polarizing Impact of Political Campaigns</a><br>
+			With Shanto Iyengar.<br>
+		  <span class="highlight">PRESS</span>: <a href ="press/ComingtoDislike_nyt.pdf" target = "_blank">New York Times</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+		  <details>
+		  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/partisan_vision/main/ms/partisan_vision.pdf" target = "_blank">Partisan Vision? Partisan Bias in Simple Visual Evaluations</a><br>With Carrie Roush and Alex Theodoridis.<br>
+		  	&#x1F5C3; <a href="https://github.com/soodoku/partisan_vision/">Replication Materials</a>
+		  </summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/BroadbandPolarization.pdf" target = "_blank">The Hostile Audience: The Effect of Access to Broadband Internet on Partisan Affect</a><br>
+			With Yphtach Lelkes and Shanto Iyengar. <i>American Journal of Political Science.</i> 61(1): 5&ndash;20, 2017.<br>
+			&#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/W1YJZQ" target = "_blank">Replication Materials</a><br>
+			<span class="highlight">PRESS</span>: <a href="press/Hostile_Guardian.pdf" target = "_blank">The Guardian</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/adult/main/ms/adult.pdf" target = "_blank">Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online</a><br>
+		  With Lucas Shen.  <i>Journal of Quantitative Description.</i> 2024.<br>
+				&#x1F5C3; <a href=" hhttps://github.com/soodoku/adult" target = "_blank">Replication Materials</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+			<details>
+		  <summary><a href="papers/StereotypesAboutSD.pdf" target = "_blank">Hidden Racial Prejudice? Impact of Social Desirability Pressures on Endorsement of Racial Stereotypes</a><br>
+			With Jon Krosnick, Tobias Stark, and Floor van Maaren. <i>Sociological Methods and Research.</i>51(2), 605&ndash;631, 2019.<br>
+			&#x1F5C3;  <a href = "https://osf.io/jdv7r/" target = "_blank">Replication and Supplementary Materials</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+		</details>
+
+		
+		<details class="category-toggle">
+    	<summary>INFORMATION ENVIRONMENT</summary>
+		  	<details>
+		  <summary><a href="https://github.com/soodoku/tv_schedules" target = "_blank">What and Who is on Network Television?</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="https://github.com/soodoku/working_women_on_tv" target = "_blank">Working Women on Indian TV</a>
+					<br>With Asha Sood</summary>
+		  	<div class="abstract"></div>
+			</details>
+
+		  	<details>
+		  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/face_of_crime/master/ms/face_of_crime.pdf" target = "_blank">The Face of Crime in Prime Time: Evidence from Law and Order</a><br>
+		  	With Daniel Trielli.<br>
+			  &#x1F5C3; <a href="https://github.com/soodoku/face_of_crime" target = "_blank">Replication Materials</a><br>
+		  	<span class="highlight">PRESS</span>:  <a href="press/LawOrderWP.pdf" target = "_blank">The Washington Post</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+		
+		<details>
+		  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/danweitzel/extreme_recall_2023/main/ms/recall.pdf" target = "_blank">Extreme Recall:  Which Politicians Come to Mind?</a><br>
+		  	With Daniel Weitzel. <i>Journal of Elections, Public Opinion and Parties.</i> 2024. <br>
+			&#x1F5C3; <a href="https://github.com/danweitzel/extreme_recall_2023" target = "_blank">Replication Materials</a> <br>
+			<span class="highlight">RELATED</span>: <a href = "https://github.com/soodoku/extreme_recall" target = "_blank">Extreme Recall</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+			</details>
+
+		<details class="category-toggle">
+    	<summary>DELIBERATION</summary>
+				<details>
+			  <summary><a href="papers/DahlSays.pdf" target = "_blank">What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics</a><br>With Ian O'Flynn. <i>Deliberative Mini-Publics.</i> 41&ndash;58, 2014. ECPR Press.</summary>
+			  	<div class="abstract"></div>
+				</details>
+
+				<details>
+			  <summary><a href="papers/LearningOfArguments.pdf" target = "_blank">How Can You Think That?: Deliberation and the Learning of Opposing Arguments</a><br>
+					&#x1F5C3; <a href="https://github.com/soodoku/nireland">Replication Materials</a>
+				</summary>
+			  	<div class="abstract"></div>
+				</details>
+
+				<details>
+			  <summary><a href="papers/DeliberativeDistortions.pdf" target = "_blank">Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations</a><br>
+				With Robert Luskin, Kyu Hahn, and James Fishkin. <i>The British Journal of Political Science</i>.  52(3), 1205&ndash;1225, 2022.<br>
+				&#x1F5C3; <a href="https://github.com/soodoku/distortions/" target = "_blank">Replication Materials</a></summary>
+			  	<div class="abstract"></div>
+				</details>
+
+				<details>
+			  <summary><a href="papers/kirkuk.pdf" target = "_blank">What Future for Kirkuk? Evidence from a deliberative intervention</a><br>
+				With Ian O'Flynn, Jalal Mistaffa, and Nahwi Saeed. <i>Democratization</i>. 26(7), 1299&ndash;1317, 2019.<br>
+			    &#x1F5C3; <a href="https://github.com/soodoku/kirkuk/" target = "_blank">Replication Materials</a> | <a href = "papers/kirkuk_si.pdf" target = "_blank">Supporting Information</a></summary>
+			  	<div class="abstract"></div>
+				</details>
+		</details>
+		<details class="category-toggle">
+    	<summary>OTHER</summary>
+    	<details>
+		  <summary><a href="papers/problem_solving.pdf" target = "_blank">Problem Solving</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/uncertainty/main/ms/uncertainty.pdf" target = "_blank">Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect</a><br>
+		   With Doug Ahler.<br>
+				&#x1F5C3; <a href=" https://github.com/soodoku/uncertainty" target = "_blank">Replication Materials</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+		  <details>
+		  <summary><a href="https://github.com/soodoku/mixed_signals" target = "_blank">Mixed Signals: Movie Quality Assessments Across Platforms</a></summary>
+		  	<div class="abstract"></div>
+			</details>
+
+			<details>
+		  <summary><a href="papers/ACAKnowledgeFavorability.pdf" target = "_blank">Americans' Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?</a><br>
+		  	With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius.<br>
+			<span class="highlight">PRESS</span>:  <a href="press/ForbesHealthcare.pdf">Forbes</a>, <a href="press/PSMagHealthcare.pdf" target = "_blank">Pacific Standard</a>, <a href="press/TheDishHealthcare.pdf" target = "_blank">The Dish</a>, among other outlets.</summary>
+		  	<div class="abstract"></div>
+			</details>
+			<details>
+	  <summary><a href = "papers/ACA_beliefs_attitudes.pdf" target = "_blank">Americans' Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?</a><br>
+			With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and  Wendy Gross. <i>Annals of the American Academy of Political and Social Science.</i> 2022.</summary>
+	  	<div class="abstract"></div>
+		</details>
+		<details>
+		<summary><a href="papers/daughters.pdf" target = "_blank">Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women's Issues?</a><br>
+				With Don Green, Oliver Hyman-Metzger, and Michelle Zee. <i>Journal of Political Economy Microeconomics.</i> 2023.<br>
+				&#x1F5C3; <a href = "https://github.com/soodoku/daughters" target = "_blank">Replication Materials</a> | <a href = "papers/daughters_si.pdf" target = "_blank">Supporting Information</a><br>
+				<span class="highlight">PRESS</span>: <a href = "https://phys.org/news/2023-05-daughters-politicians-votes-women-issues.html" target = "_blank">Phys.org</a></summary>
+  			<div class="abstract"></div>
+		</details>
+			</details>
+		
+		</details>
+ 
+  <details class="category-toggle">
+    <summary>MISSING WOMEN</summary>
+
+  	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf" target = "_blank">Son Bias in the US: Evidence from Business Names</a><br>
+  	With Walter Guillioli<br>
+	  &#x1F5C3; <a href="https://github.com/soodoku/sonny_side" target = "_blank">Replication Materials</a><br>
+  	</summary>
+  	<div class="abstract"></div>
+	</details>
+
+		<details>
+  <summary><a href="https://github.com/soodoku/last_sex" target = "_blank">Which Women Are Missing? Adult Sex Ratio By Last Name</a>
+			<br>With Suriyan Laohaprapanon</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	
+		<details>
+  <summary><a href="https://github.com/geosensing/women-count" target = "_blank">Missing Women on the Streets</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+		<details>
+  <summary><a href="https://github.com/soodoku/epic_children" target = "_blank">Epic Children: Sex Ratio of Children of Key Characters in Epics</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+  	<details>
+  <summary><a href="https://github.com/in-rolls/missing_daughters_of_pols" target = "_blank">Missing Daughters of Indian Politicians</a></summary>
+  	<div class="abstract"></div>
+	</details>
+</details>
+
+  
+  <details class="category-toggle">
+    <summary>NEWS</summary>
+	
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf" target = "_blank">Not News: Provision of Apolitical News in the British News Media</a><br>With Suriyan Laohaprapanon.<br>
+	&#x1F5C3; <a href="https://github.com/notnews/uk_not_news">Replication Materials</a>
+  </summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf" target = "_blank">Strength in Numbers: Multiple Measures of Media Ideology</a><br>With Philip Habel.<br>
+	&#x1F5C3; <a href="https://github.com/notnews/uk_media_ideology/">Replication Materials</a>
+  </summary>
+  	<div class="abstract"></div>
+	</details>
+
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf" target = "_blank">Measuring Agendas and Positions on Agendas</a><br>With Andrew Guess.<br>
+	&#x1F5C3; <a href="https://github.com/notnews/issue_ideology/" target = "_blank">Replication Materials</a>
+  </summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary>&#128230; <a href="https://github.com/notnews/notnews" target = "_blank">Notnews: Predict the Type of News Based on Story Text and URL</a><br>
+	With Suriyan Laohaprapanon.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/notnews/readable_news" target = "_blank">Unreadable News: How Readable is American News?</a><br>
+	With Lucas Shen.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/mediabias.pdf" target = "_blank">Follow Your Ideology: A Measure of Ideological Location of Media Sources</a><br>
+	With Pablo Barber&aacute;.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/hr.pdf">The Supply of Media Slant Across Outlets and Demand for Slant Within Outlets: Evidence from US Presidential Campaign News</a><br>
+	With Marcel Garz, Daniel Stone, and Justin Wallace. <i>European Journal of Political Economy</i>.<br>
+	&#x1F5C3; <a href="https://github.com/soodoku/horse_race" target = "_blank">Replication Materials</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/selexp.pdf">Don't Expose Yourself: Discretionary Exposure to Political Information</a><br>
+	With Yphtach Lelkes. <i>Oxford Research Encyclopedia of Politics</i>. 2018.<br>
+	&#x1F5C3; <a href="https://github.com/soodoku/selexp">Replication Materials</a><br>
+	<span class="highlight">RELATED</span>: <a href="https://github.com/themains/piedomains" target = "_blank">Categorizing the Content of Domains</a>, <a href="http://gojiberries.io/measuring-selective-exposure-a-selective-measure-of-selective-exposure/" target = "_blank">Measuring Selective Exposure</a>, <a href="http://gojiberries.io/the-fairest-of-them-all/" target = "_blank">The Fairest of All</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/notnews/good_nyt" target = "_blank">The Good NYT: Provision of Apolitical News in the New York Times</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf" target = "_blank">Hard News: The Softening of Network Television News</a><br>
+	With Daniel Weitzel.<br>
+	&#x1F5C3; <a href="https://github.com/notnews/hard_news/" target = "_blank">Replication Materials</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/notnews/politifact" target = "_blank">Partisan Imbalance in Politifact?</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary>&#x1F4BE; <a href="https://github.com/notnews/top_news" target = "_blank">Top News! URLs from News Feeds of Major National News Sites (2022-)</a><br>
+	With Derek Willis</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary>&#x1F4BE; <a href="https://github.com/notnews/cnn_transcripts/" target = "_blank">CNN Transcripts 2000--2025</a></summary>
+  	<div class="abstract"></div>
+	</details></details>
+  
+  <!-- Category: Online Safety -->
+  <details class="category-toggle">
+    <summary>MEASURING LEARNING, KNOWLEDGE, AND MISINFORMATION</summary>
+
+	<details>
+  <summary><a href="papers/PartisanBias.pdf" target = "_blank">You Cannot be Serious: The Impact of Accuracy Incentives on Partisan Bias</a><br>
+		With Markus Prior and Kabir Khanna. <i>Quarterly Journal of Political Science.</i> 10(4), 489&ndash;518, 2015.<br>
+	  &#x1F5C3; <a href="papers/PartisanCheerleadingAppendix.pdf" target = "_blank">Online Appendix</a>; <a href="http://www.nowpublishers.com/article/details/supplementary-info/100.00014127_supp.zip" target = "_blank">Replication Materials</a><br>
+  	<span class="highlight">PRESS</span>: <a href="press/PartisanBiasWashingtonMonthly.pdf" target = "_blank">Washington Monthly</a>, <a href="press/PartisanBiasPacificStandard.pdf">Pacific Standard</a>, <a href="press/PartisanBiasNYT.pdf" target = "_blank">The New York Times</a><br>
+  	<span class="highlight">RELATED</span>: <a href="papers/partisanRetrospection.pdf" target = "_blank">Partisan Gaps in Retrospection are Highly Variable</a>; <a href="http://gojiberries.io/the-value-of-money-learning-from-experiments-offering-money-for-correct-answers/" target = "_blank">Blog Post</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="http://rdcu.be/HNE5" target = "_blank">Motivated Responding in Studies of Factual Learning</a><br>
+		With Kabir Khanna. <i>Political Behavior</i>. 40(1): 79&ndash;101, 2018.<br>
+		&#x1F5C3;  <a href="http://dx.doi.org/10.7910/DVN/4JXJWI" target = "_blank">Replication Materials</a><br>
+		<span class="highlight">RELATED</span>: <a href="https://politicalbehavior.wordpress.com/2017/03/02/motivated-responding-in-studies-of-factual-learning/" target = "_blank">Blog Summarizing the Paper</a>, <a href="http://gojiberries.io/the-innumerate-american/" target = "_blank">The Innumerate American</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/partisan_gap.pdf" target = "_blank">A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps</a><br>
+		With Carrie Roush. <i>Quarterly Journal of Political Science.</i> 18(1), 2023. <br>
+		&#x1F5C3; <a href="https://github.com/soodoku/partisan_gap" target = "_blank">Replication Materials</a><br>
+		<span class="highlight">RELATED</span>: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target = "_blank">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a><br>
+		<span class="highlight">PRESS</span>: <a href = "https://effectivegov.uchicago.edu/podcast/do-partisans-really-believe-different-facts" target = "_blank">Not Another Politics Podcast (U. Chicago)</a>
+</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/CasablancaTheory.pdf" target = "_blank">The Waters of Casablanca: On Political Misinformation</a><br>
+	With Robert Luskin.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/misinformation_misinformation.pdf" target = "_blank">Misinformation About Misinformation: Of Headlines and Survey Design</a><br>
+    With Robert Luskin, Yul Min Park, and Joshua Blank.<br>
+		&#x1F5C3; <a href="https://github.com/soodoku/misinformation" target = "_blank">Replication Materials</a>
+  </summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/ACAMisinformed.pdf" target = "_blank">Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation</a><br>
+		With Josh Pasek and Jon Krosnick. <i>Journal of Communication.</i> 65(4): 660&ndash;673, 2015 <br>
+		&#x1F5C3; <a href="papers/ACAMisinformedSI.pdf" target = "_blank">Supporting Information</a> |  <a href="https://osf.io/ya7wd/" target = "_blank">Replication Materials</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/guess.pdf" target = "_blank">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br>
+		With Ken Cor. <i>Political Analysis</i>. 24(2): 226&ndash;242, 2016. <br>
+	&#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/HZHVCU" target = "_blank">Replication Materials</a><br>
+	<span class="highlight">REVIEW</span>:  '... a real contribution to the literature.' &mdash; <a href="http://web.stanford.edu/~haertel/" target = "_blank">Ed Haertel</a><br>
+	<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/soodoku/guess" target = "_blank">R Package</a> for implementing the method. </summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="papers/k_gains.pdf">Measuring Learning in Informative Processes</a><br>
+	With Robert Luskin and Ariel Helfer.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/partisan-gaps/main/ms/partisan_gap.pdf" target = "_blank">A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap</a><br>
+  	With Lucas Shen and Daniel Weitzel.  <i>Public Opinion Quarterly.</i> 2024.<br>
+  	&#x1F5C3; <a href="https://github.com/soodoku/partisan-gaps" target = "_blank">Replication Materials</a>
+</summary>
+  	<div class="abstract">Research suggests that partisan gaps in political knowledge with partisan implications
+		are wide and widespread. Using a series of experiments, we investigate the extent to
+		which partisan gaps in commercial surveys are a result of differences in beliefs than
+		motivated guessing. Knowledge items on commercial surveys often have features that
+		encourage guessing. We find that removing such features yields scales with greater reli-
+		ability and higher criterion validity. More substantively, partisan gaps on scales without
+		these “inflationary” features are roughly 40% smaller. Thus, contrary to Prior, Sood
+		and Khanna (2015), who find that the upward bias is explained by the knowledgeable
+		deliberately marking the wrong answer (partisan cheerleading), our data suggest, in
+		line with Bullock et al. (2015) and Graham and Yair (2023), that partisan gaps on
+		commercial surveys are strongly upwardly biased by motivated guessing by the ignorant. 
+		Relatedly, we also find that partisans know less than what toplines of commercial
+		polls suggest.</div>
+	</details>
+
+  <details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target = "_blank">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a><br>With Carrie Roush.<br>
+	&#x1F5C3; <a href="https://github.com/soodoku/unclear_gap" target = "_blank">Replication Materials</a>
+  </summary>
+  	<div class="abstract">Roush and Sood (2023) use a dataset of 162,083 responses to 187 items on 47 surveys 
+  		to find that partisan gaps are smaller and less frequent than commonly understood. The
+			average is a mere six and a half points and gaps’ “signs” run counter to expectations roughly
+			30% of the time. However, one exception is the size of gaps on retrospection items on
+			the ANES, which are considerably bigger. These retrospection items use vague response
+			options, e.g., ‘About the same.’ Vague response options can inflate partisan gaps by offering
+			partisans the opportunity to interpret the same data differently. We test this assumption
+			with a novel survey experiment. We present partisans data indicating a small improvement
+			in economic indicators and manipulate the partisan tint of the change by manipulating who
+			is responsible for the change. We find that significantly fewer partisans pick the option that
+			’[things] got better’ when presented with an out-partisan cue than a co-partisan cue. Our
+			findings suggest that vague options can induce knowledge gaps even when partisans have
+			the same information.</div>
+	</details>
+
+  <details>
+  <summary><a href="papers/measuring_shares.pdf">Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups</a><br>
+	With Doug Ahler. <i>Misinformation and Mass Audiences.</i> 2018. University of Texas Press.<br>
+    &#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/2JXAYZ" target = "_blank">Appendix</a></summary>
+  	<div class="abstract"></div>
+	</details></details>
+  
+ 
+  <details class="category-toggle">
+    <summary>PROVISION OF PUBLIC GOODS</summary>
+
+<details>
+  <summary>
+    <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf" target = "_blank">
+      StreetSense: Learning from Google Street View
+    </a>
+    <span class="coauthor">
+      With Suriyan Laohaprapanon and Kimberly Ortleb.
+      <a href="https://arxiv.org/pdf/1807.06075.pdf" target = "_blank">arXiv.org</a><br>
+      🗃 <a href="https://github.com/geosensing/streetsense" target = "_blank">Replication Materials</a>
+    </span>
+  </summary>
+  <div class="abstract">How good are the public services and the public infrastructure? Does their quality
+		vary by income? These are vital questions—they shed light on how well the government
+		is doing its job, the consequences of disparities in local funding, etc. But there is little
+		good data on many of these questions. We fill this gap by describing a scalable method
+		of getting data on one crucial piece of public infrastructure: roads. We assess the quality
+		of roads and sidewalks by exploiting data from Google Street View. We randomly sample
+		locations on major roads, query Google Street View images for those locations and code
+		the images using Amazon’s Mechanical Turk. We apply this method to assess the quality
+		of roads in Bangkok, Jakarta, Lagos, and Wayne County, Michigan. Jakarta’s roads have
+		nearly four times the potholes than roads of any other city. Surprisingly, the proportion of
+		road segments with potholes in Bangkok, Lagos, and Wayne is about the same, between
+		.06 and .07. Using the data, we also estimate the relation between the condition of the
+		roads and local income in Wayne, MI. We find that roads in more affluent census tracts
+		have somewhat fewer potholes.</div>
+	</details>
+
+	<details class="paper-toggle">
+			<summary><p><a href="https://github.com/geosensing/autosense" target = "_blank">AutoSense: Automated Street Condition Assessment</a>
+			</summary>
+			<div class="abstract"></div>
+	</details>
+	<details class="paper-toggle">
+			<summary><a href="https://github.com/soodoku/wait" target = "_blank">Get in Line: Waiting Times at the DMV</a><br>
+			<span class="coauthor">With Noah Finberg.</p></span>
+	</summary>
+		</details>
+</details>
+  
+  <details class="category-toggle">
+    <summary>CRICKET</summary>
+
+
+	<details>
+  <summary><a href="https://github.com/outside-edge/elo_cricket" target = "_blank">Elo Ratings of International Cricket Teams By Format</a><br>
+	With Derek Willis.<br>
+	<span class="highlight">PRESS</span>: <a href="press/EloDutch.pdf" target = "_blank">The Hindu</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/outside-edge/war" target = "_blank">WAR Ratings for Cricketers</a><br>
+	With Derek Willis.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+	<details>
+  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/outside-edge/asymmetry/master/ms/cricket_paper.pdf" target = "_blank">Fairly Random: The Effect of Winning the Toss on Winning the Match</a><br>
+	With Apoorva Lal, Derek Willis, and Avidit Acharya. <i>Journal of Sports Analytics.</i> 2023.<br>
+	&#x1F5C3;  <a href="https://github.com/outside-edge/asymmetry">Replication Materials</a><br>
+	<span class="highlight">RELATED</span>: <a href = "https://github.com/dwillis/toss-up" target = "_blank">Fairly Random: Impact of Winning the Toss on the Probability of Winning</a><br>With Derek Willis.</a> | <a href="https://arxiv.org/abs/1605.08753" target = "_blank">arXiv.org</a><br>
+	<span class="highlight">PRESS</span>: <a href="press/CricketESPN.pdf" target = "_blank">ESPN: How much does the toss really matter?</a><br>
+	<span class="highlight">RELATED</span>: <a href="https://www.espncricinfo.com/story/why-replacing-the-toss-with-an-auction-is-the-fair-thing-to-do-1277744" target = "_blank">ESPN: Why replacing the toss with an auction is the fair thing to do</a></summary>
+  	<div class="abstract"></div>
+	</details></details>
+  
+  <details class="category-toggle">
+    <summary>OTHER</summary>
+
+		<details class="paper-toggle">
+			<summary><a href="papers/scaling.pdf" target = "_blank">Scaling ML Products at Startups: A Practioner's Guide</a><br>
+  	  <span class="coauthor">With Atul Dhingra.</span>
+  	  </summary>
+  	<div class="abstract">
+  	How do you scale a machine learning product at a startup? In particular, how do you
+		serve a greater volume, velocity, and variety of queries cost-effectively? We break down
+		costs into variable costs—the cost of serving the model and keeping it performant—and
+		fixed costs—the cost of developing and training new models. We propose a framework
+		for conceptualizing these costs, breaking them into finer categories, and limn ways to reduce costs. 
+		Lastly, since in our experience, the most expensive fixed cost of a machine learning system is the 
+		cost of identifying the root causes of failures and driving continuous improvement, we present a 
+		way to conceptualize the issues and share our methodology for the same.
+		</div>
+	</details>
+
+	<details>
+  <summary><a href="https://github.com/in-rolls/quota_elite_quality" target = "_blank">The Effect of Gender Quotas on Some Qualities of Elites</a></summary>
+  	<div class="abstract"></div>
+	</details>
+
+		<details>
+  <summary><a href = "https://drive.google.com/file/d/1ImPUKt5Iqzxt5ncWjYEszLDzI4Cd1Ayk/view" target = "_blank">The Limits of Electoral Gender Quotas in Rural Local Bodies</a><br>
+					With Varun K. R.</summary>
+  	<div class="abstract"></div>
+	</details>
+
+
+		<details>
+		  <summary><a href="https://github.com/soodoku/spousal_age_gap" target = "_blank">The Older Half: Spousal Age Gap in India</a><br>
+				With Suriyan Laohaprapanon</summary>
+		  	<div class="abstract"></div>
+	</details>
+
+</details>
+  </main>
+</div>
 
 </body>
 </html>

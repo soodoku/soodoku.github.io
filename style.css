@@ -204,8 +204,8 @@ details[open] summary::before {
 
 /* Sidebar styling */
 .sidebar {
-  width: 220px;
-  padding: 20px;
+  width: 300px;
+  padding: 10px;
   box-sizing: border-box;
   margin-top: 40px;    /* Adds vertical offset */
   margin-left: 40px;   /* Adds horizontal offset */
