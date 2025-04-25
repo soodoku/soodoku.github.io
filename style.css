@@ -234,3 +234,11 @@ details[open] summary::before {
   padding: 20px;
   box-sizing: border-box;
 }
+
+.site-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #003366; /* deep blue */
+}
