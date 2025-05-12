@@ -5,51 +5,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>soodoku's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    /* Define gradient backgrounds for themes */
+    .bg-gradient-to-br.from-indigo-50.via-white.to-purple-50 {
+      background: linear-gradient(to bottom right, #eef2ff, #ffffff, #faf5ff);
+    }
+    .bg-gradient-to-r.from-indigo-500.to-purple-500 {
+      background: linear-gradient(to right, #6366f1, #a855f7);
+      color: white; /* Ensure text is white on gradient background */
+    }
+    /* Shadow styling for cards */
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card-shadow:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    /* Button styling */
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .icon-button:hover {
+      opacity: 0.8;
+    }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gradient-to-br from-indigo-50 via-white to-purple-50">
     <div class="container mx-auto px-4 py-20">
-        <header class="text-center mb-16">
-            <h1 class="text-4xl font-bold mb-4">My Projects</h1>
-            <p class="text-gray-600">A showcase of my work</p>
-        </header>
-        <div class="grid gap-8 max-w-4xl mx-auto">
-            
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">layoutlens</h2>
-                    <p class="text-gray-600 mb-4">LayoutLens is an AI-powered UI testing tool designed to automate and enhance the process of ensuring consistent and visually appealing user interfaces. It utilizes artificial intelligence to analyze UI elements, detect layout issues, and suggest improvements. This project aims to reduce manual testing efforts, improve UI quality, and streamline the development workflow for frontend developers and QA teams. It focuses on identifying discrepancies, overlaps, and other visual inconsistencies across different screen sizes and platforms.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
+        <div class="max-w-4xl mx-auto">
+            <header class="mb-16 flex flex-col items-center">
+                <div class="flex flex-col items-center">
+                    
+                    <div class="mb-6">
+                        <img src="https://avatars.githubusercontent.com/u/721466?v=4" alt="soodoku" class="w-32 h-32 rounded-full mx-auto border-4 border-gray-200 shadow-lg">
                     </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/matmulai/layoutlens" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
+                    
+                    <h1 class="text-4xl font-bold mb-6 text-gray-900">soodoku's Portfolio</h1>
+                    
+                    <div class="max-w-2xl text-center">
+                        <p class="text-gray-900 mb-8 leading-relaxed">As a skilled web developer, I specialize in building innovative Python applications that leverage machine learning and data analytics. My technical expertise spans across a wide range of topics, including Natural Language Processing, Data Science, and Automation. I am passionate about creating solutions that automate tasks, improve data analysis, and enhance user experience.</p>
+                        <div class="flex flex-wrap gap-3 justify-center mb-8">
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-indigo-500 to-purple-500 text-white">Python</span><span class="px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-indigo-500 to-purple-500 text-white">JavaScript</span><span class="px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-indigo-500 to-purple-500 text-white">R</span><span class="px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-indigo-500 to-purple-500 text-white">TypeScript</span>
+                        </div>
+                        <p class="text-gray-900 text-sm mb-8">
+                            <span class="font-medium">Interests:</span> AI/ML, Data Analysis, Automation, Web Development, GitHub Tools
+                        </p>
                     </div>
-                </article>
-              
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">reposum</h2>
-                    <p class="text-gray-600 mb-4">reposum is a tool that automatically generates a list of repositories within an organization, summarizes each repository's purpose using OpenAI's language model, and publishes the summaries online. It aims to provide a quick overview of an organization's projects, making it easier for users to understand the available codebases.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/matmulai/reposum" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">diverse_stories</h2>
-                    <p class="text-gray-600 mb-4">The 'diverse_stories' project leverages GenAI to modify existing stories (primarily out-of-copyright works) and incorporate diverse characters and relevant cultural contexts. The goal is to create more inclusive and representative narratives by adapting classic literature and other texts. The project focuses on generating new versions of stories that resonate with a wider audience through thoughtful character development and cultural sensitivity, facilitated by GenAI tools.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/matmulai/diverse_stories" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
+                    
+                </div>
+            </header>
+
+            <div class="grid gap-8">
+                
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">rmcp</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 17
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/rmcp" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The rmcp repository is a project for a custom Minecraft server</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">🤝 Adjacent — Related Repositories Recommender</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 4
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/adjacent" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The adjacent repository provides a way to add and display related repositories to your README files.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">github-tools</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">recommender</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">related-repos</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">📈 GitHub Aggregate Stats</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/allstar" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">A collection of repositories in one place, tracking stats and aggregating data across all public repositories in an org and under a specific username.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">analytics</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">github</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">stats</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">tableqa</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 22
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/tableqa" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.gojiberries.io/cell-mates-extracting-useful-information-from-tables-for-llms/" class="icon-button border border-gray-200 bg-white" target="_blank" title="View Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The tableqa repository provides a tool to extract useful information from tables for Large Language Models (LLMs) to improve their performance and accuracy.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">AudioBook Buddy</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <a href="https://github.com/gojiplus/reader" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The reader project aims to improve the reading experience with a better way to access and manage books.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">ghostsky</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/ghostsky" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">Automate the posting of new Ghost blog content to a designated blog (bsky) using a random or new blog</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">bsky-bot</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">ghost-blog</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">github</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">Notary: PyPI Digital Attestation Shield Generation Service</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/notary" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">A Python service to generate Attestation Shields for PyPI packaging data from PyPI records.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">Advertiser: Post a GenAI-Summarized GitHub Repo to Bluesky</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/advertiser" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The advertiser repository generates posts to bsky with a one-liner about the repository itself, along with a minimum of 5 stars, utilizing OpenAI.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">bsky-bot</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">github</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">BlogSky. Blogspot Atom → Bluesky</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/blogsky" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">This project automates the process of migrating a Blogspot blog to GitHub via GitHub Action, making it easier to showcase and maintain your projects</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">📊 Dataverse to Bluesky GitHub Action</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/datasky" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">A random repository from Dataverse, possibly used for data sharing and collaboration.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">bluesky</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">dataverse</span><span class="px-2 py-1 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">github</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl border border-white/20 hover:shadow-2xl transition-all p-6 relative card-shadow ">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-gray-900">BloomJoin: Bloom Filter Based Joins</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 1
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/bloomjoin" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-gray-900 mb-4">The bloomjoin R package efficiently performs joins on large datasets using Bloom filter-based approaches.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+            </div>
         </div>
     </div>
 </body>
