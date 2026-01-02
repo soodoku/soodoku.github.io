@@ -11,6 +11,7 @@ body {
   background: #ffffff;
   color: #555;
   line-height: 1.6em;
+  font-size: .9rem;
 }
 
 h1, h3 {
@@ -215,7 +216,7 @@ details[open] summary::before {
   box-sizing: border-box;
   margin-top: 40px;    /* Adds vertical offset */
   margin-left: 40px;   /* Adds horizontal offset */
-  font-size: .9em;
+  font-size: 1rem;
 }
 
 .sidebar ul {
