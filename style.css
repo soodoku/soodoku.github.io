@@ -115,9 +115,13 @@ details[open] summary::before {
 
 /* Category toggle specific styles */
 .category-toggle {
-  font-size: 1.1rem;  /* Roughly 17-18px. Try 1.2rem for larger. */
+  font-size: 1rem;  /* Roughly 17-18px. Try 1.2rem for larger. */
   font-weight: 600;   /* Optional: makes the text slightly bolder */
   cursor: pointer;    /* Optional: ensures a hand icon appears on hover */
+}
+
+.category-toggle details summary {
+  font-size: .9rem; /* Slightly smaller than the top level */
 }
 
 /* Article toggle specific styles - add indentation for nested toggles */
