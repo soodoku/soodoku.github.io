@@ -36,6 +36,7 @@ h3 {
 a {
   text-decoration: none;
   color: #555;
+  letter-spacing: 0.05em;
   font-weight: 500;
 }
 
