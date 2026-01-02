@@ -115,7 +115,9 @@ details[open] summary::before {
 
 /* Category toggle specific styles */
 .category-toggle {
-  /* Any specific styling for category toggles here */
+  font-size: 1.1rem;  /* Roughly 17-18px. Try 1.2rem for larger. */
+  font-weight: 600;   /* Optional: makes the text slightly bolder */
+  cursor: pointer;    /* Optional: ensures a hand icon appears on hover */
 }
 
 /* Article toggle specific styles - add indentation for nested toggles */
