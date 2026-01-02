@@ -25,6 +25,7 @@ h1, h3 {
 h1 {
   font-size: 3.5em;
   line-height: 1.1em;
+  letter-spacing: .1em;
 }
 
 h3 {
