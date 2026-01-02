@@ -11,7 +11,7 @@ body {
   background: #ffffff;
   color: #555;
   line-height: 1.6em;
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 h1, h3 {
@@ -38,6 +38,7 @@ a {
   color: #555;
   letter-spacing: 0.05em;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 a:hover {
