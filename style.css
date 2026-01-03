@@ -162,17 +162,16 @@ details summary {
 /* Hide default marker */
 details summary::-webkit-details-marker { display: none; }
 
-/* The Arrow: A crisp text-based greater-than sign */
 details summary::before {
   content: ">";
-  font-family: monospace; /* Monospace font makes it look precise/technical */
-  font-size: 1.1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
   font-weight: 700;
-  color: #555;
+  color: #666;
   position: absolute;
   left: 0;
-  top: 0.1rem;
-  transition: transform 0.2s ease;
+  top: 0.2rem;
+  transition: transform 0.15s ease-out;
   line-height: 1;
 }
 
@@ -183,22 +182,22 @@ details[open] > summary::before {
 
 /* LEVEL 1: Top Category (Big & Bold) */
 .category-toggle > summary {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #222;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #333;
 }
 
 /* LEVEL 2: Nested Sub-Category (Medium) */
 .category-toggle details > summary {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: .95rem;
+  font-weight: 400;
   color: #444;
 }
 
 /* LEVEL 3: Deep Nested Items (Small & Light) */
 .category-toggle details details > summary {
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 300;
   color: #555;
 }
 
