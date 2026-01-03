@@ -169,8 +169,8 @@ details summary::before {
   content: "⌄";
   font-family: Arial, sans-serif;
   font-size: 1.1rem;
-  font-weight: 400;
-  color: #aaa;
+  font-weight: 500;
+  color: #777;
   position: absolute;
   left: 0;
   top: .15rem;
@@ -188,7 +188,7 @@ details[open] > summary::before {
 
 /* LEVEL 1: Top Category (Big & Bold) */
 .category-toggle > summary {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #333;
 }
