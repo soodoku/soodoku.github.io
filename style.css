@@ -14,7 +14,7 @@ body {
   background: #ffffff;
   color: #555;
   line-height: 1.6;
-  font-size: 1rem; /* Base size */
+  font-size: 1rem;
 }
 
 /* =========================================
@@ -43,7 +43,7 @@ h3 {
 a {
   text-decoration: none;
   color: #555;
-  letter-spacing: 0.1em; /* 'em' is better for letter-spacing specifically */
+  letter-spacing: 0.1em;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -54,14 +54,14 @@ a:hover {
 
 /* Top Menu Links (Blog | Research) */
 a.home {
-  font-size: .9rem; 
-  font-weight: 300;
+  font-size: 1.3rem; 
+  font-weight: 700;
   color: #333;
 }
 
-/* Name Styling (Used in h1 and site-title) */
-.first { color: #005f9e; } /* Blue 'g' */
-.last  { color: #111; }    /* Black 'sood' */
+/* Name Styling */
+.first { color: #005f9e; }
+.last  { color: #111; }
 
 .site-title {
   font-family: 'Droid Sans', sans-serif;
@@ -82,7 +82,7 @@ a.home {
 }
 
 .sidebar {
-  width: 16rem; /* approx 250px */
+  width: 16rem;
   box-sizing: border-box;
   margin-top: 2.5rem;
   margin-left: 2.5rem;
@@ -95,7 +95,6 @@ a.home {
   box-sizing: border-box;
 }
 
-/* Sidebar Navigation */
 .sidebar ul {
   list-style: none;
   font-family: 'Droid Sans', sans-serif;
@@ -109,7 +108,7 @@ a.home {
 }
 
 .sidebar ul li::before {
-  content: none; /* Remove default bullets for sidebar */
+  content: none; 
 }
 
 .sidebar ul li a {
@@ -122,9 +121,8 @@ a.home {
 }
 
 /* =========================================
-   5. Components (Lists, Toggles, etc.)
+   5. Components (Lists & Toggles)
    ========================================= */
-
 ul {
   margin: 0 0 0 1.5rem;
   padding: 0;
@@ -145,37 +143,40 @@ ul li::before {
   font-size: 0.8rem;
 }
 
-/* --- TOGGLES HIERARCHY --- */
+/* --- THE "ENOS" MINIMALIST TOGGLES --- */
 
-/* Base Details Styling */
 details {
   margin: 1rem 0 1rem 1.5rem;
   font-family: 'Droid Sans', sans-serif;
 }
 
-/* Base Arrow Styling */
 details summary {
   list-style: none;
   cursor: pointer;
   display: block;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 1.4rem; /* Space for the arrow */
+  outline: none;
 }
 
+/* Hide default marker */
 details summary::-webkit-details-marker { display: none; }
 
+/* The Arrow: A crisp text-based greater-than sign */
 details summary::before {
-  content: "▸";
-  font-size: 1.3rem;
+  content: ">";
+  font-family: monospace; /* Monospace font makes it look precise/technical */
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #555;
   position: absolute;
   left: 0;
-  top: -0.1rem;
+  top: 0.1rem;
   transition: transform 0.2s ease;
-  color: #333;
-  transform: rotate(0deg);
   line-height: 1;
 }
 
+/* Rotate 90 degrees (point down) when open */
 details[open] > summary::before {
   transform: rotate(90deg);
 }
@@ -183,21 +184,21 @@ details[open] > summary::before {
 /* LEVEL 1: Top Category (Big & Bold) */
 .category-toggle > summary {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #222;
 }
 
 /* LEVEL 2: Nested Sub-Category (Medium) */
 .category-toggle details > summary {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #444;
 }
 
 /* LEVEL 3: Deep Nested Items (Small & Light) */
 .category-toggle details details > summary {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #555;
 }
 
@@ -207,7 +208,7 @@ details details {
 }
 
 /* =========================================
-   6. Utilities & Misc
+   6. Utilities
    ========================================= */
 .link-separator {
   display: inline-block;
@@ -240,9 +241,8 @@ details details {
   padding-left: 1.2rem;
 }
 
-/* Footer / Small Text */
 .footer, .new, .small, .contentarea, .smallbold {
-  font-size: 0.7rem; /* approx 11px */
+  font-size: 0.7rem; 
   color: #333;
   font-family: 'Lato', sans-serif;
 }
