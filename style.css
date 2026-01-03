@@ -159,25 +159,28 @@ details summary {
   outline: none;
 }
 
+
 /* Hide default marker */
 details summary::-webkit-details-marker { display: none; }
 
 details summary::before {
-  content: ">";
+  content: "⌄";
   font-family: Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #666;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #aaa;
   position: absolute;
   left: 0;
-  top: 0.2rem;
+  top: -.15rem;
   transition: transform 0.15s ease-out;
   line-height: 1;
+  display: inline-block;
+  transform: rotate(-90deg);
 }
 
 /* Rotate 90 degrees (point down) when open */
 details[open] > summary::before {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 /* LEVEL 1: Top Category (Big & Bold) */
