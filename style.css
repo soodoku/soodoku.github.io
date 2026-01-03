@@ -173,7 +173,7 @@ details summary::before {
   color: #777;
   position: absolute;
   left: 0;
-  top: .15rem;
+  top: .2rem;
   transition: transform 0.15s ease-out;
   line-height: 1;
   display: inline-block;
