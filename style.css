@@ -44,6 +44,12 @@ a:hover {
   color: #000;
 }
 
+a.home {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333; 
+}
+
 .link-separator {
     display: inline-block;
     border-left: 1.5px dotted #333; 
@@ -97,22 +103,24 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
+/* Replace the existing details summary::before block with this */
 details summary::before {
-  content: "⌄"; 
+  content: "▸";    
   font-size: 1.3em;
   position: absolute;
   left: 0;
-  top: -0.1em;
-  transition: transform 0.3s ease;
+  top: 0em;          
+  transition: transform 0.2s ease;
   color: #333;
-  transform: rotate(0deg);
-  vertical-align: middle;
-  line-height: 0.5;
+  transform: rotate(0deg); 
+  line-height: 1;
 }
 
-details[open] summary::before {
-  transform: rotate(180deg);
+
+details[open] > summary::before {
+  transform: rotate(90deg); 
 }
+
 
 /* Category toggle specific styles */
 .category-toggle {
