@@ -125,7 +125,6 @@ a.home {
    5. Components (Lists, Toggles, etc.)
    ========================================= */
 
-/* General Lists */
 ul {
   margin: 0 0 0 1.5rem;
   padding: 0;
@@ -146,28 +145,27 @@ ul li::before {
   font-size: 0.8rem;
 }
 
-/* Toggles (Details/Summary) - FIXED */
+/* --- TOGGLES HIERARCHY --- */
+
+/* Base Details Styling */
 details {
   margin: 1rem 0 1rem 1.5rem;
   font-family: 'Droid Sans', sans-serif;
-  font-size: 0.9rem;
 }
 
+/* Base Arrow Styling */
 details summary {
   list-style: none;
   cursor: pointer;
   display: block;
   position: relative;
-  padding-left: 1.5rem; /* Space for arrow */
+  padding-left: 1.5rem;
 }
 
-details summary::-webkit-details-marker {
-  display: none;
-}
+details summary::-webkit-details-marker { display: none; }
 
-/* Arrow Styling */
 details summary::before {
-  content: "▸";       /* Closed state */
+  content: "▸";
   font-size: 1.3rem;
   position: absolute;
   left: 0;
@@ -178,20 +176,34 @@ details summary::before {
   line-height: 1;
 }
 
-/* Only rotate the direct child summary to prevent nested bugs */
 details[open] > summary::before {
-  transform: rotate(90deg); /* Open state */
+  transform: rotate(90deg);
 }
 
-/* Indent nested toggles */
+/* LEVEL 1: Top Category (Big & Bold) */
+.category-toggle > summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* LEVEL 2: Nested Sub-Category (Medium) */
+.category-toggle details > summary {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+}
+
+/* LEVEL 3: Deep Nested Items (Small & Light) */
+.category-toggle details details > summary {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+}
+
+/* Indent nested levels */
 details details {
   margin-left: 1.5rem;
-}
-
-/* Category Toggles (Top Level) */
-.category-toggle > summary {
-  font-size: 1.1rem;
-  font-weight: 600;
 }
 
 /* =========================================
