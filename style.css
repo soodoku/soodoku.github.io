@@ -79,6 +79,7 @@ a.home {
 .container {
   display: flex;
   min-height: 100vh;
+  justify-content: center;
 }
 
 .sidebar {
