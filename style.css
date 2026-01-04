@@ -121,6 +121,17 @@ a.home {
   color: #007acc;
 }
 
+ .home-content {
+          padding: 0 6rem 5rem 6rem; /* Left/Right/Bottom margin */
+          width: 95%;         
+          margin: 0 auto;
+        }
+
+        .home-hero {
+          margin-top: 10.5rem; 
+          margin-bottom: 4rem;
+        }
+
 /* =========================================
    5. Components (Lists & Toggles)
    ========================================= */
