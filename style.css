@@ -90,11 +90,12 @@ a.home {
   font-size: 1rem;
 }
 
-.content {
-  flex: 1;
-  padding: 1.25rem;
-  box-sizing: border-box;
-}
+ .content {
+          flex: 1;
+          padding: 2.5rem;
+          box-sizing: border-box;
+          max-width: 1000px; 
+        }
 
 .sidebar ul {
   list-style: none;
@@ -128,7 +129,7 @@ a.home {
         }
 
         .home-hero {
-          margin-top: 10.5rem; 
+          margin-top: 14rem; 
           margin-bottom: 4rem;
         }
 
