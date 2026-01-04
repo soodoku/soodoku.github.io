@@ -79,7 +79,6 @@ a.home {
 .container {
   display: flex;
   min-height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .sidebar {
@@ -92,7 +91,7 @@ a.home {
 
  .content {
           flex: 1;
-          padding: 2.5rem;
+          padding: 2.5rem 2.5rem 2.5rem 1rem;
           box-sizing: border-box;
           max-width: 1000px; 
         }
