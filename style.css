@@ -91,7 +91,7 @@ a.home {
 
  .content {
           flex: 1;
-          padding: 2.5rem 2.5rem 2.5rem 1rem;
+          padding: 2.5rem;
           box-sizing: border-box;
           max-width: 1000px; 
         }
