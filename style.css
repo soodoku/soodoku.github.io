@@ -105,13 +105,10 @@ a.home {
   width: 17rem;
   box-sizing: border-box;
   margin-top: 2.5rem;
-  margin-right: 3rem; 
+  margin-right: 2rem; 
   margin-left: 0;
   flex-shrink: 0;
-  
-  /* CHANGED: Removed fixed 'font-size: 1rem'. 
-     Now using 0.95em so it scales relative to the body size. */
-  font-size: 0.95em; 
+  font-size: 1.2rem; 
 }
 
 .content {
