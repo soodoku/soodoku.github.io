@@ -43,7 +43,7 @@ h3 {
 /* Links */
 a {
   text-decoration: none;
-  color: #555;
+  color: #444;
   letter-spacing: normal;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -160,7 +160,6 @@ ul li::before {
 
 details {
   margin: 1rem 0 1rem 1.5rem;
-  font-family: 'Droid Sans', sans-serif;
 }
 
 details summary {
@@ -170,6 +169,7 @@ details summary {
   position: relative;
   padding-left: 1.4rem; /* Space for the arrow */
   outline: none;
+  font-size: 1.2rem;
 }
 
 
@@ -215,12 +215,13 @@ details[open] > summary::before {
 .category-toggle details details > summary {
   font-size: 0.85rem;
   font-weight: 300;
-  color: #555;
+  color: #444;
 }
 
 /* Indent nested levels */
 details details {
   margin-left: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* =========================================
