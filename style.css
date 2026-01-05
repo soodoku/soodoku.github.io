@@ -145,6 +145,9 @@ a.home {
   color: #0056b3;
 }
 
+.sidebar .site-title {
+  text-align: right;
+}
 
 /* =========================================
    5. Layout: Home Page (Single Column)
