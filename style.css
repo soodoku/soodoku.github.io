@@ -270,3 +270,71 @@ details details {
   color: #000;
   font-family: 'Lato', sans-serif;
 }
+
+/* =========================================
+   7. Mobile Strategy (Responsive Design)
+   ========================================= */
+@media (max-width: 768px) {
+  
+  /* 1. Stack Sidebar on top of Content */
+  .container {
+    flex-direction: column;
+    align-items: center; /* Center everything */
+    justify-content: flex-start;
+  }
+
+  /* 2. Adjust Sidebar for Mobile */
+  .sidebar {
+    width: 100%;       /* Full width */
+    max-width: 400px;  /* But don't get too crazy wide */
+    margin-top: 1.5rem;
+    margin-right: 0;   /* Remove the side gap */
+    margin-bottom: 2rem; /* Add a bottom gap */
+    margin-left: 0;
+    
+    text-align: center; /* Center the links */
+    padding: 0 1rem;    /* Add breathing room */
+  }
+
+  /* Force the sidebar list to center (overriding text-align: right) */
+  .sidebar ul {
+    text-align: center;
+  }
+
+  /* 3. Adjust Content for Mobile */
+  .content {
+    width: 100%;
+    padding: 1rem 1.5rem; /* Reduce padding so text has more room */
+    flex: auto; /* Let it fill naturally */
+  }
+  
+  /* 4. Fix Home Page Mobile Padding */
+  .home-content {
+    padding: 0 1.5rem 3rem 1.5rem; /* Less padding on edges */
+    min-height: auto; /* Don't force full height on mobile */
+    margin-top: 2rem;
+  }
+  
+  /* 5. Scale down the massive headers slightly for mobile */
+  h1 {
+    font-size: 2.5rem; /* Down from 3.5rem */
+  }
+  
+  h3 {
+    font-size: 1.6rem; /* Down from 2.2rem */
+    margin-left: 0;    /* Ensure alignment */
+  }
+  
+  /* 6. Fix "Project/Paper" Indents */
+  /* Remove the hanging indent effect on mobile to save space */
+  .abstract, ul {
+    padding-left: 0;
+    margin-left: 0.5rem;
+  }
+  
+  ul li::before {
+    position: relative; /* Move bullet inside the flow */
+    left: 0;
+    margin-right: 0.5rem;
+  }
+}
