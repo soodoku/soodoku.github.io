@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <summary>ECONOMETRICS, STATISTICS, AND DATA COLLECTION</summary>
 
     <details class="category-toggle">
-    <summary>ROBUST ML/STATS. AND LESS GREEDY APPROACHES</summary>
+    <summary>PREDICTION STABILITY</summary>
 
 				<details>
 				  <summary>&#127793; <a href="papers/forget.pdf" target = "_blank">(Don't) Forget About It: Forgetting Penalized Supervised Learning</a><br>
@@ -88,34 +88,22 @@ document.addEventListener('DOMContentLoaded', function() {
 			</details>
 
 			<details>
-			  <summary>&#128230; <a href="https://github.com/soodoku/incline" target = "_blank">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
-			  	<div class="abstract">Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.</div>
-			</details>
-
-			<details>
 				  <summary>&#127793; <a href="papers/bootconsistency.pdf" target = "_blank">Bootstrap Consistency Regularization for Stable Neural Network Predictions</a><br>
 				  	&#x1F5C3;  <a href="https://github.com/finite-sample/consistentshade" target = "_blank">Replication Materials</a></summary>
-				  	<div class="abstract"></div>
+				  	<div class="abstract">Neural networks trained on the same data with different random seeds or slightly perturbed training sets can produce substantially different predictions for individual examples, even when aggregate accuracy is similar. We add a consistency penalty to the training loss that penalizes prediction disagreement across bootstrap resamples of the training data, encouraging the network to find solutions whose individual-level predictions are stable under resampling.</div>
 				</details>
 
 				<details>
 			  <summary>&#127793; <a href="https://github.com/finite-sample/ensemble-proximity/" target = "_blank">Selecting for Stability: Choose the Model Closest to the Ensemble</a>
 			  </summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">Ensembles reduce prediction variance but are expensive to deploy. Rather than averaging all models at inference time, select the single model whose predictions are closest to the ensemble average. This gives you most of the ensemble's stability benefit at the cost of a single model, with a principled selection criterion that avoids arbitrary choices among models with similar aggregate performance.</div>
 			</details>
-
-
-				<details>
-				  <summary>&#127793; <a href="papers/causalml.pdf" target = "_blank">Causal Debiasing for Robust Machine Learning</a><br>
-				  	<div class="abstract"></div>
-				</details>
 
 		</details>
 
 
     <details class="category-toggle">
-    <summary>CALIBRATION AND RAKING</summary>
-
+    <summary>CALIBRATION &amp; WEIGHTING</summary>
 
     	<details>
 			  <summary>&#127793; <a href="papers/calibre.pdf" target = "_blank">Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression</a><br>
@@ -125,34 +113,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     	<details>
 			  <summary>&#128230; <a href="https://github.com/finite-sample/fairlex" target = "_blank">fairlex: leximin calibration</a></summary>
-		  	<div class="abstract"></div>
+		  	<div class="abstract">Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group's calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups.</div>
 			</details>
-
 
 			<details>
 			  <summary>&#127793; <a href="papers/multiclass-rank-calibration.pdf" target = "_blank">Rank-Preserving Calibration for Multiclass Classification</a><br>
 				&#128230; <a href="https://github.com/finite-sample/rank_preserving_calibration" target = "_blank">Rank Preserving Calibration of Multiclass Probabilities</a></summary>
-		  	<div class="abstract"></div>
+		  	<div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
 			</details>
-
 
 			<details>
 			  <summary>&#127793; <a href="papers/mwu-eb.pdf" target = "_blank">First-Order Entropy Balancing via Dual Gradient Descent</a><br>
 			  	&#x1F5C3;  <a href="https://github.com/finite-sample/adaptive-eb" target = "_blank">Replication Materials</a></summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">Entropy balancing finds survey weights that satisfy exact moment constraints while staying close to uniform weights in KL divergence. Standard implementations solve this via Newton's method on the dual, which requires computing and inverting a Hessian at each step. We show that first-order methods—multiplicative weight updates and dual gradient descent—converge reliably, scale to high-dimensional constraint sets, and avoid the numerical instabilities that plague second-order solvers when constraints are near-collinear.</div>
 			</details>
 
-    		<details>
+    	<details>
 			  <summary>&#127793; <a href="papers/onlinerake.pdf" target = "_blank">Streaming Calibration With MWU and SGD</a><br>
-			  	<summary>&#128230; <a href="https://github.com/finite-sample/onlinerake" target = "_blank">Python Package</a></summary>
-			  	<div class="abstract"></div>
+			  	&#128230; <a href="https://github.com/finite-sample/onlinerake" target = "_blank">Python Package</a></summary>
+			  	<div class="abstract">Survey raking and probability calibration are traditionally batch procedures: collect all the data, then solve for weights or a calibration map. When data arrive in a stream—or the target distribution drifts—batch methods require repeated re-computation. We develop online versions of raking and calibration using multiplicative weight updates (MWU) and stochastic gradient descent (SGD), processing one observation at a time with convergence guarantees.</div>
 			</details>
 
-			 <details>
+			<details>
 			  <summary><a href="papers/score_signs.pdf" target = "_blank">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a></summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">LLM-as-judge systems produce numerical scores, but downstream decisions often require pairwise comparisons: which response is better? Converting scores to win rates requires calibration—the mapping from score differences to win probabilities. We develop calibrated estimators for pairwise win rates from cardinal LLM judge scores, accounting for judge miscalibration and non-transitivity in preferences.</div>
 			</details>
-			
 
 	  </details>
 
@@ -160,31 +145,27 @@ document.addEventListener('DOMContentLoaded', function() {
     <summary>RECORD LINKAGE</summary>
 
     	<details>
-		  <summary>&#x1F331; <a href="https://github.com/finite-sample/fuzzy" target="_blank">Inference With Fuzzy-Joined Data</a><br>
+		  <summary>&#127793; <a href="https://github.com/finite-sample/fuzzy" target="_blank">Inference With Fuzzy-Joined Data</a></summary>
 		    <div class="abstract">Data products built on fuzzy joins ship a single canonical linkage, hiding the many-to-many candidate-match graph from which it was constructed. The two obvious things to do with that graph—expand it into a regression dataset or average covariates across candidates—both produce biased estimates. The expanded join attenuates; the collapsed estimator has a nonclassical errors-in-variables structure whose sign is indeterminate without ground truth. Multiple imputation over candidate assignments avoids both pathologies. Rubin's rules propagate matching uncertainty, and the between-imputation share of variance tells you whether matching uncertainty matters.</div>
-		  </summary>
 		</details>
 
 		<details>
-		  <summary>&#x1F4E6; <a href="https://github.com/finite-sample/setjoin" target="_blank">setjoin: Record Linkage That Preserves Group Structure</a><br>
+		  <summary>&#128230; <a href="https://github.com/finite-sample/setjoin" target="_blank">setjoin: Record Linkage That Preserves Group Structure</a></summary>
 		    <div class="abstract">Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity.</div>
-		  </summary>
 		</details>
 
 		<details>
-		  <summary>&#x1F4E6; <a href="https://github.com/finite-sample/tether" target="_blank">tether: High-Precision Record Linkage</a><br>
+		  <summary>&#128230; <a href="https://github.com/finite-sample/tether" target="_blank">tether: High-Precision Record Linkage</a></summary>
 		    <div class="abstract">A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores.</div>
-		  </summary>
 		</details>
 
 		<details>
-		  <summary>&#x1F4E6; <a href="https://github.com/gojiplus/bloomjoin" target="_blank">BloomJoin: Bloom Filter Based Joins</a><br>
-		    <div class="abstract"></div>
-		  </summary>
+		  <summary>&#128230; <a href="https://github.com/gojiplus/bloomjoin" target="_blank">BloomJoin: Bloom Filter Based Joins</a></summary>
+		    <div class="abstract">An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join.</div>
 		</details>
 
 	  </details>
-    	
+
     <details class="category-toggle">
     <summary>DATA COLLECTION</summary>
 
@@ -193,10 +174,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				With Doug Ahler and Carrie Roush. <i>Political Science Research and Methods,</i> 2021.<br>
 				&#x1F5C3;  <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK" target = "_blank">Replication Materials</a>
 				</summary>
-			  	<div class="abstract">While Amazon’s Mechanical Turk (MTurk) has reduced the cost of collecting original
+			  	<div class="abstract">While Amazon's Mechanical Turk (MTurk) has reduced the cost of collecting original
 					data, in 2018, researchers noted the potential existence of a large number of bad actors
 					on the platform. To evaluate data quality on MTurk, we fielded three surveys between
-					2018 and 2020. While find no evidence of a “bot epidemic,” significant portions of the
+					2018 and 2020. While find no evidence of a "bot epidemic," significant portions of the
 					data—between 25%-35%—are of dubious quality. While the number of IP addresses
 					that completed the survey multiple times or circumvented location requirements fell
 					almost 50% over time, suspicious IP addresses are more prevalent on MTurk than on
@@ -209,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			<details>
 			  <summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf" target = "_blank">Optimal Data Collection When Strata and Strata Variances Are Known</a><br>
 				With Ken Cor.</summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">When the population is divided into known strata with known variances, the optimal allocation of a fixed sample budget across strata depends on stratum size, variance, and sampling cost. We derive the optimal allocation and show how much efficiency is lost by common rules of thumb like proportional allocation.</div>
 			</details>
 
 			<details>
@@ -220,39 +201,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			<details>
 			  <summary>&#128230; <a href="https://github.com/geosensing/allocator" target = "_blank">Allocator: Optimal Itineraries For Spatially Distributed Tasks</a><br>With Suriyan Laohaprapanon.</summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment.</div>
 			</details>
 
 			<details>
 			  <summary>&#128230; <a href="https://github.com/gojiplus/reporoulette" target = "_blank">reporoulette: Randomly Sample GitHub Repositories</a></summary>
-			  	<div class="abstract"></div>
+			  	<div class="abstract">Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research.</div>
+			</details>
+
+			<details>
+			  <summary>&#127793; <a href="papers/fewest-items.pdf" target = "_blank">Unbiased Regression with Costly Item Labels</a><br>
+					&#128230; <a href="https://github.com/finite-sample/fewlab" target = "_blank">fewlab: fewest items to label for unbiased OLS on shares</a>
+			  </summary>
+			  	<div class="abstract">When running OLS on per-row trait shares (e.g., fraction of items in a category), labeling every item is expensive. Random labeling wastes budget on items that barely affect the regression. fewlab identifies the items with the highest statistical leverage—those that most influence the coefficient estimates—and prioritizes them for labeling, achieving unbiased OLS with a fraction of the labeling cost.</div>
 			</details>
 
   	</details>
 
   	<details class="category-toggle">
     <summary>CAUSAL INFERENCE</summary>
-    		<details>
-				  <summary>&#127793; <a href="https://github.com/finite-sample/late/" target = "_blank">Inferring Treatment Compliance from Delivery-Window Data</a> </summary>
-			  	<div class="abstract"></div>
-			</details>
-
-			<details>
-			  <summary>&#127793; <a href="https://github.com/finite-sample/tworeg/" target = "_blank">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-
-			<details>
-				  <summary>&#127793; <a href="https://github.com/finite-sample/swaps" target = "_blank">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a> </summary>
-			  	<div class="abstract"></div>
-			</details>
-
 
     	<details>
-			  <summary>&#127793; <a href="https://github.com/finite-sample/smooth-operator" target = "_blank">Smooth Operator: Optimal Filtering of Event Study Estimates</a>
-			  </summary>
-			  	<div class="abstract"></div>
+			  <summary>&#127793; <a href="https://github.com/finite-sample/late/" target = "_blank">Inferring Treatment Compliance from Delivery-Window Data</a></summary>
+			  	<div class="abstract">In randomized experiments with imperfect compliance, the LATE requires observing treatment receipt, and the Wald estimator requires monotonicity. When receipt is unobserved but the experiment has a pre-treatment time series and a distinct delivery window, a structural break test applied to the delivery window can classify treated units into compliers, never-takers, and defiers. This yields an inferred compliance rate with closed-form bias correction, an empirical test of monotonicity via defier detection, and a characterization of the complier subpopulation that can be projected onto the control group.</div>
+			</details>
+
+			<details>
+			  <summary>&#127793; <a href="https://github.com/finite-sample/tworeg/" target = "_blank">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a></summary>
+			  	<div class="abstract">When ML predictions are used as regressors in downstream models, prediction error is non-classical and a growing literature proposes purpose-built corrections (GMM, prediction-powered inference, IV, joint MLE). For linear downstream models, regression calibration—replacing the ML prediction with E[X | X̂, Z] estimated on a calibration sample—already eliminates the non-classical error structure under an exogeneity condition these methods also rely on. Two OLS regressions and a two-sample bootstrap give you consistent estimates with valid confidence intervals. For nonlinear downstream models (logistic, Poisson, any GLM), Jensen's inequality breaks the argument and heavier methods are genuinely needed. The linear/nonlinear boundary is the main result.</div>
+			</details>
+
+			<details>
+			  <summary>&#127793; <a href="https://github.com/finite-sample/swaps" target = "_blank">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a></summary>
+			  	<div class="abstract">When a regression uses a proxy instead of the true covariate, how much does it matter—and where? The validation-swap framework answers both questions using an internal validation sample where both the true value and the proxy are observed. Swap validated truths into the proxy design matrix row by row and watch the coefficient move. The swap path traces the coefficient as a function of the fraction of validated rows swapped in: flat means the proxy is fine, steep means it isn't. A Shapley-value decomposition (SIM) identifies which rows drive the distortion, and a portable risk score defines a proxy-safe domain on the full sample.</div>
+			</details>
+
+			<details>
+			  <summary>&#127793; <a href="https://github.com/finite-sample/smooth-operator" target = "_blank">Smooth Operator: Optimal Filtering of Event Study Estimates</a></summary>
+			  	<div class="abstract">Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period's estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size.</div>
+			</details>
+
+			<details>
+			  <summary>&#127793; <a href="papers/causalml.pdf" target = "_blank">Causal Debiasing for Robust Machine Learning</a></summary>
+			  	<div class="abstract">Spurious associations in training data arise because models learn correlations rather than causal relations. We propose a composite loss that incorporates causal and behavioral priors: an invariance penalty for label-preserving perturbations (e.g., swapping gendered pronouns should not change predictions), a directional penalty for perturbations that should change the label in a known direction, and a falsification penalty inspired by epidemiological negative controls that discourages reliance on features with no causal relationship to the outcome. The framework unifies ideas from CheckList-style behavioral testing, causal inference, and adversarial robustness into a single training objective.</div>
 			</details>
 
 	  </details>
@@ -260,68 +251,37 @@ document.addEventListener('DOMContentLoaded', function() {
   	<details class="category-toggle">
     <summary>OTHER</summary>
 
-    	
-    	
-    	
-     	
-     	<details>
-			  <summary>&#127793; <a href="papers/steer.pdf" target = "_blank">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-
-    	
     	<details>
-			  <summary>&#128230; <a href="https://github.com/finite-sample/hessband" target = "_blank">Analytic‑Hessian Bandwidth Selection</a><br>
-			  </summary>
-			  	<div class="abstract"></div>
+			  <summary>&#127793; <a href="papers/steer.pdf" target = "_blank">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></summary>
+			  	<div class="abstract">Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.</div>
 			</details>
-
-    	
-    	<details>
-			  <summary>&#128230; <a href="https://github.com/finite-sample/alsgls" target = "_blank">A Lightweight ALS Solver for Iterative GLS</a><br>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-
-
-    	<details>
-			  <summary>&#127793; <a href="papers/fewest-items.pdf" target = "_blank">Unbiased Regression with Costly Item Labels</a><br>
-					&#128230; <a href="https://github.com/finite-sample/fewlab" target = "_blank">fewlab: fewest items to label for unbiased OLS on shares</a>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-
 
 			<details>
-			  <summary>&#x1F5C3;  <a href="https://github.com/finite-sample/optimal_classification_cutoffs" target = "_blank">Optimal Classification Cutoffs for F1-score, etc.</a><br>
-			  	<div class="abstract"></div>
+			  <summary>&#128230; <a href="https://github.com/soodoku/incline" target = "_blank">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
+			  	<div class="abstract">Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.</div>
 			</details>
 
-			
+			<details>
+			  <summary>&#128230; <a href="https://github.com/finite-sample/hessband" target = "_blank">Analytic&#x2011;Hessian Bandwidth Selection</a></summary>
+			  	<div class="abstract">Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search.</div>
+			</details>
 
-		 
+			<details>
+			  <summary>&#128230; <a href="https://github.com/finite-sample/alsgls" target = "_blank">A Lightweight ALS Solver for Iterative GLS</a></summary>
+			  	<div class="abstract">Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly.</div>
+			</details>
+
+			<details>
+			  <summary>&#x1F5C3;  <a href="https://github.com/finite-sample/optimal_classification_cutoffs" target = "_blank">Optimal Classification Cutoffs for F1-score, etc.</a></summary>
+			  	<div class="abstract">Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice.</div>
+			</details>
+
 			<details>
 			  <summary>&#128230; <a href="https://github.com/gojiplus/pyppur" target = "_blank">pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss</a></summary>
 			  	<div class="abstract">pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion.</div>
 			</details>
 
-			
-
-			<details>
-			  <summary><a href="papers/guess.pdf" target = "_blank">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br>
-					With Ken Cor. <i>Political Analysis</i>. 24(2): 226&ndash;242, 2016. <br>
-				&#x1F5C3; <a href="http://dx.doi.org/10.7910/DVN/HZHVCU" target = "_blank">Replication Materials</a><br>
-				<span class="highlight">REVIEW</span>:  '... a real contribution to the literature.' &mdash; <a href="http://web.stanford.edu/~haertel/" target = "_blank">Ed Haertel</a><br>
-				<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/soodoku/guess" target = "_blank">R Package</a> for implementing the method. </summary>
-			  	<div class="abstract">Guessing on closed-ended knowledge items is common. Under likely to hold assumptions, in presence of guessing, the most common estimator of learning, difference between pre- and post-process scores, is negatively biased. To account for guessing related error, we develop a latent class model of how people respond to knowledge questions and identify the model with the mild assumption that people do not lose knowledge over short periods of time. A Monte Carlo simulation over a broad range of informative processes and knowledge items shows that the simple difference score is negatively biased and the method we develop here, unbiased. To demonstrate its use, we apply our model to data from Deliberative Polls. We find that estimates of learning once adjusted for guessing are about 13% higher. Adjusting for guessing also eliminates the gender gap in learning, and halves the pre-deliberation gender gap on political knowledge.</div>
-			</details>
-
-			<details>
-			  <summary><a href="papers/k_gains.pdf" target = "_blank">Measuring Learning in Informative Processes</a><br>
-				With Robert Luskin and Ariel Helfer.</summary>
-			  	<div class="abstract"></div>
-			</details>
+		</details>
 
 		</details>
 		
@@ -412,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			  <summary>&#128230; <a href="https://github.com/gojiplus/rmcp/" target = "_blank">rmcp: R MCP Community Server</a></summary>
 			  	<div class="abstract"></div>
 			</details>
-			
+
     	<details>
 		  <summary>&#128230; <a href="https://github.com/gojiplus/statqa">StatQA: Extract Multimodal Stats Q/A from Tables With Provenance</a><br></summary>
 		  	<div class="abstract">StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training.</div>
