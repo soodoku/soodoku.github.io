@@ -156,6 +156,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	  </details>
 
+	  <details class="category-toggle">
+    <summary>RECORD LINKAGE</summary>
+
+    	<details>
+		  <summary>&#x1F331; <a href="https://github.com/finite-sample/fuzzy" target="_blank">Inference With Fuzzy-Joined Data</a><br>
+		    <div class="abstract">Data products built on fuzzy joins ship a single canonical linkage, hiding the many-to-many candidate-match graph from which it was constructed. The two obvious things to do with that graph—expand it into a regression dataset or average covariates across candidates—both produce biased estimates. The expanded join attenuates; the collapsed estimator has a nonclassical errors-in-variables structure whose sign is indeterminate without ground truth. Multiple imputation over candidate assignments avoids both pathologies. Rubin's rules propagate matching uncertainty, and the between-imputation share of variance tells you whether matching uncertainty matters.</div>
+		  </summary>
+		</details>
+
+		<details>
+		  <summary>&#x1F4E6; <a href="https://github.com/finite-sample/setjoin" target="_blank">setjoin: Record Linkage That Preserves Group Structure</a><br>
+		    <div class="abstract">Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity.</div>
+		  </summary>
+		</details>
+
+		<details>
+		  <summary>&#x1F4E6; <a href="https://github.com/finite-sample/tether" target="_blank">tether: High-Precision Record Linkage</a><br>
+		    <div class="abstract">A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores.</div>
+		  </summary>
+		</details>
+
+		<details>
+		  <summary>&#x1F4E6; <a href="https://github.com/gojiplus/bloomjoin" target="_blank">BloomJoin: Bloom Filter Based Joins</a><br>
+		    <div class="abstract"></div>
+		  </summary>
+		</details>
+
+	  </details>
     	
     <details class="category-toggle">
     <summary>DATA COLLECTION</summary>
@@ -203,32 +231,41 @@ document.addEventListener('DOMContentLoaded', function() {
   	</details>
 
   	<details class="category-toggle">
-    <summary>OTHER</summary>
-
-    <details>
-			  <summary>&#127793; <a href="https://github.com/finite-sample/tworeg/" target = "_blank">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-    	
-    	<details>
-				  <summary>&#127793; <a href="https://github.com/finite-sample/swaps" target = "_blank">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a> </summary>
-			  	<div class="abstract"></div>
-			</details>
-     	
-     	<details>
-			  <summary>&#127793; <a href="papers/steer.pdf" target = "_blank">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a>
-			  </summary>
-			  	<div class="abstract"></div>
-			</details>
-    	
-    	<details>
+    <summary>CAUSAL INFERENCE</summary>
+    		<details>
 				  <summary>&#127793; <a href="https://github.com/finite-sample/late/" target = "_blank">Inferring Treatment Compliance from Delivery-Window Data</a> </summary>
 			  	<div class="abstract"></div>
 			</details>
 
+			<details>
+			  <summary>&#127793; <a href="https://github.com/finite-sample/tworeg/" target = "_blank">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a>
+			  </summary>
+			  	<div class="abstract"></div>
+			</details>
+
+			<details>
+				  <summary>&#127793; <a href="https://github.com/finite-sample/swaps" target = "_blank">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a> </summary>
+			  	<div class="abstract"></div>
+			</details>
+
+
     	<details>
 			  <summary>&#127793; <a href="https://github.com/finite-sample/smooth-operator" target = "_blank">Smooth Operator: Optimal Filtering of Event Study Estimates</a>
+			  </summary>
+			  	<div class="abstract"></div>
+			</details>
+
+	  </details>
+
+  	<details class="category-toggle">
+    <summary>OTHER</summary>
+
+    	
+    	
+    	
+     	
+     	<details>
+			  <summary>&#127793; <a href="papers/steer.pdf" target = "_blank">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a>
 			  </summary>
 			  	<div class="abstract"></div>
 			</details>
@@ -261,10 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			  	<div class="abstract"></div>
 			</details>
 
-			<details>
-			  <summary><a href="papers/benchmark.pdf" target = "_blank">A Benchmark For Benchmarks</a></summary>
-			  	<div class="abstract"></div>
-			</details>
+			
 
 		 
 			<details>
@@ -272,10 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			  	<div class="abstract">pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion.</div>
 			</details>
 
-			<details>
-			  <summary>&#128230; <a href="https://github.com/gojiplus/rmcp/" target = "_blank">rmcp: R MCP Community Server</a></summary>
-			  	<div class="abstract"></div>
-			</details>
+			
 
 			<details>
 			  <summary><a href="papers/guess.pdf" target = "_blank">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br>
@@ -378,6 +409,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <summary>TOOLS</summary>
 
     	<details>
+			  <summary>&#128230; <a href="https://github.com/gojiplus/rmcp/" target = "_blank">rmcp: R MCP Community Server</a></summary>
+			  	<div class="abstract"></div>
+			</details>
+			
+    	<details>
 		  <summary>&#128230; <a href="https://github.com/gojiplus/statqa">StatQA: Extract Multimodal Stats Q/A from Tables With Provenance</a><br></summary>
 		  	<div class="abstract">StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training.</div>
 			</details>
@@ -407,11 +443,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			</details>
 
 			<details>
-		  <summary>&#128230; <a href="https://github.com/gojiplus/bloomjoin">BloomJoin: Bloom Filter Based Joins</a></summary>
-		  	<div class="abstract"></div>
-			</details>
-
-			<details>
 		  <summary>&#128241; <a href="https://github.com/gojiplus/adjacent/">Adjacent — Related Repositories Recommender</a></summary>
 		  	<div class="abstract"></div>
 			</details>
@@ -431,6 +462,11 @@ document.addEventListener('DOMContentLoaded', function() {
   <details class="category-toggle">
     <summary>META SCIENCE</summary>
 
+
+<details>
+			  <summary><a href="papers/benchmark.pdf" target = "_blank">A Benchmark For Benchmarks</a></summary>
+			  	<div class="abstract"></div>
+			</details>
 
 	<details>
   <summary><a href="papers/noise_review.pdf">Review of "Noise: A Flaw in Human Judgment"</a><br>
