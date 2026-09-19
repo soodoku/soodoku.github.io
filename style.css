@@ -97,6 +97,7 @@ a.home {
    ========================================= */
 .container {
   display: flex;
+  align-items: baseline;
   min-height: 100vh;
   justify-content: center; 
 }
@@ -331,7 +332,6 @@ details details {
 @media (max-width: 768px) {
   
   .container {
-    align-items: flex-start;
     justify-content: flex-start;
   }
 
