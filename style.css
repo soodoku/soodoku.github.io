@@ -113,6 +113,8 @@ a.home {
 
 .content {
   flex: 0 1 1000px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   padding: 2.5rem;
   box-sizing: border-box;
   max-width: 1000px; 
@@ -349,7 +351,8 @@ details details {
   }
 
   /* Force the sidebar list to center (overriding text-align: right) */
-  .sidebar ul {
+  .sidebar ul,
+  .sidebar .site-title {
     text-align: center;
   }
 
@@ -358,6 +361,10 @@ details details {
     width: 100%;
     padding: 1rem 1.5rem; /* Reduce padding so text has more room */
     flex: auto; /* Let it fill naturally */
+  }
+
+  #research details {
+    margin-left: 0.5rem;
   }
   
   /* 4. Fix Home Page Mobile Padding */

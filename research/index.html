@@ -3,7 +3,7 @@
 <head>
 	<title>Gaurav Sood - Outputs</title>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="revisit- after" content="14 days" />
 	<meta name="distribution" content="global" />
 	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
@@ -20,25 +20,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const toggleButton = document.querySelector('.toggle-button');
-  const abstract = document.querySelector('.abstract');
-  
-  toggleButton.addEventListener('click', function() {
-    // Toggle abstract visibility
-    abstract.classList.toggle('visible');
-    
-    // Change arrow direction
-    if (abstract.classList.contains('visible')) {
-      toggleButton.textContent = '▾';
-    } else {
-      toggleButton.textContent = '▸';
-    }
-  });
-});
-</script>
 
 </head>
 
@@ -60,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </nav>
   <main class="content">
    
-<table cellspacing=10 cellpadding=10 width=800px><tr><td>
-<br>
 <h3>DATA, RESEARCH, AND SOFTWARE</h3>
 <div id="research">
 
@@ -459,6 +440,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	</details>
 
 	<details>
+  <summary><a href="papers/downloads_are_cheap.pdf" target = "_blank">Downloads Are Cheap: Validated Use as a Measure of Research Software</a><br>
+		&#x1F5C3; <a href="https://github.com/recite/softverse" target = "_blank">Code</a>
+		&#128202; <a href="https://doi.org/10.5281/zenodo.21943908" target = "_blank">Data</a>
+		&#128230; <a href="https://doi.org/10.5281/zenodo.21926099" target = "_blank">Stata command index</a>
+		&#128269; <a href="https://recite.github.io/softverse/lookup/" target = "_blank">Look up a package</a></summary>
+	<div class="abstract">Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package's position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals' archives and authors' sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data.</div>
+	</details>
+
+	<details>
   <summary><a href="https://github.com/recite/user" target = "_blank">user: Auto-compute Citations to Software From GitHub</a><br>
 		<span class="highlight">RELATED</span>: &#128230; <a href="https://github.com/recite/countpy" target = "_blank">Python metrics</a></summary>
   	<div class="abstract"></div>
@@ -731,19 +721,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		</details>
  
-  <details class="category-toggle">
-    <summary>SOFTWARE CREDIT</summary>
-
-    	<details>
-  <summary><a href="papers/downloads_are_cheap.pdf" target = "_blank">Downloads Are Cheap: Validated Use as a Measure of Research Software</a><br>
-		&#x1F5C3; <a href="https://github.com/recite/softverse" target = "_blank">Code</a>
-		&#128202; <a href="https://doi.org/10.5281/zenodo.21943908" target = "_blank">Data</a>
-		&#128230; <a href="https://doi.org/10.5281/zenodo.21926099" target = "_blank">Stata command index</a>
-		&#128269; <a href="https://recite.github.io/softverse/lookup/" target = "_blank">Look up a package</a></summary>
-  	<div class="abstract">Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package's position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals' archives and authors' sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data.</div>
-	</details>
-  </details>
-
   <details class="category-toggle">
     <summary>MISSING WOMEN</summary>
 
@@ -1103,6 +1080,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 
 </details>
+</div>
   </main>
 </div>
 
