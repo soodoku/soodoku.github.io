@@ -86,7 +86,14 @@ class CatalogTests(unittest.TestCase):
 
     def test_source_mapping_is_read_from_resources(self):
         sources = paper_sources(self.catalog)
-        self.assertEqual(len(sources), 5)
+        self.assertEqual(
+            sources["quota_elite_quality.pdf"],
+            {
+                "repo": "in-rolls/quota_elite_quality",
+                "ref": "main",
+                "path": "manuscript/main.pdf",
+            },
+        )
         self.assertEqual(sources["downloads_are_cheap.pdf"]["repo"], "recite/softverse")
         self.assertNotIn("forget.pdf", sources)
 

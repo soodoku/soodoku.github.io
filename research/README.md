@@ -92,7 +92,7 @@ A resource is synchronized only when it has an explicit `source`:
 
 Use an existing local `papers/*.pdf` destination and the tracked PDF path in a
 public source repository. A repository link by itself does not authorize syncing
-any files. The initial catalog maps five verified sources. Unmapped papers remain
+any files. The catalog maps explicitly verified source PDFs. Unmapped papers remain
 manual; this is not a freshness guarantee for the whole site. Missing Women
 currently has only a local manuscript PDF, so it has no sync source.
 

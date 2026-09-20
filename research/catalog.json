@@ -5891,21 +5891,41 @@
     },
     {
       "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
-      "kind": "project",
-      "title": "The Effect of Gender Quotas on Some Qualities of Elites",
+      "kind": "paper",
+      "title": "Female Reservation and the Qualifications of Local Elected Officials in India",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/quota_elite_quality.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "in-rolls/quota_elite_quality",
+            "ref": "main",
+            "path": "manuscript/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
           "kind": "repository",
-          "role": "code",
+          "role": "replication",
           "url": "https://github.com/in-rolls/quota_elite_quality",
-          "new_tab": true
+          "new_tab": true,
+          "label": "Replication Materials"
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "replication"
         }
       ],
       "description": []
@@ -5927,6 +5947,14 @@
             "ref": "main",
             "path": "ms/main.pdf"
           }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/in-rolls/quota_representation",
+          "label": "Replication Materials",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -5936,7 +5964,14 @@
         {
           "tag": "br"
         },
-        " With Varun K. R."
+        " With Varun K. R.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "replication"
+        }
       ],
       "description": []
     },
