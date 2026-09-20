@@ -68,6 +68,9 @@ def validate_catalog(catalog, root=ROOT):
 
         nodes(entry["summary"])
         nodes(entry["description"])
+        for items in entry.get("supporting", {}).values():
+            for item in items:
+                nodes(item)
         for resource in entry["resources"]:
             if resource["id"] != entry["primary_resource"] and not resource.get(
                 "label"
@@ -127,8 +130,14 @@ def render(catalog, template):
                     else resource["label"]
                 )
                 target = ' target="_blank"' if resource.get("new_tab") else ""
+                css = (
+                    ' class="entry-title"'
+                    if resource["id"] == entry["primary_resource"]
+                    else ""
+                )
                 parts.append(
-                    f'<a href="{html.escape(resource["url"], quote=True)}"{target}>'
+                    f'<a href="{html.escape(resource["url"], quote=True)}"'
+                    f"{target}{css}>"
                     f"{html.escape(label)}</a>"
                 )
             else:
@@ -160,15 +169,29 @@ def render(catalog, template):
                     f'<br><i>{html.escape(publication["venue"])}</i>, '
                     f'{publication["year"]}.'
                 )
+            supporting = {
+                label: [rich_text(item, entry) for item in items]
+                for label, items in entry.get("supporting", {}).items()
+            }
             if entry.get("related_entries"):
-                links = []
+                links = supporting.setdefault("related", [])
                 for related_id in entry["related_entries"]:
                     related = entries[related_id]
                     links.append(
                         rich_text([{"resource": related["primary_resource"]}], related)
                     )
-                summary += '<br><span class="highlight">RELATED</span>: '
-                summary += " | ".join(links)
+            for label in ("related", "press"):
+                if items := supporting.get(label):
+                    summary += (
+                        '<span class="supporting-row">'
+                        f'<span class="supporting-label">{label.title()}:</span> '
+                        '<span class="supporting-items" role="list">'
+                    )
+                    summary += "; ".join(
+                        f'<span class="supporting-item" role="listitem">{item}</span>'
+                        for item in items
+                    )
+                    summary += "</span></span>"
             parts.extend(
                 [
                     f"<details{css}>",

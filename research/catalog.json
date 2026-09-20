@@ -29,7 +29,7 @@
         },
         {
           "id": "calibration-weighting",
-          "title": "Calibration & Weighting",
+          "title": "Calibration and Weighting",
           "children": [
             {
               "entry": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression"
@@ -599,14 +599,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "replication"
         }
@@ -630,7 +643,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -690,14 +709,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
@@ -721,7 +753,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -734,7 +772,7 @@
     {
       "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
       "kind": "paper",
-      "title": "Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression",
+      "title": "Calibre: Probability Calibration and Evaluation in Python",
       "primary_resource": "primary",
       "resources": [
         {
@@ -749,26 +787,62 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
-          "label": "calibre: Advanced Calibration Models",
+          "label": "calibre: Probability Calibration and Evaluation",
+          "new_tab": true
+        },
+        {
+          "id": "decisions-note",
+          "kind": "pdf",
+          "role": "related",
+          "url": "papers/calibre_decisions.pdf",
+          "label": "Choosing Calibration for Decisions",
           "new_tab": true
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 📦 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
       "description": [
-        "Thresholded decisions turn probability errors into utility losses. Pooling-based monotone calibrators such as isotonic regression are flexible and reliable but can collapse distinct scores into the same probability on wide plateaus. We adopt a decisioneconomic view: choose and tune a calibrator that reduces deployment cost by improving reliability where it affects decisions and by preserving discrimination where it matters."
-      ]
+        "Calibre combines probability calibration methods with tools for evaluating accuracy, reliability, and score ordering. A reproducible benchmark compares isotonic and centered isotonic regression, monotone splines, and other methods, illustrating why prediction granularity, calibration error, and predictive accuracy should be reported separately. The methods do not guarantee improved predictions or decision utility in every application."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "decisions-note"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/calibre.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "fairlex-leximin-calibration",
@@ -785,7 +859,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -822,14 +902,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 📦 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "link-2"
         }
@@ -861,14 +954,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
@@ -905,14 +1011,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 📦 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "link-2"
         }
@@ -946,27 +1065,58 @@
     },
     {
       "id": "inference-with-fuzzy-joined-data",
-      "kind": "project",
+      "kind": "paper",
       "title": "Inference With Fuzzy-Joined Data",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/fuzzy_joins_inference.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/fuzzy",
+            "ref": "main",
+            "path": "ms/fuzzy_joins_inference.pdf"
+          }
+        },
+        {
+          "id": "replication",
           "kind": "repository",
-          "role": "code",
+          "role": "replication",
           "url": "https://github.com/finite-sample/fuzzy",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
       "summary": [
-        "🌱 ",
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
         }
       ],
       "description": [
-        "Data products built on fuzzy joins ship a single canonical linkage, hiding the many-to-many candidate-match graph from which it was constructed. The two obvious things to do with that graph—expand it into a regression dataset or average covariates across candidates—both produce biased estimates. The expanded join attenuates; the collapsed estimator has a nonclassical errors-in-variables structure whose sign is indeterminate without ground truth. Multiple imputation over candidate assignments avoids both pathologies. Rubin's rules propagate matching uncertainty, and the between-imputation share of variance tells you whether matching uncertainty matters."
-      ]
+        "Fuzzy joins create uncertainty that depends on the downstream estimand. This note explains why expanding candidate matches or averaging their covariates can distort regression estimates, discusses multiple imputation and validation-sample regression calibration, and examines uncertainty inherited from earlier joins in the data product."
+      ],
+      "description_source": {
+        "url": "papers/fuzzy_joins_inference.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "setjoin-record-linkage-that-preserves-group-structure",
@@ -983,7 +1133,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1007,7 +1163,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1031,7 +1193,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1080,7 +1248,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -1140,39 +1315,33 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "geoinference"
             }
           ]
-        }
-      ],
-      "description": [
-        "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
-      ]
+        ]
+      }
     },
     {
       "id": "allocator-optimal-itineraries-for-spatially-distributed-tasks",
@@ -1197,39 +1366,33 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        "With Suriyan Laohaprapanon.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        "With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "ybar"
             }
           ]
-        }
-      ],
-      "description": [
-        "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
-      ]
+        ]
+      }
     },
     {
       "id": "reporoulette-randomly-sample-github-repositories",
@@ -1246,7 +1409,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1278,14 +1447,27 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " 📦 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -1310,7 +1492,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1334,7 +1522,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1358,7 +1552,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1382,7 +1582,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1406,7 +1612,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1430,7 +1642,13 @@
         }
       ],
       "summary": [
-        "🌱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1454,7 +1672,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1478,7 +1702,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1502,7 +1732,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1526,7 +1762,13 @@
         }
       ],
       "summary": [
-        "🗃 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1550,7 +1792,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
@@ -1587,11 +1835,18 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen",
+        " With Lucas Shen.",
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -1654,39 +1909,35 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "News about massive data breaches is increasingly common. But what proportion of Americans are exposed in these breaches is still unknown. We combine data from a large, representative sample of American adults (n = 5,000), recruited by YouGov, with data from Have I Been Pwned to estimate the lower bound of the number of times Americans’ private information has been exposed. We find that at least 82.84% of Americans have had their private information, such as account credentials, Social Security Number, etc., exposed. On average, Americans’ private information has been exposed in at least three breaches. The better educated, the middle-aged, women, and Whites are more likely to have had their accounts breached than the complementary groups."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
             }
           ]
-        },
-        " "
-      ],
-      "description": [
-        "News about massive data breaches is increasingly common. But what proportion of Americans are exposed in these breaches is still unknown. We combine data from a large, representative sample of American adults (n = 5,000), recruited by YouGov, with data from Have I Been Pwned to estimate the lower bound of the number of times Americans’ private information has been exposed. We find that at least 82.84% of Americans have had their private information, such as account credentials, Social Security Number, etc., exposed. On average, Americans’ private information has been exposed in at least three breaches. The better educated, the middle-aged, women, and Whites are more likely to have had their accounts breached than the complementary groups."
-      ]
+        ]
+      }
     },
     {
       "id": "piedomains-predict-the-kind-of-content-hosted-by-a-domain",
@@ -1717,56 +1968,48 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon. ",
-        {
-          "tag": "i",
-          "children": [
-            "Complex, Intelligent and Software Intensive Systems (CISIS), 2020."
-          ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Rajashekar Chintalapati."
+      ],
+      "description": [
+        "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "link-2"
+            },
+            {
+              "tag": "br"
+            },
+            " With Suriyan Laohaprapanon. ",
+            {
+              "tag": "i",
+              "children": [
+                "Complex, Intelligent and Software Intensive Systems (CISIS), 2020."
+              ]
+            }
+          ],
+          [
             {
               "resource": "rdomains"
             }
           ]
-        }
-      ],
-      "description": [
-        "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage."
-      ]
+        ]
+      }
     },
     {
       "id": "pass-fail-using-a-password-generator-to-improve-password-strength",
@@ -1788,9 +2031,17 @@
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati"
+        " With Rajashekar Chintalapati."
       ],
-      "description": []
+      "description": [
+        "We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness."
+      ],
+      "description_source": {
+        "url": "https://github.com/themains/password#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "how-often-is-politicians-data-breached-evidence-from-hibp",
@@ -1823,12 +2074,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Using 12,384 email addresses of politicians from 59 countries, we examine exposure to breaches recorded by Have I Been Pwned. A third of the politicians have at least one recorded breach, and more than one in five have sensitive information exposed; incomplete coverage of their email addresses makes these conservative estimates."
+      ],
+      "description_source": {
+        "url": "papers/pwned_politicians.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "bad-domains-exposure-to-malicious-content-online",
@@ -1867,12 +2133,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We combine a month of observed browsing by over a thousand Americans with malicious-domain classifications. About half visited a malicious domain; demographic differences in median exposure disappear after accounting for how much people use the internet."
+      ],
+      "description_source": {
+        "url": "papers/bad_domains.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "know-your-ip",
@@ -1888,21 +2169,35 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon"
+        " With Suriyan Laohaprapanon."
       ],
-      "description": []
+      "description": [
+        "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures."
+      ],
+      "description_source": {
+        "url": "https://github.com/themains/know_your_ip#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "virustotal-r-client-for-the-virustotal-public-api-2-0",
       "kind": "software",
-      "title": "virustotal: R Client for the VirusTotal Public API 2.0",
+      "title": "virustotal: R Client for the VirusTotal API v3",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1913,12 +2208,26 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "An R client for VirusTotal API v3, covering reports on files, URLs, domains, and IP addresses, as well as submissions for analysis. The package includes request pacing, retries, and structured error handling."
+      ],
+      "description_source": {
+        "url": "https://github.com/themains/virustotal#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads",
@@ -1958,7 +2267,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
@@ -1982,12 +2298,26 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A Model Context Protocol server that lets compatible assistants invoke R tools for statistical analysis. Its documented tools cover regression, econometrics, time series, statistical testing, and data exploration."
+      ],
+      "description_source": {
+        "url": "https://github.com/finite-sample/rmcp#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance",
@@ -2003,7 +2333,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -2029,7 +2365,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -2072,40 +2414,44 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Bhanu Teja.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Bhanu Teja."
+      ],
+      "description": [
+        "Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "image-to-text"
-            },
+            }
+          ],
+          [
             {
               "resource": "recognize"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/pvbhanuteja/repaper#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "indicate-transliterate-indic-languages-to-english",
@@ -2121,7 +2467,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -2130,11 +2482,19 @@
         },
         " With Rajashekar Chintalapati."
       ],
-      "description": []
+      "description": [
+        "A transliteration toolkit for converting between Indic scripts and English-script representations. It supports composable word-table, local-model, and language-model backends, with batch processing and structured output."
+      ],
+      "description_source": {
+        "url": "https://github.com/in-rolls/indicate#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "layoutlens-ai-assisted-ui-testing",
-      "kind": "project",
+      "kind": "software",
       "title": "LayoutLens: AI-Assisted UI Testing",
       "primary_resource": "primary",
       "resources": [
@@ -2163,34 +2523,39 @@
       ],
       "summary": [
         {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "📦"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "LayoutLens captures screenshots, page structure, styles, and geometry to measure changes between interface versions. Local comparisons report element-level differences and possible layout defects; model-based explanations are optional."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "layoutlens-action"
-            },
+            }
+          ],
+          [
             {
               "resource": "uijudge-bench"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/gojiplus/layoutlens#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "adjacent-related-repositories-recommender",
@@ -2206,12 +2571,26 @@
         }
       ],
       "summary": [
-        "📱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📱"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A GitHub Action that adds related-repository recommendations to a README. It ranks repositories using shared topics, README similarity, or a combination, with controls for exclusions and the number of recommendations."
+      ],
+      "description_source": {
+        "url": "https://github.com/gojiplus/adjacent#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "advertiser-promote-your-github-repositories-on-bluesky",
@@ -2227,12 +2606,26 @@
         }
       ],
       "summary": [
-        "📱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📱"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A GitHub Action that selects a repository from a curated list, generates a short description, and posts it with a link to Bluesky. It supports automated or manually triggered promotion of open-source projects."
+      ],
+      "description_source": {
+        "url": "https://github.com/gojiplus/advertiser#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "tuber-access-youtube-api-via-r",
@@ -2256,33 +2649,35 @@
         }
       ],
       "summary": [
-        "📦 ",
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "📦"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "An R client for searching and retrieving YouTube videos, channels, playlists, comments, and captions. It also supports selected authenticated operations, including uploads, moderation, and playlist updates."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "tubern"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/gojiplus/tuber#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "a-benchmark-for-benchmarks",
@@ -2303,7 +2698,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "This note proposes a framework for constructing interpretable machine-learning benchmarks. It emphasizes defining the task and target population before choosing data, and assessing label quality and whether performance reflects the intended capability."
+      ],
+      "description_source": {
+        "url": "papers/benchmark.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "review-of-noise-a-flaw-in-human-judgment",
@@ -2334,7 +2737,15 @@
         },
         " 2024."
       ],
-      "description": []
+      "description": [
+        "A review of Noise: A Flaw in Human Judgment that examines variation in judgments made from the same information. We consider what disagreement reveals about uncertainty, skill, effort, preferences, and the institutions in which decisions are made."
+      ],
+      "description_source": {
+        "url": "papers/noise_review.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "significant-error-citations-to-research-with-publicized-statistical-errors",
@@ -2367,12 +2778,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We examine citations to studies whose statistical errors were publicized in Nature Neuroscience. Problematic studies continued to receive citations that did not acknowledge the errors, including more such citations after the problems were publicized."
+      ],
+      "description_source": {
+        "url": "papers/niewenhuis.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "propagation-of-error-approving-citations-to-problematic-research",
@@ -2406,12 +2832,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Using more than 3,000 retracted articles and over 74,000 citations, we study how problematic research continues to circulate. At least 31% of citations occurred a year or more after retraction, and about 91% of post-retraction citations did not acknowledge a concern with the cited article."
+      ],
+      "description_source": {
+        "url": "papers/error.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "get-notified-when-cited-article-is-retracted",
@@ -2428,12 +2869,26 @@
         }
       ],
       "summary": [
-        "📱 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📱"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A GitHub Action that checks BibTeX references against Retraction Watch data and opens an issue when it finds a potentially retracted citation. It matches by DOI or bibliographic information and can run on a schedule or after bibliography changes."
+      ],
+      "description_source": {
+        "url": "https://github.com/recite/retract#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "highlight-citations-to-retracted-articles",
@@ -2454,7 +2909,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review."
+      ],
+      "description_source": {
+        "url": "http://github.com/recite/re-cite.org#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "downloads-are-cheap-validated-use-as-a-measure-of-research-software",
@@ -2530,55 +2993,73 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
-        },
-        " 📊 ",
-        {
-          "resource": "link-3"
-        },
-        " 📦 ",
-        {
-          "resource": "link-4"
-        },
-        " 🔍 ",
-        {
-          "resource": "link-5"
-        },
-        {
-          "tag": "br"
         },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "📊"
           ]
         },
-        ": ",
+        {
+          "resource": "link-3"
+        },
+        " ",
         {
           "tag": "span",
-          "class": "resource-links",
+          "class": "entry-icon",
           "children": [
-            {
-              "resource": "recode"
-            },
-            {
-              "resource": "pip-fund"
-            }
+            "📦"
           ]
+        },
+        {
+          "resource": "link-4"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🔍"
+          ]
+        },
+        {
+          "resource": "link-5"
         }
       ],
       "description": [
         "Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package's position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals' archives and authors' sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data."
-      ]
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "recode"
+            }
+          ],
+          [
+            {
+              "resource": "pip-fund"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "user-auto-compute-citations-to-software-from-github",
       "kind": "software",
-      "title": "user: Auto-compute Citations to Software From GitHub",
+      "title": "user: Estimate Python Package Use on GitHub",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2600,24 +3081,33 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": 📦 ",
-        {
-          "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "This project estimates Python package use by sampling public GitHub repositories and counting import statements. It provides data and a dashboard as an alternative to download counts, which can reflect automated installation rather than adoption."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "tag": "span",
+              "class": "entry-icon",
+              "children": [
+                "📦"
+              ]
+            },
+            {
+              "resource": "link-2"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/recite/user#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "autosum-summarize-publications-automatically-and-discover-miscitations",
@@ -2638,7 +3128,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "AutoSum collects passages surrounding citations to a publication in openly accessible papers. Collating these passages provides a view of how other scholars summarize the work and helps identify possible miscitations."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/autosum#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "by-the-numbers-toward-more-precise-numerical-summaries-of-results",
@@ -2669,7 +3167,15 @@
           ]
         }
       ],
-      "description": []
+      "description": [
+        "We compare how often empirical articles in the American Political Science Review and American Economic Review include precise numerical results in their abstracts. The project provides coded data and analysis of differences in quantitative reporting."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/quant-discipline#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-review-production-and-consumption-of-apsr-articles",
@@ -2690,12 +3196,20 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We collect article metadata from five political science journals to examine changes in authorship, article length, and readership. The data document the rise of coauthorship and the highly uneven distribution of article and abstract views."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/meta_apsr#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes",
       "kind": "project",
-      "title": "superdf: Save Metadata with the Data in R and Python DataFrames",
+      "title": "superdf: Persistent Metadata for R Data Frames",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2711,7 +3225,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/superdf#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts",
@@ -2732,7 +3254,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We apply static analysis to R scripts in replication archives for American Journal of Political Science articles. The project documents style issues, warnings, and errors detected by lintr and provides the scripts used for the audit."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/not_to_code#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
@@ -2790,49 +3320,46 @@
         " With Rajashekar Chintalapati and Suriyan Laohaprapanon. ",
         {
           "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
+        }
+      ],
+      "description": [
+        "This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person's identity."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "tag": "span",
+              "class": "entry-icon",
+              "children": [
+                "📦"
+              ]
+            },
+            {
+              "resource": "link-3"
+            },
+            " for implementing the method."
           ]
-        },
-        ": 📦 ",
-        {
-          "resource": "link-3"
-        },
-        " for implementing the method.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        ],
+        "press": [
+          [
             {
               "resource": "link-4"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-5"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/appeler/ethnicolr_v2#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "sound-names-classify-names-based-on-sequence-of-sounds",
@@ -2853,7 +3380,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We compare name classification using phonetic encodings with classification using character sequences. In the reported experiments, an LSTM trained on Metaphone encodings performs worse, suggesting that spellings contain information lost by the sound encoding."
+      ],
+      "description_source": {
+        "url": "https://github.com/appeler/soundnames#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "graphic-names-classify-names-using-google-image-search-and-clarifai",
@@ -2874,7 +3409,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "An exploratory method that combines image-search results for first names with image tags to estimate gender associations. Validation uses labeled name data, while the project notes that search results are not representative population samples and names need not be unique to one gender."
+      ],
+      "description_source": {
+        "url": "https://github.com/appeler/clarifai_gender#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "naampy-infer-sociodemographic-characteristics-from-indian-names",
@@ -2907,40 +3450,44 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati and Suriyan Laohaprapanon.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Rajashekar Chintalapati and Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "outkast"
-            },
+            }
+          ],
+          [
             {
               "resource": "electoral-rolls"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/appeler/naampy#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "pranaam-predict-religion-from-name",
@@ -2957,7 +3504,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -2966,7 +3519,15 @@
         },
         " With Rajashekar Chintalapati."
       ],
-      "description": []
+      "description": [
+        "Pranaam estimates how strongly a name follows patterns associated with Muslim names in its training data. It returns a calibrated score, abstention information, and artifact provenance for aggregate research, rather than establishing a person's religion."
+      ],
+      "description_source": {
+        "url": "https://github.com/appeler/pranaam#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "naamkaran-a-generative-model-for-names",
@@ -2983,7 +3544,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -2992,7 +3559,15 @@
         },
         " With Rajashekar Chintalapati."
       ],
-      "description": []
+      "description": [
+        "A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population."
+      ],
+      "description_source": {
+        "url": "https://github.com/appeler/naamkaran#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "parsernaam-ml-assisted-name-parser",
@@ -3017,42 +3592,44 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Rajashekar Chintalapati."
+      ],
+      "description": [
+        "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "clean-names"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/appeler/parsernaam#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "instate-predict-spoken-language-from-last-name",
       "kind": "software",
-      "title": "instate: predict spoken language from last name",
+      "title": "instate: State and Language Composition from Indian Surnames",
       "primary_resource": "primary",
       "resources": [
         {
@@ -3072,35 +3649,43 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati and Atul Dhingra.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
-        " With Atul Dhingra. "
+        " With Rajashekar Chintalapati and Atul Dhingra."
       ],
-      "description": []
+      "description": [
+        "Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "link-2"
+            },
+            {
+              "tag": "br"
+            },
+            " With Atul Dhingra. "
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/appeler/instate#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "inter-group-prejudice",
@@ -3124,7 +3709,15 @@
           "tag": "br"
         }
       ],
-      "description": []
+      "description": [
+        "This note organizes explanations for inter-group prejudice, including group identity, personality, motivated beliefs, and differences in reasoning. It distinguishes possible mechanisms behind aversive beliefs and feelings rather than treating prejudice as a single process."
+      ],
+      "description_source": {
+        "url": "papers/inter_group_prejudice.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "affect-not-ideology-a-social-identity-perspective-on-polarization",
@@ -3227,73 +3820,74 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "We examine polarization as social distance and hostility between partisans, rather than only disagreement over policy. Evidence from several sources shows growing dislike of opposing partisans, with policy attitudes providing an inconsistent explanation and campaign messages offering a plausible alternative."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-5"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-6"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        ],
+        "press": [
+          [
             {
               "resource": "link-7"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-8"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-9"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-10"
-            }
+            },
+            ", etc."
           ]
-        },
-        ", etc."
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/AffectNotIdeology.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences",
@@ -3400,75 +3994,78 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Americans greatly overestimate how many party supporters belong to stereotypical groups. Survey experiments suggest that these misperceptions are not simply expressive responding or ignorance of population shares; correcting beliefs about the opposing party reduces perceived extremity and social distance."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-10"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-11"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        ],
+        "press": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-5"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-6"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-7"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-8"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-9"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/partisanComposition.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "typecast-a-routine-mental-shortcut-causes-party-stereotyping",
@@ -3526,32 +4123,40 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " | ",
         {
           "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-4"
-        },
-        " "
+        }
       ],
-      "description": []
+      "description": [
+        "We test whether the representativeness heuristic contributes to party stereotypes. Experiments involving conjunction judgments, information about group partisanship, and cognitive load suggest that this mental shortcut can distort perceptions of who belongs to each party."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-4"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/typecast.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability",
@@ -3621,51 +4226,48 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Why do moderate partisans remain warm toward more extreme leaders of their own party? We find both distorted perceptions of leaders' positions and asymmetric treatment of policy disagreement: even when informed about positions, partisans do not necessarily penalize more distant co-partisan candidates."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
+        ],
+        "press": [
+          [
+            {
+              "resource": "link-5"
+            }
           ]
-        },
-        ": ",
-        {
-          "resource": "link-5"
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/inNout.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns",
@@ -3696,24 +4298,26 @@
         {
           "tag": "br"
         },
-        " With Shanto Iyengar.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-2"
-        }
+        " With Shanto Iyengar."
       ],
-      "description": []
+      "description": [
+        "Using national surveys and political advertising data, we examine how partisan hostility changes during campaigns. Evaluations of the opposing party become more negative over the campaign, with exposure to televised advertising, especially negative advertising, contributing to the pattern."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-2"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/ComingToDislike.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "partisan-vision-partisan-bias-in-simple-visual-evaluations",
@@ -3747,13 +4351,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. Across these tasks, the estimated partisan effects are generally small."
+      ],
+      "description_source": {
+        "url": "papers/partisan_vision.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect",
@@ -3803,27 +4422,36 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "PRESS"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "resource": "link-3"
+          "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We use variation in state right-of-way regulations to study the effect of broadband access on partisan hostility. Combining broadband availability with survey data from 2004 and 2008, we find greater hostility and greater consumption of partisan media where broadband access expands."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-3"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/BroadbandPolarization.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online",
@@ -3865,12 +4493,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Observed browsing data show that online pornography consumption is concentrated among a small share of users. Republicans consume somewhat more than Democrats in the unadjusted data, but the difference disappears after accounting for age and gender."
+      ],
+      "description_source": {
+        "url": "papers/adult.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes",
@@ -3912,12 +4555,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We compare White respondents' racial stereotype reports in confidential computer-assisted and oral interviews in the 2008 American National Election Study. Confidential responses are slightly more negative about both Black and White people and have no greater predictive validity, casting doubt on a large social-desirability distortion in the oral measures."
+      ],
+      "description_source": {
+        "url": "papers/StereotypesAboutSD.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "what-and-who-is-on-network-television",
@@ -3938,7 +4596,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/tv_schedules#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "working-women-on-indian-tv",
@@ -3962,9 +4628,17 @@
         {
           "tag": "br"
         },
-        "With Asha Sood"
+        "With Asha Sood."
       ],
-      "description": []
+      "description": [
+        "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/working_women_on_tv#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-face-of-crime-in-prime-time-evidence-from-law-and-order",
@@ -4007,27 +4681,36 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "PRESS"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "resource": "link-3"
+          "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We code the race and gender of victims and criminals in three Law and Order series and compare portrayals with crime statistics. White people and women are overrepresented in both roles, while Black people and men are underrepresented."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-3"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/face_of_crime.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "extreme-recall-which-politicians-come-to-mind",
@@ -4077,28 +4760,36 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        " ",
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "resource": "link-3"
+          "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Two surveys nearly a decade apart show that people's images of political parties center on a few prominent national figures, with more extreme politicians recalled more often. Television news coverage is associated with which politicians come to mind."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "link-3"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "https://gsood.com/research/papers/extreme_recall.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics",
@@ -4130,7 +4821,15 @@
         },
         " 41–58, 2014. ECPR Press."
       ],
-      "description": []
+      "description": [
+        "We assess deliberative polls and other mini-publics using Robert Dahl's criteria for a democratic process: inclusion, effective participation, enlightened understanding, voting equality, and control of the agenda. The chapter examines where these institutions meet the criteria and where their democratic claims require qualification."
+      ],
+      "description_source": {
+        "url": "papers/DahlSays.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments",
@@ -4160,13 +4859,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we examine whether participants learn arguments for positions they oppose. The evidence shows that people in a deeply divided society can learn opposing arguments through deliberation."
+      ],
+      "description_source": {
+        "url": "papers/LearningOfArguments.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations",
@@ -4208,12 +4922,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Across 2,601 group-issue pairs in 21 Deliberative Polls, we test whether discussion routinely homogenizes or polarizes attitudes, or shifts them toward those of socially advantaged participants. We find no strong or routine pattern of these distortions; the modest patterns include some homogenization and moderation."
+      ],
+      "description_source": {
+        "url": "papers/DeliberativeDistortions.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention",
@@ -4263,7 +4992,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -4272,7 +5008,15 @@
           "resource": "link-3"
         }
       ],
-      "description": []
+      "description": [
+        "A survey and deliberative field experiment examine young, educated Kirkuk residents' preferences for governing their divided society. Participants support an equal say for ethnic groups, and informed deliberation broadens support for regional autonomy without substantially changing support for equal say."
+      ],
+      "description_source": {
+        "url": "papers/kirkuk.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "problem-solving",
@@ -4293,7 +5037,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A practical framework for diagnosing problems: generate specific explanations, assess their plausibility, and design checks that distinguish among them. Examples show how correlations, close examination of failures, and comparisons with successful cases can help identify causes."
+      ],
+      "description_source": {
+        "url": "papers/problem_solving.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect",
@@ -4328,12 +5080,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "Two larger surveys replicate the finding that people sometimes prefer a certain option to a lottery whose worst outcome is better. Clarifying the guarantee reduces the effect, while expressing the lottery as natural frequencies or using monetary choices eliminates it in these experiments."
+      ],
+      "description_source": {
+        "url": "papers/uncertainty.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "mixed-signals-movie-quality-assessments-across-platforms",
@@ -4354,7 +5121,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We compare movie ratings across platforms using data on 16,319 American films released between 1950 and 2020. Among platforms with sufficient coverage, average ratings are only moderately correlated, revealing substantial differences in assessments of the same films."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/mixed_signals#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability",
@@ -4400,37 +5175,37 @@
         {
           "tag": "br"
         },
-        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Tompson, Jennifer Agiesta, and Dennis Junius."
+      ],
+      "description": [
+        "Surveys from 2010 and 2012 find substantial misunderstanding of the Affordable Care Act despite support for many of its provisions. The analysis estimates that fuller understanding could increase support for the law; this is a modeled implication, rather than a demonstrated effect of an information campaign."
+      ],
+      "supporting": {
+        "press": [
+          [
             {
               "resource": "link-2"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
-            }
+            },
+            ", among other outlets."
           ]
-        },
-        ", among other outlets."
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/ACAKnowledgeFavorability.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play",
@@ -4453,7 +5228,7 @@
         {
           "tag": "br"
         },
-        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
+        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
         {
           "tag": "i",
           "children": [
@@ -4462,7 +5237,15 @@
         },
         " 2022."
       ],
-      "description": []
+      "description": [
+        "We examine whether Americans evaluate the Affordable Care Act through beliefs about its individual provisions. Despite partisan disagreement, both Democrats' and Republicans' evaluations are associated with what they believe the law does and how confident they are in those beliefs."
+      ],
+      "description_source": {
+        "url": "papers/ACA_beliefs_attitudes.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues",
@@ -4520,31 +5303,40 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " | ",
         {
           "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-4"
         }
       ],
-      "description": []
+      "description": [
+        "We revisit evidence that legislators with daughters vote more liberally on women's issues, extending the analysis to eight congresses before and eight after the original study period. We find no daughters effect in either extension, challenging the explanation that later party polarization alone erased the relationship."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-4"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/daughters.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "missing-women-on-indian-streets",
@@ -4591,40 +5383,45 @@
         {
           "tag": "br"
         },
-        " With Varun Karekurve-Ramachandra",
-        {
-          "tag": "br"
-        },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
+        " With Varun Karekurve-Ramachandra.",
         {
           "tag": "br"
         },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "PRESS"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Randomly sampled streets in four Indian cities reveal a large gender imbalance in public space: women account for 12% to 16% of observed adults. Comparisons with residential populations and time-use data suggest that much of the gap arises because women leave home less often and make fewer trips."
+      ],
+      "supporting": {
+        "press": [
+          [
             {
               "resource": "marginal-revolution"
-            },
+            }
+          ],
+          [
             {
               "resource": "watching-the-wheels"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/missing_women.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "son-bias-in-the-us-evidence-from-business-names",
@@ -4655,11 +5452,18 @@
         {
           "tag": "br"
         },
-        " With Walter Guillioli",
+        " With Walter Guillioli.",
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -4668,7 +5472,15 @@
         },
         " "
       ],
-      "description": []
+      "description": [
+        "We compare businesses named with 'son' or 'sons' and 'daughter' or 'daughters' using state business registries. Across 40 states, the median ratio is 12 to 1, with limitations in registry searches making the analysis a conservative accounting of the imbalance."
+      ],
+      "description_source": {
+        "url": "https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "which-women-are-missing-adult-sex-ratio-by-last-name",
@@ -4692,9 +5504,17 @@
         {
           "tag": "br"
         },
-        "With Suriyan Laohaprapanon"
+        "With Suriyan Laohaprapanon."
       ],
-      "description": []
+      "description": [
+        "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/last_sex#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "missing-women-on-the-streets",
@@ -4715,7 +5535,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "An exploratory project on measuring women's presence in public space using observations of people on streets. It develops sampling and data-collection approaches and discusses the assumptions needed to compare observed street populations with a gender-balance baseline."
+      ],
+      "description_source": {
+        "url": "https://github.com/geosensing/women-count#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "epic-children-sex-ratio-of-children-of-key-characters-in-epics",
@@ -4736,7 +5564,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A dataset records sons and daughters attributed to key figures across epic and mythological traditions. It documents large differences in the visibility of named sons and daughters, with source and family-structure information for interpreting the counts."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/epic_children#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "missing-daughters-of-indian-politicians",
@@ -4757,7 +5593,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We use official biographies of members of India's 12th through 17th Lok Sabhas to examine the sex ratio of politicians' children. The project compares recorded sons and daughters to assess whether the imbalance observed in the wider population also appears among political elites."
+      ],
+      "description_source": {
+        "url": "https://github.com/in-rolls/missing_daughters_of_pols#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "not-news-provision-of-apolitical-news-in-the-british-news-media",
@@ -4791,13 +5635,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "We classify roughly 5.4 million webpages from 276 British news outlets to estimate how much coverage concerns topics outside public affairs. A classifier trained using article URL categories and checked against hand coding estimates that about 39% of articles are apolitical news."
+      ],
+      "description_source": {
+        "url": "https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "strength-in-numbers-multiple-measures-of-media-ideology",
@@ -4831,13 +5690,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "We combine text-based and audience-based measures of British news outlets' ideology. Parliamentary speeches, party manifestos, and Twitter following patterns provide complementary information about ideological position and differences between measurement approaches."
+      ],
+      "description_source": {
+        "url": "https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "measuring-agendas-and-positions-on-agendas",
@@ -4872,13 +5746,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "We distinguish which issues news outlets cover from the positions they take within those issues. A supervised topic model and congressional-speech-based slant measures reveal systematic differences across 255 news programs on 50 television channels."
+      ],
+      "description_source": {
+        "url": "https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "notnews-predict-the-type-of-news-based-on-story-text-and-url",
@@ -4895,7 +5784,13 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         },
@@ -4904,7 +5799,15 @@
         },
         " With Suriyan Laohaprapanon."
       ],
-      "description": []
+      "description": [
+        "A Python library for classifying news by topic and distinguishing hard from soft news. It offers URL-pattern rules, trained US and UK text models, and optional language-model classification through Python and command-line interfaces."
+      ],
+      "description_source": {
+        "url": "https://github.com/notnews/notnews#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "unreadable-news-how-readable-is-american-news",
@@ -4929,7 +5832,15 @@
         },
         " With Lucas Shen."
       ],
-      "description": []
+      "description": [
+        "We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information."
+      ],
+      "description_source": {
+        "url": "https://github.com/notnews/readable_news#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources",
@@ -4954,7 +5865,15 @@
         },
         " With Pablo Barberá."
       ],
-      "description": []
+      "description": [
+        "We estimate the ideological positions of more than 2,300 media sources using the following patterns of politically interested social-media users. Comparisons with content-based measures support the approach, and applications examine journalists' ideology and ideological diversity within outlets."
+      ],
+      "description_source": {
+        "url": "papers/mediabias.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news",
@@ -4995,12 +5914,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "We study presidential campaign horse-race headlines across six online news outlets in 2012 and 2016. Headlines tend to favor their outlets' typical readers, but within-outlet engagement provides little evidence that readers prefer congenial headlines and somewhat more evidence of demand for uncongenial ones."
+      ],
+      "description_source": {
+        "url": "papers/hr.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "don-t-expose-yourself-discretionary-exposure-to-political-information",
@@ -5064,39 +5998,46 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "We reconsider claims that greater choice over political information increases knowledge gaps and polarization. The review questions the premise of widening knowledge gaps and finds that the evidence connecting selective exposure to polarization is more limited and nuanced than common accounts suggest."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-5"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/selexp.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times",
@@ -5117,7 +6058,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We use the annotated New York Times corpus from 1987 to 2007 to study the mix of public-affairs and apolitical coverage. The project also develops analyses of geographic focus using article metadata and location fields."
+      ],
+      "description_source": {
+        "url": "https://github.com/notnews/good_nyt#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "hard-news-the-softening-of-network-television-news",
@@ -5152,12 +6101,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "A coded sample of more than 5,000 network television news segments from 1968 to 2019 documents changes in political content and geographic focus. Coverage unrelated to politics increases over time, and local news becomes a substantially larger share in the later years."
+      ],
+      "description_source": {
+        "url": "https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "partisan-imbalance-in-politifact",
@@ -5178,7 +6142,15 @@
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "We combine scraped PolitiFact ratings with independently coded party affiliations to examine differences in scrutiny and ratings across parties. The analysis distinguishes how often statements are checked from the average rating among the statements selected for checking."
+      ],
+      "description_source": {
+        "url": "https://github.com/notnews/politifact#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022",
@@ -5195,16 +6167,30 @@
         }
       ],
       "summary": [
-        "💾 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "💾"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Derek Willis"
+        " With Derek Willis."
       ],
-      "description": []
+      "description": [
+        "A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections."
+      ],
+      "description_source": {
+        "url": "https://github.com/notnews/top_news#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "cnn-transcripts-2000-2025",
@@ -5245,39 +6231,45 @@
         }
       ],
       "summary": [
-        "💾 ",
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "💾"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "A corpus and scraper for CNN transcripts spanning 2000 through March 2025, with program names, dates, times, and transcript text. The repository documents collection across versions of CNN's site and links to research-access data on Harvard Dataverse."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "archive-news"
-            },
+            }
+          ],
+          [
             {
               "resource": "vanderbilt-news"
-            },
+            }
+          ],
+          [
             {
               "resource": "nbc-transcripts"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/notnews/cnn_transcripts#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "you-cannot-be-serious-the-impact-of-accuracy-incentives-on-partisan-bias",
@@ -5366,67 +6358,69 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        "; 🗃 ",
-        {
-          "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
+        {
+          "resource": "link-2"
+        },
+        "; ",
         {
           "tag": "span",
-          "class": "resource-links",
+          "class": "entry-icon",
           "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": [
+        "Two national survey experiments test whether partisan gaps in reports of economic conditions reflect differences in knowledge or how people answer. Monetary incentives and appeals for accuracy reduce the gaps, suggesting that ordinary survey responses mix factual beliefs with partisan expression."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-7"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-8"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        ],
+        "press": [
+          [
             {
               "resource": "link-4"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-5"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-6"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/PartisanBias.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "motivated-responding-in-studies-of-factual-learning",
@@ -5484,36 +6478,41 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "link-3"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-4"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/partisanlearning.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps",
@@ -5571,43 +6570,43 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-4"
-        },
-        " "
+        }
       ],
-      "description": []
+      "description": [
+        "Across 162,083 responses to 187 questions on 47 surveys, partisan knowledge gaps are smaller and less consistently aligned with partisan interests than often assumed. Vague response options inflate some gaps, suggesting a role for motivated responding rather than differences in stored knowledge alone."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "link-3"
+            }
+          ]
+        ],
+        "press": [
+          [
+            {
+              "resource": "link-4"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/partisan_gap.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-waters-of-casablanca-on-political-misinformation",
@@ -5632,7 +6631,15 @@
         },
         " With Robert Luskin."
       ],
-      "description": []
+      "description": [
+        "We distinguish misinformation from knowledge, ignorance, and uncertain belief, and examine how survey responses map onto those states. Original surveys illustrate a measurement approach that uses confidence to help identify firmly held false beliefs."
+      ],
+      "description_source": {
+        "url": "papers/CasablancaTheory.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "misinformation-about-misinformation-of-headlines-and-survey-design",
@@ -5667,13 +6674,28 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
         " "
       ],
-      "description": []
+      "description": [
+        "We examine how survey design affects estimates of political misinformation. An audit of media polls and a series of experiments show that opinion-like wording, missing 'don't know' options, and invitations to guess can inflate the prevalence inferred from incorrect answers."
+      ],
+      "description_source": {
+        "url": "papers/misinformation_misinformation.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation",
@@ -5723,16 +6745,38 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
-        " | 🗃 ",
+        " | ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-3"
         }
       ],
-      "description": []
+      "description": [
+        "Two national surveys distinguish incorrect answers about the Affordable Care Act from confidently held incorrect beliefs. Most respondents are uncertain; confident misperceptions are less common and are concentrated on provisions about which elites repeatedly made false claims."
+      ],
+      "description_source": {
+        "url": "papers/ACAMisinformed.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "guessing-and-forgetting-a-latent-class-model-for-measuring-learning",
@@ -5790,7 +6834,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -5808,25 +6859,34 @@
         ": '... a real contribution to the literature.' — ",
         {
           "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": 📦 ",
-        {
-          "resource": "link-4"
-        },
-        " for implementing the method. "
+        }
       ],
-      "description": []
+      "description": [
+        "We develop a latent class model to estimate learning when correct answers can result from guessing. Under an assumption of no knowledge loss over short periods, simulations recover learning more accurately than raw score differences; an application to Deliberative Polls raises learning estimates and reduces measured gender gaps."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "tag": "span",
+              "class": "entry-icon",
+              "children": [
+                "📦"
+              ]
+            },
+            {
+              "resource": "link-4"
+            },
+            " for implementing the method. "
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/guess.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "measuring-learning-in-informative-processes",
@@ -5850,7 +6910,15 @@
         },
         " With Robert Luskin and Ariel Helfer."
       ],
-      "description": []
+      "description": [
+        "We examine how to measure learning in campaigns, deliberative polls, and other processes that expose people to information. The paper considers the limitations of observed pre-post knowledge gains, particularly when using individual learning estimates to explain causes or consequences."
+      ],
+      "description_source": {
+        "url": "papers/k_gains.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap",
@@ -5892,7 +6960,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -5935,7 +7010,14 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -5984,12 +7066,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         }
       ],
-      "description": []
+      "description": [
+        "This chapter examines how to measure beliefs about the numerical size of salient and stereotypical groups. It connects systematic overestimation of stereotypical traits to broader questions about group perceptions, prejudice, and the interpretation of survey estimates."
+      ],
+      "description_source": {
+        "url": "papers/measuring_shares.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "streetsense-learning-from-google-street-view",
@@ -6038,7 +7135,14 @@
             {
               "tag": "br"
             },
-            " 🗃 ",
+            " ",
+            {
+              "tag": "span",
+              "class": "entry-icon",
+              "children": [
+                "🗃"
+              ]
+            },
             {
               "resource": "link-3"
             },
@@ -6076,8 +7180,16 @@
           ]
         }
       ],
-      "description": [],
-      "class": "paper-toggle"
+      "description": [
+        "AutoSense combines sampled street locations from OpenStreetMap with street-level imagery and computer vision for assessing street conditions. The workflow supports collection and analysis of infrastructure imagery at scale."
+      ],
+      "class": "paper-toggle",
+      "description_source": {
+        "url": "https://github.com/geosensing/autosense#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "get-in-line-waiting-times-at-the-dmv",
@@ -6110,8 +7222,16 @@
         },
         " "
       ],
-      "description": [],
-      "class": "paper-toggle"
+      "description": [
+        "We collect reported waiting times for California DMV field offices to study variation by location, day, and hour. The analysis also examines relationships between waiting times and local sociodemographic characteristics."
+      ],
+      "class": "paper-toggle",
+      "description_source": {
+        "url": "https://github.com/soodoku/wait#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "elo-ratings-of-international-cricket-teams-by-format",
@@ -6142,24 +7262,26 @@
         {
           "tag": "br"
         },
-        " With Derek Willis.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-2"
-        }
+        " With Derek Willis."
       ],
-      "description": []
+      "description": [
+        "We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time."
+      ],
+      "supporting": {
+        "press": [
+          [
+            {
+              "resource": "link-2"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/outside-edge/elo_cricket#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "war-ratings-for-cricketers",
@@ -6184,7 +7306,15 @@
         },
         " With Derek Willis."
       ],
-      "description": []
+      "description": [
+        "We develop batting and bowling Wins Above Replacement measures for men's and women's one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/war#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match",
@@ -6273,71 +7403,63 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
-        {
-          "resource": "link-2"
-        },
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "resource": "link-3"
-        },
-        " (with Derek Willis; ",
-        {
-          "resource": "link-4"
-        },
-        ").",
-        {
-          "tag": "br"
-        },
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "We use cricket's coin toss to estimate the advantage of choosing whether to bat or bowl first. The estimated effect on winning is negligible in daytime international limited-overs matches, but about 3.3 percentage points in day-night matches and 4.9 points in Tests; rain-adjusted matches show no statistically distinguishable effect."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "link-3"
+            },
+            " (with Derek Willis; ",
+            {
+              "resource": "link-4"
+            },
+            ")."
+          ],
+          [
             {
               "resource": "espncricinfo"
-            },
+            }
+          ],
+          [
             {
               "resource": "cricket-data"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        ],
+        "press": [
+          [
             {
               "resource": "link-5"
-            },
+            }
+          ],
+          [
             {
               "resource": "link-6"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/cricket_paper.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
@@ -6373,12 +7495,27 @@
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "replication"
         }
       ],
-      "description": []
+      "description": [
+        "We compare elected officials in women-reserved and open seats across rural and urban Indian local governments. Differences in education and pending criminal cases vary across settings; the comparisons require conditional comparability for a causal interpretation and do not establish effects on performance in office."
+      ],
+      "description_source": {
+        "url": "papers/quota_elite_quality.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies",
@@ -6454,61 +7591,62 @@
         {
           "tag": "br"
         },
-        " With Varun K. R.",
-        {
-          "tag": "br"
-        },
-        " 🗃 ",
-        {
-          "resource": "replication"
-        },
+        " With Varun Karekurve-Ramachandra.",
         {
           "tag": "br"
         },
         " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "🗃"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "replication"
+        }
+      ],
+      "description": [
+        "Across more than 34,000 rural local bodies, prior reservation produces small or inconsistent short-run gains in women's success in subsequently open seats. Phone audits document extensive male mediation of access to women elected under quotas, a pattern consistent with, but not proof of, proxy governance limiting independent political careers."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "quota-governance"
-            },
+            }
+          ],
+          [
             {
               "resource": "quota-spending"
-            },
+            }
+          ],
+          [
             {
               "resource": "quota-pds"
-            },
+            }
+          ],
+          [
             {
               "resource": "quota-marriage"
             }
           ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
+        ],
+        "press": [
+          [
+            {
+              "resource": "voxdev"
+            }
           ]
-        },
-        ": ",
-        {
-          "resource": "voxdev"
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "papers/quota_raj.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "the-older-half-spousal-age-gap-in-india",
@@ -6539,30 +7677,26 @@
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses' ages."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "electoral-rolls"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/soodoku/spousal_age_gap#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "unlanded-distribution-of-land-in-bihar",
@@ -6593,11 +7727,18 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen",
+        " With Lucas Shen.",
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "link-2"
         },
@@ -6605,7 +7746,15 @@
           "tag": "br"
         }
       ],
-      "description": []
+      "description": [
+        "Digitized land records from Bihar reveal concentrated ownership and substantial disparities by gender, religion, and caste. Men make up 76.5% of landowners, and Muslims, Scheduled Castes, and Extremely Backward Classes are underrepresented; the study measures ownership rather than operational agricultural holdings."
+      ],
+      "description_source": {
+        "url": "papers/land.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "description-invariance-in-risky-choice-framing",
@@ -6641,16 +7790,31 @@
         {
           "tag": "br"
         },
-        " With John Protzko and Jon A. Krosnick.",
+        " With John Protzko and Jon Krosnick.",
         {
           "tag": "br"
         },
-        " 🗃 ",
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
         {
           "resource": "replication"
         }
       ],
-      "description": []
+      "description": [
+        "Five archival survey experiments test whether equivalent gain and loss descriptions change risky choices. All 23 contrasts show the classic framing direction, but explicitly stating the certain outcome removes much of the gap, suggesting that inferences from incomplete descriptions matter alongside gain and loss labels."
+      ],
+      "description_source": {
+        "url": "papers/prospect_theory.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "preen-python-package-development",
@@ -6683,36 +7847,40 @@
         }
       ],
       "summary": [
-        "📦 ",
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "📦"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "py-canon"
-            },
+            }
+          ],
+          [
             {
               "resource": "r-canon"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/gojiplus/preen#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "offprint-academic-website-theme",
@@ -6729,12 +7897,26 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A Jekyll theme for academic personal websites, with a single text column and publications rendered from structured data. It uses self-hosted fonts and system-controlled dark mode, without requiring JavaScript."
+      ],
+      "description_source": {
+        "url": "https://github.com/gojiplus/jekyll-theme-offprint#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "indian-electoral-rolls",
@@ -6767,40 +7949,44 @@
         }
       ],
       "summary": [
-        "📊 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📊"
+          ]
+        },
         {
           "resource": "primary"
         },
         {
           "tag": "br"
         },
-        " With Atul Dhingra.",
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "RELATED"
-          ]
-        },
-        ": ",
-        {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+        " With Atul Dhingra."
+      ],
+      "description": [
+        "Scripts and linked tools collect and parse Indian electoral rolls published as PDFs by state election authorities. The project provides a foundation for research using recorded names, ages, gender labels, family relationships, and electoral geography."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "searchable-rolls"
-            },
+            }
+          ],
+          [
             {
               "resource": "unsearchable-rolls"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/in-rolls/electoral_rolls#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "public-sector-salaries",
@@ -6825,33 +8011,35 @@
         }
       ],
       "summary": [
-        "📊 ",
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
-          "class": "highlight",
+          "class": "entry-icon",
           "children": [
-            "RELATED"
+            "📊"
           ]
         },
-        ": ",
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay."
+      ],
+      "supporting": {
+        "related": [
+          [
             {
               "resource": "analyses"
             }
           ]
-        }
-      ],
-      "description": []
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/public-salaries/public_salaries#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "get-weather-data",
@@ -6868,12 +8056,26 @@
         }
       ],
       "summary": [
-        "📦 ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
       ],
-      "description": []
+      "description": [
+        "A Python package and web interface for retrieving historical daily weather by US ZIP code or coordinates. It uses NOAA station data, selects nearby stations, and returns weather measures in metric or imperial units."
+      ],
+      "description_source": {
+        "url": "https://github.com/gojiplus/get-weather-data#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     }
   ]
 }
