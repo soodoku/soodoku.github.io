@@ -4,14 +4,14 @@
   "sections": [
     {
       "id": "econometrics-statistics-and-data-collection",
-      "title": "ECONOMETRICS, STATISTICS, AND DATA COLLECTION",
+      "title": "Statistics and Research Methods",
       "children": [
         {
           "id": "prediction-stability",
-          "title": "PREDICTION STABILITY",
+          "title": "Prediction Stability",
           "children": [
             {
-              "entry": "don-t-forget-about-it-forgetting-penalized-supervised-learning"
+              "entry": "queue-shift-updating-classifiers-under-a-staffing-budget"
             },
             {
               "entry": "stable-cart-lower-bootstrap-prediction-variance-cart"
@@ -29,7 +29,7 @@
         },
         {
           "id": "calibration-weighting",
-          "title": "CALIBRATION & WEIGHTING",
+          "title": "Calibration & Weighting",
           "children": [
             {
               "entry": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression"
@@ -53,7 +53,7 @@
         },
         {
           "id": "record-linkage",
-          "title": "RECORD LINKAGE",
+          "title": "Record Linkage",
           "children": [
             {
               "entry": "inference-with-fuzzy-joined-data"
@@ -71,7 +71,7 @@
         },
         {
           "id": "data-collection",
-          "title": "DATA COLLECTION",
+          "title": "Data Collection",
           "children": [
             {
               "entry": "the-micro-task-market-for-lemons-collecting-data-on-amazon-s-mechanical-turk"
@@ -90,12 +90,15 @@
             },
             {
               "entry": "unbiased-regression-with-costly-item-labels"
+            },
+            {
+              "entry": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance"
             }
           ]
         },
         {
           "id": "causal-inference",
-          "title": "CAUSAL INFERENCE",
+          "title": "Causal Inference",
           "children": [
             {
               "entry": "inferring-treatment-compliance-from-delivery-window-data"
@@ -116,7 +119,7 @@
         },
         {
           "id": "other",
-          "title": "OTHER",
+          "title": "Other",
           "children": [
             {
               "entry": "one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments"
@@ -141,137 +144,8 @@
       ]
     },
     {
-      "id": "online-safety",
-      "title": "ONLINE SAFETY",
-      "children": [
-        {
-          "entry": "exposed-shedding-blacklight-on-online-privacy"
-        },
-        {
-          "entry": "pwned-how-often-are-americans-online-accounts-breached"
-        },
-        {
-          "entry": "piedomains-predict-the-kind-of-content-hosted-by-a-domain"
-        },
-        {
-          "entry": "pass-fail-using-a-password-generator-to-improve-password-strength"
-        },
-        {
-          "entry": "how-often-is-politicians-data-breached-evidence-from-hibp"
-        },
-        {
-          "entry": "bad-domains-exposure-to-malicious-content-online"
-        },
-        {
-          "entry": "know-your-ip"
-        },
-        {
-          "entry": "virustotal-r-client-for-the-virustotal-public-api-2-0"
-        },
-        {
-          "entry": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads"
-        }
-      ]
-    },
-    {
-      "id": "tools",
-      "title": "TOOLS",
-      "children": [
-        {
-          "entry": "rmcp-r-mcp-community-server"
-        },
-        {
-          "entry": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance"
-        },
-        {
-          "entry": "lost-years-expected-number-of-years-lost"
-        },
-        {
-          "entry": "repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form"
-        },
-        {
-          "entry": "indicate-transliterate-indic-languages-to-english"
-        },
-        {
-          "entry": "layoutlens-ai-assisted-ui-testing"
-        },
-        {
-          "entry": "adjacent-related-repositories-recommender"
-        },
-        {
-          "entry": "advertiser-promote-your-github-repositories-on-bluesky"
-        },
-        {
-          "entry": "tuber-access-youtube-api-via-r"
-        }
-      ]
-    },
-    {
-      "id": "meta-science",
-      "title": "META SCIENCE",
-      "children": [
-        {
-          "id": "metascience-software-citations",
-          "title": "SOFTWARE CITATIONS",
-          "children": [
-            {
-              "entry": "downloads-are-cheap-validated-use-as-a-measure-of-research-software"
-            },
-            {
-              "entry": "user-auto-compute-citations-to-software-from-github"
-            }
-          ]
-        },
-        {
-          "id": "metascience-miscitations",
-          "title": "MISCITATIONS",
-          "children": [
-            {
-              "entry": "significant-error-citations-to-research-with-publicized-statistical-errors"
-            },
-            {
-              "entry": "propagation-of-error-approving-citations-to-problematic-research"
-            },
-            {
-              "entry": "get-notified-when-cited-article-is-retracted"
-            },
-            {
-              "entry": "highlight-citations-to-retracted-articles"
-            },
-            {
-              "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
-            }
-          ]
-        },
-        {
-          "id": "metascience-other",
-          "title": "OTHER",
-          "children": [
-            {
-              "entry": "a-benchmark-for-benchmarks"
-            },
-            {
-              "entry": "review-of-noise-a-flaw-in-human-judgment"
-            },
-            {
-              "entry": "by-the-numbers-toward-more-precise-numerical-summaries-of-results"
-            },
-            {
-              "entry": "the-review-production-and-consumption-of-apsr-articles"
-            },
-            {
-              "entry": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes"
-            },
-            {
-              "entry": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "names",
-      "title": "NAMES",
+      "title": "Names and Name-Based Inference",
       "children": [
         {
           "entry": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name"
@@ -300,179 +174,161 @@
       ]
     },
     {
-      "id": "decision-making",
-      "title": "DECISION MAKING",
+      "id": "online-safety",
+      "title": "Online Privacy and Security",
       "children": [
         {
-          "id": "group-affect",
-          "title": "GROUP AFFECT",
+          "entry": "exposed-shedding-blacklight-on-online-privacy"
+        },
+        {
+          "entry": "pwned-how-often-are-americans-online-accounts-breached"
+        },
+        {
+          "entry": "piedomains-predict-the-kind-of-content-hosted-by-a-domain"
+        },
+        {
+          "entry": "pass-fail-using-a-password-generator-to-improve-password-strength"
+        },
+        {
+          "entry": "how-often-is-politicians-data-breached-evidence-from-hibp"
+        },
+        {
+          "entry": "bad-domains-exposure-to-malicious-content-online"
+        },
+        {
+          "entry": "know-your-ip"
+        },
+        {
+          "entry": "virustotal-r-client-for-the-virustotal-public-api-2-0"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Software and Tools",
+      "children": [
+        {
+          "entry": "rmcp-r-mcp-community-server"
+        },
+        {
+          "entry": "tuber-access-youtube-api-via-r"
+        },
+        {
+          "entry": "repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form"
+        },
+        {
+          "entry": "indicate-transliterate-indic-languages-to-english"
+        },
+        {
+          "entry": "lost-years-expected-number-of-years-lost"
+        },
+        {
+          "entry": "get-weather-data"
+        },
+        {
+          "entry": "layoutlens-ai-assisted-ui-testing"
+        },
+        {
+          "entry": "preen-python-package-development"
+        },
+        {
+          "entry": "offprint-academic-website-theme"
+        },
+        {
+          "entry": "adjacent-related-repositories-recommender"
+        },
+        {
+          "entry": "advertiser-promote-your-github-repositories-on-bluesky"
+        }
+      ]
+    },
+    {
+      "id": "meta-science",
+      "title": "Meta Science",
+      "children": [
+        {
+          "id": "metascience-software-citations",
+          "title": "Software Use and Credit",
           "children": [
             {
-              "entry": "inter-group-prejudice"
+              "entry": "downloads-are-cheap-validated-use-as-a-measure-of-research-software"
             },
             {
-              "entry": "affect-not-ideology-a-social-identity-perspective-on-polarization"
+              "entry": "user-auto-compute-citations-to-software-from-github"
             },
             {
-              "entry": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences"
-            },
-            {
-              "entry": "typecast-a-routine-mental-shortcut-causes-party-stereotyping"
-            },
-            {
-              "entry": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability"
-            },
-            {
-              "entry": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns"
-            },
-            {
-              "entry": "partisan-vision-partisan-bias-in-simple-visual-evaluations"
-            },
-            {
-              "entry": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect"
-            },
-            {
-              "entry": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online"
-            },
-            {
-              "entry": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes"
+              "entry": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads"
             }
           ]
         },
         {
-          "id": "information-environment",
-          "title": "INFORMATION ENVIRONMENT",
+          "id": "metascience-miscitations",
+          "title": "Miscitations",
           "children": [
             {
-              "entry": "what-and-who-is-on-network-television"
+              "entry": "significant-error-citations-to-research-with-publicized-statistical-errors"
             },
             {
-              "entry": "working-women-on-indian-tv"
+              "entry": "propagation-of-error-approving-citations-to-problematic-research"
             },
             {
-              "entry": "the-face-of-crime-in-prime-time-evidence-from-law-and-order"
+              "entry": "get-notified-when-cited-article-is-retracted"
             },
             {
-              "entry": "extreme-recall-which-politicians-come-to-mind"
+              "entry": "highlight-citations-to-retracted-articles"
+            },
+            {
+              "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
             }
           ]
         },
         {
-          "id": "deliberation",
-          "title": "DELIBERATION",
+          "id": "metascience-other",
+          "title": "Other",
           "children": [
             {
-              "entry": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics"
+              "entry": "a-benchmark-for-benchmarks"
             },
             {
-              "entry": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments"
+              "entry": "review-of-noise-a-flaw-in-human-judgment"
             },
             {
-              "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
+              "entry": "by-the-numbers-toward-more-precise-numerical-summaries-of-results"
             },
             {
-              "entry": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention"
-            }
-          ]
-        },
-        {
-          "id": "other-2",
-          "title": "OTHER",
-          "children": [
-            {
-              "entry": "problem-solving"
+              "entry": "the-review-production-and-consumption-of-apsr-articles"
             },
             {
-              "entry": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect"
+              "entry": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes"
             },
             {
-              "entry": "mixed-signals-movie-quality-assessments-across-platforms"
-            },
-            {
-              "entry": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability"
-            },
-            {
-              "entry": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play"
-            },
-            {
-              "entry": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues"
+              "entry": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts"
             }
           ]
         }
       ]
     },
     {
-      "id": "missing-women",
-      "title": "MISSING WOMEN",
+      "id": "provision-of-public-goods",
+      "title": "Public Services and Infrastructure",
       "children": [
         {
-          "entry": "missing-women-on-indian-streets"
+          "entry": "streetsense-learning-from-google-street-view"
         },
         {
-          "entry": "son-bias-in-the-us-evidence-from-business-names"
+          "entry": "autosense-automated-street-condition-assessment"
         },
         {
-          "entry": "which-women-are-missing-adult-sex-ratio-by-last-name"
+          "entry": "get-in-line-waiting-times-at-the-dmv"
         },
         {
-          "entry": "missing-women-on-the-streets"
-        },
-        {
-          "entry": "epic-children-sex-ratio-of-children-of-key-characters-in-epics"
-        },
-        {
-          "entry": "missing-daughters-of-indian-politicians"
-        }
-      ]
-    },
-    {
-      "id": "news",
-      "title": "NEWS",
-      "children": [
-        {
-          "entry": "not-news-provision-of-apolitical-news-in-the-british-news-media"
-        },
-        {
-          "entry": "strength-in-numbers-multiple-measures-of-media-ideology"
-        },
-        {
-          "entry": "measuring-agendas-and-positions-on-agendas"
-        },
-        {
-          "entry": "notnews-predict-the-type-of-news-based-on-story-text-and-url"
-        },
-        {
-          "entry": "unreadable-news-how-readable-is-american-news"
-        },
-        {
-          "entry": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources"
-        },
-        {
-          "entry": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news"
-        },
-        {
-          "entry": "don-t-expose-yourself-discretionary-exposure-to-political-information"
-        },
-        {
-          "entry": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times"
-        },
-        {
-          "entry": "hard-news-the-softening-of-network-television-news"
-        },
-        {
-          "entry": "partisan-imbalance-in-politifact"
-        },
-        {
-          "entry": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022"
-        },
-        {
-          "entry": "cnn-transcripts-2000-2025"
+          "entry": "public-sector-salaries"
         }
       ]
     },
     {
       "id": "measuring-learning-knowledge-and-misinformation",
-      "title": "MEASURING LEARNING, KNOWLEDGE, AND MISINFORMATION",
+      "title": "Knowledge and Misinformation",
       "children": [
         {
           "entry": "you-cannot-be-serious-the-impact-of-accuracy-incentives-on-partisan-bias"
@@ -510,23 +366,197 @@
       ]
     },
     {
-      "id": "provision-of-public-goods",
-      "title": "PROVISION OF PUBLIC GOODS",
+      "id": "decision-making",
+      "title": "Decision Making",
       "children": [
         {
-          "entry": "streetsense-learning-from-google-street-view"
+          "id": "group-affect",
+          "title": "Group Affect",
+          "children": [
+            {
+              "entry": "inter-group-prejudice"
+            },
+            {
+              "entry": "affect-not-ideology-a-social-identity-perspective-on-polarization"
+            },
+            {
+              "entry": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences"
+            },
+            {
+              "entry": "typecast-a-routine-mental-shortcut-causes-party-stereotyping"
+            },
+            {
+              "entry": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability"
+            },
+            {
+              "entry": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns"
+            },
+            {
+              "entry": "partisan-vision-partisan-bias-in-simple-visual-evaluations"
+            },
+            {
+              "entry": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect"
+            },
+            {
+              "entry": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online"
+            },
+            {
+              "entry": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes"
+            }
+          ]
         },
         {
-          "entry": "autosense-automated-street-condition-assessment"
+          "id": "deliberation",
+          "title": "Deliberation",
+          "children": [
+            {
+              "entry": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics"
+            },
+            {
+              "entry": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments"
+            },
+            {
+              "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
+            },
+            {
+              "entry": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention"
+            }
+          ]
         },
         {
-          "entry": "get-in-line-waiting-times-at-the-dmv"
+          "id": "news",
+          "title": "Information Environment",
+          "children": [
+            {
+              "entry": "not-news-provision-of-apolitical-news-in-the-british-news-media"
+            },
+            {
+              "entry": "strength-in-numbers-multiple-measures-of-media-ideology"
+            },
+            {
+              "entry": "measuring-agendas-and-positions-on-agendas"
+            },
+            {
+              "entry": "notnews-predict-the-type-of-news-based-on-story-text-and-url"
+            },
+            {
+              "entry": "unreadable-news-how-readable-is-american-news"
+            },
+            {
+              "entry": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources"
+            },
+            {
+              "entry": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news"
+            },
+            {
+              "entry": "don-t-expose-yourself-discretionary-exposure-to-political-information"
+            },
+            {
+              "entry": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times"
+            },
+            {
+              "entry": "hard-news-the-softening-of-network-television-news"
+            },
+            {
+              "entry": "partisan-imbalance-in-politifact"
+            },
+            {
+              "entry": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022"
+            },
+            {
+              "entry": "cnn-transcripts-2000-2025"
+            },
+            {
+              "entry": "what-and-who-is-on-network-television"
+            },
+            {
+              "entry": "working-women-on-indian-tv"
+            },
+            {
+              "entry": "the-face-of-crime-in-prime-time-evidence-from-law-and-order"
+            }
+          ]
+        },
+        {
+          "id": "other-2",
+          "title": "Other",
+          "children": [
+            {
+              "entry": "problem-solving"
+            },
+            {
+              "entry": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect"
+            },
+            {
+              "entry": "description-invariance-in-risky-choice-framing"
+            },
+            {
+              "entry": "mixed-signals-movie-quality-assessments-across-platforms"
+            },
+            {
+              "entry": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability"
+            },
+            {
+              "entry": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play"
+            },
+            {
+              "entry": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues"
+            },
+            {
+              "entry": "extreme-recall-which-politicians-come-to-mind"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "political-economy-of-india",
+      "title": "Political Economy of India",
+      "children": [
+        {
+          "entry": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies"
+        },
+        {
+          "entry": "the-effect-of-gender-quotas-on-some-qualities-of-elites"
+        },
+        {
+          "entry": "the-older-half-spousal-age-gap-in-india"
+        },
+        {
+          "entry": "unlanded-distribution-of-land-in-bihar"
+        },
+        {
+          "entry": "indian-electoral-rolls"
+        }
+      ]
+    },
+    {
+      "id": "missing-women",
+      "title": "Missing Women",
+      "children": [
+        {
+          "entry": "missing-women-on-indian-streets"
+        },
+        {
+          "entry": "son-bias-in-the-us-evidence-from-business-names"
+        },
+        {
+          "entry": "which-women-are-missing-adult-sex-ratio-by-last-name"
+        },
+        {
+          "entry": "missing-women-on-the-streets"
+        },
+        {
+          "entry": "epic-children-sex-ratio-of-children-of-key-characters-in-epics"
+        },
+        {
+          "entry": "missing-daughters-of-indian-politicians"
         }
       ]
     },
     {
       "id": "cricket",
-      "title": "CRICKET",
+      "title": "Cricket",
       "children": [
         {
           "entry": "elo-ratings-of-international-cricket-teams-by-format"
@@ -538,48 +568,32 @@
           "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
         }
       ]
-    },
-    {
-      "id": "other-3",
-      "title": "OTHER",
-      "children": [
-        {
-          "entry": "scaling-ml-products-at-startups-a-practioner-s-guide"
-        },
-        {
-          "entry": "the-effect-of-gender-quotas-on-some-qualities-of-elites"
-        },
-        {
-          "entry": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies"
-        },
-        {
-          "entry": "the-older-half-spousal-age-gap-in-india"
-        },
-        {
-          "entry": "unlanded-distribution-of-land-in-bihar"
-        }
-      ]
     }
   ],
   "entries": [
     {
-      "id": "don-t-forget-about-it-forgetting-penalized-supervised-learning",
+      "id": "queue-shift-updating-classifiers-under-a-staffing-budget",
       "kind": "paper",
-      "title": "(Don't) Forget About It: Forgetting Penalized Supervised Learning",
+      "title": "Queue Shift: Updating Classifiers Under a Staffing Budget",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/forget.pdf",
-          "new_tab": true
+          "url": "papers/queue_shift.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/queue-shift",
+            "ref": "main",
+            "path": "paper/main.pdf"
+          }
         },
         {
-          "id": "link-2",
+          "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/finite-sample/pareto-gd",
+          "url": "https://github.com/finite-sample/queue-shift",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -594,11 +608,11 @@
         },
         " 🗃 ",
         {
-          "resource": "link-2"
+          "resource": "replication"
         }
       ],
       "description": [
-        "When supervised models are retrained on the same task, updates can introduce model regression: examples that a previous model classified correctly become misclassified. In many deployments these reversals are costly even if aggregate accuracy improves, because they change which cases are hard, disrupt downstream workflows, and can force organizations to reconfigure human effort. We capture this with a simple economic view: a new model is attractive only when its reduction in expected downstream operating costs (e.g., error handling, staffing, oversight) outweighs the cost of changing behavior on previously well-served examples, which we illustrate with a routing-and-staffing example but which applies more broadly."
+        "When classifier predictions route cases to specialized queues, updates can change both accuracy and workload distribution. Queue Shift finds the batch assignment that maximizes candidate-model probability scores subject to a budget on changes in queue totals. The optimization guarantee is exact for the supplied scores; its interpretation as expected accuracy depends on probability quality. The paper gives a probability-error bound and simulation evidence with independently estimated models."
       ]
     },
     {
@@ -1113,7 +1127,15 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/geosensing/geo_sampling",
+          "url": "https://github.com/geosensing/geo-sampling",
+          "new_tab": true
+        },
+        {
+          "id": "geoinference",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/geosensing/geoinference",
+          "label": "geoinference: inference from street samples",
           "new_tab": true
         }
       ],
@@ -1125,7 +1147,28 @@
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon."
+        " With Suriyan Laohaprapanon.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "geoinference"
+            }
+          ]
+        }
       ],
       "description": [
         "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
@@ -1143,6 +1186,14 @@
           "role": "code",
           "url": "https://github.com/geosensing/allocator",
           "new_tab": true
+        },
+        {
+          "id": "ybar",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/geosensing/ybar",
+          "label": "ybar: mobile field data collection",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -1153,7 +1204,28 @@
         {
           "tag": "br"
         },
-        "With Suriyan Laohaprapanon."
+        "With Suriyan Laohaprapanon.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "ybar"
+            }
+          ]
+        }
       ],
       "description": [
         "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
@@ -1599,11 +1671,16 @@
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        "; ",
-        {
-          "resource": "link-4"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            }
+          ]
         },
         " "
       ],
@@ -1629,6 +1706,14 @@
           "role": "related",
           "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf",
           "label": "Domain Knowledge: Predicting the Kind of Content Hosted by a Domain."
+        },
+        {
+          "id": "rdomains",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/themains/rdomains",
+          "label": "rdomains: domain classification in R",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -1663,6 +1748,19 @@
           "tag": "i",
           "children": [
             "Complex, Intelligent and Software Intensive Systems (CISIS), 2020."
+          ]
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "rdomains"
+            }
           ]
         }
       ],
@@ -1879,7 +1977,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/gojiplus/rmcp/",
+          "url": "https://github.com/finite-sample/rmcp",
           "new_tab": true
         }
       ],
@@ -1927,7 +2025,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/gojiplus/lost_years"
+          "url": "https://github.com/gojiplus/lost-years"
         }
       ],
       "summary": [
@@ -1955,6 +2053,22 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/pvbhanuteja/repaper"
+        },
+        {
+          "id": "image-to-text",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/image-to-text",
+          "label": "image-to-text: batch OCR",
+          "new_tab": true
+        },
+        {
+          "id": "recognize",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/recognize",
+          "label": "recognize: OCR quality assessment",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -1965,7 +2079,31 @@
         {
           "tag": "br"
         },
-        " With Bhanu Teja."
+        " With Bhanu Teja.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "image-to-text"
+            },
+            {
+              "resource": "recognize"
+            }
+          ]
+        }
       ],
       "description": []
     },
@@ -2004,12 +2142,52 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/matmulai/layoutlens"
+          "url": "https://github.com/gojiplus/layoutlens"
+        },
+        {
+          "id": "layoutlens-action",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/layoutlens-action",
+          "label": "LayoutLens GitHub Action",
+          "new_tab": true
+        },
+        {
+          "id": "uijudge-bench",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/uijudge-bench",
+          "label": "UI Judge Benchmark",
+          "new_tab": true
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "layoutlens-action"
+            },
+            {
+              "resource": "uijudge-bench"
+            }
+          ]
         }
       ],
       "description": []
@@ -2067,12 +2245,41 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/gojiplus/tuber"
+        },
+        {
+          "id": "tubern",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/tubern",
+          "label": "tubern: YouTube Analytics and Reporting",
+          "new_tab": true
         }
       ],
       "summary": [
         "📦 ",
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "tubern"
+            }
+          ]
         }
       ],
       "description": []
@@ -2298,6 +2505,22 @@
           "url": "https://recite.github.io/softverse/lookup/",
           "label": "Look up a package",
           "new_tab": true
+        },
+        {
+          "id": "recode",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/recite/recode",
+          "label": "Recode: citation reminders",
+          "new_tab": true
+        },
+        {
+          "id": "pip-fund",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/recite/pip-fund",
+          "label": "pip-fund: funding software",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -2322,6 +2545,30 @@
         " 🔍 ",
         {
           "resource": "link-5"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "recode"
+            },
+            {
+              "resource": "pip-fund"
+            }
+          ]
         }
       ],
       "description": [
@@ -2573,11 +2820,16 @@
         },
         ": ",
         {
-          "resource": "link-4"
-        },
-        " | ",
-        {
-          "resource": "link-5"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-4"
+            },
+            {
+              "resource": "link-5"
+            }
+          ]
         }
       ],
       "description": []
@@ -2636,6 +2888,22 @@
           "role": "code",
           "url": "https://github.com/appeler/naampy",
           "new_tab": true
+        },
+        {
+          "id": "outkast",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/appeler/outkast",
+          "label": "outkast: caste-name data",
+          "new_tab": true
+        },
+        {
+          "id": "electoral-rolls",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/electoral_rolls",
+          "label": "Indian electoral rolls",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -2646,7 +2914,31 @@
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati and Suriyan Laohaprapanon."
+        " With Rajashekar Chintalapati and Suriyan Laohaprapanon.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "outkast"
+            },
+            {
+              "resource": "electoral-rolls"
+            }
+          ]
+        }
       ],
       "description": []
     },
@@ -2714,6 +3006,14 @@
           "role": "code",
           "url": "https://github.com/appeler/parsernaam",
           "new_tab": true
+        },
+        {
+          "id": "clean-names",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/appeler/clean-names",
+          "label": "clean-names: parsing and deduplication",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -2724,7 +3024,28 @@
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati."
+        " With Rajashekar Chintalapati.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "clean-names"
+            }
+          ]
+        }
       ],
       "description": []
     },
@@ -2923,19 +3244,22 @@
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
-        },
-        ", ",
-        {
-          "resource": "link-5"
-        },
-        ", ",
-        {
-          "resource": "link-6"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            },
+            {
+              "resource": "link-5"
+            },
+            {
+              "resource": "link-6"
+            }
+          ]
         },
         {
           "tag": "br"
@@ -2950,19 +3274,22 @@
         },
         ": ",
         {
-          "resource": "link-7"
-        },
-        ", ",
-        {
-          "resource": "link-8"
-        },
-        ", ",
-        {
-          "resource": "link-9"
-        },
-        ", ",
-        {
-          "resource": "link-10"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-7"
+            },
+            {
+              "resource": "link-8"
+            },
+            {
+              "resource": "link-9"
+            },
+            {
+              "resource": "link-10"
+            }
+          ]
         },
         ", etc."
       ],
@@ -3085,36 +3412,21 @@
           "tag": "span",
           "class": "highlight",
           "children": [
-            "PRESS"
+            "RELATED"
           ]
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
-        },
-        ", ",
-        {
-          "resource": "link-5"
-        },
-        ", ",
-        {
-          "resource": "link-6"
-        },
-        ", ",
-        {
-          "resource": "link-7"
-        },
-        ", ",
-        {
-          "resource": "link-8"
-        },
-        ", ",
-        {
-          "resource": "link-9"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-10"
+            },
+            {
+              "resource": "link-11"
+            }
+          ]
         },
         {
           "tag": "br"
@@ -3124,16 +3436,36 @@
           "tag": "span",
           "class": "highlight",
           "children": [
-            "RELATED"
+            "PRESS"
           ]
         },
         ": ",
         {
-          "resource": "link-10"
-        },
-        " | ",
-        {
-          "resource": "link-11"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            },
+            {
+              "resource": "link-5"
+            },
+            {
+              "resource": "link-6"
+            },
+            {
+              "resource": "link-7"
+            },
+            {
+              "resource": "link-8"
+            },
+            {
+              "resource": "link-9"
+            }
+          ]
         }
       ],
       "description": []
@@ -3306,11 +3638,16 @@
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            }
+          ]
         },
         {
           "tag": "br"
@@ -3553,7 +3890,7 @@
           "kind": "webpage",
           "role": "replication",
           "url": "https://osf.io/jdv7r/",
-          "label": "Replication and Supplementary Materials",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -3975,7 +4312,7 @@
           "id": "link-2",
           "kind": "webpage",
           "role": "replication",
-          "url": " https://github.com/soodoku/uncertainty",
+          "url": "https://github.com/soodoku/uncertainty",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -4077,15 +4414,19 @@
         },
         ": ",
         {
-          "resource": "link-2"
-        },
-        ", ",
-        {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-2"
+            },
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            }
+          ]
         },
         ", among other outlets."
       ],
@@ -4225,6 +4566,22 @@
           "url": "https://github.com/geosensing/streetscope",
           "label": "Replication Materials",
           "new_tab": true
+        },
+        {
+          "id": "marginal-revolution",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://marginalrevolution.com/marginalrevolution/2026/07/missing-women-on-indian-streets.html",
+          "label": "Marginal Revolution",
+          "new_tab": true
+        },
+        {
+          "id": "watching-the-wheels",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://music.amazon.co.uk/podcasts/37424666-0994-4d1b-9703-ae037bc10d9d/episodes/e3305856-5472-47be-8fb8-648470cb6f43/watching-the-wheels-ep-1-where-have-all-the-women-gone",
+          "label": "Watching the Wheels (podcast)",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -4245,7 +4602,27 @@
         {
           "tag": "br"
         },
-        " "
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "marginal-revolution"
+            },
+            {
+              "resource": "watching-the-wheels"
+            }
+          ]
+        }
       ],
       "description": []
     },
@@ -4704,15 +5081,19 @@
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
-        },
-        ", ",
-        {
-          "resource": "link-5"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            },
+            {
+              "resource": "link-5"
+            }
+          ]
         }
       ],
       "description": []
@@ -4837,12 +5218,63 @@
           "role": "code",
           "url": "https://github.com/notnews/cnn_transcripts/",
           "new_tab": true
+        },
+        {
+          "id": "archive-news",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/notnews/archive_news_cc",
+          "label": "Internet Archive TV captions",
+          "new_tab": true
+        },
+        {
+          "id": "vanderbilt-news",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/notnews/vandy_tv_news_abstracts",
+          "label": "Vanderbilt TV news abstracts",
+          "new_tab": true
+        },
+        {
+          "id": "nbc-transcripts",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/notnews/nbc_transcripts",
+          "label": "NBC / MSNBC transcripts",
+          "new_tab": true
         }
       ],
       "summary": [
         "💾 ",
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "archive-news"
+            },
+            {
+              "resource": "vanderbilt-news"
+            },
+            {
+              "resource": "nbc-transcripts"
+            }
+          ]
         }
       ],
       "description": []
@@ -4938,32 +5370,9 @@
         {
           "resource": "link-2"
         },
-        "; ",
+        "; 🗃 ",
         {
           "resource": "link-3"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "highlight",
-          "children": [
-            "PRESS"
-          ]
-        },
-        ": ",
-        {
-          "resource": "link-4"
-        },
-        ", ",
-        {
-          "resource": "link-5"
-        },
-        ", ",
-        {
-          "resource": "link-6"
         },
         {
           "tag": "br"
@@ -4978,11 +5387,43 @@
         },
         ": ",
         {
-          "resource": "link-7"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-7"
+            },
+            {
+              "resource": "link-8"
+            }
+          ]
         },
-        "; ",
         {
-          "resource": "link-8"
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-4"
+            },
+            {
+              "resource": "link-5"
+            },
+            {
+              "resource": "link-6"
+            }
+          ]
         }
       ],
       "description": []
@@ -5060,11 +5501,16 @@
         },
         ": ",
         {
-          "resource": "link-3"
-        },
-        ", ",
-        {
-          "resource": "link-4"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "link-3"
+            },
+            {
+              "resource": "link-4"
+            }
+          ]
         }
       ],
       "description": []
@@ -5281,7 +5727,7 @@
         {
           "resource": "link-2"
         },
-        " | ",
+        " | 🗃 ",
         {
           "resource": "link-3"
         }
@@ -5787,9 +6233,25 @@
         {
           "id": "link-6",
           "kind": "webpage",
-          "role": "related",
+          "role": "press",
           "url": "https://www.espncricinfo.com/story/why-replacing-the-toss-with-an-auction-is-the-fair-thing-to-do-1277744",
           "label": "ESPN: Why replacing the toss with an auction is the fair thing to do",
+          "new_tab": true
+        },
+        {
+          "id": "espncricinfo",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/outside-edge/python-espncricinfo",
+          "label": "python-espncricinfo",
+          "new_tab": true
+        },
+        {
+          "id": "cricket-data",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/outside-edge/get-cricket-data",
+          "label": "Cricket data and collection scripts",
           "new_tab": true
         }
       ],
@@ -5830,13 +6292,25 @@
         {
           "resource": "link-3"
         },
+        " (with Derek Willis; ",
+        {
+          "resource": "link-4"
+        },
+        ").",
         {
           "tag": "br"
         },
-        "With Derek Willis.",
-        " | ",
         {
-          "resource": "link-4"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "espncricinfo"
+            },
+            {
+              "resource": "cricket-data"
+            }
+          ]
         },
         {
           "tag": "br"
@@ -5851,61 +6325,19 @@
         },
         ": ",
         {
-          "resource": "link-5"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
           "tag": "span",
-          "class": "highlight",
+          "class": "resource-links",
           "children": [
-            "RELATED"
+            {
+              "resource": "link-5"
+            },
+            {
+              "resource": "link-6"
+            }
           ]
-        },
-        ": ",
-        {
-          "resource": "link-6"
         }
       ],
       "description": []
-    },
-    {
-      "id": "scaling-ml-products-at-startups-a-practioner-s-guide",
-      "kind": "paper",
-      "title": "Scaling ML Products at Startups: A Practitioner's Guide",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/scaling.pdf",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "coauthor",
-          "children": [
-            "With Atul Dhingra."
-          ]
-        },
-        " "
-      ],
-      "description": [
-        " How do you scale a machine learning product at a startup? In particular, how do you serve a greater volume, velocity, and variety of queries cost-effectively? We break down costs into variable costs—the cost of serving the model and keeping it performant—and fixed costs—the cost of developing and training new models. We propose a framework for conceptualizing these costs, breaking them into finer categories, and limn ways to reduce costs. Lastly, since in our experience, the most expensive fixed cost of a machine learning system is the cost of identifying the root causes of failures and driving continuous improvement, we present a way to conceptualize the issues and share our methodology for the same. "
-      ],
-      "class": "paper-toggle"
     },
     {
       "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
@@ -5973,6 +6405,46 @@
           "url": "https://github.com/in-rolls/quota_representation",
           "label": "Replication Materials",
           "new_tab": true
+        },
+        {
+          "id": "quota-governance",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/quota_governance",
+          "label": "Governance",
+          "new_tab": true
+        },
+        {
+          "id": "quota-spending",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/quota_spending",
+          "label": "Public spending",
+          "new_tab": true
+        },
+        {
+          "id": "quota-pds",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/quota_pds",
+          "label": "PDS",
+          "new_tab": true
+        },
+        {
+          "id": "quota-marriage",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/quota_marriage",
+          "label": "Marriage",
+          "new_tab": true
+        },
+        {
+          "id": "voxdev",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://voxdev.org/topic/institutions-political-economy/no-representation-without-reservation-long-term-limits-gender",
+          "label": "VoxDev",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -5989,6 +6461,51 @@
         " 🗃 ",
         {
           "resource": "replication"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "quota-governance"
+            },
+            {
+              "resource": "quota-spending"
+            },
+            {
+              "resource": "quota-pds"
+            },
+            {
+              "resource": "quota-marriage"
+            }
+          ]
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "voxdev"
         }
       ],
       "description": []
@@ -6005,6 +6522,14 @@
           "role": "code",
           "url": "https://github.com/soodoku/spousal_age_gap",
           "new_tab": true
+        },
+        {
+          "id": "electoral-rolls",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/electoral_rolls",
+          "label": "Indian electoral rolls",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -6014,7 +6539,28 @@
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon"
+        " With Suriyan Laohaprapanon",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "electoral-rolls"
+            }
+          ]
+        }
       ],
       "description": []
     },
@@ -6036,7 +6582,7 @@
           "kind": "repository",
           "role": "replication",
           "url": "https://github.com/in-rolls/land",
-          "label": "Replication Files",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -6051,12 +6597,280 @@
         {
           "tag": "br"
         },
-        " ",
+        " 🗃 ",
         {
           "resource": "link-2"
         },
         {
           "tag": "br"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "description-invariance-in-risky-choice-framing",
+      "kind": "paper",
+      "title": "Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/prospect_theory.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/prospect_theory",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/prospect_theory",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With John Protzko and Jon A. Krosnick.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "replication"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "preen-python-package-development",
+      "kind": "software",
+      "title": "Preen: Python Package Development Checks",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/preen",
+          "new_tab": true
+        },
+        {
+          "id": "py-canon",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/py-canon",
+          "label": "py-canon: shared Python package standards",
+          "new_tab": true
+        },
+        {
+          "id": "r-canon",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/gojiplus/r-canon",
+          "label": "r-canon: shared R package standards",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "py-canon"
+            },
+            {
+              "resource": "r-canon"
+            }
+          ]
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "offprint-academic-website-theme",
+      "kind": "software",
+      "title": "Offprint: A Jekyll Theme for Academic Websites",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/jekyll-theme-offprint",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "indian-electoral-rolls",
+      "kind": "dataset",
+      "title": "Indian Electoral Rolls: Data and Extraction Tools",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/in-rolls/electoral_rolls",
+          "new_tab": true
+        },
+        {
+          "id": "searchable-rolls",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/parse_searchable_rolls",
+          "label": "Searchable-roll parser",
+          "new_tab": true
+        },
+        {
+          "id": "unsearchable-rolls",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/parse_unsearchable_rolls",
+          "label": "Scanned-roll parser",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📊 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Atul Dhingra.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "searchable-rolls"
+            },
+            {
+              "resource": "unsearchable-rolls"
+            }
+          ]
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "public-sector-salaries",
+      "kind": "dataset",
+      "title": "Public Sector Salaries: Data on US Public Employees",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/public-salaries/public_salaries",
+          "new_tab": true
+        },
+        {
+          "id": "analyses",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/public-salaries/pub_sal_analyses",
+          "label": "Salary analyses",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📊 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "analyses"
+            }
+          ]
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "get-weather-data",
+      "kind": "software",
+      "title": "Weather Data by Location and Date",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/get-weather-data",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
         }
       ],
       "description": []

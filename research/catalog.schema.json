@@ -67,7 +67,8 @@
             "class": {
               "enum": [
                 "highlight",
-                "coauthor"
+                "coauthor",
+                "resource-links"
               ]
             },
             "children": {

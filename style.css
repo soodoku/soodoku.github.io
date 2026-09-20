@@ -7,6 +7,11 @@
 /* =========================================
    2. Base & Reset
    ========================================= */
+:root {
+  --site-accent: #005f9e;
+  --heading-color: #004675;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -60,7 +65,7 @@ a {
 
 /* CHANGED: Links turn Blue on Hover */
 a:hover {
-  color: #0056b3; 
+  color: var(--site-accent);
 }
 
 /* Top Menu Links (Blog | Research) */
@@ -71,7 +76,7 @@ a.home {
 }
 
 /* Name Styling */
-.first { color: #005f9e; }
+.first { color: var(--site-accent); }
 .last  { color: #000; }
 
 .site-title {
@@ -145,11 +150,25 @@ a.home {
 }
 
 .sidebar ul li a:hover {
-  color: #0056b3;
+  color: var(--site-accent);
 }
 
 .sidebar .site-title {
   text-align: right;
+}
+
+.research-sidebar ul {
+  font-family: 'Inter', sans-serif;
+}
+
+.research-sidebar ul li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--site-accent);
+}
+
+.research-sidebar ul li a[aria-current="page"] {
+  font-weight: 500;
 }
 
 /* =========================================
@@ -287,23 +306,37 @@ details[open] > summary::before {
   }
 }
 
-/* CHANGED: Using em/rem relative sizes */
-.category-toggle > summary {
-  font-size: 1.2rem; 
+#research .category-toggle > summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
   font-weight: 500;
-  color: #222;
+  color: var(--heading-color);
 }
 
-.category-toggle details > summary {
+.content h3.research-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+#research .category-toggle .category-toggle > summary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+#research details:not(.category-toggle) > summary,
+#research .coauthor,
+#research .abstract,
+#research a {
   font-size: 1rem;
   font-weight: 400;
-  color: #333;
+  color: #444;
 }
 
-.category-toggle details details > summary {
-  font-size: 0.9em;
-  font-weight: 300;
-  color: #444;
+#research a:hover {
+  color: var(--site-accent);
 }
 
 details details {
@@ -327,6 +360,55 @@ details details {
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.05em;
+}
+
+#research .highlight {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+#research .resource-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  vertical-align: baseline;
+  max-width: 100%;
+  gap: 0.25rem 0;
+}
+
+#research .resource-links a {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+#research .resource-links a + a {
+  border-left: 1px dotted #c5c5c5;
+  margin-left: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+@media (max-width: 480px) {
+  #research .resource-links {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  #research .resource-links a + a {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+#research details:not(.category-toggle) > summary,
+#research .coauthor {
+  line-height: 1.75;
 }
 
 /* CHANGED: Using em to scale with body */
@@ -390,6 +472,10 @@ details details {
     padding: 0.375rem 0;
     font-size: 0.75rem;
     line-height: 1.5;
+  }
+
+  .research-sidebar ul li a {
+    font-size: 0.8125rem;
   }
 
   .content {
