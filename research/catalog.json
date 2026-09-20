@@ -211,43 +211,61 @@
       "title": "META SCIENCE",
       "children": [
         {
-          "entry": "a-benchmark-for-benchmarks"
+          "id": "metascience-software-citations",
+          "title": "SOFTWARE CITATIONS",
+          "children": [
+            {
+              "entry": "downloads-are-cheap-validated-use-as-a-measure-of-research-software"
+            },
+            {
+              "entry": "user-auto-compute-citations-to-software-from-github"
+            }
+          ]
         },
         {
-          "entry": "review-of-noise-a-flaw-in-human-judgment"
+          "id": "metascience-miscitations",
+          "title": "MISCITATIONS",
+          "children": [
+            {
+              "entry": "significant-error-citations-to-research-with-publicized-statistical-errors"
+            },
+            {
+              "entry": "propagation-of-error-approving-citations-to-problematic-research"
+            },
+            {
+              "entry": "get-notified-when-cited-article-is-retracted"
+            },
+            {
+              "entry": "highlight-citations-to-retracted-articles"
+            },
+            {
+              "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
+            }
+          ]
         },
         {
-          "entry": "significant-error-citations-to-research-with-publicized-statistical-errors"
-        },
-        {
-          "entry": "propagation-of-error-approving-citations-to-problematic-research"
-        },
-        {
-          "entry": "get-notified-when-cited-article-is-retracted"
-        },
-        {
-          "entry": "highlight-citations-to-retracted-articles"
-        },
-        {
-          "entry": "downloads-are-cheap-validated-use-as-a-measure-of-research-software"
-        },
-        {
-          "entry": "user-auto-compute-citations-to-software-from-github"
-        },
-        {
-          "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
-        },
-        {
-          "entry": "by-the-numbers-toward-more-precise-numerical-summaries-of-results"
-        },
-        {
-          "entry": "the-review-production-and-consumption-of-apsr-articles"
-        },
-        {
-          "entry": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes"
-        },
-        {
-          "entry": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts"
+          "id": "metascience-other",
+          "title": "OTHER",
+          "children": [
+            {
+              "entry": "a-benchmark-for-benchmarks"
+            },
+            {
+              "entry": "review-of-noise-a-flaw-in-human-judgment"
+            },
+            {
+              "entry": "by-the-numbers-toward-more-precise-numerical-summaries-of-results"
+            },
+            {
+              "entry": "the-review-production-and-consumption-of-apsr-articles"
+            },
+            {
+              "entry": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes"
+            },
+            {
+              "entry": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts"
+            }
+          ]
         }
       ]
     },
@@ -5891,21 +5909,41 @@
     },
     {
       "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
-      "kind": "project",
-      "title": "The Effect of Gender Quotas on Some Qualities of Elites",
+      "kind": "paper",
+      "title": "Female Reservation and the Qualifications of Local Elected Officials in India",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/quota_elite_quality.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "in-rolls/quota_elite_quality",
+            "ref": "main",
+            "path": "manuscript/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
           "kind": "repository",
-          "role": "code",
+          "role": "replication",
           "url": "https://github.com/in-rolls/quota_elite_quality",
-          "new_tab": true
+          "new_tab": true,
+          "label": "Replication Materials"
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "replication"
         }
       ],
       "description": []
@@ -5927,6 +5965,14 @@
             "ref": "main",
             "path": "ms/main.pdf"
           }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/in-rolls/quota_representation",
+          "label": "Replication Materials",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -5936,7 +5982,14 @@
         {
           "tag": "br"
         },
-        " With Varun K. R."
+        " With Varun K. R.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "replication"
+        }
       ],
       "description": []
     },
