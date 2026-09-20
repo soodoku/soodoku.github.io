@@ -772,7 +772,7 @@
     {
       "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
       "kind": "paper",
-      "title": "Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression",
+      "title": "Calibre: Probability Calibration and Evaluation in Python",
       "primary_resource": "primary",
       "resources": [
         {
@@ -787,7 +787,15 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
-          "label": "calibre: Advanced Calibration Models",
+          "label": "calibre: Probability Calibration and Evaluation",
+          "new_tab": true
+        },
+        {
+          "id": "decisions-note",
+          "kind": "pdf",
+          "role": "related",
+          "url": "papers/calibre_decisions.pdf",
+          "label": "Choosing Calibration for Decisions",
           "new_tab": true
         }
       ],
@@ -818,8 +826,23 @@
         }
       ],
       "description": [
-        "Thresholded decisions turn probability errors into utility losses. Pooling-based monotone calibrators such as isotonic regression are flexible and reliable but can collapse distinct scores into the same probability on wide plateaus. We adopt a decisioneconomic view: choose and tune a calibrator that reduces deployment cost by improving reliability where it affects decisions and by preserving discrimination where it matters."
-      ]
+        "Calibre combines probability calibration methods with tools for evaluating accuracy, reliability, and score ordering. A reproducible benchmark compares isotonic and centered isotonic regression, monotone splines, and other methods, illustrating why prediction granularity, calibration error, and predictive accuracy should be reported separately. The methods do not guarantee improved predictions or decision utility in every application."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "decisions-note"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/calibre.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
     },
     {
       "id": "fairlex-leximin-calibration",
@@ -1812,7 +1835,7 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen",
+        " With Lucas Shen.",
         {
           "tag": "br"
         },
@@ -2008,7 +2031,7 @@
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati"
+        " With Rajashekar Chintalapati."
       ],
       "description": [
         "We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness."
@@ -2159,7 +2182,7 @@
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon"
+        " With Suriyan Laohaprapanon."
       ],
       "description": [
         "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures."
@@ -4605,7 +4628,7 @@
         {
           "tag": "br"
         },
-        "With Asha Sood"
+        "With Asha Sood."
       ],
       "description": [
         "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows."
@@ -5152,7 +5175,7 @@
         {
           "tag": "br"
         },
-        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius."
+        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Tompson, Jennifer Agiesta, and Dennis Junius."
       ],
       "description": [
         "Surveys from 2010 and 2012 find substantial misunderstanding of the Affordable Care Act despite support for many of its provisions. The analysis estimates that fuller understanding could increase support for the law; this is a modeled implication, rather than a demonstrated effect of an information campaign."
@@ -5205,7 +5228,7 @@
         {
           "tag": "br"
         },
-        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
+        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
         {
           "tag": "i",
           "children": [
@@ -5360,7 +5383,7 @@
         {
           "tag": "br"
         },
-        " With Varun Karekurve-Ramachandra",
+        " With Varun Karekurve-Ramachandra.",
         {
           "tag": "br"
         },
@@ -5429,7 +5452,7 @@
         {
           "tag": "br"
         },
-        " With Walter Guillioli",
+        " With Walter Guillioli.",
         {
           "tag": "br"
         },
@@ -5481,7 +5504,7 @@
         {
           "tag": "br"
         },
-        "With Suriyan Laohaprapanon"
+        "With Suriyan Laohaprapanon."
       ],
       "description": [
         "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels."
@@ -6157,7 +6180,7 @@
         {
           "tag": "br"
         },
-        " With Derek Willis"
+        " With Derek Willis."
       ],
       "description": [
         "A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections."
@@ -7568,7 +7591,7 @@
         {
           "tag": "br"
         },
-        " With Varun K. R.",
+        " With Varun Karekurve-Ramachandra.",
         {
           "tag": "br"
         },
@@ -7654,7 +7677,7 @@
         {
           "tag": "br"
         },
-        " With Suriyan Laohaprapanon"
+        " With Suriyan Laohaprapanon."
       ],
       "description": [
         "Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses' ages."
@@ -7704,7 +7727,7 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen",
+        " With Lucas Shen.",
         {
           "tag": "br"
         },
@@ -7767,7 +7790,7 @@
         {
           "tag": "br"
         },
-        " With John Protzko and Jon A. Krosnick.",
+        " With John Protzko and Jon Krosnick.",
         {
           "tag": "br"
         },
