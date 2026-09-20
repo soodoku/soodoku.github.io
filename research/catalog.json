@@ -47,6 +47,9 @@
               "entry": "streaming-calibration-with-mwu-and-sgd"
             },
             {
+              "entry": "streamcal-streaming-probability-calibration"
+            },
+            {
               "entry": "from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges"
             }
           ]
@@ -986,7 +989,7 @@
     {
       "id": "streaming-calibration-with-mwu-and-sgd",
       "kind": "paper",
-      "title": "Streaming Calibration With MWU and SGD",
+      "title": "Streaming Survey Raking With MWU and SGD",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1037,7 +1040,37 @@
         }
       ],
       "description": [
-        "Survey raking and probability calibration are traditionally batch procedures: collect all the data, then solve for weights or a calibration map. When data arrive in a stream—or the target distribution drifts—batch methods require repeated re-computation. We develop online versions of raking and calibration using multiplicative weight updates (MWU) and stochastic gradient descent (SGD), processing one observation at a time with convergence guarantees."
+        "onlinerake adjusts survey weights incrementally as observations arrive, using multiplicative weight updates (MWU) or stochastic gradient descent (SGD) to bring weighted sample margins toward population targets. It supports streaming survey weighting without repeatedly fitting a batch raking procedure."
+      ]
+    },
+    {
+      "id": "streamcal-streaming-probability-calibration",
+      "kind": "software",
+      "title": "streamcal: Streaming Probability Calibration",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/streamcal",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "streamcal updates probability calibration as predictions and observed outcomes arrive. It uses multiplicative weight updates to adjust predicted probabilities toward observed outcome rates, allowing calibration to adapt as the data distribution changes."
       ]
     },
     {
@@ -1151,14 +1184,14 @@
     {
       "id": "tether-high-precision-record-linkage",
       "kind": "software",
-      "title": "tether: High-Precision Record Linkage",
+      "title": "preclink: High-Precision Record Linkage",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/finite-sample/tether",
+          "url": "https://github.com/finite-sample/preclink",
           "new_tab": true
         }
       ],

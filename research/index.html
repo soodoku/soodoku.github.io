@@ -89,8 +89,12 @@
 <div class="abstract">Entropy balancing finds survey weights that satisfy exact moment constraints while staying close to uniform weights in KL divergence. Standard implementations solve this via Newton&#x27;s method on the dual, which requires computing and inverting a Hessian at each step. We show that first-order methods—multiplicative weight updates and dual gradient descent—converge reliably, scale to high-dimensional constraint sets, and avoid the numerical instabilities that plague second-order solvers when constraints are near-collinear.</div>
 </details>
 <details>
-<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Calibration With MWU and SGD</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
-<div class="abstract">Survey raking and probability calibration are traditionally batch procedures: collect all the data, then solve for weights or a calibration map. When data arrive in a stream—or the target distribution drifts—batch methods require repeated re-computation. We develop online versions of raking and calibration using multiplicative weight updates (MWU) and stochastic gradient descent (SGD), processing one observation at a time with convergence guarantees.</div>
+<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Survey Raking With MWU and SGD</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
+<div class="abstract">onlinerake adjusts survey weights incrementally as observations arrive, using multiplicative weight updates (MWU) or stochastic gradient descent (SGD) to bring weighted sample margins toward population targets. It supports streaming survey weighting without repeatedly fitting a batch raking procedure.</div>
+</details>
+<details>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/streamcal" target="_blank" class="entry-title">streamcal: Streaming Probability Calibration</a></summary>
+<div class="abstract">streamcal updates probability calibration as predictions and observed outcomes arrive. It uses multiplicative weight updates to adjust predicted probabilities toward observed outcome rates, allowing calibration to adapt as the data distribution changes.</div>
 </details>
 <details>
 <summary><a href="papers/score_signs.pdf" target="_blank" class="entry-title">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a></summary>
@@ -108,7 +112,7 @@
 <div class="abstract">Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity.</div>
 </details>
 <details>
-<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/tether" target="_blank" class="entry-title">tether: High-Precision Record Linkage</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/preclink" target="_blank" class="entry-title">preclink: High-Precision Record Linkage</a></summary>
 <div class="abstract">A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores.</div>
 </details>
 <details>
