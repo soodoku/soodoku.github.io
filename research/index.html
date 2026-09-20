@@ -37,163 +37,163 @@
 		</div>
     <ul>
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/research" aria-current="page">Data, Research &amp; Software</a></li>
+      <li><a href="/research" aria-current="page">Data, Research, and Software</a></li>
       <li><a href="https://gojiberries.io">Blog</a></li>
     </ul>
   </nav>
   <main class="content">
    
-<h3 class="research-heading">Data, Research &amp; Software</h3>
+<h3 class="research-heading">Data, Research, and Software</h3>
 <div id="research">
 <details class="category-toggle">
 <summary>Statistics and Research Methods</summary>
 <details class="category-toggle">
 <summary>Prediction Stability</summary>
 <details>
-<summary>🌱 <a href="papers/queue_shift.pdf" target="_blank">Queue Shift: Updating Classifiers Under a Staffing Budget</a><br> 🗃 <a href="https://github.com/finite-sample/queue-shift" target="_blank">Replication Materials</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/queue_shift.pdf" target="_blank" class="entry-title">Queue Shift: Updating Classifiers Under a Staffing Budget</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/queue-shift" target="_blank">Replication Materials</a></summary>
 <div class="abstract">When classifier predictions route cases to specialized queues, updates can change both accuracy and workload distribution. Queue Shift finds the batch assignment that maximizes candidate-model probability scores subject to a budget on changes in queue totals. The optimization guarantee is exact for the supplied scores; its interpretation as expected accuracy depends on probability quality. The paper gives a probability-error bound and simulation evidence with independently estimated models.</div>
 </details>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/stable-cart" target="_blank">Stable CART: Lower Bootstrap Prediction Variance CART</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/stable-cart" target="_blank" class="entry-title">Stable CART: Lower Bootstrap Prediction Variance CART</a></summary>
 <div class="abstract">Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets).</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/bagged_fsr/" target="_blank">Bagged FSR: Rehabilitating Forward Stepwise Regression</a></summary>
+<summary><a href="https://github.com/soodoku/bagged_fsr/" target="_blank" class="entry-title">Bagged FSR: Rehabilitating Forward Stepwise Regression</a></summary>
 <div class="abstract">Forward Stepwise Regression (FSR) is hardly used today. That is mostly because regularization is a better way to think about variable selection. However, part of the reason for its disuse is that FSR is a greedy optimization strategy with unstable paths. Jigger the data a little, and the search paths, variables in the final set, and the performance of the final model can all change dramatically. The same issues, however, affect another greedy optimization strategy—CART. The insight that rehabilitated CART was bagging—building multiple trees using random subspaces (sometimes on randomly sampled rows) and averaging the results. What works for CART should principally also work for FSR. If you are using FSR for prediction, you can build multiple FSR models using random subspaces and random samples of rows and then average the results. If you are using it for variable selection, you can pick variables with the highest batting average (n_selected/n_tried). (LASSO will beat it on speed, but there is little reason to expect that it will beat it on results.)</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/bootconsistency.pdf" target="_blank">Bootstrap-Consistency Regularization: Training Neural Networks for Prediction Stability</a><br> 🗃 <a href="https://github.com/finite-sample/consistentshade" target="_blank">Replication Materials</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/bootconsistency.pdf" target="_blank" class="entry-title">Bootstrap-Consistency Regularization: Training Neural Networks for Prediction Stability</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/consistentshade" target="_blank">Replication Materials</a></summary>
 <div class="abstract">Neural networks trained on the same data with different random seeds or slightly perturbed training sets can produce substantially different predictions for individual examples, even when aggregate accuracy is similar. We add a consistency penalty to the training loss that penalizes prediction disagreement across bootstrap resamples of the training data, encouraging the network to find solutions whose individual-level predictions are stable under resampling.</div>
 </details>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/ensemble-proximity/" target="_blank">Selecting for Stability: Choose the Model Closest to the Ensemble</a> </summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/ensemble-proximity/" target="_blank" class="entry-title">Selecting for Stability: Choose the Model Closest to the Ensemble</a> </summary>
 <div class="abstract">Ensembles reduce prediction variance but are expensive to deploy. Rather than averaging all models at inference time, select the single model whose predictions are closest to the ensemble average. This gives you most of the ensemble&#x27;s stability benefit at the cost of a single model, with a principled selection criterion that avoids arbitrary choices among models with similar aggregate performance.</div>
 </details>
 </details>
 <details class="category-toggle">
-<summary>Calibration &amp; Weighting</summary>
+<summary>Calibration and Weighting</summary>
 <details>
-<summary>🌱 <a href="papers/calibre.pdf" target="_blank">Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression</a><br> 📦 <a href="https://github.com/finite-sample/calibre" target="_blank">calibre: Advanced Calibration Models</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/calibre.pdf" target="_blank" class="entry-title">Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/calibre" target="_blank">calibre: Advanced Calibration Models</a></summary>
 <div class="abstract">Thresholded decisions turn probability errors into utility losses. Pooling-based monotone calibrators such as isotonic regression are flexible and reliable but can collapse distinct scores into the same probability on wide plateaus. We adopt a decisioneconomic view: choose and tune a calibrator that reduces deployment cost by improving reliability where it affects decisions and by preserving discrimination where it matters.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/fairlex" target="_blank">fairlex: leximin calibration</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/fairlex" target="_blank" class="entry-title">fairlex: leximin calibration</a></summary>
 <div class="abstract">Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group&#x27;s calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups.</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/multiclass-rank-calibration.pdf" target="_blank">Rank-Preserving Calibration for Multiclass Classification</a><br> 📦 <a href="https://github.com/finite-sample/rank_preserving_calibration" target="_blank">Rank Preserving Calibration of Multiclass Probabilities</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/multiclass-rank-calibration.pdf" target="_blank" class="entry-title">Rank-Preserving Calibration for Multiclass Classification</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/rank_preserving_calibration" target="_blank">Rank Preserving Calibration of Multiclass Probabilities</a></summary>
 <div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/mwu-eb.pdf" target="_blank">First-Order Entropy Balancing via Dual Gradient Descent</a><br> 🗃 <a href="https://github.com/finite-sample/adaptive-eb" target="_blank">Replication Materials</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/mwu-eb.pdf" target="_blank" class="entry-title">First-Order Entropy Balancing via Dual Gradient Descent</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/adaptive-eb" target="_blank">Replication Materials</a></summary>
 <div class="abstract">Entropy balancing finds survey weights that satisfy exact moment constraints while staying close to uniform weights in KL divergence. Standard implementations solve this via Newton&#x27;s method on the dual, which requires computing and inverting a Hessian at each step. We show that first-order methods—multiplicative weight updates and dual gradient descent—converge reliably, scale to high-dimensional constraint sets, and avoid the numerical instabilities that plague second-order solvers when constraints are near-collinear.</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/onlinerake.pdf" target="_blank">Streaming Calibration With MWU and SGD</a><br> 📦 <a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Calibration With MWU and SGD</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
 <div class="abstract">Survey raking and probability calibration are traditionally batch procedures: collect all the data, then solve for weights or a calibration map. When data arrive in a stream—or the target distribution drifts—batch methods require repeated re-computation. We develop online versions of raking and calibration using multiplicative weight updates (MWU) and stochastic gradient descent (SGD), processing one observation at a time with convergence guarantees.</div>
 </details>
 <details>
-<summary><a href="papers/score_signs.pdf" target="_blank">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a></summary>
+<summary><a href="papers/score_signs.pdf" target="_blank" class="entry-title">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a></summary>
 <div class="abstract">LLM-as-judge systems produce numerical scores, but downstream decisions often require pairwise comparisons: which response is better? Converting scores to win rates requires calibration—the mapping from score differences to win probabilities. We develop calibrated estimators for pairwise win rates from cardinal LLM judge scores, accounting for judge miscalibration and non-transitivity in preferences.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Record Linkage</summary>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/fuzzy" target="_blank">Inference With Fuzzy-Joined Data</a></summary>
-<div class="abstract">Data products built on fuzzy joins ship a single canonical linkage, hiding the many-to-many candidate-match graph from which it was constructed. The two obvious things to do with that graph—expand it into a regression dataset or average covariates across candidates—both produce biased estimates. The expanded join attenuates; the collapsed estimator has a nonclassical errors-in-variables structure whose sign is indeterminate without ground truth. Multiple imputation over candidate assignments avoids both pathologies. Rubin&#x27;s rules propagate matching uncertainty, and the between-imputation share of variance tells you whether matching uncertainty matters.</div>
+<summary><a href="papers/fuzzy_joins_inference.pdf" target="_blank" class="entry-title">Inference With Fuzzy-Joined Data</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/fuzzy" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Fuzzy joins create uncertainty that depends on the downstream estimand. This note explains why expanding candidate matches or averaging their covariates can distort regression estimates, discusses multiple imputation and validation-sample regression calibration, and examines uncertainty inherited from earlier joins in the data product.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/setjoin" target="_blank">setjoin: Record Linkage That Preserves Group Structure</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/setjoin" target="_blank" class="entry-title">setjoin: Record Linkage That Preserves Group Structure</a></summary>
 <div class="abstract">Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/tether" target="_blank">tether: High-Precision Record Linkage</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/tether" target="_blank" class="entry-title">tether: High-Precision Record Linkage</a></summary>
 <div class="abstract">A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/bloomjoin" target="_blank">BloomJoin: Bloom Filter Based Joins</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/bloomjoin" target="_blank" class="entry-title">BloomJoin: Bloom Filter Based Joins</a></summary>
 <div class="abstract">An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Data Collection</summary>
 <details>
-<summary><a href="papers/turk.pdf" target="_blank">The Micro-Task Market for &quot;Lemons&quot;: Collecting Data on Amazon&#x27;s Mechanical Turk</a><br> With Doug Ahler and Carrie Roush. <i>Political Science Research and Methods,</i> 2021.<br> 🗃 <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK" target="_blank">Replication Materials</a> </summary>
+<summary><a href="papers/turk.pdf" target="_blank" class="entry-title">The Micro-Task Market for &quot;Lemons&quot;: Collecting Data on Amazon&#x27;s Mechanical Turk</a><br> With Doug Ahler and Carrie Roush. <i>Political Science Research and Methods,</i> 2021.<br> <span class="entry-icon">🗃</span><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK" target="_blank">Replication Materials</a> </summary>
 <div class="abstract">While Amazon&#x27;s Mechanical Turk (MTurk) has reduced the cost of collecting original data, in 2018, researchers noted the potential existence of a large number of bad actors on the platform. To evaluate data quality on MTurk, we fielded three surveys between 2018 and 2020. While find no evidence of a &quot;bot epidemic,&quot; significant portions of the data—between 25%-35%—are of dubious quality. While the number of IP addresses that completed the survey multiple times or circumvented location requirements fell almost 50% over time, suspicious IP addresses are more prevalent on MTurk than on other platforms. Furthermore, many respondents appear to respond humorously or insincerely, and this behavior increased over 200% from 2018-2020. Importantly, these low-quality responses attenuate observed treatment effects by magnitudes ranging from approximately 10-30%.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf" target="_blank">Optimal Data Collection When Strata and Strata Variances Are Known</a><br> With Ken Cor.</summary>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf" target="_blank" class="entry-title">Optimal Data Collection When Strata and Strata Variances Are Known</a><br> With Ken Cor.</summary>
 <div class="abstract">When the population is divided into known strata with known variances, the optimal allocation of a fixed sample budget across strata depends on stratum size, variance, and sampling cost. We derive the optimal allocation and show how much efficiency is lost by common rules of thumb like proportional allocation.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/geosensing/geo-sampling" target="_blank">Geo-sampling: Sampling Randomly From the Streets</a><br> With Suriyan Laohaprapanon.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/geosensing/geoinference" target="_blank">geoinference: inference from street samples</a></span></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/geosensing/geo-sampling" target="_blank" class="entry-title">Geo-sampling: Sampling Randomly From the Streets</a><br> With Suriyan Laohaprapanon.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/geosensing/geoinference" target="_blank">geoinference: inference from street samples</a></span></span></span></summary>
 <div class="abstract">Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/geosensing/allocator" target="_blank">Allocator: Optimal Itineraries For Spatially Distributed Tasks</a><br>With Suriyan Laohaprapanon.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/geosensing/ybar" target="_blank">ybar: mobile field data collection</a></span></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/geosensing/allocator" target="_blank" class="entry-title">Allocator: Optimal Itineraries For Spatially Distributed Tasks</a><br>With Suriyan Laohaprapanon.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/geosensing/ybar" target="_blank">ybar: mobile field data collection</a></span></span></span></summary>
 <div class="abstract">Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/reporoulette" target="_blank">reporoulette: Randomly Sample GitHub Repositories</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/reporoulette" target="_blank" class="entry-title">reporoulette: Randomly Sample GitHub Repositories</a></summary>
 <div class="abstract">Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research.</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/fewest-items.pdf" target="_blank">Unbiased Regression with Costly Item Labels</a><br> 📦 <a href="https://github.com/finite-sample/fewlab" target="_blank">fewlab: fewest items to label for unbiased OLS on shares</a> </summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/fewest-items.pdf" target="_blank" class="entry-title">Unbiased Regression with Costly Item Labels</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/fewlab" target="_blank">fewlab: fewest items to label for unbiased OLS on shares</a> </summary>
 <div class="abstract">When running OLS on per-row trait shares (e.g., fraction of items in a category), labeling every item is expensive. Random labeling wastes budget on items that barely affect the regression. fewlab identifies the items with the highest statistical leverage—those that most influence the coefficient estimates—and prioritizes them for labeling, achieving unbiased OLS with a fraction of the labeling cost.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/statqa">StatQA: Extract Multimodal Stats Q/A from Tables With Provenance</a><br></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/statqa" class="entry-title">StatQA: Extract Multimodal Stats Q/A from Tables With Provenance</a><br></summary>
 <div class="abstract">StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Causal Inference</summary>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/late/" target="_blank">Inferring Treatment Compliance from Delivery-Window Data</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/late/" target="_blank" class="entry-title">Inferring Treatment Compliance from Delivery-Window Data</a></summary>
 <div class="abstract">In randomized experiments with imperfect compliance, the LATE requires observing treatment receipt, and the Wald estimator requires monotonicity. When receipt is unobserved but the experiment has a pre-treatment time series and a distinct delivery window, a structural break test applied to the delivery window can classify treated units into compliers, never-takers, and defiers. This yields an inferred compliance rate with closed-form bias correction, an empirical test of monotonicity via defier detection, and a characterization of the complier subpopulation that can be projected onto the control group.</div>
 </details>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/tworeg/" target="_blank">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/tworeg/" target="_blank" class="entry-title">Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary</a></summary>
 <div class="abstract">When ML predictions are used as regressors in downstream models, prediction error is non-classical and a growing literature proposes purpose-built corrections (GMM, prediction-powered inference, IV, joint MLE). For linear downstream models, regression calibration—replacing the ML prediction with E[X | X̂, Z] estimated on a calibration sample—already eliminates the non-classical error structure under an exogeneity condition these methods also rely on. Two OLS regressions and a two-sample bootstrap give you consistent estimates with valid confidence intervals. For nonlinear downstream models (logistic, Poisson, any GLM), Jensen&#x27;s inequality breaks the argument and heavier methods are genuinely needed. The linear/nonlinear boundary is the main result.</div>
 </details>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/swaps" target="_blank">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/swaps" target="_blank" class="entry-title">Partial Credit: Diagnosing Proxy Covariates with Validation Swaps</a></summary>
 <div class="abstract">When a regression uses a proxy instead of the true covariate, how much does it matter—and where? The validation-swap framework answers both questions using an internal validation sample where both the true value and the proxy are observed. Swap validated truths into the proxy design matrix row by row and watch the coefficient move. The swap path traces the coefficient as a function of the fraction of validated rows swapped in: flat means the proxy is fine, steep means it isn&#x27;t. A Shapley-value decomposition (SIM) identifies which rows drive the distortion, and a portable risk score defines a proxy-safe domain on the full sample.</div>
 </details>
 <details>
-<summary>🌱 <a href="https://github.com/finite-sample/smooth-operator" target="_blank">Smooth Operator: Optimal Filtering of Event Study Estimates</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/smooth-operator" target="_blank" class="entry-title">Smooth Operator: Optimal Filtering of Event Study Estimates</a></summary>
 <div class="abstract">Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period&#x27;s estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size.</div>
 </details>
 <details>
-<summary>🌱 <a href="papers/causalml.pdf" target="_blank">Causal Debiasing for Robust Machine Learning</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/causalml.pdf" target="_blank" class="entry-title">Causal Debiasing for Robust Machine Learning</a></summary>
 <div class="abstract">Spurious associations in training data arise because models learn correlations rather than causal relations. We propose a composite loss that incorporates causal and behavioral priors: an invariance penalty for label-preserving perturbations (e.g., swapping gendered pronouns should not change predictions), a directional penalty for perturbations that should change the label in a known direction, and a falsification penalty inspired by epidemiological negative controls that discourages reliance on features with no causal relationship to the outcome. The framework unifies ideas from CheckList-style behavioral testing, causal inference, and adversarial robustness into a single training objective.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Other</summary>
 <details>
-<summary>🌱 <a href="papers/steer.pdf" target="_blank">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/steer.pdf" target="_blank" class="entry-title">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></summary>
 <div class="abstract">Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/soodoku/incline" target="_blank">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/soodoku/incline" target="_blank" class="entry-title">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
 <div class="abstract">Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/hessband" target="_blank">Analytic‑Hessian Bandwidth Selection</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/hessband" target="_blank" class="entry-title">Analytic‑Hessian Bandwidth Selection</a></summary>
 <div class="abstract">Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/alsgls" target="_blank">A Lightweight ALS Solver for Iterative GLS</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/alsgls" target="_blank" class="entry-title">A Lightweight ALS Solver for Iterative GLS</a></summary>
 <div class="abstract">Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly.</div>
 </details>
 <details>
-<summary>🗃 <a href="https://github.com/finite-sample/optimal_classification_cutoffs" target="_blank">Optimal Classification Cutoffs for F1-score, etc.</a></summary>
+<summary><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/optimal_classification_cutoffs" target="_blank" class="entry-title">Optimal Classification Cutoffs for F1-score, etc.</a></summary>
 <div class="abstract">Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/pyppur" target="_blank">pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss</a></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/pyppur" target="_blank" class="entry-title">pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss</a></summary>
 <div class="abstract">pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding &#x27;interesting&#x27; projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion.</div>
 </details>
 </details>
@@ -201,118 +201,118 @@
 <details class="category-toggle">
 <summary>Names and Name-Based Inference</summary>
 <details>
-<summary><a href="https://github.com/appeler/ethnicolr_v2" target="_blank">Predicting Race and Ethnicity From Sequence of Characters in a Name</a><br> With Rajashekar Chintalapati and Suriyan Laohaprapanon. <a href="https://arxiv.org/abs/1805.02109" target="_blank">arXiv.org</a><br> <span class="highlight">RELATED</span>: 📦 <a href="https://github.com/appeler/ethnicolr" target="_blank">Python Package</a> for implementing the method.<br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target="_blank">InfoQ</a><a href="https://www.youtube.com/watch?v=fuHAPENWVIU?" target="_blank">AnacondaCON presentation (Video)</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/appeler/ethnicolr_v2" target="_blank" class="entry-title">Predicting Race and Ethnicity From Sequence of Characters in a Name</a><br> With Rajashekar Chintalapati and Suriyan Laohaprapanon. <a href="https://arxiv.org/abs/1805.02109" target="_blank">arXiv.org</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><span class="entry-icon">📦</span><a href="https://github.com/appeler/ethnicolr" target="_blank">Python Package</a> for implementing the method.</span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target="_blank">InfoQ</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.youtube.com/watch?v=fuHAPENWVIU?" target="_blank">AnacondaCON presentation (Video)</a></span></span></span></summary>
+<div class="abstract">This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person&#x27;s identity.</div>
 </details>
 <details>
-<summary><a href="https://github.com/appeler/soundnames" target="_blank">Sound Names: Classify Names Based on Sequence of Sounds</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/appeler/soundnames" target="_blank" class="entry-title">Sound Names: Classify Names Based on Sequence of Sounds</a></summary>
+<div class="abstract">We compare name classification using phonetic encodings with classification using character sequences. In the reported experiments, an LSTM trained on Metaphone encodings performs worse, suggesting that spellings contain information lost by the sound encoding.</div>
 </details>
 <details>
-<summary><a href="https://github.com/appeler/clarifai_gender" target="_blank">Graphic Names: Classify Names Using Google Image Search and Clarifai</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/appeler/clarifai_gender" target="_blank" class="entry-title">Graphic Names: Classify Names Using Google Image Search and Clarifai</a></summary>
+<div class="abstract">An exploratory method that combines image-search results for first names with image tags to estimate gender associations. Validation uses labeled name data, while the project notes that search results are not representative population samples and names need not be unique to one gender.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/appeler/naampy" target="_blank">Naampy: Infer Sociodemographic Characteristics from Indian Names</a><br> With Rajashekar Chintalapati and Suriyan Laohaprapanon.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/appeler/outkast" target="_blank">outkast: caste-name data</a><a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian electoral rolls</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/appeler/naampy" target="_blank" class="entry-title">Naampy: Infer Sociodemographic Characteristics from Indian Names</a><br> With Rajashekar Chintalapati and Suriyan Laohaprapanon.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/appeler/outkast" target="_blank">outkast: caste-name data</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian electoral rolls</a></span></span></span></summary>
+<div class="abstract">Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual&#x27;s gender.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/appeler/pranaam" target="_blank">Pranaam: Predict Religion From Name</a><br> With Rajashekar Chintalapati.</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/appeler/pranaam" target="_blank" class="entry-title">Pranaam: Predict Religion From Name</a><br> With Rajashekar Chintalapati.</summary>
+<div class="abstract">Pranaam estimates how strongly a name follows patterns associated with Muslim names in its training data. It returns a calibrated score, abstention information, and artifact provenance for aggregate research, rather than establishing a person&#x27;s religion.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/appeler/naamkaran" target="_blank">naamkaran: a generative model for names</a><br> With Rajashekar Chintalapati.</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/appeler/naamkaran" target="_blank" class="entry-title">naamkaran: a generative model for names</a><br> With Rajashekar Chintalapati.</summary>
+<div class="abstract">A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/appeler/parsernaam" target="_blank">parsernaam: ML-assisted name parser</a><br> With Rajashekar Chintalapati.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/appeler/clean-names" target="_blank">clean-names: parsing and deduplication</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/appeler/parsernaam" target="_blank" class="entry-title">parsernaam: ML-assisted name parser</a><br> With Rajashekar Chintalapati.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/appeler/clean-names" target="_blank">clean-names: parsing and deduplication</a></span></span></span></summary>
+<div class="abstract">Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/appeler/instate" target="_blank">instate: predict spoken language from last name</a><br> With Rajashekar Chintalapati and Atul Dhingra.<br> <span class="highlight">RELATED</span>: <a href="papers/instate.pdf" target="_blank">Instate: Predict the State of Residence from Last Name.</a><br> With Atul Dhingra. </summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/appeler/instate" target="_blank" class="entry-title">instate: State and Language Composition from Indian Surnames</a><br> With Rajashekar Chintalapati and Atul Dhingra.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="papers/instate.pdf" target="_blank">Instate: Predict the State of Residence from Last Name.</a><br> With Atul Dhingra. </span></span></span></summary>
+<div class="abstract">Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person&#x27;s location or language.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Online Privacy and Security</summary>
 <details>
-<summary><a href="https://arxiv.org/abs/2512.24041" target="_blank">Exposed: Shedding Blacklight On Online Privacy</a><br> With Lucas Shen<br> 🗃 <a href="https://github.com/themains/private_blacklight/">Replication Materials</a> </summary>
+<summary><a href="https://arxiv.org/abs/2512.24041" target="_blank" class="entry-title">Exposed: Shedding Blacklight On Online Privacy</a><br> With Lucas Shen<br> <span class="entry-icon">🗃</span><a href="https://github.com/themains/private_blacklight/">Replication Materials</a> </summary>
 <div class="abstract">To what extent are users surveilled on the web, by what technologies, and by whom? We answer these questions by combining passively observed, anonymized browsing data of a large, representative sample of Americans with domain-level data on tracking from Blacklight. We find that nearly all users (&gt;99%) encounter at least one ad tracker or third-party cookie over the observation window. More invasive techniques like session recording, keylogging, and canvas fingerprinting are less widespread, but over half of the users visited a site employing at least one of these within the first 48 hours of the start of tracking. Linking trackers to their parent organizations reveals that a single organization, usually Google, can track over 50% of web activity of more than half the users. Demographic differences in exposure are modest and often attenuate when we account for browsing volume. However, disparities by age and race remain, suggesting that what users browse, not just how much, shapes their surveillance risk.</div>
 </details>
 <details>
-<summary><a href="papers/pwned.pdf" target="_blank">Pwned: How Often Are Americans&#x27; Online Accounts Breached?</a><br> With Ken Cor. <i>ACM Web Science Conference,</i> 2019<br> 🗃 <a href="https://github.com/themains/pwned/">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://rud.is/b/2018/07/29/ggplot-doodling-with-hibp-breaches/">Bob Rudis Analyzes Exposure by Breach</a><a href="https://github.com/themains/reg_breach">I Have Been Pwned: Evidence from the Florida Voter Registration Data</a></span> </summary>
+<summary><a href="papers/pwned.pdf" target="_blank" class="entry-title">Pwned: How Often Are Americans&#x27; Online Accounts Breached?</a><br> With Ken Cor. <i>ACM Web Science Conference,</i> 2019<br> <span class="entry-icon">🗃</span><a href="https://github.com/themains/pwned/">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://rud.is/b/2018/07/29/ggplot-doodling-with-hibp-breaches/">Bob Rudis Analyzes Exposure by Breach</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/themains/reg_breach">I Have Been Pwned: Evidence from the Florida Voter Registration Data</a></span></span></span></summary>
 <div class="abstract">News about massive data breaches is increasingly common. But what proportion of Americans are exposed in these breaches is still unknown. We combine data from a large, representative sample of American adults (n = 5,000), recruited by YouGov, with data from Have I Been Pwned to estimate the lower bound of the number of times Americans’ private information has been exposed. We find that at least 82.84% of Americans have had their private information, such as account credentials, Social Security Number, etc., exposed. On average, Americans’ private information has been exposed in at least three breaches. The better educated, the middle-aged, women, and Whites are more likely to have had their accounts breached than the complementary groups.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/themains/piedomains">Piedomains: Predict the Kind of Content Hosted by a Domain</a><br> With Rajashekar Chintalapati.<br> <span class="highlight">RELATED</span>: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf">Domain Knowledge: Predicting the Kind of Content Hosted by a Domain.</a><br> With Suriyan Laohaprapanon. <i>Complex, Intelligent and Software Intensive Systems (CISIS), 2020.</i><br> <span class="resource-links"><a href="https://github.com/themains/rdomains" target="_blank">rdomains: domain classification in R</a></span></summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/themains/piedomains" class="entry-title">Piedomains: Predict the Kind of Content Hosted by a Domain</a><br> With Rajashekar Chintalapati.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf">Domain Knowledge: Predicting the Kind of Content Hosted by a Domain.</a><br> With Suriyan Laohaprapanon. <i>Complex, Intelligent and Software Intensive Systems (CISIS), 2020.</i></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/themains/rdomains" target="_blank">rdomains: domain classification in R</a></span></span></span></summary>
 <div class="abstract">The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage.</div>
 </details>
 <details>
-<summary><a href="https://github.com/themains/password">Pass-Fail: Using a Password Generator to Improve Password Strength</a><br> With Rajashekar Chintalapati</summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/themains/password" class="entry-title">Pass-Fail: Using a Password Generator to Improve Password Strength</a><br> With Rajashekar Chintalapati</summary>
+<div class="abstract">We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness.</div>
 </details>
 <details>
-<summary><a href="papers/pwned_politicians.pdf">How Often is Politicians&#x27; Data Breached? Evidence from HIBP</a><br> With Lucas Shen.<br> 🗃 <a href="https://github.com/themains/pwned_pols">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/pwned_politicians.pdf" class="entry-title">How Often is Politicians&#x27; Data Breached? Evidence from HIBP</a><br> With Lucas Shen.<br> <span class="entry-icon">🗃</span><a href="https://github.com/themains/pwned_pols">Replication Materials</a></summary>
+<div class="abstract">Using 12,384 email addresses of politicians from 59 countries, we examine exposure to breaches recorded by Have I Been Pwned. A third of the politicians have at least one recorded breach, and more than one in five have sensitive information exposed; incomplete coverage of their email addresses makes these conservative estimates.</div>
 </details>
 <details>
-<summary><a href="papers/bad_domains.pdf">Bad Domains: Exposure to Malicious Content Online</a><br> With Lucas Shen. <i>Information, Communication and Society, 2026</i><br> 🗃 <a href="https://github.com/themains/bad_domains/">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/bad_domains.pdf" class="entry-title">Bad Domains: Exposure to Malicious Content Online</a><br> With Lucas Shen. <i>Information, Communication and Society, 2026</i><br> <span class="entry-icon">🗃</span><a href="https://github.com/themains/bad_domains/">Replication Materials</a></summary>
+<div class="abstract">We combine a month of observed browsing by over a thousand Americans with malicious-domain classifications. About half visited a malicious domain; demographic differences in median exposure disappear after accounting for how much people use the internet.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/themains/know_your_ip/">Know Your IP</a><br> With Suriyan Laohaprapanon</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/themains/know_your_ip/" class="entry-title">Know Your IP</a><br> With Suriyan Laohaprapanon</summary>
+<div class="abstract">A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/themains/virustotal">virustotal: R Client for the VirusTotal Public API 2.0</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/themains/virustotal" class="entry-title">virustotal: R Client for the VirusTotal API v3</a></summary>
+<div class="abstract">An R client for VirusTotal API v3, covering reports on files, URLs, domains, and IP addresses, as well as submissions for analysis. The package includes request pacing, retries, and structured error handling.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Software and Tools</summary>
 <details>
-<summary>📦 <a href="https://github.com/finite-sample/rmcp" target="_blank">rmcp: R MCP Community Server</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/rmcp" target="_blank" class="entry-title">rmcp: R MCP Community Server</a></summary>
+<div class="abstract">A Model Context Protocol server that lets compatible assistants invoke R tools for statistical analysis. Its documented tools cover regression, econometrics, time series, statistical testing, and data exploration.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/tuber">🍠 tuber: Access YouTube API via R</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/gojiplus/tubern" target="_blank">tubern: YouTube Analytics and Reporting</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/tuber" class="entry-title">🍠 tuber: Access YouTube API via R</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/tubern" target="_blank">tubern: YouTube Analytics and Reporting</a></span></span></span></summary>
+<div class="abstract">An R client for searching and retrieving YouTube videos, channels, playlists, comments, and captions. It also supports selected authenticated operations, including uploads, moderation, and playlist updates.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/pvbhanuteja/repaper">repaper: convert photo of a form to a web based form or an editable pdf form</a><br> With Bhanu Teja.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/gojiplus/image-to-text" target="_blank">image-to-text: batch OCR</a><a href="https://github.com/gojiplus/recognize" target="_blank">recognize: OCR quality assessment</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/pvbhanuteja/repaper" class="entry-title">repaper: convert photo of a form to a web based form or an editable pdf form</a><br> With Bhanu Teja.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/image-to-text" target="_blank">image-to-text: batch OCR</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/recognize" target="_blank">recognize: OCR quality assessment</a></span></span></span></summary>
+<div class="abstract">Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/in-rolls/indicate">indicate: transliterate indic languages to english</a><br> With Rajashekar Chintalapati.</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/in-rolls/indicate" class="entry-title">indicate: transliterate indic languages to english</a><br> With Rajashekar Chintalapati.</summary>
+<div class="abstract">A transliteration toolkit for converting between Indic scripts and English-script representations. It supports composable word-table, local-model, and language-model backends, with batch processing and structured output.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/lost-years">Lost Years: Expected Number of Years Lost</a><br> With Suriyan Laohaprapanon.</summary>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/lost-years" class="entry-title">Lost Years: Expected Number of Years Lost</a><br> With Suriyan Laohaprapanon.</summary>
 <div class="abstract">Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/get-weather-data" target="_blank">Weather Data by Location and Date</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/get-weather-data" target="_blank" class="entry-title">Weather Data by Location and Date</a></summary>
+<div class="abstract">A Python package and web interface for retrieving historical daily weather by US ZIP code or coordinates. It uses NOAA station data, selects nearby stations, and returns weather measures in metric or imperial units.</div>
 </details>
 <details>
-<summary><a href="https://github.com/gojiplus/layoutlens">LayoutLens: AI-Assisted UI Testing</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/gojiplus/layoutlens-action" target="_blank">LayoutLens GitHub Action</a><a href="https://github.com/gojiplus/uijudge-bench" target="_blank">UI Judge Benchmark</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/gojiplus/layoutlens" class="entry-title">LayoutLens: AI-Assisted UI Testing</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/layoutlens-action" target="_blank">LayoutLens GitHub Action</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/uijudge-bench" target="_blank">UI Judge Benchmark</a></span></span></span></summary>
+<div class="abstract">LayoutLens captures screenshots, page structure, styles, and geometry to measure changes between interface versions. Local comparisons report element-level differences and possible layout defects; model-based explanations are optional.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/preen" target="_blank">Preen: Python Package Development Checks</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/gojiplus/py-canon" target="_blank">py-canon: shared Python package standards</a><a href="https://github.com/gojiplus/r-canon" target="_blank">r-canon: shared R package standards</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/preen" target="_blank" class="entry-title">Preen: Python Package Development Checks</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/py-canon" target="_blank">py-canon: shared Python package standards</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/r-canon" target="_blank">r-canon: shared R package standards</a></span></span></span></summary>
+<div class="abstract">Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/gojiplus/jekyll-theme-offprint" target="_blank">Offprint: A Jekyll Theme for Academic Websites</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/jekyll-theme-offprint" target="_blank" class="entry-title">Offprint: A Jekyll Theme for Academic Websites</a></summary>
+<div class="abstract">A Jekyll theme for academic personal websites, with a single text column and publications rendered from structured data. It uses self-hosted fonts and system-controlled dark mode, without requiring JavaScript.</div>
 </details>
 <details>
-<summary>📱 <a href="https://github.com/gojiplus/adjacent/">Adjacent — Related Repositories Recommender</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📱</span><a href="https://github.com/gojiplus/adjacent/" class="entry-title">Adjacent — Related Repositories Recommender</a></summary>
+<div class="abstract">A GitHub Action that adds related-repository recommendations to a README. It ranks repositories using shared topics, README similarity, or a combination, with controls for exclusions and the number of recommendations.</div>
 </details>
 <details>
-<summary>📱 <a href="https://github.com/gojiplus/advertiser">Advertiser: Promote Your GitHub Repositories on BlueSky</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📱</span><a href="https://github.com/gojiplus/advertiser" class="entry-title">Advertiser: Promote Your GitHub Repositories on BlueSky</a></summary>
+<div class="abstract">A GitHub Action that selects a repository from a curated list, generates a short description, and posts it with a link to Bluesky. It supports automated or manually triggered promotion of open-source projects.</div>
 </details>
 </details>
 <details class="category-toggle">
@@ -320,133 +320,133 @@
 <details class="category-toggle">
 <summary>Software Use and Credit</summary>
 <details>
-<summary><a href="papers/downloads_are_cheap.pdf" target="_blank">Downloads Are Cheap: Validated Use as a Measure of Research Software</a><br> 🗃 <a href="https://github.com/recite/softverse" target="_blank">Code</a> 📊 <a href="https://doi.org/10.5281/zenodo.21943908" target="_blank">Data</a> 📦 <a href="https://doi.org/10.5281/zenodo.21926099" target="_blank">Stata command index</a> 🔍 <a href="https://recite.github.io/softverse/lookup/" target="_blank">Look up a package</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/recite/recode" target="_blank">Recode: citation reminders</a><a href="https://github.com/recite/pip-fund" target="_blank">pip-fund: funding software</a></span></summary>
+<summary><a href="papers/downloads_are_cheap.pdf" target="_blank" class="entry-title">Downloads Are Cheap: Validated Use as a Measure of Research Software</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/recite/softverse" target="_blank">Code</a> <span class="entry-icon">📊</span><a href="https://doi.org/10.5281/zenodo.21943908" target="_blank">Data</a> <span class="entry-icon">📦</span><a href="https://doi.org/10.5281/zenodo.21926099" target="_blank">Stata command index</a> <span class="entry-icon">🔍</span><a href="https://recite.github.io/softverse/lookup/" target="_blank">Look up a package</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/recite/recode" target="_blank">Recode: citation reminders</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/recite/pip-fund" target="_blank">pip-fund: funding software</a></span></span></span></summary>
 <div class="abstract">Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package&#x27;s position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals&#x27; archives and authors&#x27; sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data.</div>
 </details>
 <details>
-<summary><a href="https://github.com/recite/user" target="_blank">user: Auto-compute Citations to Software From GitHub</a><br> <span class="highlight">RELATED</span>: 📦 <a href="https://github.com/recite/countpy" target="_blank">Python metrics</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/recite/user" target="_blank" class="entry-title">user: Estimate Python Package Use on GitHub</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><span class="entry-icon">📦</span><a href="https://github.com/recite/countpy" target="_blank">Python metrics</a></span></span></span></summary>
+<div class="abstract">This project estimates Python package use by sampling public GitHub repositories and counting import statements. It provides data and a dashboard as an alternative to download counts, which can reflect automated installation rather than adoption.</div>
 </details>
 <details>
-<summary><a href="papers/social_proof_stars.pdf">Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads</a> <br>With Lucas Shen. <i>Journal of Online Trust and Safety, 2026.</i><br> 🗃 <a href="https://github.com/soodoku/social_proof_stars/">Replication Materials</a></summary>
+<summary><a href="papers/social_proof_stars.pdf" class="entry-title">Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads</a> <br>With Lucas Shen. <i>Journal of Online Trust and Safety, 2026.</i><br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/social_proof_stars/">Replication Materials</a></summary>
 <div class="abstract">Open-source software is widely used in commercial applications. Pair that with the fact that when choosing open-source software for a new problem, developers often use social proof as a cue. These two facts raise concern that bad actors can game social proof metrics to induce the use of malign software. We study the question using two field experiments. On the largest developer platform, GitHub, we buy ‘stars’ for a random set of GitHub repositories of new Python packages and estimate their impact on package downloads. We find no discernible impact. In another field experiment, we manipulate the number of human downloads for Python packages. Again, we find little effect.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Miscitations</summary>
 <details>
-<summary><a href="papers/niewenhuis.pdf">Significant Error: Citations to Research With Publicized Statistical Errors</a><br> With Ken Cor.<br> 🗃 <a href="https://github.com/recite/sig_fault/">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/niewenhuis.pdf" class="entry-title">Significant Error: Citations to Research With Publicized Statistical Errors</a><br> With Ken Cor.<br> <span class="entry-icon">🗃</span><a href="https://github.com/recite/sig_fault/">Replication Materials</a></summary>
+<div class="abstract">We examine citations to studies whose statistical errors were publicized in Nature Neuroscience. Problematic studies continued to receive citations that did not acknowledge the errors, including more such citations after the problems were publicized.</div>
 </details>
 <details>
-<summary><a href="papers/error.pdf">Propagation of Error: Approving Citations to Problematic Research</a><br> With Ken Cor.<br> 🗃 <a href="https://github.com/recite/propagation_of_error/" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/error.pdf" class="entry-title">Propagation of Error: Approving Citations to Problematic Research</a><br> With Ken Cor.<br> <span class="entry-icon">🗃</span><a href="https://github.com/recite/propagation_of_error/" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Using more than 3,000 retracted articles and over 74,000 citations, we study how problematic research continues to circulate. At least 31% of citations occurred a year or more after retraction, and about 91% of post-retraction citations did not acknowledge a concern with the cited article.</div>
 </details>
 <details>
-<summary>📱 <a href="https://github.com/recite/retract" target="_blank">Get Notified When Cited Article is Retracted</a></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📱</span><a href="https://github.com/recite/retract" target="_blank" class="entry-title">Get Notified When Cited Article is Retracted</a></summary>
+<div class="abstract">A GitHub Action that checks BibTeX references against Retraction Watch data and opens an issue when it finds a potentially retracted citation. It matches by DOI or bibliographic information and can run on a schedule or after bibliography changes.</div>
 </details>
 <details>
-<summary><a href="http://github.com/recite/re-cite.org" target="_blank">Highlight Citations to Retracted Articles</a></summary>
-<div class="abstract"></div>
+<summary><a href="http://github.com/recite/re-cite.org" target="_blank" class="entry-title">Highlight Citations to Retracted Articles</a></summary>
+<div class="abstract">An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/autosum" target="_blank">AutoSum: Summarize Publications Automatically and Discover Miscitations</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/autosum" target="_blank" class="entry-title">AutoSum: Summarize Publications Automatically and Discover Miscitations</a></summary>
+<div class="abstract">AutoSum collects passages surrounding citations to a publication in openly accessible papers. Collating these passages provides a view of how other scholars summarize the work and helps identify possible miscitations.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Other</summary>
 <details>
-<summary><a href="papers/benchmark.pdf" target="_blank">A Benchmark For Benchmarks</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/benchmark.pdf" target="_blank" class="entry-title">A Benchmark For Benchmarks</a></summary>
+<div class="abstract">This note proposes a framework for constructing interpretable machine-learning benchmarks. It emphasizes defining the task and target population before choosing data, and assessing label quality and whether performance reflects the intended capability.</div>
 </details>
 <details>
-<summary><a href="papers/noise_review.pdf">Review of &quot;Noise: A Flaw in Human Judgment&quot;</a><br> With Andrew Gelman. <i>Chance.</i> 2024.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/noise_review.pdf" class="entry-title">Review of &quot;Noise: A Flaw in Human Judgment&quot;</a><br> With Andrew Gelman. <i>Chance.</i> 2024.</summary>
+<div class="abstract">A review of Noise: A Flaw in Human Judgment that examines variation in judgments made from the same information. We consider what disagreement reveals about uncertainty, skill, effort, preferences, and the institutions in which decisions are made.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/quant-discipline" target="_blank">By the Numbers: Toward More Precise Numerical Summaries of Results</a><br> With Andrew Guess. <i>The Political Methodologist. 24(1): 2016</i></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/quant-discipline" target="_blank" class="entry-title">By the Numbers: Toward More Precise Numerical Summaries of Results</a><br> With Andrew Guess. <i>The Political Methodologist. 24(1): 2016</i></summary>
+<div class="abstract">We compare how often empirical articles in the American Political Science Review and American Economic Review include precise numerical results in their abstracts. The project provides coded data and analysis of differences in quantitative reporting.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/meta_apsr" target="_blank">The Review: Production and Consumption of APSR Articles</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/meta_apsr" target="_blank" class="entry-title">The Review: Production and Consumption of APSR Articles</a></summary>
+<div class="abstract">We collect article metadata from five political science journals to examine changes in authorship, article length, and readership. The data document the rise of coauthorship and the highly uneven distribution of article and abstract views.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/superdf" target="_blank">superdf: Save Metadata with the Data in R and Python DataFrames</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/superdf" target="_blank" class="entry-title">superdf: Persistent Metadata for R Data Frames</a></summary>
+<div class="abstract">SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/not_to_code" target="_blank">Not to Code: Evidence From Static Code Analysis of Replication Scripts</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/not_to_code" target="_blank" class="entry-title">Not to Code: Evidence From Static Code Analysis of Replication Scripts</a></summary>
+<div class="abstract">We apply static analysis to R scripts in replication archives for American Journal of Political Science articles. The project documents style issues, warnings, and errors detected by lintr and provides the scripts used for the audit.</div>
 </details>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Public Services and Infrastructure</summary>
 <details>
-<summary> <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf" target="_blank">StreetSense: Learning from Google Street View</a> <span class="coauthor"> With Suriyan Laohaprapanon and Kimberly Ortleb. <a href="https://arxiv.org/pdf/1807.06075.pdf" target="_blank">arXiv.org</a><br> 🗃 <a href="https://github.com/geosensing/streetsense" target="_blank">Replication Materials</a> </span> </summary>
+<summary> <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf" target="_blank" class="entry-title">StreetSense: Learning from Google Street View</a> <span class="coauthor"> With Suriyan Laohaprapanon and Kimberly Ortleb. <a href="https://arxiv.org/pdf/1807.06075.pdf" target="_blank">arXiv.org</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/geosensing/streetsense" target="_blank">Replication Materials</a> </span> </summary>
 <div class="abstract">How good are the public services and the public infrastructure? Does their quality vary by income? These are vital questions—they shed light on how well the government is doing its job, the consequences of disparities in local funding, etc. But there is little good data on many of these questions. We fill this gap by describing a scalable method of getting data on one crucial piece of public infrastructure: roads. We assess the quality of roads and sidewalks by exploiting data from Google Street View. We randomly sample locations on major roads, query Google Street View images for those locations and code the images using Amazon’s Mechanical Turk. We apply this method to assess the quality of roads in Bangkok, Jakarta, Lagos, and Wayne County, Michigan. Jakarta’s roads have nearly four times the potholes than roads of any other city. Surprisingly, the proportion of road segments with potholes in Bangkok, Lagos, and Wayne is about the same, between .06 and .07. Using the data, we also estimate the relation between the condition of the roads and local income in Wayne, MI. We find that roads in more affluent census tracts have somewhat fewer potholes.</div>
 </details>
 <details class="paper-toggle">
-<summary><p><a href="https://github.com/geosensing/autosense" target="_blank">AutoSense: Automated Street Condition Assessment</a> </p></summary>
-<div class="abstract"></div>
+<summary><p><a href="https://github.com/geosensing/autosense" target="_blank" class="entry-title">AutoSense: Automated Street Condition Assessment</a> </p></summary>
+<div class="abstract">AutoSense combines sampled street locations from OpenStreetMap with street-level imagery and computer vision for assessing street conditions. The workflow supports collection and analysis of infrastructure imagery at scale.</div>
 </details>
 <details class="paper-toggle">
-<summary><a href="https://github.com/soodoku/wait" target="_blank">Get in Line: Waiting Times at the DMV</a><br> <span class="coauthor">With Noah Finberg.</span> </summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/wait" target="_blank" class="entry-title">Get in Line: Waiting Times at the DMV</a><br> <span class="coauthor">With Noah Finberg.</span> </summary>
+<div class="abstract">We collect reported waiting times for California DMV field offices to study variation by location, day, and hour. The analysis also examines relationships between waiting times and local sociodemographic characteristics.</div>
 </details>
 <details>
-<summary>📊 <a href="https://github.com/public-salaries/public_salaries" target="_blank">Public Sector Salaries: Data on US Public Employees</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/public-salaries/pub_sal_analyses" target="_blank">Salary analyses</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📊</span><a href="https://github.com/public-salaries/public_salaries" target="_blank" class="entry-title">Public Sector Salaries: Data on US Public Employees</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/public-salaries/pub_sal_analyses" target="_blank">Salary analyses</a></span></span></span></summary>
+<div class="abstract">A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Knowledge and Misinformation</summary>
 <details>
-<summary><a href="papers/PartisanBias.pdf" target="_blank">You Cannot be Serious: The Impact of Accuracy Incentives on Partisan Bias</a><br> With Markus Prior and Kabir Khanna. <i>Quarterly Journal of Political Science.</i> 10(4), 489–518, 2015.<br> 🗃 <a href="papers/PartisanCheerleadingAppendix.pdf" target="_blank">Online Appendix</a>; 🗃 <a href="http://www.nowpublishers.com/article/details/supplementary-info/100.00014127_supp.zip" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="papers/partisanRetrospection.pdf" target="_blank">Partisan Gaps in Retrospection are Highly Variable</a><a href="http://gojiberries.io/the-value-of-money-learning-from-experiments-offering-money-for-correct-answers/" target="_blank">Blog Post</a></span><br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="press/PartisanBiasWashingtonMonthly.pdf" target="_blank">Washington Monthly</a><a href="press/PartisanBiasPacificStandard.pdf">Pacific Standard</a><a href="press/PartisanBiasNYT.pdf" target="_blank">The New York Times</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="papers/PartisanBias.pdf" target="_blank" class="entry-title">You Cannot be Serious: The Impact of Accuracy Incentives on Partisan Bias</a><br> With Markus Prior and Kabir Khanna. <i>Quarterly Journal of Political Science.</i> 10(4), 489–518, 2015.<br> <span class="entry-icon">🗃</span><a href="papers/PartisanCheerleadingAppendix.pdf" target="_blank">Online Appendix</a>; <span class="entry-icon">🗃</span><a href="http://www.nowpublishers.com/article/details/supplementary-info/100.00014127_supp.zip" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="papers/partisanRetrospection.pdf" target="_blank">Partisan Gaps in Retrospection are Highly Variable</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-value-of-money-learning-from-experiments-offering-money-for-correct-answers/" target="_blank">Blog Post</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/PartisanBiasWashingtonMonthly.pdf" target="_blank">Washington Monthly</a></span>; <span class="supporting-item" role="listitem"><a href="press/PartisanBiasPacificStandard.pdf">Pacific Standard</a></span>; <span class="supporting-item" role="listitem"><a href="press/PartisanBiasNYT.pdf" target="_blank">The New York Times</a></span></span></span></summary>
+<div class="abstract">Two national survey experiments test whether partisan gaps in reports of economic conditions reflect differences in knowledge or how people answer. Monetary incentives and appeals for accuracy reduce the gaps, suggesting that ordinary survey responses mix factual beliefs with partisan expression.</div>
 </details>
 <details>
-<summary><a href="http://rdcu.be/HNE5" target="_blank">Motivated Responding in Studies of Factual Learning</a><br> With Kabir Khanna. <i>Political Behavior</i>. 40(1): 79–101, 2018.<br> 🗃 <a href="http://dx.doi.org/10.7910/DVN/4JXJWI" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://politicalbehavior.wordpress.com/2017/03/02/motivated-responding-in-studies-of-factual-learning/" target="_blank">Blog Summarizing the Paper</a><a href="http://gojiberries.io/the-innumerate-american/" target="_blank">The Innumerate American</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="http://rdcu.be/HNE5" target="_blank" class="entry-title">Motivated Responding in Studies of Factual Learning</a><br> With Kabir Khanna. <i>Political Behavior</i>. 40(1): 79–101, 2018.<br> <span class="entry-icon">🗃</span><a href="http://dx.doi.org/10.7910/DVN/4JXJWI" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://politicalbehavior.wordpress.com/2017/03/02/motivated-responding-in-studies-of-factual-learning/" target="_blank">Blog Summarizing the Paper</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-innumerate-american/" target="_blank">The Innumerate American</a></span></span></span></summary>
+<div class="abstract">Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another.</div>
 </details>
 <details>
-<summary><a href="papers/partisan_gap.pdf" target="_blank">A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps</a><br> With Carrie Roush. <i>Quarterly Journal of Political Science.</i> 18(1), 2023. <br> 🗃 <a href="https://github.com/soodoku/partisan_gap" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target="_blank">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a><br> <span class="highlight">PRESS</span>: <a href="https://effectivegov.uchicago.edu/podcast/do-partisans-really-believe-different-facts" target="_blank">Not Another Politics Podcast (U. Chicago)</a> </summary>
-<div class="abstract"></div>
+<summary><a href="papers/partisan_gap.pdf" target="_blank" class="entry-title">A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps</a><br> With Carrie Roush. <i>Quarterly Journal of Political Science.</i> 18(1), 2023. <br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_gap" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target="_blank">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://effectivegov.uchicago.edu/podcast/do-partisans-really-believe-different-facts" target="_blank">Not Another Politics Podcast (U. Chicago)</a></span></span></span></summary>
+<div class="abstract">Across 162,083 responses to 187 questions on 47 surveys, partisan knowledge gaps are smaller and less consistently aligned with partisan interests than often assumed. Vague response options inflate some gaps, suggesting a role for motivated responding rather than differences in stored knowledge alone.</div>
 </details>
 <details>
-<summary><a href="papers/CasablancaTheory.pdf" target="_blank">The Waters of Casablanca: On Political Misinformation</a><br> With Robert Luskin.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/CasablancaTheory.pdf" target="_blank" class="entry-title">The Waters of Casablanca: On Political Misinformation</a><br> With Robert Luskin.</summary>
+<div class="abstract">We distinguish misinformation from knowledge, ignorance, and uncertain belief, and examine how survey responses map onto those states. Original surveys illustrate a measurement approach that uses confidence to help identify firmly held false beliefs.</div>
 </details>
 <details>
-<summary><a href="papers/misinformation_misinformation.pdf" target="_blank">Misinformation About Misinformation: Of Headlines and Survey Design</a><br> With Robert Luskin, Yul Min Park, and Joshua Blank.<br> 🗃 <a href="https://github.com/soodoku/misinformation" target="_blank">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="papers/misinformation_misinformation.pdf" target="_blank" class="entry-title">Misinformation About Misinformation: Of Headlines and Survey Design</a><br> With Robert Luskin, Yul Min Park, and Joshua Blank.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/misinformation" target="_blank">Replication Materials</a> </summary>
+<div class="abstract">We examine how survey design affects estimates of political misinformation. An audit of media polls and a series of experiments show that opinion-like wording, missing &#x27;don&#x27;t know&#x27; options, and invitations to guess can inflate the prevalence inferred from incorrect answers.</div>
 </details>
 <details>
-<summary><a href="papers/ACAMisinformed.pdf" target="_blank">Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation</a><br> With Josh Pasek and Jon Krosnick. <i>Journal of Communication.</i> 65(4): 660–673, 2015 <br> 🗃 <a href="papers/ACAMisinformedSI.pdf" target="_blank">Supporting Information</a> | 🗃 <a href="https://osf.io/ya7wd/" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/ACAMisinformed.pdf" target="_blank" class="entry-title">Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation</a><br> With Josh Pasek and Jon Krosnick. <i>Journal of Communication.</i> 65(4): 660–673, 2015 <br> <span class="entry-icon">🗃</span><a href="papers/ACAMisinformedSI.pdf" target="_blank">Supporting Information</a> | <span class="entry-icon">🗃</span><a href="https://osf.io/ya7wd/" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Two national surveys distinguish incorrect answers about the Affordable Care Act from confidently held incorrect beliefs. Most respondents are uncertain; confident misperceptions are less common and are concentrated on provisions about which elites repeatedly made false claims.</div>
 </details>
 <details>
-<summary><a href="papers/guess.pdf" target="_blank">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br> With Ken Cor. <i>Political Analysis</i>. 24(2): 226–242, 2016. <br> 🗃 <a href="http://dx.doi.org/10.7910/DVN/HZHVCU" target="_blank">Replication Materials</a><br> <span class="highlight">REVIEW</span>: &#x27;... a real contribution to the literature.&#x27; — <a href="http://web.stanford.edu/~haertel/" target="_blank">Ed Haertel</a><br> <span class="highlight">RELATED</span>: 📦 <a href="https://github.com/soodoku/guess" target="_blank">R Package</a> for implementing the method. </summary>
-<div class="abstract"></div>
+<summary><a href="papers/guess.pdf" target="_blank" class="entry-title">Guessing and Forgetting: A Latent Class Model for Measuring Learning</a><br> With Ken Cor. <i>Political Analysis</i>. 24(2): 226–242, 2016. <br> <span class="entry-icon">🗃</span><a href="http://dx.doi.org/10.7910/DVN/HZHVCU" target="_blank">Replication Materials</a><br> <span class="highlight">REVIEW</span>: &#x27;... a real contribution to the literature.&#x27; — <a href="http://web.stanford.edu/~haertel/" target="_blank">Ed Haertel</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><span class="entry-icon">📦</span><a href="https://github.com/soodoku/guess" target="_blank">R Package</a> for implementing the method. </span></span></span></summary>
+<div class="abstract">We develop a latent class model to estimate learning when correct answers can result from guessing. Under an assumption of no knowledge loss over short periods, simulations recover learning more accurately than raw score differences; an application to Deliberative Polls raises learning estimates and reduces measured gender gaps.</div>
 </details>
 <details>
-<summary><a href="papers/k_gains.pdf">Measuring Learning in Informative Processes</a><br> With Robert Luskin and Ariel Helfer.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/k_gains.pdf" class="entry-title">Measuring Learning in Informative Processes</a><br> With Robert Luskin and Ariel Helfer.</summary>
+<div class="abstract">We examine how to measure learning in campaigns, deliberative polls, and other processes that expose people to information. The paper considers the limitations of observed pre-post knowledge gains, particularly when using individual learning estimates to explain causes or consequences.</div>
 </details>
 <details>
-<summary><a href="papers/measurement_gap.pdf" target="_blank">A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap</a><br> With Lucas Shen and Daniel Weitzel. <i>Public Opinion Quarterly.</i> 2025.<br> 🗃 <a href="https://github.com/soodoku/partisan-gaps" target="_blank">Replication Materials</a> </summary>
+<summary><a href="papers/measurement_gap.pdf" target="_blank" class="entry-title">A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap</a><br> With Lucas Shen and Daniel Weitzel. <i>Public Opinion Quarterly.</i> 2025.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan-gaps" target="_blank">Replication Materials</a> </summary>
 <div class="abstract">Research suggests that partisan gaps in political knowledge with partisan implications are wide and widespread. Using a series of experiments, we investigate the extent to which partisan gaps in commercial surveys are a result of differences in beliefs than motivated guessing. Knowledge items on commercial surveys often have features that encourage guessing. We find that removing such features yields scales with greater reli- ability and higher criterion validity. More substantively, partisan gaps on scales without these “inflationary” features are roughly 40% smaller. Thus, contrary to Prior, Sood and Khanna (2015), who find that the upward bias is explained by the knowledgeable deliberately marking the wrong answer (partisan cheerleading), our data suggest, in line with Bullock et al. (2015) and Graham and Yair (2023), that partisan gaps on commercial surveys are strongly upwardly biased by motivated guessing by the ignorant. Relatedly, we also find that partisans know less than what toplines of commercial polls suggest.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target="_blank">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a><br>With Carrie Roush.<br> 🗃 <a href="https://github.com/soodoku/unclear_gap" target="_blank">Replication Materials</a> </summary>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf" target="_blank" class="entry-title">An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps</a><br>With Carrie Roush.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/unclear_gap" target="_blank">Replication Materials</a> </summary>
 <div class="abstract">Roush and Sood (2023) use a dataset of 162,083 responses to 187 items on 47 surveys to find that partisan gaps are smaller and less frequent than commonly understood. The average is a mere six and a half points and gaps’ “signs” run counter to expectations roughly 30% of the time. However, one exception is the size of gaps on retrospection items on the ANES, which are considerably bigger. These retrospection items use vague response options, e.g., ‘About the same.’ Vague response options can inflate partisan gaps by offering partisans the opportunity to interpret the same data differently. We test this assumption with a novel survey experiment. We present partisans data indicating a small improvement in economic indicators and manipulate the partisan tint of the change by manipulating who is responsible for the change. We find that significantly fewer partisans pick the option that ’[things] got better’ when presented with an out-partisan cue than a co-partisan cue. Our findings suggest that vague options can induce knowledge gaps even when partisans have the same information.</div>
 </details>
 <details>
-<summary><a href="papers/measuring_shares.pdf">Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups</a><br> With Doug Ahler. <i>Misinformation and Mass Audiences.</i> 2018. University of Texas Press.<br> 🗃 <a href="http://dx.doi.org/10.7910/DVN/2JXAYZ" target="_blank">Appendix</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/measuring_shares.pdf" class="entry-title">Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups</a><br> With Doug Ahler. <i>Misinformation and Mass Audiences.</i> 2018. University of Texas Press.<br> <span class="entry-icon">🗃</span><a href="http://dx.doi.org/10.7910/DVN/2JXAYZ" target="_blank">Appendix</a></summary>
+<div class="abstract">This chapter examines how to measure beliefs about the numerical size of salient and stereotypical groups. It connects systematic overestimation of stereotypical traits to broader questions about group perceptions, prejudice, and the interpretation of survey estimates.</div>
 </details>
 </details>
 <details class="category-toggle">
@@ -454,231 +454,231 @@
 <details class="category-toggle">
 <summary>Group Affect</summary>
 <details>
-<summary><a href="papers/inter_group_prejudice.pdf" target="_blank">Inter-group Prejudice</a><br></summary>
-<div class="abstract"></div>
+<summary><a href="papers/inter_group_prejudice.pdf" target="_blank" class="entry-title">Inter-group Prejudice</a><br></summary>
+<div class="abstract">This note organizes explanations for inter-group prejudice, including group identity, personality, motivated beliefs, and differences in reasoning. It distinguishes possible mechanisms behind aversive beliefs and feelings rather than treating prejudice as a single process.</div>
 </details>
 <details>
-<summary><a href="papers/AffectNotIdeology.pdf" target="_blank">Affect, Not Ideology: A Social Identity Perspective on Polarization</a><br> With Shanto Iyengar and Yphtach Lelkes. <i>Public Opinion Quarterly.</i> 76(3), 405–431, 2012.<br> 🗃 <a href="https://github.com/soodoku/party_time/" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="http://gojiberries.io/sorted-or-polarized/" target="_blank">Sort of Sorted But Definitely Cold</a><a href="http://gojiberries.io/the-order-of-feelings/">The Order of Feelings</a><a href="http://gojiberries.io/mass-affective-polarization/" target="_blank">Affectively Polarized?</a><a href="http://gojiberries.io/2017/12/02/party-time/">Party Time</a></span><br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="press/NYT.POQ.pdf" target="_blank">The New York Times</a><a href="press/WP.POQ.pdf" target="_blank">The Washington Post</a><a href="press/MJ.POQ.pdf">Mother Jones</a><a href="press/AffectVox.pdf" target="_blank">Vox</a></span>, etc.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/AffectNotIdeology.pdf" target="_blank" class="entry-title">Affect, Not Ideology: A Social Identity Perspective on Polarization</a><br> With Shanto Iyengar and Yphtach Lelkes. <i>Public Opinion Quarterly.</i> 76(3), 405–431, 2012.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/party_time/" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="http://gojiberries.io/sorted-or-polarized/" target="_blank">Sort of Sorted But Definitely Cold</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-order-of-feelings/">The Order of Feelings</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/mass-affective-polarization/" target="_blank">Affectively Polarized?</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/2017/12/02/party-time/">Party Time</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/NYT.POQ.pdf" target="_blank">The New York Times</a></span>; <span class="supporting-item" role="listitem"><a href="press/WP.POQ.pdf" target="_blank">The Washington Post</a></span>; <span class="supporting-item" role="listitem"><a href="press/MJ.POQ.pdf">Mother Jones</a></span>; <span class="supporting-item" role="listitem"><a href="press/AffectVox.pdf" target="_blank">Vox</a>, etc.</span></span></span></summary>
+<div class="abstract">We examine polarization as social distance and hostility between partisans, rather than only disagreement over policy. Evidence from several sources shows growing dislike of opposing partisans, with policy attitudes providing an inconsistent explanation and campaign messages offering a plausible alternative.</div>
 </details>
 <details>
-<summary><a href="papers/partisanComposition.pdf">The Parties in our Heads: Misperceptions About Party Composition and Their Consequences</a><br> With Doug Ahler. <i>The Journal of Politics</i>. 80(3), 964–981, 2018.<br> 🗃 <a href="http://dx.doi.org/10.7910/DVN/CLMQ8E">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="papers/guesswho.pdf">The Partisans in our Heads</a><a href="http://dx.doi.org/10.7910/DVN/YJYU7Q">Data and Scripts</a></span><br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="press/pcomp_538.pdf" target="_blank">FiveThirtyEight</a><a href="press/PCompVox.pdf">Vox</a><a href="press/PCompWP_2.pdf" target="_blank">The Washington Post</a><a href="press/PCompWP_3.pdf">The Washington Post (2)</a><a href="press/PCompCSMonitor.pdf" target="_blank">Christian Science Monitor</a><a href="press/TheHillPComp.pdf">The Hill</a><a href="https://www.tptoriginals.org/how-well-do-you-know-the-other-party/" target="_blank">PBS (Twin Cities)</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="papers/partisanComposition.pdf" class="entry-title">The Parties in our Heads: Misperceptions About Party Composition and Their Consequences</a><br> With Doug Ahler. <i>The Journal of Politics</i>. 80(3), 964–981, 2018.<br> <span class="entry-icon">🗃</span><a href="http://dx.doi.org/10.7910/DVN/CLMQ8E">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="papers/guesswho.pdf">The Partisans in our Heads</a></span>; <span class="supporting-item" role="listitem"><a href="http://dx.doi.org/10.7910/DVN/YJYU7Q">Data and Scripts</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/pcomp_538.pdf" target="_blank">FiveThirtyEight</a></span>; <span class="supporting-item" role="listitem"><a href="press/PCompVox.pdf">Vox</a></span>; <span class="supporting-item" role="listitem"><a href="press/PCompWP_2.pdf" target="_blank">The Washington Post</a></span>; <span class="supporting-item" role="listitem"><a href="press/PCompWP_3.pdf">The Washington Post (2)</a></span>; <span class="supporting-item" role="listitem"><a href="press/PCompCSMonitor.pdf" target="_blank">Christian Science Monitor</a></span>; <span class="supporting-item" role="listitem"><a href="press/TheHillPComp.pdf">The Hill</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.tptoriginals.org/how-well-do-you-know-the-other-party/" target="_blank">PBS (Twin Cities)</a></span></span></span></summary>
+<div class="abstract">Americans greatly overestimate how many party supporters belong to stereotypical groups. Survey experiments suggest that these misperceptions are not simply expressive responding or ignorance of population shares; correcting beliefs about the opposing party reduces perceived extremity and social distance.</div>
 </details>
 <details>
-<summary><a href="papers/typecast.pdf" target="_blank">Typecast: A Routine Mental Shortcut Causes Party Stereotyping</a><br> With Doug Ahler. <i>Political Behavior.</i> 2022. <br> 🗃 <a href="https://github.com/soodoku/typecast" target="_blank">Replication Materials</a> | <a href="papers/typecast_si.pdf" target="_blank">Appendix</a><br> <span class="highlight">PRESS</span>: <a href="press/typecast_hxa.pdf" target="_blank">Heterodox Academy</a> </summary>
-<div class="abstract"></div>
+<summary><a href="papers/typecast.pdf" target="_blank" class="entry-title">Typecast: A Routine Mental Shortcut Causes Party Stereotyping</a><br> With Doug Ahler. <i>Political Behavior.</i> 2022. <br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/typecast" target="_blank">Replication Materials</a> | <a href="papers/typecast_si.pdf" target="_blank">Appendix</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/typecast_hxa.pdf" target="_blank">Heterodox Academy</a></span></span></span></summary>
+<div class="abstract">We test whether the representativeness heuristic contributes to party stereotypes. Experiments involving conjunction judgments, information about group partisanship, and cognitive load suggest that this mental shortcut can distort perceptions of who belongs to each party.</div>
 </details>
 <details>
-<summary><a href="papers/inNout.pdf" target="_blank">All in the Eye of the Beholder: Partisan Affect and Ideological Accountability</a><br> With Shanto Iyengar.<br> In <i>The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge.</i> 2018.<br> 🗃 <a href="https://github.com/soodoku/in-n-out" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="http://gsood.com/research/papers/moving_further.pdf" target="_blank">Still Close: Perceived Ideological Distance to Own and Main Opposing Party</a><a href="http://gojiberries.io/moving-further-away-from-the-out-party/" target="_blank">2012 Blog Post</a></span><br> <span class="highlight">PRESS</span>: <a href="press/InOut_NYT.pdf" target="_blank">The New York Times</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/inNout.pdf" target="_blank" class="entry-title">All in the Eye of the Beholder: Partisan Affect and Ideological Accountability</a><br> With Shanto Iyengar.<br> In <i>The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge.</i> 2018.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/in-n-out" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="http://gsood.com/research/papers/moving_further.pdf" target="_blank">Still Close: Perceived Ideological Distance to Own and Main Opposing Party</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/moving-further-away-from-the-out-party/" target="_blank">2012 Blog Post</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/InOut_NYT.pdf" target="_blank">The New York Times</a></span></span></span></summary>
+<div class="abstract">Why do moderate partisans remain warm toward more extreme leaders of their own party? We find both distorted perceptions of leaders&#x27; positions and asymmetric treatment of policy disagreement: even when informed about positions, partisans do not necessarily penalize more distant co-partisan candidates.</div>
 </details>
 <details>
-<summary><a href="papers/ComingToDislike.pdf" target="_blank">Coming to Dislike Your Opponents: The Polarizing Impact of Political Campaigns</a><br> With Shanto Iyengar.<br> <span class="highlight">PRESS</span>: <a href="press/ComingtoDislike_nyt.pdf" target="_blank">New York Times</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/ComingToDislike.pdf" target="_blank" class="entry-title">Coming to Dislike Your Opponents: The Polarizing Impact of Political Campaigns</a><br> With Shanto Iyengar.<span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/ComingtoDislike_nyt.pdf" target="_blank">New York Times</a></span></span></span></summary>
+<div class="abstract">Using national surveys and political advertising data, we examine how partisan hostility changes during campaigns. Evaluations of the opposing party become more negative over the campaign, with exposure to televised advertising, especially negative advertising, contributing to the pattern.</div>
 </details>
 <details>
-<summary><a href="papers/partisan_vision.pdf" target="_blank">Partisan Vision? Partisan Bias in Simple Visual Evaluations</a><br>With Carrie Roush and Alex Theodoridis.<br> 🗃 <a href="https://github.com/soodoku/partisan_vision/">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="papers/partisan_vision.pdf" target="_blank" class="entry-title">Partisan Vision? Partisan Bias in Simple Visual Evaluations</a><br>With Carrie Roush and Alex Theodoridis.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_vision/">Replication Materials</a> </summary>
+<div class="abstract">Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. Across these tasks, the estimated partisan effects are generally small.</div>
 </details>
 <details>
-<summary><a href="papers/BroadbandPolarization.pdf" target="_blank">The Hostile Audience: The Effect of Access to Broadband Internet on Partisan Affect</a><br> With Yphtach Lelkes and Shanto Iyengar. <i>American Journal of Political Science.</i> 61(1): 5–20, 2017.<br> 🗃 <a href="http://dx.doi.org/10.7910/DVN/W1YJZQ" target="_blank">Replication Materials</a><br> <span class="highlight">PRESS</span>: <a href="press/Hostile_Guardian.pdf" target="_blank">The Guardian</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/BroadbandPolarization.pdf" target="_blank" class="entry-title">The Hostile Audience: The Effect of Access to Broadband Internet on Partisan Affect</a><br> With Yphtach Lelkes and Shanto Iyengar. <i>American Journal of Political Science.</i> 61(1): 5–20, 2017.<br> <span class="entry-icon">🗃</span><a href="http://dx.doi.org/10.7910/DVN/W1YJZQ" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/Hostile_Guardian.pdf" target="_blank">The Guardian</a></span></span></span></summary>
+<div class="abstract">We use variation in state right-of-way regulations to study the effect of broadband access on partisan hostility. Combining broadband availability with survey data from 2004 and 2008, we find greater hostility and greater consumption of partisan media where broadband access expands.</div>
 </details>
 <details>
-<summary><a href="papers/adult.pdf" target="_blank">Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online</a><br> With Lucas Shen. <i>Journal of Quantitative Description.</i> 2024.<br> 🗃 <a href="https://github.com/soodoku/adult" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/adult.pdf" target="_blank" class="entry-title">Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online</a><br> With Lucas Shen. <i>Journal of Quantitative Description.</i> 2024.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/adult" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Observed browsing data show that online pornography consumption is concentrated among a small share of users. Republicans consume somewhat more than Democrats in the unadjusted data, but the difference disappears after accounting for age and gender.</div>
 </details>
 <details>
-<summary><a href="papers/StereotypesAboutSD.pdf" target="_blank">Hidden Racial Prejudice? Impact of Social Desirability Pressures on Endorsement of Racial Stereotypes</a><br> With Jon Krosnick, Tobias Stark, and Floor van Maaren. <i>Sociological Methods and Research.</i>51(2), 605–631, 2019.<br> 🗃 <a href="https://osf.io/jdv7r/" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/StereotypesAboutSD.pdf" target="_blank" class="entry-title">Hidden Racial Prejudice? Impact of Social Desirability Pressures on Endorsement of Racial Stereotypes</a><br> With Jon Krosnick, Tobias Stark, and Floor van Maaren. <i>Sociological Methods and Research.</i>51(2), 605–631, 2019.<br> <span class="entry-icon">🗃</span><a href="https://osf.io/jdv7r/" target="_blank">Replication Materials</a></summary>
+<div class="abstract">We compare White respondents&#x27; racial stereotype reports in confidential computer-assisted and oral interviews in the 2008 American National Election Study. Confidential responses are slightly more negative about both Black and White people and have no greater predictive validity, casting doubt on a large social-desirability distortion in the oral measures.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Deliberation</summary>
 <details>
-<summary><a href="papers/DahlSays.pdf" target="_blank">What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics</a><br>With Ian O&#x27;Flynn. <i>Deliberative Mini-Publics.</i> 41–58, 2014. ECPR Press.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/DahlSays.pdf" target="_blank" class="entry-title">What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics</a><br>With Ian O&#x27;Flynn. <i>Deliberative Mini-Publics.</i> 41–58, 2014. ECPR Press.</summary>
+<div class="abstract">We assess deliberative polls and other mini-publics using Robert Dahl&#x27;s criteria for a democratic process: inclusion, effective participation, enlightened understanding, voting equality, and control of the agenda. The chapter examines where these institutions meet the criteria and where their democratic claims require qualification.</div>
 </details>
 <details>
-<summary><a href="papers/LearningOfArguments.pdf" target="_blank">How Can You Think That?: Deliberation and the Learning of Opposing Arguments</a><br> 🗃 <a href="https://github.com/soodoku/nireland">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="papers/LearningOfArguments.pdf" target="_blank" class="entry-title">How Can You Think That?: Deliberation and the Learning of Opposing Arguments</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/nireland">Replication Materials</a> </summary>
+<div class="abstract">Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we examine whether participants learn arguments for positions they oppose. The evidence shows that people in a deeply divided society can learn opposing arguments through deliberation.</div>
 </details>
 <details>
-<summary><a href="papers/DeliberativeDistortions.pdf" target="_blank">Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations</a><br> With Robert Luskin, Kyu Hahn, and James Fishkin. <i>The British Journal of Political Science</i>. 52(3), 1205–1225, 2022.<br> 🗃 <a href="https://github.com/soodoku/distortions/" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/DeliberativeDistortions.pdf" target="_blank" class="entry-title">Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations</a><br> With Robert Luskin, Kyu Hahn, and James Fishkin. <i>The British Journal of Political Science</i>. 52(3), 1205–1225, 2022.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/distortions/" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Across 2,601 group-issue pairs in 21 Deliberative Polls, we test whether discussion routinely homogenizes or polarizes attitudes, or shifts them toward those of socially advantaged participants. We find no strong or routine pattern of these distortions; the modest patterns include some homogenization and moderation.</div>
 </details>
 <details>
-<summary><a href="papers/kirkuk.pdf" target="_blank">What Future for Kirkuk? Evidence from a deliberative intervention</a><br> With Ian O&#x27;Flynn, Jalal Mistaffa, and Nahwi Saeed. <i>Democratization</i>. 26(7), 1299–1317, 2019.<br> 🗃 <a href="https://github.com/soodoku/kirkuk/" target="_blank">Replication Materials</a> | <a href="papers/kirkuk_si.pdf" target="_blank">Supporting Information</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/kirkuk.pdf" target="_blank" class="entry-title">What Future for Kirkuk? Evidence from a deliberative intervention</a><br> With Ian O&#x27;Flynn, Jalal Mistaffa, and Nahwi Saeed. <i>Democratization</i>. 26(7), 1299–1317, 2019.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/kirkuk/" target="_blank">Replication Materials</a> | <a href="papers/kirkuk_si.pdf" target="_blank">Supporting Information</a></summary>
+<div class="abstract">A survey and deliberative field experiment examine young, educated Kirkuk residents&#x27; preferences for governing their divided society. Participants support an equal say for ethnic groups, and informed deliberation broadens support for regional autonomy without substantially changing support for equal say.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Information Environment</summary>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf" target="_blank">Not News: Provision of Apolitical News in the British News Media</a><br>With Suriyan Laohaprapanon.<br> 🗃 <a href="https://github.com/notnews/uk_not_news">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf" target="_blank" class="entry-title">Not News: Provision of Apolitical News in the British News Media</a><br>With Suriyan Laohaprapanon.<br> <span class="entry-icon">🗃</span><a href="https://github.com/notnews/uk_not_news">Replication Materials</a> </summary>
+<div class="abstract">We classify roughly 5.4 million webpages from 276 British news outlets to estimate how much coverage concerns topics outside public affairs. A classifier trained using article URL categories and checked against hand coding estimates that about 39% of articles are apolitical news.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf" target="_blank">Strength in Numbers: Multiple Measures of Media Ideology</a><br>With Philip Habel.<br> 🗃 <a href="https://github.com/notnews/uk_media_ideology/">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf" target="_blank" class="entry-title">Strength in Numbers: Multiple Measures of Media Ideology</a><br>With Philip Habel.<br> <span class="entry-icon">🗃</span><a href="https://github.com/notnews/uk_media_ideology/">Replication Materials</a> </summary>
+<div class="abstract">We combine text-based and audience-based measures of British news outlets&#x27; ideology. Parliamentary speeches, party manifestos, and Twitter following patterns provide complementary information about ideological position and differences between measurement approaches.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf" target="_blank">Measuring Agendas and Positions on Agendas</a><br>With Andrew Guess.<br> 🗃 <a href="https://github.com/notnews/issue_ideology/" target="_blank">Replication Materials</a> </summary>
-<div class="abstract"></div>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf" target="_blank" class="entry-title">Measuring Agendas and Positions on Agendas</a><br>With Andrew Guess.<br> <span class="entry-icon">🗃</span><a href="https://github.com/notnews/issue_ideology/" target="_blank">Replication Materials</a> </summary>
+<div class="abstract">We distinguish which issues news outlets cover from the positions they take within those issues. A supervised topic model and congressional-speech-based slant measures reveal systematic differences across 255 news programs on 50 television channels.</div>
 </details>
 <details>
-<summary>📦 <a href="https://github.com/notnews/notnews" target="_blank">Notnews: Predict the Type of News Based on Story Text and URL</a><br> With Suriyan Laohaprapanon.</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📦</span><a href="https://github.com/notnews/notnews" target="_blank" class="entry-title">Notnews: Predict the Type of News Based on Story Text and URL</a><br> With Suriyan Laohaprapanon.</summary>
+<div class="abstract">A Python library for classifying news by topic and distinguishing hard from soft news. It offers URL-pattern rules, trained US and UK text models, and optional language-model classification through Python and command-line interfaces.</div>
 </details>
 <details>
-<summary><a href="https://github.com/notnews/readable_news" target="_blank">Unreadable News: How Readable is American News?</a><br> With Lucas Shen.</summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/notnews/readable_news" target="_blank" class="entry-title">Unreadable News: How Readable is American News?</a><br> With Lucas Shen.</summary>
+<div class="abstract">We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information.</div>
 </details>
 <details>
-<summary><a href="papers/mediabias.pdf" target="_blank">Follow Your Ideology: A Measure of Ideological Location of Media Sources</a><br> With Pablo Barberá.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/mediabias.pdf" target="_blank" class="entry-title">Follow Your Ideology: A Measure of Ideological Location of Media Sources</a><br> With Pablo Barberá.</summary>
+<div class="abstract">We estimate the ideological positions of more than 2,300 media sources using the following patterns of politically interested social-media users. Comparisons with content-based measures support the approach, and applications examine journalists&#x27; ideology and ideological diversity within outlets.</div>
 </details>
 <details>
-<summary><a href="papers/hr.pdf">The Supply of Media Slant Across Outlets and Demand for Slant Within Outlets: Evidence from US Presidential Campaign News</a><br> With Marcel Garz, Daniel Stone, and Justin Wallace. <i>European Journal of Political Economy</i>.<br> 🗃 <a href="https://github.com/soodoku/horse_race" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/hr.pdf" class="entry-title">The Supply of Media Slant Across Outlets and Demand for Slant Within Outlets: Evidence from US Presidential Campaign News</a><br> With Marcel Garz, Daniel Stone, and Justin Wallace. <i>European Journal of Political Economy</i>.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/horse_race" target="_blank">Replication Materials</a></summary>
+<div class="abstract">We study presidential campaign horse-race headlines across six online news outlets in 2012 and 2016. Headlines tend to favor their outlets&#x27; typical readers, but within-outlet engagement provides little evidence that readers prefer congenial headlines and somewhat more evidence of demand for uncongenial ones.</div>
 </details>
 <details>
-<summary><a href="papers/selexp.pdf">Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information</a><br> With Yphtach Lelkes. <i>Oxford Research Encyclopedia of Politics</i>. 2018.<br> 🗃 <a href="https://github.com/soodoku/selexp">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/themains/piedomains" target="_blank">Categorizing the Content of Domains</a><a href="http://gojiberries.io/measuring-selective-exposure-a-selective-measure-of-selective-exposure/" target="_blank">Measuring Selective Exposure</a><a href="http://gojiberries.io/the-fairest-of-them-all/" target="_blank">The Fairest of All</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="papers/selexp.pdf" class="entry-title">Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information</a><br> With Yphtach Lelkes. <i>Oxford Research Encyclopedia of Politics</i>. 2018.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/selexp">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/themains/piedomains" target="_blank">Categorizing the Content of Domains</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/measuring-selective-exposure-a-selective-measure-of-selective-exposure/" target="_blank">Measuring Selective Exposure</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-fairest-of-them-all/" target="_blank">The Fairest of All</a></span></span></span></summary>
+<div class="abstract">We reconsider claims that greater choice over political information increases knowledge gaps and polarization. The review questions the premise of widening knowledge gaps and finds that the evidence connecting selective exposure to polarization is more limited and nuanced than common accounts suggest.</div>
 </details>
 <details>
-<summary><a href="https://github.com/notnews/good_nyt" target="_blank">The Good NYT: Provision of Apolitical News in the New York Times</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/notnews/good_nyt" target="_blank" class="entry-title">The Good NYT: Provision of Apolitical News in the New York Times</a></summary>
+<div class="abstract">We use the annotated New York Times corpus from 1987 to 2007 to study the mix of public-affairs and apolitical coverage. The project also develops analyses of geographic focus using article metadata and location fields.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf" target="_blank">Hard News: The Softening of Network Television News</a><br> With Daniel Weitzel.<br> 🗃 <a href="https://github.com/notnews/hard_news/" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf" target="_blank" class="entry-title">Hard News: The Softening of Network Television News</a><br> With Daniel Weitzel.<br> <span class="entry-icon">🗃</span><a href="https://github.com/notnews/hard_news/" target="_blank">Replication Materials</a></summary>
+<div class="abstract">A coded sample of more than 5,000 network television news segments from 1968 to 2019 documents changes in political content and geographic focus. Coverage unrelated to politics increases over time, and local news becomes a substantially larger share in the later years.</div>
 </details>
 <details>
-<summary><a href="https://github.com/notnews/politifact" target="_blank">Partisan Imbalance in Politifact?</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/notnews/politifact" target="_blank" class="entry-title">Partisan Imbalance in Politifact?</a></summary>
+<div class="abstract">We combine scraped PolitiFact ratings with independently coded party affiliations to examine differences in scrutiny and ratings across parties. The analysis distinguishes how often statements are checked from the average rating among the statements selected for checking.</div>
 </details>
 <details>
-<summary>💾 <a href="https://github.com/notnews/top_news" target="_blank">Top News! URLs from News Feeds of Major National News Sites (2022-)</a><br> With Derek Willis</summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">💾</span><a href="https://github.com/notnews/top_news" target="_blank" class="entry-title">Top News! URLs from News Feeds of Major National News Sites (2022-)</a><br> With Derek Willis</summary>
+<div class="abstract">A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections.</div>
 </details>
 <details>
-<summary>💾 <a href="https://github.com/notnews/cnn_transcripts/" target="_blank">CNN Transcripts 2000--2025</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/notnews/archive_news_cc" target="_blank">Internet Archive TV captions</a><a href="https://github.com/notnews/vandy_tv_news_abstracts" target="_blank">Vanderbilt TV news abstracts</a><a href="https://github.com/notnews/nbc_transcripts" target="_blank">NBC / MSNBC transcripts</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">💾</span><a href="https://github.com/notnews/cnn_transcripts/" target="_blank" class="entry-title">CNN Transcripts 2000--2025</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/notnews/archive_news_cc" target="_blank">Internet Archive TV captions</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/notnews/vandy_tv_news_abstracts" target="_blank">Vanderbilt TV news abstracts</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/notnews/nbc_transcripts" target="_blank">NBC / MSNBC transcripts</a></span></span></span></summary>
+<div class="abstract">A corpus and scraper for CNN transcripts spanning 2000 through March 2025, with program names, dates, times, and transcript text. The repository documents collection across versions of CNN&#x27;s site and links to research-access data on Harvard Dataverse.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/tv_schedules" target="_blank">What and Who is on Network Television?</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/tv_schedules" target="_blank" class="entry-title">What and Who is on Network Television?</a></summary>
+<div class="abstract">We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/working_women_on_tv" target="_blank">Working Women on Indian TV</a> <br>With Asha Sood</summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/working_women_on_tv" target="_blank" class="entry-title">Working Women on Indian TV</a> <br>With Asha Sood</summary>
+<div class="abstract">We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows.</div>
 </details>
 <details>
-<summary><a href="papers/face_of_crime.pdf" target="_blank">The Face of Crime in Prime Time: Evidence from Law and Order</a><br> With Daniel Trielli.<br> 🗃 <a href="https://github.com/soodoku/face_of_crime" target="_blank">Replication Materials</a><br> <span class="highlight">PRESS</span>: <a href="press/LawOrderWP.pdf" target="_blank">The Washington Post</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/face_of_crime.pdf" target="_blank" class="entry-title">The Face of Crime in Prime Time: Evidence from Law and Order</a><br> With Daniel Trielli.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/face_of_crime" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/LawOrderWP.pdf" target="_blank">The Washington Post</a></span></span></span></summary>
+<div class="abstract">We code the race and gender of victims and criminals in three Law and Order series and compare portrayals with crime statistics. White people and women are overrepresented in both roles, while Black people and men are underrepresented.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Other</summary>
 <details>
-<summary><a href="papers/problem_solving.pdf" target="_blank">Problem Solving</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/problem_solving.pdf" target="_blank" class="entry-title">Problem Solving</a></summary>
+<div class="abstract">A practical framework for diagnosing problems: generate specific explanations, assess their plausibility, and design checks that distinguish among them. Examples show how correlations, close examination of failures, and comparisons with successful cases can help identify causes.</div>
 </details>
 <details>
-<summary><a href="papers/uncertainty.pdf" target="_blank">Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect</a><br> With Doug Ahler.<br> 🗃 <a href="https://github.com/soodoku/uncertainty" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/uncertainty.pdf" target="_blank" class="entry-title">Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect</a><br> With Doug Ahler.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/uncertainty" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Two larger surveys replicate the finding that people sometimes prefer a certain option to a lottery whose worst outcome is better. Clarifying the guarantee reduces the effect, while expressing the lottery as natural frequencies or using monetary choices eliminates it in these experiments.</div>
 </details>
 <details>
-<summary><a href="papers/prospect_theory.pdf" target="_blank">Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments</a><br> With John Protzko and Jon A. Krosnick.<br> 🗃 <a href="https://github.com/soodoku/prospect_theory" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/prospect_theory.pdf" target="_blank" class="entry-title">Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments</a><br> With John Protzko and Jon A. Krosnick.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/prospect_theory" target="_blank">Replication Materials</a></summary>
+<div class="abstract">Five archival survey experiments test whether equivalent gain and loss descriptions change risky choices. All 23 contrasts show the classic framing direction, but explicitly stating the certain outcome removes much of the gap, suggesting that inferences from incomplete descriptions matter alongside gain and loss labels.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/mixed_signals" target="_blank">Mixed Signals: Movie Quality Assessments Across Platforms</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/mixed_signals" target="_blank" class="entry-title">Mixed Signals: Movie Quality Assessments Across Platforms</a></summary>
+<div class="abstract">We compare movie ratings across platforms using data on 16,319 American films released between 1950 and 2020. Among platforms with sufficient coverage, average ratings are only moderately correlated, revealing substantial differences in assessments of the same films.</div>
 </details>
 <details>
-<summary><a href="papers/ACAKnowledgeFavorability.pdf" target="_blank">Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?</a><br> With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius.<br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="press/ForbesHealthcare.pdf">Forbes</a><a href="press/PSMagHealthcare.pdf" target="_blank">Pacific Standard</a><a href="press/TheDishHealthcare.pdf" target="_blank">The Dish</a></span>, among other outlets.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/ACAKnowledgeFavorability.pdf" target="_blank" class="entry-title">Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?</a><br> With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius.<span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/ForbesHealthcare.pdf">Forbes</a></span>; <span class="supporting-item" role="listitem"><a href="press/PSMagHealthcare.pdf" target="_blank">Pacific Standard</a></span>; <span class="supporting-item" role="listitem"><a href="press/TheDishHealthcare.pdf" target="_blank">The Dish</a>, among other outlets.</span></span></span></summary>
+<div class="abstract">Surveys from 2010 and 2012 find substantial misunderstanding of the Affordable Care Act despite support for many of its provisions. The analysis estimates that fuller understanding could increase support for the law; this is a modeled implication, rather than a demonstrated effect of an information campaign.</div>
 </details>
 <details>
-<summary><a href="papers/ACA_beliefs_attitudes.pdf" target="_blank">Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?</a><br> With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. <i>Annals of the American Academy of Political and Social Science.</i> 2022.</summary>
-<div class="abstract"></div>
+<summary><a href="papers/ACA_beliefs_attitudes.pdf" target="_blank" class="entry-title">Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?</a><br> With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. <i>Annals of the American Academy of Political and Social Science.</i> 2022.</summary>
+<div class="abstract">We examine whether Americans evaluate the Affordable Care Act through beliefs about its individual provisions. Despite partisan disagreement, both Democrats&#x27; and Republicans&#x27; evaluations are associated with what they believe the law does and how confident they are in those beliefs.</div>
 </details>
 <details>
-<summary><a href="papers/daughters.pdf" target="_blank">Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?</a><br> With Don Green, Oliver Hyman-Metzger, and Michelle Zee. <i>Journal of Political Economy Microeconomics.</i> 2023.<br> 🗃 <a href="https://github.com/soodoku/daughters" target="_blank">Replication Materials</a> | <a href="papers/daughters_si.pdf" target="_blank">Supporting Information</a><br> <span class="highlight">PRESS</span>: <a href="https://phys.org/news/2023-05-daughters-politicians-votes-women-issues.html" target="_blank">Phys.org</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/daughters.pdf" target="_blank" class="entry-title">Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?</a><br> With Don Green, Oliver Hyman-Metzger, and Michelle Zee. <i>Journal of Political Economy Microeconomics.</i> 2023.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/daughters" target="_blank">Replication Materials</a> | <a href="papers/daughters_si.pdf" target="_blank">Supporting Information</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://phys.org/news/2023-05-daughters-politicians-votes-women-issues.html" target="_blank">Phys.org</a></span></span></span></summary>
+<div class="abstract">We revisit evidence that legislators with daughters vote more liberally on women&#x27;s issues, extending the analysis to eight congresses before and eight after the original study period. We find no daughters effect in either extension, challenging the explanation that later party polarization alone erased the relationship.</div>
 </details>
 <details>
-<summary><a href="https://gsood.com/research/papers/extreme_recall.pdf" target="_blank">Extreme Recall: Which Politicians Come to Mind?</a><br> With Daniel Weitzel. <i>Journal of Elections, Public Opinion and Parties.</i> 2024. <br> 🗃 <a href="https://github.com/danweitzel/extreme_recall_2023" target="_blank">Replication Materials</a> <br> <span class="highlight">RELATED</span>: <a href="https://github.com/soodoku/extreme_recall" target="_blank">Extreme Recall</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://gsood.com/research/papers/extreme_recall.pdf" target="_blank" class="entry-title">Extreme Recall: Which Politicians Come to Mind?</a><br> With Daniel Weitzel. <i>Journal of Elections, Public Opinion and Parties.</i> 2024. <br> <span class="entry-icon">🗃</span><a href="https://github.com/danweitzel/extreme_recall_2023" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/soodoku/extreme_recall" target="_blank">Extreme Recall</a></span></span></span></summary>
+<div class="abstract">Two surveys nearly a decade apart show that people&#x27;s images of political parties center on a few prominent national figures, with more extreme politicians recalled more often. Television news coverage is associated with which politicians come to mind.</div>
 </details>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Political Economy of India</summary>
 <details>
-<summary><a href="papers/quota_raj.pdf" target="_blank">The Limits of Electoral Gender Quotas in Rural Local Bodies</a><br> With Varun K. R.<br> 🗃 <a href="https://github.com/in-rolls/quota_representation" target="_blank">Replication Materials</a><br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/in-rolls/quota_governance" target="_blank">Governance</a><a href="https://github.com/in-rolls/quota_spending" target="_blank">Public spending</a><a href="https://github.com/in-rolls/quota_pds" target="_blank">PDS</a><a href="https://github.com/in-rolls/quota_marriage" target="_blank">Marriage</a></span><br> <span class="highlight">PRESS</span>: <a href="https://voxdev.org/topic/institutions-political-economy/no-representation-without-reservation-long-term-limits-gender" target="_blank">VoxDev</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/quota_raj.pdf" target="_blank" class="entry-title">The Limits of Electoral Gender Quotas in Rural Local Bodies</a><br> With Varun K. R.<br> <span class="entry-icon">🗃</span><a href="https://github.com/in-rolls/quota_representation" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_governance" target="_blank">Governance</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_spending" target="_blank">Public spending</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_pds" target="_blank">PDS</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_marriage" target="_blank">Marriage</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://voxdev.org/topic/institutions-political-economy/no-representation-without-reservation-long-term-limits-gender" target="_blank">VoxDev</a></span></span></span></summary>
+<div class="abstract">Across more than 34,000 rural local bodies, prior reservation produces small or inconsistent short-run gains in women&#x27;s success in subsequently open seats. Phone audits document extensive male mediation of access to women elected under quotas, a pattern consistent with, but not proof of, proxy governance limiting independent political careers.</div>
 </details>
 <details>
-<summary><a href="papers/quota_elite_quality.pdf" target="_blank">Female Reservation and the Qualifications of Local Elected Officials in India</a><br> 🗃 <a href="https://github.com/in-rolls/quota_elite_quality" target="_blank">Replication Materials</a></summary>
-<div class="abstract"></div>
+<summary><a href="papers/quota_elite_quality.pdf" target="_blank" class="entry-title">Female Reservation and the Qualifications of Local Elected Officials in India</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/in-rolls/quota_elite_quality" target="_blank">Replication Materials</a></summary>
+<div class="abstract">We compare elected officials in women-reserved and open seats across rural and urban Indian local governments. Differences in education and pending criminal cases vary across settings; the comparisons require conditional comparability for a causal interpretation and do not establish effects on performance in office.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/spousal_age_gap" target="_blank">The Older Half: Spousal Age Gap in India</a><br> With Suriyan Laohaprapanon<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian electoral rolls</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/spousal_age_gap" target="_blank" class="entry-title">The Older Half: Spousal Age Gap in India</a><br> With Suriyan Laohaprapanon<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian electoral rolls</a></span></span></span></summary>
+<div class="abstract">Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses&#x27; ages.</div>
 </details>
 <details>
-<summary><a href="papers/land.pdf" target="_blank">Unlanded: Distribution of Land in Bihar</a><br> With Lucas Shen<br> 🗃 <a href="https://github.com/in-rolls/land" target="_blank">Replication Materials</a><br></summary>
-<div class="abstract"></div>
+<summary><a href="papers/land.pdf" target="_blank" class="entry-title">Unlanded: Distribution of Land in Bihar</a><br> With Lucas Shen<br> <span class="entry-icon">🗃</span><a href="https://github.com/in-rolls/land" target="_blank">Replication Materials</a><br></summary>
+<div class="abstract">Digitized land records from Bihar reveal concentrated ownership and substantial disparities by gender, religion, and caste. Men make up 76.5% of landowners, and Muslims, Scheduled Castes, and Extremely Backward Classes are underrepresented; the study measures ownership rather than operational agricultural holdings.</div>
 </details>
 <details>
-<summary>📊 <a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian Electoral Rolls: Data and Extraction Tools</a><br> With Atul Dhingra.<br> <span class="highlight">RELATED</span>: <span class="resource-links"><a href="https://github.com/in-rolls/parse_searchable_rolls" target="_blank">Searchable-roll parser</a><a href="https://github.com/in-rolls/parse_unsearchable_rolls" target="_blank">Scanned-roll parser</a></span></summary>
-<div class="abstract"></div>
+<summary><span class="entry-icon">📊</span><a href="https://github.com/in-rolls/electoral_rolls" target="_blank" class="entry-title">Indian Electoral Rolls: Data and Extraction Tools</a><br> With Atul Dhingra.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/parse_searchable_rolls" target="_blank">Searchable-roll parser</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/parse_unsearchable_rolls" target="_blank">Scanned-roll parser</a></span></span></span></summary>
+<div class="abstract">Scripts and linked tools collect and parse Indian electoral rolls published as PDFs by state election authorities. The project provides a foundation for research using recorded names, ages, gender labels, family relationships, and electoral geography.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Missing Women</summary>
 <details>
-<summary><a href="papers/missing_women.pdf" target="_blank">Missing women on Indian streets</a><br> With Varun Karekurve-Ramachandra<br> 🗃 <a href="https://github.com/geosensing/streetscope" target="_blank">Replication Materials</a><br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="https://marginalrevolution.com/marginalrevolution/2026/07/missing-women-on-indian-streets.html" target="_blank">Marginal Revolution</a><a href="https://music.amazon.co.uk/podcasts/37424666-0994-4d1b-9703-ae037bc10d9d/episodes/e3305856-5472-47be-8fb8-648470cb6f43/watching-the-wheels-ep-1-where-have-all-the-women-gone" target="_blank">Watching the Wheels (podcast)</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="papers/missing_women.pdf" target="_blank" class="entry-title">Missing women on Indian streets</a><br> With Varun Karekurve-Ramachandra<br> <span class="entry-icon">🗃</span><a href="https://github.com/geosensing/streetscope" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://marginalrevolution.com/marginalrevolution/2026/07/missing-women-on-indian-streets.html" target="_blank">Marginal Revolution</a></span>; <span class="supporting-item" role="listitem"><a href="https://music.amazon.co.uk/podcasts/37424666-0994-4d1b-9703-ae037bc10d9d/episodes/e3305856-5472-47be-8fb8-648470cb6f43/watching-the-wheels-ep-1-where-have-all-the-women-gone" target="_blank">Watching the Wheels (podcast)</a></span></span></span></summary>
+<div class="abstract">Randomly sampled streets in four Indian cities reveal a large gender imbalance in public space: women account for 12% to 16% of observed adults. Comparisons with residential populations and time-use data suggest that much of the gap arises because women leave home less often and make fewer trips.</div>
 </details>
 <details>
-<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf" target="_blank">Son Bias in the US: Evidence from Business Names</a><br> With Walter Guillioli<br> 🗃 <a href="https://github.com/soodoku/sonny_side" target="_blank">Replication Materials</a><br> </summary>
-<div class="abstract"></div>
+<summary><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf" target="_blank" class="entry-title">Son Bias in the US: Evidence from Business Names</a><br> With Walter Guillioli<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/sonny_side" target="_blank">Replication Materials</a><br> </summary>
+<div class="abstract">We compare businesses named with &#x27;son&#x27; or &#x27;sons&#x27; and &#x27;daughter&#x27; or &#x27;daughters&#x27; using state business registries. Across 40 states, the median ratio is 12 to 1, with limitations in registry searches making the analysis a conservative accounting of the imbalance.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/last_sex" target="_blank">Which Women Are Missing? Adult Sex Ratio By Last Name</a> <br>With Suriyan Laohaprapanon</summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/last_sex" target="_blank" class="entry-title">Which Women Are Missing? Adult Sex Ratio By Last Name</a> <br>With Suriyan Laohaprapanon</summary>
+<div class="abstract">We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels.</div>
 </details>
 <details>
-<summary><a href="https://github.com/geosensing/women-count" target="_blank">Missing Women on the Streets</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/geosensing/women-count" target="_blank" class="entry-title">Missing Women on the Streets</a></summary>
+<div class="abstract">An exploratory project on measuring women&#x27;s presence in public space using observations of people on streets. It develops sampling and data-collection approaches and discusses the assumptions needed to compare observed street populations with a gender-balance baseline.</div>
 </details>
 <details>
-<summary><a href="https://github.com/soodoku/epic_children" target="_blank">Epic Children: Sex Ratio of Children of Key Characters in Epics</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/soodoku/epic_children" target="_blank" class="entry-title">Epic Children: Sex Ratio of Children of Key Characters in Epics</a></summary>
+<div class="abstract">A dataset records sons and daughters attributed to key figures across epic and mythological traditions. It documents large differences in the visibility of named sons and daughters, with source and family-structure information for interpreting the counts.</div>
 </details>
 <details>
-<summary><a href="https://github.com/in-rolls/missing_daughters_of_pols" target="_blank">Missing Daughters of Indian Politicians</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/in-rolls/missing_daughters_of_pols" target="_blank" class="entry-title">Missing Daughters of Indian Politicians</a></summary>
+<div class="abstract">We use official biographies of members of India&#x27;s 12th through 17th Lok Sabhas to examine the sex ratio of politicians&#x27; children. The project compares recorded sons and daughters to assess whether the imbalance observed in the wider population also appears among political elites.</div>
 </details>
 </details>
 <details class="category-toggle">
 <summary>Cricket</summary>
 <details>
-<summary><a href="https://github.com/outside-edge/elo_cricket" target="_blank">Elo Ratings of International Cricket Teams By Format</a><br> With Derek Willis.<br> <span class="highlight">PRESS</span>: <a href="press/EloDutch.pdf" target="_blank">The Hindu</a></summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/outside-edge/elo_cricket" target="_blank" class="entry-title">Elo Ratings of International Cricket Teams By Format</a><br> With Derek Willis.<span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/EloDutch.pdf" target="_blank">The Hindu</a></span></span></span></summary>
+<div class="abstract">We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time.</div>
 </details>
 <details>
-<summary><a href="https://github.com/outside-edge/war" target="_blank">WAR Ratings for Cricketers</a><br> With Derek Willis.</summary>
-<div class="abstract"></div>
+<summary><a href="https://github.com/outside-edge/war" target="_blank" class="entry-title">WAR Ratings for Cricketers</a><br> With Derek Willis.</summary>
+<div class="abstract">We develop batting and bowling Wins Above Replacement measures for men&#x27;s and women&#x27;s one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins.</div>
 </details>
 <details>
-<summary><a href="papers/cricket_paper.pdf" target="_blank">Fairly Random: The Effect of Winning the Toss on Winning the Match</a><br> With Apoorva Lal, Derek Willis, and Avidit Acharya. <i>Journal of Sports Analytics.</i> 2023.<br> 🗃 <a href="https://github.com/outside-edge/asymmetry">Replication Materials</a><br> <span class="highlight">RELATED</span>: <a href="https://github.com/dwillis/toss-up" target="_blank">Fairly Random: Impact of Winning the Toss on the Probability of Winning</a> (with Derek Willis; <a href="https://arxiv.org/abs/1605.08753" target="_blank">arXiv.org</a>).<br><span class="resource-links"><a href="https://github.com/outside-edge/python-espncricinfo" target="_blank">python-espncricinfo</a><a href="https://github.com/outside-edge/get-cricket-data" target="_blank">Cricket data and collection scripts</a></span><br> <span class="highlight">PRESS</span>: <span class="resource-links"><a href="press/CricketESPN.pdf" target="_blank">ESPN: How much does the toss really matter?</a><a href="https://www.espncricinfo.com/story/why-replacing-the-toss-with-an-auction-is-the-fair-thing-to-do-1277744" target="_blank">ESPN: Why replacing the toss with an auction is the fair thing to do</a></span></summary>
-<div class="abstract"></div>
+<summary><a href="papers/cricket_paper.pdf" target="_blank" class="entry-title">Fairly Random: The Effect of Winning the Toss on Winning the Match</a><br> With Apoorva Lal, Derek Willis, and Avidit Acharya. <i>Journal of Sports Analytics.</i> 2023.<br> <span class="entry-icon">🗃</span><a href="https://github.com/outside-edge/asymmetry">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/dwillis/toss-up" target="_blank">Fairly Random: Impact of Winning the Toss on the Probability of Winning</a> (with Derek Willis; <a href="https://arxiv.org/abs/1605.08753" target="_blank">arXiv.org</a>).</span>; <span class="supporting-item" role="listitem"><a href="https://github.com/outside-edge/python-espncricinfo" target="_blank">python-espncricinfo</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/outside-edge/get-cricket-data" target="_blank">Cricket data and collection scripts</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="press/CricketESPN.pdf" target="_blank">ESPN: How much does the toss really matter?</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.espncricinfo.com/story/why-replacing-the-toss-with-an-auction-is-the-fair-thing-to-do-1277744" target="_blank">ESPN: Why replacing the toss with an auction is the fair thing to do</a></span></span></span></summary>
+<div class="abstract">We use cricket&#x27;s coin toss to estimate the advantage of choosing whether to bat or bowl first. The estimated effect on winning is negligible in daytime international limited-overs matches, but about 3.3 percentage points in day-night matches and 4.9 points in Tests; rain-adjusted matches show no statistically distinguishable effect.</div>
 </details>
 </details>
 </div>

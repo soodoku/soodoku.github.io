@@ -9,7 +9,7 @@
    ========================================= */
 :root {
   --site-accent: #005f9e;
-  --heading-color: #004675;
+  --heading-color: #333;
 }
 
 body {
@@ -146,11 +146,11 @@ a.home {
 
 .sidebar ul li a {
   font-weight: 200;
-  color: #222;
+  color: #333;
 }
 
 .sidebar ul li a:hover {
-  color: var(--site-accent);
+  color: #333;
 }
 
 .sidebar .site-title {
@@ -164,7 +164,7 @@ a.home {
 .research-sidebar ul li a {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--site-accent);
+  color: #333;
 }
 
 .research-sidebar ul li a[aria-current="page"] {
@@ -241,6 +241,15 @@ details {
   font-family: 'Droid Sans', sans-serif;
 }
 
+#research {
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+#research details {
+  font-family: 'Inter', sans-serif;
+}
+
 details summary {
   list-style: none;
   cursor: pointer;
@@ -275,21 +284,26 @@ details[open] > summary::before {
 #research details > summary::before {
   content: "";
   box-sizing: border-box;
-  width: .45rem;
-  height: .45rem;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-  color: #666;
-  left: .12rem;
-  top: .8em;
-  transform: translateY(-50%) rotate(-45deg);
+  font-size: inherit;
+  width: 1rem;
+  height: 1rem;
+  color: inherit;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m5 3 5 5-5 5' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  left: 0;
+  top: .875em;
+  transform: translateY(-50%);
   transform-origin: center;
   transition: transform 120ms ease-out;
 }
 
 #research details[open] > summary::before {
-  top: .8em;
-  transform: translateY(-50%) rotate(45deg);
+  top: .875em;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+#research details > summary {
+  line-height: 1.75;
 }
 
 #research summary:focus-visible,
@@ -308,7 +322,7 @@ details[open] > summary::before {
 
 #research .category-toggle > summary {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: var(--heading-color);
 }
@@ -321,7 +335,7 @@ details[open] > summary::before {
 }
 
 #research .category-toggle .category-toggle > summary {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: var(--heading-color);
 }
@@ -332,11 +346,26 @@ details[open] > summary::before {
 #research a {
   font-size: 1rem;
   font-weight: 400;
-  color: #444;
+  color: #333;
+}
+
+#research a {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+#research a.entry-title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+#research .supporting-item a.entry-title {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 #research a:hover {
-  color: var(--site-accent);
+  color: #333;
 }
 
 details details {
@@ -363,9 +392,34 @@ details details {
 }
 
 #research .highlight {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: 0.025em;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+#research .entry-icon {
+  margin-right: 0.45em;
+}
+
+#research .supporting-row {
+  display: block;
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+#research .supporting-label {
+  color: #990000;
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+#research .supporting-items {
+  display: inline;
+}
+
+#research .supporting-item {
+  display: inline;
 }
 
 #research .resource-links {
@@ -427,6 +481,14 @@ details details {
   line-height: 1.6;
   color: #222;
   padding-left: 1.2rem;
+}
+
+@media (min-width: 769px) {
+  #research details:not(.category-toggle) > summary,
+  #research .abstract {
+    box-sizing: border-box;
+    max-width: calc(100% - 100px);
+  }
 }
 
 .footer, .new, .small, .contentarea, .smallbold {
@@ -497,12 +559,7 @@ details details {
   }
 
   #research summary {
-    padding-left: 1rem;
-  }
-
-  #research .category-toggle > summary,
-  #research a {
-    font-size: 1rem;
+    padding-left: 1.4rem;
   }
 
   /* 4. Fix Home Page Mobile Padding */

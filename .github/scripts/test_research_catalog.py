@@ -81,8 +81,26 @@ class CatalogTests(unittest.TestCase):
         generated = render(self.catalog, "{{catalog}}")
         self.assertIn("First Author, Second Author", generated)
         self.assertIn("<i>A &amp; B</i>, 2026.", generated)
-        self.assertIn('<span class="highlight">RELATED</span>: <a', generated)
+        self.assertIn('<span class="supporting-label">Related:</span>', generated)
         self.assertEqual(generated.count(related["title"]), 2)
+
+    def test_supporting_groups_preserve_items_and_order(self):
+        self.entry["supporting"] = {
+            "press": [["Coverage <one>"]],
+            "related": [[{"resource": self.entry["primary_resource"]}, " A note"]],
+        }
+        generated = render(self.catalog, "{{catalog}}")
+        self.assertLess(
+            generated.index('class="supporting-label">Related:'),
+            generated.index('class="supporting-label">Press:'),
+        )
+        self.assertIn(" A note</span>", generated)
+        self.assertIn('role="listitem">Coverage &lt;one&gt;</span>', generated)
+
+    def test_rejects_unknown_supporting_resource(self):
+        self.entry["supporting"] = {"related": [[{"resource": "missing"}]]}
+        with self.assertRaisesRegex(ValueError, "Unknown inline resource"):
+            validate_catalog(self.catalog)
 
     def test_source_mapping_is_read_from_resources(self):
         sources = paper_sources(self.catalog)
