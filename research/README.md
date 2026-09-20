@@ -69,8 +69,11 @@ The migration retains existing coauthor and publication text in these arrays;
 those strings are not a normalized author or bibliographic database. Resource
 URLs and primary titles each have one authoritative field. Formatting nodes
 allow `br`, `span`, `i`, `p`, `b`, `em`, `strong`, `sup`, and `sub`; non-break nodes
-use a `children` array. Only the existing `highlight` and `coauthor` span classes
-and `paper-toggle` entry class are supported. Arbitrary HTML is not accepted.
+use a `children` array. Only the `highlight`, `coauthor`, and `resource-links`
+span classes and the `paper-toggle` entry class are supported.
+Use a `resource-links` span containing resource references to group RELATED or
+PRESS links; CSS supplies separators and stacks the links on narrow screens.
+Arbitrary HTML is not accepted.
 
 ## Paper synchronization
 
