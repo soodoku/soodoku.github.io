@@ -253,6 +253,40 @@ details[open] > summary::before {
   top: -.15rem;
 }
 
+#research details > summary::before {
+  content: "";
+  box-sizing: border-box;
+  width: .45rem;
+  height: .45rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  color: #666;
+  left: .12rem;
+  top: .8em;
+  transform: translateY(-50%) rotate(-45deg);
+  transform-origin: center;
+  transition: transform 120ms ease-out;
+}
+
+#research details[open] > summary::before {
+  top: .8em;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#research summary:focus-visible,
+#research a:focus-visible {
+  outline: 2px solid #005f9e;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #research details > summary::before,
+  #research details > summary::after {
+    transition: none;
+  }
+}
+
 /* CHANGED: Using em/rem relative sizes */
 .category-toggle > summary {
   font-size: 1.2rem; 
