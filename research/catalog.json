@@ -633,7 +633,7 @@
     {
       "id": "bootstrap-consistency-regularization-for-stable-neural-network-predictions",
       "kind": "paper",
-      "title": "Bootstrap Consistency Regularization for Stable Neural Network Predictions",
+      "title": "Bootstrap-Consistency Regularization: Training Neural Networks for Prediction Stability",
       "primary_resource": "primary",
       "resources": [
         {
