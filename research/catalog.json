@@ -716,7 +716,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/gojiplus/calibre",
+          "url": "https://github.com/finite-sample/calibre",
           "label": "calibre: Advanced Calibration Models",
           "new_tab": true
         }
