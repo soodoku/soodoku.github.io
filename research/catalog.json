@@ -1,0 +1,6012 @@
+{
+  "$schema": "catalog.schema.json",
+  "version": 1,
+  "sections": [
+    {
+      "id": "econometrics-statistics-and-data-collection",
+      "title": "ECONOMETRICS, STATISTICS, AND DATA COLLECTION",
+      "children": [
+        {
+          "id": "prediction-stability",
+          "title": "PREDICTION STABILITY",
+          "children": [
+            {
+              "entry": "don-t-forget-about-it-forgetting-penalized-supervised-learning"
+            },
+            {
+              "entry": "stable-cart-lower-bootstrap-prediction-variance-cart"
+            },
+            {
+              "entry": "bagged-fsr-rehabilitating-forward-stepwise-regression"
+            },
+            {
+              "entry": "bootstrap-consistency-regularization-for-stable-neural-network-predictions"
+            },
+            {
+              "entry": "selecting-for-stability-choose-the-model-closest-to-the-ensemble"
+            }
+          ]
+        },
+        {
+          "id": "calibration-weighting",
+          "title": "CALIBRATION & WEIGHTING",
+          "children": [
+            {
+              "entry": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression"
+            },
+            {
+              "entry": "fairlex-leximin-calibration"
+            },
+            {
+              "entry": "rank-preserving-calibration-for-multiclass-classification"
+            },
+            {
+              "entry": "first-order-entropy-balancing-via-dual-gradient-descent"
+            },
+            {
+              "entry": "streaming-calibration-with-mwu-and-sgd"
+            },
+            {
+              "entry": "from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges"
+            }
+          ]
+        },
+        {
+          "id": "record-linkage",
+          "title": "RECORD LINKAGE",
+          "children": [
+            {
+              "entry": "inference-with-fuzzy-joined-data"
+            },
+            {
+              "entry": "setjoin-record-linkage-that-preserves-group-structure"
+            },
+            {
+              "entry": "tether-high-precision-record-linkage"
+            },
+            {
+              "entry": "bloomjoin-bloom-filter-based-joins"
+            }
+          ]
+        },
+        {
+          "id": "data-collection",
+          "title": "DATA COLLECTION",
+          "children": [
+            {
+              "entry": "the-micro-task-market-for-lemons-collecting-data-on-amazon-s-mechanical-turk"
+            },
+            {
+              "entry": "optimal-data-collection-when-strata-and-strata-variances-are-known"
+            },
+            {
+              "entry": "geo-sampling-sampling-randomly-from-the-streets"
+            },
+            {
+              "entry": "allocator-optimal-itineraries-for-spatially-distributed-tasks"
+            },
+            {
+              "entry": "reporoulette-randomly-sample-github-repositories"
+            },
+            {
+              "entry": "unbiased-regression-with-costly-item-labels"
+            }
+          ]
+        },
+        {
+          "id": "causal-inference",
+          "title": "CAUSAL INFERENCE",
+          "children": [
+            {
+              "entry": "inferring-treatment-compliance-from-delivery-window-data"
+            },
+            {
+              "entry": "two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary"
+            },
+            {
+              "entry": "partial-credit-diagnosing-proxy-covariates-with-validation-swaps"
+            },
+            {
+              "entry": "smooth-operator-optimal-filtering-of-event-study-estimates"
+            },
+            {
+              "entry": "causal-debiasing-for-robust-machine-learning"
+            }
+          ]
+        },
+        {
+          "id": "other",
+          "title": "OTHER",
+          "children": [
+            {
+              "entry": "one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments"
+            },
+            {
+              "entry": "incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series"
+            },
+            {
+              "entry": "analytic-hessian-bandwidth-selection"
+            },
+            {
+              "entry": "a-lightweight-als-solver-for-iterative-gls"
+            },
+            {
+              "entry": "optimal-classification-cutoffs-for-f1-score-etc"
+            },
+            {
+              "entry": "pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "online-safety",
+      "title": "ONLINE SAFETY",
+      "children": [
+        {
+          "entry": "exposed-shedding-blacklight-on-online-privacy"
+        },
+        {
+          "entry": "pwned-how-often-are-americans-online-accounts-breached"
+        },
+        {
+          "entry": "piedomains-predict-the-kind-of-content-hosted-by-a-domain"
+        },
+        {
+          "entry": "pass-fail-using-a-password-generator-to-improve-password-strength"
+        },
+        {
+          "entry": "how-often-is-politicians-data-breached-evidence-from-hibp"
+        },
+        {
+          "entry": "bad-domains-exposure-to-malicious-content-online"
+        },
+        {
+          "entry": "know-your-ip"
+        },
+        {
+          "entry": "virustotal-r-client-for-the-virustotal-public-api-2-0"
+        },
+        {
+          "entry": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "TOOLS",
+      "children": [
+        {
+          "entry": "rmcp-r-mcp-community-server"
+        },
+        {
+          "entry": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance"
+        },
+        {
+          "entry": "lost-years-expected-number-of-years-lost"
+        },
+        {
+          "entry": "repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form"
+        },
+        {
+          "entry": "indicate-transliterate-indic-languages-to-english"
+        },
+        {
+          "entry": "layoutlens-ai-assisted-ui-testing"
+        },
+        {
+          "entry": "adjacent-related-repositories-recommender"
+        },
+        {
+          "entry": "advertiser-promote-your-github-repositories-on-bluesky"
+        },
+        {
+          "entry": "tuber-access-youtube-api-via-r"
+        }
+      ]
+    },
+    {
+      "id": "meta-science",
+      "title": "META SCIENCE",
+      "children": [
+        {
+          "entry": "a-benchmark-for-benchmarks"
+        },
+        {
+          "entry": "review-of-noise-a-flaw-in-human-judgment"
+        },
+        {
+          "entry": "significant-error-citations-to-research-with-publicized-statistical-errors"
+        },
+        {
+          "entry": "propagation-of-error-approving-citations-to-problematic-research"
+        },
+        {
+          "entry": "get-notified-when-cited-article-is-retracted"
+        },
+        {
+          "entry": "highlight-citations-to-retracted-articles"
+        },
+        {
+          "entry": "downloads-are-cheap-validated-use-as-a-measure-of-research-software"
+        },
+        {
+          "entry": "user-auto-compute-citations-to-software-from-github"
+        },
+        {
+          "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
+        },
+        {
+          "entry": "by-the-numbers-toward-more-precise-numerical-summaries-of-results"
+        },
+        {
+          "entry": "the-review-production-and-consumption-of-apsr-articles"
+        },
+        {
+          "entry": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes"
+        },
+        {
+          "entry": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts"
+        }
+      ]
+    },
+    {
+      "id": "names",
+      "title": "NAMES",
+      "children": [
+        {
+          "entry": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name"
+        },
+        {
+          "entry": "sound-names-classify-names-based-on-sequence-of-sounds"
+        },
+        {
+          "entry": "graphic-names-classify-names-using-google-image-search-and-clarifai"
+        },
+        {
+          "entry": "naampy-infer-sociodemographic-characteristics-from-indian-names"
+        },
+        {
+          "entry": "pranaam-predict-religion-from-name"
+        },
+        {
+          "entry": "naamkaran-a-generative-model-for-names"
+        },
+        {
+          "entry": "parsernaam-ml-assisted-name-parser"
+        },
+        {
+          "entry": "instate-predict-spoken-language-from-last-name"
+        }
+      ]
+    },
+    {
+      "id": "decision-making",
+      "title": "DECISION MAKING",
+      "children": [
+        {
+          "id": "group-affect",
+          "title": "GROUP AFFECT",
+          "children": [
+            {
+              "entry": "inter-group-prejudice"
+            },
+            {
+              "entry": "affect-not-ideology-a-social-identity-perspective-on-polarization"
+            },
+            {
+              "entry": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences"
+            },
+            {
+              "entry": "typecast-a-routine-mental-shortcut-causes-party-stereotyping"
+            },
+            {
+              "entry": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability"
+            },
+            {
+              "entry": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns"
+            },
+            {
+              "entry": "partisan-vision-partisan-bias-in-simple-visual-evaluations"
+            },
+            {
+              "entry": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect"
+            },
+            {
+              "entry": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online"
+            },
+            {
+              "entry": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes"
+            }
+          ]
+        },
+        {
+          "id": "information-environment",
+          "title": "INFORMATION ENVIRONMENT",
+          "children": [
+            {
+              "entry": "what-and-who-is-on-network-television"
+            },
+            {
+              "entry": "working-women-on-indian-tv"
+            },
+            {
+              "entry": "the-face-of-crime-in-prime-time-evidence-from-law-and-order"
+            },
+            {
+              "entry": "extreme-recall-which-politicians-come-to-mind"
+            }
+          ]
+        },
+        {
+          "id": "deliberation",
+          "title": "DELIBERATION",
+          "children": [
+            {
+              "entry": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics"
+            },
+            {
+              "entry": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments"
+            },
+            {
+              "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
+            },
+            {
+              "entry": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention"
+            }
+          ]
+        },
+        {
+          "id": "other-2",
+          "title": "OTHER",
+          "children": [
+            {
+              "entry": "problem-solving"
+            },
+            {
+              "entry": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect"
+            },
+            {
+              "entry": "mixed-signals-movie-quality-assessments-across-platforms"
+            },
+            {
+              "entry": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability"
+            },
+            {
+              "entry": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play"
+            },
+            {
+              "entry": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing-women",
+      "title": "MISSING WOMEN",
+      "children": [
+        {
+          "entry": "missing-women-on-indian-streets"
+        },
+        {
+          "entry": "son-bias-in-the-us-evidence-from-business-names"
+        },
+        {
+          "entry": "which-women-are-missing-adult-sex-ratio-by-last-name"
+        },
+        {
+          "entry": "missing-women-on-the-streets"
+        },
+        {
+          "entry": "epic-children-sex-ratio-of-children-of-key-characters-in-epics"
+        },
+        {
+          "entry": "missing-daughters-of-indian-politicians"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "title": "NEWS",
+      "children": [
+        {
+          "entry": "not-news-provision-of-apolitical-news-in-the-british-news-media"
+        },
+        {
+          "entry": "strength-in-numbers-multiple-measures-of-media-ideology"
+        },
+        {
+          "entry": "measuring-agendas-and-positions-on-agendas"
+        },
+        {
+          "entry": "notnews-predict-the-type-of-news-based-on-story-text-and-url"
+        },
+        {
+          "entry": "unreadable-news-how-readable-is-american-news"
+        },
+        {
+          "entry": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources"
+        },
+        {
+          "entry": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news"
+        },
+        {
+          "entry": "don-t-expose-yourself-discretionary-exposure-to-political-information"
+        },
+        {
+          "entry": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times"
+        },
+        {
+          "entry": "hard-news-the-softening-of-network-television-news"
+        },
+        {
+          "entry": "partisan-imbalance-in-politifact"
+        },
+        {
+          "entry": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022"
+        },
+        {
+          "entry": "cnn-transcripts-2000-2025"
+        }
+      ]
+    },
+    {
+      "id": "measuring-learning-knowledge-and-misinformation",
+      "title": "MEASURING LEARNING, KNOWLEDGE, AND MISINFORMATION",
+      "children": [
+        {
+          "entry": "you-cannot-be-serious-the-impact-of-accuracy-incentives-on-partisan-bias"
+        },
+        {
+          "entry": "motivated-responding-in-studies-of-factual-learning"
+        },
+        {
+          "entry": "a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps"
+        },
+        {
+          "entry": "the-waters-of-casablanca-on-political-misinformation"
+        },
+        {
+          "entry": "misinformation-about-misinformation-of-headlines-and-survey-design"
+        },
+        {
+          "entry": "misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation"
+        },
+        {
+          "entry": "guessing-and-forgetting-a-latent-class-model-for-measuring-learning"
+        },
+        {
+          "entry": "measuring-learning-in-informative-processes"
+        },
+        {
+          "entry": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap"
+        },
+        {
+          "entry": "an-unclear-gap-how-vague-response-options-produce-partisan-knowledge-gaps"
+        },
+        {
+          "entry": "measuring-perceptions-of-numerical-strength-of-salient-and-stereotypical-groups"
+        }
+      ]
+    },
+    {
+      "id": "provision-of-public-goods",
+      "title": "PROVISION OF PUBLIC GOODS",
+      "children": [
+        {
+          "entry": "streetsense-learning-from-google-street-view"
+        },
+        {
+          "entry": "autosense-automated-street-condition-assessment"
+        },
+        {
+          "entry": "get-in-line-waiting-times-at-the-dmv"
+        }
+      ]
+    },
+    {
+      "id": "cricket",
+      "title": "CRICKET",
+      "children": [
+        {
+          "entry": "elo-ratings-of-international-cricket-teams-by-format"
+        },
+        {
+          "entry": "war-ratings-for-cricketers"
+        },
+        {
+          "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
+        }
+      ]
+    },
+    {
+      "id": "other-3",
+      "title": "OTHER",
+      "children": [
+        {
+          "entry": "scaling-ml-products-at-startups-a-practioner-s-guide"
+        },
+        {
+          "entry": "the-effect-of-gender-quotas-on-some-qualities-of-elites"
+        },
+        {
+          "entry": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies"
+        },
+        {
+          "entry": "the-older-half-spousal-age-gap-in-india"
+        },
+        {
+          "entry": "unlanded-distribution-of-land-in-bihar"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "don-t-forget-about-it-forgetting-penalized-supervised-learning",
+      "kind": "paper",
+      "title": "(Don't) Forget About It: Forgetting Penalized Supervised Learning",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/forget.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/pareto-gd",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "When supervised models are retrained on the same task, updates can introduce model regression: examples that a previous model classified correctly become misclassified. In many deployments these reversals are costly even if aggregate accuracy improves, because they change which cases are hard, disrupt downstream workflows, and can force organizations to reconfigure human effort. We capture this with a simple economic view: a new model is attractive only when its reduction in expected downstream operating costs (e.g., error handling, staffing, oversight) outweighs the cost of changing behavior on previously well-served examples, which we illustrate with a routing-and-staffing example but which applies more broadly."
+      ]
+    },
+    {
+      "id": "stable-cart-lower-bootstrap-prediction-variance-cart",
+      "kind": "project",
+      "title": "Stable CART: Lower Bootstrap Prediction Variance CART",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/stable-cart",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
+      ]
+    },
+    {
+      "id": "bagged-fsr-rehabilitating-forward-stepwise-regression",
+      "kind": "project",
+      "title": "Bagged FSR: Rehabilitating Forward Stepwise Regression",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/bagged_fsr/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Forward Stepwise Regression (FSR) is hardly used today. That is mostly because regularization is a better way to think about variable selection. However, part of the reason for its disuse is that FSR is a greedy optimization strategy with unstable paths. Jigger the data a little, and the search paths, variables in the final set, and the performance of the final model can all change dramatically. The same issues, however, affect another greedy optimization strategy—CART. The insight that rehabilitated CART was bagging—building multiple trees using random subspaces (sometimes on randomly sampled rows) and averaging the results. What works for CART should principally also work for FSR. If you are using FSR for prediction, you can build multiple FSR models using random subspaces and random samples of rows and then average the results. If you are using it for variable selection, you can pick variables with the highest batting average (n_selected/n_tried). (LASSO will beat it on speed, but there is little reason to expect that it will beat it on results.)"
+      ]
+    },
+    {
+      "id": "bootstrap-consistency-regularization-for-stable-neural-network-predictions",
+      "kind": "paper",
+      "title": "Bootstrap Consistency Regularization for Stable Neural Network Predictions",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/bootconsistency.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/bcr",
+            "ref": "main",
+            "path": "ms/boot.pdf"
+          }
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/consistentshade",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Neural networks trained on the same data with different random seeds or slightly perturbed training sets can produce substantially different predictions for individual examples, even when aggregate accuracy is similar. We add a consistency penalty to the training loss that penalizes prediction disagreement across bootstrap resamples of the training data, encouraging the network to find solutions whose individual-level predictions are stable under resampling."
+      ]
+    },
+    {
+      "id": "selecting-for-stability-choose-the-model-closest-to-the-ensemble",
+      "kind": "project",
+      "title": "Selecting for Stability: Choose the Model Closest to the Ensemble",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/ensemble-proximity/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        " "
+      ],
+      "description": [
+        "Ensembles reduce prediction variance but are expensive to deploy. Rather than averaging all models at inference time, select the single model whose predictions are closest to the ensemble average. This gives you most of the ensemble's stability benefit at the cost of a single model, with a principled selection criterion that avoids arbitrary choices among models with similar aggregate performance."
+      ]
+    },
+    {
+      "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
+      "kind": "paper",
+      "title": "Calibration Where It Counts: Cost- and Data-Informed Isotonic Regression",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/calibre.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/calibre",
+          "label": "calibre: Advanced Calibration Models",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 📦 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Thresholded decisions turn probability errors into utility losses. Pooling-based monotone calibrators such as isotonic regression are flexible and reliable but can collapse distinct scores into the same probability on wide plateaus. We adopt a decisioneconomic view: choose and tune a calibrator that reduces deployment cost by improving reliability where it affects decisions and by preserving discrimination where it matters."
+      ]
+    },
+    {
+      "id": "fairlex-leximin-calibration",
+      "kind": "software",
+      "title": "fairlex: leximin calibration",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/fairlex",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group's calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups."
+      ]
+    },
+    {
+      "id": "rank-preserving-calibration-for-multiclass-classification",
+      "kind": "paper",
+      "title": "Rank-Preserving Calibration for Multiclass Classification",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/multiclass-rank-calibration.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/rank-preserving-calibration",
+            "ref": "main",
+            "path": "ms/ms.pdf"
+          }
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/rank_preserving_calibration",
+          "label": "Rank Preserving Calibration of Multiclass Probabilities",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 📦 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability."
+      ]
+    },
+    {
+      "id": "first-order-entropy-balancing-via-dual-gradient-descent",
+      "kind": "paper",
+      "title": "First-Order Entropy Balancing via Dual Gradient Descent",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/mwu-eb.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/adaptive-eb",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Entropy balancing finds survey weights that satisfy exact moment constraints while staying close to uniform weights in KL divergence. Standard implementations solve this via Newton's method on the dual, which requires computing and inverting a Hessian at each step. We show that first-order methods—multiplicative weight updates and dual gradient descent—converge reliably, scale to high-dimensional constraint sets, and avoid the numerical instabilities that plague second-order solvers when constraints are near-collinear."
+      ]
+    },
+    {
+      "id": "streaming-calibration-with-mwu-and-sgd",
+      "kind": "paper",
+      "title": "Streaming Calibration With MWU and SGD",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/onlinerake.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/onlinerake",
+            "ref": "main",
+            "path": "ms/onlinerake.pdf"
+          }
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/onlinerake",
+          "label": "Python Package",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 📦 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Survey raking and probability calibration are traditionally batch procedures: collect all the data, then solve for weights or a calibration map. When data arrive in a stream—or the target distribution drifts—batch methods require repeated re-computation. We develop online versions of raking and calibration using multiplicative weight updates (MWU) and stochastic gradient descent (SGD), processing one observation at a time with convergence guarantees."
+      ]
+    },
+    {
+      "id": "from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges",
+      "kind": "paper",
+      "title": "From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/score_signs.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "LLM-as-judge systems produce numerical scores, but downstream decisions often require pairwise comparisons: which response is better? Converting scores to win rates requires calibration—the mapping from score differences to win probabilities. We develop calibrated estimators for pairwise win rates from cardinal LLM judge scores, accounting for judge miscalibration and non-transitivity in preferences."
+      ]
+    },
+    {
+      "id": "inference-with-fuzzy-joined-data",
+      "kind": "project",
+      "title": "Inference With Fuzzy-Joined Data",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/fuzzy",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Data products built on fuzzy joins ship a single canonical linkage, hiding the many-to-many candidate-match graph from which it was constructed. The two obvious things to do with that graph—expand it into a regression dataset or average covariates across candidates—both produce biased estimates. The expanded join attenuates; the collapsed estimator has a nonclassical errors-in-variables structure whose sign is indeterminate without ground truth. Multiple imputation over candidate assignments avoids both pathologies. Rubin's rules propagate matching uncertainty, and the between-imputation share of variance tells you whether matching uncertainty matters."
+      ]
+    },
+    {
+      "id": "setjoin-record-linkage-that-preserves-group-structure",
+      "kind": "software",
+      "title": "setjoin: Record Linkage That Preserves Group Structure",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/setjoin",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity."
+      ]
+    },
+    {
+      "id": "tether-high-precision-record-linkage",
+      "kind": "software",
+      "title": "tether: High-Precision Record Linkage",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/tether",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores."
+      ]
+    },
+    {
+      "id": "bloomjoin-bloom-filter-based-joins",
+      "kind": "software",
+      "title": "BloomJoin: Bloom Filter Based Joins",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/bloomjoin",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join."
+      ]
+    },
+    {
+      "id": "the-micro-task-market-for-lemons-collecting-data-on-amazon-s-mechanical-turk",
+      "kind": "paper",
+      "title": "The Micro-Task Market for \"Lemons\": Collecting Data on Amazon's Mechanical Turk",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/turk.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Doug Ahler and Carrie Roush. ",
+        {
+          "tag": "i",
+          "children": [
+            "Political Science Research and Methods,"
+          ]
+        },
+        " 2021.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": [
+        "While Amazon's Mechanical Turk (MTurk) has reduced the cost of collecting original data, in 2018, researchers noted the potential existence of a large number of bad actors on the platform. To evaluate data quality on MTurk, we fielded three surveys between 2018 and 2020. While find no evidence of a \"bot epidemic,\" significant portions of the data—between 25%-35%—are of dubious quality. While the number of IP addresses that completed the survey multiple times or circumvented location requirements fell almost 50% over time, suspicious IP addresses are more prevalent on MTurk than on other platforms. Furthermore, many respondents appear to respond humorously or insincerely, and this behavior increased over 200% from 2018-2020. Importantly, these low-quality responses attenuate observed treatment effects by magnitudes ranging from approximately 10-30%."
+      ]
+    },
+    {
+      "id": "optimal-data-collection-when-strata-and-strata-variances-are-known",
+      "kind": "paper",
+      "title": "Optimal Data Collection When Strata and Strata Variances Are Known",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ken Cor."
+      ],
+      "description": [
+        "When the population is divided into known strata with known variances, the optimal allocation of a fixed sample budget across strata depends on stratum size, variance, and sampling cost. We derive the optimal allocation and show how much efficiency is lost by common rules of thumb like proportional allocation."
+      ]
+    },
+    {
+      "id": "geo-sampling-sampling-randomly-from-the-streets",
+      "kind": "software",
+      "title": "Geo-sampling: Sampling Randomly From the Streets",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/geosensing/geo_sampling",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
+      ]
+    },
+    {
+      "id": "allocator-optimal-itineraries-for-spatially-distributed-tasks",
+      "kind": "software",
+      "title": "Allocator: Optimal Itineraries For Spatially Distributed Tasks",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/geosensing/allocator",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
+      ]
+    },
+    {
+      "id": "reporoulette-randomly-sample-github-repositories",
+      "kind": "software",
+      "title": "reporoulette: Randomly Sample GitHub Repositories",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/reporoulette",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research."
+      ]
+    },
+    {
+      "id": "unbiased-regression-with-costly-item-labels",
+      "kind": "paper",
+      "title": "Unbiased Regression with Costly Item Labels",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/fewest-items.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/fewlab",
+          "label": "fewlab: fewest items to label for unbiased OLS on shares",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 📦 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": [
+        "When running OLS on per-row trait shares (e.g., fraction of items in a category), labeling every item is expensive. Random labeling wastes budget on items that barely affect the regression. fewlab identifies the items with the highest statistical leverage—those that most influence the coefficient estimates—and prioritizes them for labeling, achieving unbiased OLS with a fraction of the labeling cost."
+      ]
+    },
+    {
+      "id": "inferring-treatment-compliance-from-delivery-window-data",
+      "kind": "project",
+      "title": "Inferring Treatment Compliance from Delivery-Window Data",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/late/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "In randomized experiments with imperfect compliance, the LATE requires observing treatment receipt, and the Wald estimator requires monotonicity. When receipt is unobserved but the experiment has a pre-treatment time series and a distinct delivery window, a structural break test applied to the delivery window can classify treated units into compliers, never-takers, and defiers. This yields an inferred compliance rate with closed-form bias correction, an empirical test of monotonicity via defier detection, and a characterization of the complier subpopulation that can be projected onto the control group."
+      ]
+    },
+    {
+      "id": "two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary",
+      "kind": "project",
+      "title": "Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/tworeg/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "When ML predictions are used as regressors in downstream models, prediction error is non-classical and a growing literature proposes purpose-built corrections (GMM, prediction-powered inference, IV, joint MLE). For linear downstream models, regression calibration—replacing the ML prediction with E[X | X̂, Z] estimated on a calibration sample—already eliminates the non-classical error structure under an exogeneity condition these methods also rely on. Two OLS regressions and a two-sample bootstrap give you consistent estimates with valid confidence intervals. For nonlinear downstream models (logistic, Poisson, any GLM), Jensen's inequality breaks the argument and heavier methods are genuinely needed. The linear/nonlinear boundary is the main result."
+      ]
+    },
+    {
+      "id": "partial-credit-diagnosing-proxy-covariates-with-validation-swaps",
+      "kind": "project",
+      "title": "Partial Credit: Diagnosing Proxy Covariates with Validation Swaps",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/swaps",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "When a regression uses a proxy instead of the true covariate, how much does it matter—and where? The validation-swap framework answers both questions using an internal validation sample where both the true value and the proxy are observed. Swap validated truths into the proxy design matrix row by row and watch the coefficient move. The swap path traces the coefficient as a function of the fraction of validated rows swapped in: flat means the proxy is fine, steep means it isn't. A Shapley-value decomposition (SIM) identifies which rows drive the distortion, and a portable risk score defines a proxy-safe domain on the full sample."
+      ]
+    },
+    {
+      "id": "smooth-operator-optimal-filtering-of-event-study-estimates",
+      "kind": "project",
+      "title": "Smooth Operator: Optimal Filtering of Event Study Estimates",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/smooth-operator",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period's estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size."
+      ]
+    },
+    {
+      "id": "causal-debiasing-for-robust-machine-learning",
+      "kind": "paper",
+      "title": "Causal Debiasing for Robust Machine Learning",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/causalml.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Spurious associations in training data arise because models learn correlations rather than causal relations. We propose a composite loss that incorporates causal and behavioral priors: an invariance penalty for label-preserving perturbations (e.g., swapping gendered pronouns should not change predictions), a directional penalty for perturbations that should change the label in a known direction, and a falsification penalty inspired by epidemiological negative controls that discourages reliance on features with no causal relationship to the outcome. The framework unifies ideas from CheckList-style behavioral testing, causal inference, and adversarial robustness into a single training objective."
+      ]
+    },
+    {
+      "id": "one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments",
+      "kind": "paper",
+      "title": "One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/steer.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🌱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept."
+      ]
+    },
+    {
+      "id": "incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series",
+      "kind": "software",
+      "title": "incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/incline",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories."
+      ]
+    },
+    {
+      "id": "analytic-hessian-bandwidth-selection",
+      "kind": "software",
+      "title": "Analytic‑Hessian Bandwidth Selection",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/hessband",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search."
+      ]
+    },
+    {
+      "id": "a-lightweight-als-solver-for-iterative-gls",
+      "kind": "software",
+      "title": "A Lightweight ALS Solver for Iterative GLS",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/alsgls",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly."
+      ]
+    },
+    {
+      "id": "optimal-classification-cutoffs-for-f1-score-etc",
+      "kind": "project",
+      "title": "Optimal Classification Cutoffs for F1-score, etc.",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/optimal_classification_cutoffs",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "🗃 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice."
+      ]
+    },
+    {
+      "id": "pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss",
+      "kind": "software",
+      "title": "pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/pyppur",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion."
+      ]
+    },
+    {
+      "id": "exposed-shedding-blacklight-on-online-privacy",
+      "kind": "project",
+      "title": "Exposed: Shedding Blacklight On Online Privacy",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://arxiv.org/abs/2512.24041",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/themains/private_blacklight/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": [
+        "To what extent are users surveilled on the web, by what technologies, and by whom? We answer these questions by combining passively observed, anonymized browsing data of a large, representative sample of Americans with domain-level data on tracking from Blacklight. We find that nearly all users (>99%) encounter at least one ad tracker or third-party cookie over the observation window. More invasive techniques like session recording, keylogging, and canvas fingerprinting are less widespread, but over half of the users visited a site employing at least one of these within the first 48 hours of the start of tracking. Linking trackers to their parent organizations reveals that a single organization, usually Google, can track over 50% of web activity of more than half the users. Demographic differences in exposure are modest and often attenuate when we account for browsing volume. However, disparities by age and race remain, suggesting that what users browse, not just how much, shapes their surveillance risk."
+      ]
+    },
+    {
+      "id": "pwned-how-often-are-americans-online-accounts-breached",
+      "kind": "paper",
+      "title": "Pwned: How Often Are Americans' Online Accounts Breached?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/pwned.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/themains/pwned/",
+          "label": "Replication Materials"
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://rud.is/b/2018/07/29/ggplot-doodling-with-hibp-breaches/",
+          "label": "Bob Rudis Analyzes Exposure by Breach"
+        },
+        {
+          "id": "link-4",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/themains/reg_breach",
+          "label": "I Have Been Pwned: Evidence from the Florida Voter Registration Data"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ken Cor. ",
+        {
+          "tag": "i",
+          "children": [
+            "ACM Web Science Conference,"
+          ]
+        },
+        " 2019",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        "; ",
+        {
+          "resource": "link-4"
+        },
+        " "
+      ],
+      "description": [
+        "News about massive data breaches is increasingly common. But what proportion of Americans are exposed in these breaches is still unknown. We combine data from a large, representative sample of American adults (n = 5,000), recruited by YouGov, with data from Have I Been Pwned to estimate the lower bound of the number of times Americans’ private information has been exposed. We find that at least 82.84% of Americans have had their private information, such as account credentials, Social Security Number, etc., exposed. On average, Americans’ private information has been exposed in at least three breaches. The better educated, the middle-aged, women, and Whites are more likely to have had their accounts breached than the complementary groups."
+      ]
+    },
+    {
+      "id": "piedomains-predict-the-kind-of-content-hosted-by-a-domain",
+      "kind": "software",
+      "title": "Piedomains: Predict the Kind of Content Hosted by a Domain",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/themains/piedomains"
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "related",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf",
+          "label": "Domain Knowledge: Predicting the Kind of Content Hosted by a Domain."
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon. ",
+        {
+          "tag": "i",
+          "children": [
+            "Complex, Intelligent and Software Intensive Systems (CISIS), 2020."
+          ]
+        }
+      ],
+      "description": [
+        "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage."
+      ]
+    },
+    {
+      "id": "pass-fail-using-a-password-generator-to-improve-password-strength",
+      "kind": "project",
+      "title": "Pass-Fail: Using a Password Generator to Improve Password Strength",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/themains/password"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati"
+      ],
+      "description": []
+    },
+    {
+      "id": "how-often-is-politicians-data-breached-evidence-from-hibp",
+      "kind": "paper",
+      "title": "How Often is Politicians' Data Breached? Evidence from HIBP",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/pwned_politicians.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/themains/pwned_pols",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "bad-domains-exposure-to-malicious-content-online",
+      "kind": "paper",
+      "title": "Bad Domains: Exposure to Malicious Content Online",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/bad_domains.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/themains/bad_domains/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen. ",
+        {
+          "tag": "i",
+          "children": [
+            "Information, Communication and Society, 2026"
+          ]
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "know-your-ip",
+      "kind": "software",
+      "title": "Know Your IP",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/themains/know_your_ip/"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon"
+      ],
+      "description": []
+    },
+    {
+      "id": "virustotal-r-client-for-the-virustotal-public-api-2-0",
+      "kind": "software",
+      "title": "virustotal: R Client for the VirusTotal Public API 2.0",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/themains/virustotal"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads",
+      "kind": "paper",
+      "title": "Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/social_proof_stars.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/social_proof_stars/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        " ",
+        {
+          "tag": "br"
+        },
+        "With Lucas Shen. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Online Trust and Safety, 2026."
+          ]
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Open-source software is widely used in commercial applications. Pair that with the fact that when choosing open-source software for a new problem, developers often use social proof as a cue. These two facts raise concern that bad actors can game social proof metrics to induce the use of malign software. We study the question using two field experiments. On the largest developer platform, GitHub, we buy ‘stars’ for a random set of GitHub repositories of new Python packages and estimate their impact on package downloads. We find no discernible impact. In another field experiment, we manipulate the number of human downloads for Python packages. Again, we find little effect."
+      ]
+    },
+    {
+      "id": "rmcp-r-mcp-community-server",
+      "kind": "software",
+      "title": "rmcp: R MCP Community Server",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/rmcp/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance",
+      "kind": "software",
+      "title": "StatQA: Extract Multimodal Stats Q/A from Tables With Provenance",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/statqa"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        }
+      ],
+      "description": [
+        "StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training."
+      ]
+    },
+    {
+      "id": "lost-years-expected-number-of-years-lost",
+      "kind": "software",
+      "title": "Lost Years: Expected Number of Years Lost",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/lost_years"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon."
+      ],
+      "description": [
+        "Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data."
+      ]
+    },
+    {
+      "id": "repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form",
+      "kind": "software",
+      "title": "repaper: convert photo of a form to a web based form or an editable pdf form",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/pvbhanuteja/repaper"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Bhanu Teja."
+      ],
+      "description": []
+    },
+    {
+      "id": "indicate-transliterate-indic-languages-to-english",
+      "kind": "software",
+      "title": "indicate: transliterate indic languages to english",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/in-rolls/indicate"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati."
+      ],
+      "description": []
+    },
+    {
+      "id": "layoutlens-ai-assisted-ui-testing",
+      "kind": "project",
+      "title": "LayoutLens: AI-Assisted UI Testing",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/matmulai/layoutlens"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "adjacent-related-repositories-recommender",
+      "kind": "project",
+      "title": "Adjacent — Related Repositories Recommender",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/adjacent/"
+        }
+      ],
+      "summary": [
+        "📱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "advertiser-promote-your-github-repositories-on-bluesky",
+      "kind": "project",
+      "title": "Advertiser: Promote Your GitHub Repositories on BlueSky",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/advertiser"
+        }
+      ],
+      "summary": [
+        "📱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "tuber-access-youtube-api-via-r",
+      "kind": "software",
+      "title": "🍠 tuber: Access YouTube API via R",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/gojiplus/tuber"
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "a-benchmark-for-benchmarks",
+      "kind": "paper",
+      "title": "A Benchmark For Benchmarks",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/benchmark.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "review-of-noise-a-flaw-in-human-judgment",
+      "kind": "paper",
+      "title": "Review of \"Noise: A Flaw in Human Judgment\"",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/noise_review.pdf"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Andrew Gelman. ",
+        {
+          "tag": "i",
+          "children": [
+            "Chance."
+          ]
+        },
+        " 2024."
+      ],
+      "description": []
+    },
+    {
+      "id": "significant-error-citations-to-research-with-publicized-statistical-errors",
+      "kind": "paper",
+      "title": "Significant Error: Citations to Research With Publicized Statistical Errors",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/niewenhuis.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/recite/sig_fault/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ken Cor.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "propagation-of-error-approving-citations-to-problematic-research",
+      "kind": "paper",
+      "title": "Propagation of Error: Approving Citations to Problematic Research",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/error.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/recite/propagation_of_error/",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ken Cor.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "get-notified-when-cited-article-is-retracted",
+      "kind": "project",
+      "title": "Get Notified When Cited Article is Retracted",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/recite/retract",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📱 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "highlight-citations-to-retracted-articles",
+      "kind": "project",
+      "title": "Highlight Citations to Retracted Articles",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "related",
+          "url": "http://github.com/recite/re-cite.org",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "downloads-are-cheap-validated-use-as-a-measure-of-research-software",
+      "kind": "paper",
+      "title": "Downloads Are Cheap: Validated Use as a Measure of Research Software",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/downloads_are_cheap.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "recite/softverse",
+            "ref": "main",
+            "path": "paper/softverse.pdf"
+          }
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/recite/softverse",
+          "label": "Code",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://doi.org/10.5281/zenodo.21943908",
+          "label": "Data",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://doi.org/10.5281/zenodo.21926099",
+          "label": "Stata command index",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://recite.github.io/softverse/lookup/",
+          "label": "Look up a package",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " 📊 ",
+        {
+          "resource": "link-3"
+        },
+        " 📦 ",
+        {
+          "resource": "link-4"
+        },
+        " 🔍 ",
+        {
+          "resource": "link-5"
+        }
+      ],
+      "description": [
+        "Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package's position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals' archives and authors' sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data."
+      ]
+    },
+    {
+      "id": "user-auto-compute-citations-to-software-from-github",
+      "kind": "software",
+      "title": "user: Auto-compute Citations to Software From GitHub",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/recite/user",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/recite/countpy",
+          "label": "Python metrics",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": 📦 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "autosum-summarize-publications-automatically-and-discover-miscitations",
+      "kind": "project",
+      "title": "AutoSum: Summarize Publications Automatically and Discover Miscitations",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/autosum",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "by-the-numbers-toward-more-precise-numerical-summaries-of-results",
+      "kind": "project",
+      "title": "By the Numbers: Toward More Precise Numerical Summaries of Results",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/quant-discipline",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Andrew Guess. ",
+        {
+          "tag": "i",
+          "children": [
+            "The Political Methodologist. 24(1): 2016"
+          ]
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "the-review-production-and-consumption-of-apsr-articles",
+      "kind": "project",
+      "title": "The Review: Production and Consumption of APSR Articles",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/meta_apsr",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes",
+      "kind": "project",
+      "title": "superdf: Save Metadata with the Data in R and Python DataFrames",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/superdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts",
+      "kind": "project",
+      "title": "Not to Code: Evidence From Static Code Analysis of Replication Scripts",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/not_to_code",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
+      "kind": "software",
+      "title": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/ethnicolr_v2",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://arxiv.org/abs/1805.02109",
+          "label": "arXiv.org",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/appeler/ethnicolr",
+          "label": "Python Package",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://www.infoq.com/news/2019/04/gaurav-sood-predict-race",
+          "label": "InfoQ",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://www.youtube.com/watch?v=fuHAPENWVIU?",
+          "label": "AnacondaCON presentation (Video)",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati and Suriyan Laohaprapanon. ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": 📦 ",
+        {
+          "resource": "link-3"
+        },
+        " for implementing the method.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-4"
+        },
+        " | ",
+        {
+          "resource": "link-5"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "sound-names-classify-names-based-on-sequence-of-sounds",
+      "kind": "project",
+      "title": "Sound Names: Classify Names Based on Sequence of Sounds",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/soundnames",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "graphic-names-classify-names-using-google-image-search-and-clarifai",
+      "kind": "project",
+      "title": "Graphic Names: Classify Names Using Google Image Search and Clarifai",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/clarifai_gender",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "naampy-infer-sociodemographic-characteristics-from-indian-names",
+      "kind": "software",
+      "title": "Naampy: Infer Sociodemographic Characteristics from Indian Names",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/naampy",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati and Suriyan Laohaprapanon."
+      ],
+      "description": []
+    },
+    {
+      "id": "pranaam-predict-religion-from-name",
+      "kind": "software",
+      "title": "Pranaam: Predict Religion From Name",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/pranaam",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati."
+      ],
+      "description": []
+    },
+    {
+      "id": "naamkaran-a-generative-model-for-names",
+      "kind": "software",
+      "title": "naamkaran: a generative model for names",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/naamkaran",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati."
+      ],
+      "description": []
+    },
+    {
+      "id": "parsernaam-ml-assisted-name-parser",
+      "kind": "software",
+      "title": "parsernaam: ML-assisted name parser",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/parsernaam",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati."
+      ],
+      "description": []
+    },
+    {
+      "id": "instate-predict-spoken-language-from-last-name",
+      "kind": "software",
+      "title": "instate: predict spoken language from last name",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/appeler/instate",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "related",
+          "url": "papers/instate.pdf",
+          "label": "Instate: Predict the State of Residence from Last Name.",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Rajashekar Chintalapati and Atul Dhingra.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " With Atul Dhingra. "
+      ],
+      "description": []
+    },
+    {
+      "id": "inter-group-prejudice",
+      "kind": "paper",
+      "title": "Inter-group Prejudice",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/inter_group_prejudice.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "affect-not-ideology-a-social-identity-perspective-on-polarization",
+      "kind": "paper",
+      "title": "Affect, Not Ideology: A Social Identity Perspective on Polarization",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/AffectNotIdeology.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/party_time/",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/sorted-or-polarized/",
+          "label": "Sort of Sorted But Definitely Cold",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/the-order-of-feelings/",
+          "label": "The Order of Feelings"
+        },
+        {
+          "id": "link-5",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/mass-affective-polarization/",
+          "label": "Affectively Polarized?",
+          "new_tab": true
+        },
+        {
+          "id": "link-6",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/2017/12/02/party-time/",
+          "label": "Party Time"
+        },
+        {
+          "id": "link-7",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/NYT.POQ.pdf",
+          "label": "The New York Times",
+          "new_tab": true
+        },
+        {
+          "id": "link-8",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/WP.POQ.pdf",
+          "label": "The Washington Post",
+          "new_tab": true
+        },
+        {
+          "id": "link-9",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/MJ.POQ.pdf",
+          "label": "Mother Jones"
+        },
+        {
+          "id": "link-10",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/AffectVox.pdf",
+          "label": "Vox",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Shanto Iyengar and Yphtach Lelkes. ",
+        {
+          "tag": "i",
+          "children": [
+            "Public Opinion Quarterly."
+          ]
+        },
+        " 76(3), 405–431, 2012.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        },
+        ", ",
+        {
+          "resource": "link-5"
+        },
+        ", ",
+        {
+          "resource": "link-6"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-7"
+        },
+        ", ",
+        {
+          "resource": "link-8"
+        },
+        ", ",
+        {
+          "resource": "link-9"
+        },
+        ", ",
+        {
+          "resource": "link-10"
+        },
+        ", etc."
+      ],
+      "description": []
+    },
+    {
+      "id": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences",
+      "kind": "paper",
+      "title": "The Parties in our Heads: Misperceptions About Party Composition and Their Consequences",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/partisanComposition.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "http://dx.doi.org/10.7910/DVN/CLMQ8E",
+          "label": "Replication Materials"
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/pcomp_538.pdf",
+          "label": "FiveThirtyEight",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PCompVox.pdf",
+          "label": "Vox"
+        },
+        {
+          "id": "link-5",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PCompWP_2.pdf",
+          "label": "The Washington Post",
+          "new_tab": true
+        },
+        {
+          "id": "link-6",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PCompWP_3.pdf",
+          "label": "The Washington Post (2)"
+        },
+        {
+          "id": "link-7",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PCompCSMonitor.pdf",
+          "label": "Christian Science Monitor",
+          "new_tab": true
+        },
+        {
+          "id": "link-8",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/TheHillPComp.pdf",
+          "label": "The Hill"
+        },
+        {
+          "id": "link-9",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://www.tptoriginals.org/how-well-do-you-know-the-other-party/",
+          "label": "PBS (Twin Cities)",
+          "new_tab": true
+        },
+        {
+          "id": "link-10",
+          "kind": "pdf",
+          "role": "related",
+          "url": "papers/guesswho.pdf",
+          "label": "The Partisans in our Heads"
+        },
+        {
+          "id": "link-11",
+          "kind": "webpage",
+          "role": "related",
+          "url": "http://dx.doi.org/10.7910/DVN/YJYU7Q",
+          "label": "Data and Scripts"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Doug Ahler. ",
+        {
+          "tag": "i",
+          "children": [
+            "The Journal of Politics"
+          ]
+        },
+        ". 80(3), 964–981, 2018.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        },
+        ", ",
+        {
+          "resource": "link-5"
+        },
+        ", ",
+        {
+          "resource": "link-6"
+        },
+        ", ",
+        {
+          "resource": "link-7"
+        },
+        ", ",
+        {
+          "resource": "link-8"
+        },
+        ", ",
+        {
+          "resource": "link-9"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-10"
+        },
+        " | ",
+        {
+          "resource": "link-11"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "typecast-a-routine-mental-shortcut-causes-party-stereotyping",
+      "kind": "paper",
+      "title": "Typecast: A Routine Mental Shortcut Causes Party Stereotyping",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/typecast.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/typecast",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/typecast_si.pdf",
+          "label": "Appendix",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/typecast_hxa.pdf",
+          "label": "Heterodox Academy",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Doug Ahler. ",
+        {
+          "tag": "i",
+          "children": [
+            "Political Behavior."
+          ]
+        },
+        " 2022. ",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " | ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-4"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability",
+      "kind": "paper",
+      "title": "All in the Eye of the Beholder: Partisan Affect and Ideological Accountability",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/inNout.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/in-n-out",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "related",
+          "url": "http://gsood.com/research/papers/moving_further.pdf",
+          "label": "Still Close: Perceived Ideological Distance to Own and Main Opposing Party",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/moving-further-away-from-the-out-party/",
+          "label": "2012 Blog Post",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/InOut_NYT.pdf",
+          "label": "The New York Times",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Shanto Iyengar.",
+        {
+          "tag": "br"
+        },
+        " In ",
+        {
+          "tag": "i",
+          "children": [
+            "The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge."
+          ]
+        },
+        " 2018.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-5"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns",
+      "kind": "paper",
+      "title": "Coming to Dislike Your Opponents: The Polarizing Impact of Political Campaigns",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ComingToDislike.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/ComingtoDislike_nyt.pdf",
+          "label": "New York Times",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Shanto Iyengar.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "partisan-vision-partisan-bias-in-simple-visual-evaluations",
+      "kind": "paper",
+      "title": "Partisan Vision? Partisan Bias in Simple Visual Evaluations",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/partisan_vision.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/partisan_vision/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Carrie Roush and Alex Theodoridis.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect",
+      "kind": "paper",
+      "title": "The Hostile Audience: The Effect of Access to Broadband Internet on Partisan Affect",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/BroadbandPolarization.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "http://dx.doi.org/10.7910/DVN/W1YJZQ",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/Hostile_Guardian.pdf",
+          "label": "The Guardian",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Yphtach Lelkes and Shanto Iyengar. ",
+        {
+          "tag": "i",
+          "children": [
+            "American Journal of Political Science."
+          ]
+        },
+        " 61(1): 5–20, 2017.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online",
+      "kind": "paper",
+      "title": "Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/adult.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/adult",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Quantitative Description."
+          ]
+        },
+        " 2024.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes",
+      "kind": "paper",
+      "title": "Hidden Racial Prejudice? Impact of Social Desirability Pressures on Endorsement of Racial Stereotypes",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/StereotypesAboutSD.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "https://osf.io/jdv7r/",
+          "label": "Replication and Supplementary Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Jon Krosnick, Tobias Stark, and Floor van Maaren. ",
+        {
+          "tag": "i",
+          "children": [
+            "Sociological Methods and Research."
+          ]
+        },
+        "51(2), 605–631, 2019.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "what-and-who-is-on-network-television",
+      "kind": "project",
+      "title": "What and Who is on Network Television?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/tv_schedules",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "working-women-on-indian-tv",
+      "kind": "project",
+      "title": "Working Women on Indian TV",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/working_women_on_tv",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        " ",
+        {
+          "tag": "br"
+        },
+        "With Asha Sood"
+      ],
+      "description": []
+    },
+    {
+      "id": "the-face-of-crime-in-prime-time-evidence-from-law-and-order",
+      "kind": "paper",
+      "title": "The Face of Crime in Prime Time: Evidence from Law and Order",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/face_of_crime.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/face_of_crime",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/LawOrderWP.pdf",
+          "label": "The Washington Post",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Daniel Trielli.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "extreme-recall-which-politicians-come-to-mind",
+      "kind": "paper",
+      "title": "Extreme Recall: Which Politicians Come to Mind?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://gsood.com/research/papers/extreme_recall.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/danweitzel/extreme_recall_2023",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/soodoku/extreme_recall",
+          "label": "Extreme Recall",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Daniel Weitzel. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Elections, Public Opinion and Parties."
+          ]
+        },
+        " 2024. ",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " ",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics",
+      "kind": "paper",
+      "title": "What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/DahlSays.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Ian O'Flynn. ",
+        {
+          "tag": "i",
+          "children": [
+            "Deliberative Mini-Publics."
+          ]
+        },
+        " 41–58, 2014. ECPR Press."
+      ],
+      "description": []
+    },
+    {
+      "id": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments",
+      "kind": "paper",
+      "title": "How Can You Think That?: Deliberation and the Learning of Opposing Arguments",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/LearningOfArguments.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/nireland",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations",
+      "kind": "paper",
+      "title": "Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/DeliberativeDistortions.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/distortions/",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Robert Luskin, Kyu Hahn, and James Fishkin. ",
+        {
+          "tag": "i",
+          "children": [
+            "The British Journal of Political Science"
+          ]
+        },
+        ". 52(3), 1205–1225, 2022.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention",
+      "kind": "paper",
+      "title": "What Future for Kirkuk? Evidence from a deliberative intervention",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/kirkuk.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/kirkuk/",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/kirkuk_si.pdf",
+          "label": "Supporting Information",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ian O'Flynn, Jalal Mistaffa, and Nahwi Saeed. ",
+        {
+          "tag": "i",
+          "children": [
+            "Democratization"
+          ]
+        },
+        ". 26(7), 1299–1317, 2019.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " | ",
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "problem-solving",
+      "kind": "paper",
+      "title": "Problem Solving",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/problem_solving.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect",
+      "kind": "paper",
+      "title": "Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/uncertainty.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": " https://github.com/soodoku/uncertainty",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Doug Ahler.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "mixed-signals-movie-quality-assessments-across-platforms",
+      "kind": "project",
+      "title": "Mixed Signals: Movie Quality Assessments Across Platforms",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/mixed_signals",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability",
+      "kind": "paper",
+      "title": "Americans' Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ACAKnowledgeFavorability.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/ForbesHealthcare.pdf",
+          "label": "Forbes"
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PSMagHealthcare.pdf",
+          "label": "Pacific Standard",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/TheDishHealthcare.pdf",
+          "label": "The Dish",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Thompson, Jennifer Agiesta, and Dennis Junius.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-2"
+        },
+        ", ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        },
+        ", among other outlets."
+      ],
+      "description": []
+    },
+    {
+      "id": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play",
+      "kind": "paper",
+      "title": "Americans' Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ACA_beliefs_attitudes.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias H. Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
+        {
+          "tag": "i",
+          "children": [
+            "Annals of the American Academy of Political and Social Science."
+          ]
+        },
+        " 2022."
+      ],
+      "description": []
+    },
+    {
+      "id": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues",
+      "kind": "paper",
+      "title": "Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women's Issues?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/daughters.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/daughters",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/daughters_si.pdf",
+          "label": "Supporting Information",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://phys.org/news/2023-05-daughters-politicians-votes-women-issues.html",
+          "label": "Phys.org",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Don Green, Oliver Hyman-Metzger, and Michelle Zee. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Political Economy Microeconomics."
+          ]
+        },
+        " 2023.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " | ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-4"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "missing-women-on-indian-streets",
+      "kind": "paper",
+      "title": "Missing women on Indian streets",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/missing_women.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/geosensing/streetscope",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Varun Karekurve-Ramachandra",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "son-bias-in-the-us-evidence-from-business-names",
+      "kind": "paper",
+      "title": "Son Bias in the US: Evidence from Business Names",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/sonny_side",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Walter Guillioli",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "which-women-are-missing-adult-sex-ratio-by-last-name",
+      "kind": "project",
+      "title": "Which Women Are Missing? Adult Sex Ratio By Last Name",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/last_sex",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        " ",
+        {
+          "tag": "br"
+        },
+        "With Suriyan Laohaprapanon"
+      ],
+      "description": []
+    },
+    {
+      "id": "missing-women-on-the-streets",
+      "kind": "project",
+      "title": "Missing Women on the Streets",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/geosensing/women-count",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "epic-children-sex-ratio-of-children-of-key-characters-in-epics",
+      "kind": "project",
+      "title": "Epic Children: Sex Ratio of Children of Key Characters in Epics",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/epic_children",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "missing-daughters-of-indian-politicians",
+      "kind": "project",
+      "title": "Missing Daughters of Indian Politicians",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/in-rolls/missing_daughters_of_pols",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "not-news-provision-of-apolitical-news-in-the-british-news-media",
+      "kind": "paper",
+      "title": "Not News: Provision of Apolitical News in the British News Media",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/notnews/uk_not_news",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Suriyan Laohaprapanon.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "strength-in-numbers-multiple-measures-of-media-ideology",
+      "kind": "paper",
+      "title": "Strength in Numbers: Multiple Measures of Media Ideology",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/notnews/uk_media_ideology/",
+          "label": "Replication Materials"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Philip Habel.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "measuring-agendas-and-positions-on-agendas",
+      "kind": "paper",
+      "title": "Measuring Agendas and Positions on Agendas",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/notnews/issue_ideology/",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Andrew Guess.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "notnews-predict-the-type-of-news-based-on-story-text-and-url",
+      "kind": "software",
+      "title": "Notnews: Predict the Type of News Based on Story Text and URL",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/notnews",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "📦 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon."
+      ],
+      "description": []
+    },
+    {
+      "id": "unreadable-news-how-readable-is-american-news",
+      "kind": "project",
+      "title": "Unreadable News: How Readable is American News?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/readable_news",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen."
+      ],
+      "description": []
+    },
+    {
+      "id": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources",
+      "kind": "paper",
+      "title": "Follow Your Ideology: A Measure of Ideological Location of Media Sources",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/mediabias.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Pablo Barberá."
+      ],
+      "description": []
+    },
+    {
+      "id": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news",
+      "kind": "paper",
+      "title": "The Supply of Media Slant Across Outlets and Demand for Slant Within Outlets: Evidence from US Presidential Campaign News",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/hr.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/horse_race",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Marcel Garz, Daniel Stone, and Justin Wallace. ",
+        {
+          "tag": "i",
+          "children": [
+            "European Journal of Political Economy"
+          ]
+        },
+        ".",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "don-t-expose-yourself-discretionary-exposure-to-political-information",
+      "kind": "paper",
+      "title": "Don't Expose Yourself: Discretionary Exposure to Political Information",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/selexp.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/selexp",
+          "label": "Replication Materials"
+        },
+        {
+          "id": "link-3",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/themains/piedomains",
+          "label": "Categorizing the Content of Domains",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/measuring-selective-exposure-a-selective-measure-of-selective-exposure/",
+          "label": "Measuring Selective Exposure",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/the-fairest-of-them-all/",
+          "label": "The Fairest of All",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Yphtach Lelkes. ",
+        {
+          "tag": "i",
+          "children": [
+            "Oxford Research Encyclopedia of Politics"
+          ]
+        },
+        ". 2018.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        },
+        ", ",
+        {
+          "resource": "link-5"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times",
+      "kind": "project",
+      "title": "The Good NYT: Provision of Apolitical News in the New York Times",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/good_nyt",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "hard-news-the-softening-of-network-television-news",
+      "kind": "paper",
+      "title": "Hard News: The Softening of Network Television News",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/notnews/hard_news/",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Daniel Weitzel.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "partisan-imbalance-in-politifact",
+      "kind": "project",
+      "title": "Partisan Imbalance in Politifact?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/politifact",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022",
+      "kind": "project",
+      "title": "Top News! URLs from News Feeds of Major National News Sites (2022-)",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/top_news",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "💾 ",
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Derek Willis"
+      ],
+      "description": []
+    },
+    {
+      "id": "cnn-transcripts-2000-2025",
+      "kind": "project",
+      "title": "CNN Transcripts 2000--2025",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/notnews/cnn_transcripts/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        "💾 ",
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "you-cannot-be-serious-the-impact-of-accuracy-incentives-on-partisan-bias",
+      "kind": "paper",
+      "title": "You Cannot be Serious: The Impact of Accuracy Incentives on Partisan Bias",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/PartisanBias.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/PartisanCheerleadingAppendix.pdf",
+          "label": "Online Appendix",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "http://www.nowpublishers.com/article/details/supplementary-info/100.00014127_supp.zip",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PartisanBiasWashingtonMonthly.pdf",
+          "label": "Washington Monthly",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PartisanBiasPacificStandard.pdf",
+          "label": "Pacific Standard"
+        },
+        {
+          "id": "link-6",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/PartisanBiasNYT.pdf",
+          "label": "The New York Times",
+          "new_tab": true
+        },
+        {
+          "id": "link-7",
+          "kind": "pdf",
+          "role": "related",
+          "url": "papers/partisanRetrospection.pdf",
+          "label": "Partisan Gaps in Retrospection are Highly Variable",
+          "new_tab": true
+        },
+        {
+          "id": "link-8",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/the-value-of-money-learning-from-experiments-offering-money-for-correct-answers/",
+          "label": "Blog Post",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Markus Prior and Kabir Khanna. ",
+        {
+          "tag": "i",
+          "children": [
+            "Quarterly Journal of Political Science."
+          ]
+        },
+        " 10(4), 489–518, 2015.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        "; ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-4"
+        },
+        ", ",
+        {
+          "resource": "link-5"
+        },
+        ", ",
+        {
+          "resource": "link-6"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-7"
+        },
+        "; ",
+        {
+          "resource": "link-8"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "motivated-responding-in-studies-of-factual-learning",
+      "kind": "project",
+      "title": "Motivated Responding in Studies of Factual Learning",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "related",
+          "url": "http://rdcu.be/HNE5",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "http://dx.doi.org/10.7910/DVN/4JXJWI",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://politicalbehavior.wordpress.com/2017/03/02/motivated-responding-in-studies-of-factual-learning/",
+          "label": "Blog Summarizing the Paper",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "blog",
+          "url": "http://gojiberries.io/the-innumerate-american/",
+          "label": "The Innumerate American",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Kabir Khanna. ",
+        {
+          "tag": "i",
+          "children": [
+            "Political Behavior"
+          ]
+        },
+        ". 40(1): 79–101, 2018.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        ", ",
+        {
+          "resource": "link-4"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps",
+      "kind": "paper",
+      "title": "A Gap in Our Understanding? Reconsidering the Evidence for Partisan Knowledge Gaps",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/partisan_gap.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/partisan_gap",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "pdf",
+          "role": "related",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf",
+          "label": "An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://effectivegov.uchicago.edu/podcast/do-partisans-really-believe-different-facts",
+          "label": "Not Another Politics Podcast (U. Chicago)",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Carrie Roush. ",
+        {
+          "tag": "i",
+          "children": [
+            "Quarterly Journal of Political Science."
+          ]
+        },
+        " 18(1), 2023. ",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-4"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "the-waters-of-casablanca-on-political-misinformation",
+      "kind": "paper",
+      "title": "The Waters of Casablanca: On Political Misinformation",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/CasablancaTheory.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Robert Luskin."
+      ],
+      "description": []
+    },
+    {
+      "id": "misinformation-about-misinformation-of-headlines-and-survey-design",
+      "kind": "paper",
+      "title": "Misinformation About Misinformation: Of Headlines and Survey Design",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/misinformation_misinformation.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/misinformation",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Robert Luskin, Yul Min Park, and Joshua Blank.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": []
+    },
+    {
+      "id": "misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation",
+      "kind": "paper",
+      "title": "Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ACAMisinformed.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ACAMisinformedSI.pdf",
+          "label": "Supporting Information",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "https://osf.io/ya7wd/",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Josh Pasek and Jon Krosnick. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Communication."
+          ]
+        },
+        " 65(4): 660–673, 2015 ",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " | ",
+        {
+          "resource": "link-3"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "guessing-and-forgetting-a-latent-class-model-for-measuring-learning",
+      "kind": "paper",
+      "title": "Guessing and Forgetting: A Latent Class Model for Measuring Learning",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/guess.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "replication",
+          "url": "http://dx.doi.org/10.7910/DVN/HZHVCU",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "webpage",
+          "role": "related",
+          "url": "http://web.stanford.edu/~haertel/",
+          "label": "Ed Haertel",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/soodoku/guess",
+          "label": "R Package",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Ken Cor. ",
+        {
+          "tag": "i",
+          "children": [
+            "Political Analysis"
+          ]
+        },
+        ". 24(2): 226–242, 2016. ",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "REVIEW"
+          ]
+        },
+        ": '... a real contribution to the literature.' — ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": 📦 ",
+        {
+          "resource": "link-4"
+        },
+        " for implementing the method. "
+      ],
+      "description": []
+    },
+    {
+      "id": "measuring-learning-in-informative-processes",
+      "kind": "paper",
+      "title": "Measuring Learning in Informative Processes",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/k_gains.pdf"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Robert Luskin and Ariel Helfer."
+      ],
+      "description": []
+    },
+    {
+      "id": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap",
+      "kind": "paper",
+      "title": "A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/measurement_gap.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/partisan-gaps",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen and Daniel Weitzel. ",
+        {
+          "tag": "i",
+          "children": [
+            "Public Opinion Quarterly."
+          ]
+        },
+        " 2025.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": [
+        "Research suggests that partisan gaps in political knowledge with partisan implications are wide and widespread. Using a series of experiments, we investigate the extent to which partisan gaps in commercial surveys are a result of differences in beliefs than motivated guessing. Knowledge items on commercial surveys often have features that encourage guessing. We find that removing such features yields scales with greater reli- ability and higher criterion validity. More substantively, partisan gaps on scales without these “inflationary” features are roughly 40% smaller. Thus, contrary to Prior, Sood and Khanna (2015), who find that the upward bias is explained by the knowledgeable deliberately marking the wrong answer (partisan cheerleading), our data suggest, in line with Bullock et al. (2015) and Graham and Yair (2023), that partisan gaps on commercial surveys are strongly upwardly biased by motivated guessing by the ignorant. Relatedly, we also find that partisans know less than what toplines of commercial polls suggest."
+      ]
+    },
+    {
+      "id": "an-unclear-gap-how-vague-response-options-produce-partisan-knowledge-gaps",
+      "kind": "paper",
+      "title": "An Unclear Gap: How Vague Response Options Produce Partisan Knowledge Gaps",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/unclear_gap/main/ms/unclear_gap.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/unclear_gap",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "With Carrie Roush.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        " "
+      ],
+      "description": [
+        "Roush and Sood (2023) use a dataset of 162,083 responses to 187 items on 47 surveys to find that partisan gaps are smaller and less frequent than commonly understood. The average is a mere six and a half points and gaps’ “signs” run counter to expectations roughly 30% of the time. However, one exception is the size of gaps on retrospection items on the ANES, which are considerably bigger. These retrospection items use vague response options, e.g., ‘About the same.’ Vague response options can inflate partisan gaps by offering partisans the opportunity to interpret the same data differently. We test this assumption with a novel survey experiment. We present partisans data indicating a small improvement in economic indicators and manipulate the partisan tint of the change by manipulating who is responsible for the change. We find that significantly fewer partisans pick the option that ’[things] got better’ when presented with an out-partisan cue than a co-partisan cue. Our findings suggest that vague options can induce knowledge gaps even when partisans have the same information."
+      ]
+    },
+    {
+      "id": "measuring-perceptions-of-numerical-strength-of-salient-and-stereotypical-groups",
+      "kind": "paper",
+      "title": "Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/measuring_shares.pdf"
+        },
+        {
+          "id": "link-2",
+          "kind": "webpage",
+          "role": "related",
+          "url": "http://dx.doi.org/10.7910/DVN/2JXAYZ",
+          "label": "Appendix",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Doug Ahler. ",
+        {
+          "tag": "i",
+          "children": [
+            "Misinformation and Mass Audiences."
+          ]
+        },
+        " 2018. University of Texas Press.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "streetsense-learning-from-google-street-view",
+      "kind": "paper",
+      "title": "StreetSense: Learning from Google Street View",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "related",
+          "url": "https://arxiv.org/pdf/1807.06075.pdf",
+          "label": "arXiv.org",
+          "new_tab": true
+        },
+        {
+          "id": "link-3",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/geosensing/streetsense",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        " ",
+        {
+          "resource": "primary"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "coauthor",
+          "children": [
+            " With Suriyan Laohaprapanon and Kimberly Ortleb. ",
+            {
+              "resource": "link-2"
+            },
+            {
+              "tag": "br"
+            },
+            " 🗃 ",
+            {
+              "resource": "link-3"
+            },
+            " "
+          ]
+        },
+        " "
+      ],
+      "description": [
+        "How good are the public services and the public infrastructure? Does their quality vary by income? These are vital questions—they shed light on how well the government is doing its job, the consequences of disparities in local funding, etc. But there is little good data on many of these questions. We fill this gap by describing a scalable method of getting data on one crucial piece of public infrastructure: roads. We assess the quality of roads and sidewalks by exploiting data from Google Street View. We randomly sample locations on major roads, query Google Street View images for those locations and code the images using Amazon’s Mechanical Turk. We apply this method to assess the quality of roads in Bangkok, Jakarta, Lagos, and Wayne County, Michigan. Jakarta’s roads have nearly four times the potholes than roads of any other city. Surprisingly, the proportion of road segments with potholes in Bangkok, Lagos, and Wayne is about the same, between .06 and .07. Using the data, we also estimate the relation between the condition of the roads and local income in Wayne, MI. We find that roads in more affluent census tracts have somewhat fewer potholes."
+      ]
+    },
+    {
+      "id": "autosense-automated-street-condition-assessment",
+      "kind": "project",
+      "title": "AutoSense: Automated Street Condition Assessment",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/geosensing/autosense",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "tag": "p",
+          "children": [
+            {
+              "resource": "primary"
+            },
+            " "
+          ]
+        }
+      ],
+      "description": [],
+      "class": "paper-toggle"
+    },
+    {
+      "id": "get-in-line-waiting-times-at-the-dmv",
+      "kind": "project",
+      "title": "Get in Line: Waiting Times at the DMV",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/wait",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "coauthor",
+          "children": [
+            "With Noah Finberg."
+          ]
+        },
+        " "
+      ],
+      "description": [],
+      "class": "paper-toggle"
+    },
+    {
+      "id": "elo-ratings-of-international-cricket-teams-by-format",
+      "kind": "project",
+      "title": "Elo Ratings of International Cricket Teams By Format",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/outside-edge/elo_cricket",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/EloDutch.pdf",
+          "label": "The Hindu",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Derek Willis.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "war-ratings-for-cricketers",
+      "kind": "project",
+      "title": "WAR Ratings for Cricketers",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/outside-edge/war",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Derek Willis."
+      ],
+      "description": []
+    },
+    {
+      "id": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match",
+      "kind": "paper",
+      "title": "Fairly Random: The Effect of Winning the Toss on Winning the Match",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/cricket_paper.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/outside-edge/asymmetry",
+          "label": "Replication Materials"
+        },
+        {
+          "id": "link-3",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/dwillis/toss-up",
+          "label": "Fairly Random: Impact of Winning the Toss on the Probability of Winning",
+          "new_tab": true
+        },
+        {
+          "id": "link-4",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://arxiv.org/abs/1605.08753",
+          "label": "arXiv.org",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "pdf",
+          "role": "press",
+          "url": "press/CricketESPN.pdf",
+          "label": "ESPN: How much does the toss really matter?",
+          "new_tab": true
+        },
+        {
+          "id": "link-6",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://www.espncricinfo.com/story/why-replacing-the-toss-with-an-auction-is-the-fair-thing-to-do-1277744",
+          "label": "ESPN: Why replacing the toss with an auction is the fair thing to do",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Apoorva Lal, Derek Willis, and Avidit Acharya. ",
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Sports Analytics."
+          ]
+        },
+        " 2023.",
+        {
+          "tag": "br"
+        },
+        " 🗃 ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-3"
+        },
+        {
+          "tag": "br"
+        },
+        "With Derek Willis.",
+        " | ",
+        {
+          "resource": "link-4"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "PRESS"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-5"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "highlight",
+          "children": [
+            "RELATED"
+          ]
+        },
+        ": ",
+        {
+          "resource": "link-6"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "scaling-ml-products-at-startups-a-practioner-s-guide",
+      "kind": "paper",
+      "title": "Scaling ML Products at Startups: A Practitioner's Guide",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/scaling.pdf",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "coauthor",
+          "children": [
+            "With Atul Dhingra."
+          ]
+        },
+        " "
+      ],
+      "description": [
+        " How do you scale a machine learning product at a startup? In particular, how do you serve a greater volume, velocity, and variety of queries cost-effectively? We break down costs into variable costs—the cost of serving the model and keeping it performant—and fixed costs—the cost of developing and training new models. We propose a framework for conceptualizing these costs, breaking them into finer categories, and limn ways to reduce costs. Lastly, since in our experience, the most expensive fixed cost of a machine learning system is the cost of identifying the root causes of failures and driving continuous improvement, we present a way to conceptualize the issues and share our methodology for the same. "
+      ],
+      "class": "paper-toggle"
+    },
+    {
+      "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
+      "kind": "project",
+      "title": "The Effect of Gender Quotas on Some Qualities of Elites",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/in-rolls/quota_elite_quality",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": []
+    },
+    {
+      "id": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies",
+      "kind": "paper",
+      "title": "The Limits of Electoral Gender Quotas in Rural Local Bodies",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/quota_raj.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "in-rolls/quota_representation",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Varun K. R."
+      ],
+      "description": []
+    },
+    {
+      "id": "the-older-half-spousal-age-gap-in-india",
+      "kind": "project",
+      "title": "The Older Half: Spousal Age Gap in India",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/spousal_age_gap",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Suriyan Laohaprapanon"
+      ],
+      "description": []
+    },
+    {
+      "id": "unlanded-distribution-of-land-in-bihar",
+      "kind": "paper",
+      "title": "Unlanded: Distribution of Land in Bihar",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/land.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/in-rolls/land",
+          "label": "Replication Files",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " With Lucas Shen",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        }
+      ],
+      "description": []
+    }
+  ]
+}
