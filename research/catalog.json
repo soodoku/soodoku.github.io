@@ -2471,7 +2471,7 @@
     },
     {
       "id": "layoutlens-ai-assisted-ui-testing",
-      "kind": "project",
+      "kind": "software",
       "title": "LayoutLens: AI-Assisted UI Testing",
       "primary_resource": "primary",
       "resources": [
@@ -2499,6 +2499,13 @@
         }
       ],
       "summary": [
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "📦"
+          ]
+        },
         {
           "resource": "primary"
         }
