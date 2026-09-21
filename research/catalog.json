@@ -892,7 +892,7 @@
           "source": {
             "repo": "finite-sample/rank-preserving-calibration",
             "ref": "main",
-            "path": "ms/ms.pdf"
+            "path": "ms/rank-preserving-multiclass.pdf"
           }
         },
         {
