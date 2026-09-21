@@ -4875,7 +4875,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/LearningOfArguments.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/nireland",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4883,6 +4888,19 @@
           "role": "replication",
           "url": "https://github.com/soodoku/nireland",
           "label": "Replication Materials"
+        },
+        {
+          "id": "supporting-information",
+          "kind": "pdf",
+          "role": "appendix",
+          "url": "papers/LearningOfArguments-SI.pdf",
+          "label": "Supporting Information",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/nireland",
+            "ref": "main",
+            "path": "ms/supplement.pdf"
+          }
         }
       ],
       "summary": [
@@ -4903,15 +4921,24 @@
         {
           "resource": "link-2"
         },
+        " · ",
+        {
+          "resource": "supporting-information"
+        },
         " "
       ],
+      "authors": [
+        "Gaurav Sood",
+        "Robert C. Luskin",
+        "James S. Fishkin"
+      ],
       "description": [
-        "Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we examine whether participants learn arguments for positions they oppose. The evidence shows that people in a deeply divided society can learn opposing arguments through deliberation."
+        "Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we compare the reasons articulated by returning participants and contemporaneous controls. Participants gave somewhat more reasons, but the estimate is imprecise and participation was self-selected. The samples differed little in directional balance. Among returnees, repertoires moved toward balance chiefly because supporting reasons declined, and the estimate is sensitive to coder choice."
       ],
       "description_source": {
         "url": "papers/LearningOfArguments.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-09-20",
         "text_type": "summary"
       }
     },
