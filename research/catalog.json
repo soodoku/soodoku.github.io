@@ -6824,10 +6824,15 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/misinformation_misinformation.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/misinformation",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
-          "id": "link-2",
+          "id": "replication",
           "kind": "repository",
           "role": "replication",
           "url": "https://github.com/soodoku/misinformation",
@@ -6842,10 +6847,6 @@
         {
           "tag": "br"
         },
-        " With Robert Luskin, Yul Min Park, and Joshua Blank.",
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
@@ -6855,17 +6856,22 @@
           ]
         },
         {
-          "resource": "link-2"
-        },
-        " "
+          "resource": "replication"
+        }
+      ],
+      "authors": [
+        "Robert C. Luskin",
+        "Gaurav Sood",
+        "Yul Min Park",
+        "Joshua Blank"
       ],
       "description": [
-        "We examine how survey design affects estimates of political misinformation. An audit of media polls and a series of experiments show that opinion-like wording, missing 'don't know' options, and invitations to guess can inflate the prevalence inferred from incorrect answers."
+        "Media-poll misinformation items rarely offer a 'don't know' and usually ask what respondents think. In a survey experiment, offering and encouraging 'don't know' cut incorrect answers from 32% to 20%, repeating the false claim in the question changed nothing, and asking how definitely true or false each statement is cut them to 7%."
       ],
       "description_source": {
         "url": "papers/misinformation_misinformation.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-09-23",
         "text_type": "summary"
       }
     },
