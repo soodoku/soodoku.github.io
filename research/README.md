@@ -20,8 +20,13 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   a stable `id`, a `kind`, a `title`, a `primary_resource`, and a list of resources.
   Keep IDs stable when renaming work. `related_entries` can reference other entries
   without copying their records; the generator adds links to those entries.
-  Optional `authors` is an ordered list of names. Optional `publication` contains
-  a `venue` and integer `year`. These render below the summary when present.
+  Optional `coauthors` is an ordered list of collaborators, excluding Gaurav Sood.
+  Omit it for solo work. The generator places credits directly below the title,
+  using “With Alice Smith.”, “With Alice Smith and Bob Jones.”, or
+  “With Alice Smith, Bob Jones, and Carol Lee.” Preserve the existing name order.
+  Optional `publication` is a rich-text array containing the citation, including
+  any volume, issue, pages, or publisher. End the citation with a period. It
+  renders on its own line after the credits and before supporting resources.
 - **Resources** have an ID local to their entry, a URL, a kind (such as `pdf` or
   `repository`), and a role (such as `manuscript`, `replication`, `blog`, or `press`).
   The primary resource uses the entry title as its label; other resources have
@@ -30,10 +35,10 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   `children` contain either nested sections or `{"entry": "entry-id"}` references.
   Every entry must appear in a section. An entry can appear in more than one.
 
-`summary` and `description` are rich-text arrays. Strings are escaped as text;
-`{"resource": "resource-id"}` inserts a link from the entry's resources. A small
-set of formatting nodes preserves citations, coauthor wording, emphasis, and line
-breaks. For example:
+`summary`, `description`, and `publication` are rich-text arrays. Strings are
+escaped as text; `{"resource": "resource-id"}` inserts a link from the entry's
+resources. A small set of formatting nodes preserves citations, emphasis, and
+line breaks. For example:
 
 ```json
 {
@@ -65,11 +70,12 @@ breaks. For example:
 }
 ```
 
-The migration retains existing coauthor and publication text in these arrays;
-those strings are not a normalized author or bibliographic database. Resource
-URLs and primary titles each have one authoritative field. Formatting nodes
-allow `br`, `span`, `i`, `p`, `b`, `em`, `strong`, `sup`, and `sub`; non-break nodes
-use a `children` array. Only the `highlight`, `coauthor`, and `resource-links`
+Keep credits in `coauthors` and citations in `publication`, rather than embedding
+them in `summary`. For example, `"coauthors": ["Alice Smith", "Bob Jones"]` and
+`"publication": [{"tag": "i", "children": ["Journal Name"]}, ", 2026."]`.
+Resource URLs and primary titles each have one authoritative field. Formatting
+nodes allow `br`, `span`, `i`, `p`, `b`, `em`, `strong`, `sup`, and `sub`; non-break
+nodes use a `children` array. Only the `highlight`, `entry-icon`, and `resource-links`
 span classes and the `paper-toggle` entry class are supported.
 Use a `resource-links` span containing resource references to group RELATED or
 PRESS links; CSS supplies separators and stacks the links on narrow screens.

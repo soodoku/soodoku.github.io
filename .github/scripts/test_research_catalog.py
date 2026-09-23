@@ -73,16 +73,104 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("https://example.org/?a=1&amp;b=2", generated)
         self.assertNotIn("< B", generated)
 
-    def test_structured_authors_publication_and_relationships_render(self):
-        self.entry["authors"] = ["First Author", "Second Author"]
-        self.entry["publication"] = {"venue": "A & B", "year": 2026}
+    def test_coauthors_publication_and_relationships_render(self):
+        self.entry["coauthors"] = ["First Author", "Second Author"]
+        self.entry["publication"] = [
+            {"tag": "i", "children": ["A & B"]},
+            ", 2026.",
+        ]
         related = self.catalog["entries"][1]
         self.entry["related_entries"] = [related["id"]]
         generated = render(self.catalog, "{{catalog}}")
-        self.assertIn("First Author, Second Author", generated)
+        self.assertIn("With First Author and Second Author.", generated)
         self.assertIn("<i>A &amp; B</i>, 2026.", generated)
         self.assertIn('<span class="supporting-label">Related:</span>', generated)
         self.assertEqual(generated.count(related["title"]), 2)
+
+    def test_coauthor_punctuation_order_and_escaping(self):
+        cases = [
+            (["Zoe"], "With Zoe."),
+            (["Zoe", "Alice"], "With Zoe and Alice."),
+            (["Zoe", "Alice", "Bob"], "With Zoe, Alice, and Bob."),
+            (["A < B", "C & D"], "With A &lt; B and C &amp; D."),
+        ]
+        for names, expected in cases:
+            with self.subTest(names=names):
+                self.entry["coauthors"] = names
+                generated = render(self.catalog, "{{catalog}}")
+                self.assertIn(f"</a><br>{expected}", generated)
+
+    def test_metadata_precedes_resources_and_is_not_repeated_in_related_links(self):
+        self.entry["coauthors"] = ["Test Collaborator"]
+        self.entry["publication"] = ["Test Journal, 2026."]
+        self.entry["summary"] = [
+            {"resource": self.entry["primary_resource"]},
+            {"tag": "br"},
+            "Supporting resources",
+        ]
+        self.catalog["entries"][1]["related_entries"] = [self.entry["id"]]
+        generated = render(self.catalog, "{{catalog}}")
+        self.assertIn(
+            "</a><br>With Test Collaborator.<br>Test Journal, 2026."
+            "<br>Supporting resources",
+            generated,
+        )
+        self.assertEqual(generated.count("With Test Collaborator."), 1)
+
+    def test_solo_entry_has_no_credit_line(self):
+        self.entry.pop("coauthors", None)
+        self.entry["summary"] = [{"resource": self.entry["primary_resource"]}]
+        self.entry["publication"] = ["Test Journal, 2026."]
+        generated = render(self.catalog, "{{catalog}}")
+        self.assertIn(
+            f'{self.entry["title"]}</a><br>Test Journal, 2026.</summary>', generated
+        )
+        self.entry.pop("publication")
+        generated = render(self.catalog, "{{catalog}}")
+        self.assertIn(f'{self.entry["title"]}</a></summary>', generated)
+
+    def test_rejects_invalid_coauthor_names(self):
+        for name in ("Gaurav Sood", " ", " Alice", "Alice "):
+            with self.subTest(name=name):
+                self.entry["coauthors"] = [name]
+                with self.assertRaisesRegex(ValueError, "collaborator names"):
+                    validate_catalog(self.catalog)
+
+    def test_publication_resource_references_are_validated(self):
+        self.entry["publication"] = [{"resource": "missing"}]
+        with self.assertRaisesRegex(ValueError, "Unknown inline resource"):
+            validate_catalog(self.catalog)
+
+    def test_catalog_credits_use_only_structured_coauthors(self):
+        def text(nodes):
+            return " ".join(
+                node if isinstance(node, str) else text(node.get("children", []))
+                for node in nodes
+            )
+
+        for entry in self.catalog["entries"]:
+            with self.subTest(entry=entry["id"]):
+                self.assertNotIn("authors", entry)
+                self.assertNotRegex(text(entry["summary"]), r"\bWith\s")
+
+    def test_deliberation_credits_preserve_collaborators_and_omit_site_owner(self):
+        entries = {entry["id"]: entry for entry in self.catalog["entries"]}
+        for entry_id in (
+            "how-can-you-think-that-deliberation-and-the-learning-"
+            "of-opposing-arguments",
+            "deliberation-and-learning-evidence-from-deliberative-polls",
+        ):
+            self.assertEqual(
+                entries[entry_id]["coauthors"],
+                ["Robert C. Luskin", "James S. Fishkin"],
+            )
+        self.assertNotIn(
+            "coauthors",
+            entries[
+                "steadier-not-closer-separating-convergence-from-"
+                "crystallization-in-deliberative-polls"
+            ],
+        )
 
     def test_supporting_groups_preserve_items_and_order(self):
         self.entry["supporting"] = {
