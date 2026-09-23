@@ -6764,6 +6764,19 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/CasablancaTheory.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/waters-of-casablanca",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/waters-of-casablanca",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -6774,15 +6787,29 @@
         {
           "tag": "br"
         },
-        " With Robert Luskin."
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "authors": [
+        "Robert C. Luskin",
+        "Gaurav Sood"
       ],
       "description": [
-        "We distinguish misinformation from knowledge, ignorance, and uncertain belief, and examine how survey responses map onto those states. Original surveys illustrate a measurement approach that uses confidence to help identify firmly held false beliefs."
+        "Misinformation is a confidently held false belief, distinct from knowledge, mere belief, and ignorance. Multiple-choice items cannot tell it from guessing; asking how definitely true or false each statement is can. In four surveys that randomly assigned the two formats, the scale finds far less misinformation about well-publicized falsehoods, and much smaller partisan gaps, than multiple-choice items do."
       ],
       "description_source": {
         "url": "papers/CasablancaTheory.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-09-23",
         "text_type": "summary"
       }
     },
