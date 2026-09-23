@@ -361,6 +361,9 @@
           "entry": "deliberation-and-learning-evidence-from-deliberative-polls"
         },
         {
+          "entry": "deliberation-and-misinformation"
+        },
+        {
           "entry": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap"
         },
         {
@@ -423,6 +426,9 @@
             },
             {
               "entry": "deliberation-and-learning-evidence-from-deliberative-polls"
+            },
+            {
+              "entry": "deliberation-and-misinformation"
             },
             {
               "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
@@ -8309,6 +8315,66 @@
         "url": "papers/deliberation_learning.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-22",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "deliberation-and-misinformation",
+      "kind": "paper",
+      "title": "Deliberation and Misinformation",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/deliberation_misinformation.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/deliberation-misinformation",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/deliberation-misinformation",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "authors": [
+        "Robert C. Luskin",
+        "Gaurav Sood"
+      ],
+      "description": [
+        "Across 19 misinformation-type items in seven Deliberative Polls, incorrect answers fell from 23% to 10%, and participants who began wrong were as likely to end right as those who began not knowing. In polls with control groups, attending cut overestimates of the number of undocumented immigrants by 15 points, but reduced confident denial of human-caused warming only slightly and not durably."
+      ],
+      "description_source": {
+        "url": "papers/deliberation_misinformation.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-23",
         "text_type": "summary"
       }
     }
