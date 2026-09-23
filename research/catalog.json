@@ -6967,7 +6967,7 @@
           "url": "papers/k_gains.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/measuring-learning",
+            "repo": "finite-sample/measuring-learning",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -6976,7 +6976,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/measuring-learning",
+          "url": "https://github.com/finite-sample/measuring-learning",
           "label": "Replication Materials",
           "new_tab": true
         }
