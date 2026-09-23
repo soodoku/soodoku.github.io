@@ -7060,7 +7060,21 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/k_gains.pdf"
+          "url": "papers/k_gains.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/measuring-learning",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/measuring-learning",
+          "label": "Replication Materials",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -7070,15 +7084,30 @@
         {
           "tag": "br"
         },
-        " With Robert Luskin and Ariel Helfer."
+        " With Robert Luskin and Ariel Helfer.",
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        },
+        " "
       ],
       "description": [
-        "We examine how to measure learning in campaigns, deliberative polls, and other processes that expose people to information. The paper considers the limitations of observed pre-post knowledge gains, particularly when using individual learning estimates to explain causes or consequences."
+        "Observed knowledge gain is a poor measure of what people learn from campaigns and deliberative forums: questionnaires ask easy items, so those who learn the most have the least room to show it. When the knowledgeable learn more, post-process knowledge is guaranteed to track true learning and observed gain is not. In simulations matched to 21 Deliberative Polls, observed gain barely correlates with true learning, and the choice of measure changes who appears to learn."
       ],
       "description_source": {
         "url": "papers/k_gains.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-09-23",
         "text_type": "summary"
       }
     },
