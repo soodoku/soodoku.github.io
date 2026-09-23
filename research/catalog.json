@@ -358,6 +358,9 @@
           "entry": "measuring-learning-in-informative-processes"
         },
         {
+          "entry": "deliberation-and-learning-evidence-from-deliberative-polls"
+        },
+        {
           "entry": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap"
         },
         {
@@ -417,6 +420,9 @@
             },
             {
               "entry": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments"
+            },
+            {
+              "entry": "deliberation-and-learning-evidence-from-deliberative-polls"
             },
             {
               "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
@@ -6871,7 +6877,7 @@
           "id": "link-4",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/soodoku/guess",
+          "url": "https://github.com/finite-sample/guess",
           "label": "R Package",
           "new_tab": true
         }
@@ -8134,6 +8140,68 @@
         "url": "https://github.com/gojiplus/get-weather-data#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "deliberation-and-learning-evidence-from-deliberative-polls",
+      "kind": "paper",
+      "title": "Deliberation and Learning: Evidence From Deliberative Polls",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/deliberation_learning.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/dp-learning",
+            "ref": "main",
+            "path": "manuscript/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/dp-learning",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        },
+        " "
+      ],
+      "authors": [
+        "Robert C. Luskin",
+        "Gaurav Sood",
+        "James S. Fishkin"
+      ],
+      "description": [
+        "In four Deliberative Polls with control groups, participation raised factual knowledge by about half a standard deviation, and much of the gain lasted a year. Every one of 22 other polls shows learning, about twice as much face to face as online. A common correction for lucky guesses finds nearly as much learning among untreated controls; a latent class model does not. Small groups are composed as if at random, and groupmates' knowledge has no detectable effect on learning."
+      ],
+      "description_source": {
+        "url": "papers/deliberation_learning.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-22",
         "text_type": "summary"
       }
     }
