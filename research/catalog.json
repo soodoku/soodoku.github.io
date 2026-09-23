@@ -346,6 +346,9 @@
           "entry": "the-waters-of-casablanca-on-political-misinformation"
         },
         {
+          "entry": "mis-measuring-political-knowledge"
+        },
+        {
           "entry": "misinformation-about-misinformation-of-headlines-and-survey-design"
         },
         {
@@ -6814,6 +6817,67 @@
       ],
       "description_source": {
         "url": "papers/CasablancaTheory.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-23",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "mis-measuring-political-knowledge",
+      "kind": "paper",
+      "title": "Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/HiddenKnowledge.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/hidden",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/hidden",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "authors": [
+        "Robert C. Luskin",
+        "Gaurav Sood",
+        "Daniel Weitzel"
+      ],
+      "description": [
+        "Revisionist studies argue that surveys understate political knowledge. Randomized experiments in three online surveys, and a recount of ANES and NAES items and don't-know probes, find little hidden knowledge: photos lower correct identification of officials, menus and probes add little beyond guessing, and asking how sure people are finds far less knowledge than multiple choice."
+      ],
+      "description_source": {
+        "url": "papers/HiddenKnowledge.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
