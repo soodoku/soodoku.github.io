@@ -8393,7 +8393,7 @@
           "url": "papers/deliberation_misinformation.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/deliberation-misinformation",
+            "repo": "soodoku/dp-misinformation",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -8402,7 +8402,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/deliberation-misinformation",
+          "url": "https://github.com/soodoku/dp-misinformation",
           "label": "Replication Materials",
           "new_tab": true
         }
