@@ -7542,7 +7542,7 @@
           "source": {
             "repo": "in-rolls/quota_elite_quality",
             "ref": "main",
-            "path": "manuscript/main.pdf"
+            "path": "ms/main.pdf"
           }
         },
         {
@@ -8158,7 +8158,7 @@
           "source": {
             "repo": "soodoku/dp-learning",
             "ref": "main",
-            "path": "manuscript/main.pdf"
+            "path": "ms/main.pdf"
           }
         },
         {
