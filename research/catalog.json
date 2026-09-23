@@ -428,6 +428,9 @@
               "entry": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations"
             },
             {
+              "entry": "steadier-not-closer-separating-convergence-from-crystallization-in-deliberative-polls"
+            },
+            {
               "entry": "what-future-for-kirkuk-evidence-from-a-deliberative-intervention"
             }
           ]
@@ -4883,7 +4886,7 @@
           "url": "papers/LearningOfArguments.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/nireland",
+            "repo": "soodoku/dp-nireland",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -4892,7 +4895,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/nireland",
+          "url": "https://github.com/soodoku/dp-nireland",
           "label": "Replication Materials"
         },
         {
@@ -4903,7 +4906,7 @@
           "label": "Supporting Information",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/nireland",
+            "repo": "soodoku/dp-nireland",
             "ref": "main",
             "path": "ms/supplement.pdf"
           }
@@ -4965,7 +4968,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/distortions/",
+          "url": "https://github.com/soodoku/dp-distortions/",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -5007,6 +5010,82 @@
         "url": "papers/DeliberativeDistortions.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "steadier-not-closer-separating-convergence-from-crystallization-in-deliberative-polls",
+      "kind": "paper",
+      "title": "Steadier, Not Closer: Separating Convergence from Crystallization in Deliberative Polls",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/SteadierNotCloser.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/dp-steadier-not-closer",
+            "ref": "main",
+            "path": "paper/proof.pdf"
+          }
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/dp-steadier-not-closer",
+          "label": "Proof and Simulation",
+          "new_tab": true
+        },
+        {
+          "id": "source-data",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/soodoku/dp-data",
+          "label": "Source Data",
+          "new_tab": true
+        },
+        {
+          "id": "linked-data",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/soodoku/dp-knowledge-linkage",
+          "label": "Knowledge-Attitude Linkage",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "resource": "repository"
+        },
+        " · ",
+        {
+          "resource": "source-data"
+        },
+        " · ",
+        {
+          "resource": "linked-data"
+        }
+      ],
+      "authors": [
+        "Gaurav Sood"
+      ],
+      "description": [
+        "Observed within-group variance mixes true convergence with changing measurement error. Lower error at T2 can manufacture homogenization and raise the intraclass correlation, but classical independent error cannot increase the absolute variance of group means. The paper proves these boundaries and specifies a latent partially nested model that separates convergence, between-group divergence, and crystallization. The full empirical model has not yet been fitted."
+      ],
+      "description_source": {
+        "url": "papers/SteadierNotCloser.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-09-22",
         "text_type": "summary"
       }
     },
@@ -6855,7 +6934,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/guess.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/guessing-and-forgetting",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -6879,6 +6963,14 @@
           "role": "related",
           "url": "https://github.com/finite-sample/guess",
           "label": "R Package",
+          "new_tab": true
+        },
+        {
+          "id": "link-5",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/guessing-and-forgetting",
+          "label": "Maintained Replication",
           "new_tab": true
         }
       ],
@@ -6910,6 +7002,10 @@
         },
         {
           "resource": "link-2"
+        },
+        " · ",
+        {
+          "resource": "link-5"
         },
         {
           "tag": "br"
@@ -8168,6 +8264,14 @@
           "url": "https://github.com/soodoku/dp-learning",
           "label": "Replication Materials",
           "new_tab": true
+        },
+        {
+          "id": "source-data",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/soodoku/dp-data",
+          "label": "Source Data",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -8188,7 +8292,10 @@
         {
           "resource": "replication"
         },
-        " "
+        " · ",
+        {
+          "resource": "source-data"
+        }
       ],
       "authors": [
         "Robert C. Luskin",
