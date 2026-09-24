@@ -50,6 +50,9 @@ def validate_catalog(catalog, root=ROOT):
     if displayed != entry_ids:
         raise ValueError("Every entry must appear in a section")
     for entry in catalog["entries"]:
+        for name in entry.get("coauthors", []):
+            if not name.strip() or name != name.strip() or name == "Gaurav Sood":
+                raise ValueError("Coauthors must be trimmed collaborator names")
         resources = unique(entry["resources"], "resource")
         if entry["primary_resource"] not in resources:
             raise ValueError("Unknown primary resource")
@@ -68,6 +71,7 @@ def validate_catalog(catalog, root=ROOT):
 
         nodes(entry["summary"])
         nodes(entry["description"])
+        nodes(entry.get("publication", []))
         for items in entry.get("supporting", {}).values():
             for item in items:
                 nodes(item)
@@ -116,7 +120,7 @@ def paper_sources(catalog):
 def render(catalog, template):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
 
-    def rich_text(nodes, entry):
+    def rich_text(nodes, entry, metadata=""):
         resources = {resource["id"]: resource for resource in entry["resources"]}
         parts = []
         for node in nodes:
@@ -140,12 +144,14 @@ def render(catalog, template):
                     f"{target}{css}>"
                     f"{html.escape(label)}</a>"
                 )
+                if resource["id"] == entry["primary_resource"]:
+                    parts.append(metadata)
             else:
                 tag = node["tag"]
                 css = f' class="{node["class"]}"' if "class" in node else ""
                 parts.append(f"<{tag}{css}>")
                 if tag != "br":
-                    parts.append(rich_text(node.get("children", []), entry))
+                    parts.append(rich_text(node.get("children", []), entry, metadata))
                     parts.append(f"</{tag}>")
         return "".join(parts)
 
@@ -161,14 +167,18 @@ def render(catalog, template):
             entry = entries[child["entry"]]
             css = f' class="{entry["class"]}"' if "class" in entry else ""
             description = rich_text(entry["description"], entry)
-            summary = rich_text(entry["summary"], entry)
-            if entry.get("authors"):
-                summary += "<br>" + html.escape(", ".join(entry["authors"]))
+            metadata = ""
+            if coauthors := entry.get("coauthors"):
+                if len(coauthors) == 1:
+                    credit = coauthors[0]
+                elif len(coauthors) == 2:
+                    credit = " and ".join(coauthors)
+                else:
+                    credit = ", ".join(coauthors[:-1]) + ", and " + coauthors[-1]
+                metadata += f"<br>With {html.escape(credit)}."
             if publication := entry.get("publication"):
-                summary += (
-                    f'<br><i>{html.escape(publication["venue"])}</i>, '
-                    f'{publication["year"]}.'
-                )
+                metadata += "<br>" + rich_text(publication, entry)
+            summary = rich_text(entry["summary"], entry, metadata)
             supporting = {
                 label: [rich_text(item, entry) for item in items]
                 for label, items in entry.get("supporting", {}).items()

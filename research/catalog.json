@@ -1288,18 +1288,6 @@
         {
           "tag": "br"
         },
-        " With Doug Ahler and Carrie Roush. ",
-        {
-          "tag": "i",
-          "children": [
-            "Political Science Research and Methods,"
-          ]
-        },
-        " 2021.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -1309,11 +1297,23 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "While Amazon's Mechanical Turk (MTurk) has reduced the cost of collecting original data, in 2018, researchers noted the potential existence of a large number of bad actors on the platform. To evaluate data quality on MTurk, we fielded three surveys between 2018 and 2020. While find no evidence of a \"bot epidemic,\" significant portions of the data—between 25%-35%—are of dubious quality. While the number of IP addresses that completed the survey multiple times or circumvented location requirements fell almost 50% over time, suspicious IP addresses are more prevalent on MTurk than on other platforms. Furthermore, many respondents appear to respond humorously or insincerely, and this behavior increased over 200% from 2018-2020. Importantly, these low-quality responses attenuate observed treatment effects by magnitudes ranging from approximately 10-30%."
+      ],
+      "coauthors": [
+        "Doug Ahler",
+        "Carrie Roush"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Political Science Research and Methods,"
+          ]
+        },
+        " 2021."
       ]
     },
     {
@@ -1333,14 +1333,13 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Ken Cor."
+        }
       ],
       "description": [
         "When the population is divided into known strata with known variances, the optimal allocation of a fixed sample budget across strata depends on stratum size, variance, and sampling cost. We derive the optimal allocation and show how much efficiency is lost by common rules of thumb like proportional allocation."
+      ],
+      "coauthors": [
+        "Ken Cor"
       ]
     },
     {
@@ -1375,11 +1374,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
@@ -1392,7 +1387,10 @@
             }
           ]
         ]
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "allocator-optimal-itineraries-for-spatially-distributed-tasks",
@@ -1426,11 +1424,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        "With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
@@ -1443,7 +1437,10 @@
             }
           ]
         ]
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "reporoulette-randomly-sample-github-repositories",
@@ -1886,11 +1883,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -1900,11 +1892,13 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "To what extent are users surveilled on the web, by what technologies, and by whom? We answer these questions by combining passively observed, anonymized browsing data of a large, representative sample of Americans with domain-level data on tracking from Blacklight. We find that nearly all users (>99%) encounter at least one ad tracker or third-party cookie over the observation window. More invasive techniques like session recording, keylogging, and canvas fingerprinting are less widespread, but over half of the users visited a site employing at least one of these within the first 48 hours of the start of tracking. Linking trackers to their parent organizations reveals that a single organization, usually Google, can track over 50% of web activity of more than half the users. Demographic differences in exposure are modest and often attenuate when we account for browsing volume. However, disparities by age and race remain, suggesting that what users browse, not just how much, shapes their surveillance risk."
+      ],
+      "coauthors": [
+        "Lucas Shen"
       ]
     },
     {
@@ -1949,18 +1943,6 @@
         {
           "tag": "br"
         },
-        " With Ken Cor. ",
-        {
-          "tag": "i",
-          "children": [
-            "ACM Web Science Conference,"
-          ]
-        },
-        " 2019",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -1988,7 +1970,20 @@
             }
           ]
         ]
-      }
+      },
+      "coauthors": [
+        "Ken Cor"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "ACM Web Science Conference,"
+          ]
+        },
+        " 2019",
+        "."
+      ]
     },
     {
       "id": "piedomains-predict-the-kind-of-content-hosted-by-a-domain",
@@ -2028,11 +2023,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage."
@@ -2060,7 +2051,10 @@
             }
           ]
         ]
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "pass-fail-using-a-password-generator-to-improve-password-strength",
@@ -2078,11 +2072,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness."
@@ -2092,7 +2082,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "how-often-is-politicians-data-breached-evidence-from-hibp",
@@ -2121,11 +2114,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -2145,7 +2133,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Lucas Shen"
+      ]
     },
     {
       "id": "bad-domains-exposure-to-malicious-content-online",
@@ -2174,17 +2165,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen. ",
-        {
-          "tag": "i",
-          "children": [
-            "Information, Communication and Society, 2026"
-          ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -2204,7 +2184,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Lucas Shen"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Information, Communication and Society, 2026"
+          ]
+        },
+        "."
+      ]
     },
     {
       "id": "know-your-ip",
@@ -2229,11 +2221,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures."
@@ -2243,7 +2231,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "virustotal-r-client-for-the-virustotal-public-api-2-0",
@@ -2304,21 +2295,9 @@
         {
           "resource": "primary"
         },
-        " ",
         {
           "tag": "br"
         },
-        "With Lucas Shen. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Online Trust and Safety, 2026."
-          ]
-        },
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -2332,6 +2311,17 @@
       ],
       "description": [
         "Open-source software is widely used in commercial applications. Pair that with the fact that when choosing open-source software for a new problem, developers often use social proof as a cue. These two facts raise concern that bad actors can game social proof metrics to induce the use of malign software. We study the question using two field experiments. On the largest developer platform, GitHub, we buy ‘stars’ for a random set of GitHub repositories of new Python packages and estimate their impact on package downloads. We find no discernible impact. In another field experiment, we manipulate the number of human downloads for Python packages. Again, we find little effect."
+      ],
+      "coauthors": [
+        "Lucas Shen"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Online Trust and Safety, 2026."
+          ]
+        }
       ]
     },
     {
@@ -2425,14 +2415,13 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data."
+      ],
+      "coauthors": [
+        "Suriyan Laohaprapanon"
       ]
     },
     {
@@ -2474,11 +2463,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Bhanu Teja."
+        }
       ],
       "description": [
         "Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool."
@@ -2502,7 +2487,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Bhanu Teja"
+      ]
     },
     {
       "id": "indicate-transliterate-indic-languages-to-english",
@@ -2527,11 +2515,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "A transliteration toolkit for converting between Indic scripts and English-script representations. It supports composable word-table, local-model, and language-model backends, with batch processing and structured output."
@@ -2541,7 +2525,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "layoutlens-ai-assisted-ui-testing",
@@ -2775,18 +2762,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Andrew Gelman. ",
-        {
-          "tag": "i",
-          "children": [
-            "Chance."
-          ]
-        },
-        " 2024."
+        }
       ],
       "description": [
         "A review of Noise: A Flaw in Human Judgment that examines variation in judgments made from the same information. We consider what disagreement reveals about uncertainty, skill, effort, preferences, and the institutions in which decisions are made."
@@ -2796,7 +2772,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Andrew Gelman"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Chance."
+          ]
+        },
+        " 2024."
+      ]
     },
     {
       "id": "significant-error-citations-to-research-with-publicized-statistical-errors",
@@ -2825,11 +2813,6 @@
         {
           "tag": "br"
         },
-        " With Ken Cor.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -2849,7 +2832,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Ken Cor"
+      ]
     },
     {
       "id": "propagation-of-error-approving-citations-to-problematic-research",
@@ -2879,11 +2865,6 @@
         {
           "tag": "br"
         },
-        " With Ken Cor.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -2903,7 +2884,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Ken Cor"
+      ]
     },
     {
       "id": "get-notified-when-cited-article-is-retracted",
@@ -3206,16 +3190,6 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Andrew Guess. ",
-        {
-          "tag": "i",
-          "children": [
-            "The Political Methodologist. 24(1): 2016"
-          ]
         }
       ],
       "description": [
@@ -3226,7 +3200,19 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Andrew Guess"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "The Political Methodologist. 24(1): 2016"
+          ]
+        },
+        "."
+      ]
     },
     {
       "id": "the-review-production-and-consumption-of-apsr-articles",
@@ -3368,7 +3354,6 @@
         {
           "tag": "br"
         },
-        " With Rajashekar Chintalapati and Suriyan Laohaprapanon. ",
         {
           "resource": "link-2"
         }
@@ -3410,7 +3395,11 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati",
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "sound-names-classify-names-based-on-sequence-of-sounds",
@@ -3510,11 +3499,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati and Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender."
@@ -3538,7 +3523,11 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati",
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "pranaam-predict-religion-from-name",
@@ -3564,11 +3553,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "Pranaam estimates how strongly a name follows patterns associated with Muslim names in its training data. It returns a calibrated score, abstention information, and artifact provenance for aggregate research, rather than establishing a person's religion."
@@ -3578,7 +3563,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "naamkaran-a-generative-model-for-names",
@@ -3604,11 +3592,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population."
@@ -3618,7 +3602,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "parsernaam-ml-assisted-name-parser",
@@ -3652,11 +3639,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati."
+        }
       ],
       "description": [
         "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention."
@@ -3675,7 +3658,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati"
+      ]
     },
     {
       "id": "instate-predict-spoken-language-from-last-name",
@@ -3709,11 +3695,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Rajashekar Chintalapati and Atul Dhingra."
+        }
       ],
       "description": [
         "Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language."
@@ -3736,7 +3718,11 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Rajashekar Chintalapati",
+        "Atul Dhingra"
+      ]
     },
     {
       "id": "inter-group-prejudice",
@@ -3860,18 +3846,6 @@
         {
           "tag": "br"
         },
-        " With Shanto Iyengar and Yphtach Lelkes. ",
-        {
-          "tag": "i",
-          "children": [
-            "Public Opinion Quarterly."
-          ]
-        },
-        " 76(3), 405–431, 2012.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -3938,7 +3912,20 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Shanto Iyengar",
+        "Yphtach Lelkes"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Public Opinion Quarterly."
+          ]
+        },
+        " 76(3), 405–431, 2012."
+      ]
     },
     {
       "id": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences",
@@ -4034,18 +4021,6 @@
         {
           "tag": "br"
         },
-        " With Doug Ahler. ",
-        {
-          "tag": "i",
-          "children": [
-            "The Journal of Politics"
-          ]
-        },
-        ". 80(3), 964–981, 2018.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4116,7 +4091,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Doug Ahler"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "The Journal of Politics"
+          ]
+        },
+        ". 80(3), 964–981, 2018."
+      ]
     },
     {
       "id": "typecast-a-routine-mental-shortcut-causes-party-stereotyping",
@@ -4163,18 +4150,6 @@
         {
           "tag": "br"
         },
-        " With Doug Ahler. ",
-        {
-          "tag": "i",
-          "children": [
-            "Political Behavior."
-          ]
-        },
-        " 2022. ",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4207,7 +4182,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Doug Ahler"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Political Behavior."
+          ]
+        },
+        " 2022."
+      ]
     },
     {
       "id": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability",
@@ -4262,22 +4249,6 @@
         {
           "tag": "br"
         },
-        " With Shanto Iyengar.",
-        {
-          "tag": "br"
-        },
-        " In ",
-        {
-          "tag": "i",
-          "children": [
-            "The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge."
-          ]
-        },
-        " 2018.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4318,7 +4289,20 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Shanto Iyengar"
+      ],
+      "publication": [
+        "In ",
+        {
+          "tag": "i",
+          "children": [
+            "The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge."
+          ]
+        },
+        " 2018."
+      ]
     },
     {
       "id": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns",
@@ -4345,11 +4329,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Shanto Iyengar."
+        }
       ],
       "description": [
         "Using national surveys and political advertising data, we examine how partisan hostility changes during campaigns. Evaluations of the opposing party become more negative over the campaign, with exposure to televised advertising, especially negative advertising, contributing to the pattern."
@@ -4368,7 +4348,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Shanto Iyengar"
+      ]
     },
     {
       "id": "partisan-vision-partisan-bias-in-simple-visual-evaluations",
@@ -4398,11 +4381,6 @@
         {
           "tag": "br"
         },
-        "With Carrie Roush and Alex Theodoridis.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4412,8 +4390,7 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. Across these tasks, the estimated partisan effects are generally small."
@@ -4423,7 +4400,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Carrie Roush",
+        "Alex Theodoridis"
+      ]
     },
     {
       "id": "the-hostile-audience-the-effect-of-access-to-broadband-internet-on-partisan-affect",
@@ -4462,18 +4443,6 @@
         {
           "tag": "br"
         },
-        " With Yphtach Lelkes and Shanto Iyengar. ",
-        {
-          "tag": "i",
-          "children": [
-            "American Journal of Political Science."
-          ]
-        },
-        " 61(1): 5–20, 2017.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4502,7 +4471,20 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Yphtach Lelkes",
+        "Shanto Iyengar"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "American Journal of Political Science."
+          ]
+        },
+        " 61(1): 5–20, 2017."
+      ]
     },
     {
       "id": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online",
@@ -4533,18 +4515,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Quantitative Description."
-          ]
-        },
-        " 2024.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4564,7 +4534,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Lucas Shen"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Quantitative Description."
+          ]
+        },
+        " 2024."
+      ]
     },
     {
       "id": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes",
@@ -4595,18 +4577,6 @@
         {
           "tag": "br"
         },
-        " With Jon Krosnick, Tobias Stark, and Floor van Maaren. ",
-        {
-          "tag": "i",
-          "children": [
-            "Sociological Methods and Research."
-          ]
-        },
-        "51(2), 605–631, 2019.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4626,7 +4596,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Jon Krosnick",
+        "Tobias Stark",
+        "Floor van Maaren"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Sociological Methods and Research."
+          ]
+        },
+        "51(2), 605–631, 2019."
+      ]
     },
     {
       "id": "what-and-who-is-on-network-television",
@@ -4674,12 +4658,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        " ",
-        {
-          "tag": "br"
-        },
-        "With Asha Sood."
+        }
       ],
       "description": [
         "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows."
@@ -4689,7 +4668,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Asha Sood"
+      ]
     },
     {
       "id": "the-face-of-crime-in-prime-time-evidence-from-law-and-order",
@@ -4728,11 +4710,6 @@
         {
           "tag": "br"
         },
-        " With Daniel Trielli.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4761,7 +4738,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Daniel Trielli"
+      ]
     },
     {
       "id": "extreme-recall-which-politicians-come-to-mind",
@@ -4800,18 +4780,6 @@
         {
           "tag": "br"
         },
-        " With Daniel Weitzel. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Elections, Public Opinion and Parties."
-          ]
-        },
-        " 2024. ",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -4840,7 +4808,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Daniel Weitzel"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Elections, Public Opinion and Parties."
+          ]
+        },
+        " 2024."
+      ]
     },
     {
       "id": "what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics",
@@ -4859,18 +4839,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        "With Ian O'Flynn. ",
-        {
-          "tag": "i",
-          "children": [
-            "Deliberative Mini-Publics."
-          ]
-        },
-        " 41–58, 2014. ECPR Press."
+        }
       ],
       "description": [
         "We assess deliberative polls and other mini-publics using Robert Dahl's criteria for a democratic process: inclusion, effective participation, enlightened understanding, voting equality, and control of the agenda. The chapter examines where these institutions meet the criteria and where their democratic claims require qualification."
@@ -4880,7 +4849,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Ian O'Flynn"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Deliberative Mini-Publics."
+          ]
+        },
+        " 41–58, 2014. ECPR Press."
+      ]
     },
     {
       "id": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments",
@@ -4945,11 +4926,6 @@
         },
         " "
       ],
-      "authors": [
-        "Gaurav Sood",
-        "Robert C. Luskin",
-        "James S. Fishkin"
-      ],
       "description": [
         "Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we compare the reasons articulated by returning participants and contemporaneous controls. Participants gave somewhat more reasons, but the estimate is imprecise and participation was self-selected. The samples differed little in directional balance. Among returnees, repertoires moved toward balance chiefly because supporting reasons declined, and the estimate is sensitive to coder choice."
       ],
@@ -4958,7 +4934,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-20",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin",
+        "James S. Fishkin"
+      ]
     },
     {
       "id": "deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations",
@@ -4989,18 +4969,6 @@
         {
           "tag": "br"
         },
-        " With Robert Luskin, Kyu Hahn, and James Fishkin. ",
-        {
-          "tag": "i",
-          "children": [
-            "The British Journal of Political Science"
-          ]
-        },
-        ". 52(3), 1205–1225, 2022.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5020,7 +4988,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert Luskin",
+        "Kyu Hahn",
+        "James Fishkin"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "The British Journal of Political Science"
+          ]
+        },
+        ". 52(3), 1205–1225, 2022."
+      ]
     },
     {
       "id": "steadier-not-closer-separating-convergence-from-crystallization-in-deliberative-polls",
@@ -5085,9 +5067,6 @@
           "resource": "linked-data"
         }
       ],
-      "authors": [
-        "Gaurav Sood"
-      ],
       "description": [
         "Observed within-group variance mixes true convergence with changing measurement error. Lower error at T2 can manufacture homogenization and raise the intraclass correlation, but classical independent error cannot increase the absolute variance of group means. The paper proves these boundaries and specifies a latent partially nested model that separates convergence, between-group divergence, and crystallization. The full empirical model has not yet been fitted."
       ],
@@ -5135,18 +5114,6 @@
         {
           "tag": "br"
         },
-        " With Ian O'Flynn, Jalal Mistaffa, and Nahwi Saeed. ",
-        {
-          "tag": "i",
-          "children": [
-            "Democratization"
-          ]
-        },
-        ". 26(7), 1299–1317, 2019.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5170,7 +5137,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Ian O'Flynn",
+        "Jalal Mistaffa",
+        "Nahwi Saeed"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Democratization"
+          ]
+        },
+        ". 26(7), 1299–1317, 2019."
+      ]
     },
     {
       "id": "problem-solving",
@@ -5230,11 +5211,6 @@
         {
           "tag": "br"
         },
-        " With Doug Ahler.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5254,7 +5230,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Doug Ahler"
+      ]
     },
     {
       "id": "mixed-signals-movie-quality-assessments-across-platforms",
@@ -5325,11 +5304,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Tompson, Jennifer Agiesta, and Dennis Junius."
+        }
       ],
       "description": [
         "Surveys from 2010 and 2012 find substantial misunderstanding of the Affordable Care Act despite support for many of its provisions. The analysis estimates that fuller understanding could increase support for the law; this is a modeled implication, rather than a demonstrated effect of an information campaign."
@@ -5359,7 +5334,16 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Wendy Gross",
+        "Tobias Stark",
+        "Jon Krosnick",
+        "Josh Pasek",
+        "Trevor Tompson",
+        "Jennifer Agiesta",
+        "Dennis Junius"
+      ]
     },
     {
       "id": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play",
@@ -5378,18 +5362,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross. ",
-        {
-          "tag": "i",
-          "children": [
-            "Annals of the American Academy of Political and Social Science."
-          ]
-        },
-        " 2022."
+        }
       ],
       "description": [
         "We examine whether Americans evaluate the Affordable Care Act through beliefs about its individual provisions. Despite partisan disagreement, both Democrats' and Republicans' evaluations are associated with what they believe the law does and how confident they are in those beliefs."
@@ -5399,7 +5372,25 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Gabriel Miao Li",
+        "Josh Pasek",
+        "Jon Krosnick",
+        "Tobias Stark",
+        "Jennifer Agiesta",
+        "Trevor Tompson",
+        "Wendy Gross"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Annals of the American Academy of Political and Social Science."
+          ]
+        },
+        " 2022."
+      ]
     },
     {
       "id": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues",
@@ -5446,18 +5437,6 @@
         {
           "tag": "br"
         },
-        " With Don Green, Oliver Hyman-Metzger, and Michelle Zee. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Political Economy Microeconomics."
-          ]
-        },
-        " 2023.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5490,7 +5469,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Don Green",
+        "Oliver Hyman-Metzger",
+        "Michelle Zee"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Political Economy Microeconomics."
+          ]
+        },
+        " 2023."
+      ]
     },
     {
       "id": "missing-women-on-indian-streets",
@@ -5537,11 +5530,6 @@
         {
           "tag": "br"
         },
-        " With Varun Karekurve-Ramachandra.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5575,7 +5563,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Varun Karekurve-Ramachandra"
+      ]
     },
     {
       "id": "son-bias-in-the-us-evidence-from-business-names",
@@ -5606,11 +5597,6 @@
         {
           "tag": "br"
         },
-        " With Walter Guillioli.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5623,8 +5609,7 @@
         },
         {
           "tag": "br"
-        },
-        " "
+        }
       ],
       "description": [
         "We compare businesses named with 'son' or 'sons' and 'daughter' or 'daughters' using state business registries. Across 40 states, the median ratio is 12 to 1, with limitations in registry searches making the analysis a conservative accounting of the imbalance."
@@ -5634,7 +5619,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Walter Guillioli"
+      ]
     },
     {
       "id": "which-women-are-missing-adult-sex-ratio-by-last-name",
@@ -5653,12 +5641,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        " ",
-        {
-          "tag": "br"
-        },
-        "With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels."
@@ -5668,7 +5651,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "missing-women-on-the-streets",
@@ -5785,11 +5771,6 @@
         {
           "tag": "br"
         },
-        "With Suriyan Laohaprapanon.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5799,8 +5780,7 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "We classify roughly 5.4 million webpages from 276 British news outlets to estimate how much coverage concerns topics outside public affairs. A classifier trained using article URL categories and checked against hand coding estimates that about 39% of articles are apolitical news."
@@ -5810,7 +5790,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "strength-in-numbers-multiple-measures-of-media-ideology",
@@ -5840,11 +5823,6 @@
         {
           "tag": "br"
         },
-        "With Philip Habel.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5854,8 +5832,7 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "We combine text-based and audience-based measures of British news outlets' ideology. Parliamentary speeches, party manifestos, and Twitter following patterns provide complementary information about ideological position and differences between measurement approaches."
@@ -5865,7 +5842,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Philip Habel"
+      ]
     },
     {
       "id": "measuring-agendas-and-positions-on-agendas",
@@ -5896,11 +5876,6 @@
         {
           "tag": "br"
         },
-        "With Andrew Guess.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -5910,8 +5885,7 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "We distinguish which issues news outlets cover from the positions they take within those issues. A supervised topic model and congressional-speech-based slant measures reveal systematic differences across 255 news programs on 50 television channels."
@@ -5921,7 +5895,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Andrew Guess"
+      ]
     },
     {
       "id": "notnews-predict-the-type-of-news-based-on-story-text-and-url",
@@ -5947,11 +5924,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "A Python library for classifying news by topic and distinguishing hard from soft news. It offers URL-pattern rules, trained US and UK text models, and optional language-model classification through Python and command-line interfaces."
@@ -5961,7 +5934,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "unreadable-news-how-readable-is-american-news",
@@ -5980,11 +5956,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Lucas Shen."
+        }
       ],
       "description": [
         "We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information."
@@ -5994,7 +5966,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Lucas Shen"
+      ]
     },
     {
       "id": "follow-your-ideology-a-measure-of-ideological-location-of-media-sources",
@@ -6013,11 +5988,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Pablo Barberá."
+        }
       ],
       "description": [
         "We estimate the ideological positions of more than 2,300 media sources using the following patterns of politically interested social-media users. Comparisons with content-based measures support the approach, and applications examine journalists' ideology and ideological diversity within outlets."
@@ -6027,7 +5998,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Pablo Barberá"
+      ]
     },
     {
       "id": "the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news",
@@ -6057,18 +6031,6 @@
         {
           "tag": "br"
         },
-        " With Marcel Garz, Daniel Stone, and Justin Wallace. ",
-        {
-          "tag": "i",
-          "children": [
-            "European Journal of Political Economy"
-          ]
-        },
-        ".",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6088,7 +6050,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Marcel Garz",
+        "Daniel Stone",
+        "Justin Wallace"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "European Journal of Political Economy"
+          ]
+        },
+        "."
+      ]
     },
     {
       "id": "don-t-expose-yourself-discretionary-exposure-to-political-information",
@@ -6141,18 +6117,6 @@
         {
           "tag": "br"
         },
-        " With Yphtach Lelkes. ",
-        {
-          "tag": "i",
-          "children": [
-            "Oxford Research Encyclopedia of Politics"
-          ]
-        },
-        ". 2018.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6191,7 +6155,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Yphtach Lelkes"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Oxford Research Encyclopedia of Politics"
+          ]
+        },
+        ". 2018."
+      ]
     },
     {
       "id": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times",
@@ -6251,11 +6227,6 @@
         {
           "tag": "br"
         },
-        " With Daniel Weitzel.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6275,7 +6246,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Daniel Weitzel"
+      ]
     },
     {
       "id": "partisan-imbalance-in-politifact",
@@ -6330,11 +6304,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Derek Willis."
+        }
       ],
       "description": [
         "A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections."
@@ -6344,7 +6314,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Derek Willis"
+      ]
     },
     {
       "id": "cnn-transcripts-2000-2025",
@@ -6501,18 +6474,6 @@
         {
           "tag": "br"
         },
-        " With Markus Prior and Kabir Khanna. ",
-        {
-          "tag": "i",
-          "children": [
-            "Quarterly Journal of Political Science."
-          ]
-        },
-        " 10(4), 489–518, 2015.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6574,7 +6535,20 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Markus Prior",
+        "Kabir Khanna"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Quarterly Journal of Political Science."
+          ]
+        },
+        " 10(4), 489–518, 2015."
+      ]
     },
     {
       "id": "motivated-responding-in-studies-of-factual-learning",
@@ -6621,18 +6595,6 @@
         {
           "tag": "br"
         },
-        " With Kabir Khanna. ",
-        {
-          "tag": "i",
-          "children": [
-            "Political Behavior"
-          ]
-        },
-        ". 40(1): 79–101, 2018.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6666,7 +6628,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Kabir Khanna"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Political Behavior"
+          ]
+        },
+        ". 40(1): 79–101, 2018."
+      ]
     },
     {
       "id": "a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps",
@@ -6713,18 +6687,6 @@
         {
           "tag": "br"
         },
-        " With Carrie Roush. ",
-        {
-          "tag": "i",
-          "children": [
-            "Quarterly Journal of Political Science."
-          ]
-        },
-        " 18(1), 2023. ",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6760,7 +6722,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Carrie Roush"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Quarterly Journal of Political Science."
+          ]
+        },
+        " 18(1), 2023."
+      ]
     },
     {
       "id": "the-waters-of-casablanca-on-political-misinformation",
@@ -6808,10 +6782,6 @@
           "resource": "replication"
         }
       ],
-      "authors": [
-        "Robert C. Luskin",
-        "Gaurav Sood"
-      ],
       "description": [
         "Misinformation is a confidently held false belief, distinct from knowledge, mere belief, and ignorance. Multiple-choice items cannot tell it from guessing; asking how definitely true or false each statement is can. In four surveys that randomly assigned the two formats, the scale finds far less misinformation about well-publicized falsehoods, and much smaller partisan gaps, than multiple-choice items do."
       ],
@@ -6820,7 +6790,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin"
+      ]
     },
     {
       "id": "mis-measuring-political-knowledge",
@@ -6856,7 +6829,6 @@
         {
           "tag": "br"
         },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -6868,11 +6840,6 @@
           "resource": "replication"
         }
       ],
-      "authors": [
-        "Robert C. Luskin",
-        "Gaurav Sood",
-        "Daniel Weitzel"
-      ],
       "description": [
         "Revisionist studies argue that surveys understate political knowledge. Randomized experiments in three online surveys, and a recount of ANES and NAES items and don't-know probes, find little hidden knowledge: photos lower correct identification of officials, menus and probes add little beyond guessing, and asking how sure people are finds far less knowledge than multiple choice."
       ],
@@ -6881,7 +6848,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin",
+        "Daniel Weitzel"
+      ]
     },
     {
       "id": "misinformation-about-misinformation-of-headlines-and-survey-design",
@@ -6929,12 +6900,6 @@
           "resource": "replication"
         }
       ],
-      "authors": [
-        "Robert C. Luskin",
-        "Gaurav Sood",
-        "Yul Min Park",
-        "Joshua Blank"
-      ],
       "description": [
         "Media-poll misinformation items rarely offer a 'don't know' and usually ask what respondents think. In a survey experiment, offering and encouraging 'don't know' cut incorrect answers from 32% to 20%, repeating the false claim in the question changed nothing, and asking how definitely true or false each statement is cut them to 7%."
       ],
@@ -6943,7 +6908,12 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin",
+        "Yul Min Park",
+        "Joshua Blank"
+      ]
     },
     {
       "id": "misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation",
@@ -6982,18 +6952,6 @@
         {
           "tag": "br"
         },
-        " With Josh Pasek and Jon Krosnick. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Communication."
-          ]
-        },
-        " 65(4): 660–673, 2015 ",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7024,7 +6982,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Josh Pasek",
+        "Jon Krosnick"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Communication."
+          ]
+        },
+        " 65(4): 660–673, 2015",
+        "."
+      ]
     },
     {
       "id": "guessing-and-forgetting-a-latent-class-model-for-measuring-learning",
@@ -7084,18 +7056,6 @@
         {
           "tag": "br"
         },
-        " With Ken Cor. ",
-        {
-          "tag": "i",
-          "children": [
-            "Political Analysis"
-          ]
-        },
-        ". 24(2): 226–242, 2016. ",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7118,7 +7078,7 @@
           "tag": "span",
           "class": "highlight",
           "children": [
-            "REVIEW"
+            "Review"
           ]
         },
         ": '... a real contribution to the literature.' — ",
@@ -7151,7 +7111,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Ken Cor"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Political Analysis"
+          ]
+        },
+        ". 24(2): 226–242, 2016."
+      ]
     },
     {
       "id": "measuring-learning-in-informative-processes",
@@ -7187,10 +7159,6 @@
         {
           "tag": "br"
         },
-        " With Robert Luskin and Ariel Helfer.",
-        {
-          "tag": "br"
-        },
         " ",
         {
           "tag": "span",
@@ -7212,7 +7180,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert Luskin",
+        "Ariel Helfer"
+      ]
     },
     {
       "id": "a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap",
@@ -7243,18 +7215,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen and Daniel Weitzel. ",
-        {
-          "tag": "i",
-          "children": [
-            "Public Opinion Quarterly."
-          ]
-        },
-        " 2025.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7264,11 +7224,23 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "Research suggests that partisan gaps in political knowledge with partisan implications are wide and widespread. Using a series of experiments, we investigate the extent to which partisan gaps in commercial surveys are a result of differences in beliefs than motivated guessing. Knowledge items on commercial surveys often have features that encourage guessing. We find that removing such features yields scales with greater reli- ability and higher criterion validity. More substantively, partisan gaps on scales without these “inflationary” features are roughly 40% smaller. Thus, contrary to Prior, Sood and Khanna (2015), who find that the upward bias is explained by the knowledgeable deliberately marking the wrong answer (partisan cheerleading), our data suggest, in line with Bullock et al. (2015) and Graham and Yair (2023), that partisan gaps on commercial surveys are strongly upwardly biased by motivated guessing by the ignorant. Relatedly, we also find that partisans know less than what toplines of commercial polls suggest."
+      ],
+      "coauthors": [
+        "Lucas Shen",
+        "Daniel Weitzel"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Public Opinion Quarterly."
+          ]
+        },
+        " 2025."
       ]
     },
     {
@@ -7300,11 +7272,6 @@
         {
           "tag": "br"
         },
-        "With Carrie Roush.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7314,11 +7281,13 @@
         },
         {
           "resource": "link-2"
-        },
-        " "
+        }
       ],
       "description": [
         "Roush and Sood (2023) use a dataset of 162,083 responses to 187 items on 47 surveys to find that partisan gaps are smaller and less frequent than commonly understood. The average is a mere six and a half points and gaps’ “signs” run counter to expectations roughly 30% of the time. However, one exception is the size of gaps on retrospection items on the ANES, which are considerably bigger. These retrospection items use vague response options, e.g., ‘About the same.’ Vague response options can inflate partisan gaps by offering partisans the opportunity to interpret the same data differently. We test this assumption with a novel survey experiment. We present partisans data indicating a small improvement in economic indicators and manipulate the partisan tint of the change by manipulating who is responsible for the change. We find that significantly fewer partisans pick the option that ’[things] got better’ when presented with an out-partisan cue than a co-partisan cue. Our findings suggest that vague options can induce knowledge gaps even when partisans have the same information."
+      ],
+      "coauthors": [
+        "Carrie Roush"
       ]
     },
     {
@@ -7349,18 +7318,6 @@
         {
           "tag": "br"
         },
-        " With Doug Ahler. ",
-        {
-          "tag": "i",
-          "children": [
-            "Misinformation and Mass Audiences."
-          ]
-        },
-        " 2018. University of Texas Press.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7380,7 +7337,19 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Doug Ahler"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Misinformation and Mass Audiences."
+          ]
+        },
+        " 2018. University of Texas Press."
+      ]
     },
     {
       "id": "streetsense-learning-from-google-street-view",
@@ -7417,36 +7386,33 @@
         {
           "resource": "primary"
         },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "link-2"
+        },
+        {
+          "tag": "br"
+        },
         " ",
         {
           "tag": "span",
-          "class": "coauthor",
+          "class": "entry-icon",
           "children": [
-            " With Suriyan Laohaprapanon and Kimberly Ortleb. ",
-            {
-              "resource": "link-2"
-            },
-            {
-              "tag": "br"
-            },
-            " ",
-            {
-              "tag": "span",
-              "class": "entry-icon",
-              "children": [
-                "🗃"
-              ]
-            },
-            {
-              "resource": "link-3"
-            },
-            " "
+            "🗃"
           ]
         },
-        " "
+        {
+          "resource": "link-3"
+        }
       ],
       "description": [
         "How good are the public services and the public infrastructure? Does their quality vary by income? These are vital questions—they shed light on how well the government is doing its job, the consequences of disparities in local funding, etc. But there is little good data on many of these questions. We fill this gap by describing a scalable method of getting data on one crucial piece of public infrastructure: roads. We assess the quality of roads and sidewalks by exploiting data from Google Street View. We randomly sample locations on major roads, query Google Street View images for those locations and code the images using Amazon’s Mechanical Turk. We apply this method to assess the quality of roads in Bangkok, Jakarta, Lagos, and Wayne County, Michigan. Jakarta’s roads have nearly four times the potholes than roads of any other city. Surprisingly, the proportion of road segments with potholes in Bangkok, Lagos, and Wayne is about the same, between .06 and .07. Using the data, we also estimate the relation between the condition of the roads and local income in Wayne, MI. We find that roads in more affluent census tracts have somewhat fewer potholes."
+      ],
+      "coauthors": [
+        "Suriyan Laohaprapanon",
+        "Kimberly Ortleb"
       ]
     },
     {
@@ -7502,19 +7468,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "coauthor",
-          "children": [
-            "With Noah Finberg."
-          ]
-        },
-        " "
+        }
       ],
       "description": [
         "We collect reported waiting times for California DMV field offices to study variation by location, day, and hour. The analysis also examines relationships between waiting times and local sociodemographic characteristics."
@@ -7525,7 +7479,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Noah Finberg"
+      ]
     },
     {
       "id": "elo-ratings-of-international-cricket-teams-by-format",
@@ -7552,11 +7509,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Derek Willis."
+        }
       ],
       "description": [
         "We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time."
@@ -7575,7 +7528,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Derek Willis"
+      ]
     },
     {
       "id": "war-ratings-for-cricketers",
@@ -7594,11 +7550,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Derek Willis."
+        }
       ],
       "description": [
         "We develop batting and bowling Wins Above Replacement measures for men's and women's one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins."
@@ -7608,7 +7560,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Derek Willis"
+      ]
     },
     {
       "id": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match",
@@ -7686,18 +7641,6 @@
         {
           "tag": "br"
         },
-        " With Apoorva Lal, Derek Willis, and Avidit Acharya. ",
-        {
-          "tag": "i",
-          "children": [
-            "Journal of Sports Analytics."
-          ]
-        },
-        " 2023.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7753,7 +7696,21 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Apoorva Lal",
+        "Derek Willis",
+        "Avidit Acharya"
+      ],
+      "publication": [
+        {
+          "tag": "i",
+          "children": [
+            "Journal of Sports Analytics."
+          ]
+        },
+        " 2023."
+      ]
     },
     {
       "id": "the-effect-of-gender-quotas-on-some-qualities-of-elites",
@@ -7885,11 +7842,6 @@
         {
           "tag": "br"
         },
-        " With Varun Karekurve-Ramachandra.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -7940,7 +7892,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Varun Karekurve-Ramachandra"
+      ]
     },
     {
       "id": "the-older-half-spousal-age-gap-in-india",
@@ -7967,11 +7922,7 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Suriyan Laohaprapanon."
+        }
       ],
       "description": [
         "Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses' ages."
@@ -7990,7 +7941,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Suriyan Laohaprapanon"
+      ]
     },
     {
       "id": "unlanded-distribution-of-land-in-bihar",
@@ -8021,11 +7975,6 @@
         {
           "tag": "br"
         },
-        " With Lucas Shen.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -8048,7 +7997,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Lucas Shen"
+      ]
     },
     {
       "id": "description-invariance-in-risky-choice-framing",
@@ -8084,11 +8036,6 @@
         {
           "tag": "br"
         },
-        " With John Protzko and Jon Krosnick.",
-        {
-          "tag": "br"
-        },
-        " ",
         {
           "tag": "span",
           "class": "entry-icon",
@@ -8108,7 +8055,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "John Protzko",
+        "Jon Krosnick"
+      ]
     },
     {
       "id": "preen-python-package-development",
@@ -8252,11 +8203,7 @@
         },
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " With Atul Dhingra."
+        }
       ],
       "description": [
         "Scripts and linked tools collect and parse Indian electoral rolls published as PDFs by state election authorities. The project provides a foundation for research using recorded names, ages, gender labels, family relationships, and electoral geography."
@@ -8280,7 +8227,10 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Atul Dhingra"
+      ]
     },
     {
       "id": "public-sector-salaries",
@@ -8429,11 +8379,6 @@
           "resource": "source-data"
         }
       ],
-      "authors": [
-        "Robert C. Luskin",
-        "Gaurav Sood",
-        "James S. Fishkin"
-      ],
       "description": [
         "In four Deliberative Polls with control groups, participation raised factual knowledge by about half a standard deviation, and much of the gain lasted a year. Every one of 22 other polls shows learning, about twice as much face to face as online. A common correction for lucky guesses finds nearly as much learning among untreated controls; a latent class model does not. Small groups are composed as if at random, and groupmates' knowledge has no detectable effect on learning."
       ],
@@ -8442,7 +8387,11 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-22",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin",
+        "James S. Fishkin"
+      ]
     },
     {
       "id": "deliberation-and-misinformation",
@@ -8490,10 +8439,6 @@
           "resource": "replication"
         }
       ],
-      "authors": [
-        "Robert C. Luskin",
-        "Gaurav Sood"
-      ],
       "description": [
         "Across 19 misinformation-type items in seven Deliberative Polls, incorrect answers fell from 23% to 10%, and participants who began wrong were as likely to end right as those who began not knowing. In polls with control groups, attending cut overestimates of the number of undocumented immigrants by 15 points, but reduced confident denial of human-caused warming only slightly and not durably."
       ],
@@ -8502,7 +8447,10 @@
         "kind": "manuscript",
         "reviewed_on": "2026-09-23",
         "text_type": "summary"
-      }
+      },
+      "coauthors": [
+        "Robert C. Luskin"
+      ]
     }
   ]
 }

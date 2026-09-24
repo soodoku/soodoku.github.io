@@ -67,7 +67,6 @@
             "class": {
               "enum": [
                 "highlight",
-                "coauthor",
                 "resource-links",
                 "entry-icon"
               ]
@@ -217,32 +216,12 @@
             "paper-toggle"
           ]
         },
-        "authors": {
+        "publication": {
           "type": "array",
           "minItems": 1,
           "items": {
-            "type": "string",
-            "minLength": 1
+            "$ref": "#/$defs/node"
           }
-        },
-        "publication": {
-          "type": "object",
-          "properties": {
-            "venue": {
-              "type": "string",
-              "minLength": 1
-            },
-            "year": {
-              "type": "integer",
-              "minimum": 1800,
-              "maximum": 2999
-            }
-          },
-          "required": [
-            "venue",
-            "year"
-          ],
-          "additionalProperties": false
         },
         "supporting": {
           "type": "object",
@@ -301,6 +280,15 @@
             "text_type"
           ],
           "additionalProperties": false
+        },
+        "coauthors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
         }
       },
       "required": [
