@@ -59,9 +59,6 @@
           "title": "Record Linkage",
           "children": [
             {
-              "entry": "inference-with-fuzzy-joined-data"
-            },
-            {
               "entry": "setjoin-record-linkage-that-preserves-group-structure"
             },
             {
@@ -1113,61 +1110,6 @@
       "description": [
         "LLM-as-judge systems produce numerical scores, but downstream decisions often require pairwise comparisons: which response is better? Converting scores to win rates requires calibration—the mapping from score differences to win probabilities. We develop calibrated estimators for pairwise win rates from cardinal LLM judge scores, accounting for judge miscalibration and non-transitivity in preferences."
       ]
-    },
-    {
-      "id": "inference-with-fuzzy-joined-data",
-      "kind": "paper",
-      "title": "Inference With Fuzzy-Joined Data",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/fuzzy_joins_inference.pdf",
-          "new_tab": true,
-          "source": {
-            "repo": "finite-sample/fuzzy",
-            "ref": "main",
-            "path": "ms/fuzzy_joins_inference.pdf"
-          }
-        },
-        {
-          "id": "replication",
-          "kind": "repository",
-          "role": "replication",
-          "url": "https://github.com/finite-sample/fuzzy",
-          "label": "Replication Materials",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🗃"
-          ]
-        },
-        {
-          "resource": "replication"
-        }
-      ],
-      "description": [
-        "Fuzzy joins create uncertainty that depends on the downstream estimand. This note explains why expanding candidate matches or averaging their covariates can distort regression estimates, discusses multiple imputation and validation-sample regression calibration, and examines uncertainty inherited from earlier joins in the data product."
-      ],
-      "description_source": {
-        "url": "papers/fuzzy_joins_inference.pdf",
-        "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
-        "text_type": "summary"
-      }
     },
     {
       "id": "setjoin-record-linkage-that-preserves-group-structure",
