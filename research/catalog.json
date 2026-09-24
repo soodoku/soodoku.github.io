@@ -1138,7 +1138,7 @@
         }
       ],
       "description": [
-        "Standard record linkage matches individuals optimally but ignores group structure. When household members should stay together, Hungarian matching might send them to different target households because it maximizes individual scores. setjoin uses two-level assignment—first assigning groups to groups, then matching within—achieving 4x better group coherence while also improving person-level accuracy in simulations with realistic ambiguity."
+        "setjoin implements group-constrained record matching: it assigns source groups to target groups, then matches records within the assigned groups. This is useful when both files have trustworthy group membership and the linkage should preserve it. Its current performance example is synthetic; gains on observed panel data have not been established."
       ]
     },
     {
