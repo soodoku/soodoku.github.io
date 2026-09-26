@@ -8304,12 +8304,12 @@
         }
       ],
       "description": [
-        "In four Deliberative Polls with control groups, participation raised factual knowledge by about half a standard deviation, and much of the gain lasted a year. Every one of 22 other polls shows learning, about twice as much face to face as online. A common correction for lucky guesses finds nearly as much learning among untreated controls; a latent class model does not. Small groups are composed as if at random, and groupmates' knowledge has no detectable effect on learning."
+        "In four Deliberative Polls with control groups, participation raised factual knowledge by 0.46 standard deviations; in one poll followed for a year, 45% of the effect remained. Across 21 polls without controls, the share of items answered correctly rose by 0.133, about twice as much face to face as online. Participants with less initial knowledge and those without degrees gained somewhat more. Small groups were composed as if at random, and groupmates' knowledge had no detectable effect on learning."
       ],
       "description_source": {
         "url": "papers/deliberation_learning.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-22",
+        "reviewed_on": "2026-09-26",
         "text_type": "summary"
       },
       "coauthors": [
