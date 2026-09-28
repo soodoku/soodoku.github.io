@@ -8304,12 +8304,12 @@
         }
       ],
       "description": [
-        "Respondent-level answers to 245 knowledge questions span 31 Deliberative Polls held from 1994 to 2024 across Europe, Australia, the Americas, Africa, and Asia. The main attendee sample has 8,800 participants in 592 groups across 28 polls with verified group identifiers. Its pooled proportion correct rises by 0.136, or 0.180 after item-level adjustment for guessing; the broader 31-poll results appear in the appendix. Four polls offer attendee-control comparisons: three with baseline knowledge interviews yield a pooled adjusted gap of 0.49 standard deviations, while Northern Ireland has a T3-only comparison. Groupmates' prior knowledge has no detectable adjusted association with T2 scores, though baseline sorting limits a causal reading."
+        "The main analysis follows 8,800 participants in 592 discussion groups across 28 Deliberative Polls held from 1994 to 2021, covering elections, energy, health, crime, climate, and other public issues. Equally weighted across polls, observed knowledge gains average 13.6 percentage points, a 37.5% increase relative to initial scores; guessing-adjusted learning averages 18.1 points. In America in One Room and its climate poll, attendee gains exceed control gains by 13.1 and 9.3 points, or 15.0 and 13.0 after guessing adjustment. All intervals use a hierarchical bootstrap of polls and discussion groups. Control comparisons remain subject to selection into attendance, and peer associations are descriptive."
       ],
       "description_source": {
         "url": "papers/deliberation_learning.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-22",
+        "reviewed_on": "2026-09-27",
         "text_type": "summary"
       },
       "coauthors": [
