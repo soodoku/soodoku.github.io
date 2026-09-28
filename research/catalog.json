@@ -8304,7 +8304,7 @@
         }
       ],
       "description": [
-        "The main analysis follows 8,800 participants in 592 discussion groups across 28 Deliberative Polls held from 1994 to 2021, covering elections, energy, health, crime, climate, and other public issues. Equally weighted across polls, observed knowledge gains average 13.6 percentage points, a 37.5% increase relative to initial scores; guessing-adjusted learning averages 18.1 points. In America in One Room and its climate poll, attendee gains exceed control gains by 13.1 and 9.3 points, or 15.0 and 13.0 after guessing adjustment. All intervals use a hierarchical bootstrap of polls and discussion groups. Control comparisons remain subject to selection into attendance, and peer associations are descriptive."
+        "The main analysis follows 8,800 participants in 592 discussion groups across 28 Deliberative Polls held from 1994 to 2021, covering elections, energy, health, crime, climate, and other public issues. Equally weighted across polls, observed knowledge gains average 13.6 percentage points, a 37.5% increase relative to initial scores; guessing-adjusted learning averages 18.1 percentage points. Across America in One Room and its climate poll, attendee gains exceed control gains by an average of 11.2 percentage points, or 14.0 percentage points after guessing adjustment. Hierarchical models relate individual gains to baseline knowledge and group characteristics, with confidence intervals from a hierarchical bootstrap."
       ],
       "description_source": {
         "url": "papers/deliberation_learning.pdf",
