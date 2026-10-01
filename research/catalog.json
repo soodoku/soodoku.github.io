@@ -7683,12 +7683,12 @@
         }
       ],
       "description": [
-        "We compare elected officials in women-reserved and open seats across rural and urban Indian local governments. Differences in education and pending criminal cases vary across settings; the comparisons require conditional comparability for a causal interpretation and do not establish effects on performance in office."
+        "Among village heads in Bihar and Uttar Pradesh, winners of women-reserved seats are much less likely to hold a university degree; among Kerala's council members and in Mumbai and Delhi, graduate shares are about the same. In village, block and city offices with occupation records, reserved-seat winners are far more likely to report no occupation of their own, and in the two cities they are less likely to face pending criminal cases."
       ],
       "description_source": {
         "url": "papers/quota_elite_quality.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-01",
         "text_type": "summary"
       }
     },
