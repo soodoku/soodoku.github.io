@@ -414,6 +414,9 @@
             },
             {
               "entry": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes"
+            },
+            {
+              "entry": "principled-partisan-affect-evidence-from-two-survey-experiments"
             }
           ]
         },
@@ -8499,6 +8502,65 @@
       "coauthors": [
         "Robert C. Luskin"
       ]
+    },
+    {
+      "id": "principled-partisan-affect-evidence-from-two-survey-experiments",
+      "kind": "paper",
+      "title": "Principled Partisan Affect? Evidence from Two Survey Experiments",
+      "primary_resource": "manuscript",
+      "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/principled.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/principled",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/principled",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "coauthors": [
+        "Douglas J. Ahler",
+        "Carolyn E. Roush"
+      ],
+      "description": [
+        "Do partisans reward fair-minded opponents and penalize biased allies? A 2013 MTurk experiment varied reports of declining versus sustained support for a party leader after controversy. A 2018 YouGov experiment portrayed opponents as fair-minded or allies as biased. In YouGov, the fair-minded-opposition article improved favorable trait ratings by 2.5 points on a 0–100 scale (95% CI: −0.3 to 5.4), but changed warmth by only 0.5 points (−2.8 to 3.9). The trait result is suggestive and sensitive to weighting and item completeness. The article packages and missing target-by-portrayal conditions prevent a clean test of a partisan double standard."
+      ],
+      "description_source": {
+        "url": "papers/principled.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-04",
+        "text_type": "summary"
+      }
     }
   ]
 }
