@@ -509,6 +509,9 @@
               "entry": "description-invariance-in-risky-choice-framing"
             },
             {
+              "entry": "is-cynicism-taken-as-evidence-of-political-sophistication"
+            },
+            {
               "entry": "mixed-signals-movie-quality-assessments-across-platforms"
             },
             {
@@ -5158,6 +5161,64 @@
       "coauthors": [
         "Doug Ahler"
       ]
+    },
+    {
+      "id": "is-cynicism-taken-as-evidence-of-political-sophistication",
+      "kind": "paper",
+      "title": "Is Cynicism Taken as Evidence of Political Sophistication?",
+      "primary_resource": "manuscript",
+      "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/sophisticated_cynic.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/sophisticated_cynic",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/sophisticated_cynic",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "coauthors": [
+        "Alexander G. Theodoridis"
+      ],
+      "description": [
+        "In a two-arm comparison in the 2020 Cooperative Election Study, 711 respondents rated one of two tweets. Both said the system rewards bad behavior; one said politics attracts good people, the other bad people. The bad-people tweet scored 6.2 points lower in perceived sophistication on a 0–100 scale (95% CI: −9.4 to −3.0). Covariate adjustment and survey weighting preserve the negative difference. A causal interpretation requires random assignment within the rating sample; the original questionnaire and randomization program are unavailable."
+      ],
+      "description_source": {
+        "url": "papers/sophisticated_cynic.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-04",
+        "text_type": "summary"
+      }
     },
     {
       "id": "mixed-signals-movie-quality-assessments-across-platforms",
