@@ -89,6 +89,9 @@
               "entry": "reporoulette-randomly-sample-github-repositories"
             },
             {
+              "entry": "total-error"
+            },
+            {
               "entry": "unbiased-regression-with-costly-item-labels"
             },
             {
@@ -1415,6 +1418,66 @@
       ],
       "description": [
         "Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research."
+      ]
+    },
+    {
+      "id": "total-error",
+      "kind": "paper",
+      "title": "Total Error: What Classifier Validation Establishes About Exposure Comparisons",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/total_error.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/total_error",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/total_error",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🌱"
+          ]
+        },
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "description": [
+        "Classifier accuracy weights domains equally, but exposure comparisons and regression coefficients give each domain its own signed weight. Starting from the estimand, this paper derives how reused labels and correlated errors across domains affect bias and uncertainty. It gives sharp bounds on what exact confusion counts establish about a comparison, and shows what a probability audit must retain to improve on those bounds. A browsing-data stress test illustrates the limits of count summaries and the gains from estimating weighted errors directly."
+      ],
+      "related_entries": [
+        "unbiased-regression-with-costly-item-labels"
       ]
     },
     {
