@@ -417,6 +417,9 @@
             },
             {
               "entry": "principled-partisan-affect-evidence-from-two-survey-experiments"
+            },
+            {
+              "entry": "pareto-partisan-relative-gains-and-support-for-public-policy"
             }
           ]
         },
@@ -8557,6 +8560,64 @@
       ],
       "description_source": {
         "url": "papers/principled.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-04",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "pareto-partisan-relative-gains-and-support-for-public-policy",
+      "kind": "paper",
+      "title": "Pareto Partisan? Relative Gains and Support for Public Policy",
+      "primary_resource": "manuscript",
+      "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/pareto_partisan.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/pareto_partisan",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/pareto_partisan",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "coauthors": [
+        "Alexander G. Theodoridis"
+      ],
+      "description": [
+        "If people prefer more for both sides to less for both, everyone should select the plan giving both sides more. In a 2018 CCES highway choice, only 35.0% of Democrats and 27.1% of Republicans did so; the rest chose smaller allocations that left their side ahead. In a post-election experiment, raising opponents’ income gain from 3% to 7%, while keeping the own-party gain at 5%, changed policy support by -20.0 points on a 0–100 scale (95% CI [-23.9, -16.1]). Relative partisan gains affect support, but the exercises do not distinguish spite from dislike of falling behind; the highway comparison also changes total spending."
+      ],
+      "description_source": {
+        "url": "papers/pareto_partisan.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-10-04",
         "text_type": "summary"
