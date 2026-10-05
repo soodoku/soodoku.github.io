@@ -2810,7 +2810,12 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/niewenhuis.pdf"
+          "url": "papers/niewenhuis.pdf",
+          "source": {
+            "repo": "recite/sig_fault",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -2839,12 +2844,12 @@
         }
       ],
       "description": [
-        "We examine citations to studies whose statistical errors were publicized in Nature Neuroscience. Problematic studies continued to receive citations that did not acknowledge the errors, including more such citations after the problems were publicized."
+        "Does drawing attention to a statistical mistake change how researchers use papers containing it? Using paper-level classifications from a 2011 neuroscience review, we compare citation changes for papers that made the mistake with those for comparison papers. Flagged papers continued to attract citations: their increase exceeded the comparison group's by 1.8 citations per paper per year (95% interval [-2.1, 5.7]). In the separate citation-context sample, 94 of 95 valid completed ratings recorded no acknowledgment of concerns. Different earlier citation trends limit a causal interpretation, and the records do not reveal whether citing authors recognized the mistake or relied on a finding it undermined."
       ],
       "description_source": {
         "url": "papers/niewenhuis.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-04",
         "text_type": "summary"
       },
       "coauthors": [
