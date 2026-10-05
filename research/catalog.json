@@ -4326,7 +4326,7 @@
     {
       "id": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns",
       "kind": "paper",
-      "title": "Coming to Dislike Your Opponents: The Polarizing Impact of Political Campaigns",
+      "title": "Coming to Dislike Your Opponents: Candidate Evaluations during Presidential Campaigns",
       "primary_resource": "primary",
       "resources": [
         {
@@ -4334,7 +4334,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/ComingToDislike.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/polarcamp",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4343,6 +4348,20 @@
           "url": "press/ComingtoDislike_nyt.pdf",
           "label": "New York Times",
           "new_tab": true
+        },
+        {
+          "id": "replication-v1",
+          "kind": "dataset",
+          "role": "replication",
+          "url": "replication/polarcamp-v1.0.0.zip",
+          "label": "Replication files (v1.0.0)"
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/polarcamp",
+          "label": "Code and data"
         }
       ],
       "summary": [
@@ -4351,7 +4370,7 @@
         }
       ],
       "description": [
-        "Using national surveys and political advertising data, we examine how partisan hostility changes during campaigns. Evaluations of the opposing party become more negative over the campaign, with exposure to televised advertising, especially negative advertising, contributing to the pattern."
+        "Candidate evaluations diverge over the 2000, 2004, and 2008 presidential campaigns, with differences across elections and measures. Ratings of both one’s own candidate and the opponent contribute. Trait-rating gaps widen faster in battleground states, while overall favorability shows a less consistent geographic pattern. These survey comparisons describe change without identifying the effects of campaigning or negative advertising."
       ],
       "supporting": {
         "press": [
@@ -4360,12 +4379,23 @@
               "resource": "link-2"
             }
           ]
+        ],
+        "related": [
+          [
+            {
+              "resource": "repository"
+            },
+            " · ",
+            {
+              "resource": "replication-v1"
+            }
+          ]
         ]
       },
       "description_source": {
         "url": "papers/ComingToDislike.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-05",
         "text_type": "summary"
       },
       "coauthors": [
