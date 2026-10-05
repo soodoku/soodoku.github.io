@@ -4334,7 +4334,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/ComingToDislike.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/polarcamp",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4350,6 +4355,13 @@
           "role": "replication",
           "url": "replication/polarcamp-v1.0.0.zip",
           "label": "Replication files (v1.0.0)"
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/polarcamp",
+          "label": "Code and data"
         }
       ],
       "summary": [
@@ -4370,6 +4382,10 @@
         ],
         "related": [
           [
+            {
+              "resource": "repository"
+            },
+            " · ",
             {
               "resource": "replication-v1"
             }
