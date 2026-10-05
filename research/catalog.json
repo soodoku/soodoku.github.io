@@ -2844,7 +2844,7 @@
         }
       ],
       "description": [
-        "Does drawing attention to a statistical mistake change how researchers use papers containing it? Using paper-level classifications from a 2011 neuroscience review, we compare citation changes for papers that made the mistake with those for comparison papers. Flagged papers continued to attract citations: their increase exceeded the comparison group's by 1.8 citations per paper per year (95% interval [-2.1, 5.7]). In the separate citation-context sample, 94 of 95 valid completed ratings recorded no acknowledgment of concerns. Different earlier citation trends limit a causal interpretation, and the records do not reveal whether citing authors recognized the mistake or relied on a finding it undermined."
+        "Papers containing a publicized statistical mistake continued to receive citations, and recorded qualifications were rare. After a 2011 neuroscience critique, flagged papers’ median annual citations rose from 5 in 2010 to 13–17 during 2012–2015; comparison papers’ medians rose from 4 to 10–11. In the citation-context sample, 94 of 95 valid completed ratings recorded no concern. Fixed-effects comparisons leave the size of a relative citation penalty uncertain. Continued citation does not establish that publicity had no effect."
       ],
       "description_source": {
         "url": "papers/niewenhuis.pdf",
