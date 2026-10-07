@@ -5068,14 +5068,6 @@
           "url": "https://github.com/soodoku/dp-data",
           "label": "Source Data",
           "new_tab": true
-        },
-        {
-          "id": "linked-data",
-          "kind": "repository",
-          "role": "data",
-          "url": "https://github.com/soodoku/dp-knowledge-linkage",
-          "label": "Knowledge-Attitude Linkage",
-          "new_tab": true
         }
       ],
       "summary": [
@@ -5092,10 +5084,6 @@
         " · ",
         {
           "resource": "source-data"
-        },
-        " · ",
-        {
-          "resource": "linked-data"
         }
       ],
       "description": [
@@ -8344,14 +8332,6 @@
           "role": "data",
           "url": "https://github.com/public-salaries/public_salaries",
           "new_tab": true
-        },
-        {
-          "id": "analyses",
-          "kind": "repository",
-          "role": "related",
-          "url": "https://github.com/public-salaries/pub_sal_analyses",
-          "label": "Salary analyses",
-          "new_tab": true
         }
       ],
       "summary": [
@@ -8369,15 +8349,6 @@
       "description": [
         "A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay."
       ],
-      "supporting": {
-        "related": [
-          [
-            {
-              "resource": "analyses"
-            }
-          ]
-        ]
-      },
       "description_source": {
         "url": "https://github.com/public-salaries/public_salaries#readme",
         "kind": "repository-readme",
