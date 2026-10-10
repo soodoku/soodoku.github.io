@@ -6826,7 +6826,7 @@
           "url": "papers/CasablancaTheory.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/waters-of-casablanca",
+            "repo": "finite-sample/know_casablanca",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -6835,7 +6835,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/waters-of-casablanca",
+          "url": "https://github.com/finite-sample/know_casablanca",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -6885,7 +6885,7 @@
           "url": "papers/HiddenKnowledge.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/hidden",
+            "repo": "finite-sample/know_hidden",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -6894,7 +6894,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/hidden",
+          "url": "https://github.com/finite-sample/know_hidden",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -6944,7 +6944,7 @@
           "url": "papers/misinformation_misinformation.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/misinformation",
+            "repo": "finite-sample/know_misinfo_misinfo",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -6953,7 +6953,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/misinformation",
+          "url": "https://github.com/finite-sample/know_misinfo_misinfo",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -7088,7 +7088,7 @@
           "url": "papers/guess.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/guessing-and-forgetting",
+            "repo": "finite-sample/know_guess_forget",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -7121,7 +7121,7 @@
           "id": "link-5",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/guessing-and-forgetting",
+          "url": "https://github.com/finite-sample/know_guess_forget",
           "label": "Maintained Replication",
           "new_tab": true
         }
@@ -7215,7 +7215,7 @@
           "url": "papers/k_gains.pdf",
           "new_tab": true,
           "source": {
-            "repo": "finite-sample/measuring-learning",
+            "repo": "finite-sample/know_gains",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -7224,7 +7224,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/finite-sample/measuring-learning",
+          "url": "https://github.com/finite-sample/know_gains",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -7280,7 +7280,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/partisan-gaps",
+          "url": "https://github.com/finite-sample/know_pgap_format",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -7333,7 +7333,7 @@
           "url": "papers/unclear_gap.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/unclear_gap",
+            "repo": "finite-sample/know_pgap_cues",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -7342,7 +7342,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/unclear_gap",
+          "url": "https://github.com/finite-sample/know_pgap_cues",
           "label": "Replication Materials",
           "new_tab": true
         }
