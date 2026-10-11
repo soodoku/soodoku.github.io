@@ -927,7 +927,7 @@
     {
       "id": "streaming-calibration-with-mwu-and-sgd",
       "kind": "paper",
-      "title": "Streaming Survey Raking With MWU and SGD",
+      "title": "Streaming Calibration Weighting",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1008,7 +1008,7 @@
         }
       ],
       "description": [
-        "streamcal updates probability calibration as predictions and observed outcomes arrive. It uses multiplicative weight updates to adjust predicted probabilities toward observed outcome rates, allowing calibration to adapt as the data distribution changes."
+        "streamcal keeps a deployed model's binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label."
       ]
     },
     {

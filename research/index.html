@@ -80,12 +80,12 @@
 <div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
 </details>
 <details>
-<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Survey Raking With MWU and SGD</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
+<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Calibration Weighting</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
 <div class="abstract">onlinerake adjusts survey weights incrementally as observations arrive, using multiplicative weight updates (MWU) or stochastic gradient descent (SGD) to bring weighted sample margins toward population targets. It supports streaming survey weighting without repeatedly fitting a batch raking procedure.</div>
 </details>
 <details>
 <summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/streamcal" target="_blank" class="entry-title">streamcal: Streaming Probability Calibration</a></summary>
-<div class="abstract">streamcal updates probability calibration as predictions and observed outcomes arrive. It uses multiplicative weight updates to adjust predicted probabilities toward observed outcome rates, allowing calibration to adapt as the data distribution changes.</div>
+<div class="abstract">streamcal keeps a deployed model&#x27;s binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label.</div>
 </details>
 <details>
 <summary><a href="papers/score_signs.pdf" target="_blank" class="entry-title">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/score_signs" target="_blank">Replication Materials</a></summary>
