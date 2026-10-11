@@ -17,9 +17,6 @@
               "entry": "stable-cart-lower-bootstrap-prediction-variance-cart"
             },
             {
-              "entry": "bagged-fsr-rehabilitating-forward-stepwise-regression"
-            },
-            {
               "entry": "bootstrap-consistency-regularization-for-stable-neural-network-predictions"
             }
           ]
@@ -680,29 +677,6 @@
       ],
       "description": [
         "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
-      ]
-    },
-    {
-      "id": "bagged-fsr-rehabilitating-forward-stepwise-regression",
-      "kind": "project",
-      "title": "Bagged FSR: Rehabilitating Forward Stepwise Regression",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "repository",
-          "role": "code",
-          "url": "https://github.com/finite-sample/bagged_fsr/",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "resource": "primary"
-        }
-      ],
-      "description": [
-        "Forward Stepwise Regression (FSR) is hardly used today. That is mostly because regularization is a better way to think about variable selection. However, part of the reason for its disuse is that FSR is a greedy optimization strategy with unstable paths. Jigger the data a little, and the search paths, variables in the final set, and the performance of the final model can all change dramatically. The same issues, however, affect another greedy optimization strategy—CART. The insight that rehabilitated CART was bagging—building multiple trees using random subspaces (sometimes on randomly sampled rows) and averaging the results. What works for CART should principally also work for FSR. If you are using FSR for prediction, you can build multiple FSR models using random subspaces and random samples of rows and then average the results. If you are using it for variable selection, you can pick variables with the highest batting average (n_selected/n_tried). (LASSO will beat it on speed, but there is little reason to expect that it will beat it on results.)"
       ]
     },
     {
