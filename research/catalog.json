@@ -21,9 +21,6 @@
             },
             {
               "entry": "bootstrap-consistency-regularization-for-stable-neural-network-predictions"
-            },
-            {
-              "entry": "selecting-for-stability-choose-the-model-closest-to-the-ensemble"
             }
           ]
         },
@@ -39,9 +36,6 @@
             },
             {
               "entry": "rank-preserving-calibration-for-multiclass-classification"
-            },
-            {
-              "entry": "first-order-entropy-balancing-via-dual-gradient-descent"
             },
             {
               "entry": "streaming-calibration-with-mwu-and-sgd"
@@ -89,9 +83,6 @@
               "entry": "reporoulette-randomly-sample-github-repositories"
             },
             {
-              "entry": "total-error"
-            },
-            {
               "entry": "unbiased-regression-with-costly-item-labels"
             },
             {
@@ -126,6 +117,9 @@
           "children": [
             {
               "entry": "one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments"
+            },
+            {
+              "entry": "total-error"
             },
             {
               "entry": "incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series"
@@ -698,7 +692,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/bagged_fsr/",
+          "url": "https://github.com/finite-sample/bagged_fsr/",
           "new_tab": true
         }
       ],
@@ -733,7 +727,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/finite-sample/consistentshade",
+          "url": "https://github.com/finite-sample/bcr",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -766,37 +760,6 @@
       ],
       "description": [
         "Neural networks trained on the same data with different random seeds or slightly perturbed training sets can produce substantially different predictions for individual examples, even when aggregate accuracy is similar. We add a consistency penalty to the training loss that penalizes prediction disagreement across bootstrap resamples of the training data, encouraging the network to find solutions whose individual-level predictions are stable under resampling."
-      ]
-    },
-    {
-      "id": "selecting-for-stability-choose-the-model-closest-to-the-ensemble",
-      "kind": "project",
-      "title": "Selecting for Stability: Choose the Model Closest to the Ensemble",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "repository",
-          "role": "code",
-          "url": "https://github.com/finite-sample/ensemble-proximity/",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
-          "resource": "primary"
-        },
-        " "
-      ],
-      "description": [
-        "Ensembles reduce prediction variance but are expensive to deploy. Rather than averaging all models at inference time, select the single model whose predictions are closest to the ensemble average. This gives you most of the ensemble's stability benefit at the cost of a single model, with a principled selection criterion that avoids arbitrary choices among models with similar aggregate performance."
       ]
     },
     {
@@ -926,7 +889,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/finite-sample/rank_preserving_calibration",
+          "url": "https://github.com/finite-sample/rank-preserving-calibration",
           "label": "Rank Preserving Calibration of Multiclass Probabilities",
           "new_tab": true
         }
@@ -959,58 +922,6 @@
       ],
       "description": [
         "Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability."
-      ]
-    },
-    {
-      "id": "first-order-entropy-balancing-via-dual-gradient-descent",
-      "kind": "paper",
-      "title": "First-Order Entropy Balancing via Dual Gradient Descent",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/mwu-eb.pdf",
-          "new_tab": true
-        },
-        {
-          "id": "link-2",
-          "kind": "repository",
-          "role": "replication",
-          "url": "https://github.com/finite-sample/adaptive-eb",
-          "label": "Replication Materials",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🗃"
-          ]
-        },
-        {
-          "resource": "link-2"
-        }
-      ],
-      "description": [
-        "Entropy balancing finds survey weights that satisfy exact moment constraints while staying close to uniform weights in KL divergence. Standard implementations solve this via Newton's method on the dual, which requires computing and inverting a Hessian at each step. We show that first-order methods—multiplicative weight updates and dual gradient descent—converge reliably, scale to high-dimensional constraint sets, and avoid the numerical instabilities that plague second-order solvers when constraints are near-collinear."
       ]
     },
     {
@@ -1112,11 +1023,32 @@
           "role": "manuscript",
           "url": "papers/score_signs.pdf",
           "new_tab": true
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/score_signs",
+          "label": "Replication Materials",
+          "new_tab": true
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
         }
       ],
       "description": [
@@ -1228,9 +1160,9 @@
         },
         {
           "id": "link-2",
-          "kind": "webpage",
+          "kind": "repository",
           "role": "replication",
-          "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KF1LAK",
+          "url": "https://github.com/themains/turk-replication",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -1280,13 +1212,34 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/optimal_data_collection/main/ms/optimal_data_collection.pdf",
+          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/finite-sample/optimal_data_collection/main/ms/optimal_data_collection.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/finite-sample/optimal_data_collection",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
         }
       ],
       "description": [
@@ -1313,8 +1266,8 @@
           "id": "geoinference",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/geosensing/geoinference",
-          "label": "geoinference: inference from street samples",
+          "url": "https://github.com/geosensing/geoestimate",
+          "label": "geoestimate: inference from street samples",
           "new_tab": true
         }
       ],
@@ -1729,7 +1682,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/incline",
+          "url": "https://github.com/finite-sample/incline",
           "new_tab": true
         }
       ],
@@ -1819,7 +1772,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/finite-sample/optimal_classification_cutoffs",
+          "url": "https://github.com/finite-sample/optimal-classification-cutoffs",
           "new_tab": true
         }
       ],
@@ -1849,7 +1802,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/gojiplus/pyppur",
+          "url": "https://github.com/finite-sample/pyppur",
           "new_tab": true
         }
       ],
@@ -1932,7 +1885,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/themains/pwned/",
+          "url": "https://github.com/themains/pwned_survey/",
           "label": "Replication Materials"
         },
         {
@@ -1946,7 +1899,7 @@
           "id": "link-4",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/themains/reg_breach",
+          "url": "https://github.com/themains/pwned_voters",
           "label": "I Have Been Pwned: Evidence from the Florida Voter Registration Data"
         }
       ],
@@ -2222,7 +2175,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/themains/know_your_ip/"
+          "url": "https://github.com/themains/know-your-ip/"
         }
       ],
       "summary": [
@@ -2241,7 +2194,7 @@
         "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures."
       ],
       "description_source": {
-        "url": "https://github.com/themains/know_your_ip#readme",
+        "url": "https://github.com/themains/know-your-ip#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -2301,7 +2254,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/social_proof_stars/",
+          "url": "https://github.com/themains/social_proof_stars/",
           "label": "Replication Materials"
         }
       ],
@@ -2457,14 +2410,6 @@
           "url": "https://github.com/gojiplus/image-to-text",
           "label": "image-to-text: batch OCR",
           "new_tab": true
-        },
-        {
-          "id": "recognize",
-          "kind": "repository",
-          "role": "related",
-          "url": "https://github.com/gojiplus/recognize",
-          "label": "recognize: OCR quality assessment",
-          "new_tab": true
         }
       ],
       "summary": [
@@ -2487,11 +2432,6 @@
           [
             {
               "resource": "image-to-text"
-            }
-          ],
-          [
-            {
-              "resource": "recognize"
             }
           ]
         ]
@@ -3173,7 +3113,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/autosum",
+          "url": "https://github.com/recite/autosum",
           "new_tab": true
         }
       ],
@@ -3186,7 +3126,7 @@
         "AutoSum collects passages surrounding citations to a publication in openly accessible papers. Collating these passages provides a view of how other scholars summarize the work and helps identify possible miscitations."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/autosum#readme",
+        "url": "https://github.com/recite/autosum#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3202,7 +3142,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/quant-discipline",
+          "url": "https://github.com/recite/quant-discipline",
           "new_tab": true
         }
       ],
@@ -3215,7 +3155,7 @@
         "We compare how often empirical articles in the American Political Science Review and American Economic Review include precise numerical results in their abstracts. The project provides coded data and analysis of differences in quantitative reporting."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/quant-discipline#readme",
+        "url": "https://github.com/recite/quant-discipline#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3243,7 +3183,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/meta_apsr",
+          "url": "https://github.com/recite/meta_ps",
           "new_tab": true
         }
       ],
@@ -3256,7 +3196,7 @@
         "We collect article metadata from five political science journals to examine changes in authorship, article length, and readership. The data document the rise of coauthorship and the highly uneven distribution of article and abstract views."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/meta_apsr#readme",
+        "url": "https://github.com/recite/meta_ps#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3272,7 +3212,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/superdf",
+          "url": "https://github.com/gojiplus/superdf",
           "new_tab": true
         }
       ],
@@ -3285,7 +3225,7 @@
         "SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/superdf#readme",
+        "url": "https://github.com/gojiplus/superdf#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3301,7 +3241,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/not_to_code",
+          "url": "https://github.com/recite/not_to_code",
           "new_tab": true
         }
       ],
@@ -3314,7 +3254,7 @@
         "We apply static analysis to R scripts in replication archives for American Journal of Political Science articles. The project documents style issues, warnings, and errors detected by lintr and provides the scripts used for the audit."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/not_to_code#readme",
+        "url": "https://github.com/recite/not_to_code#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3361,7 +3301,7 @@
           "id": "link-5",
           "kind": "webpage",
           "role": "press",
-          "url": "https://www.youtube.com/watch?v=fuHAPENWVIU?",
+          "url": "https://www.youtube.com/watch?v=fuHAPENWVIU",
           "label": "AnacondaCON presentation (Video)",
           "new_tab": true
         }
@@ -3430,7 +3370,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/appeler/soundnames",
+          "url": "https://github.com/appeler/sound_names",
           "new_tab": true
         }
       ],
@@ -3443,7 +3383,7 @@
         "We compare name classification using phonetic encodings with classification using character sequences. In the reported experiments, an LSTM trained on Metaphone encodings performs worse, suggesting that spellings contain information lost by the sound encoding."
       ],
       "description_source": {
-        "url": "https://github.com/appeler/soundnames#readme",
+        "url": "https://github.com/appeler/sound_names#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3459,7 +3399,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/appeler/clarifai_gender",
+          "url": "https://github.com/appeler/graphic_names",
           "new_tab": true
         }
       ],
@@ -3472,7 +3412,7 @@
         "An exploratory method that combines image-search results for first names with image tags to estimate gender associations. Validation uses labeled name data, while the project notes that search results are not representative population samples and names need not be unique to one gender."
       ],
       "description_source": {
-        "url": "https://github.com/appeler/clarifai_gender#readme",
+        "url": "https://github.com/appeler/graphic_names#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -3792,7 +3732,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/party_time/",
+          "url": "https://github.com/soodoku/partisan_affect/",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -3823,7 +3763,7 @@
           "id": "link-6",
           "kind": "webpage",
           "role": "blog",
-          "url": "http://gojiberries.io/2017/12/02/party-time/",
+          "url": "https://www.gojiberries.io/party-time/",
           "label": "Party Time"
         },
         {
@@ -4024,13 +3964,6 @@
           "role": "related",
           "url": "papers/guesswho.pdf",
           "label": "The Partisans in our Heads"
-        },
-        {
-          "id": "link-11",
-          "kind": "webpage",
-          "role": "related",
-          "url": "http://dx.doi.org/10.7910/DVN/YJYU7Q",
-          "label": "Data and Scripts"
         }
       ],
       "summary": [
@@ -4059,11 +3992,6 @@
           [
             {
               "resource": "link-10"
-            }
-          ],
-          [
-            {
-              "resource": "link-11"
             }
           ]
         ],
@@ -4141,7 +4069,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/typecast",
+          "url": "https://github.com/soodoku/partisan_typecast",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -4232,7 +4160,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/in-n-out",
+          "url": "https://github.com/soodoku/partisan_accountability",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -4240,7 +4168,7 @@
           "id": "link-3",
           "kind": "pdf",
           "role": "related",
-          "url": "http://gsood.com/research/papers/moving_further.pdf",
+          "url": "papers/moving_further.pdf",
           "label": "Still Close: Perceived Ideological Distance to Own and Main Opposing Party",
           "new_tab": true
         },
@@ -4336,7 +4264,7 @@
           "url": "papers/ComingToDislike.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/polarcamp",
+            "repo": "soodoku/partisan_campaigns",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -4360,7 +4288,7 @@
           "id": "repository",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/polarcamp",
+          "url": "https://github.com/soodoku/partisan_campaigns",
           "label": "Code and data"
         }
       ],
@@ -4552,7 +4480,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/adult",
+          "url": "https://github.com/themains/adult",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -4671,7 +4599,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/tv_schedules",
+          "url": "https://github.com/notnews/tv_schedules",
           "new_tab": true
         }
       ],
@@ -4684,7 +4612,7 @@
         "We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/tv_schedules#readme",
+        "url": "https://github.com/notnews/tv_schedules#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -4700,7 +4628,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/working_women_on_tv",
+          "url": "https://github.com/notnews/working_women_on_tv",
           "new_tab": true
         }
       ],
@@ -4713,7 +4641,7 @@
         "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/working_women_on_tv#readme",
+        "url": "https://github.com/notnews/working_women_on_tv#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -4739,7 +4667,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/face_of_crime",
+          "url": "https://github.com/notnews/face_of_crime",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -4802,7 +4730,7 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://gsood.com/research/papers/extreme_recall.pdf",
+          "url": "papers/extreme_recall.pdf",
           "new_tab": true
         },
         {
@@ -4817,7 +4745,7 @@
           "id": "link-3",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/soodoku/extreme_recall",
+          "url": "https://github.com/notnews/extreme_recall",
           "label": "Extreme Recall",
           "new_tab": true
         }
@@ -4853,7 +4781,7 @@
         ]
       },
       "description_source": {
-        "url": "https://gsood.com/research/papers/extreme_recall.pdf",
+        "url": "papers/extreme_recall.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -4925,7 +4853,7 @@
           "url": "papers/LearningOfArguments.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/dp-nireland",
+            "repo": "soodoku/dp_nireland",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -4934,7 +4862,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/dp-nireland",
+          "url": "https://github.com/soodoku/dp_nireland",
           "label": "Replication Materials"
         }
       ],
@@ -4988,7 +4916,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/dp-distortions/",
+          "url": "https://github.com/soodoku/dp_distortions/",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -5048,7 +4976,7 @@
           "url": "papers/SteadierNotCloser.pdf",
           "new_tab": true,
           "source": {
-            "repo": "finite-sample/dp-steadier-not-closer",
+            "repo": "finite-sample/dp_steadier_not_closer",
             "ref": "main",
             "path": "paper/proof.pdf"
           }
@@ -5057,7 +4985,7 @@
           "id": "repository",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/finite-sample/dp-steadier-not-closer",
+          "url": "https://github.com/finite-sample/dp_steadier_not_closer",
           "label": "Proof and Simulation",
           "new_tab": true
         },
@@ -5065,7 +4993,7 @@
           "id": "source-data",
           "kind": "repository",
           "role": "data",
-          "url": "https://github.com/soodoku/dp-data",
+          "url": "https://github.com/soodoku/dp_data",
           "label": "Source Data",
           "new_tab": true
         }
@@ -5711,7 +5639,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/last_sex",
+          "url": "https://github.com/in-rolls/last_sex",
           "new_tab": true
         }
       ],
@@ -5724,7 +5652,7 @@
         "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels."
       ],
       "description_source": {
-        "url": "https://github.com/soodoku/last_sex#readme",
+        "url": "https://github.com/in-rolls/last_sex#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -5801,7 +5729,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/in-rolls/missing_daughters_of_pols",
+          "url": "https://github.com/in-rolls/missing_daughters",
           "new_tab": true
         }
       ],
@@ -5814,7 +5742,7 @@
         "We use official biographies of members of India's 12th through 17th Lok Sabhas to examine the sex ratio of politicians' children. The project compares recorded sons and daughters to assess whether the imbalance observed in the wider population also appears among political elites."
       ],
       "description_source": {
-        "url": "https://github.com/in-rolls/missing_daughters_of_pols#readme",
+        "url": "https://github.com/in-rolls/missing_daughters#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -6026,7 +5954,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/notnews/readable_news",
+          "url": "https://github.com/notnews/unreadable_news",
           "new_tab": true
         }
       ],
@@ -6039,7 +5967,7 @@
         "We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information."
       ],
       "description_source": {
-        "url": "https://github.com/notnews/readable_news#readme",
+        "url": "https://github.com/notnews/unreadable_news#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -6096,7 +6024,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/horse_race",
+          "url": "https://github.com/notnews/horse_race",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -6497,14 +6425,6 @@
           "new_tab": true
         },
         {
-          "id": "link-3",
-          "kind": "webpage",
-          "role": "replication",
-          "url": "http://www.nowpublishers.com/article/details/supplementary-info/100.00014127_supp.zip",
-          "label": "Replication Materials",
-          "new_tab": true
-        },
-        {
           "id": "link-4",
           "kind": "pdf",
           "role": "press",
@@ -6560,17 +6480,6 @@
         },
         {
           "resource": "link-2"
-        },
-        "; ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🗃"
-          ]
-        },
-        {
-          "resource": "link-3"
         }
       ],
       "description": [
@@ -6736,7 +6645,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/partisan_gap",
+          "url": "https://github.com/finite-sample/know_pgap_review",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -7670,14 +7579,14 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/outside-edge/asymmetry",
+          "url": "https://github.com/outside-edge/fairly_random",
           "label": "Replication Materials"
         },
         {
           "id": "link-3",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/dwillis/toss-up",
+          "url": "https://github.com/outside-edge/toss-up",
           "label": "Fairly Random: Impact of Winning the Toss on the Probability of Winning",
           "new_tab": true
         },
@@ -7995,7 +7904,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/soodoku/spousal_age_gap",
+          "url": "https://github.com/in-rolls/spousal_age_gap",
           "new_tab": true
         },
         {
@@ -8025,7 +7934,7 @@
         ]
       },
       "description_source": {
-        "url": "https://github.com/soodoku/spousal_age_gap#readme",
+        "url": "https://github.com/in-rolls/spousal_age_gap#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -8268,7 +8177,7 @@
           "id": "searchable-rolls",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/in-rolls/parse_searchable_rolls",
+          "url": "https://github.com/in-rolls/electoral_rolls_parse_searchable",
           "label": "Searchable-roll parser",
           "new_tab": true
         },
@@ -8276,7 +8185,7 @@
           "id": "unsearchable-rolls",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/in-rolls/parse_unsearchable_rolls",
+          "url": "https://github.com/in-rolls/electoral_rolls_parse_unsearchable",
           "label": "Scanned-roll parser",
           "new_tab": true
         }
@@ -8330,7 +8239,7 @@
           "id": "primary",
           "kind": "repository",
           "role": "data",
-          "url": "https://github.com/public-salaries/public_salaries",
+          "url": "https://github.com/soodoku/public_salaries_data",
           "new_tab": true
         }
       ],
@@ -8350,7 +8259,7 @@
         "A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay."
       ],
       "description_source": {
-        "url": "https://github.com/public-salaries/public_salaries#readme",
+        "url": "https://github.com/soodoku/public_salaries_data#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -8405,7 +8314,7 @@
           "url": "papers/deliberation_learning.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/dp-learning",
+            "repo": "soodoku/dp_learning",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -8414,7 +8323,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/dp-learning",
+          "url": "https://github.com/soodoku/dp_learning",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -8422,7 +8331,7 @@
           "id": "source-data",
           "kind": "repository",
           "role": "data",
-          "url": "https://github.com/soodoku/dp-data",
+          "url": "https://github.com/soodoku/dp_data",
           "label": "Source Data",
           "new_tab": true
         }
@@ -8477,7 +8386,7 @@
           "url": "papers/deliberation_misinformation.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/dp-misinformation",
+            "repo": "soodoku/dp_misinformation",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -8486,7 +8395,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/dp-misinformation",
+          "url": "https://github.com/soodoku/dp_misinformation",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -8536,7 +8445,7 @@
           "url": "papers/principled.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/principled",
+            "repo": "soodoku/partisan_principled",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -8545,7 +8454,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/principled",
+          "url": "https://github.com/soodoku/partisan_principled",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -8595,7 +8504,7 @@
           "url": "papers/pareto_partisan.pdf",
           "new_tab": true,
           "source": {
-            "repo": "soodoku/pareto_partisan",
+            "repo": "soodoku/partisan_pareto",
             "ref": "main",
             "path": "ms/main.pdf"
           }
@@ -8604,7 +8513,7 @@
           "id": "replication",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/soodoku/pareto_partisan",
+          "url": "https://github.com/soodoku/partisan_pareto",
           "label": "Replication Materials",
           "new_tab": true
         }
