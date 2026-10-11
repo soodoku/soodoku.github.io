@@ -7586,7 +7586,7 @@
           "id": "link-3",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/outside-edge/toss-up",
+          "url": "https://github.com/outside-edge/toss_up",
           "label": "Fairly Random: Impact of Winning the Toss on the Probability of Winning",
           "new_tab": true
         },
@@ -7626,7 +7626,7 @@
           "id": "cricket-data",
           "kind": "repository",
           "role": "related",
-          "url": "https://github.com/outside-edge/get-cricket-data",
+          "url": "https://github.com/outside-edge/get_cricket_data",
           "label": "Cricket data and collection scripts",
           "new_tab": true
         }
