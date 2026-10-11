@@ -1,0 +1,593 @@
+/* =========================================
+   1. Imports & Fonts
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Droid+Sans&display=swap');
+
+
+/* =========================================
+   2. Base & Reset
+   ========================================= */
+:root {
+  --site-accent: #005f9e;
+  --heading-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  
+  /* CHANGED: Increased Base Font Size to 1.15rem (approx 18.5px) */
+  /* CHANGED: Darker color #222 */
+  color: #222;
+  font-size: 1.1rem; 
+  
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+
+/* =========================================
+   3. Typography
+   ========================================= */
+h1, h3 {
+  color: #111;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 2.2rem;
+  margin: 0 0 1.2rem 1.2rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #444; 
+  
+  /* CHANGED: Removed letter-spacing */
+  letter-spacing: normal;
+  
+  font-weight: 500;
+  font-size: 1.1rem; 
+  transition: color 0.2s ease;
+}
+
+/* CHANGED: Links turn Blue on Hover */
+a:hover {
+  color: var(--site-accent);
+}
+
+/* Top Menu Links (Blog | Research) */
+a.home {
+  font-size: 1rem; 
+  font-weight: 400;
+  color: #222;
+}
+
+/* Name Styling */
+.first { color: var(--site-accent); }
+.last  { color: #000; }
+
+.site-title {
+  display: block;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #003366;
+  margin-bottom: 2rem; 
+}
+
+.site-title a {
+  font-size: 2.5rem;    /* Force the large size */
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+
+/* =========================================
+   4. Layout: Research Page (Sidebar + Content)
+   ========================================= */
+.container {
+  display: flex;
+  align-items: baseline;
+  min-height: 100vh;
+  justify-content: center; 
+}
+
+.sidebar {
+  width: 17rem;
+  box-sizing: border-box;
+  margin-top: 2.5rem;
+  margin-right: 2rem; 
+  margin-left: 0;
+  flex-shrink: 0;
+  font-size: 1.2rem; 
+}
+
+.content {
+  flex: 0 1 1000px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  max-width: 1000px; 
+}
+
+/* Sidebar Navigation Styling */
+.sidebar ul {
+  list-style: none;
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: right; 
+}
+
+.sidebar ul li {
+  margin-bottom: 0.6rem;
+  padding: 0;
+}
+
+.sidebar ul li::before {
+  content: none; 
+}
+
+.sidebar ul li a {
+  font-weight: 200;
+  color: #333;
+}
+
+.sidebar ul li a:hover {
+  color: #333;
+}
+
+.sidebar .site-title {
+  text-align: right;
+}
+
+.research-sidebar ul {
+  font-family: 'Inter', sans-serif;
+}
+
+.research-sidebar ul li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.research-sidebar ul li a[aria-current="page"] {
+  font-weight: 500;
+}
+
+/* =========================================
+   5. Layout: Home Page (Single Column)
+   ========================================= */
+.home-content {
+  text-align: center; 
+  padding: 0 2rem 5rem 2rem;
+  width: 90%;          
+  max-width: 900px;
+  margin: 0 auto; 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh; 
+}
+
+.home-hero {
+  margin-top: 0; 
+  margin-bottom: 4rem;
+}
+
+.home-hero h1, 
+.home-hero h3 {
+  text-align: center;
+  margin-left: 0;
+}
+
+.home-content ul {
+  margin-left: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.home-content details {
+  margin-left: 0;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+
+/* =========================================
+   6. Components (Lists & Toggles)
+   ========================================= */
+ul {
+  margin: 0 0 0 1.5rem;
+  padding: 0;
+  line-height: 1.5;
+}
+
+li {
+  margin: 0.2rem 0;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #666; 
+  position: absolute;
+  left: -1rem;
+  font-size: 0.8rem;
+}
+
+/* --- THE "ENOS" MINIMALIST TOGGLES --- */
+details {
+  margin: 1rem 0 1rem 1.5rem;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#research {
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+#research details {
+  font-family: 'Inter', sans-serif;
+}
+
+details summary {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 1.4rem; 
+  outline: none;
+}
+
+details summary::-webkit-details-marker { display: none; }
+
+details summary::before {
+  content: "⌄";
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+  position: absolute;
+  left: 0;
+  top: .2rem;
+  transition: transform 0.15s ease-out;
+  line-height: 1;
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+details[open] > summary::before {
+  transform: rotate(0deg);
+  top: -.15rem;
+}
+
+#research details > summary::before {
+  content: "";
+  box-sizing: border-box;
+  font-size: inherit;
+  width: 1rem;
+  height: 1rem;
+  color: inherit;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m5 3 5 5-5 5' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  left: 0;
+  top: .875em;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: transform 120ms ease-out;
+}
+
+#research details[open] > summary::before {
+  top: .875em;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+#research details > summary {
+  line-height: 1.75;
+}
+
+#research summary:focus-visible,
+#research a:focus-visible {
+  outline: 2px solid #005f9e;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #research details > summary::before,
+  #research details > summary::after {
+    transition: none;
+  }
+}
+
+#research .category-toggle > summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.content h3.research-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+#research .category-toggle .category-toggle > summary {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+#research details:not(.category-toggle) > summary,
+#research .coauthor,
+#research .abstract,
+#research a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+#research a {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+#research a.entry-title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+#research .supporting-item a.entry-title {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#research a:hover {
+  color: #333;
+}
+
+details details {
+  margin-left: 1.5rem;
+}
+
+
+/* =========================================
+   7. Utilities
+   ========================================= */
+.link-separator {
+  display: inline-block;
+  border-left: 2px dotted #333;
+  height: 1.2rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.highlight {
+  color: #990000;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+#research .highlight {
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+#research .entry-icon {
+  margin-right: 0.45em;
+}
+
+#research .supporting-row {
+  display: block;
+  margin-top: 0.25rem;
+  line-height: inherit;
+}
+
+#research .supporting-label {
+  color: #990000;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+#research .supporting-items {
+  display: inline;
+}
+
+#research .supporting-item {
+  display: inline;
+}
+
+#research .resource-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  vertical-align: baseline;
+  max-width: 100%;
+  gap: 0.25rem 0;
+}
+
+#research .resource-links a {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+#research .resource-links a + a {
+  border-left: 1px dotted #c5c5c5;
+  margin-left: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+@media (max-width: 480px) {
+  #research .resource-links {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  #research .resource-links a + a {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+#research details:not(.category-toggle) > summary,
+#research .coauthor {
+  line-height: 1.75;
+}
+
+/* CHANGED: Using em to scale with body */
+.coauthor {
+  display: block;
+  font-size: 0.9em; /* ~90% of main text */
+  color: #444;
+  margin-top: 0.15rem;
+  line-height: 1.4;
+}
+
+/* CHANGED: Using em to scale with body */
+.abstract {
+  margin-top: 0.6rem;
+  font-size: 0.95em; /* ~95% of main text */
+  line-height: 1.6;
+  color: #222;
+  padding-left: 1.2rem;
+}
+
+@media (min-width: 769px) {
+  #research details:not(.category-toggle) > summary,
+  #research .abstract {
+    box-sizing: border-box;
+    max-width: calc(100% - 100px);
+  }
+}
+
+.footer, .new, .small, .contentarea, .smallbold {
+  font-size: 0.8em; 
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.cvbold, .cvtitle {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  font-family: 'Lato', sans-serif;
+}
+
+/* =========================================
+   8. Mobile Strategy (Responsive Design)
+   ========================================= */
+@media (max-width: 768px) {
+  
+  .container {
+    justify-content: flex-start;
+  }
+
+  .sidebar {
+    width: 25%;
+    max-width: 9rem;
+    margin: 1.5rem 0 0;
+    padding: 0 0.75rem;
+  }
+
+  .sidebar .site-title,
+  .sidebar .site-title a {
+    font-size: 1.5rem;
+  }
+
+  .sidebar > br {
+    display: none;
+  }
+
+  .sidebar ul li a {
+    display: block;
+    padding: 0.375rem 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .research-sidebar ul li a {
+    font-size: 0.8125rem;
+  }
+
+  .content {
+    flex: 1;
+    padding: 1.5rem 0.75rem;
+    font-size: 1rem;
+  }
+
+  .content h3 {
+    font-size: 1.25rem;
+  }
+
+  #research details {
+    margin-left: 0;
+  }
+
+  #research details details {
+    margin-left: 0.25rem;
+  }
+
+  #research summary {
+    padding-left: 1.4rem;
+  }
+
+  /* 4. Fix Home Page Mobile Padding */
+  .home-content {
+    padding: 0 1.5rem 3rem 1.5rem; /* Less padding on edges */
+    min-height: auto; /* Don't force full height on mobile */
+    margin-top: 2rem;
+  }
+  
+  /* 5. Scale down the massive headers slightly for mobile */
+  h1 {
+    font-size: 2.5rem; /* Down from 3.5rem */
+  }
+  
+  h3 {
+    font-size: 1.6rem; /* Down from 2.2rem */
+    margin-left: 0;    /* Ensure alignment */
+  }
+  
+  /* 6. Fix "Project/Paper" Indents */
+  /* Remove the hanging indent effect on mobile to save space */
+  .abstract, ul {
+    padding-left: 0;
+    margin-left: 0.5rem;
+  }
+  
+  ul li::before {
+    position: relative; /* Move bullet inside the flow */
+    left: 0;
+    margin-right: 0.5rem;
+  }
+}

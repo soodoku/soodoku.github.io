@@ -1,0 +1,82 @@
+name: Sync papers
+
+on:
+  schedule:
+    - cron: '23 13 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - research/catalog.json
+      - research/catalog.schema.json
+      - research/page.template.html
+      - research/index.html
+      - research/papers/*.pdf
+      - .github/scripts/**
+      - .github/workflows/sync-papers.yml
+  pull_request:
+    paths:
+      - research/catalog.json
+      - research/catalog.schema.json
+      - research/page.template.html
+      - research/index.html
+      - research/papers/*.pdf
+      - .github/scripts/**
+      - .github/workflows/sync-papers.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-papers-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'main' }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - run: python -m pip install -r .github/scripts/requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: python -m black --check .github/scripts
+      - run: python -m isort --check-only --profile black .github/scripts
+      - run: python -m flake8 --max-line-length=88 --extend-ignore=E203 .github/scripts
+      - run: python .github/scripts/research_catalog.py --check
+      - run: python -m unittest discover -s .github/scripts -p 'test_*.py' -v
+
+  sync:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - run: python -m pip install -r .github/scripts/requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Download and validate mapped papers
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python .github/scripts/sync_papers.py --apply --report "$RUNNER_TEMP/paper-updates.md"
+      - name: Record comparison
+        run: cat "$RUNNER_TEMP/paper-updates.md" >> "$GITHUB_STEP_SUMMARY"
+      - uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automation/sync-papers
+          base: main
+          delete-branch: true
+          add-paths: research/papers/*.pdf
+          commit-message: Update papers from mapped source repositories
+          title: Update papers from source repositories
+          body-path: ${{ runner.temp }}/paper-updates.md

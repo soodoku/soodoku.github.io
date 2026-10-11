@@ -1,0 +1,17 @@
+name: spelling
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  codespell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # Reads .codespellrc for what to skip and what is not a typo.
+      - uses: codespell-project/actions-codespell@v2

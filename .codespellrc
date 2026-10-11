@@ -1,0 +1,7 @@
+[codespell]
+skip = .git,*.pdf,*.png,*.jpg,*.jpeg,*.gif,*.ico,*.svg,*.webmanifest
+# Names and terms, not typos: ALS is a disease, compliers are a causal
+# inference term, Tung is a surname.
+ignore-words-list = als,compliers,complier,tung
+# A bolded initial splits the word it starts: <b>R</b>eduction.
+ignore-regex = <b>[A-Za-z]</b>[a-z]+
