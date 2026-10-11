@@ -3900,9 +3900,9 @@
         },
         {
           "id": "link-2",
-          "kind": "webpage",
+          "kind": "repository",
           "role": "replication",
-          "url": "http://dx.doi.org/10.7910/DVN/CLMQ8E",
+          "url": "https://github.com/soodoku/partisan_heads",
           "label": "Replication Materials"
         },
         {
@@ -4398,9 +4398,9 @@
         },
         {
           "id": "link-2",
-          "kind": "webpage",
+          "kind": "repository",
           "role": "replication",
-          "url": "http://dx.doi.org/10.7910/DVN/W1YJZQ",
+          "url": "https://github.com/soodoku/partisan_broadband",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -6551,9 +6551,9 @@
         },
         {
           "id": "link-2",
-          "kind": "webpage",
+          "kind": "repository",
           "role": "replication",
-          "url": "http://dx.doi.org/10.7910/DVN/4JXJWI",
+          "url": "https://github.com/finite-sample/know_motivated",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -7003,14 +7003,6 @@
           }
         },
         {
-          "id": "link-2",
-          "kind": "webpage",
-          "role": "replication",
-          "url": "http://dx.doi.org/10.7910/DVN/HZHVCU",
-          "label": "Replication Materials",
-          "new_tab": true
-        },
-        {
           "id": "link-3",
           "kind": "webpage",
           "role": "related",
@@ -7031,7 +7023,7 @@
           "kind": "repository",
           "role": "replication",
           "url": "https://github.com/finite-sample/know_guess_forget",
-          "label": "Maintained Replication",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -7049,10 +7041,6 @@
             "🗃"
           ]
         },
-        {
-          "resource": "link-2"
-        },
-        " · ",
         {
           "resource": "link-5"
         },
@@ -7303,8 +7291,16 @@
           "id": "link-2",
           "kind": "webpage",
           "role": "related",
-          "url": "http://dx.doi.org/10.7910/DVN/2JXAYZ",
+          "url": "https://doi.org/10.7910/DVN/2JXAYZ",
           "label": "Appendix",
+          "new_tab": true
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/partisan_shares",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -7322,6 +7318,10 @@
             "🗃"
           ]
         },
+        {
+          "resource": "replication"
+        },
+        " | ",
         {
           "resource": "link-2"
         }
