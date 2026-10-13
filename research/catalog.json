@@ -739,7 +739,7 @@
     {
       "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
       "kind": "paper",
-      "title": "Calibre: Probability Calibration and Evaluation in Python",
+      "title": "When Pooling Costs a Decision: Probability Calibration with Calibre",
       "primary_resource": "primary",
       "resources": [
         {
@@ -755,14 +755,6 @@
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
           "label": "calibre: Probability Calibration and Evaluation",
-          "new_tab": true
-        },
-        {
-          "id": "decisions-note",
-          "kind": "pdf",
-          "role": "related",
-          "url": "papers/calibre_decisions.pdf",
-          "label": "Choosing Calibration for Decisions",
           "new_tab": true
         }
       ],
@@ -793,21 +785,12 @@
         }
       ],
       "description": [
-        "Calibre combines probability calibration methods with tools for evaluating accuracy, reliability, and score ordering. A reproducible benchmark compares isotonic and centered isotonic regression, monotone splines, and other methods, illustrating why prediction granularity, calibration error, and predictive accuracy should be reported separately. The methods do not guarantee improved predictions or decision utility in every application."
+        "Isotonic calibration fits flat regions: runs of scores that receive one probability. A flat region costs a decision only when the cases it pools fall on both sides of the decision's threshold, and a ranking only when its ties are broken at random. Using an exact known-risk simulation and a pre-registered benchmark, the paper finds flat regions cheap for cost-threshold decisions: choosing a calibrator by validation payoff did no better than choosing it by Brier score. For allocation, random tie-breaking costs up to 1.7 successes per 1,000 cases, which breaking ties by the original score recovers exactly."
       ],
-      "supporting": {
-        "related": [
-          [
-            {
-              "resource": "decisions-note"
-            }
-          ]
-        ]
-      },
       "description_source": {
         "url": "papers/calibre.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-12",
         "text_type": "summary"
       }
     },
