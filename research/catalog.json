@@ -884,7 +884,7 @@
     {
       "id": "streaming-calibration-with-mwu-and-sgd",
       "kind": "paper",
-      "title": "Streaming Calibration Weighting",
+      "title": "Streaming Raking in Fixed Memory",
       "primary_resource": "primary",
       "resources": [
         {
@@ -935,7 +935,7 @@
         }
       ],
       "description": [
-        "onlinerake adjusts survey weights incrementally as observations arrive, using multiplicative weight updates (MWU) or stochastic gradient descent (SGD) to bring weighted sample margins toward population targets. It supports streaming survey weighting without repeatedly fitting a batch raking procedure."
+        "Raking needs every row seen so far, so keeping weights current on a stream means storing it and refitting. This paper gives a raking method whose state is a fixed set of running totals: each arriving row gets, in closed form, the weight that balances closeness to its design weight against the running gap to population targets. In simulations it comes close to full-data raking with moderate targets at constant cost per row; it falls short with extreme targets and many margins, and where rows can be stored, periodic raking remains the better choice."
       ]
     },
     {

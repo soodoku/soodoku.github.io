@@ -76,8 +76,8 @@
 <div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
 </details>
 <details>
-<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Calibration Weighting</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
-<div class="abstract">onlinerake adjusts survey weights incrementally as observations arrive, using multiplicative weight updates (MWU) or stochastic gradient descent (SGD) to bring weighted sample margins toward population targets. It supports streaming survey weighting without repeatedly fitting a batch raking procedure.</div>
+<summary><span class="entry-icon">🌱</span><a href="papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Raking in Fixed Memory</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></summary>
+<div class="abstract">Raking needs every row seen so far, so keeping weights current on a stream means storing it and refitting. This paper gives a raking method whose state is a fixed set of running totals: each arriving row gets, in closed form, the weight that balances closeness to its design weight against the running gap to population targets. In simulations it comes close to full-data raking with moderate targets at constant cost per row; it falls short with extreme targets and many margins, and where rows can be stored, periodic raking remains the better choice.</div>
 </details>
 <details>
 <summary><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/streamcal" target="_blank" class="entry-title">streamcal: Streaming Probability Calibration</a></summary>
