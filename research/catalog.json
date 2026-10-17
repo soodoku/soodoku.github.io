@@ -428,6 +428,9 @@
               "entry": "deliberation-and-learning-evidence-from-deliberative-polls"
             },
             {
+              "entry": "the-awful-truth-learning-facts-that-favor-the-other-side"
+            },
+            {
               "entry": "deliberation-and-misinformation"
             },
             {
@@ -8505,6 +8508,77 @@
         "reviewed_on": "2026-10-04",
         "text_type": "summary"
       }
+    },
+    {
+      "id": "the-awful-truth-learning-facts-that-favor-the-other-side",
+      "kind": "paper",
+      "title": "The Awful Truth: Learning Facts That Favor the Other Side",
+      "primary_resource": "manuscript",
+      "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/otherpk.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/dp_otherpk",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/soodoku/dp_otherpk",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "source-data",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/soodoku/dp_data",
+          "label": "Source Data",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        " ",
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        },
+        " · ",
+        {
+          "resource": "source-data"
+        }
+      ],
+      "description": [
+        "Across 14 Deliberative Polls, participants became more accurate about facts that challenged their initial positions in 13 studies. Gains on these facts exceeded gains on congenial facts in 11 studies, but only two conditional intervals excluded zero. The comparisons describe learning across initial positions; they do not identify a causal effect of deliberation or distinguish motivated learning from initial knowledge, response behavior, and room to improve."
+      ],
+      "description_source": {
+        "url": "papers/otherpk.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-17",
+        "text_type": "summary"
+      },
+      "coauthors": [
+        "Robert C. Luskin"
+      ]
     }
   ]
 }
