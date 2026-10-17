@@ -1514,15 +1514,28 @@
     },
     {
       "id": "partial-credit-diagnosing-proxy-covariates-with-validation-swaps",
-      "kind": "project",
-      "title": "Partial Credit: Diagnosing Proxy Covariates with Validation Swaps",
-      "primary_resource": "primary",
+      "kind": "paper",
+      "title": "Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression",
+      "primary_resource": "manuscript",
       "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/validation_swaps.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/swaps",
+            "ref": "main",
+            "path": "validation_swaps.pdf"
+          }
+        },
         {
           "id": "primary",
           "kind": "repository",
-          "role": "code",
+          "role": "replication",
           "url": "https://github.com/finite-sample/swaps",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
@@ -1535,12 +1548,31 @@
           ]
         },
         {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
           "resource": "primary"
         }
       ],
       "description": [
-        "When a regression uses a proxy instead of the true covariate, how much does it matter—and where? The validation-swap framework answers both questions using an internal validation sample where both the true value and the proxy are observed. Swap validated truths into the proxy design matrix row by row and watch the coefficient move. The swap path traces the coefficient as a function of the fraction of validated rows swapped in: flat means the proxy is fine, steep means it isn't. A Shapley-value decomposition (SIM) identifies which rows drive the distortion, and a portable risk score defines a proxy-safe domain on the full sample."
-      ]
+        "Correcting errors in machine-learned covariates can change a treatment-effect estimate in ways that separate corrections do not predict. Each correction changes the regression's adjustment for other variables, so its effect can depend on which errors have already been corrected. Existing methods use verified measurements to correct inference and guide validation. We study the joint effects of finite corrections on a fitted coefficient. Our diagnostic replaces sets of proxy covariates with verified values and compares the resulting refits with the sum of isolated correction effects. Exact least-squares identities locate the source of nonadditivity in changes to the regression's cross-product matrix. Correction paths describe how the coefficient moves as more measurements are corrected, and their dispersion describes how much the choice of correction set matters. Established Shapley methods attribute the endpoint change. Simulations illustrate these distinctions. Applications to housing and text-coded incivility compare refits with three additive approximations: isolated corrections track small random correction sets closely but misstate the full correction. The resulting diagnostic measures both the consequences of individual errors and the additional changes produced by correcting them together."
+      ],
+      "description_source": {
+        "url": "papers/validation_swaps.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-17",
+        "text_type": "summary"
+      }
     },
     {
       "id": "smooth-operator-optimal-filtering-of-event-study-estimates",
