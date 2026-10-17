@@ -1484,15 +1484,28 @@
     },
     {
       "id": "two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary",
-      "kind": "project",
-      "title": "Two Regressions and a Bootstrap: Regression Calibration for ML-Generated Covariates and the Nonlinear Boundary",
-      "primary_resource": "primary",
+      "kind": "paper",
+      "title": "Regression Calibration as a Baseline for Machine-Learned Covariates",
+      "primary_resource": "manuscript",
       "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/calibration_baseline.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/calibration-baseline",
+            "ref": "main",
+            "path": "paper.pdf"
+          }
+        },
         {
           "id": "primary",
           "kind": "repository",
-          "role": "code",
-          "url": "https://github.com/finite-sample/tworeg/",
+          "role": "replication",
+          "label": "Replication Materials",
+          "url": "https://github.com/finite-sample/calibration-baseline",
           "new_tab": true
         }
       ],
@@ -1505,12 +1518,31 @@
           ]
         },
         {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
           "resource": "primary"
         }
       ],
       "description": [
-        "When ML predictions are used as regressors in downstream models, prediction error is non-classical and a growing literature proposes purpose-built corrections (GMM, prediction-powered inference, IV, joint MLE). For linear downstream models, regression calibration—replacing the ML prediction with E[X | X̂, Z] estimated on a calibration sample—already eliminates the non-classical error structure under an exogeneity condition these methods also rely on. Two OLS regressions and a two-sample bootstrap give you consistent estimates with valid confidence intervals. For nonlinear downstream models (logistic, Poisson, any GLM), Jensen's inequality breaks the argument and heavier methods are genuinely needed. The linear/nonlinear boundary is the main result."
-      ]
+        "Researchers increasingly use machine-learning predictions as covariates, including controls for confounding. Prediction error can then change the estimated effect of interest. Regression calibration offers an established baseline: use a labeled sample to predict the true covariate from its machine-generated surrogate and the other regression variables. We explain when this procedure identifies a linear model and what can go wrong when calibration must itself be learned. A population projection can suffice without a correct conditional-mean model, but estimated calibration must preserve the residual relationships that identify the downstream coefficients. We connect departures from those relationships to coefficient error, distinguish many calibration predictors from many mismeasured covariates, and separate estimation error from failures of support and transport. Exact examples show how omitting treatment or imposing shrinkage changes confounding adjustment; simulations illustrate these mechanisms. The resulting framework makes regression calibration a transparent benchmark for evaluating methods that use machine-learned covariates."
+      ],
+      "description_source": {
+        "url": "papers/calibration_baseline.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-17",
+        "text_type": "summary"
+      }
     },
     {
       "id": "partial-credit-diagnosing-proxy-covariates-with-validation-swaps",
