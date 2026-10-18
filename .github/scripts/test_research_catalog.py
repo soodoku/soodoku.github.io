@@ -47,7 +47,7 @@ class CatalogTests(unittest.TestCase):
         resource["url"] = "javascript:alert(1)"
         with self.assertRaisesRegex(ValueError, "Unsupported resource URL"):
             validate_catalog(self.catalog)
-        resource["url"] = "papers/forget.pdf"
+        resource["url"] = "papers/partisan_vision.pdf"
         resource["source"] = {"repo": "owner/repo", "ref": "main", "path": "../x.pdf"}
         with self.assertRaisesRegex(ValueError, "Invalid source path"):
             validate_catalog(self.catalog)
@@ -201,7 +201,7 @@ class CatalogTests(unittest.TestCase):
             },
         )
         self.assertEqual(sources["downloads_are_cheap.pdf"]["repo"], "recite/softverse")
-        self.assertNotIn("forget.pdf", sources)
+        self.assertNotIn("partisan_vision.pdf", sources)
 
     def test_schema_rejects_unsupported_markup(self):
         import json
