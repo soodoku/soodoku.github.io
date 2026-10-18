@@ -4483,6 +4483,14 @@
           "url": "press/Hostile_Guardian.pdf",
           "label": "The Guardian",
           "new_tab": true
+        },
+        {
+          "id": "published",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ajps12237_LRyl.pdf",
+          "label": "Published Version",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -4501,6 +4509,10 @@
         },
         {
           "resource": "link-2"
+        },
+        " · ",
+        {
+          "resource": "published"
         }
       ],
       "description": [
