@@ -135,6 +135,9 @@
             },
             {
               "entry": "pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss"
+            },
+            {
+              "entry": "scaling-ml-products-at-startups-a-practitioner-s-guide"
             }
           ]
         }
@@ -1932,7 +1935,7 @@
         {
           "id": "supplement",
           "kind": "pdf",
-          "role": "manuscript",
+          "role": "appendix",
           "url": "papers/pwned_si.pdf",
           "label": "Supporting Information",
           "new_tab": true
@@ -4028,7 +4031,7 @@
         {
           "id": "supplement",
           "kind": "pdf",
-          "role": "manuscript",
+          "role": "appendix",
           "url": "papers/partisanCompositionSupplement.pdf",
           "label": "Supplement to the 2015 Draft",
           "new_tab": true
@@ -4633,7 +4636,7 @@
         {
           "id": "supplement",
           "kind": "pdf",
-          "role": "manuscript",
+          "role": "appendix",
           "url": "papers/StereotypesAboutSDAppendix.pdf",
           "label": "Online Supplement",
           "new_tab": true
@@ -8751,6 +8754,41 @@
         "reviewed_on": "2026-10-17",
         "text_type": "summary"
       }
+    },
+    {
+      "id": "scaling-ml-products-at-startups-a-practitioner-s-guide",
+      "kind": "paper",
+      "title": "Scaling ML Products At Startups: A Practitioner's Guide",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "manuscript",
+          "url": "https://arxiv.org/abs/2304.10660",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "How should a machine learning startup serve more queries, faster and of more kinds, without costs running away? We split costs into variable costs, of serving models and keeping them performant, and fixed costs, of developing and training new ones, and suggest ways to cut each. Since the largest fixed cost is often finding the root causes of failures, we also describe how we approach that."
+      ],
+      "description_source": {
+        "url": "https://arxiv.org/abs/2304.10660",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-18",
+        "text_type": "summary"
+      },
+      "coauthors": [
+        "Atul Dhingra"
+      ],
+      "publication": [
+        "arXiv:2304.10660, 2023."
+      ]
     }
   ]
 }
