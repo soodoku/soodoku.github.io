@@ -1928,6 +1928,14 @@
           "role": "related",
           "url": "https://github.com/themains/pwned_voters",
           "label": "I Have Been Pwned: Evidence from the Florida Voter Registration Data"
+        },
+        {
+          "id": "supplement",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/pwned_si.pdf",
+          "label": "Supporting Information",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -1946,6 +1954,10 @@
         },
         {
           "resource": "link-2"
+        },
+        " · ",
+        {
+          "resource": "supplement"
         }
       ],
       "description": [
@@ -3161,21 +3173,42 @@
     },
     {
       "id": "by-the-numbers-toward-more-precise-numerical-summaries-of-results",
-      "kind": "project",
+      "kind": "paper",
       "title": "By the Numbers: Toward More Precise Numerical Summaries of Results",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/quant.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "code",
           "kind": "repository",
-          "role": "code",
+          "role": "replication",
           "url": "https://github.com/recite/quant-discipline",
+          "label": "Replication Materials",
           "new_tab": true
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "code"
         }
       ],
       "description": [
@@ -3991,6 +4024,14 @@
           "role": "related",
           "url": "papers/guesswho.pdf",
           "label": "The Partisans in our Heads"
+        },
+        {
+          "id": "supplement",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/partisanCompositionSupplement.pdf",
+          "label": "Supplement to the 2015 Draft",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -4009,6 +4050,10 @@
         },
         {
           "resource": "link-2"
+        },
+        " · ",
+        {
+          "resource": "supplement"
         }
       ],
       "description": [
@@ -4572,6 +4617,14 @@
           "url": "https://osf.io/jdv7r/",
           "label": "Replication Materials",
           "new_tab": true
+        },
+        {
+          "id": "supplement",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/StereotypesAboutSDAppendix.pdf",
+          "label": "Online Supplement",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -4590,6 +4643,10 @@
         },
         {
           "resource": "link-2"
+        },
+        " · ",
+        {
+          "resource": "supplement"
         }
       ],
       "description": [
