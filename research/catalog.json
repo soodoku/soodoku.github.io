@@ -6942,7 +6942,7 @@
     {
       "id": "misinformation-about-misinformation-of-headlines-and-survey-design",
       "kind": "paper",
-      "title": "Misinformation About Misinformation: Of Headlines and Survey Design",
+      "title": "Misinformation About Misinformation? Of Headlines and Survey Design",
       "primary_resource": "primary",
       "resources": [
         {
@@ -7246,12 +7246,12 @@
         " "
       ],
       "description": [
-        "Observed knowledge gain is a poor measure of what people learn from campaigns and deliberative forums: questionnaires ask easy items, so those who learn the most have the least room to show it. When the knowledgeable learn more, post-process knowledge is guaranteed to track true learning and observed gain is not. In simulations matched to 21 Deliberative Polls, observed gain barely correlates with true learning, and the choice of measure changes who appears to learn."
+        "Observed knowledge gain can understate learning when those who know more also learn more and easy questions limit their room to improve. The paper derives conditions under which post-process knowledge is more closely associated with true learning. It performs better in proportional-learning simulations matched to 21 Deliberative Polls, but observed gain does better in catch-up simulations and most split-item comparisons. Scoring and baseline adjustment also change associations with education and attitude change."
       ],
       "description_source": {
         "url": "papers/k_gains.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-23",
+        "reviewed_on": "2026-10-19",
         "text_type": "summary"
       },
       "coauthors": [
