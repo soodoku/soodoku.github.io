@@ -1348,7 +1348,7 @@
     {
       "id": "total-error",
       "kind": "paper",
-      "title": "Total Error: What Classifier Validation Establishes About Exposure Comparisons",
+      "title": "Total Error: What Classifier Validation Establishes About Downstream Estimates",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1399,7 +1399,7 @@
         }
       ],
       "description": [
-        "Classifier accuracy weights domains equally, but exposure comparisons and regression coefficients give each domain its own signed weight. Starting from the estimand, this paper derives how reused labels and correlated errors across domains affect bias and uncertainty. It gives sharp bounds on what exact confusion counts establish about a comparison, and shows what a probability audit must retain to improve on those bounds. A browsing-data stress test illustrates the limits of count summaries and the gains from estimating weighted errors directly."
+        "Researchers use predicted item labels to estimate totals, group differences, and regression coefficients. A confusion matrix counts mistakes but loses their locations, which can matter when a label is reused or carries a large weight. This note gives sharp bounds on linear estimates from exact target-item error counts and shows when those counts suffice. It compares a simultaneous count-based probability audit with direct auditing of weighted errors. A YouGov browsing stress test and observed disagreements among adult-domain classifiers illustrate what these summaries establish. Score plug-ins and regressions with aggregated predicted covariates require additional assumptions."
       ],
       "related_entries": [
         "unbiased-regression-with-costly-item-labels"
