@@ -4760,7 +4760,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/face_of_crime.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/face_of_crime",
+            "ref": "master",
+            "path": "ms/face_of_crime.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4798,7 +4803,7 @@
         }
       ],
       "description": [
-        "We code the race and gender of victims and criminals in three Law and Order series and compare portrayals with crime statistics. White people and women are overrepresented in both roles, while Black people and men are underrepresented."
+        "We tally the coded race and gender of victims and criminals across three Law and Order series. Black characters appear at lower shares than in several historical arrest and victimization series, while women appear at higher shares among criminals than in several arrest categories. The comparisons are descriptive because the sources differ in crimes, places, and years."
       ],
       "supporting": {
         "press": [
@@ -4812,7 +4817,7 @@
       "description_source": {
         "url": "papers/face_of_crime.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-23",
         "text_type": "summary"
       },
       "coauthors": [
