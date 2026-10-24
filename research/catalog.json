@@ -1399,7 +1399,7 @@
         }
       ],
       "description": [
-        "One predicted item label can appear in many records and several estimates. This paper maps item errors into totals, group comparisons, and regressions. It gives sharp bounds from exact target-item confusion counts for linear estimates and shows how an existing probability audit can correct several estimates jointly. When an aggregate is a regression covariate, the coefficient depends on item cross-products and needs different treatment. A worked example, YouGov browsing data, and observed disagreement among adult-domain classifiers show the consequences of reuse and skew."
+        "One predicted item label can enter many records and several constructed variables. This paper traces the consequences for coefficients and standard errors when aggregates are regression outcomes, covariates, or both. It connects generated-variable and shared-source inference, gives joint moment corrections and covariance estimates under item validation, and states the additional conditions required for normal coefficient intervals. Simulations distinguish coefficient bias, empirical variability, estimated standard errors, and coverage, including failures with influential or few items. Browsing-data illustrations show the roles of reuse, visit concentration, and observed classifier disagreement."
       ],
       "related_entries": [
         "unbiased-regression-with-costly-item-labels"
