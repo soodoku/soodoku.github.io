@@ -1348,7 +1348,7 @@
     {
       "id": "total-error",
       "kind": "paper",
-      "title": "Reused Predicted Labels in Aggregates and Regression",
+      "title": "One Label, Many Records: Shared Prediction Error in Regression",
       "primary_resource": "primary",
       "resources": [
         {
