@@ -410,6 +410,9 @@
               "entry": "holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online"
             },
             {
+              "entry": "do-pakistanis-hold-militant-groups-in-low-regard"
+            },
+            {
               "entry": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes"
             },
             {
@@ -4611,6 +4614,56 @@
         },
         " 2024."
       ]
+    },
+    {
+      "id": "do-pakistanis-hold-militant-groups-in-low-regard",
+      "kind": "paper",
+      "title": "Do Pakistanis Hold Militant Groups in Low Regard?",
+      "primary_resource": "manuscript",
+      "resources": [
+        {
+          "id": "manuscript",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/endorsement.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "code",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/endorsement",
+          "label": "Code and Data",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "manuscript"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "code"
+        }
+      ],
+      "description": [
+        "An average endorsement effect does not identify how many people favor the endorser. Reanalysis of a 2009 Pakistan survey with an ordinal measurement model yields a 43% probability of a positive latent reaction, averaged across four militant groups in the unweighted sample (95% credible interval: 32–53%). Small negative mean reactions coexist with substantial dispersion."
+      ],
+      "description_source": {
+        "url": "papers/endorsement.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-25",
+        "text_type": "summary"
+      }
     },
     {
       "id": "hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes",
