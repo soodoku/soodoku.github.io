@@ -15,9 +15,6 @@
             },
             {
               "entry": "stable-cart-lower-bootstrap-prediction-variance-cart"
-            },
-            {
-              "entry": "bootstrap-consistency-regularization-for-stable-neural-network-predictions"
             }
           ]
         },
@@ -689,63 +686,6 @@
       ],
       "description": [
         "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
-      ]
-    },
-    {
-      "id": "bootstrap-consistency-regularization-for-stable-neural-network-predictions",
-      "kind": "paper",
-      "title": "Bootstrap-Consistency Regularization: Training Neural Networks for Prediction Stability",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/bootconsistency.pdf",
-          "new_tab": true,
-          "source": {
-            "repo": "finite-sample/bcr",
-            "ref": "main",
-            "path": "ms/boot.pdf"
-          }
-        },
-        {
-          "id": "link-2",
-          "kind": "repository",
-          "role": "replication",
-          "url": "https://github.com/finite-sample/bcr",
-          "label": "Replication Materials",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
-          "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🗃"
-          ]
-        },
-        {
-          "resource": "link-2"
-        }
-      ],
-      "description": [
-        "Neural networks trained on the same data with different random seeds or slightly perturbed training sets can produce substantially different predictions for individual examples, even when aggregate accuracy is similar. We add a consistency penalty to the training loss that penalizes prediction disagreement across bootstrap resamples of the training data, encouraging the network to find solutions whose individual-level predictions are stable under resampling."
       ]
     },
     {
