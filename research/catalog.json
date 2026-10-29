@@ -4388,12 +4388,12 @@
         }
       ],
       "description": [
-        "Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. Across these tasks, the estimated partisan effects are generally small."
+        "Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. The clearest experimental difference is among Democrats judging parking errors. Republicans count more masks after extreme responses are capped; writing-task effects are less precisely estimated."
       ],
       "description_source": {
         "url": "papers/partisan_vision.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-29",
         "text_type": "summary"
       },
       "coauthors": [
