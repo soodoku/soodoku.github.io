@@ -4393,7 +4393,7 @@
         }
       ],
       "description": [
-        "Two experiments and a survey test whether partisanship shapes simple visual evaluations. Respondents count errors in a passage, count poorly parked cars in a photograph, or count people wearing masks in a video. Pooling the writing and parking experiments yields a 0.12-standard-deviation effect (SE 0.04) favoring respondents' own party, with inference clustered by respondent. The clearest individual effect is in Democrats' parking judgments. The strength interactions do not show consistently larger effects among strong partisans. Republicans count more masked people in the Trump-supporter video under several response caps; that comparison is descriptive and sensitive to extreme responses."
+        "Two experiments and a survey test whether partisanship shapes simple visual evaluations. Respondents count errors in a passage, count poorly parked cars in a photograph, or count people wearing masks in a video. Pooling the writing and parking experiments yields a 0.12-standard-deviation effect (SE 0.04) favoring respondents' own party, with inference clustered by respondent. The clearest individual effect is in Democrats' parking judgments. The pooled effect persists under response caps of 10, 15, and 20, although the Lucid Republican writing contrast is sensitive to extreme responses. The strength interactions do not show consistently larger effects among strong partisans. Republicans count more masked people in the Trump-supporter video under several response caps; that comparison is descriptive and sensitive to extreme responses."
       ],
       "description_source": {
         "url": "papers/partisan_vision.pdf",
