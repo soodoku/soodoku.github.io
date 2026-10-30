@@ -2784,14 +2784,19 @@
     {
       "id": "propagation-of-error-approving-citations-to-problematic-research",
       "kind": "paper",
-      "title": "Propagation of Error: Approving Citations to Problematic Research",
+      "title": "Propagation of Error: Citations to Retracted Research",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/error.pdf"
+          "url": "papers/error.pdf",
+          "source": {
+            "repo": "recite/propagation_of_error",
+            "ref": "master",
+            "path": "ms/main.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -2821,12 +2826,12 @@
         }
       ],
       "description": [
-        "Using more than 3,000 retracted articles and over 74,000 citations, we study how problematic research continues to circulate. At least 31% of citations occurred a year or more after retraction, and about 91% of post-retraction citations did not acknowledge a concern with the cited article."
+        "We compare each of 8,627 retracted research articles, published 2000–2019 and retracted 2005–2022, with up to five articles from the same journal and publication year matched on pre-retraction citations, using OpenAlex citation histories through 2025 for both. In the three complete years after the retraction year, citations to retracted articles were 62% lower relative to the path of their comparison articles, and the gap keeps widening for a decade. Retracted articles nonetheless continue to be cited: 27% of all citations to these articles arrived after the retraction year, five years on 39% of the articles observed that long were still being cited, and in a hand-coded sample 91% of post-retraction citations noted no concern with the cited article."
       ],
       "description_source": {
         "url": "papers/error.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-10-29",
         "text_type": "summary"
       },
       "coauthors": [
@@ -4834,7 +4839,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/danweitzel/extreme_recall_2023",
+          "url": "https://github.com/notnews/extreme_recall_2023",
           "label": "Replication Materials",
           "new_tab": true
         },
@@ -6758,7 +6763,7 @@
           "id": "link-4",
           "kind": "webpage",
           "role": "press",
-          "url": "https://effectivegov.uchicago.edu/podcast/do-partisans-really-believe-different-facts",
+          "url": "https://podcasts.apple.com/us/podcast/do-partisans-really-believe-different-facts/id1496412542?i=1000623917602",
           "label": "Not Another Politics Podcast (U. Chicago)",
           "new_tab": true
         }
