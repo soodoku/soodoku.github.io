@@ -310,6 +310,9 @@
       "title": "Public Services and Infrastructure",
       "children": [
         {
+          "entry": "predicting-out-of-home-placement"
+        },
+        {
           "entry": "streetsense-learning-from-google-street-view"
         },
         {
@@ -8792,6 +8795,55 @@
       "publication": [
         "arXiv:2304.10660, 2023."
       ]
+    },
+    {
+      "id": "predicting-out-of-home-placement",
+      "kind": "paper",
+      "title": "Predicting Out of Home Placement",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/ooh_pred.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/ooh_pred",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "code",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/ooh_pred",
+          "label": "Code",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        "Report with supplementary information. ",
+        {
+          "resource": "code"
+        }
+      ],
+      "description": [
+        "Can administrative and clinical records help target limited assessment capacity toward youth likely to enter behavioral health out-of-home care? We study 15,332 New Jersey youth with pre-2015 CANS assessments in a PerformCare cohort selected through service involvement during 2014–2015. We use assessments, demographics, diagnoses, medications, and eligibility records dated before January 1, 2015 to predict recorded admission starts through November 2, 2016. Among 3,067 held-out youth, selecting the 100 highest model scores identifies 28 youth with a recorded placement, compared with 23 using prior placement history and 5.9 expected under random selection. The incremental gain over the history rule at this capacity is uncertain. These are gains in case finding, not estimates of placements prevented or welfare improved. Retrospective cohort selection and uncertain admission completeness limit prospective interpretation."
+      ],
+      "description_source": {
+        "url": "papers/ooh_pred.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-10-30",
+        "text_type": "summary"
+      }
     }
   ]
 }
