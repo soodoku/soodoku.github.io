@@ -4388,7 +4388,7 @@
         }
       ],
       "description": [
-        "Two experiments and a survey test whether partisan cues bias simple visual evaluations, such as counting errors or assessing a scene. In both writing studies, Democrats and Republicans count more errors under opposing-party cues, though the estimates are imprecise. The clearest individual effect is among Democrats judging parking errors. Republicans count more masks after extreme responses are capped; without the cap, extreme responses reverse the difference."
+        "Two experiments and a survey test whether partisanship shapes simple visual evaluations. Respondents count errors in a passage, count poorly parked cars in a photograph, or count people wearing masks in a video. Pooling the writing and parking experiments yields a 0.12-standard-deviation effect (SE 0.04) favoring respondents' own party, with inference clustered by respondent. The clearest individual effect is in Democrats' parking judgments. The strength interactions do not show consistently larger effects among strong partisans. Republicans count more masked people in the Trump-supporter video under several response caps; that comparison is descriptive and sensitive to extreme responses."
       ],
       "description_source": {
         "url": "papers/partisan_vision.pdf",
