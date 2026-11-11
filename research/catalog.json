@@ -4566,7 +4566,7 @@
     {
       "id": "do-pakistanis-hold-militant-groups-in-low-regard",
       "kind": "paper",
-      "title": "Do Pakistanis Hold Militant Groups in Low Regard?",
+      "title": "Which Pakistanis Hold Militant Groups in “Low Regard”? Three Interviewers in Blair et al.’s Endorsement Experiment",
       "primary_resource": "manuscript",
       "resources": [
         {
@@ -4609,7 +4609,7 @@
         }
       ],
       "description": [
-        "Blair et al. read a small negative endorsement effect in their 2009 Pakistan survey as evidence that Pakistanis hold militant groups in low regard. Three of the survey's 75 interviewers recorded the same four answers in most of their 313 interviews. Without them, a militant endorsement still costs a policy only 2.1 points on a 0–100 scale (1.3 with them), and the standard measurement model still puts the share who react favorably at 38%. The data do not settle whether a sizable favorable minority exists."
+        "Blair et al. conclude from their 2009 Pakistan endorsement experiment that poor Pakistanis dislike militant groups more than the middle class does, and that Pakistanis in general hold the groups in low regard. Three of the survey’s 75 interviewers recorded the same four answers in most of their 313 interviews, almost all with middle- and high-income respondents. Without them, the middle class reacts to a militant endorsement about as negatively as the poor do: the gap between the two, Blair et al.’s central estimate, falls from 2.2 to 1.0 points on a 0–100 scale and is not distinguishable from zero in any of their specifications. The evidence for low regard stays a small average effect (2.1 points without the three interviewers, 1.3 with them), and the share who react favorably follows from the measurement model’s normality assumption rather than from the data."
       ],
       "description_source": {
         "url": "papers/endorsement.pdf",
