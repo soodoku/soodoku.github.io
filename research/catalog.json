@@ -571,6 +571,9 @@
       "title": "Missing Women",
       "children": [
         {
+          "entry": "missing-women-on-global-streets"
+        },
+        {
           "entry": "missing-women-on-indian-streets"
         },
         {
@@ -5601,6 +5604,55 @@
           ]
         },
         " 2023."
+      ]
+    },
+    {
+      "id": "missing-women-on-global-streets",
+      "kind": "paper",
+      "title": "Missing women on global streets",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/missing_women_global.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "geosensing/missing_women_global",
+            "ref": "main",
+            "path": "ms/note.pdf"
+          }
+        },
+        {
+          "id": "link-2",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/geosensing/missing_women_global",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "link-2"
+        }
+      ],
+      "description": [
+        "Using 9,835 person-filtered street-level photographs across 101 cities in 88 countries from the Global Streetscapes corpus, women account for 36.5% (95% CI: [32.9%, 40.2%]) of classified pedestrians and 13.0% of two-wheeler riders, ranging from 49.5% in Europe and Central Asia to 26.5% in South Asia and 18.4% in Middle East, North Africa, Afghanistan, and Pakistan."
       ]
     },
     {
