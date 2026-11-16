@@ -1,16 +1,23 @@
 # Research catalog
 
-Edit `catalog.json`, then regenerate the page:
+Edit `catalog.json`, then regenerate the pages:
 
 ```sh
 python -m pip install -r .github/scripts/requirements.txt
 python .github/scripts/research_catalog.py
 ```
 
-Run commands from the repository root. Commit both the catalog and generated
-`research/index.html`. GitHub Pages serves that HTML directly; it needs no build
-service or JavaScript. CI rejects edits that leave the generated page out of date.
+Run commands from the repository root. Commit the catalog and the generated
+`research/index.html` and `research/swipe.html`. GitHub Pages serves that HTML
+directly; it needs no build service. CI rejects edits that leave either generated
+page out of date.
 The page shell lives in `page.template.html`; shared styling stays in `/style.css`.
+
+The same command also writes `research/swipe.html`, a phone-first feed with one
+card per entry (each entry once, at its first position in `sections`). Its shell,
+CSS, and the small script for topic chips and the card counter live in
+`swipe.template.html`; the feed itself scrolls and snaps without JavaScript. The
+main page stays script-free and only gains a link to the feed on narrow screens.
 
 ## Entries, resources, and sections
 

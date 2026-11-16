@@ -11,6 +11,8 @@ on:
       - research/catalog.schema.json
       - research/page.template.html
       - research/index.html
+      - research/swipe.template.html
+      - research/swipe.html
       - research/papers/*.pdf
       - .github/scripts/**
       - .github/workflows/sync-papers.yml
@@ -20,6 +22,8 @@ on:
       - research/catalog.schema.json
       - research/page.template.html
       - research/index.html
+      - research/swipe.template.html
+      - research/swipe.html
       - research/papers/*.pdf
       - .github/scripts/**
       - .github/workflows/sync-papers.yml

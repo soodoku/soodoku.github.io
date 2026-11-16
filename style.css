@@ -503,6 +503,10 @@ details details {
   font-family: 'Lato', sans-serif;
 }
 
+.swipe-banner {
+  display: none;
+}
+
 /* =========================================
    8. Mobile Strategy (Responsive Design)
    ========================================= */
@@ -547,6 +551,16 @@ details details {
 
   .content h3 {
     font-size: 1.25rem;
+  }
+
+  .content a.swipe-banner {
+    display: block;
+    margin: 0 0 1.25rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.8rem;
+    background: #111;
+    color: #fff;
+    font-size: 0.95rem;
   }
 
   #research details {

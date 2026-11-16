@@ -1,10 +1,26 @@
 """Behavioral checks for catalog validation and page generation."""
 
 import copy
+import re
+import sys
+import tempfile
 import unittest
+from pathlib import Path
+from unittest import mock
 
+import research_catalog
 from jsonschema import ValidationError
-from research_catalog import ROOT, load_catalog, paper_sources, render, validate_catalog
+from research_catalog import (
+    ROOT,
+    load_catalog,
+    paper_sources,
+    placements,
+    render,
+    render_swipe,
+    validate_catalog,
+)
+
+SWIPE = "{{chips}}|{{cards}}|{{total}}"
 
 
 class CatalogTests(unittest.TestCase):
@@ -17,6 +33,90 @@ class CatalogTests(unittest.TestCase):
             self.catalog, (ROOT / "research/page.template.html").read_text()
         )
         self.assertEqual(generated, (ROOT / "research/index.html").read_text())
+
+    def test_checked_in_swipe_page_matches_generator(self):
+        generated = render_swipe(
+            self.catalog, (ROOT / "research/swipe.template.html").read_text()
+        )
+        self.assertEqual(generated, (ROOT / "research/swipe.html").read_text())
+
+    def test_swipe_has_one_card_per_entry_even_when_listed_twice(self):
+        listed = []
+
+        def walk(value):
+            for child in value["children"]:
+                if "entry" in child:
+                    listed.append(child["entry"])
+                else:
+                    walk(child)
+
+        for value in self.catalog["sections"]:
+            walk(value)
+        self.assertGreater(len(listed), len(set(listed)))
+        generated = render_swipe(self.catalog, SWIPE)
+        self.assertEqual(
+            generated.count('<article class="card"'), len(self.catalog["entries"])
+        )
+        self.assertTrue(generated.endswith(f"|{len(self.catalog['entries'])}"))
+
+    def test_swipe_keeps_first_position_and_section_order(self):
+        order = [entry_id for _, _, entry_id in placements(self.catalog)]
+        self.assertEqual(
+            order[0], self.catalog["sections"][0]["children"][0]["children"][0]["entry"]
+        )
+        sections = [top["id"] for top, _, _ in placements(self.catalog)]
+        self.assertEqual(
+            list(dict.fromkeys(sections)),
+            [value["id"] for value in self.catalog["sections"]],
+        )
+        chips = re.findall(
+            r'href="#card-(\d+)" data-section="([^"]+)"',
+            render_swipe(self.catalog, SWIPE).split("|")[0],
+        )
+        for number, section_id in chips:
+            self.assertEqual(sections[int(number) - 1], section_id)
+            if int(number) > 1:
+                self.assertNotEqual(sections[int(number) - 2], section_id)
+
+    def test_swipe_labels_subsections_and_escapes(self):
+        self.entry["title"] = "A < B"
+        generated = render_swipe(self.catalog, SWIPE)
+        self.assertIn("A &lt; B</a>", generated)
+        self.assertIn('<span class="sub">\u203a Prediction Stability</span>', generated)
+
+    def test_templates_require_each_placeholder_once(self):
+        for template in ("{{chips}}|{{cards}}", SWIPE + "{{cards}}"):
+            with self.subTest(template=template):
+                with self.assertRaisesRegex(ValueError, "placeholder"):
+                    render_swipe(self.catalog, template)
+        with self.assertRaisesRegex(ValueError, "catalog placeholder"):
+            render(self.catalog, "no placeholder")
+
+    def test_check_fails_when_swipe_page_is_stale(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "research").mkdir()
+            for name in (
+                "page.template.html",
+                "index.html",
+                "swipe.template.html",
+                "swipe.html",
+            ):
+                (root / "research" / name).write_text(
+                    (ROOT / "research" / name).read_text()
+                )
+            with (
+                mock.patch.object(research_catalog, "ROOT", root),
+                mock.patch.object(
+                    research_catalog, "load_catalog", lambda: self.catalog
+                ),
+                mock.patch.object(sys, "argv", ["research_catalog.py", "--check"]),
+            ):
+                research_catalog.main()
+                (root / "research/swipe.html").write_text("stale")
+                with self.assertRaises(SystemExit) as raised:
+                    research_catalog.main()
+            self.assertEqual(raised.exception.code, 1)
 
     def test_rejects_duplicate_entry_and_resource_ids(self):
         self.catalog["entries"].append(copy.deepcopy(self.entry))

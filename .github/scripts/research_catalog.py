@@ -1,4 +1,4 @@
-"""Validate the research catalog and generate the checked-in research page."""
+"""Validate the research catalog and generate the checked-in research pages."""
 
 import argparse
 import html
@@ -117,43 +117,88 @@ def paper_sources(catalog):
     }
 
 
+def rich_text(nodes, entry, metadata=""):
+    resources = {resource["id"]: resource for resource in entry["resources"]}
+    parts = []
+    for node in nodes:
+        if isinstance(node, str):
+            parts.append(html.escape(node))
+        elif "resource" in node:
+            resource = resources[node["resource"]]
+            primary = resource["id"] == entry["primary_resource"]
+            label = entry["title"] if primary else resource["label"]
+            target = ' target="_blank"' if resource.get("new_tab") else ""
+            css = ' class="entry-title"' if primary else ""
+            parts.append(
+                f'<a href="{html.escape(resource["url"], quote=True)}"'
+                f"{target}{css}>"
+                f"{html.escape(label)}</a>"
+            )
+            if primary:
+                parts.append(metadata)
+        else:
+            tag = node["tag"]
+            css = f' class="{node["class"]}"' if "class" in node else ""
+            parts.append(f"<{tag}{css}>")
+            if tag != "br":
+                parts.append(rich_text(node.get("children", []), entry, metadata))
+                parts.append(f"</{tag}>")
+    return "".join(parts)
+
+
+def credit(coauthors):
+    if len(coauthors) == 1:
+        return coauthors[0]
+    if len(coauthors) == 2:
+        return " and ".join(coauthors)
+    return ", ".join(coauthors[:-1]) + ", and " + coauthors[-1]
+
+
+def entry_summary(entry, entries):
+    """Title line, credits, citation, resources, and related/press rows."""
+    metadata = ""
+    if coauthors := entry.get("coauthors"):
+        metadata += f"<br>With {html.escape(credit(coauthors))}."
+    if publication := entry.get("publication"):
+        metadata += "<br>" + rich_text(publication, entry)
+    summary = rich_text(entry["summary"], entry, metadata)
+    supporting = {
+        label: [rich_text(item, entry) for item in items]
+        for label, items in entry.get("supporting", {}).items()
+    }
+    if entry.get("related_entries"):
+        links = supporting.setdefault("related", [])
+        for related_id in entry["related_entries"]:
+            related = entries[related_id]
+            links.append(
+                rich_text([{"resource": related["primary_resource"]}], related)
+            )
+    for label in ("related", "press"):
+        if items := supporting.get(label):
+            summary += (
+                '<span class="supporting-row">'
+                f'<span class="supporting-label">{label.title()}:</span> '
+                '<span class="supporting-items" role="list">'
+            )
+            summary += "; ".join(
+                f'<span class="supporting-item" role="listitem">{item}</span>'
+                for item in items
+            )
+            summary += "</span></span>"
+    return summary
+
+
+def fill(template, **values):
+    for name, value in values.items():
+        placeholder = "{{" + name + "}}"
+        if template.count(placeholder) != 1:
+            raise ValueError(f"Template must contain exactly one {name} placeholder")
+        template = template.replace(placeholder, value)
+    return template
+
+
 def render(catalog, template):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
-
-    def rich_text(nodes, entry, metadata=""):
-        resources = {resource["id"]: resource for resource in entry["resources"]}
-        parts = []
-        for node in nodes:
-            if isinstance(node, str):
-                parts.append(html.escape(node))
-            elif "resource" in node:
-                resource = resources[node["resource"]]
-                label = (
-                    entry["title"]
-                    if resource["id"] == entry["primary_resource"]
-                    else resource["label"]
-                )
-                target = ' target="_blank"' if resource.get("new_tab") else ""
-                css = (
-                    ' class="entry-title"'
-                    if resource["id"] == entry["primary_resource"]
-                    else ""
-                )
-                parts.append(
-                    f'<a href="{html.escape(resource["url"], quote=True)}"'
-                    f"{target}{css}>"
-                    f"{html.escape(label)}</a>"
-                )
-                if resource["id"] == entry["primary_resource"]:
-                    parts.append(metadata)
-            else:
-                tag = node["tag"]
-                css = f' class="{node["class"]}"' if "class" in node else ""
-                parts.append(f"<{tag}{css}>")
-                if tag != "br":
-                    parts.append(rich_text(node.get("children", []), entry, metadata))
-                    parts.append(f"</{tag}>")
-        return "".join(parts)
 
     def section(value):
         parts = [
@@ -166,56 +211,75 @@ def render(catalog, template):
                 continue
             entry = entries[child["entry"]]
             css = f' class="{entry["class"]}"' if "class" in entry else ""
-            description = rich_text(entry["description"], entry)
-            metadata = ""
-            if coauthors := entry.get("coauthors"):
-                if len(coauthors) == 1:
-                    credit = coauthors[0]
-                elif len(coauthors) == 2:
-                    credit = " and ".join(coauthors)
-                else:
-                    credit = ", ".join(coauthors[:-1]) + ", and " + coauthors[-1]
-                metadata += f"<br>With {html.escape(credit)}."
-            if publication := entry.get("publication"):
-                metadata += "<br>" + rich_text(publication, entry)
-            summary = rich_text(entry["summary"], entry, metadata)
-            supporting = {
-                label: [rich_text(item, entry) for item in items]
-                for label, items in entry.get("supporting", {}).items()
-            }
-            if entry.get("related_entries"):
-                links = supporting.setdefault("related", [])
-                for related_id in entry["related_entries"]:
-                    related = entries[related_id]
-                    links.append(
-                        rich_text([{"resource": related["primary_resource"]}], related)
-                    )
-            for label in ("related", "press"):
-                if items := supporting.get(label):
-                    summary += (
-                        '<span class="supporting-row">'
-                        f'<span class="supporting-label">{label.title()}:</span> '
-                        '<span class="supporting-items" role="list">'
-                    )
-                    summary += "; ".join(
-                        f'<span class="supporting-item" role="listitem">{item}</span>'
-                        for item in items
-                    )
-                    summary += "</span></span>"
             parts.extend(
                 [
                     f"<details{css}>",
-                    f"<summary>{summary}</summary>",
-                    f'<div class="abstract">{description}</div>',
+                    f"<summary>{entry_summary(entry, entries)}</summary>",
+                    f'<div class="abstract">{rich_text(entry["description"], entry)}'
+                    "</div>",
                     "</details>",
                 ]
             )
         parts.append("</details>")
         return "\n".join(parts)
 
-    if template.count("{{catalog}}") != 1:
-        raise ValueError("Template must contain exactly one catalog placeholder")
-    return template.replace("{{catalog}}", "\n".join(map(section, catalog["sections"])))
+    return fill(template, catalog="\n".join(map(section, catalog["sections"])))
+
+
+def placements(catalog):
+    """Each entry once, at its first position: (top section, subsection, id)."""
+    seen = set()
+
+    def walk(top, value, path):
+        for child in value["children"]:
+            if "entry" not in child:
+                yield from walk(top, child, path + [child["title"]])
+            elif child["entry"] not in seen:
+                seen.add(child["entry"])
+                yield top, " › ".join(path), child["entry"]
+
+    for top in catalog["sections"]:
+        yield from walk(top, top, [])
+
+
+def render_swipe(catalog, template):
+    entries = {entry["id"]: entry for entry in catalog["entries"]}
+    hues = {
+        top["id"]: round(index * 360 / len(catalog["sections"]))
+        for index, top in enumerate(catalog["sections"])
+    }
+    chips, cards = [], []
+    for number, (top, subsection, entry_id) in enumerate(placements(catalog), 1):
+        entry = entries[entry_id]
+        if not chips or chips[-1][0] != top["id"]:
+            chips.append((top["id"], top["title"], number))
+        where = html.escape(top["title"])
+        if subsection:
+            where += f' <span class="sub">› {html.escape(subsection)}</span>'
+        cards.append(
+            f'<article class="card" id="card-{number}" data-section="{top["id"]}"'
+            f' style="--hue: {hues[top["id"]]}">'
+            '<div class="card-inner">'
+            f'<p class="where"><span class="kind">{entry["kind"]}</span> {where}</p>'
+            f'<div class="summary">{entry_summary(entry, entries)}</div>'
+            f'<div class="abstract">{rich_text(entry["description"], entry)}</div>'
+            '<button class="more" type="button" hidden>More</button>'
+            "</div></article>"
+        )
+    chip_links = "\n".join(
+        f'<a href="#card-{number}" data-section="{section_id}"'
+        f' style="--hue: {hues[section_id]}">{html.escape(title)}</a>'
+        for section_id, title, number in chips
+    )
+    return fill(
+        template, chips=chip_links, cards="\n".join(cards), total=str(len(cards))
+    )
+
+
+PAGES = (
+    (render, "research/page.template.html", "research/index.html"),
+    (render_swipe, "research/swipe.template.html", "research/swipe.html"),
+)
 
 
 def main():
@@ -223,16 +287,19 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     catalog = load_catalog()
-    generated = render(catalog, (ROOT / "research/page.template.html").read_text())
-    destination = ROOT / "research/index.html"
-    if args.check:
-        if destination.read_text() != generated:
+    for renderer, template, output in PAGES:
+        generated = renderer(catalog, (ROOT / template).read_text())
+        destination = ROOT / output
+        if not args.check:
+            destination.write_text(generated)
+        elif not destination.is_file() or destination.read_text() != generated:
             parser.exit(
-                1, "Run python .github/scripts/research_catalog.py to regenerate.\n"
+                1,
+                f"{output} is stale. "
+                "Run python .github/scripts/research_catalog.py to regenerate.\n",
             )
-        print("Research catalog and generated page are current.")
-    else:
-        destination.write_text(generated)
+    if args.check:
+        print("Research catalog and generated pages are current.")
 
 
 if __name__ == "__main__":
