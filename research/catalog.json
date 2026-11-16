@@ -547,6 +547,9 @@
       "title": "Political Economy of India",
       "children": [
         {
+          "entry": "do-namesakes-confuse-voters"
+        },
+        {
           "entry": "the-limits-of-electoral-gender-quotas-in-rural-local-bodies"
         },
         {
@@ -8847,6 +8850,78 @@
         "url": "papers/ooh_pred.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-10-30",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "do-namesakes-confuse-voters",
+      "kind": "paper",
+      "title": "Do Namesakes Confuse Voters? Evidence from Six Decades of Indian Elections",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/candidate_namesakes.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "in-rolls/candidate_namesakes",
+            "ref": "main",
+            "path": "ms/main.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/in-rolls/candidate_namesakes",
+          "label": "Replication Materials",
+          "new_tab": true
+        },
+        {
+          "id": "eci-results",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/in-rolls/eci_results",
+          "label": "Indian election results, 2023–2026, in TCPD's layout",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "description": [
+        "Indian ballots often list minor independents who share a leading candidate's name. Across 570,241 Lok Sabha and assembly candidate records from 1962 to 2026, independents named like a leading candidate place 7.8 percentile points higher among their contest's independents than other independents (SE 1.4), while those named like a minor-party candidate gain nothing detectable. The votes involved are few: counting only votes attributable to the name, namesakes exceeded the winning margin in 12 of 57,166 contests (95% range 4–18). The premium shrank after candidate photographs were added to voting machines in 2015, but placebo break dates produce declines of the same size."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "eci-results"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "papers/candidate_namesakes.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-11-16",
         "text_type": "summary"
       }
     }
