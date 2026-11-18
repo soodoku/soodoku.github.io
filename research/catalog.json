@@ -5082,7 +5082,7 @@
     {
       "id": "steadier-not-closer-separating-convergence-from-crystallization-in-deliberative-polls",
       "kind": "paper",
-      "title": "Steadier, Not Closer: Separating Convergence from Crystallization in Deliberative Polls",
+      "title": "Steadier, Not Closer: What Response Error Can Explain in Deliberative Polls",
       "primary_resource": "primary",
       "resources": [
         {
@@ -5094,15 +5094,15 @@
           "source": {
             "repo": "finite-sample/dp_steadier_not_closer",
             "ref": "main",
-            "path": "paper/proof.pdf"
+            "path": "ms/main.pdf"
           }
         },
         {
           "id": "repository",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/finite-sample/dp_steadier_not_closer",
-          "label": "Proof and Simulation",
+          "url": "https://github.com/finite-sample/dp_steadier_not_closer/tree/main/ms",
+          "label": "Manuscript source",
           "new_tab": true
         },
         {
@@ -5131,12 +5131,12 @@
         }
       ],
       "description": [
-        "Observed within-group variance mixes true convergence with changing measurement error. Lower error at T2 can manufacture homogenization and raise the intraclass correlation, but classical independent error cannot increase the absolute variance of group means. The paper proves these boundaries and specifies a latent partially nested model that separates convergence, between-group divergence, and crystallization. The full empirical model has not yet been fitted."
+        "When survey respondents give more consistent answers after deliberation, the spread of their answers can shrink even if their opinions remain as far apart as before. The paper examines this possibility in a reanalysis of Deliberative Polls. In a sensitivity analysis, a before-to-after reliability ratio of 0.91 would account for the average observed convergence. Evidence from three UK Health attitude scales is mixed and does not establish whether reliability changed across the full sample."
       ],
       "description_source": {
         "url": "papers/SteadierNotCloser.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-22",
+        "reviewed_on": "2026-11-18",
         "text_type": "summary"
       }
     },
