@@ -5609,7 +5609,7 @@
     {
       "id": "missing-women-on-global-streets",
       "kind": "paper",
-      "title": "A Man Walks into the Frame: Who Appears in Ground-Level Photographs from 101 Cities?",
+      "title": "Women and Men on Urban Streets: Evidence from Crowdsourced Photographs in 101 Cities",
       "primary_resource": "primary",
       "resources": [
         {
@@ -5619,7 +5619,7 @@
           "url": "papers/missing_women_global.pdf",
           "new_tab": true,
           "source": {
-            "repo": "geosensing/missing_women_global",
+            "repo": "geosensing/missing_women_crowdsourced_photos_multicountry",
             "ref": "main",
             "path": "ms/note.pdf"
           }
@@ -5628,7 +5628,7 @@
           "id": "link-2",
           "kind": "repository",
           "role": "replication",
-          "url": "https://github.com/geosensing/missing_women_global",
+          "url": "https://github.com/geosensing/missing_women_crowdsourced_photos_multicountry",
           "label": "Replication Materials",
           "new_tab": true
         }
@@ -5652,7 +5652,7 @@
         }
       ],
       "description": [
-        "Across 19,531 ground-level photographs from 101 cities, women accounted for 35.9% of classified pedestrian sightings. The share ranged from 15.9% in the Middle East, North Africa, Afghanistan, and Pakistan to 49.4% in Europe and Central Asia. The paper compares the photographs with human counts and local population records."
+        "Across 28,794 ground-level photographs from 101 cities, women accounted for 36.0% of classified pedestrian sightings. The share ranged from 16.0% in the Middle East, North Africa, Afghanistan, and Pakistan to 49.4% in Europe and Central Asia. The paper compares the photographs with human counts and local population records."
       ]
     },
     {
