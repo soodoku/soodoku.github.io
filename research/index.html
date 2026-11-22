@@ -601,7 +601,8 @@
             }
           ],
           "description": "Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.",
-          "sameAs": "https://gsood.com/research/papers/steer.pdf"
+          "sameAs": "https://gsood.com/research/papers/steer.pdf",
+          "codeRepository": "https://github.com/finite-sample/steer"
         }
       },
       {
@@ -4170,7 +4171,7 @@
 <div class="abstract">Assignment-based anticlustering splits units into equal groups that are as alike as possible and scales to millions of units, but it is deterministic. Jittering the sort that defines its batches and shuffling the group labels make it an experimental design with exact randomization inference. Each of its steps turns out to be the greedy allocation of the multi-arm adaptive design ARMM, found by an assignment problem instead of a search over all orderings of the arms. In simulations with 4 to 50 arms, it balanced covariate means better than every other design whose cost is linear in the number of units, by a margin that grew with the number of arms; run on the covariates and their squares, it gave the smallest error and the most power for a nonlinear outcome in nearly every setting.</div>
 </details>
 <details id="one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments" data-kind="paper">
-<summary><a href="papers/steer.pdf" target="_blank" class="entry-title">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></summary>
+<summary><a href="papers/steer.pdf" target="_blank" class="entry-title">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a><br><a href="https://github.com/finite-sample/steer">Source code</a></summary>
 <div class="abstract">Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.</div>
 </details>
 </details>

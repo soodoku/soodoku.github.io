@@ -1615,12 +1615,29 @@
           "role": "manuscript",
           "url": "papers/steer.pdf",
           "new_tab": true,
-          "sync_note": "No public research repository with a verified PDF for this edition was identified."
+          "source": {
+            "repo": "finite-sample/steer",
+            "ref": "main",
+            "path": "ms/steer.pdf"
+          }
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/finite-sample/steer",
+          "label": "Source code"
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
         }
       ],
       "description": [
