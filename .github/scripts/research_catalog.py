@@ -166,7 +166,7 @@ def paper_sources(catalog):
     }
 
 
-def rich_text(nodes, entry, metadata="", url_prefix=""):
+def rich_text(nodes, entry, metadata=None, url_prefix=""):
     resources = {resource["id"]: resource for resource in entry["resources"]}
     parts = []
     for node in nodes:
@@ -182,6 +182,16 @@ def rich_text(nodes, entry, metadata="", url_prefix=""):
                     f'<span class="entry-icon" role="img" aria-label="{name}" '
                     f'title="{name}">{emoji}</span>'
                 )
+            if (
+                primary
+                and metadata is not None
+                and (published := entry.get("first_published"))
+            ):
+                parts.append(
+                    f'<span hidden data-first-published="{published}" '
+                    f'role="img" aria-label="First published {published}" '
+                    f'title="First published {published}">🌱 </span>'
+                )
             label = entry["title"] if primary else resource["label"]
             target = ' target="_blank"' if resource.get("new_tab") else ""
             css = ' class="entry-title"' if primary else ""
@@ -193,7 +203,7 @@ def rich_text(nodes, entry, metadata="", url_prefix=""):
                 f"{target}{css}>"
                 f"{html.escape(label)}</a>"
             )
-            if primary:
+            if primary and metadata:
                 parts.append(metadata)
         else:
             tag = node["tag"]
@@ -218,12 +228,6 @@ def credit(coauthors):
 def entry_summary(entry, entries, url_prefix=""):
     """Title line, credits, citation, resources, and related/press rows."""
     metadata = ""
-    if published := entry.get("first_published"):
-        metadata += (
-            f'<span hidden data-first-published="{published}" '
-            f'role="img" aria-label="First published {published}" '
-            f'title="First published {published}"> 🌱</span>'
-        )
     if coauthors := entry.get("coauthors"):
         metadata += f"<br>With {html.escape(credit(coauthors))}."
     if publication := entry.get("publication"):

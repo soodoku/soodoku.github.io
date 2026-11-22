@@ -326,6 +326,7 @@ class CatalogTests(unittest.TestCase):
             marked = entry | {"software_type": kind, "first_published": "2024-02-29"}
             line = research_catalog.entry_summary(marked, {})
             self.assertIn(symbol, line)
+            self.assertRegex(line, r'🌱 </span><a [^>]*class="entry-title"')
             self.assertIn('hidden data-first-published="2024-02-29"', line)
         self.assertNotIn("🌱", research_catalog.entry_summary(entry, {}))
 
