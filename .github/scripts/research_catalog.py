@@ -255,10 +255,10 @@ def entry_page_url(entry):
 
 
 def parse_publication(entry):
-    """Extract (venue, year) from entry['publication'] rich-text nodes."""
+    """Extract venue, volume, number, pages, and year from entry['publication']."""
     pub = entry.get("publication", [])
     if not pub:
-        return "", ""
+        return {}
     full = plain_text(pub, entry)
     years = re.findall(r"\b(19\d\d|20\d\d)\b", full)
     year = years[-1] if years else ""
@@ -268,7 +268,28 @@ def parse_publication(entry):
             venue = plain_text(node.get("children", []), entry).strip(" .,:")
             venue = re.sub(r",?\s*(19\d\d|20\d\d)\.?$", "", venue).strip(" .,:")
             break
-    return venue, year
+    info = {}
+    if venue:
+        info["venue"] = venue
+    if year:
+        info["year"] = year
+    vol_issue_pages = re.search(
+        r"\b(\d+)\s*\(([^)]+)\)\s*[,:]\s*(\d+[–-]\d+|\d+)\b", full
+    )
+    if vol_issue_pages:
+        info["volume"] = vol_issue_pages.group(1)
+        info["number"] = vol_issue_pages.group(2)
+        info["pages"] = vol_issue_pages.group(3).replace("–", "--")
+    else:
+        vol_pages = re.search(r"\b(\d+)\s*[,:]\s*(\d+[–-]\d+|\d{4,})\b", full)
+        if vol_pages and vol_pages.group(1) != year:
+            info["volume"] = vol_pages.group(1)
+            info["pages"] = vol_pages.group(2).replace("–", "--")
+        else:
+            vol_only = re.search(r",\s*(\d+)\s*,\s*(?:19|20)\d\d", full)
+            if vol_only:
+                info["volume"] = vol_only.group(1)
+    return info
 
 
 def entry_authors(entry):
@@ -282,7 +303,9 @@ def extract_doi(entry):
 
 
 def format_bibtex(entry):
-    venue, year = parse_publication(entry)
+    pub_info = parse_publication(entry)
+    venue = pub_info.get("venue", "")
+    year = pub_info.get("year", "")
     authors = " and ".join(entry_authors(entry))
     resources = {r["id"]: r for r in entry["resources"]}
     primary = resources[entry["primary_resource"]]
@@ -302,6 +325,12 @@ def format_bibtex(entry):
     ]
     if venue:
         fields.append(("journal", venue))
+    if "volume" in pub_info:
+        fields.append(("volume", pub_info["volume"]))
+    if "number" in pub_info:
+        fields.append(("number", pub_info["number"]))
+    if "pages" in pub_info:
+        fields.append(("pages", pub_info["pages"]))
     if year:
         fields.append(("year", year))
     elif entry["kind"] == "paper":
@@ -315,7 +344,8 @@ def format_bibtex(entry):
 
 def format_plain_citation(entry):
     authors = credit(entry_authors(entry))
-    _, year = parse_publication(entry)
+    pub_info = parse_publication(entry)
+    year = pub_info.get("year", "")
     year_part = f" ({year})." if year else "."
     title = entry["title"]
     pub_text = (
@@ -330,7 +360,9 @@ def render_scholar_meta(entry):
         escaped = html.escape(value, quote=True)
         return f'\t<meta name="{name}" content="{escaped}" />'
 
-    venue, year = parse_publication(entry)
+    pub_info = parse_publication(entry)
+    venue = pub_info.get("venue", "")
+    year = pub_info.get("year", "")
     tags = [meta("citation_title", entry["title"])]
     for author in entry_authors(entry):
         tags.append(meta("citation_author", author))
@@ -338,8 +370,19 @@ def render_scholar_meta(entry):
         tags.append(meta("citation_publication_date", year))
     if venue:
         tags.append(meta("citation_journal_title", venue))
+    if "volume" in pub_info:
+        tags.append(meta("citation_volume", pub_info["volume"]))
+    if "number" in pub_info:
+        tags.append(meta("citation_issue", pub_info["number"]))
+    if "pages" in pub_info:
+        pages = pub_info["pages"].split("--")
+        tags.append(meta("citation_firstpage", pages[0]))
+        if len(pages) > 1:
+            tags.append(meta("citation_lastpage", pages[1]))
     if doi := extract_doi(entry):
         tags.append(meta("citation_doi", doi))
+    if pub_url := entry.get("publication_url"):
+        tags.append(meta("citation_public_url", pub_url))
     for resource in entry["resources"]:
         if resource["kind"] == "pdf" and resource["role"] == "manuscript":
             tags.append(meta("citation_pdf_url", absolute_url(resource["url"])))
@@ -370,6 +413,15 @@ def entry_schema_object(entry):
         work["sameAs"] = same_as[0]
     elif len(same_as) > 1:
         work["sameAs"] = same_as
+    code_repos = [
+        absolute_url(r["url"])
+        for r in entry["resources"]
+        if r["role"] in ("replication", "code")
+    ]
+    if len(code_repos) == 1:
+        work["codeRepository"] = code_repos[0]
+    elif len(code_repos) > 1:
+        work["codeRepository"] = code_repos
     return work
 
 
