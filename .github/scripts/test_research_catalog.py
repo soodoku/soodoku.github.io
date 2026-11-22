@@ -114,12 +114,11 @@ class CatalogTests(unittest.TestCase):
             for name in ("sitemap.xml", "llms.txt"):
                 (root / name).write_text((ROOT / name).read_text())
             for entry in self.catalog["entries"]:
-                if entry["kind"] == "paper":
-                    sub = root / "research" / entry["id"]
-                    sub.mkdir(parents=True, exist_ok=True)
-                    (sub / "index.html").write_text(
-                        (ROOT / "research" / entry["id"] / "index.html").read_text()
-                    )
+                sub = root / "research" / entry["id"]
+                sub.mkdir(parents=True, exist_ok=True)
+                (sub / "index.html").write_text(
+                    (ROOT / "research" / entry["id"] / "index.html").read_text()
+                )
             with (
                 mock.patch.object(research_catalog, "ROOT", root),
                 mock.patch.object(
@@ -161,10 +160,19 @@ class CatalogTests(unittest.TestCase):
     def test_dedicated_paper_pages_render_for_all_papers(self):
         template = (ROOT / "research/entry.template.html").read_text()
         pages = render_entry_pages(self.catalog, template)
-        paper_count = sum(1 for e in self.catalog["entries"] if e["kind"] == "paper")
-        self.assertEqual(len(pages), paper_count)
+        self.assertEqual(len(pages), len(self.catalog["entries"]))
         for rel_path, content in pages.items():
             self.assertEqual(content, (ROOT / rel_path).read_text())
+            self.assertIn('<details class="citation-toggle">', content)
+            self.assertIn('name="citation_title"', content)
+        sample = copy.deepcopy(self.catalog)
+        sample["entries"][0]["details"] = [
+            {"heading": "Experimental Design", "body": ["Two field experiments."]}
+        ]
+        rendered = render_entry_pages(sample, template)
+        first_page = rendered[f"research/{self.entry['id']}/index.html"]
+        self.assertIn("<h2>Experimental Design</h2>", first_page)
+        self.assertIn("Two field experiments.", first_page)
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):
         generated = render(self.catalog, "{{catalog}}")

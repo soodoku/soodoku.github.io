@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Doug Ahler" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/uncertainty.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/uncertainty.pdf" target="_blank" class="entry-title">Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect</a><br>With Doug Ahler.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/uncertainty" target="_blank">Replication Materials</a></div>
       <div class="abstract">Two larger surveys replicate the finding that people sometimes prefer a certain option to a lottery whose worst outcome is better. Clarifying the guarantee reduces the effect, while expressing the lottery as natural frequencies or using monetary choices eliminates it in these experiments.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Doug Ahler. &quot;Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect.&quot; https://gsood.com/research/is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodis,
+  author = {Gaurav Sood and Doug Ahler},
+  title = {{Is an Uncertain Prospect Less Preferred Than Its Worst Possible Outcome? New Evidence on the Uncertainty Effect}},
+  note = {Working paper},
+  url = {https://gsood.com/research/is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

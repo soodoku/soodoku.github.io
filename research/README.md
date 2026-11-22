@@ -9,11 +9,11 @@ python .github/scripts/research_catalog.py
 
 Run commands from the repository root. Commit the catalog and the generated
 `research/index.html`, `research/swipe.html`, `research/<id>/index.html` (for all
-paper entries), `sitemap.xml`, and `llms.txt`.
+catalog entries), `sitemap.xml`, and `llms.txt`.
 GitHub Pages serves that HTML directly; it needs no build service. CI rejects
 edits that leave any generated file out of date.
 The page shell lives in `page.template.html` (and `entry.template.html` for
-dedicated paper pages); shared styling stays in `/style.css`.
+dedicated entry pages); shared styling stays in `/style.css`.
 
 The same command also writes `research/swipe.html`, a phone-first feed with one
 card per entry (each entry once, at its first position in `sections`). Its shell,

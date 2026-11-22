@@ -21,6 +21,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Regression Calibration as a Baseline for Machine-Learned Covariates" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/calibration_baseline.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,9 +65,34 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Causal Inference</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/calibration_baseline.pdf" target="_blank" class="entry-title">Regression Calibration as a Baseline for Machine-Learned Covariates</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/calibration-baseline" target="_blank">Replication Materials</a></div>
       <div class="abstract">Researchers increasingly use machine-learning predictions as covariates, including controls for confounding. Prediction error can then change the estimated effect of interest. Regression calibration offers an established baseline: use a labeled sample to predict the true covariate from its machine-generated surrogate and the other regression variables. We explain when this procedure identifies a linear model and what can go wrong when calibration must itself be learned. A population projection can suffice without a correct conditional-mean model, but estimated calibration must preserve the residual relationships that identify the downstream coefficients. We connect departures from those relationships to coefficient error, distinguish many calibration predictors from many mismeasured covariates, and separate estimation error from failures of support and transport. Exact examples show how omitting treatment or imposing shrinkage changes confounding adjustment; simulations illustrate these mechanisms. The resulting framework makes regression calibration a transparent benchmark for evaluating methods that use machine-learned covariates.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood. &quot;Regression Calibration as a Baseline for Machine-Learned Covariates.&quot; https://gsood.com/research/two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodtwo,
+  author = {Gaurav Sood},
+  title = {{Regression Calibration as a Baseline for Machine-Learned Covariates}},
+  note = {Working paper},
+  url = {https://gsood.com/research/two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="All in the Eye of the Beholder: Partisan Affect and Ideological Accountability" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Shanto Iyengar" />
+	<meta name="citation_publication_date" content="2018" />
+	<meta name="citation_journal_title" content="The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/inNout.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/inNout.pdf" target="_blank" class="entry-title">All in the Eye of the Beholder: Partisan Affect and Ideological Accountability</a><br>With Shanto Iyengar.<br>In <i>The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge.</i> 2018.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_accountability" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/papers/moving_further.pdf" target="_blank">Still Close: Perceived Ideological Distance to Own and Main Opposing Party</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/moving-further-away-from-the-out-party/" target="_blank">2012 Blog Post</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/press/InOut_NYT.pdf" target="_blank">The New York Times</a></span></span></span></div>
       <div class="abstract">Why do moderate partisans remain warm toward more extreme leaders of their own party? We find both distorted perceptions of leaders&#x27; positions and asymmetric treatment of policy disagreement: even when informed about positions, partisans do not necessarily penalize more distant co-partisan candidates.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Shanto Iyengar (2018). &quot;All in the Eye of the Beholder: Partisan Affect and Ideological Accountability.&quot; In The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge. 2018. https://gsood.com/research/all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2018all,
+  author = {Gaurav Sood and Shanto Iyengar},
+  title = {{All in the Eye of the Beholder: Partisan Affect and Ideological Accountability}},
+  journal = {The Feeling, Thinking Citizen: Essays in Honor of Milton Lodge},
+  year = {2018},
+  url = {https://gsood.com/research/all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Bad Domains: Exposure to Malicious Content Online" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Lucas Shen" />
+	<meta name="citation_publication_date" content="2026" />
+	<meta name="citation_journal_title" content="Information, Communication and Society" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/bad_domains.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#online-safety">&larr; Online Privacy and Security</a></p>
       <div class="entry-meta"><a href="/research/papers/bad_domains.pdf" class="entry-title">Bad Domains: Exposure to Malicious Content Online</a><br>With Lucas Shen.<br><i>Information, Communication and Society, 2026</i>.<br><span class="entry-icon">🗃</span><a href="https://github.com/themains/bad_domains/">Replication Materials</a></div>
       <div class="abstract">We combine a month of observed browsing by over a thousand Americans with malicious-domain classifications. About half visited a malicious domain; demographic differences in median exposure disappear after accounting for how much people use the internet.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Lucas Shen (2026). &quot;Bad Domains: Exposure to Malicious Content Online.&quot; Information, Communication and Society, 2026. https://gsood.com/research/bad-domains-exposure-to-malicious-content-online/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2026bad,
+  author = {Gaurav Sood and Lucas Shen},
+  title = {{Bad Domains: Exposure to Malicious Content Online}},
+  journal = {Information, Communication and Society},
+  year = {2026},
+  url = {https://gsood.com/research/bad-domains-exposure-to-malicious-content-online/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

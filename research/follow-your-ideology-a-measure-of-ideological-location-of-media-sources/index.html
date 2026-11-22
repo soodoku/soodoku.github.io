@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Follow Your Ideology: Measuring Media Ideology on Social Networks" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Pablo Barberá" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/mediabias.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="/research/papers/mediabias.pdf" target="_blank" class="entry-title">Follow Your Ideology: Measuring Media Ideology on Social Networks</a><br>With Pablo Barberá.</div>
       <div class="abstract">We estimate the ideological positions of more than 2,300 media sources using the following patterns of politically interested social-media users. Comparisons with content-based measures support the approach, and applications examine journalists&#x27; ideology and ideological diversity within outlets.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Pablo Barberá. &quot;Follow Your Ideology: Measuring Media Ideology on Social Networks.&quot; https://gsood.com/research/follow-your-ideology-a-measure-of-ideological-location-of-media-sources/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodfollow,
+  author = {Gaurav Sood and Pablo Barberá},
+  title = {{Follow Your Ideology: Measuring Media Ideology on Social Networks}},
+  note = {Working paper},
+  url = {https://gsood.com/research/follow-your-ideology-a-measure-of-ideological-location-of-media-sources/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

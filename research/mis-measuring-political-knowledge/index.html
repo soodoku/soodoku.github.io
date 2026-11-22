@@ -21,6 +21,11 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Robert C. Luskin" />
+	<meta name="citation_author" content="Daniel Weitzel" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/HiddenKnowledge.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,9 +75,34 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/HiddenKnowledge.pdf" target="_blank" class="entry-title">Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?</a><br>With Robert C. Luskin and Daniel Weitzel.<br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_hidden" target="_blank">Replication Materials</a></div>
       <div class="abstract">Revisionist studies argue that surveys understate political knowledge. Randomized experiments in three online surveys, and a recount of ANES and NAES items and don&#x27;t-know probes, find little hidden knowledge: photos lower correct identification of officials, menus and probes add little beyond guessing, and asking how sure people are finds far less knowledge than multiple choice.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood, Robert C. Luskin, and Daniel Weitzel. &quot;Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?.&quot; https://gsood.com/research/mis-measuring-political-knowledge/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodmis,
+  author = {Gaurav Sood and Robert C. Luskin and Daniel Weitzel},
+  title = {{Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?}},
+  note = {Working paper},
+  url = {https://gsood.com/research/mis-measuring-political-knowledge/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

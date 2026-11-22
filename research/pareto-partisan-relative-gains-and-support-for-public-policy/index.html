@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Pareto Partisan? Relative Gains and Support for Public Policy" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Alexander G. Theodoridis" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/pareto_partisan.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/pareto_partisan.pdf" target="_blank" class="entry-title">Pareto Partisan? Relative Gains and Support for Public Policy</a><br>With Alexander G. Theodoridis.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_pareto" target="_blank">Replication Materials</a></div>
       <div class="abstract">If people prefer more for both sides to less for both, everyone should select the plan giving both sides more. In a 2018 CCES highway choice, only 35.0% of Democrats and 27.1% of Republicans did so; the rest chose smaller allocations that left their side ahead. In a post-election experiment, raising opponents’ income gain from 3% to 7%, while keeping the own-party gain at 5%, changed policy support by -20.0 points on a 0–100 scale (95% CI [-23.9, -16.1]). Relative partisan gains affect support, but the exercises do not distinguish spite from dislike of falling behind; the highway comparison also changes total spending.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Alexander G. Theodoridis. &quot;Pareto Partisan? Relative Gains and Support for Public Policy.&quot; https://gsood.com/research/pareto-partisan-relative-gains-and-support-for-public-policy/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodpareto,
+  author = {Gaurav Sood and Alexander G. Theodoridis},
+  title = {{Pareto Partisan? Relative Gains and Support for Public Policy}},
+  note = {Working paper},
+  url = {https://gsood.com/research/pareto-partisan-relative-gains-and-support-for-public-policy/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

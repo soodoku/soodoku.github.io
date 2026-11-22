@@ -21,6 +21,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Streaming Raking in Fixed Memory" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/onlinerake.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,9 +65,34 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Calibration and Weighting</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Raking in Fixed Memory</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></div>
       <div class="abstract">Raking needs every row seen so far, so keeping weights current on a stream means storing it and refitting. This paper gives a raking method whose state is a fixed set of running totals: each arriving row gets, in closed form, the weight that balances closeness to its design weight against the running gap to population targets. In simulations it comes close to full-data raking with moderate targets at constant cost per row; it falls short with extreme targets and many margins, and where rows can be stored, periodic raking remains the better choice.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood. &quot;Streaming Raking in Fixed Memory.&quot; https://gsood.com/research/streaming-calibration-with-mwu-and-sgd/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodstreaming,
+  author = {Gaurav Sood},
+  title = {{Streaming Raking in Fixed Memory}},
+  note = {Working paper},
+  url = {https://gsood.com/research/streaming-calibration-with-mwu-and-sgd/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

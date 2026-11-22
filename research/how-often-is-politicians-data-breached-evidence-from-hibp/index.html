@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="How Often is Politicians&#x27; Data Breached? Evidence from HIBP" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Lucas Shen" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/pwned_politicians.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#online-safety">&larr; Online Privacy and Security</a></p>
       <div class="entry-meta"><a href="/research/papers/pwned_politicians.pdf" class="entry-title">How Often is Politicians&#x27; Data Breached? Evidence from HIBP</a><br>With Lucas Shen.<br><span class="entry-icon">🗃</span><a href="https://github.com/themains/pwned_pols">Replication Materials</a></div>
       <div class="abstract">Using 12,384 email addresses of politicians from 59 countries, we examine exposure to breaches recorded by Have I Been Pwned. A third of the politicians have at least one recorded breach, and more than one in five have sensitive information exposed; incomplete coverage of their email addresses makes these conservative estimates.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Lucas Shen. &quot;How Often is Politicians&#x27; Data Breached? Evidence from HIBP.&quot; https://gsood.com/research/how-often-is-politicians-data-breached-evidence-from-hibp/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodhow,
+  author = {Gaurav Sood and Lucas Shen},
+  title = {{How Often is Politicians&#x27; Data Breached? Evidence from HIBP}},
+  note = {Working paper},
+  url = {https://gsood.com/research/how-often-is-politicians-data-breached-evidence-from-hibp/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

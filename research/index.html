@@ -63,10 +63,10 @@
         "position": 2,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#stable-cart-lower-bootstrap-prediction-variance-cart",
+          "@id": "https://gsood.com/research/stable-cart-lower-bootstrap-prediction-variance-cart/",
           "name": "Stable CART: Lower Bootstrap Prediction Variance CART",
           "headline": "Stable CART: Lower Bootstrap Prediction Variance CART",
-          "url": "https://github.com/finite-sample/stable-cart",
+          "url": "https://gsood.com/research/stable-cart-lower-bootstrap-prediction-variance-cart/",
           "author": [
             {
               "@type": "Person",
@@ -74,7 +74,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
+          "description": "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets).",
+          "sameAs": "https://github.com/finite-sample/stable-cart"
         }
       },
       {
@@ -102,10 +103,10 @@
         "position": 4,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#fairlex-leximin-calibration",
+          "@id": "https://gsood.com/research/fairlex-leximin-calibration/",
           "name": "fairlex: leximin calibration",
           "headline": "fairlex: leximin calibration",
-          "url": "https://github.com/finite-sample/fairlex",
+          "url": "https://gsood.com/research/fairlex-leximin-calibration/",
           "author": [
             {
               "@type": "Person",
@@ -113,7 +114,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group's calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups."
+          "description": "Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group's calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups.",
+          "sameAs": "https://github.com/finite-sample/fairlex"
         }
       },
       {
@@ -161,10 +163,10 @@
         "position": 7,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#streamcal-streaming-probability-calibration",
+          "@id": "https://gsood.com/research/streamcal-streaming-probability-calibration/",
           "name": "streamcal: Streaming Probability Calibration",
           "headline": "streamcal: Streaming Probability Calibration",
-          "url": "https://github.com/finite-sample/streamcal",
+          "url": "https://gsood.com/research/streamcal-streaming-probability-calibration/",
           "author": [
             {
               "@type": "Person",
@@ -172,7 +174,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "streamcal keeps a deployed model's binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label."
+          "description": "streamcal keeps a deployed model's binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label.",
+          "sameAs": "https://github.com/finite-sample/streamcal"
         }
       },
       {
@@ -200,10 +203,10 @@
         "position": 9,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#setjoin-record-linkage-that-preserves-group-structure",
+          "@id": "https://gsood.com/research/setjoin-record-linkage-that-preserves-group-structure/",
           "name": "setjoin: Record Linkage That Preserves Group Structure",
           "headline": "setjoin: Record Linkage That Preserves Group Structure",
-          "url": "https://github.com/finite-sample/setjoin",
+          "url": "https://gsood.com/research/setjoin-record-linkage-that-preserves-group-structure/",
           "author": [
             {
               "@type": "Person",
@@ -211,7 +214,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "setjoin implements group-constrained record matching: it assigns source groups to target groups, then matches records within the assigned groups. This is useful when both files have trustworthy group membership and the linkage should preserve it. Its current performance example is synthetic; gains on observed panel data have not been established."
+          "description": "setjoin implements group-constrained record matching: it assigns source groups to target groups, then matches records within the assigned groups. This is useful when both files have trustworthy group membership and the linkage should preserve it. Its current performance example is synthetic; gains on observed panel data have not been established.",
+          "sameAs": "https://github.com/finite-sample/setjoin"
         }
       },
       {
@@ -219,10 +223,10 @@
         "position": 10,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#tether-high-precision-record-linkage",
+          "@id": "https://gsood.com/research/tether-high-precision-record-linkage/",
           "name": "preclink: High-Precision Record Linkage",
           "headline": "preclink: High-Precision Record Linkage",
-          "url": "https://github.com/finite-sample/preclink",
+          "url": "https://gsood.com/research/tether-high-precision-record-linkage/",
           "author": [
             {
               "@type": "Person",
@@ -230,7 +234,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores."
+          "description": "A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores.",
+          "sameAs": "https://github.com/finite-sample/preclink"
         }
       },
       {
@@ -238,10 +243,10 @@
         "position": 11,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#bloomjoin-bloom-filter-based-joins",
+          "@id": "https://gsood.com/research/bloomjoin-bloom-filter-based-joins/",
           "name": "BloomJoin: Bloom Filter Based Joins",
           "headline": "BloomJoin: Bloom Filter Based Joins",
-          "url": "https://github.com/gojiplus/bloomjoin",
+          "url": "https://gsood.com/research/bloomjoin-bloom-filter-based-joins/",
           "author": [
             {
               "@type": "Person",
@@ -249,7 +254,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join."
+          "description": "An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join.",
+          "sameAs": "https://github.com/gojiplus/bloomjoin"
         }
       },
       {
@@ -309,10 +315,10 @@
         "position": 14,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#geo-sampling-sampling-randomly-from-the-streets",
+          "@id": "https://gsood.com/research/geo-sampling-sampling-randomly-from-the-streets/",
           "name": "Geo-sampling: Sampling Randomly From the Streets",
           "headline": "Geo-sampling: Sampling Randomly From the Streets",
-          "url": "https://github.com/geosensing/geo-sampling",
+          "url": "https://gsood.com/research/geo-sampling-sampling-randomly-from-the-streets/",
           "author": [
             {
               "@type": "Person",
@@ -324,7 +330,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
+          "description": "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection.",
+          "sameAs": "https://github.com/geosensing/geo-sampling"
         }
       },
       {
@@ -332,10 +339,10 @@
         "position": 15,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#allocator-optimal-itineraries-for-spatially-distributed-tasks",
+          "@id": "https://gsood.com/research/allocator-optimal-itineraries-for-spatially-distributed-tasks/",
           "name": "Allocator: Optimal Itineraries For Spatially Distributed Tasks",
           "headline": "Allocator: Optimal Itineraries For Spatially Distributed Tasks",
-          "url": "https://github.com/geosensing/allocator",
+          "url": "https://gsood.com/research/allocator-optimal-itineraries-for-spatially-distributed-tasks/",
           "author": [
             {
               "@type": "Person",
@@ -347,7 +354,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
+          "description": "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment.",
+          "sameAs": "https://github.com/geosensing/allocator"
         }
       },
       {
@@ -355,10 +363,10 @@
         "position": 16,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#reporoulette-randomly-sample-github-repositories",
+          "@id": "https://gsood.com/research/reporoulette-randomly-sample-github-repositories/",
           "name": "reporoulette: Randomly Sample GitHub Repositories",
           "headline": "reporoulette: Randomly Sample GitHub Repositories",
-          "url": "https://github.com/gojiplus/reporoulette",
+          "url": "https://gsood.com/research/reporoulette-randomly-sample-github-repositories/",
           "author": [
             {
               "@type": "Person",
@@ -366,7 +374,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research."
+          "description": "Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research.",
+          "sameAs": "https://github.com/gojiplus/reporoulette"
         }
       },
       {
@@ -394,10 +403,10 @@
         "position": 18,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#statqa-extract-multimodal-stats-q-a-from-tables-with-provenance",
+          "@id": "https://gsood.com/research/statqa-extract-multimodal-stats-q-a-from-tables-with-provenance/",
           "name": "StatQA: Extract Multimodal Stats Q/A from Tables With Provenance",
           "headline": "StatQA: Extract Multimodal Stats Q/A from Tables With Provenance",
-          "url": "https://github.com/gojiplus/statqa",
+          "url": "https://gsood.com/research/statqa-extract-multimodal-stats-q-a-from-tables-with-provenance/",
           "author": [
             {
               "@type": "Person",
@@ -405,7 +414,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training."
+          "description": "StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training.",
+          "sameAs": "https://github.com/gojiplus/statqa"
         }
       },
       {
@@ -413,10 +423,10 @@
         "position": 19,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#inferring-treatment-compliance-from-delivery-window-data",
+          "@id": "https://gsood.com/research/inferring-treatment-compliance-from-delivery-window-data/",
           "name": "Inferring Treatment Compliance from Delivery-Window Data",
           "headline": "Inferring Treatment Compliance from Delivery-Window Data",
-          "url": "https://github.com/finite-sample/late/",
+          "url": "https://gsood.com/research/inferring-treatment-compliance-from-delivery-window-data/",
           "author": [
             {
               "@type": "Person",
@@ -424,7 +434,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "In randomized experiments with imperfect compliance, the LATE requires observing treatment receipt, and the Wald estimator requires monotonicity. When receipt is unobserved but the experiment has a pre-treatment time series and a distinct delivery window, a structural break test applied to the delivery window can classify treated units into compliers, never-takers, and defiers. This yields an inferred compliance rate with closed-form bias correction, an empirical test of monotonicity via defier detection, and a characterization of the complier subpopulation that can be projected onto the control group."
+          "description": "In randomized experiments with imperfect compliance, the LATE requires observing treatment receipt, and the Wald estimator requires monotonicity. When receipt is unobserved but the experiment has a pre-treatment time series and a distinct delivery window, a structural break test applied to the delivery window can classify treated units into compliers, never-takers, and defiers. This yields an inferred compliance rate with closed-form bias correction, an empirical test of monotonicity via defier detection, and a characterization of the complier subpopulation that can be projected onto the control group.",
+          "sameAs": "https://github.com/finite-sample/late/"
         }
       },
       {
@@ -472,10 +483,10 @@
         "position": 22,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#smooth-operator-optimal-filtering-of-event-study-estimates",
+          "@id": "https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/",
           "name": "Smooth Operator: Optimal Filtering of Event Study Estimates",
           "headline": "Smooth Operator: Optimal Filtering of Event Study Estimates",
-          "url": "https://github.com/finite-sample/smooth-operator",
+          "url": "https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/",
           "author": [
             {
               "@type": "Person",
@@ -483,7 +494,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period's estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size."
+          "description": "Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period's estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size.",
+          "sameAs": "https://github.com/finite-sample/smooth-operator"
         }
       },
       {
@@ -571,10 +583,10 @@
         "position": 27,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series",
+          "@id": "https://gsood.com/research/incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series/",
           "name": "incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series",
           "headline": "incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series",
-          "url": "https://github.com/finite-sample/incline",
+          "url": "https://gsood.com/research/incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series/",
           "author": [
             {
               "@type": "Person",
@@ -582,7 +594,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories."
+          "description": "Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.",
+          "sameAs": "https://github.com/finite-sample/incline"
         }
       },
       {
@@ -590,10 +603,10 @@
         "position": 28,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#analytic-hessian-bandwidth-selection",
+          "@id": "https://gsood.com/research/analytic-hessian-bandwidth-selection/",
           "name": "Analytic‑Hessian Bandwidth Selection",
           "headline": "Analytic‑Hessian Bandwidth Selection",
-          "url": "https://github.com/finite-sample/hessband",
+          "url": "https://gsood.com/research/analytic-hessian-bandwidth-selection/",
           "author": [
             {
               "@type": "Person",
@@ -601,7 +614,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search."
+          "description": "Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search.",
+          "sameAs": "https://github.com/finite-sample/hessband"
         }
       },
       {
@@ -609,10 +623,10 @@
         "position": 29,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#a-lightweight-als-solver-for-iterative-gls",
+          "@id": "https://gsood.com/research/a-lightweight-als-solver-for-iterative-gls/",
           "name": "A Lightweight ALS Solver for Iterative GLS",
           "headline": "A Lightweight ALS Solver for Iterative GLS",
-          "url": "https://github.com/finite-sample/alsgls",
+          "url": "https://gsood.com/research/a-lightweight-als-solver-for-iterative-gls/",
           "author": [
             {
               "@type": "Person",
@@ -620,7 +634,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly."
+          "description": "Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly.",
+          "sameAs": "https://github.com/finite-sample/alsgls"
         }
       },
       {
@@ -628,10 +643,10 @@
         "position": 30,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#optimal-classification-cutoffs-for-f1-score-etc",
+          "@id": "https://gsood.com/research/optimal-classification-cutoffs-for-f1-score-etc/",
           "name": "Optimal Classification Cutoffs for F1-score, etc.",
           "headline": "Optimal Classification Cutoffs for F1-score, etc.",
-          "url": "https://github.com/finite-sample/optimal-classification-cutoffs",
+          "url": "https://gsood.com/research/optimal-classification-cutoffs-for-f1-score-etc/",
           "author": [
             {
               "@type": "Person",
@@ -639,7 +654,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice."
+          "description": "Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice.",
+          "sameAs": "https://github.com/finite-sample/optimal-classification-cutoffs"
         }
       },
       {
@@ -647,10 +663,10 @@
         "position": 31,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss",
+          "@id": "https://gsood.com/research/pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss/",
           "name": "pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss",
           "headline": "pyppur: Projection Pursuit Dimension Reduction With Reconstruction Loss",
-          "url": "https://github.com/finite-sample/pyppur",
+          "url": "https://gsood.com/research/pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss/",
           "author": [
             {
               "@type": "Person",
@@ -658,7 +674,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion."
+          "description": "pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion.",
+          "sameAs": "https://github.com/finite-sample/pyppur"
         }
       },
       {
@@ -690,10 +707,10 @@
         "position": 33,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
+          "@id": "https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/",
           "name": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
           "headline": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
-          "url": "https://github.com/appeler/ethnicolr_v2",
+          "url": "https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/",
           "author": [
             {
               "@type": "Person",
@@ -709,7 +726,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person's identity."
+          "description": "This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person's identity.",
+          "sameAs": "https://github.com/appeler/ethnicolr_v2"
         }
       },
       {
@@ -717,10 +735,10 @@
         "position": 34,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#sound-names-classify-names-based-on-sequence-of-sounds",
+          "@id": "https://gsood.com/research/sound-names-classify-names-based-on-sequence-of-sounds/",
           "name": "Sound Names: Classify Names Based on Sequence of Sounds",
           "headline": "Sound Names: Classify Names Based on Sequence of Sounds",
-          "url": "https://github.com/appeler/sound_names",
+          "url": "https://gsood.com/research/sound-names-classify-names-based-on-sequence-of-sounds/",
           "author": [
             {
               "@type": "Person",
@@ -728,7 +746,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We compare name classification using phonetic encodings with classification using character sequences. In the reported experiments, an LSTM trained on Metaphone encodings performs worse, suggesting that spellings contain information lost by the sound encoding."
+          "description": "We compare name classification using phonetic encodings with classification using character sequences. In the reported experiments, an LSTM trained on Metaphone encodings performs worse, suggesting that spellings contain information lost by the sound encoding.",
+          "sameAs": "https://github.com/appeler/sound_names"
         }
       },
       {
@@ -736,10 +755,10 @@
         "position": 35,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#graphic-names-classify-names-using-google-image-search-and-clarifai",
+          "@id": "https://gsood.com/research/graphic-names-classify-names-using-google-image-search-and-clarifai/",
           "name": "Graphic Names: Classify Names Using Google Image Search and Clarifai",
           "headline": "Graphic Names: Classify Names Using Google Image Search and Clarifai",
-          "url": "https://github.com/appeler/graphic_names",
+          "url": "https://gsood.com/research/graphic-names-classify-names-using-google-image-search-and-clarifai/",
           "author": [
             {
               "@type": "Person",
@@ -747,7 +766,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An exploratory method that combines image-search results for first names with image tags to estimate gender associations. Validation uses labeled name data, while the project notes that search results are not representative population samples and names need not be unique to one gender."
+          "description": "An exploratory method that combines image-search results for first names with image tags to estimate gender associations. Validation uses labeled name data, while the project notes that search results are not representative population samples and names need not be unique to one gender.",
+          "sameAs": "https://github.com/appeler/graphic_names"
         }
       },
       {
@@ -755,10 +775,10 @@
         "position": 36,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#naampy-infer-sociodemographic-characteristics-from-indian-names",
+          "@id": "https://gsood.com/research/naampy-infer-sociodemographic-characteristics-from-indian-names/",
           "name": "Naampy: Infer Sociodemographic Characteristics from Indian Names",
           "headline": "Naampy: Infer Sociodemographic Characteristics from Indian Names",
-          "url": "https://github.com/appeler/naampy",
+          "url": "https://gsood.com/research/naampy-infer-sociodemographic-characteristics-from-indian-names/",
           "author": [
             {
               "@type": "Person",
@@ -774,7 +794,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender."
+          "description": "Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender.",
+          "sameAs": "https://github.com/appeler/naampy"
         }
       },
       {
@@ -782,10 +803,10 @@
         "position": 37,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#pranaam-predict-religion-from-name",
+          "@id": "https://gsood.com/research/pranaam-predict-religion-from-name/",
           "name": "Pranaam: Predict Religion From Name",
           "headline": "Pranaam: Predict Religion From Name",
-          "url": "https://github.com/appeler/pranaam",
+          "url": "https://gsood.com/research/pranaam-predict-religion-from-name/",
           "author": [
             {
               "@type": "Person",
@@ -797,7 +818,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "Pranaam estimates how strongly a name follows patterns associated with Muslim names in its training data. It returns a calibrated score, abstention information, and artifact provenance for aggregate research, rather than establishing a person's religion."
+          "description": "Pranaam estimates how strongly a name follows patterns associated with Muslim names in its training data. It returns a calibrated score, abstention information, and artifact provenance for aggregate research, rather than establishing a person's religion.",
+          "sameAs": "https://github.com/appeler/pranaam"
         }
       },
       {
@@ -805,10 +827,10 @@
         "position": 38,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#naamkaran-a-generative-model-for-names",
+          "@id": "https://gsood.com/research/naamkaran-a-generative-model-for-names/",
           "name": "naamkaran: a generative model for names",
           "headline": "naamkaran: a generative model for names",
-          "url": "https://github.com/appeler/naamkaran",
+          "url": "https://gsood.com/research/naamkaran-a-generative-model-for-names/",
           "author": [
             {
               "@type": "Person",
@@ -820,7 +842,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population."
+          "description": "A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population.",
+          "sameAs": "https://github.com/appeler/naamkaran"
         }
       },
       {
@@ -828,10 +851,10 @@
         "position": 39,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#parsernaam-ml-assisted-name-parser",
+          "@id": "https://gsood.com/research/parsernaam-ml-assisted-name-parser/",
           "name": "parsernaam: ML-assisted name parser",
           "headline": "parsernaam: ML-assisted name parser",
-          "url": "https://github.com/appeler/parsernaam",
+          "url": "https://gsood.com/research/parsernaam-ml-assisted-name-parser/",
           "author": [
             {
               "@type": "Person",
@@ -843,7 +866,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention."
+          "description": "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention.",
+          "sameAs": "https://github.com/appeler/parsernaam"
         }
       },
       {
@@ -851,10 +875,10 @@
         "position": 40,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#instate-predict-spoken-language-from-last-name",
+          "@id": "https://gsood.com/research/instate-predict-spoken-language-from-last-name/",
           "name": "instate: State and Language Composition from Indian Surnames",
           "headline": "instate: State and Language Composition from Indian Surnames",
-          "url": "https://github.com/appeler/instate",
+          "url": "https://gsood.com/research/instate-predict-spoken-language-from-last-name/",
           "author": [
             {
               "@type": "Person",
@@ -870,7 +894,8 @@
               "name": "Atul Dhingra"
             }
           ],
-          "description": "Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language."
+          "description": "Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language.",
+          "sameAs": "https://github.com/appeler/instate"
         }
       },
       {
@@ -878,10 +903,10 @@
         "position": 41,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#exposed-shedding-blacklight-on-online-privacy",
+          "@id": "https://gsood.com/research/exposed-shedding-blacklight-on-online-privacy/",
           "name": "Exposed: Shedding Blacklight On Online Privacy",
           "headline": "Exposed: Shedding Blacklight On Online Privacy",
-          "url": "https://arxiv.org/abs/2512.24041",
+          "url": "https://gsood.com/research/exposed-shedding-blacklight-on-online-privacy/",
           "author": [
             {
               "@type": "Person",
@@ -893,7 +918,8 @@
               "name": "Lucas Shen"
             }
           ],
-          "description": "To what extent are users surveilled on the web, by what technologies, and by whom? We answer these questions by combining passively observed, anonymized browsing data of a large, representative sample of Americans with domain-level data on tracking from Blacklight. We find that nearly all users (>99%) encounter at least one ad tracker or third-party cookie over the observation window. More invasive techniques like session recording, keylogging, and canvas fingerprinting are less widespread, but over half of the users visited a site employing at least one of these within the first 48 hours of the start of tracking. Linking trackers to their parent organizations reveals that a single organization, usually Google, can track over 50% of web activity of more than half the users. Demographic differences in exposure are modest and often attenuate when we account for browsing volume. However, disparities by age and race remain, suggesting that what users browse, not just how much, shapes their surveillance risk."
+          "description": "To what extent are users surveilled on the web, by what technologies, and by whom? We answer these questions by combining passively observed, anonymized browsing data of a large, representative sample of Americans with domain-level data on tracking from Blacklight. We find that nearly all users (>99%) encounter at least one ad tracker or third-party cookie over the observation window. More invasive techniques like session recording, keylogging, and canvas fingerprinting are less widespread, but over half of the users visited a site employing at least one of these within the first 48 hours of the start of tracking. Linking trackers to their parent organizations reveals that a single organization, usually Google, can track over 50% of web activity of more than half the users. Demographic differences in exposure are modest and often attenuate when we account for browsing volume. However, disparities by age and race remain, suggesting that what users browse, not just how much, shapes their surveillance risk.",
+          "sameAs": "https://arxiv.org/abs/2512.24041"
         }
       },
       {
@@ -925,10 +951,10 @@
         "position": 43,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#piedomains-predict-the-kind-of-content-hosted-by-a-domain",
+          "@id": "https://gsood.com/research/piedomains-predict-the-kind-of-content-hosted-by-a-domain/",
           "name": "Piedomains: Predict the Kind of Content Hosted by a Domain",
           "headline": "Piedomains: Predict the Kind of Content Hosted by a Domain",
-          "url": "https://github.com/themains/piedomains",
+          "url": "https://gsood.com/research/piedomains-predict-the-kind-of-content-hosted-by-a-domain/",
           "author": [
             {
               "@type": "Person",
@@ -940,7 +966,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage."
+          "description": "The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage.",
+          "sameAs": "https://github.com/themains/piedomains"
         }
       },
       {
@@ -948,10 +975,10 @@
         "position": 44,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#pass-fail-using-a-password-generator-to-improve-password-strength",
+          "@id": "https://gsood.com/research/pass-fail-using-a-password-generator-to-improve-password-strength/",
           "name": "Pass-Fail: Using a Password Generator to Improve Password Strength",
           "headline": "Pass-Fail: Using a Password Generator to Improve Password Strength",
-          "url": "https://github.com/themains/password",
+          "url": "https://gsood.com/research/pass-fail-using-a-password-generator-to-improve-password-strength/",
           "author": [
             {
               "@type": "Person",
@@ -963,7 +990,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness."
+          "description": "We train character-level models on leaked passwords to study predictable password choices. Comparisons with Have I Been Pwned and randomly generated strings show how learned patterns, including common starting characters, can help diagnose password weakness.",
+          "sameAs": "https://github.com/themains/password"
         }
       },
       {
@@ -1019,10 +1047,10 @@
         "position": 47,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#know-your-ip",
+          "@id": "https://gsood.com/research/know-your-ip/",
           "name": "Know Your IP",
           "headline": "Know Your IP",
-          "url": "https://github.com/themains/know-your-ip/",
+          "url": "https://gsood.com/research/know-your-ip/",
           "author": [
             {
               "@type": "Person",
@@ -1034,7 +1062,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures."
+          "description": "A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures.",
+          "sameAs": "https://github.com/themains/know-your-ip/"
         }
       },
       {
@@ -1042,10 +1071,10 @@
         "position": 48,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#virustotal-r-client-for-the-virustotal-public-api-2-0",
+          "@id": "https://gsood.com/research/virustotal-r-client-for-the-virustotal-public-api-2-0/",
           "name": "virustotal: R Client for the VirusTotal API v3",
           "headline": "virustotal: R Client for the VirusTotal API v3",
-          "url": "https://github.com/themains/virustotal",
+          "url": "https://gsood.com/research/virustotal-r-client-for-the-virustotal-public-api-2-0/",
           "author": [
             {
               "@type": "Person",
@@ -1053,7 +1082,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An R client for VirusTotal API v3, covering reports on files, URLs, domains, and IP addresses, as well as submissions for analysis. The package includes request pacing, retries, and structured error handling."
+          "description": "An R client for VirusTotal API v3, covering reports on files, URLs, domains, and IP addresses, as well as submissions for analysis. The package includes request pacing, retries, and structured error handling.",
+          "sameAs": "https://github.com/themains/virustotal"
         }
       },
       {
@@ -1061,10 +1091,10 @@
         "position": 49,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#rmcp-r-mcp-community-server",
+          "@id": "https://gsood.com/research/rmcp-r-mcp-community-server/",
           "name": "rmcp: R MCP Community Server",
           "headline": "rmcp: R MCP Community Server",
-          "url": "https://github.com/finite-sample/rmcp",
+          "url": "https://gsood.com/research/rmcp-r-mcp-community-server/",
           "author": [
             {
               "@type": "Person",
@@ -1072,7 +1102,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A Model Context Protocol server that lets compatible assistants invoke R tools for statistical analysis. Its documented tools cover regression, econometrics, time series, statistical testing, and data exploration."
+          "description": "A Model Context Protocol server that lets compatible assistants invoke R tools for statistical analysis. Its documented tools cover regression, econometrics, time series, statistical testing, and data exploration.",
+          "sameAs": "https://github.com/finite-sample/rmcp"
         }
       },
       {
@@ -1080,10 +1111,10 @@
         "position": 50,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#tuber-access-youtube-api-via-r",
+          "@id": "https://gsood.com/research/tuber-access-youtube-api-via-r/",
           "name": "🍠 tuber: Access YouTube API via R",
           "headline": "🍠 tuber: Access YouTube API via R",
-          "url": "https://github.com/gojiplus/tuber",
+          "url": "https://gsood.com/research/tuber-access-youtube-api-via-r/",
           "author": [
             {
               "@type": "Person",
@@ -1091,7 +1122,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An R client for searching and retrieving YouTube videos, channels, playlists, comments, and captions. It also supports selected authenticated operations, including uploads, moderation, and playlist updates."
+          "description": "An R client for searching and retrieving YouTube videos, channels, playlists, comments, and captions. It also supports selected authenticated operations, including uploads, moderation, and playlist updates.",
+          "sameAs": "https://github.com/gojiplus/tuber"
         }
       },
       {
@@ -1099,10 +1131,10 @@
         "position": 51,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form",
+          "@id": "https://gsood.com/research/repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form/",
           "name": "repaper: convert photo of a form to a web based form or an editable pdf form",
           "headline": "repaper: convert photo of a form to a web based form or an editable pdf form",
-          "url": "https://github.com/pvbhanuteja/repaper",
+          "url": "https://gsood.com/research/repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form/",
           "author": [
             {
               "@type": "Person",
@@ -1114,7 +1146,8 @@
               "name": "Bhanu Teja"
             }
           ],
-          "description": "Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool."
+          "description": "Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool.",
+          "sameAs": "https://github.com/pvbhanuteja/repaper"
         }
       },
       {
@@ -1122,10 +1155,10 @@
         "position": 52,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#indicate-transliterate-indic-languages-to-english",
+          "@id": "https://gsood.com/research/indicate-transliterate-indic-languages-to-english/",
           "name": "indicate: transliterate indic languages to english",
           "headline": "indicate: transliterate indic languages to english",
-          "url": "https://github.com/in-rolls/indicate",
+          "url": "https://gsood.com/research/indicate-transliterate-indic-languages-to-english/",
           "author": [
             {
               "@type": "Person",
@@ -1137,7 +1170,8 @@
               "name": "Rajashekar Chintalapati"
             }
           ],
-          "description": "A transliteration toolkit for converting between Indic scripts and English-script representations. It supports composable word-table, local-model, and language-model backends, with batch processing and structured output."
+          "description": "A transliteration toolkit for converting between Indic scripts and English-script representations. It supports composable word-table, local-model, and language-model backends, with batch processing and structured output.",
+          "sameAs": "https://github.com/in-rolls/indicate"
         }
       },
       {
@@ -1145,10 +1179,10 @@
         "position": 53,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#lost-years-expected-number-of-years-lost",
+          "@id": "https://gsood.com/research/lost-years-expected-number-of-years-lost/",
           "name": "Lost Years: Expected Number of Years Lost",
           "headline": "Lost Years: Expected Number of Years Lost",
-          "url": "https://github.com/gojiplus/lost-years",
+          "url": "https://gsood.com/research/lost-years-expected-number-of-years-lost/",
           "author": [
             {
               "@type": "Person",
@@ -1160,7 +1194,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data."
+          "description": "Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data.",
+          "sameAs": "https://github.com/gojiplus/lost-years"
         }
       },
       {
@@ -1168,10 +1203,10 @@
         "position": 54,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#get-weather-data",
+          "@id": "https://gsood.com/research/get-weather-data/",
           "name": "Weather Data by Location and Date",
           "headline": "Weather Data by Location and Date",
-          "url": "https://github.com/gojiplus/get-weather-data",
+          "url": "https://gsood.com/research/get-weather-data/",
           "author": [
             {
               "@type": "Person",
@@ -1179,7 +1214,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A Python package and web interface for retrieving historical daily weather by US ZIP code or coordinates. It uses NOAA station data, selects nearby stations, and returns weather measures in metric or imperial units."
+          "description": "A Python package and web interface for retrieving historical daily weather by US ZIP code or coordinates. It uses NOAA station data, selects nearby stations, and returns weather measures in metric or imperial units.",
+          "sameAs": "https://github.com/gojiplus/get-weather-data"
         }
       },
       {
@@ -1187,10 +1223,10 @@
         "position": 55,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#layoutlens-ai-assisted-ui-testing",
+          "@id": "https://gsood.com/research/layoutlens-ai-assisted-ui-testing/",
           "name": "LayoutLens: AI-Assisted UI Testing",
           "headline": "LayoutLens: AI-Assisted UI Testing",
-          "url": "https://github.com/gojiplus/layoutlens",
+          "url": "https://gsood.com/research/layoutlens-ai-assisted-ui-testing/",
           "author": [
             {
               "@type": "Person",
@@ -1198,7 +1234,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "LayoutLens captures screenshots, page structure, styles, and geometry to measure changes between interface versions. Local comparisons report element-level differences and possible layout defects; model-based explanations are optional."
+          "description": "LayoutLens captures screenshots, page structure, styles, and geometry to measure changes between interface versions. Local comparisons report element-level differences and possible layout defects; model-based explanations are optional.",
+          "sameAs": "https://github.com/gojiplus/layoutlens"
         }
       },
       {
@@ -1206,10 +1243,10 @@
         "position": 56,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#preen-python-package-development",
+          "@id": "https://gsood.com/research/preen-python-package-development/",
           "name": "Preen: Python Package Development Checks",
           "headline": "Preen: Python Package Development Checks",
-          "url": "https://github.com/gojiplus/preen",
+          "url": "https://gsood.com/research/preen-python-package-development/",
           "author": [
             {
               "@type": "Person",
@@ -1217,7 +1254,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases."
+          "description": "Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases.",
+          "sameAs": "https://github.com/gojiplus/preen"
         }
       },
       {
@@ -1225,10 +1263,10 @@
         "position": 57,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#offprint-academic-website-theme",
+          "@id": "https://gsood.com/research/offprint-academic-website-theme/",
           "name": "Offprint: A Jekyll Theme for Academic Websites",
           "headline": "Offprint: A Jekyll Theme for Academic Websites",
-          "url": "https://github.com/gojiplus/jekyll-theme-offprint",
+          "url": "https://gsood.com/research/offprint-academic-website-theme/",
           "author": [
             {
               "@type": "Person",
@@ -1236,7 +1274,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A Jekyll theme for academic personal websites, with a single text column and publications rendered from structured data. It uses self-hosted fonts and system-controlled dark mode, without requiring JavaScript."
+          "description": "A Jekyll theme for academic personal websites, with a single text column and publications rendered from structured data. It uses self-hosted fonts and system-controlled dark mode, without requiring JavaScript.",
+          "sameAs": "https://github.com/gojiplus/jekyll-theme-offprint"
         }
       },
       {
@@ -1244,10 +1283,10 @@
         "position": 58,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#adjacent-related-repositories-recommender",
+          "@id": "https://gsood.com/research/adjacent-related-repositories-recommender/",
           "name": "Adjacent — Related Repositories Recommender",
           "headline": "Adjacent — Related Repositories Recommender",
-          "url": "https://github.com/gojiplus/adjacent/",
+          "url": "https://gsood.com/research/adjacent-related-repositories-recommender/",
           "author": [
             {
               "@type": "Person",
@@ -1255,7 +1294,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A GitHub Action that adds related-repository recommendations to a README. It ranks repositories using shared topics, README similarity, or a combination, with controls for exclusions and the number of recommendations."
+          "description": "A GitHub Action that adds related-repository recommendations to a README. It ranks repositories using shared topics, README similarity, or a combination, with controls for exclusions and the number of recommendations.",
+          "sameAs": "https://github.com/gojiplus/adjacent/"
         }
       },
       {
@@ -1263,10 +1303,10 @@
         "position": 59,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#advertiser-promote-your-github-repositories-on-bluesky",
+          "@id": "https://gsood.com/research/advertiser-promote-your-github-repositories-on-bluesky/",
           "name": "Advertiser: Promote Your GitHub Repositories on BlueSky",
           "headline": "Advertiser: Promote Your GitHub Repositories on BlueSky",
-          "url": "https://github.com/gojiplus/advertiser",
+          "url": "https://gsood.com/research/advertiser-promote-your-github-repositories-on-bluesky/",
           "author": [
             {
               "@type": "Person",
@@ -1274,7 +1314,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A GitHub Action that selects a repository from a curated list, generates a short description, and posts it with a link to Bluesky. It supports automated or manually triggered promotion of open-source projects."
+          "description": "A GitHub Action that selects a repository from a curated list, generates a short description, and posts it with a link to Bluesky. It supports automated or manually triggered promotion of open-source projects.",
+          "sameAs": "https://github.com/gojiplus/advertiser"
         }
       },
       {
@@ -1302,10 +1343,10 @@
         "position": 61,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#user-auto-compute-citations-to-software-from-github",
+          "@id": "https://gsood.com/research/user-auto-compute-citations-to-software-from-github/",
           "name": "user: Estimate Python Package Use on GitHub",
           "headline": "user: Estimate Python Package Use on GitHub",
-          "url": "https://github.com/recite/user",
+          "url": "https://gsood.com/research/user-auto-compute-citations-to-software-from-github/",
           "author": [
             {
               "@type": "Person",
@@ -1313,7 +1354,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "This project estimates Python package use by sampling public GitHub repositories and counting import statements. It provides data and a dashboard as an alternative to download counts, which can reflect automated installation rather than adoption."
+          "description": "This project estimates Python package use by sampling public GitHub repositories and counting import statements. It provides data and a dashboard as an alternative to download counts, which can reflect automated installation rather than adoption.",
+          "sameAs": "https://github.com/recite/user"
         }
       },
       {
@@ -1393,10 +1435,10 @@
         "position": 65,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#get-notified-when-cited-article-is-retracted",
+          "@id": "https://gsood.com/research/get-notified-when-cited-article-is-retracted/",
           "name": "Get Notified When Cited Article is Retracted",
           "headline": "Get Notified When Cited Article is Retracted",
-          "url": "https://github.com/recite/retract",
+          "url": "https://gsood.com/research/get-notified-when-cited-article-is-retracted/",
           "author": [
             {
               "@type": "Person",
@@ -1404,7 +1446,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A GitHub Action that checks BibTeX references against Retraction Watch data and opens an issue when it finds a potentially retracted citation. It matches by DOI or bibliographic information and can run on a schedule or after bibliography changes."
+          "description": "A GitHub Action that checks BibTeX references against Retraction Watch data and opens an issue when it finds a potentially retracted citation. It matches by DOI or bibliographic information and can run on a schedule or after bibliography changes.",
+          "sameAs": "https://github.com/recite/retract"
         }
       },
       {
@@ -1412,10 +1455,10 @@
         "position": 66,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#highlight-citations-to-retracted-articles",
+          "@id": "https://gsood.com/research/highlight-citations-to-retracted-articles/",
           "name": "Highlight Citations to Retracted Articles",
           "headline": "Highlight Citations to Retracted Articles",
-          "url": "http://github.com/recite/re-cite.org",
+          "url": "https://gsood.com/research/highlight-citations-to-retracted-articles/",
           "author": [
             {
               "@type": "Person",
@@ -1423,7 +1466,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review."
+          "description": "An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review.",
+          "sameAs": "http://github.com/recite/re-cite.org"
         }
       },
       {
@@ -1431,10 +1475,10 @@
         "position": 67,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#autosum-summarize-publications-automatically-and-discover-miscitations",
+          "@id": "https://gsood.com/research/autosum-summarize-publications-automatically-and-discover-miscitations/",
           "name": "AutoSum: Summarize Publications Automatically and Discover Miscitations",
           "headline": "AutoSum: Summarize Publications Automatically and Discover Miscitations",
-          "url": "https://github.com/recite/autosum",
+          "url": "https://gsood.com/research/autosum-summarize-publications-automatically-and-discover-miscitations/",
           "author": [
             {
               "@type": "Person",
@@ -1442,7 +1486,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "AutoSum collects passages surrounding citations to a publication in openly accessible papers. Collating these passages provides a view of how other scholars summarize the work and helps identify possible miscitations."
+          "description": "AutoSum collects passages surrounding citations to a publication in openly accessible papers. Collating these passages provides a view of how other scholars summarize the work and helps identify possible miscitations.",
+          "sameAs": "https://github.com/recite/autosum"
         }
       },
       {
@@ -1518,10 +1563,10 @@
         "position": 71,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#the-review-production-and-consumption-of-apsr-articles",
+          "@id": "https://gsood.com/research/the-review-production-and-consumption-of-apsr-articles/",
           "name": "The Review: Production and Consumption of APSR Articles",
           "headline": "The Review: Production and Consumption of APSR Articles",
-          "url": "https://github.com/recite/meta_ps",
+          "url": "https://gsood.com/research/the-review-production-and-consumption-of-apsr-articles/",
           "author": [
             {
               "@type": "Person",
@@ -1529,7 +1574,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We collect article metadata from five political science journals to examine changes in authorship, article length, and readership. The data document the rise of coauthorship and the highly uneven distribution of article and abstract views."
+          "description": "We collect article metadata from five political science journals to examine changes in authorship, article length, and readership. The data document the rise of coauthorship and the highly uneven distribution of article and abstract views.",
+          "sameAs": "https://github.com/recite/meta_ps"
         }
       },
       {
@@ -1537,10 +1583,10 @@
         "position": 72,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#superdf-save-metadata-with-the-data-in-r-and-python-dataframes",
+          "@id": "https://gsood.com/research/superdf-save-metadata-with-the-data-in-r-and-python-dataframes/",
           "name": "superdf: Persistent Metadata for R Data Frames",
           "headline": "superdf: Persistent Metadata for R Data Frames",
-          "url": "https://github.com/gojiplus/superdf",
+          "url": "https://gsood.com/research/superdf-save-metadata-with-the-data-in-r-and-python-dataframes/",
           "author": [
             {
               "@type": "Person",
@@ -1548,7 +1594,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data."
+          "description": "SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data.",
+          "sameAs": "https://github.com/gojiplus/superdf"
         }
       },
       {
@@ -1556,10 +1603,10 @@
         "position": 73,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#not-to-code-evidence-from-static-code-analysis-of-replication-scripts",
+          "@id": "https://gsood.com/research/not-to-code-evidence-from-static-code-analysis-of-replication-scripts/",
           "name": "Not to Code: Evidence From Static Code Analysis of Replication Scripts",
           "headline": "Not to Code: Evidence From Static Code Analysis of Replication Scripts",
-          "url": "https://github.com/recite/not_to_code",
+          "url": "https://gsood.com/research/not-to-code-evidence-from-static-code-analysis-of-replication-scripts/",
           "author": [
             {
               "@type": "Person",
@@ -1567,7 +1614,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We apply static analysis to R scripts in replication archives for American Journal of Political Science articles. The project documents style issues, warnings, and errors detected by lintr and provides the scripts used for the audit."
+          "description": "We apply static analysis to R scripts in replication archives for American Journal of Political Science articles. The project documents style issues, warnings, and errors detected by lintr and provides the scripts used for the audit.",
+          "sameAs": "https://github.com/recite/not_to_code"
         }
       },
       {
@@ -1623,10 +1671,10 @@
         "position": 76,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#autosense-automated-street-condition-assessment",
+          "@id": "https://gsood.com/research/autosense-automated-street-condition-assessment/",
           "name": "AutoSense: Automated Street Condition Assessment",
           "headline": "AutoSense: Automated Street Condition Assessment",
-          "url": "https://github.com/geosensing/autosense",
+          "url": "https://gsood.com/research/autosense-automated-street-condition-assessment/",
           "author": [
             {
               "@type": "Person",
@@ -1634,7 +1682,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "AutoSense combines sampled street locations from OpenStreetMap with street-level imagery and computer vision for assessing street conditions. The workflow supports collection and analysis of infrastructure imagery at scale."
+          "description": "AutoSense combines sampled street locations from OpenStreetMap with street-level imagery and computer vision for assessing street conditions. The workflow supports collection and analysis of infrastructure imagery at scale.",
+          "sameAs": "https://github.com/geosensing/autosense"
         }
       },
       {
@@ -1642,10 +1691,10 @@
         "position": 77,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#get-in-line-waiting-times-at-the-dmv",
+          "@id": "https://gsood.com/research/get-in-line-waiting-times-at-the-dmv/",
           "name": "Get in Line: Waiting Times at the DMV",
           "headline": "Get in Line: Waiting Times at the DMV",
-          "url": "https://github.com/soodoku/wait",
+          "url": "https://gsood.com/research/get-in-line-waiting-times-at-the-dmv/",
           "author": [
             {
               "@type": "Person",
@@ -1657,7 +1706,8 @@
               "name": "Noah Finberg"
             }
           ],
-          "description": "We collect reported waiting times for California DMV field offices to study variation by location, day, and hour. The analysis also examines relationships between waiting times and local sociodemographic characteristics."
+          "description": "We collect reported waiting times for California DMV field offices to study variation by location, day, and hour. The analysis also examines relationships between waiting times and local sociodemographic characteristics.",
+          "sameAs": "https://github.com/soodoku/wait"
         }
       },
       {
@@ -1665,10 +1715,10 @@
         "position": 78,
         "item": {
           "@type": "Dataset",
-          "@id": "https://gsood.com/research/#public-sector-salaries",
+          "@id": "https://gsood.com/research/public-sector-salaries/",
           "name": "Public Sector Salaries: Data on US Public Employees",
           "headline": "Public Sector Salaries: Data on US Public Employees",
-          "url": "https://github.com/soodoku/public_salaries_data",
+          "url": "https://gsood.com/research/public-sector-salaries/",
           "author": [
             {
               "@type": "Person",
@@ -1676,7 +1726,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay."
+          "description": "A collection of public-employee salary data and supporting acquisition tools. The project aims to compare compensation across places and over time, with contextual information for analyses of local public spending and pay.",
+          "sameAs": "https://github.com/soodoku/public_salaries_data"
         }
       },
       {
@@ -1712,10 +1763,10 @@
         "position": 80,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#motivated-responding-in-studies-of-factual-learning",
+          "@id": "https://gsood.com/research/motivated-responding-in-studies-of-factual-learning/",
           "name": "Motivated Responding in Studies of Factual Learning",
           "headline": "Motivated Responding in Studies of Factual Learning",
-          "url": "http://rdcu.be/HNE5",
+          "url": "https://gsood.com/research/motivated-responding-in-studies-of-factual-learning/",
           "author": [
             {
               "@type": "Person",
@@ -1727,7 +1778,8 @@
               "name": "Kabir Khanna"
             }
           ],
-          "description": "Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another."
+          "description": "Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another.",
+          "sameAs": "http://rdcu.be/HNE5"
         }
       },
       {
@@ -2611,10 +2663,10 @@
         "position": 115,
         "item": {
           "@type": "SoftwareSourceCode",
-          "@id": "https://gsood.com/research/#notnews-predict-the-type-of-news-based-on-story-text-and-url",
+          "@id": "https://gsood.com/research/notnews-predict-the-type-of-news-based-on-story-text-and-url/",
           "name": "Notnews: Predict the Type of News Based on Story Text and URL",
           "headline": "Notnews: Predict the Type of News Based on Story Text and URL",
-          "url": "https://github.com/notnews/notnews",
+          "url": "https://gsood.com/research/notnews-predict-the-type-of-news-based-on-story-text-and-url/",
           "author": [
             {
               "@type": "Person",
@@ -2626,7 +2678,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "A Python library for classifying news by topic and distinguishing hard from soft news. It offers URL-pattern rules, trained US and UK text models, and optional language-model classification through Python and command-line interfaces."
+          "description": "A Python library for classifying news by topic and distinguishing hard from soft news. It offers URL-pattern rules, trained US and UK text models, and optional language-model classification through Python and command-line interfaces.",
+          "sameAs": "https://github.com/notnews/notnews"
         }
       },
       {
@@ -2634,10 +2687,10 @@
         "position": 116,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#unreadable-news-how-readable-is-american-news",
+          "@id": "https://gsood.com/research/unreadable-news-how-readable-is-american-news/",
           "name": "Unreadable News: How Readable is American News?",
           "headline": "Unreadable News: How Readable is American News?",
-          "url": "https://github.com/notnews/unreadable_news",
+          "url": "https://gsood.com/research/unreadable-news-how-readable-is-american-news/",
           "author": [
             {
               "@type": "Person",
@@ -2649,7 +2702,8 @@
               "name": "Lucas Shen"
             }
           ],
-          "description": "We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information."
+          "description": "We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information.",
+          "sameAs": "https://github.com/notnews/unreadable_news"
         }
       },
       {
@@ -2737,10 +2791,10 @@
         "position": 120,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#the-good-nyt-provision-of-apolitical-news-in-the-new-york-times",
+          "@id": "https://gsood.com/research/the-good-nyt-provision-of-apolitical-news-in-the-new-york-times/",
           "name": "The Good NYT: Provision of Apolitical News in the New York Times",
           "headline": "The Good NYT: Provision of Apolitical News in the New York Times",
-          "url": "https://github.com/notnews/good_nyt",
+          "url": "https://gsood.com/research/the-good-nyt-provision-of-apolitical-news-in-the-new-york-times/",
           "author": [
             {
               "@type": "Person",
@@ -2748,7 +2802,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We use the annotated New York Times corpus from 1987 to 2007 to study the mix of public-affairs and apolitical coverage. The project also develops analyses of geographic focus using article metadata and location fields."
+          "description": "We use the annotated New York Times corpus from 1987 to 2007 to study the mix of public-affairs and apolitical coverage. The project also develops analyses of geographic focus using article metadata and location fields.",
+          "sameAs": "https://github.com/notnews/good_nyt"
         }
       },
       {
@@ -2780,10 +2835,10 @@
         "position": 122,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#partisan-imbalance-in-politifact",
+          "@id": "https://gsood.com/research/partisan-imbalance-in-politifact/",
           "name": "Partisan Imbalance in Politifact?",
           "headline": "Partisan Imbalance in Politifact?",
-          "url": "https://github.com/notnews/politifact",
+          "url": "https://gsood.com/research/partisan-imbalance-in-politifact/",
           "author": [
             {
               "@type": "Person",
@@ -2791,7 +2846,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We combine scraped PolitiFact ratings with independently coded party affiliations to examine differences in scrutiny and ratings across parties. The analysis distinguishes how often statements are checked from the average rating among the statements selected for checking."
+          "description": "We combine scraped PolitiFact ratings with independently coded party affiliations to examine differences in scrutiny and ratings across parties. The analysis distinguishes how often statements are checked from the average rating among the statements selected for checking.",
+          "sameAs": "https://github.com/notnews/politifact"
         }
       },
       {
@@ -2799,10 +2855,10 @@
         "position": 123,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#top-news-urls-from-news-feeds-of-major-national-news-sites-2022",
+          "@id": "https://gsood.com/research/top-news-urls-from-news-feeds-of-major-national-news-sites-2022/",
           "name": "Top News! URLs from News Feeds of Major National News Sites (2022-)",
           "headline": "Top News! URLs from News Feeds of Major National News Sites (2022-)",
-          "url": "https://github.com/notnews/top_news",
+          "url": "https://gsood.com/research/top-news-urls-from-news-feeds-of-major-national-news-sites-2022/",
           "author": [
             {
               "@type": "Person",
@@ -2814,7 +2870,8 @@
               "name": "Derek Willis"
             }
           ],
-          "description": "A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections."
+          "description": "A scheduled collector archives URLs from major news sources for studying news production. The repository contains source-specific URL collections and links to historical full-text releases, whose coverage differs from the current collections.",
+          "sameAs": "https://github.com/notnews/top_news"
         }
       },
       {
@@ -2822,10 +2879,10 @@
         "position": 124,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#cnn-transcripts-2000-2025",
+          "@id": "https://gsood.com/research/cnn-transcripts-2000-2025/",
           "name": "CNN Transcripts 2000--2025",
           "headline": "CNN Transcripts 2000--2025",
-          "url": "https://github.com/notnews/cnn_transcripts/",
+          "url": "https://gsood.com/research/cnn-transcripts-2000-2025/",
           "author": [
             {
               "@type": "Person",
@@ -2833,7 +2890,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A corpus and scraper for CNN transcripts spanning 2000 through March 2025, with program names, dates, times, and transcript text. The repository documents collection across versions of CNN's site and links to research-access data on Harvard Dataverse."
+          "description": "A corpus and scraper for CNN transcripts spanning 2000 through March 2025, with program names, dates, times, and transcript text. The repository documents collection across versions of CNN's site and links to research-access data on Harvard Dataverse.",
+          "sameAs": "https://github.com/notnews/cnn_transcripts/"
         }
       },
       {
@@ -2841,10 +2899,10 @@
         "position": 125,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#what-and-who-is-on-network-television",
+          "@id": "https://gsood.com/research/what-and-who-is-on-network-television/",
           "name": "What and Who is on Network Television?",
           "headline": "What and Who is on Network Television?",
-          "url": "https://github.com/notnews/tv_schedules",
+          "url": "https://gsood.com/research/what-and-who-is-on-network-television/",
           "author": [
             {
               "@type": "Person",
@@ -2852,7 +2910,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends."
+          "description": "We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends.",
+          "sameAs": "https://github.com/notnews/tv_schedules"
         }
       },
       {
@@ -2860,10 +2919,10 @@
         "position": 126,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#working-women-on-indian-tv",
+          "@id": "https://gsood.com/research/working-women-on-indian-tv/",
           "name": "Working Women on Indian TV",
           "headline": "Working Women on Indian TV",
-          "url": "https://github.com/notnews/working_women_on_tv",
+          "url": "https://gsood.com/research/working-women-on-indian-tv/",
           "author": [
             {
               "@type": "Person",
@@ -2875,7 +2934,8 @@
               "name": "Asha Sood"
             }
           ],
-          "description": "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows."
+          "description": "We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows.",
+          "sameAs": "https://github.com/notnews/working_women_on_tv"
         }
       },
       {
@@ -3003,10 +3063,10 @@
         "position": 132,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#mixed-signals-movie-quality-assessments-across-platforms",
+          "@id": "https://gsood.com/research/mixed-signals-movie-quality-assessments-across-platforms/",
           "name": "Mixed Signals: Movie Quality Assessments Across Platforms",
           "headline": "Mixed Signals: Movie Quality Assessments Across Platforms",
-          "url": "https://github.com/soodoku/mixed_signals",
+          "url": "https://gsood.com/research/mixed-signals-movie-quality-assessments-across-platforms/",
           "author": [
             {
               "@type": "Person",
@@ -3014,7 +3074,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We compare movie ratings across platforms using data on 16,319 American films released between 1950 and 2020. Among platforms with sufficient coverage, average ratings are only moderately correlated, revealing substantial differences in assessments of the same films."
+          "description": "We compare movie ratings across platforms using data on 16,319 American films released between 1950 and 2020. Among platforms with sufficient coverage, average ratings are only moderately correlated, revealing substantial differences in assessments of the same films.",
+          "sameAs": "https://github.com/soodoku/mixed_signals"
         }
       },
       {
@@ -3238,10 +3299,10 @@
         "position": 140,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#the-older-half-spousal-age-gap-in-india",
+          "@id": "https://gsood.com/research/the-older-half-spousal-age-gap-in-india/",
           "name": "The Older Half: Spousal Age Gap in India",
           "headline": "The Older Half: Spousal Age Gap in India",
-          "url": "https://github.com/in-rolls/spousal_age_gap",
+          "url": "https://gsood.com/research/the-older-half-spousal-age-gap-in-india/",
           "author": [
             {
               "@type": "Person",
@@ -3253,7 +3314,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses' ages."
+          "description": "Using electoral-roll records for nearly 70 million couples across Indian states and union territories, we describe spousal age differences. Husbands are generally older, with an average gap of about 4.1 years and substantial variation across states and spouses' ages.",
+          "sameAs": "https://github.com/in-rolls/spousal_age_gap"
         }
       },
       {
@@ -3285,10 +3347,10 @@
         "position": 142,
         "item": {
           "@type": "Dataset",
-          "@id": "https://gsood.com/research/#indian-electoral-rolls",
+          "@id": "https://gsood.com/research/indian-electoral-rolls/",
           "name": "Indian Electoral Rolls: Data and Extraction Tools",
           "headline": "Indian Electoral Rolls: Data and Extraction Tools",
-          "url": "https://github.com/in-rolls/electoral_rolls",
+          "url": "https://gsood.com/research/indian-electoral-rolls/",
           "author": [
             {
               "@type": "Person",
@@ -3300,7 +3362,8 @@
               "name": "Atul Dhingra"
             }
           ],
-          "description": "Scripts and linked tools collect and parse Indian electoral rolls published as PDFs by state election authorities. The project provides a foundation for research using recorded names, ages, gender labels, family relationships, and electoral geography."
+          "description": "Scripts and linked tools collect and parse Indian electoral rolls published as PDFs by state election authorities. The project provides a foundation for research using recorded names, ages, gender labels, family relationships, and electoral geography.",
+          "sameAs": "https://github.com/in-rolls/electoral_rolls"
         }
       },
       {
@@ -3352,10 +3415,10 @@
         "position": 145,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#delhi-street-food-videos",
+          "@id": "https://gsood.com/research/delhi-street-food-videos/",
           "name": "Who Eats in Delhi Street-Food Videos?",
           "headline": "Who Eats in Delhi Street-Food Videos?",
-          "url": "https://github.com/soodoku/mw_youtube",
+          "url": "https://gsood.com/research/delhi-street-food-videos/",
           "author": [
             {
               "@type": "Person",
@@ -3363,7 +3426,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "In 450 randomly sampled frames from 30 Delhi street-food videos published in 2025, women accounted for 13.5% of apparent diner sightings and 16.1% of all sightings with classifiable gender, after weighting each video equally. A person with a serving of food in hand or in front of them counts as a diner, as does someone sharing a meal."
+          "description": "In 450 randomly sampled frames from 30 Delhi street-food videos published in 2025, women accounted for 13.5% of apparent diner sightings and 16.1% of all sightings with classifiable gender, after weighting each video equally. A person with a serving of food in hand or in front of them counts as a diner, as does someone sharing a meal.",
+          "sameAs": "https://github.com/soodoku/mw_youtube"
         }
       },
       {
@@ -3395,10 +3459,10 @@
         "position": 147,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#which-women-are-missing-adult-sex-ratio-by-last-name",
+          "@id": "https://gsood.com/research/which-women-are-missing-adult-sex-ratio-by-last-name/",
           "name": "Which Women Are Missing? Adult Sex Ratio By Last Name",
           "headline": "Which Women Are Missing? Adult Sex Ratio By Last Name",
-          "url": "https://github.com/in-rolls/last_sex",
+          "url": "https://gsood.com/research/which-women-are-missing-adult-sex-ratio-by-last-name/",
           "author": [
             {
               "@type": "Person",
@@ -3410,7 +3474,8 @@
               "name": "Suriyan Laohaprapanon"
             }
           ],
-          "description": "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels."
+          "description": "We use Indian electoral-roll records for more than 35 million people to estimate adult sex ratios by surname. The analysis describes variation that state-level averages can obscure, using recorded electoral-roll gender labels.",
+          "sameAs": "https://github.com/in-rolls/last_sex"
         }
       },
       {
@@ -3418,10 +3483,10 @@
         "position": 148,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#missing-women-on-the-streets",
+          "@id": "https://gsood.com/research/missing-women-on-the-streets/",
           "name": "Missing Women on the Streets",
           "headline": "Missing Women on the Streets",
-          "url": "https://github.com/geosensing/women-count",
+          "url": "https://gsood.com/research/missing-women-on-the-streets/",
           "author": [
             {
               "@type": "Person",
@@ -3429,7 +3494,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "An exploratory project on measuring women's presence in public space using observations of people on streets. It develops sampling and data-collection approaches and discusses the assumptions needed to compare observed street populations with a gender-balance baseline."
+          "description": "An exploratory project on measuring women's presence in public space using observations of people on streets. It develops sampling and data-collection approaches and discusses the assumptions needed to compare observed street populations with a gender-balance baseline.",
+          "sameAs": "https://github.com/geosensing/women-count"
         }
       },
       {
@@ -3437,10 +3503,10 @@
         "position": 149,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#epic-children-sex-ratio-of-children-of-key-characters-in-epics",
+          "@id": "https://gsood.com/research/epic-children-sex-ratio-of-children-of-key-characters-in-epics/",
           "name": "Epic Children: Sex Ratio of Children of Key Characters in Epics",
           "headline": "Epic Children: Sex Ratio of Children of Key Characters in Epics",
-          "url": "https://github.com/soodoku/epic_children",
+          "url": "https://gsood.com/research/epic-children-sex-ratio-of-children-of-key-characters-in-epics/",
           "author": [
             {
               "@type": "Person",
@@ -3448,7 +3514,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "A dataset records sons and daughters attributed to key figures across epic and mythological traditions. It documents large differences in the visibility of named sons and daughters, with source and family-structure information for interpreting the counts."
+          "description": "A dataset records sons and daughters attributed to key figures across epic and mythological traditions. It documents large differences in the visibility of named sons and daughters, with source and family-structure information for interpreting the counts.",
+          "sameAs": "https://github.com/soodoku/epic_children"
         }
       },
       {
@@ -3456,10 +3523,10 @@
         "position": 150,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#missing-daughters-of-indian-politicians",
+          "@id": "https://gsood.com/research/missing-daughters-of-indian-politicians/",
           "name": "Missing Daughters of Indian Politicians",
           "headline": "Missing Daughters of Indian Politicians",
-          "url": "https://github.com/in-rolls/missing_daughters",
+          "url": "https://gsood.com/research/missing-daughters-of-indian-politicians/",
           "author": [
             {
               "@type": "Person",
@@ -3467,7 +3534,8 @@
               "url": "https://gsood.com/"
             }
           ],
-          "description": "We use official biographies of members of India's 12th through 17th Lok Sabhas to examine the sex ratio of politicians' children. The project compares recorded sons and daughters to assess whether the imbalance observed in the wider population also appears among political elites."
+          "description": "We use official biographies of members of India's 12th through 17th Lok Sabhas to examine the sex ratio of politicians' children. The project compares recorded sons and daughters to assess whether the imbalance observed in the wider population also appears among political elites.",
+          "sameAs": "https://github.com/in-rolls/missing_daughters"
         }
       },
       {
@@ -3475,10 +3543,10 @@
         "position": 151,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#elo-ratings-of-international-cricket-teams-by-format",
+          "@id": "https://gsood.com/research/elo-ratings-of-international-cricket-teams-by-format/",
           "name": "Elo Ratings of International Cricket Teams By Format",
           "headline": "Elo Ratings of International Cricket Teams By Format",
-          "url": "https://github.com/outside-edge/elo_cricket",
+          "url": "https://gsood.com/research/elo-ratings-of-international-cricket-teams-by-format/",
           "author": [
             {
               "@type": "Person",
@@ -3490,7 +3558,8 @@
               "name": "Derek Willis"
             }
           ],
-          "description": "We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time."
+          "description": "We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time.",
+          "sameAs": "https://github.com/outside-edge/elo_cricket"
         }
       },
       {
@@ -3498,10 +3567,10 @@
         "position": 152,
         "item": {
           "@type": "CreativeWork",
-          "@id": "https://gsood.com/research/#war-ratings-for-cricketers",
+          "@id": "https://gsood.com/research/war-ratings-for-cricketers/",
           "name": "WAR Ratings for Cricketers",
           "headline": "WAR Ratings for Cricketers",
-          "url": "https://github.com/outside-edge/war",
+          "url": "https://gsood.com/research/war-ratings-for-cricketers/",
           "author": [
             {
               "@type": "Person",
@@ -3513,7 +3582,8 @@
               "name": "Derek Willis"
             }
           ],
-          "description": "We develop batting and bowling Wins Above Replacement measures for men's and women's one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins."
+          "description": "We develop batting and bowling Wins Above Replacement measures for men's and women's one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins.",
+          "sameAs": "https://github.com/outside-edge/war"
         }
       },
       {

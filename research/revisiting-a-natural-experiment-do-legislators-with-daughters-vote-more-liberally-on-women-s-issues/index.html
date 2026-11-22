@@ -21,6 +21,14 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Don Green" />
+	<meta name="citation_author" content="Oliver Hyman-Metzger" />
+	<meta name="citation_author" content="Michelle Zee" />
+	<meta name="citation_publication_date" content="2023" />
+	<meta name="citation_journal_title" content="Journal of Political Economy Microeconomics" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/daughters.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,9 +82,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/daughters.pdf" target="_blank" class="entry-title">Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?</a><br>With Don Green, Oliver Hyman-Metzger, and Michelle Zee.<br><i>Journal of Political Economy Microeconomics.</i> 2023.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/daughters" target="_blank">Replication Materials</a> | <a href="/research/papers/daughters_si.pdf" target="_blank">Supporting Information</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://phys.org/news/2023-05-daughters-politicians-votes-women-issues.html" target="_blank">Phys.org</a></span></span></span></div>
       <div class="abstract">We revisit evidence that legislators with daughters vote more liberally on women&#x27;s issues, extending the analysis to eight congresses before and eight after the original study period. We find no daughters effect in either extension, challenging the explanation that later party polarization alone erased the relationship.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood, Don Green, Oliver Hyman-Metzger, and Michelle Zee (2023). &quot;Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?.&quot; Journal of Political Economy Microeconomics. 2023. https://gsood.com/research/revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2023revisiting,
+  author = {Gaurav Sood and Don Green and Oliver Hyman-Metzger and Michelle Zee},
+  title = {{Revisiting a Natural Experiment: Do Legislators With Daughters Vote More Liberally on Women&#x27;s Issues?}},
+  journal = {Journal of Political Economy Microeconomics},
+  year = {2023},
+  url = {https://gsood.com/research/revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

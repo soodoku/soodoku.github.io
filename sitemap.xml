@@ -3,33 +3,85 @@
   <url><loc>https://gsood.com/</loc></url>
   <url><loc>https://gsood.com/research/</loc></url>
   <url><loc>https://gsood.com/research/queue-shift-updating-classifiers-under-a-staffing-budget/</loc></url>
+  <url><loc>https://gsood.com/research/stable-cart-lower-bootstrap-prediction-variance-cart/</loc></url>
   <url><loc>https://gsood.com/research/calibration-where-it-counts-cost-and-data-informed-isotonic-regression/</loc></url>
+  <url><loc>https://gsood.com/research/fairlex-leximin-calibration/</loc></url>
   <url><loc>https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/</loc></url>
   <url><loc>https://gsood.com/research/streaming-calibration-with-mwu-and-sgd/</loc></url>
+  <url><loc>https://gsood.com/research/streamcal-streaming-probability-calibration/</loc></url>
   <url><loc>https://gsood.com/research/from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges/</loc></url>
+  <url><loc>https://gsood.com/research/setjoin-record-linkage-that-preserves-group-structure/</loc></url>
+  <url><loc>https://gsood.com/research/tether-high-precision-record-linkage/</loc></url>
+  <url><loc>https://gsood.com/research/bloomjoin-bloom-filter-based-joins/</loc></url>
   <url><loc>https://gsood.com/research/the-micro-task-market-for-lemons-collecting-data-on-amazon-s-mechanical-turk/</loc></url>
   <url><loc>https://gsood.com/research/optimal-data-collection-when-strata-and-strata-variances-are-known/</loc></url>
+  <url><loc>https://gsood.com/research/geo-sampling-sampling-randomly-from-the-streets/</loc></url>
+  <url><loc>https://gsood.com/research/allocator-optimal-itineraries-for-spatially-distributed-tasks/</loc></url>
+  <url><loc>https://gsood.com/research/reporoulette-randomly-sample-github-repositories/</loc></url>
   <url><loc>https://gsood.com/research/unbiased-regression-with-costly-item-labels/</loc></url>
+  <url><loc>https://gsood.com/research/statqa-extract-multimodal-stats-q-a-from-tables-with-provenance/</loc></url>
+  <url><loc>https://gsood.com/research/inferring-treatment-compliance-from-delivery-window-data/</loc></url>
   <url><loc>https://gsood.com/research/two-regressions-and-a-bootstrap-regression-calibration-for-ml-generated-covariates-and-the-nonlinear-boundary/</loc></url>
   <url><loc>https://gsood.com/research/partial-credit-diagnosing-proxy-covariates-with-validation-swaps/</loc></url>
+  <url><loc>https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/</loc></url>
   <url><loc>https://gsood.com/research/causal-debiasing-for-robust-machine-learning/</loc></url>
   <url><loc>https://gsood.com/research/randomized-assignment-based-anticlustering-for-experiments-with-many-arms/</loc></url>
   <url><loc>https://gsood.com/research/one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments/</loc></url>
   <url><loc>https://gsood.com/research/total-error/</loc></url>
+  <url><loc>https://gsood.com/research/incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series/</loc></url>
+  <url><loc>https://gsood.com/research/analytic-hessian-bandwidth-selection/</loc></url>
+  <url><loc>https://gsood.com/research/a-lightweight-als-solver-for-iterative-gls/</loc></url>
+  <url><loc>https://gsood.com/research/optimal-classification-cutoffs-for-f1-score-etc/</loc></url>
+  <url><loc>https://gsood.com/research/pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss/</loc></url>
   <url><loc>https://gsood.com/research/scaling-ml-products-at-startups-a-practitioner-s-guide/</loc></url>
+  <url><loc>https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/</loc></url>
+  <url><loc>https://gsood.com/research/sound-names-classify-names-based-on-sequence-of-sounds/</loc></url>
+  <url><loc>https://gsood.com/research/graphic-names-classify-names-using-google-image-search-and-clarifai/</loc></url>
+  <url><loc>https://gsood.com/research/naampy-infer-sociodemographic-characteristics-from-indian-names/</loc></url>
+  <url><loc>https://gsood.com/research/pranaam-predict-religion-from-name/</loc></url>
+  <url><loc>https://gsood.com/research/naamkaran-a-generative-model-for-names/</loc></url>
+  <url><loc>https://gsood.com/research/parsernaam-ml-assisted-name-parser/</loc></url>
+  <url><loc>https://gsood.com/research/instate-predict-spoken-language-from-last-name/</loc></url>
+  <url><loc>https://gsood.com/research/exposed-shedding-blacklight-on-online-privacy/</loc></url>
   <url><loc>https://gsood.com/research/pwned-how-often-are-americans-online-accounts-breached/</loc></url>
+  <url><loc>https://gsood.com/research/piedomains-predict-the-kind-of-content-hosted-by-a-domain/</loc></url>
+  <url><loc>https://gsood.com/research/pass-fail-using-a-password-generator-to-improve-password-strength/</loc></url>
   <url><loc>https://gsood.com/research/how-often-is-politicians-data-breached-evidence-from-hibp/</loc></url>
   <url><loc>https://gsood.com/research/bad-domains-exposure-to-malicious-content-online/</loc></url>
+  <url><loc>https://gsood.com/research/know-your-ip/</loc></url>
+  <url><loc>https://gsood.com/research/virustotal-r-client-for-the-virustotal-public-api-2-0/</loc></url>
+  <url><loc>https://gsood.com/research/rmcp-r-mcp-community-server/</loc></url>
+  <url><loc>https://gsood.com/research/tuber-access-youtube-api-via-r/</loc></url>
+  <url><loc>https://gsood.com/research/repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form/</loc></url>
+  <url><loc>https://gsood.com/research/indicate-transliterate-indic-languages-to-english/</loc></url>
+  <url><loc>https://gsood.com/research/lost-years-expected-number-of-years-lost/</loc></url>
+  <url><loc>https://gsood.com/research/get-weather-data/</loc></url>
+  <url><loc>https://gsood.com/research/layoutlens-ai-assisted-ui-testing/</loc></url>
+  <url><loc>https://gsood.com/research/preen-python-package-development/</loc></url>
+  <url><loc>https://gsood.com/research/offprint-academic-website-theme/</loc></url>
+  <url><loc>https://gsood.com/research/adjacent-related-repositories-recommender/</loc></url>
+  <url><loc>https://gsood.com/research/advertiser-promote-your-github-repositories-on-bluesky/</loc></url>
   <url><loc>https://gsood.com/research/downloads-are-cheap-validated-use-as-a-measure-of-research-software/</loc></url>
+  <url><loc>https://gsood.com/research/user-auto-compute-citations-to-software-from-github/</loc></url>
   <url><loc>https://gsood.com/research/social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads/</loc></url>
   <url><loc>https://gsood.com/research/significant-error-citations-to-research-with-publicized-statistical-errors/</loc></url>
   <url><loc>https://gsood.com/research/propagation-of-error-approving-citations-to-problematic-research/</loc></url>
+  <url><loc>https://gsood.com/research/get-notified-when-cited-article-is-retracted/</loc></url>
+  <url><loc>https://gsood.com/research/highlight-citations-to-retracted-articles/</loc></url>
+  <url><loc>https://gsood.com/research/autosum-summarize-publications-automatically-and-discover-miscitations/</loc></url>
   <url><loc>https://gsood.com/research/a-benchmark-for-benchmarks/</loc></url>
   <url><loc>https://gsood.com/research/review-of-noise-a-flaw-in-human-judgment/</loc></url>
   <url><loc>https://gsood.com/research/by-the-numbers-toward-more-precise-numerical-summaries-of-results/</loc></url>
+  <url><loc>https://gsood.com/research/the-review-production-and-consumption-of-apsr-articles/</loc></url>
+  <url><loc>https://gsood.com/research/superdf-save-metadata-with-the-data-in-r-and-python-dataframes/</loc></url>
+  <url><loc>https://gsood.com/research/not-to-code-evidence-from-static-code-analysis-of-replication-scripts/</loc></url>
   <url><loc>https://gsood.com/research/predicting-out-of-home-placement/</loc></url>
   <url><loc>https://gsood.com/research/streetsense-learning-from-google-street-view/</loc></url>
+  <url><loc>https://gsood.com/research/autosense-automated-street-condition-assessment/</loc></url>
+  <url><loc>https://gsood.com/research/get-in-line-waiting-times-at-the-dmv/</loc></url>
+  <url><loc>https://gsood.com/research/public-sector-salaries/</loc></url>
   <url><loc>https://gsood.com/research/you-cannot-be-serious-the-impact-of-accuracy-incentives-on-partisan-bias/</loc></url>
+  <url><loc>https://gsood.com/research/motivated-responding-in-studies-of-factual-learning/</loc></url>
   <url><loc>https://gsood.com/research/a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps/</loc></url>
   <url><loc>https://gsood.com/research/the-waters-of-casablanca-on-political-misinformation/</loc></url>
   <url><loc>https://gsood.com/research/mis-measuring-political-knowledge/</loc></url>
@@ -64,15 +116,24 @@
   <url><loc>https://gsood.com/research/not-news-provision-of-apolitical-news-in-the-british-news-media/</loc></url>
   <url><loc>https://gsood.com/research/strength-in-numbers-multiple-measures-of-media-ideology/</loc></url>
   <url><loc>https://gsood.com/research/measuring-agendas-and-positions-on-agendas/</loc></url>
+  <url><loc>https://gsood.com/research/notnews-predict-the-type-of-news-based-on-story-text-and-url/</loc></url>
+  <url><loc>https://gsood.com/research/unreadable-news-how-readable-is-american-news/</loc></url>
   <url><loc>https://gsood.com/research/follow-your-ideology-a-measure-of-ideological-location-of-media-sources/</loc></url>
   <url><loc>https://gsood.com/research/the-supply-of-media-slant-across-outlets-and-demand-for-slant-within-outlets-evidence-from-us-presidential-campaign-news/</loc></url>
   <url><loc>https://gsood.com/research/don-t-expose-yourself-discretionary-exposure-to-political-information/</loc></url>
+  <url><loc>https://gsood.com/research/the-good-nyt-provision-of-apolitical-news-in-the-new-york-times/</loc></url>
   <url><loc>https://gsood.com/research/hard-news-the-softening-of-network-television-news/</loc></url>
+  <url><loc>https://gsood.com/research/partisan-imbalance-in-politifact/</loc></url>
+  <url><loc>https://gsood.com/research/top-news-urls-from-news-feeds-of-major-national-news-sites-2022/</loc></url>
+  <url><loc>https://gsood.com/research/cnn-transcripts-2000-2025/</loc></url>
+  <url><loc>https://gsood.com/research/what-and-who-is-on-network-television/</loc></url>
+  <url><loc>https://gsood.com/research/working-women-on-indian-tv/</loc></url>
   <url><loc>https://gsood.com/research/the-face-of-crime-in-prime-time-evidence-from-law-and-order/</loc></url>
   <url><loc>https://gsood.com/research/problem-solving/</loc></url>
   <url><loc>https://gsood.com/research/is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect/</loc></url>
   <url><loc>https://gsood.com/research/description-invariance-in-risky-choice-framing/</loc></url>
   <url><loc>https://gsood.com/research/is-cynicism-taken-as-evidence-of-political-sophistication/</loc></url>
+  <url><loc>https://gsood.com/research/mixed-signals-movie-quality-assessments-across-platforms/</loc></url>
   <url><loc>https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability/</loc></url>
   <url><loc>https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play/</loc></url>
   <url><loc>https://gsood.com/research/revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues/</loc></url>
@@ -80,10 +141,19 @@
   <url><loc>https://gsood.com/research/do-namesakes-confuse-voters/</loc></url>
   <url><loc>https://gsood.com/research/the-limits-of-electoral-gender-quotas-in-rural-local-bodies/</loc></url>
   <url><loc>https://gsood.com/research/the-effect-of-gender-quotas-on-some-qualities-of-elites/</loc></url>
+  <url><loc>https://gsood.com/research/the-older-half-spousal-age-gap-in-india/</loc></url>
   <url><loc>https://gsood.com/research/unlanded-distribution-of-land-in-bihar/</loc></url>
+  <url><loc>https://gsood.com/research/indian-electoral-rolls/</loc></url>
   <url><loc>https://gsood.com/research/missing-women-on-global-streets/</loc></url>
   <url><loc>https://gsood.com/research/missing-women-on-indian-streets/</loc></url>
+  <url><loc>https://gsood.com/research/delhi-street-food-videos/</loc></url>
   <url><loc>https://gsood.com/research/son-bias-in-the-us-evidence-from-business-names/</loc></url>
+  <url><loc>https://gsood.com/research/which-women-are-missing-adult-sex-ratio-by-last-name/</loc></url>
+  <url><loc>https://gsood.com/research/missing-women-on-the-streets/</loc></url>
+  <url><loc>https://gsood.com/research/epic-children-sex-ratio-of-children-of-key-characters-in-epics/</loc></url>
+  <url><loc>https://gsood.com/research/missing-daughters-of-indian-politicians/</loc></url>
+  <url><loc>https://gsood.com/research/elo-ratings-of-international-cricket-teams-by-format/</loc></url>
+  <url><loc>https://gsood.com/research/war-ratings-for-cricketers/</loc></url>
   <url><loc>https://gsood.com/research/fairly-random-the-effect-of-winning-the-toss-on-winning-the-match/</loc></url>
   <url><loc>https://gsood.com/research/papers/queue_shift.pdf</loc></url>
   <url><loc>https://gsood.com/research/papers/calibre.pdf</loc></url>

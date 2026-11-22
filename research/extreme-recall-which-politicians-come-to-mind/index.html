@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Extreme Recall: Which Politicians Come to Mind?" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Daniel Weitzel" />
+	<meta name="citation_publication_date" content="2024" />
+	<meta name="citation_journal_title" content="Journal of Elections, Public Opinion and Parties" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/extreme_recall.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/extreme_recall.pdf" target="_blank" class="entry-title">Extreme Recall: Which Politicians Come to Mind?</a><br>With Daniel Weitzel.<br><i>Journal of Elections, Public Opinion and Parties.</i> 2024.<br><span class="entry-icon">🗃</span><a href="https://github.com/notnews/extreme_recall_2023" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/notnews/extreme_recall" target="_blank">Extreme Recall</a></span></span></span></div>
       <div class="abstract">Two surveys nearly a decade apart show that people&#x27;s images of political parties center on a few prominent national figures, with more extreme politicians recalled more often. Television news coverage is associated with which politicians come to mind.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Daniel Weitzel (2024). &quot;Extreme Recall: Which Politicians Come to Mind?.&quot; Journal of Elections, Public Opinion and Parties. 2024. https://gsood.com/research/extreme-recall-which-politicians-come-to-mind/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2024extreme,
+  author = {Gaurav Sood and Daniel Weitzel},
+  title = {{Extreme Recall: Which Politicians Come to Mind?}},
+  journal = {Journal of Elections, Public Opinion and Parties},
+  year = {2024},
+  url = {https://gsood.com/research/extreme-recall-which-politicians-come-to-mind/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

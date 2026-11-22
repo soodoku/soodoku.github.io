@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Yphtach Lelkes" />
+	<meta name="citation_publication_date" content="2018" />
+	<meta name="citation_journal_title" content="Oxford Research Encyclopedia of Politics" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/selexp.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="/research/papers/selexp.pdf" class="entry-title">Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information</a><br>With Yphtach Lelkes.<br><i>Oxford Research Encyclopedia of Politics</i>. 2018.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/selexp">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/themains/piedomains" target="_blank">Categorizing the Content of Domains</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/measuring-selective-exposure-a-selective-measure-of-selective-exposure/" target="_blank">Measuring Selective Exposure</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-fairest-of-them-all/" target="_blank">The Fairest of All</a></span></span></span></div>
       <div class="abstract">We reconsider claims that greater choice over political information increases knowledge gaps and polarization. The review questions the premise of widening knowledge gaps and finds that the evidence connecting selective exposure to polarization is more limited and nuanced than common accounts suggest.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Yphtach Lelkes (2018). &quot;Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information.&quot; Oxford Research Encyclopedia of Politics. 2018. https://gsood.com/research/don-t-expose-yourself-discretionary-exposure-to-political-information/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2018don,
+  author = {Gaurav Sood and Yphtach Lelkes},
+  title = {{Don&#x27;t Expose Yourself: Discretionary Exposure to Political Information}},
+  journal = {Oxford Research Encyclopedia of Politics},
+  year = {2018},
+  url = {https://gsood.com/research/don-t-expose-yourself-discretionary-exposure-to-political-information/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

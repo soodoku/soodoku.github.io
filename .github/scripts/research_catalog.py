@@ -81,6 +81,8 @@ def validate_catalog(catalog, root=ROOT):
         nodes(entry["summary"])
         nodes(entry["description"])
         nodes(entry.get("publication", []))
+        for section_block in entry.get("details", []):
+            nodes(section_block["body"])
         if entry.get("status") == "draft" and "publication" in entry:
             raise ValueError(f"{entry['id']}: a draft cannot have a publication")
         for items in entry.get("supporting", {}).values():
@@ -241,9 +243,90 @@ def absolute_url(url, base=RESEARCH_URL):
 
 
 def entry_page_url(entry):
-    if entry["kind"] == "paper":
-        return f"{RESEARCH_URL}{entry['id']}/"
-    return f"{RESEARCH_URL}#{entry['id']}"
+    return f"{RESEARCH_URL}{entry['id']}/"
+
+
+def parse_publication(entry):
+    """Extract (venue, year) from entry['publication'] rich-text nodes."""
+    pub = entry.get("publication", [])
+    if not pub:
+        return "", ""
+    full = plain_text(pub, entry)
+    years = re.findall(r"\b(19\d\d|20\d\d)\b", full)
+    year = years[-1] if years else ""
+    venue = ""
+    for node in pub:
+        if isinstance(node, dict) and node.get("tag") == "i":
+            venue = plain_text(node.get("children", []), entry).strip(" .,:")
+            venue = re.sub(r",?\s*(19\d\d|20\d\d)\.?$", "", venue).strip(" .,:")
+            break
+    return venue, year
+
+
+def entry_authors(entry):
+    return ["Gaurav Sood"] + list(entry.get("coauthors", []))
+
+
+def format_bibtex(entry):
+    venue, year = parse_publication(entry)
+    authors = " and ".join(entry_authors(entry))
+    resources = {r["id"]: r for r in entry["resources"]}
+    primary = resources[entry["primary_resource"]]
+    url = (
+        entry_page_url(entry)
+        if entry["kind"] == "paper"
+        else absolute_url(primary["url"])
+    )
+    key_word = re.sub(r"[^a-z0-9]", "", entry["id"].split("-")[0]) or "work"
+    cite_key = f"sood{year or ''}{key_word}"
+    entry_type = (
+        "article" if venue else ("software" if entry["kind"] == "software" else "misc")
+    )
+    fields = [
+        ("author", authors),
+        ("title", "{" + entry["title"] + "}"),
+    ]
+    if venue:
+        fields.append(("journal", venue))
+    if year:
+        fields.append(("year", year))
+    elif entry["kind"] == "paper":
+        fields.append(("note", "Working paper"))
+    fields.append(("url", url))
+    body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields)
+    return f"@{entry_type}{{{cite_key},\n{body}\n}}"
+
+
+def format_plain_citation(entry):
+    authors = credit(entry_authors(entry))
+    _, year = parse_publication(entry)
+    year_part = f" ({year})." if year else "."
+    title = entry["title"]
+    pub_text = (
+        " " + plain_text(entry["publication"], entry) if "publication" in entry else ""
+    )
+    url = entry_page_url(entry)
+    return f'{authors}{year_part} "{title}."{pub_text} {url}'
+
+
+def render_scholar_meta(entry):
+    def meta(name, value):
+        escaped = html.escape(value, quote=True)
+        return f'\t<meta name="{name}" content="{escaped}" />'
+
+    venue, year = parse_publication(entry)
+    tags = [meta("citation_title", entry["title"])]
+    for author in entry_authors(entry):
+        tags.append(meta("citation_author", author))
+    if year:
+        tags.append(meta("citation_publication_date", year))
+    if venue:
+        tags.append(meta("citation_journal_title", venue))
+    for resource in entry["resources"]:
+        if resource["kind"] == "pdf" and resource["role"] == "manuscript":
+            tags.append(meta("citation_pdf_url", absolute_url(resource["url"])))
+            break
+    return "\n".join(tags)
 
 
 def entry_schema_object(entry):
@@ -253,17 +336,16 @@ def entry_schema_object(entry):
         {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
     ]
     page_url = entry_page_url(entry)
-    has_page = entry["kind"] == "paper"
     work = {
         "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),
         "@id": page_url,
         "name": entry["title"],
         "headline": entry["title"],
-        "url": page_url if has_page else primary_url,
+        "url": page_url,
         "author": authors,
         "description": plain_text(entry["description"], entry),
     }
-    if has_page and primary_url != page_url:
+    if primary_url != page_url:
         work["sameAs"] = primary_url
     return work
 
@@ -306,8 +388,6 @@ def render_entry_pages(catalog, template):
     pages = {}
     for top, subsection, entry_id in placements(catalog):
         entry = entries[entry_id]
-        if entry["kind"] != "paper":
-            continue
         breadcrumb = top["title"]
         if subsection:
             breadcrumb += f" › {subsection}"
@@ -316,15 +396,44 @@ def render_entry_pages(catalog, template):
         schema_obj = {"@context": "https://schema.org", **entry_schema_object(entry)}
         summary_html = entry_summary(entry, entries, url_prefix="/research/")
         abstract_html = rich_text(entry["description"], entry, url_prefix="/research/")
-        body = (
-            f'      <div class="entry-meta">{summary_html}</div>\n'
-            f'      <div class="abstract">{abstract_html}</div>'
+        details_blocks = []
+        for section_block in entry.get("details", []):
+            heading_html = html.escape(section_block["heading"])
+            section_body = rich_text(
+                section_block["body"], entry, url_prefix="/research/"
+            )
+            details_blocks.append(
+                '      <section class="entry-section">\n'
+                f"        <h2>{heading_html}</h2>\n"
+                f'        <div class="entry-section-body">{section_body}</div>\n'
+                "      </section>"
+            )
+        bibtex = html.escape(format_bibtex(entry))
+        plain_cite = html.escape(format_plain_citation(entry))
+        cite_html = (
+            '      <details class="citation-toggle">\n'
+            "        <summary>Cite</summary>\n"
+            '        <div class="citation-box">\n'
+            f'          <p class="citation-text">{plain_cite}</p>\n'
+            '          <div class="bibtex-header"><span>BibTeX</span>'
+            '<button type="button" class="copy-btn">Copy</button></div>\n'
+            f'          <pre class="bibtex-block"><code>{bibtex}</code></pre>\n'
+            "        </div>\n"
+            "      </details>"
         )
+        body_parts = [
+            f'      <div class="entry-meta">{summary_html}</div>',
+            f'      <div class="abstract">{abstract_html}</div>',
+            *details_blocks,
+            cite_html,
+        ]
+        body = "\n".join(body_parts)
         pages[f"research/{entry['id']}/index.html"] = fill(
             template,
             title=html.escape(entry["title"]),
             meta_description=html.escape(desc, quote=True),
             canonical_url=html.escape(canonical, quote=True),
+            meta_tags=render_scholar_meta(entry),
             schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
             section_id=html.escape(top["id"], quote=True),
             breadcrumb=html.escape(breadcrumb),
@@ -431,12 +540,11 @@ def render_swipe(catalog, template):
 
 def render_sitemap(catalog, _template=None):
     urls = [SITE_URL, RESEARCH_URL]
+    entries = {entry["id"]: entry for entry in catalog["entries"]}
     for _, _, entry_id in placements(catalog):
-        entry = next(e for e in catalog["entries"] if e["id"] == entry_id)
-        if entry["kind"] == "paper":
-            page_url = entry_page_url(entry)
-            if page_url not in urls:
-                urls.append(page_url)
+        page_url = entry_page_url(entries[entry_id])
+        if page_url not in urls:
+            urls.append(page_url)
     for entry in catalog["entries"]:
         for resource in entry["resources"]:
             url = resource["url"]

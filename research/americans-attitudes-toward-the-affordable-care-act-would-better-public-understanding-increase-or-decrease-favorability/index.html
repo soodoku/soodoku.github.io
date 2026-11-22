@@ -21,6 +21,16 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Wendy Gross" />
+	<meta name="citation_author" content="Tobias Stark" />
+	<meta name="citation_author" content="Jon Krosnick" />
+	<meta name="citation_author" content="Josh Pasek" />
+	<meta name="citation_author" content="Trevor Tompson" />
+	<meta name="citation_author" content="Jennifer Agiesta" />
+	<meta name="citation_author" content="Dennis Junius" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/ACAKnowledgeFavorability.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -90,9 +100,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/ACAKnowledgeFavorability.pdf" target="_blank" class="entry-title">Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?</a><br>With Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Tompson, Jennifer Agiesta, and Dennis Junius.<span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/press/ForbesHealthcare.pdf">Forbes</a></span>; <span class="supporting-item" role="listitem"><a href="/research/press/PSMagHealthcare.pdf" target="_blank">Pacific Standard</a></span>; <span class="supporting-item" role="listitem"><a href="/research/press/TheDishHealthcare.pdf" target="_blank">The Dish</a>, among other outlets.</span></span></span></div>
       <div class="abstract">Surveys from 2010 and 2012 find substantial misunderstanding of the Affordable Care Act despite support for many of its provisions. The analysis estimates that fuller understanding could increase support for the law; this is a modeled implication, rather than a demonstrated effect of an information campaign.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood, Wendy Gross, Tobias Stark, Jon Krosnick, Josh Pasek, Trevor Tompson, Jennifer Agiesta, and Dennis Junius. &quot;Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?.&quot; https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodamericans,
+  author = {Gaurav Sood and Wendy Gross and Tobias Stark and Jon Krosnick and Josh Pasek and Trevor Tompson and Jennifer Agiesta and Dennis Junius},
+  title = {{Americans&#x27; Attitudes Toward The Affordable Care Act: Would Better Public Understanding Increase or Decrease Favorability?}},
+  note = {Working paper},
+  url = {https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

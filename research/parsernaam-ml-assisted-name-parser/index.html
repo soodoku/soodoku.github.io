@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>parsernaam: ML-assisted name parser | Gaurav Sood</title>
+
+	<meta charset="utf-8" />
+	<meta name="description" content="Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention." />
+	<link rel="canonical" href="https://gsood.com/research/parsernaam-ml-assisted-name-parser/" />
+	<meta name="distribution" content="global" />
+	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
+	<meta name="rating" content="General" />
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1D4ED8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="parsernaam: ML-assisted name parser" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Rajashekar Chintalapati" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://gsood.com/research/parsernaam-ml-assisted-name-parser/",
+  "name": "parsernaam: ML-assisted name parser",
+  "headline": "parsernaam: ML-assisted name parser",
+  "url": "https://gsood.com/research/parsernaam-ml-assisted-name-parser/",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gaurav Sood",
+      "url": "https://gsood.com/"
+    },
+    {
+      "@type": "Person",
+      "name": "Rajashekar Chintalapati"
+    }
+  ],
+  "description": "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention.",
+  "sameAs": "https://github.com/appeler/parsernaam"
+}
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
+
+<div class="container">
+  <nav class="sidebar research-sidebar" aria-label="Main navigation">
+  	<div class="site-title">
+  		<a href="/">
+  			<span class="first">g</span><span class="last">sood</span>
+  		</a>
+		</div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/research/">Data, Research, and Software</a></li>
+      <li><a href="https://gojiberries.io">Blog</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <article id="research" class="entry-page">
+      <p class="entry-breadcrumb"><a href="/research/#names">&larr; Names and Name-Based Inference</a></p>
+      <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/appeler/parsernaam" target="_blank" class="entry-title">parsernaam: ML-assisted name parser</a><br>With Rajashekar Chintalapati.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/appeler/clean-names" target="_blank">clean-names: parsing and deduplication</a></span></span></span></div>
+      <div class="abstract">Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Rajashekar Chintalapati. &quot;parsernaam: ML-assisted name parser.&quot; https://gsood.com/research/parsernaam-ml-assisted-name-parser/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@software{soodparsernaam,
+  author = {Gaurav Sood and Rajashekar Chintalapati},
+  title = {{parsernaam: ML-assisted name parser}},
+  url = {https://github.com/appeler/parsernaam}
+}</code></pre>
+        </div>
+      </details>
+    </article>
+  </main>
+</div>
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
+</body>
+</html>

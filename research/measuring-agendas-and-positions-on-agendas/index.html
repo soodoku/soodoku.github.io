@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Measuring Agendas and Positions on Agendas" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Andrew Guess" />
+	<meta name="citation_pdf_url" content="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf" target="_blank" class="entry-title">Measuring Agendas and Positions on Agendas</a><br>With Andrew Guess.<br><span class="entry-icon">🗃</span><a href="https://github.com/notnews/issue_ideology/" target="_blank">Replication Materials</a></div>
       <div class="abstract">We distinguish which issues news outlets cover from the positions they take within those issues. A supervised topic model and congressional-speech-based slant measures reveal systematic differences across 255 news programs on 50 television channels.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Andrew Guess. &quot;Measuring Agendas and Positions on Agendas.&quot; https://gsood.com/research/measuring-agendas-and-positions-on-agendas/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodmeasuring,
+  author = {Gaurav Sood and Andrew Guess},
+  title = {{Measuring Agendas and Positions on Agendas}},
+  note = {Working paper},
+  url = {https://gsood.com/research/measuring-agendas-and-positions-on-agendas/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,13 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Lucas Shen" />
+	<meta name="citation_author" content="Daniel Weitzel" />
+	<meta name="citation_publication_date" content="2025" />
+	<meta name="citation_journal_title" content="Public Opinion Quarterly" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/measurement_gap.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,9 +77,35 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/measurement_gap.pdf" target="_blank" class="entry-title">A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap</a><br>With Lucas Shen and Daniel Weitzel.<br><i>Public Opinion Quarterly.</i> 2025.<br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_pgap_format" target="_blank">Replication Materials</a></div>
       <div class="abstract">Research suggests that partisan gaps in political knowledge with partisan implications are wide and widespread. Using a series of experiments, we investigate the extent to which partisan gaps in commercial surveys are a result of differences in beliefs than motivated guessing. Knowledge items on commercial surveys often have features that encourage guessing. We find that removing such features yields scales with greater reli- ability and higher criterion validity. More substantively, partisan gaps on scales without these “inflationary” features are roughly 40% smaller. Thus, contrary to Prior, Sood and Khanna (2015), who find that the upward bias is explained by the knowledgeable deliberately marking the wrong answer (partisan cheerleading), our data suggest, in line with Bullock et al. (2015) and Graham and Yair (2023), that partisan gaps on commercial surveys are strongly upwardly biased by motivated guessing by the ignorant. Relatedly, we also find that partisans know less than what toplines of commercial polls suggest.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood, Lucas Shen, and Daniel Weitzel (2025). &quot;A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap.&quot; Public Opinion Quarterly. 2025. https://gsood.com/research/a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2025a,
+  author = {Gaurav Sood and Lucas Shen and Daniel Weitzel},
+  title = {{A Measurement Gap? Effect of the Survey Instrument and Scoring on the Partisan Knowledge Gap}},
+  journal = {Public Opinion Quarterly},
+  year = {2025},
+  url = {https://gsood.com/research/a-measurement-gap-effect-of-the-survey-instrument-and-scoring-on-the-partisan-knowledge-gap/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

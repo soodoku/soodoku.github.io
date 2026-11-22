@@ -295,6 +295,32 @@
             "draft"
           ],
           "description": "Work in progress that will change; renders a Draft label after the title. Omit for finished work."
+        },
+        "details": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "heading": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/node"
+                }
+              }
+            },
+            "required": [
+              "heading",
+              "body"
+            ],
+            "additionalProperties": false
+          },
+          "description": "Optional additional sections rendered on the entry's dedicated HTML page."
         }
       },
       "required": [

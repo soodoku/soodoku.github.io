@@ -21,6 +21,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Rank-Preserving Calibration for Multiclass Classification" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/multiclass-rank-calibration.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,9 +65,34 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Calibration and Weighting</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/multiclass-rank-calibration.pdf" target="_blank" class="entry-title">Rank-Preserving Calibration for Multiclass Classification</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/rank-preserving-calibration" target="_blank">Rank Preserving Calibration of Multiclass Probabilities</a></div>
       <div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood. &quot;Rank-Preserving Calibration for Multiclass Classification.&quot; https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodrank,
+  author = {Gaurav Sood},
+  title = {{Rank-Preserving Calibration for Multiclass Classification}},
+  note = {Working paper},
+  url = {https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

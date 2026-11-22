@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Review of &quot;Noise: A Flaw in Human Judgment&quot;" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Andrew Gelman" />
+	<meta name="citation_publication_date" content="2024" />
+	<meta name="citation_journal_title" content="Chance" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/noise_review.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/noise_review.pdf" class="entry-title">Review of &quot;Noise: A Flaw in Human Judgment&quot;</a><br>With Andrew Gelman.<br><i>Chance.</i> 2024.</div>
       <div class="abstract">A review of Noise: A Flaw in Human Judgment that examines variation in judgments made from the same information. We consider what disagreement reveals about uncertainty, skill, effort, preferences, and the institutions in which decisions are made.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Andrew Gelman (2024). &quot;Review of &quot;Noise: A Flaw in Human Judgment&quot;.&quot; Chance. 2024. https://gsood.com/research/review-of-noise-a-flaw-in-human-judgment/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2024review,
+  author = {Gaurav Sood and Andrew Gelman},
+  title = {{Review of &quot;Noise: A Flaw in Human Judgment&quot;}},
+  journal = {Chance},
+  year = {2024},
+  url = {https://gsood.com/research/review-of-noise-a-flaw-in-human-judgment/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

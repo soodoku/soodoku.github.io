@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="The Awful Truth: Learning Facts That Favor the Other Side" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Robert C. Luskin" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/otherpk.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Deliberation</a></p>
       <div class="entry-meta"><a href="/research/papers/otherpk.pdf" target="_blank" class="entry-title">The Awful Truth: Learning Facts That Favor the Other Side</a><br>With Robert C. Luskin.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/dp_otherpk" target="_blank">Replication Materials</a> · <a href="https://github.com/soodoku/dp_data" target="_blank">Source Data</a></div>
       <div class="abstract">Across 14 Deliberative Polls, participants became more accurate about facts that challenged their initial positions in 13 studies. Gains on these facts exceeded gains on congenial facts in 11 studies, but only two conditional intervals excluded zero. The comparisons describe learning across initial positions; they do not identify a causal effect of deliberation or distinguish motivated learning from initial knowledge, response behavior, and room to improve.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Robert C. Luskin. &quot;The Awful Truth: Learning Facts That Favor the Other Side.&quot; https://gsood.com/research/the-awful-truth-learning-facts-that-favor-the-other-side/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodthe,
+  author = {Gaurav Sood and Robert C. Luskin},
+  title = {{The Awful Truth: Learning Facts That Favor the Other Side}},
+  note = {Working paper},
+  url = {https://gsood.com/research/the-awful-truth-learning-facts-that-favor-the-other-side/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

@@ -21,6 +21,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Lucas Shen" />
+	<meta name="citation_publication_date" content="2024" />
+	<meta name="citation_journal_title" content="Journal of Quantitative Description" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/adult.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +72,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/adult.pdf" target="_blank" class="entry-title">Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online</a><br>With Lucas Shen.<br><i>Journal of Quantitative Description.</i> 2024.<br><span class="entry-icon">🗃</span><a href="https://github.com/themains/adult" target="_blank">Replication Materials</a></div>
       <div class="abstract">Observed browsing data show that online pornography consumption is concentrated among a small share of users. Republicans consume somewhat more than Democrats in the unadjusted data, but the difference disappears after accounting for age and gender.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Lucas Shen (2024). &quot;Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online.&quot; Journal of Quantitative Description. 2024. https://gsood.com/research/holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2024holier,
+  author = {Gaurav Sood and Lucas Shen},
+  title = {{Holier Than Thou? No Large Partisan Gap in Consumption of Pornography Online}},
+  journal = {Journal of Quantitative Description},
+  year = {2024},
+  url = {https://gsood.com/research/holier-than-thou-no-large-partisan-gap-in-consumption-of-pornography-online/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

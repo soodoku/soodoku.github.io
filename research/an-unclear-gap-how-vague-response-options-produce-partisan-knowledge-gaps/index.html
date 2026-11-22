@@ -21,6 +21,10 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Carolyn E. Roush" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/unclear_gap.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,9 +70,34 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/unclear_gap.pdf" target="_blank" class="entry-title">An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information</a><br>With Carolyn E. Roush.<br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_pgap_cues" target="_blank">Replication Materials</a></div>
       <div class="abstract">Two survey experiments present the same small declines in unemployment and inflation under either an Obama cue or a Republican Congress cue. Respondents assess whether conditions got better, stayed about the same, or got worse. On a 0–100 evaluation scale, opposing-party rather than own-party cues change unemployment and inflation evaluations by -9.5 points (95% CI [-12.5, -6.5]) and -6.0 points (95% CI [-9.2, -2.8]) on MTurk, and by -5.2 points (95% CI [-10.6, 0.2]) and -8.6 points (95% CI [-14.2, -3.1]) on Lucid. The Lucid unemployment estimate includes zero. These are effects on evaluations of supplied information, not direct measures of factual knowledge; response-option vagueness was not randomized.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood and Carolyn E. Roush. &quot;An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information.&quot; https://gsood.com/research/an-unclear-gap-how-vague-response-options-produce-partisan-knowledge-gaps/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@misc{soodan,
+  author = {Gaurav Sood and Carolyn E. Roush},
+  title = {{An Unclear Gap: Partisan Cues and Evaluations of the Same Economic Information}},
+  note = {Working paper},
+  url = {https://gsood.com/research/an-unclear-gap-how-vague-response-options-produce-partisan-knowledge-gaps/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>

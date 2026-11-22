@@ -21,6 +21,14 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_author" content="Robert Luskin" />
+	<meta name="citation_author" content="Kyu Hahn" />
+	<meta name="citation_author" content="James Fishkin" />
+	<meta name="citation_publication_date" content="2022" />
+	<meta name="citation_journal_title" content="The British Journal of Political Science" />
+	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/DeliberativeDistortions.pdf" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,9 +82,35 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Deliberation</a></p>
       <div class="entry-meta"><a href="/research/papers/DeliberativeDistortions.pdf" target="_blank" class="entry-title">Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations</a><br>With Robert Luskin, Kyu Hahn, and James Fishkin.<br><i>The British Journal of Political Science</i>. 52(3), 1205–1225, 2022.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/dp_distortions/" target="_blank">Replication Materials</a></div>
       <div class="abstract">Across 2,601 group-issue pairs in 21 Deliberative Polls, we test whether discussion routinely homogenizes or polarizes attitudes, or shifts them toward those of socially advantaged participants. We find no strong or routine pattern of these distortions; the modest patterns include some homogenization and moderation.</div>
+      <details class="citation-toggle">
+        <summary>Cite</summary>
+        <div class="citation-box">
+          <p class="citation-text">Gaurav Sood, Robert Luskin, Kyu Hahn, and James Fishkin (2022). &quot;Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations.&quot; The British Journal of Political Science. 52(3), 1205–1225, 2022. https://gsood.com/research/deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations/</p>
+          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
+          <pre class="bibtex-block"><code>@article{sood2022deliberative,
+  author = {Gaurav Sood and Robert Luskin and Kyu Hahn and James Fishkin},
+  title = {{Deliberative Distortions? Homogenization, Polarization, and Domination in Small Group Deliberations}},
+  journal = {The British Journal of Political Science},
+  year = {2022},
+  url = {https://gsood.com/research/deliberative-distortions-homogenization-polarization-and-domination-in-small-group-deliberations/}
+}</code></pre>
+        </div>
+      </details>
     </article>
   </main>
 </div>
-
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-box").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
 </body>
 </html>
