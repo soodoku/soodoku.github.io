@@ -223,6 +223,11 @@
             "$ref": "#/$defs/node"
           }
         },
+        "publication_url": {
+          "type": "string",
+          "pattern": "^https?://\\S+$",
+          "description": "Canonical publisher or DOI URL for the published version."
+        },
         "supporting": {
           "type": "object",
           "properties": {

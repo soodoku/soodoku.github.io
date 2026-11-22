@@ -85,6 +85,10 @@ def validate_catalog(catalog, root=ROOT):
             nodes(section_block["body"])
         if entry.get("status") == "draft" and "publication" in entry:
             raise ValueError(f"{entry['id']}: a draft cannot have a publication")
+        if "publication_url" in entry and "publication" not in entry:
+            raise ValueError(
+                f"{entry['id']}: publication_url requires a publication field"
+            )
         for items in entry.get("supporting", {}).values():
             for item in items:
                 nodes(item)
@@ -180,7 +184,11 @@ def entry_summary(entry, entries, url_prefix=""):
     if coauthors := entry.get("coauthors"):
         metadata += f"<br>With {html.escape(credit(coauthors))}."
     if publication := entry.get("publication"):
-        metadata += "<br>" + rich_text(publication, entry, url_prefix=url_prefix)
+        pub_html = rich_text(publication, entry, url_prefix=url_prefix)
+        if pub_url := entry.get("publication_url"):
+            href = html.escape(pub_url, quote=True)
+            pub_html = f'<a href="{href}" target="_blank">{pub_html}</a>'
+        metadata += "<br>" + pub_html
     summary = rich_text(entry["summary"], entry, metadata, url_prefix=url_prefix)
     supporting = {
         label: [rich_text(item, entry, url_prefix=url_prefix) for item in items]
@@ -267,12 +275,18 @@ def entry_authors(entry):
     return ["Gaurav Sood"] + list(entry.get("coauthors", []))
 
 
+def extract_doi(entry):
+    pub_url = entry.get("publication_url", "")
+    match = re.match(r"^https?://(?:dx\.)?doi\.org/(.+)$", pub_url)
+    return match.group(1) if match else ""
+
+
 def format_bibtex(entry):
     venue, year = parse_publication(entry)
     authors = " and ".join(entry_authors(entry))
     resources = {r["id"]: r for r in entry["resources"]}
     primary = resources[entry["primary_resource"]]
-    url = (
+    url = entry.get("publication_url") or (
         entry_page_url(entry)
         if entry["kind"] == "paper"
         else absolute_url(primary["url"])
@@ -292,6 +306,8 @@ def format_bibtex(entry):
         fields.append(("year", year))
     elif entry["kind"] == "paper":
         fields.append(("note", "Working paper"))
+    if doi := extract_doi(entry):
+        fields.append(("doi", doi))
     fields.append(("url", url))
     body = ",\n".join(f"  {k} = {{{v}}}" for k, v in fields)
     return f"@{entry_type}{{{cite_key},\n{body}\n}}"
@@ -305,7 +321,7 @@ def format_plain_citation(entry):
     pub_text = (
         " " + plain_text(entry["publication"], entry) if "publication" in entry else ""
     )
-    url = entry_page_url(entry)
+    url = entry.get("publication_url") or entry_page_url(entry)
     return f'{authors}{year_part} "{title}."{pub_text} {url}'
 
 
@@ -322,6 +338,8 @@ def render_scholar_meta(entry):
         tags.append(meta("citation_publication_date", year))
     if venue:
         tags.append(meta("citation_journal_title", venue))
+    if doi := extract_doi(entry):
+        tags.append(meta("citation_doi", doi))
     for resource in entry["resources"]:
         if resource["kind"] == "pdf" and resource["role"] == "manuscript":
             tags.append(meta("citation_pdf_url", absolute_url(resource["url"])))
@@ -345,8 +363,13 @@ def entry_schema_object(entry):
         "author": authors,
         "description": plain_text(entry["description"], entry),
     }
-    if primary_url != page_url:
-        work["sameAs"] = primary_url
+    same_as = [
+        u for u in (primary_url, entry.get("publication_url")) if u and u != page_url
+    ]
+    if len(same_as) == 1:
+        work["sameAs"] = same_as[0]
+    elif len(same_as) > 1:
+        work["sameAs"] = same_as
     return work
 
 
