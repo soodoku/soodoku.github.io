@@ -577,6 +577,9 @@
           "entry": "missing-women-on-indian-streets"
         },
         {
+          "entry": "delhi-street-food-videos"
+        },
+        {
           "entry": "son-bias-in-the-us-evidence-from-business-names"
         },
         {
@@ -5737,6 +5740,35 @@
       "coauthors": [
         "Varun Karekurve-Ramachandra"
       ]
+    },
+    {
+      "id": "delhi-street-food-videos",
+      "kind": "project",
+      "title": "Who Eats in Delhi Street-Food Videos?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/soodoku/mw_youtube",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "In 450 randomly sampled frames from 30 Delhi street-food videos published in 2025, women accounted for 13.5% of apparent diner sightings and 16.1% of all sightings with classifiable gender, after weighting each video equally. A person with a serving of food in hand or in front of them counts as a diner, as does someone sharing a meal."
+      ],
+      "description_source": {
+        "url": "https://github.com/soodoku/mw_youtube#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      }
     },
     {
       "id": "son-bias-in-the-us-evidence-from-business-names",
