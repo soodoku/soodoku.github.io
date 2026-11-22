@@ -240,26 +240,46 @@ def absolute_url(url, base=RESEARCH_URL):
     return urljoin(base, url)
 
 
+def entry_page_url(entry):
+    if entry["kind"] == "paper":
+        return f"{RESEARCH_URL}{entry['id']}/"
+    return f"{RESEARCH_URL}#{entry['id']}"
+
+
+def entry_schema_object(entry):
+    resources = {r["id"]: r for r in entry["resources"]}
+    primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
+    authors = [{"@type": "Person", "name": "Gaurav Sood", "url": SITE_URL}] + [
+        {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
+    ]
+    page_url = entry_page_url(entry)
+    has_page = entry["kind"] == "paper"
+    work = {
+        "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),
+        "@id": page_url,
+        "name": entry["title"],
+        "headline": entry["title"],
+        "url": page_url if has_page else primary_url,
+        "author": authors,
+        "description": plain_text(entry["description"], entry),
+    }
+    if has_page and primary_url != page_url:
+        work["sameAs"] = primary_url
+    return work
+
+
 def render_schema(catalog):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     items = []
     for position, (_, _, entry_id) in enumerate(placements(catalog), 1):
         entry = entries[entry_id]
-        resources = {r["id"]: r for r in entry["resources"]}
-        primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
-        authors = [{"@type": "Person", "name": "Gaurav Sood", "url": SITE_URL}] + [
-            {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
-        ]
-        work = {
-            "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),
-            "@id": f"{RESEARCH_URL}#{entry['id']}",
-            "name": entry["title"],
-            "headline": entry["title"],
-            "url": primary_url,
-            "author": authors,
-            "description": plain_text(entry["description"], entry),
-        }
-        items.append({"@type": "ListItem", "position": position, "item": work})
+        items.append(
+            {
+                "@type": "ListItem",
+                "position": position,
+                "item": entry_schema_object(entry),
+            }
+        )
     data = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -279,6 +299,38 @@ def render_schema(catalog):
         },
     }
     return json.dumps(data, ensure_ascii=False, indent=2)
+
+
+def render_entry_pages(catalog, template):
+    entries = {entry["id"]: entry for entry in catalog["entries"]}
+    pages = {}
+    for top, subsection, entry_id in placements(catalog):
+        entry = entries[entry_id]
+        if entry["kind"] != "paper":
+            continue
+        breadcrumb = top["title"]
+        if subsection:
+            breadcrumb += f" › {subsection}"
+        canonical = entry_page_url(entry)
+        desc = plain_text(entry["description"], entry)
+        schema_obj = {"@context": "https://schema.org", **entry_schema_object(entry)}
+        summary_html = entry_summary(entry, entries, url_prefix="/research/")
+        abstract_html = rich_text(entry["description"], entry, url_prefix="/research/")
+        body = (
+            f'      <div class="entry-meta">{summary_html}</div>\n'
+            f'      <div class="abstract">{abstract_html}</div>'
+        )
+        pages[f"research/{entry['id']}/index.html"] = fill(
+            template,
+            title=html.escape(entry["title"]),
+            meta_description=html.escape(desc, quote=True),
+            canonical_url=html.escape(canonical, quote=True),
+            schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
+            section_id=html.escape(top["id"], quote=True),
+            breadcrumb=html.escape(breadcrumb),
+            entry_body=body,
+        )
+    return pages
 
 
 def render(catalog, template):
@@ -379,6 +431,12 @@ def render_swipe(catalog, template):
 
 def render_sitemap(catalog, _template=None):
     urls = [SITE_URL, RESEARCH_URL]
+    for _, _, entry_id in placements(catalog):
+        entry = next(e for e in catalog["entries"] if e["id"] == entry_id)
+        if entry["kind"] == "paper":
+            page_url = entry_page_url(entry)
+            if page_url not in urls:
+                urls.append(page_url)
     for entry in catalog["entries"]:
         for resource in entry["resources"]:
             url = resource["url"]
@@ -427,7 +485,7 @@ def render_llms_txt(catalog, _template=None):
         entry = entries[entry_id]
         resources = {r["id"]: r for r in entry["resources"]}
         primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
-        page_url = f"{RESEARCH_URL}#{entry['id']}"
+        page_url = entry_page_url(entry)
         desc = plain_text(entry["description"], entry)
         meta = []
         if entry.get("status") == "draft":
@@ -445,7 +503,7 @@ def render_llms_txt(catalog, _template=None):
         suffix = (" Links: " + ", ".join(extras) + ".") if extras else ""
         lines.append(
             f"- [{entry['title']}]({primary_url}) "
-            f"([entry]({page_url})): "
+            f"([page]({page_url})): "
             f"{prefix}{desc}{suffix}"
         )
     lines.append("")
@@ -465,11 +523,17 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     catalog = load_catalog()
+    outputs = {}
     for renderer, template, output in PAGES:
         template_text = (ROOT / template).read_text() if template else None
-        generated = renderer(catalog, template_text)
+        outputs[output] = renderer(catalog, template_text)
+    entry_template_path = ROOT / "research/entry.template.html"
+    if entry_template_path.is_file():
+        outputs.update(render_entry_pages(catalog, entry_template_path.read_text()))
+    for output, generated in outputs.items():
         destination = ROOT / output
         if not args.check:
+            destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(generated)
         elif not destination.is_file() or destination.read_text() != generated:
             parser.exit(

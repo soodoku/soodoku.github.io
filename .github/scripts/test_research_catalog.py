@@ -17,6 +17,7 @@ from research_catalog import (
     paper_sources,
     placements,
     render,
+    render_entry_pages,
     render_llms_txt,
     render_schema,
     render_sitemap,
@@ -105,12 +106,20 @@ class CatalogTests(unittest.TestCase):
                 "index.html",
                 "swipe.template.html",
                 "swipe.html",
+                "entry.template.html",
             ):
                 (root / "research" / name).write_text(
                     (ROOT / "research" / name).read_text()
                 )
             for name in ("sitemap.xml", "llms.txt"):
                 (root / name).write_text((ROOT / name).read_text())
+            for entry in self.catalog["entries"]:
+                if entry["kind"] == "paper":
+                    sub = root / "research" / entry["id"]
+                    sub.mkdir(parents=True, exist_ok=True)
+                    (sub / "index.html").write_text(
+                        (ROOT / "research" / entry["id"] / "index.html").read_text()
+                    )
             with (
                 mock.patch.object(research_catalog, "ROOT", root),
                 mock.patch.object(
@@ -131,20 +140,31 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(items), len(self.catalog["entries"]))
         self.assertEqual(
             items[0]["item"]["@id"],
-            f"https://gsood.com/research/#{self.entry['id']}",
+            f"https://gsood.com/research/{self.entry['id']}/",
         )
         sitemap = render_sitemap(self.catalog)
         self.assertIn("<loc>https://gsood.com/</loc>", sitemap)
         self.assertIn("<loc>https://gsood.com/research/</loc>", sitemap)
+        self.assertIn(
+            f"<loc>https://gsood.com/research/{self.entry['id']}/</loc>", sitemap
+        )
         self.assertIn(
             "<loc>https://gsood.com/research/papers/queue_shift.pdf</loc>", sitemap
         )
         llms = render_llms_txt(self.catalog)
         self.assertTrue(llms.startswith("# Gaurav Sood\n"))
         self.assertIn(
-            f"https://gsood.com/research/#{self.entry['id']}",
+            f"https://gsood.com/research/{self.entry['id']}/",
             llms,
         )
+
+    def test_dedicated_paper_pages_render_for_all_papers(self):
+        template = (ROOT / "research/entry.template.html").read_text()
+        pages = render_entry_pages(self.catalog, template)
+        paper_count = sum(1 for e in self.catalog["entries"] if e["kind"] == "paper")
+        self.assertEqual(len(pages), paper_count)
+        for rel_path, content in pages.items():
+            self.assertEqual(content, (ROOT / rel_path).read_text())
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):
         generated = render(self.catalog, "{{catalog}}")
