@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Other</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/steer.pdf" target="_blank" class="entry-title">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></div>
       <div class="abstract">Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments.&quot; https://gsood.com/research/one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodone,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments.&quot; https://gsood.com/research/one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodone,
   author = {Gaurav Sood},
   title = {{One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments}},
   note = {Working paper},
   url = {https://gsood.com/research/one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

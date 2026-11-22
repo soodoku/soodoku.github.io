@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="https://github.com/notnews/unreadable_news" target="_blank" class="entry-title">Unreadable News: How Readable is American News?</a><br>With Lucas Shen.</div>
       <div class="abstract">We compare readability across New York Times articles and CNN, NPR, and MSNBC transcripts. The analysis examines variation across outlets and over time as one possible barrier to accessing political information.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Lucas Shen. &quot;Unreadable News: How Readable is American News?.&quot; https://gsood.com/research/unreadable-news-how-readable-is-american-news/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodunreadable,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Lucas Shen. &quot;Unreadable News: How Readable is American News?.&quot; https://gsood.com/research/unreadable-news-how-readable-is-american-news/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodunreadable,
   author = {Gaurav Sood and Lucas Shen},
   title = {{Unreadable News: How Readable is American News?}},
   url = {https://github.com/notnews/unreadable_news}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

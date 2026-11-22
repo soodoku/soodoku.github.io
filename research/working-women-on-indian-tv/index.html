@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="https://github.com/notnews/working_women_on_tv" target="_blank" class="entry-title">Working Women on Indian TV</a><br>With Asha Sood.</div>
       <div class="abstract">We code employment among fictional female characters in Indian evening television soaps. In data collected in 2015 on 172 characters across 20 shows, 36.6% of working-age female characters are portrayed as working, with substantial variation across shows.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Asha Sood. &quot;Working Women on Indian TV.&quot; https://gsood.com/research/working-women-on-indian-tv/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodworking,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Asha Sood. &quot;Working Women on Indian TV.&quot; https://gsood.com/research/working-women-on-indian-tv/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodworking,
   author = {Gaurav Sood and Asha Sood},
   title = {{Working Women on Indian TV}},
   url = {https://github.com/notnews/working_women_on_tv}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

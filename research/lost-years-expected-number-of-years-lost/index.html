@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#tools">&larr; Software and Tools</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/lost-years" class="entry-title">Lost Years: Expected Number of Years Lost</a><br>With Suriyan Laohaprapanon.</div>
       <div class="abstract">Mortality rate is puzzling to mortals. A better number is the expected number of years lost. (A yet better number would be quality-adjusted years lost.) To make it easier to calculate the expected years lost, lost_years provides a convenient way to join to the SSA actuarial data, HLD data, and WHO life table data.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Suriyan Laohaprapanon. &quot;Lost Years: Expected Number of Years Lost.&quot; https://gsood.com/research/lost-years-expected-number-of-years-lost/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodlost,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Suriyan Laohaprapanon. &quot;Lost Years: Expected Number of Years Lost.&quot; https://gsood.com/research/lost-years-expected-number-of-years-lost/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodlost,
   author = {Gaurav Sood and Suriyan Laohaprapanon},
   title = {{Lost Years: Expected Number of Years Lost}},
   url = {https://github.com/gojiplus/lost-years}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

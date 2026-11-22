@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Other</a></p>
       <div class="entry-meta"><a href="https://arxiv.org/abs/2304.10660" target="_blank" class="entry-title">Scaling ML Products At Startups: A Practitioner&#x27;s Guide</a><br>With Atul Dhingra.<br>arXiv:2304.10660, 2023.</div>
       <div class="abstract">How should a machine learning startup serve more queries, faster and of more kinds, without costs running away? We split costs into variable costs, of serving models and keeping them performant, and fixed costs, of developing and training new ones, and suggest ways to cut each. Since the largest fixed cost is often finding the root causes of failures, we also describe how we approach that.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Atul Dhingra (2023). &quot;Scaling ML Products At Startups: A Practitioner&#x27;s Guide.&quot; arXiv:2304.10660, 2023. https://gsood.com/research/scaling-ml-products-at-startups-a-practitioner-s-guide/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sood2023scaling,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Atul Dhingra (2023). &quot;Scaling ML Products At Startups: A Practitioner&#x27;s Guide.&quot; arXiv:2304.10660, 2023. https://gsood.com/research/scaling-ml-products-at-startups-a-practitioner-s-guide/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sood2023scaling,
   author = {Gaurav Sood and Atul Dhingra},
   title = {{Scaling ML Products At Startups: A Practitioner&#x27;s Guide}},
   year = {2023},
   url = {https://gsood.com/research/scaling-ml-products-at-startups-a-practitioner-s-guide/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

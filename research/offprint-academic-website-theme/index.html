@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#tools">&larr; Software and Tools</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/jekyll-theme-offprint" target="_blank" class="entry-title">Offprint: A Jekyll Theme for Academic Websites</a></div>
       <div class="abstract">A Jekyll theme for academic personal websites, with a single text column and publications rendered from structured data. It uses self-hosted fonts and system-controlled dark mode, without requiring JavaScript.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Offprint: A Jekyll Theme for Academic Websites.&quot; https://gsood.com/research/offprint-academic-website-theme/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodoffprint,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Offprint: A Jekyll Theme for Academic Websites.&quot; https://gsood.com/research/offprint-academic-website-theme/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodoffprint,
   author = {Gaurav Sood},
   title = {{Offprint: A Jekyll Theme for Academic Websites}},
   url = {https://github.com/gojiplus/jekyll-theme-offprint}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

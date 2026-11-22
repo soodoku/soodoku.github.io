@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Miscitations</a></p>
       <div class="entry-meta"><a href="http://github.com/recite/re-cite.org" target="_blank" class="entry-title">Highlight Citations to Retracted Articles</a></div>
       <div class="abstract">An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Highlight Citations to Retracted Articles.&quot; https://gsood.com/research/highlight-citations-to-retracted-articles/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodhighlight,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Highlight Citations to Retracted Articles.&quot; https://gsood.com/research/highlight-citations-to-retracted-articles/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodhighlight,
   author = {Gaurav Sood},
   title = {{Highlight Citations to Retracted Articles}},
   url = {http://github.com/recite/re-cite.org}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

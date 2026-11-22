@@ -77,20 +77,17 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/AffectNotIdeology.pdf" target="_blank" class="entry-title">Affect, Not Ideology: A Social Identity Perspective on Polarization</a><br>With Shanto Iyengar and Yphtach Lelkes.<br><i>Public Opinion Quarterly.</i> 76(3), 405–431, 2012.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_affect/" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="http://gojiberries.io/sorted-or-polarized/" target="_blank">Sort of Sorted But Definitely Cold</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-order-of-feelings/">The Order of Feelings</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/mass-affective-polarization/" target="_blank">Affectively Polarized?</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.gojiberries.io/party-time/">Party Time</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/press/NYT.POQ.pdf" target="_blank">The New York Times</a></span>; <span class="supporting-item" role="listitem"><a href="/research/press/WP.POQ.pdf" target="_blank">The Washington Post</a></span>; <span class="supporting-item" role="listitem"><a href="/research/press/MJ.POQ.pdf">Mother Jones</a></span>; <span class="supporting-item" role="listitem"><a href="/research/press/AffectVox.pdf" target="_blank">Vox</a>, etc.</span></span></span></div>
       <div class="abstract">We examine polarization as social distance and hostility between partisans, rather than only disagreement over policy. Evidence from several sources shows growing dislike of opposing partisans, with policy attitudes providing an inconsistent explanation and campaign messages offering a plausible alternative.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Shanto Iyengar, and Yphtach Lelkes (2012). &quot;Affect, Not Ideology: A Social Identity Perspective on Polarization.&quot; Public Opinion Quarterly. 76(3), 405–431, 2012. https://gsood.com/research/affect-not-ideology-a-social-identity-perspective-on-polarization/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2012affect,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Shanto Iyengar, and Yphtach Lelkes (2012). &quot;Affect, Not Ideology: A Social Identity Perspective on Polarization.&quot; Public Opinion Quarterly. 76(3), 405–431, 2012. https://gsood.com/research/affect-not-ideology-a-social-identity-perspective-on-polarization/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2012affect,
   author = {Gaurav Sood and Shanto Iyengar and Yphtach Lelkes},
   title = {{Affect, Not Ideology: A Social Identity Perspective on Polarization}},
   journal = {Public Opinion Quarterly},
   year = {2012},
   url = {https://gsood.com/research/affect-not-ideology-a-social-identity-perspective-on-polarization/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -98,7 +95,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

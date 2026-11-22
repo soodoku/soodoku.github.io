@@ -163,7 +163,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(pages), len(self.catalog["entries"]))
         for rel_path, content in pages.items():
             self.assertEqual(content, (ROOT / rel_path).read_text())
-            self.assertIn('<details class="citation-toggle">', content)
+            self.assertIn('<section class="citation-section">', content)
             self.assertIn('name="citation_title"', content)
         sample = copy.deepcopy(self.catalog)
         sample["entries"][0]["details"] = [

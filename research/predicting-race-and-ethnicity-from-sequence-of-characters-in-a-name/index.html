@@ -74,18 +74,15 @@
       <p class="entry-breadcrumb"><a href="/research/#names">&larr; Names and Name-Based Inference</a></p>
       <div class="entry-meta"><a href="https://github.com/appeler/ethnicolr_v2" target="_blank" class="entry-title">Predicting Race and Ethnicity From Sequence of Characters in a Name</a><br>With Rajashekar Chintalapati and Suriyan Laohaprapanon.<br><a href="https://arxiv.org/abs/1805.02109" target="_blank">arXiv.org</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><span class="entry-icon">📦</span><a href="https://github.com/appeler/ethnicolr" target="_blank">Python Package</a> for implementing the method.</span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target="_blank">InfoQ</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.youtube.com/watch?v=fuHAPENWVIU" target="_blank">AnacondaCON presentation (Video)</a></span></span></span></div>
       <div class="abstract">This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person&#x27;s identity.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Rajashekar Chintalapati, and Suriyan Laohaprapanon. &quot;Predicting Race and Ethnicity From Sequence of Characters in a Name.&quot; https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodpredicting,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Rajashekar Chintalapati, and Suriyan Laohaprapanon. &quot;Predicting Race and Ethnicity From Sequence of Characters in a Name.&quot; https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodpredicting,
   author = {Gaurav Sood and Rajashekar Chintalapati and Suriyan Laohaprapanon},
   title = {{Predicting Race and Ethnicity From Sequence of Characters in a Name}},
   url = {https://github.com/appeler/ethnicolr_v2}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

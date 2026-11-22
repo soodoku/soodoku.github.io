@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Causal Inference</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/smooth-operator" target="_blank" class="entry-title">Smooth Operator: Optimal Filtering of Event Study Estimates</a></div>
       <div class="abstract">Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period&#x27;s estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Smooth Operator: Optimal Filtering of Event Study Estimates.&quot; https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodsmooth,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Smooth Operator: Optimal Filtering of Event Study Estimates.&quot; https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodsmooth,
   author = {Gaurav Sood},
   title = {{Smooth Operator: Optimal Filtering of Event Study Estimates}},
   url = {https://github.com/finite-sample/smooth-operator}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

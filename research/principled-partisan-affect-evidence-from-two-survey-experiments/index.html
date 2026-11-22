@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/principled.pdf" target="_blank" class="entry-title">Principled Partisan Affect? Evidence from Two Survey Experiments</a><br>With Douglas J. Ahler and Carolyn E. Roush.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_principled" target="_blank">Replication Materials</a></div>
       <div class="abstract">Is partisan affect principled? In a 2013 MTurk experiment, reports of declining rather than sustained support for a leader after controversy lowered estimated warmth toward fellow partisans, suggesting a possible preference for loyalty. In a 2018 YouGov experiment, portraying opponents as fair-minded modestly improved estimated trait ratings, with little estimated movement in warmth. Portraying allies as biased produced no clear penalty, but many readers also reported that their party was about as biased as expected. The evidence is suggestive: uncertain estimates, missing warmth ratings, bundled article features, and incomplete comparisons prevent firm conclusions about effect sizes, mechanisms, or a partisan double standard.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Douglas J. Ahler, and Carolyn E. Roush. &quot;Principled Partisan Affect? Evidence from Two Survey Experiments.&quot; https://gsood.com/research/principled-partisan-affect-evidence-from-two-survey-experiments/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodprincipled,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Douglas J. Ahler, and Carolyn E. Roush. &quot;Principled Partisan Affect? Evidence from Two Survey Experiments.&quot; https://gsood.com/research/principled-partisan-affect-evidence-from-two-survey-experiments/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodprincipled,
   author = {Gaurav Sood and Douglas J. Ahler and Carolyn E. Roush},
   title = {{Principled Partisan Affect? Evidence from Two Survey Experiments}},
   note = {Working paper},
   url = {https://gsood.com/research/principled-partisan-affect-evidence-from-two-survey-experiments/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

@@ -72,20 +72,17 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/quant.pdf" target="_blank" class="entry-title">By the Numbers: Toward More Precise Numerical Summaries of Results</a><br>With Andrew Guess.<br><i>The Political Methodologist. 24(1): 2016</i>.<br><span class="entry-icon">🗃</span><a href="https://github.com/recite/quant-discipline" target="_blank">Replication Materials</a></div>
       <div class="abstract">We compare how often empirical articles in the American Political Science Review and American Economic Review include precise numerical results in their abstracts. The project provides coded data and analysis of differences in quantitative reporting.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Andrew Guess (2016). &quot;By the Numbers: Toward More Precise Numerical Summaries of Results.&quot; The Political Methodologist. 24(1): 2016. https://gsood.com/research/by-the-numbers-toward-more-precise-numerical-summaries-of-results/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2016by,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Andrew Guess (2016). &quot;By the Numbers: Toward More Precise Numerical Summaries of Results.&quot; The Political Methodologist. 24(1): 2016. https://gsood.com/research/by-the-numbers-toward-more-precise-numerical-summaries-of-results/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2016by,
   author = {Gaurav Sood and Andrew Guess},
   title = {{By the Numbers: Toward More Precise Numerical Summaries of Results}},
   journal = {The Political Methodologist. 24(1)},
   year = {2016},
   url = {https://gsood.com/research/by-the-numbers-toward-more-precise-numerical-summaries-of-results/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

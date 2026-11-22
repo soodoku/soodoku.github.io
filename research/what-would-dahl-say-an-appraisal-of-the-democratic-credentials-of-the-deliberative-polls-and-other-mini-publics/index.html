@@ -72,20 +72,17 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Deliberation</a></p>
       <div class="entry-meta"><a href="/research/papers/DahlSays.pdf" target="_blank" class="entry-title">What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics</a><br>With Ian O&#x27;Flynn.<br><i>Deliberative Mini-Publics.</i> 41–58, 2014. ECPR Press.</div>
       <div class="abstract">We assess deliberative polls and other mini-publics using Robert Dahl&#x27;s criteria for a democratic process: inclusion, effective participation, enlightened understanding, voting equality, and control of the agenda. The chapter examines where these institutions meet the criteria and where their democratic claims require qualification.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Ian O&#x27;Flynn (2014). &quot;What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics.&quot; Deliberative Mini-Publics. 41–58, 2014. ECPR Press. https://gsood.com/research/what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2014what,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Ian O&#x27;Flynn (2014). &quot;What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics.&quot; Deliberative Mini-Publics. 41–58, 2014. ECPR Press. https://gsood.com/research/what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2014what,
   author = {Gaurav Sood and Ian O&#x27;Flynn},
   title = {{What Would Dahl Say? An Appraisal of the Democratic Credentials of the Deliberative Polls and Other Mini-publics}},
   journal = {Deliberative Mini-Publics},
   year = {2014},
   url = {https://gsood.com/research/what-would-dahl-say-an-appraisal-of-the-democratic-credentials-of-the-deliberative-polls-and-other-mini-publics/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

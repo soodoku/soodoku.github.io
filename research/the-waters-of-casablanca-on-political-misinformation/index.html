@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/CasablancaTheory.pdf" target="_blank" class="entry-title">The Waters of Casablanca: On Political Misinformation</a><br>With Robert C. Luskin.<br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_casablanca" target="_blank">Replication Materials</a></div>
       <div class="abstract">Misinformation is a confidently held false belief, distinct from knowledge, mere belief, and ignorance. Multiple-choice items cannot tell it from guessing; asking how definitely true or false each statement is can. In four surveys that randomly assigned the two formats, the scale finds far less misinformation about well-publicized falsehoods, and much smaller partisan gaps, than multiple-choice items do.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Robert C. Luskin. &quot;The Waters of Casablanca: On Political Misinformation.&quot; https://gsood.com/research/the-waters-of-casablanca-on-political-misinformation/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodthe,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Robert C. Luskin. &quot;The Waters of Casablanca: On Political Misinformation.&quot; https://gsood.com/research/the-waters-of-casablanca-on-political-misinformation/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodthe,
   author = {Gaurav Sood and Robert C. Luskin},
   title = {{The Waters of Casablanca: On Political Misinformation}},
   note = {Working paper},
   url = {https://gsood.com/research/the-waters-of-casablanca-on-political-misinformation/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

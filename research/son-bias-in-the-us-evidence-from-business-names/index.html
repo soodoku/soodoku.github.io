@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#missing-women">&larr; Missing Women</a></p>
       <div class="entry-meta"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf" target="_blank" class="entry-title">Son Bias in the US: Evidence from Business Names</a><br>With Walter Guillioli.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/sonny_side" target="_blank">Replication Materials</a><br></div>
       <div class="abstract">We compare businesses named with &#x27;son&#x27; or &#x27;sons&#x27; and &#x27;daughter&#x27; or &#x27;daughters&#x27; using state business registries. Across 40 states, the median ratio is 12 to 1, with limitations in registry searches making the analysis a conservative accounting of the imbalance.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Walter Guillioli. &quot;Son Bias in the US: Evidence from Business Names.&quot; https://gsood.com/research/son-bias-in-the-us-evidence-from-business-names/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodson,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Walter Guillioli. &quot;Son Bias in the US: Evidence from Business Names.&quot; https://gsood.com/research/son-bias-in-the-us-evidence-from-business-names/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodson,
   author = {Gaurav Sood and Walter Guillioli},
   title = {{Son Bias in the US: Evidence from Business Names}},
   note = {Working paper},
   url = {https://gsood.com/research/son-bias-in-the-us-evidence-from-business-names/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

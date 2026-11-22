@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/k_gains.pdf" target="_blank" class="entry-title">Measuring Learning in Informative Processes</a><br>With Robert Luskin and Ariel Helfer.<br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_gains" target="_blank">Replication Materials</a> </div>
       <div class="abstract">Observed knowledge gain can understate learning when those who know more also learn more and easy questions limit their room to improve. The paper derives conditions under which post-process knowledge is more closely associated with true learning. It performs better in proportional-learning simulations matched to 21 Deliberative Polls, but observed gain does better in catch-up simulations and most split-item comparisons. Scoring and baseline adjustment also change associations with education and attitude change.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Robert Luskin, and Ariel Helfer. &quot;Measuring Learning in Informative Processes.&quot; https://gsood.com/research/measuring-learning-in-informative-processes/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodmeasuring,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Robert Luskin, and Ariel Helfer. &quot;Measuring Learning in Informative Processes.&quot; https://gsood.com/research/measuring-learning-in-informative-processes/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodmeasuring,
   author = {Gaurav Sood and Robert Luskin and Ariel Helfer},
   title = {{Measuring Learning in Informative Processes}},
   note = {Working paper},
   url = {https://gsood.com/research/measuring-learning-in-informative-processes/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

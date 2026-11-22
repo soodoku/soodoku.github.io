@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#political-economy-of-india">&larr; Political Economy of India</a></p>
       <div class="entry-meta"><a href="/research/papers/candidate_namesakes.pdf" target="_blank" class="entry-title">Do Namesakes Confuse Voters? Evidence from Six Decades of Indian Elections</a> <span class="status">Draft</span><br><span class="entry-icon">🗃</span><a href="https://github.com/in-rolls/candidate_namesakes" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/eci_results" target="_blank">Indian election results, 2023–2026, in TCPD&#x27;s layout</a></span></span></span></div>
       <div class="abstract">Indian ballots often list minor independents who share a leading candidate&#x27;s name. Across 570,241 Lok Sabha and assembly candidate records from 1962 to 2026, independents named like a leading candidate place 7.8 percentile points higher among their contest&#x27;s independents than other independents (SE 1.4), while those named like a minor-party candidate gain nothing detectable. The votes involved are few: counting only votes attributable to the name, namesakes exceeded the winning margin in 12 of 57,166 contests (95% range 4–18). The premium shrank after candidate photographs were added to voting machines in 2015, but placebo break dates produce declines of the same size.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Do Namesakes Confuse Voters? Evidence from Six Decades of Indian Elections.&quot; https://gsood.com/research/do-namesakes-confuse-voters/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddo,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Do Namesakes Confuse Voters? Evidence from Six Decades of Indian Elections.&quot; https://gsood.com/research/do-namesakes-confuse-voters/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddo,
   author = {Gaurav Sood},
   title = {{Do Namesakes Confuse Voters? Evidence from Six Decades of Indian Elections}},
   note = {Working paper},
   url = {https://gsood.com/research/do-namesakes-confuse-voters/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

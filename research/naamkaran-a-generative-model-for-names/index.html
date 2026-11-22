@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#names">&larr; Names and Name-Based Inference</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/appeler/naamkaran" target="_blank" class="entry-title">naamkaran: a generative model for names</a><br>With Rajashekar Chintalapati.</div>
       <div class="abstract">A character-level LSTM trained on Florida voter-registration names generates synthetic name-like strings. The outputs are intended for demonstrations, testing, and exploration, rather than verified names or representative samples of a population.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Rajashekar Chintalapati. &quot;naamkaran: a generative model for names.&quot; https://gsood.com/research/naamkaran-a-generative-model-for-names/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodnaamkaran,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Rajashekar Chintalapati. &quot;naamkaran: a generative model for names.&quot; https://gsood.com/research/naamkaran-a-generative-model-for-names/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodnaamkaran,
   author = {Gaurav Sood and Rajashekar Chintalapati},
   title = {{naamkaran: a generative model for names}},
   url = {https://github.com/appeler/naamkaran}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

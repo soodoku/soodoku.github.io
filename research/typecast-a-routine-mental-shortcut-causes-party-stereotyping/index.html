@@ -72,20 +72,17 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/typecast.pdf" target="_blank" class="entry-title">Typecast: A Routine Mental Shortcut Causes Party Stereotyping</a><br>With Doug Ahler.<br><i>Political Behavior.</i> 2022.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_typecast" target="_blank">Replication Materials</a> | <a href="/research/papers/typecast_si.pdf" target="_blank">Appendix</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/press/typecast_hxa.pdf" target="_blank">Heterodox Academy</a></span></span></span></div>
       <div class="abstract">We test whether the representativeness heuristic contributes to party stereotypes. Experiments involving conjunction judgments, information about group partisanship, and cognitive load suggest that this mental shortcut can distort perceptions of who belongs to each party.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Doug Ahler (2022). &quot;Typecast: A Routine Mental Shortcut Causes Party Stereotyping.&quot; Political Behavior. 2022. https://gsood.com/research/typecast-a-routine-mental-shortcut-causes-party-stereotyping/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2022typecast,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Doug Ahler (2022). &quot;Typecast: A Routine Mental Shortcut Causes Party Stereotyping.&quot; Political Behavior. 2022. https://gsood.com/research/typecast-a-routine-mental-shortcut-causes-party-stereotyping/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2022typecast,
   author = {Gaurav Sood and Doug Ahler},
   title = {{Typecast: A Routine Mental Shortcut Causes Party Stereotyping}},
   journal = {Political Behavior},
   year = {2022},
   url = {https://gsood.com/research/typecast-a-routine-mental-shortcut-causes-party-stereotyping/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

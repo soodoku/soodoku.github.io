@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#provision-of-public-goods">&larr; Public Services and Infrastructure</a></p>
       <div class="entry-meta"> <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf" target="_blank" class="entry-title">StreetSense: Learning from Google Street View</a><br>With Suriyan Laohaprapanon and Kimberly Ortleb.<br><a href="https://arxiv.org/pdf/1807.06075.pdf" target="_blank">arXiv.org</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/geosensing/streetsense" target="_blank">Replication Materials</a></div>
       <div class="abstract">How good are the public services and the public infrastructure? Does their quality vary by income? These are vital questions—they shed light on how well the government is doing its job, the consequences of disparities in local funding, etc. But there is little good data on many of these questions. We fill this gap by describing a scalable method of getting data on one crucial piece of public infrastructure: roads. We assess the quality of roads and sidewalks by exploiting data from Google Street View. We randomly sample locations on major roads, query Google Street View images for those locations and code the images using Amazon’s Mechanical Turk. We apply this method to assess the quality of roads in Bangkok, Jakarta, Lagos, and Wayne County, Michigan. Jakarta’s roads have nearly four times the potholes than roads of any other city. Surprisingly, the proportion of road segments with potholes in Bangkok, Lagos, and Wayne is about the same, between .06 and .07. Using the data, we also estimate the relation between the condition of the roads and local income in Wayne, MI. We find that roads in more affluent census tracts have somewhat fewer potholes.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Suriyan Laohaprapanon, and Kimberly Ortleb. &quot;StreetSense: Learning from Google Street View.&quot; https://gsood.com/research/streetsense-learning-from-google-street-view/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodstreetsense,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Suriyan Laohaprapanon, and Kimberly Ortleb. &quot;StreetSense: Learning from Google Street View.&quot; https://gsood.com/research/streetsense-learning-from-google-street-view/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodstreetsense,
   author = {Gaurav Sood and Suriyan Laohaprapanon and Kimberly Ortleb},
   title = {{StreetSense: Learning from Google Street View}},
   note = {Working paper},
   url = {https://gsood.com/research/streetsense-learning-from-google-street-view/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

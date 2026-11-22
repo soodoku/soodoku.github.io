@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/endorsement.pdf" target="_blank" class="entry-title">Three Interviewers and the Poverty Gradient</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/endorsement" target="_blank">Code and Data</a></div>
       <div class="abstract">Blair et al. conclude from their 2009 Pakistan endorsement experiment that poor Pakistanis dislike militant groups more than the middle class does. Three of the survey’s 75 interviewers recorded the same answers in interview after interview, slightly more supportive when a militant group endorsed the policy, and nearly all their respondents were middle or high income. Without them, the gap between poor and middle-class reactions, Blair et al.’s central estimate, falls from 2.2 to 1.0 points on a 0–100 scale and is indistinguishable from zero in every specification. A companion essay in the repository takes up their second reading, that a small negative effect shows low regard for the groups.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Three Interviewers and the Poverty Gradient.&quot; https://gsood.com/research/do-pakistanis-hold-militant-groups-in-low-regard/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddo,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Three Interviewers and the Poverty Gradient.&quot; https://gsood.com/research/do-pakistanis-hold-militant-groups-in-low-regard/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddo,
   author = {Gaurav Sood},
   title = {{Three Interviewers and the Poverty Gradient}},
   note = {Working paper},
   url = {https://gsood.com/research/do-pakistanis-hold-militant-groups-in-low-regard/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

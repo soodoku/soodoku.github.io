@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#political-economy-of-india">&larr; Political Economy of India</a></p>
       <div class="entry-meta"><a href="/research/papers/quota_raj.pdf" target="_blank" class="entry-title">The Limits of Electoral Gender Quotas in Rural Local Bodies</a><br>With Varun Karekurve-Ramachandra.<br><span class="entry-icon">🗃</span><a href="https://github.com/in-rolls/quota_representation" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_governance" target="_blank">Governance</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_spending" target="_blank">Public spending</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_pds" target="_blank">PDS</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/quota_marriage" target="_blank">Marriage</a></span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://voxdev.org/topic/institutions-political-economy/no-representation-without-reservation-long-term-limits-gender" target="_blank">VoxDev</a></span></span></span></div>
       <div class="abstract">Across more than 34,000 rural local bodies, prior reservation produces small or inconsistent short-run gains in women&#x27;s success in subsequently open seats. Phone audits document extensive male mediation of access to women elected under quotas, a pattern consistent with, but not proof of, proxy governance limiting independent political careers.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Varun Karekurve-Ramachandra. &quot;The Limits of Electoral Gender Quotas in Rural Local Bodies.&quot; https://gsood.com/research/the-limits-of-electoral-gender-quotas-in-rural-local-bodies/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodthe,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Varun Karekurve-Ramachandra. &quot;The Limits of Electoral Gender Quotas in Rural Local Bodies.&quot; https://gsood.com/research/the-limits-of-electoral-gender-quotas-in-rural-local-bodies/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodthe,
   author = {Gaurav Sood and Varun Karekurve-Ramachandra},
   title = {{The Limits of Electoral Gender Quotas in Rural Local Bodies}},
   note = {Working paper},
   url = {https://gsood.com/research/the-limits-of-electoral-gender-quotas-in-rural-local-bodies/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

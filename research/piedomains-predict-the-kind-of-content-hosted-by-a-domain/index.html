@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#online-safety">&larr; Online Privacy and Security</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/themains/piedomains" class="entry-title">Piedomains: Predict the Kind of Content Hosted by a Domain</a><br>With Rajashekar Chintalapati.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf">Domain Knowledge: Predicting the Kind of Content Hosted by a Domain.</a><br> With Suriyan Laohaprapanon. <i>Complex, Intelligent and Software Intensive Systems (CISIS), 2020.</i></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/themains/rdomains" target="_blank">rdomains: domain classification in R</a></span></span></span></div>
       <div class="abstract">The package infers the kind of content hosted by a domain using the domain name, the textual content, and the screenshot of the homepage. We use domain category labels from Shallalist and build our own training dataset by scraping and taking screenshots of the homepage.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Rajashekar Chintalapati. &quot;Piedomains: Predict the Kind of Content Hosted by a Domain.&quot; https://gsood.com/research/piedomains-predict-the-kind-of-content-hosted-by-a-domain/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodpiedomains,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Rajashekar Chintalapati. &quot;Piedomains: Predict the Kind of Content Hosted by a Domain.&quot; https://gsood.com/research/piedomains-predict-the-kind-of-content-hosted-by-a-domain/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodpiedomains,
   author = {Gaurav Sood and Rajashekar Chintalapati},
   title = {{Piedomains: Predict the Kind of Content Hosted by a Domain}},
   url = {https://github.com/themains/piedomains}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

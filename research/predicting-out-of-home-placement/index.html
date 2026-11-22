@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#provision-of-public-goods">&larr; Public Services and Infrastructure</a></p>
       <div class="entry-meta"><a href="/research/papers/ooh_pred.pdf" target="_blank" class="entry-title">Predicting Out of Home Placement</a><br>Report with supplementary information. <a href="https://github.com/soodoku/ooh_pred" target="_blank">Code</a></div>
       <div class="abstract">Can administrative and clinical records help target limited assessment capacity toward youth likely to enter behavioral health out-of-home care? We study 15,332 New Jersey youth with pre-2015 CANS assessments in a PerformCare cohort selected through service involvement during 2014–2015. We use assessments, demographics, diagnoses, medications, and eligibility records dated before January 1, 2015 to predict recorded admission starts through November 2, 2016. Among 3,067 held-out youth, selecting the 100 highest model scores identifies 28 youth with a recorded placement, compared with 23 using prior placement history and 5.9 expected under random selection. The incremental gain over the history rule at this capacity is uncertain. These are gains in case finding, not estimates of placements prevented or welfare improved. Retrospective cohort selection and uncertain admission completeness limit prospective interpretation.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Predicting Out of Home Placement.&quot; https://gsood.com/research/predicting-out-of-home-placement/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodpredicting,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Predicting Out of Home Placement.&quot; https://gsood.com/research/predicting-out-of-home-placement/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodpredicting,
   author = {Gaurav Sood},
   title = {{Predicting Out of Home Placement}},
   note = {Working paper},
   url = {https://gsood.com/research/predicting-out-of-home-placement/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

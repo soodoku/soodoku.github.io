@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="/research/papers/face_of_crime.pdf" target="_blank" class="entry-title">The Face of Crime in Prime Time: Evidence from Law and Order</a><br>With Daniel Trielli.<br><span class="entry-icon">🗃</span><a href="https://github.com/notnews/face_of_crime" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="/research/press/LawOrderWP.pdf" target="_blank">The Washington Post</a></span></span></span></div>
       <div class="abstract">We tally the coded race and gender of victims and criminals across three Law and Order series. Black characters appear at lower shares than in several historical arrest and victimization series, while women appear at higher shares among criminals than in several arrest categories. The comparisons are descriptive because the sources differ in crimes, places, and years.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Daniel Trielli. &quot;The Face of Crime in Prime Time: Evidence from Law and Order.&quot; https://gsood.com/research/the-face-of-crime-in-prime-time-evidence-from-law-and-order/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodthe,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Daniel Trielli. &quot;The Face of Crime in Prime Time: Evidence from Law and Order.&quot; https://gsood.com/research/the-face-of-crime-in-prime-time-evidence-from-law-and-order/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodthe,
   author = {Gaurav Sood and Daniel Trielli},
   title = {{The Face of Crime in Prime Time: Evidence from Law and Order}},
   note = {Working paper},
   url = {https://gsood.com/research/the-face-of-crime-in-prime-time-evidence-from-law-and-order/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

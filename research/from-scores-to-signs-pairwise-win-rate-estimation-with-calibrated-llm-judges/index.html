@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Calibration and Weighting</a></p>
       <div class="entry-meta"><a href="/research/papers/score_signs.pdf" target="_blank" class="entry-title">From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/score_signs" target="_blank">Replication Materials</a></div>
       <div class="abstract">LLM-as-judge systems produce numerical scores, but downstream decisions often require pairwise comparisons: which response is better? Converting scores to win rates requires calibration—the mapping from score differences to win probabilities. We develop calibrated estimators for pairwise win rates from cardinal LLM judge scores, accounting for judge miscalibration and non-transitivity in preferences.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges.&quot; https://gsood.com/research/from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodfrom,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges.&quot; https://gsood.com/research/from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodfrom,
   author = {Gaurav Sood},
   title = {{From Scores to Signs: Pairwise Win-Rate Estimation with Calibrated LLM Judges}},
   note = {Working paper},
   url = {https://gsood.com/research/from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

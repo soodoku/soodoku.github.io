@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Calibration and Weighting</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/streamcal" target="_blank" class="entry-title">streamcal: Streaming Probability Calibration</a></div>
       <div class="abstract">streamcal keeps a deployed model&#x27;s binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;streamcal: Streaming Probability Calibration.&quot; https://gsood.com/research/streamcal-streaming-probability-calibration/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodstreamcal,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;streamcal: Streaming Probability Calibration.&quot; https://gsood.com/research/streamcal-streaming-probability-calibration/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodstreamcal,
   author = {Gaurav Sood},
   title = {{streamcal: Streaming Probability Calibration}},
   url = {https://github.com/finite-sample/streamcal}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

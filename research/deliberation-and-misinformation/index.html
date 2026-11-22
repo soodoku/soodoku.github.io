@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/deliberation_misinformation.pdf" target="_blank" class="entry-title">Deliberation and Misinformation</a><br>With Robert C. Luskin.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/dp_misinformation" target="_blank">Replication Materials</a></div>
       <div class="abstract">Across 19 misinformation-type items in seven Deliberative Polls, incorrect answers fell from 23% to 10%, and participants who began wrong were as likely to end right as those who began not knowing. In polls with control groups, attending cut overestimates of the number of undocumented immigrants by 15 points, but reduced confident denial of human-caused warming only slightly and not durably.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Robert C. Luskin. &quot;Deliberation and Misinformation.&quot; https://gsood.com/research/deliberation-and-misinformation/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddeliberation,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Robert C. Luskin. &quot;Deliberation and Misinformation.&quot; https://gsood.com/research/deliberation-and-misinformation/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddeliberation,
   author = {Gaurav Sood and Robert C. Luskin},
   title = {{Deliberation and Misinformation}},
   note = {Working paper},
   url = {https://gsood.com/research/deliberation-and-misinformation/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

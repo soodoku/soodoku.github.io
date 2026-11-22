@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/prospect_theory.pdf" target="_blank" class="entry-title">Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments</a><br>With John Protzko and Jon Krosnick.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/prospect_theory" target="_blank">Replication Materials</a></div>
       <div class="abstract">Five archival survey experiments test whether equivalent gain and loss descriptions change risky choices. All 23 contrasts show the classic framing direction, but explicitly stating the certain outcome removes much of the gap, suggesting that inferences from incomplete descriptions matter alongside gain and loss labels.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, John Protzko, and Jon Krosnick. &quot;Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments.&quot; https://gsood.com/research/description-invariance-in-risky-choice-framing/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddescription,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, John Protzko, and Jon Krosnick. &quot;Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments.&quot; https://gsood.com/research/description-invariance-in-risky-choice-framing/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddescription,
   author = {Gaurav Sood and John Protzko and Jon Krosnick},
   title = {{Description Invariance in Risky-Choice Framing: Evidence from Five Survey Experiments}},
   note = {Working paper},
   url = {https://gsood.com/research/description-invariance-in-risky-choice-framing/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

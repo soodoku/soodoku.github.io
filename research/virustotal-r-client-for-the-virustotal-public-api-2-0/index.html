@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#online-safety">&larr; Online Privacy and Security</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/themains/virustotal" class="entry-title">virustotal: R Client for the VirusTotal API v3</a></div>
       <div class="abstract">An R client for VirusTotal API v3, covering reports on files, URLs, domains, and IP addresses, as well as submissions for analysis. The package includes request pacing, retries, and structured error handling.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;virustotal: R Client for the VirusTotal API v3.&quot; https://gsood.com/research/virustotal-r-client-for-the-virustotal-public-api-2-0/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodvirustotal,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;virustotal: R Client for the VirusTotal API v3.&quot; https://gsood.com/research/virustotal-r-client-for-the-virustotal-public-api-2-0/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodvirustotal,
   author = {Gaurav Sood},
   title = {{virustotal: R Client for the VirusTotal API v3}},
   url = {https://github.com/themains/virustotal}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

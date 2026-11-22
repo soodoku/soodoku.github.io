@@ -72,20 +72,17 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/measuring_shares.pdf" class="entry-title">Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups</a><br>With Doug Ahler.<br><i>Misinformation and Mass Audiences.</i> 2018. University of Texas Press.<br><span class="entry-icon">🗃</span><a href="https://github.com/soodoku/partisan_shares" target="_blank">Replication Materials</a> | <a href="https://doi.org/10.7910/DVN/2JXAYZ" target="_blank">Appendix</a></div>
       <div class="abstract">This chapter examines how to measure beliefs about the numerical size of salient and stereotypical groups. It connects systematic overestimation of stereotypical traits to broader questions about group perceptions, prejudice, and the interpretation of survey estimates.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Doug Ahler (2018). &quot;Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups.&quot; Misinformation and Mass Audiences. 2018. University of Texas Press. https://gsood.com/research/measuring-perceptions-of-numerical-strength-of-salient-and-stereotypical-groups/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2018measuring,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Doug Ahler (2018). &quot;Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups.&quot; Misinformation and Mass Audiences. 2018. University of Texas Press. https://gsood.com/research/measuring-perceptions-of-numerical-strength-of-salient-and-stereotypical-groups/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2018measuring,
   author = {Gaurav Sood and Doug Ahler},
   title = {{Measuring Perceptions of Numerical Strength of Salient and Stereotypical Groups}},
   journal = {Misinformation and Mass Audiences},
   year = {2018},
   url = {https://gsood.com/research/measuring-perceptions-of-numerical-strength-of-salient-and-stereotypical-groups/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

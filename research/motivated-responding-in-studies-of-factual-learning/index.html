@@ -71,20 +71,17 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="http://rdcu.be/HNE5" target="_blank" class="entry-title">Motivated Responding in Studies of Factual Learning</a><br>With Kabir Khanna.<br><i>Political Behavior</i>. 40(1): 79–101, 2018.<br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/know_motivated" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://politicalbehavior.wordpress.com/2017/03/02/motivated-responding-in-studies-of-factual-learning/" target="_blank">Blog Summarizing the Paper</a></span>; <span class="supporting-item" role="listitem"><a href="http://gojiberries.io/the-innumerate-american/" target="_blank">The Innumerate American</a></span></span></span></div>
       <div class="abstract">Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Kabir Khanna (2018). &quot;Motivated Responding in Studies of Factual Learning.&quot; Political Behavior. 40(1): 79–101, 2018. https://gsood.com/research/motivated-responding-in-studies-of-factual-learning/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2018motivated,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Kabir Khanna (2018). &quot;Motivated Responding in Studies of Factual Learning.&quot; Political Behavior. 40(1): 79–101, 2018. https://gsood.com/research/motivated-responding-in-studies-of-factual-learning/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2018motivated,
   author = {Gaurav Sood and Kabir Khanna},
   title = {{Motivated Responding in Studies of Factual Learning}},
   journal = {Political Behavior},
   year = {2018},
   url = {http://rdcu.be/HNE5}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -92,7 +89,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

@@ -102,20 +102,17 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Other</a></p>
       <div class="entry-meta"><a href="/research/papers/ACA_beliefs_attitudes.pdf" target="_blank" class="entry-title">Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?</a><br>With Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross.<br><i>Annals of the American Academy of Political and Social Science.</i> 2022.</div>
       <div class="abstract">We examine whether Americans evaluate the Affordable Care Act through beliefs about its individual provisions. Despite partisan disagreement, both Democrats&#x27; and Republicans&#x27; evaluations are associated with what they believe the law does and how confident they are in those beliefs.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross (2022). &quot;Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?.&quot; Annals of the American Academy of Political and Social Science. 2022. https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2022americans,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Gabriel Miao Li, Josh Pasek, Jon Krosnick, Tobias Stark, Jennifer Agiesta, Trevor Tompson, and Wendy Gross (2022). &quot;Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?.&quot; Annals of the American Academy of Political and Social Science. 2022. https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2022americans,
   author = {Gaurav Sood and Gabriel Miao Li and Josh Pasek and Jon Krosnick and Tobias Stark and Jennifer Agiesta and Trevor Tompson and Wendy Gross},
   title = {{Americans&#x27; Attitudes toward the Affordable Care Act: What Role Do Beliefs Play?}},
   journal = {Annals of the American Academy of Political and Social Science},
   year = {2022},
   url = {https://gsood.com/research/americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -123,7 +120,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

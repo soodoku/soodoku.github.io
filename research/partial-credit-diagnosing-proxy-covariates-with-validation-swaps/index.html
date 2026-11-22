@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Causal Inference</a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/validation_swaps.pdf" target="_blank" class="entry-title">Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/swaps" target="_blank">Replication Materials</a></div>
       <div class="abstract">Correcting errors in machine-learned covariates can change a treatment-effect estimate in ways that separate corrections do not predict. Each correction changes the regression&#x27;s adjustment for other variables, so its effect can depend on which errors have already been corrected. Existing methods use verified measurements to correct inference and guide validation. We study the joint effects of finite corrections on a fitted coefficient. Our diagnostic replaces sets of proxy covariates with verified values and compares the resulting refits with the sum of isolated correction effects. Exact least-squares identities locate the source of nonadditivity in changes to the regression&#x27;s cross-product matrix. Correction paths describe how the coefficient moves as more measurements are corrected, and their dispersion describes how much the choice of correction set matters. Established Shapley methods attribute the endpoint change. Simulations illustrate these distinctions. Applications to housing and text-coded incivility compare refits with three additive approximations: isolated corrections track small random correction sets closely but misstate the full correction. The resulting diagnostic measures both the consequences of individual errors and the additional changes produced by correcting them together.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression.&quot; https://gsood.com/research/partial-credit-diagnosing-proxy-covariates-with-validation-swaps/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodpartial,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression.&quot; https://gsood.com/research/partial-credit-diagnosing-proxy-covariates-with-validation-swaps/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodpartial,
   author = {Gaurav Sood},
   title = {{Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression}},
   note = {Working paper},
   url = {https://gsood.com/research/partial-credit-diagnosing-proxy-covariates-with-validation-swaps/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

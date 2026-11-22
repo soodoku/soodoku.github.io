@@ -411,15 +411,15 @@ def render_entry_pages(catalog, template):
         bibtex = html.escape(format_bibtex(entry))
         plain_cite = html.escape(format_plain_citation(entry))
         cite_html = (
-            '      <details class="citation-toggle">\n'
-            "        <summary>Cite</summary>\n"
-            '        <div class="citation-box">\n'
-            f'          <p class="citation-text">{plain_cite}</p>\n'
-            '          <div class="bibtex-header"><span>BibTeX</span>'
+            '      <section class="citation-section">\n'
+            '        <p class="citation-text">'
+            '<span class="supporting-label">Cite:</span> '
+            f"{plain_cite}</p>\n"
+            '        <div class="bibtex-header">'
+            '<span class="supporting-label">BibTeX:</span> '
             '<button type="button" class="copy-btn">Copy</button></div>\n'
-            f'          <pre class="bibtex-block"><code>{bibtex}</code></pre>\n'
-            "        </div>\n"
-            "      </details>"
+            f'        <pre class="bibtex-block"><code>{bibtex}</code></pre>\n'
+            "      </section>"
         )
         body_parts = [
             f'      <div class="entry-meta">{summary_html}</div>',

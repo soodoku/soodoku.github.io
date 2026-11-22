@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="https://github.com/notnews/tv_schedules" target="_blank" class="entry-title">What and Who is on Network Television?</a></div>
       <div class="abstract">We combine television schedules with program metadata to study changes in genres and the race and gender composition of casts and production teams. The repository includes collection scripts, data, and figures describing these trends.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;What and Who is on Network Television?.&quot; https://gsood.com/research/what-and-who-is-on-network-television/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodwhat,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;What and Who is on Network Television?.&quot; https://gsood.com/research/what-and-who-is-on-network-television/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodwhat,
   author = {Gaurav Sood},
   title = {{What and Who is on Network Television?}},
   url = {https://github.com/notnews/tv_schedules}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

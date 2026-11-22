@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf" target="_blank" class="entry-title">Strength in Numbers: Multiple Measures of Media Ideology</a><br>With Philip Habel.<br><span class="entry-icon">🗃</span><a href="https://github.com/notnews/uk_media_ideology/">Replication Materials</a></div>
       <div class="abstract">We combine text-based and audience-based measures of British news outlets&#x27; ideology. Parliamentary speeches, party manifestos, and Twitter following patterns provide complementary information about ideological position and differences between measurement approaches.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Philip Habel. &quot;Strength in Numbers: Multiple Measures of Media Ideology.&quot; https://gsood.com/research/strength-in-numbers-multiple-measures-of-media-ideology/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodstrength,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Philip Habel. &quot;Strength in Numbers: Multiple Measures of Media Ideology.&quot; https://gsood.com/research/strength-in-numbers-multiple-measures-of-media-ideology/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodstrength,
   author = {Gaurav Sood and Philip Habel},
   title = {{Strength in Numbers: Multiple Measures of Media Ideology}},
   note = {Working paper},
   url = {https://gsood.com/research/strength-in-numbers-multiple-measures-of-media-ideology/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

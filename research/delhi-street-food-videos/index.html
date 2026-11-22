@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#missing-women">&larr; Missing Women</a></p>
       <div class="entry-meta"><a href="https://github.com/soodoku/mw_youtube" target="_blank" class="entry-title">Who Eats in Delhi Street-Food Videos?</a></div>
       <div class="abstract">In 450 randomly sampled frames from 30 Delhi street-food videos published in 2025, women accounted for 13.5% of apparent diner sightings and 16.1% of all sightings with classifiable gender, after weighting each video equally. A person with a serving of food in hand or in front of them counts as a diner, as does someone sharing a meal.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Who Eats in Delhi Street-Food Videos?.&quot; https://gsood.com/research/delhi-street-food-videos/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddelhi,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Who Eats in Delhi Street-Food Videos?.&quot; https://gsood.com/research/delhi-street-food-videos/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddelhi,
   author = {Gaurav Sood},
   title = {{Who Eats in Delhi Street-Food Videos?}},
   url = {https://github.com/soodoku/mw_youtube}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

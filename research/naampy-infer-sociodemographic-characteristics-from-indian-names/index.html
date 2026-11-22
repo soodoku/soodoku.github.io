@@ -74,18 +74,15 @@
       <p class="entry-breadcrumb"><a href="/research/#names">&larr; Names and Name-Based Inference</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/appeler/naampy" target="_blank" class="entry-title">Naampy: Infer Sociodemographic Characteristics from Indian Names</a><br>With Rajashekar Chintalapati and Suriyan Laohaprapanon.<span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/appeler/outkast" target="_blank">outkast: caste-name data</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/in-rolls/electoral_rolls" target="_blank">Indian electoral rolls</a></span></span></span></div>
       <div class="abstract">Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual&#x27;s gender.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Rajashekar Chintalapati, and Suriyan Laohaprapanon. &quot;Naampy: Infer Sociodemographic Characteristics from Indian Names.&quot; https://gsood.com/research/naampy-infer-sociodemographic-characteristics-from-indian-names/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodnaampy,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Rajashekar Chintalapati, and Suriyan Laohaprapanon. &quot;Naampy: Infer Sociodemographic Characteristics from Indian Names.&quot; https://gsood.com/research/naampy-infer-sociodemographic-characteristics-from-indian-names/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodnaampy,
   author = {Gaurav Sood and Rajashekar Chintalapati and Suriyan Laohaprapanon},
   title = {{Naampy: Infer Sociodemographic Characteristics from Indian Names}},
   url = {https://github.com/appeler/naampy}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

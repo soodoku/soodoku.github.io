@@ -77,20 +77,17 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/ACAMisinformed.pdf" target="_blank" class="entry-title">Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation</a><br>With Josh Pasek and Jon Krosnick.<br><i>Journal of Communication.</i> 65(4): 660–673, 2015.<br><span class="entry-icon">🗃</span><a href="/research/papers/ACAMisinformedSI.pdf" target="_blank">Supporting Information</a> | <span class="entry-icon">🗃</span><a href="https://osf.io/ya7wd/" target="_blank">Replication Materials</a></div>
       <div class="abstract">Two national surveys distinguish incorrect answers about the Affordable Care Act from confidently held incorrect beliefs. Most respondents are uncertain; confident misperceptions are less common and are concentrated on provisions about which elites repeatedly made false claims.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Josh Pasek, and Jon Krosnick (2015). &quot;Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation.&quot; Journal of Communication. 65(4): 660–673, 2015. https://gsood.com/research/misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2015misinformed,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Josh Pasek, and Jon Krosnick (2015). &quot;Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation.&quot; Journal of Communication. 65(4): 660–673, 2015. https://gsood.com/research/misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2015misinformed,
   author = {Gaurav Sood and Josh Pasek and Jon Krosnick},
   title = {{Misinformed About the Affordable Care Act? Leveraging Certainty to Assess the Prevalence of Misinformation}},
   journal = {Journal of Communication},
   year = {2015},
   url = {https://gsood.com/research/misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -98,7 +95,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

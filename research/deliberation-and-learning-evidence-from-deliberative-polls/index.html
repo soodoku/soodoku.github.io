@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#measuring-learning-knowledge-and-misinformation">&larr; Knowledge and Misinformation</a></p>
       <div class="entry-meta"><a href="/research/papers/deliberation_learning.pdf" target="_blank" class="entry-title">Deliberation and Learning: Evidence From Deliberative Polls</a><br>With Robert C. Luskin and James S. Fishkin.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/dp_learning" target="_blank">Replication Materials</a> · <a href="https://github.com/soodoku/dp_data" target="_blank">Source Data</a></div>
       <div class="abstract">Across 27 Deliberative Polls, factual knowledge increased by an average of 14.3 percentage points, a relative gain of 39.3%. In two polls with control groups, attendees gained an average of 11.2 percentage points more than controls. Measurements before arrival, on arrival, and after deliberation in two studies show substantial gains before participants arrive. The gender gap narrows but remains. Across 20 polls with poll-specific education cutoffs, the gap between more and less educated attendees widens.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Robert C. Luskin, and James S. Fishkin. &quot;Deliberation and Learning: Evidence From Deliberative Polls.&quot; https://gsood.com/research/deliberation-and-learning-evidence-from-deliberative-polls/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddeliberation,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Robert C. Luskin, and James S. Fishkin. &quot;Deliberation and Learning: Evidence From Deliberative Polls.&quot; https://gsood.com/research/deliberation-and-learning-evidence-from-deliberative-polls/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddeliberation,
   author = {Gaurav Sood and Robert C. Luskin and James S. Fishkin},
   title = {{Deliberation and Learning: Evidence From Deliberative Polls}},
   note = {Working paper},
   url = {https://gsood.com/research/deliberation-and-learning-evidence-from-deliberative-polls/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

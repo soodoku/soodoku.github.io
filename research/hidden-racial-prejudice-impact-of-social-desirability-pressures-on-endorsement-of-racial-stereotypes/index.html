@@ -82,20 +82,17 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Group Affect</a></p>
       <div class="entry-meta"><a href="/research/papers/StereotypesAboutSD.pdf" target="_blank" class="entry-title">The Impact of Social Desirability Pressures on Whites’ Endorsement of Racial Stereotypes: A Comparison Between Oral and ACASI Reports in a National Survey</a><br>With Jon Krosnick, Tobias Stark, and Floor van Maaren.<br><i>Sociological Methods and Research.</i>51(2), 605–631, 2019.<br><span class="entry-icon">🗃</span><a href="https://osf.io/jdv7r/" target="_blank">Replication Materials</a> · <a href="/research/papers/StereotypesAboutSDAppendix.pdf" target="_blank">Online Supplement</a></div>
       <div class="abstract">We compare White respondents&#x27; racial stereotype reports in confidential computer-assisted and oral interviews in the 2008 American National Election Study. Confidential responses are slightly more negative about both Black and White people and have no greater predictive validity, casting doubt on a large social-desirability distortion in the oral measures.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Jon Krosnick, Tobias Stark, and Floor van Maaren (2019). &quot;The Impact of Social Desirability Pressures on Whites’ Endorsement of Racial Stereotypes: A Comparison Between Oral and ACASI Reports in a National Survey.&quot; Sociological Methods and Research.51(2), 605–631, 2019. https://gsood.com/research/hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2019hidden,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Jon Krosnick, Tobias Stark, and Floor van Maaren (2019). &quot;The Impact of Social Desirability Pressures on Whites’ Endorsement of Racial Stereotypes: A Comparison Between Oral and ACASI Reports in a National Survey.&quot; Sociological Methods and Research.51(2), 605–631, 2019. https://gsood.com/research/hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2019hidden,
   author = {Gaurav Sood and Jon Krosnick and Tobias Stark and Floor van Maaren},
   title = {{The Impact of Social Desirability Pressures on Whites’ Endorsement of Racial Stereotypes: A Comparison Between Oral and ACASI Reports in a National Survey}},
   journal = {Sociological Methods and Research},
   year = {2019},
   url = {https://gsood.com/research/hidden-racial-prejudice-impact-of-social-desirability-pressures-on-endorsement-of-racial-stereotypes/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -103,7 +100,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

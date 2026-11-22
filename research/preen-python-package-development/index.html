@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#tools">&larr; Software and Tools</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/preen" target="_blank" class="entry-title">Preen: Python Package Development Checks</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/py-canon" target="_blank">py-canon: shared Python package standards</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/r-canon" target="_blank">r-canon: shared R package standards</a></span></span></span></div>
       <div class="abstract">Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Preen: Python Package Development Checks.&quot; https://gsood.com/research/preen-python-package-development/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodpreen,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Preen: Python Package Development Checks.&quot; https://gsood.com/research/preen-python-package-development/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodpreen,
   author = {Gaurav Sood},
   title = {{Preen: Python Package Development Checks}},
   url = {https://github.com/gojiplus/preen}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

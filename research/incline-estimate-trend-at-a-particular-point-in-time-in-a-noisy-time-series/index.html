@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Other</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/incline" target="_blank" class="entry-title">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></div>
       <div class="abstract">Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series.&quot; https://gsood.com/research/incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodincline,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series.&quot; https://gsood.com/research/incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodincline,
   author = {Gaurav Sood},
   title = {{incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series}},
   url = {https://github.com/finite-sample/incline}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

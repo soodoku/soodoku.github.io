@@ -72,20 +72,17 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Software Use and Credit</a></p>
       <div class="entry-meta"><a href="/research/papers/social_proof_stars.pdf" class="entry-title">Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads</a><br>With Lucas Shen.<br><i>Journal of Online Trust and Safety, 2026.</i><br><span class="entry-icon">🗃</span><a href="https://github.com/themains/social_proof_stars/">Replication Materials</a></div>
       <div class="abstract">Open-source software is widely used in commercial applications. Pair that with the fact that when choosing open-source software for a new problem, developers often use social proof as a cue. These two facts raise concern that bad actors can game social proof metrics to induce the use of malign software. We study the question using two field experiments. On the largest developer platform, GitHub, we buy ‘stars’ for a random set of GitHub repositories of new Python packages and estimate their impact on package downloads. We find no discernible impact. In another field experiment, we manipulate the number of human downloads for Python packages. Again, we find little effect.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Lucas Shen (2026). &quot;Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads.&quot; Journal of Online Trust and Safety, 2026. https://gsood.com/research/social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@article{sood2026social,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Lucas Shen (2026). &quot;Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads.&quot; Journal of Online Trust and Safety, 2026. https://gsood.com/research/social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@article{sood2026social,
   author = {Gaurav Sood and Lucas Shen},
   title = {{Social Proof is in the Pudding: The (Non)-Impact of Social Proof on Software Downloads}},
   journal = {Journal of Online Trust and Safety},
   year = {2026},
   url = {https://gsood.com/research/social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -93,7 +90,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

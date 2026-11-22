@@ -75,19 +75,16 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Deliberation</a></p>
       <div class="entry-meta"><a href="/research/papers/LearningOfArguments.pdf" target="_blank" class="entry-title">How Can You Think That? Deliberation and the Learning of Opposing Arguments</a><br>With Robert C. Luskin and James S. Fishkin.<br> <span class="entry-icon">🗃</span><a href="https://github.com/soodoku/dp_nireland">Replication Materials</a></div>
       <div class="abstract">Using open-ended responses from a Deliberative Poll on schooling in Northern Ireland, we compare the reasons articulated by returning participants and contemporaneous controls. Participants gave somewhat more reasons, but the estimate is imprecise and participation was self-selected. The samples differed little in directional balance. Among returnees, repertoires moved toward balance chiefly because supporting reasons declined, and the estimate is sensitive to coder choice.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood, Robert C. Luskin, and James S. Fishkin. &quot;How Can You Think That? Deliberation and the Learning of Opposing Arguments.&quot; https://gsood.com/research/how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodhow,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Robert C. Luskin, and James S. Fishkin. &quot;How Can You Think That? Deliberation and the Learning of Opposing Arguments.&quot; https://gsood.com/research/how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodhow,
   author = {Gaurav Sood and Robert C. Luskin and James S. Fishkin},
   title = {{How Can You Think That? Deliberation and the Learning of Opposing Arguments}},
   note = {Working paper},
   url = {https://gsood.com/research/how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -95,7 +92,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

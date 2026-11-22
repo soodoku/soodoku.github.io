@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#decision-making">&larr; Decision Making › Information Environment</a></p>
       <div class="entry-meta"><span class="entry-icon">💾</span><a href="https://github.com/notnews/cnn_transcripts/" target="_blank" class="entry-title">CNN Transcripts 2000--2025</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/notnews/archive_news_cc" target="_blank">Internet Archive TV captions</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/notnews/vandy_tv_news_abstracts" target="_blank">Vanderbilt TV news abstracts</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/notnews/nbc_transcripts" target="_blank">NBC / MSNBC transcripts</a></span></span></span></div>
       <div class="abstract">A corpus and scraper for CNN transcripts spanning 2000 through March 2025, with program names, dates, times, and transcript text. The repository documents collection across versions of CNN&#x27;s site and links to research-access data on Harvard Dataverse.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;CNN Transcripts 2000--2025.&quot; https://gsood.com/research/cnn-transcripts-2000-2025/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodcnn,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;CNN Transcripts 2000--2025.&quot; https://gsood.com/research/cnn-transcripts-2000-2025/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodcnn,
   author = {Gaurav Sood},
   title = {{CNN Transcripts 2000--2025}},
   url = {https://github.com/notnews/cnn_transcripts/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

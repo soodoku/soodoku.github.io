@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Record Linkage</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/bloomjoin" target="_blank" class="entry-title">BloomJoin: Bloom Filter Based Joins</a></div>
       <div class="abstract">An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;BloomJoin: Bloom Filter Based Joins.&quot; https://gsood.com/research/bloomjoin-bloom-filter-based-joins/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodbloomjoin,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;BloomJoin: Bloom Filter Based Joins.&quot; https://gsood.com/research/bloomjoin-bloom-filter-based-joins/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodbloomjoin,
   author = {Gaurav Sood},
   title = {{BloomJoin: Bloom Filter Based Joins}},
   url = {https://github.com/gojiplus/bloomjoin}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

@@ -69,18 +69,15 @@
       <p class="entry-breadcrumb"><a href="/research/#online-safety">&larr; Online Privacy and Security</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/themains/know-your-ip/" class="entry-title">Know Your IP</a><br>With Suriyan Laohaprapanon.</div>
       <div class="abstract">A Python toolkit for enriching IP addresses with registration, network, geolocation, and reputation information from multiple providers. It reconciles provider outputs while recording provenance, caching results, and handling rate limits and partial failures.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Suriyan Laohaprapanon. &quot;Know Your IP.&quot; https://gsood.com/research/know-your-ip/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodknow,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Suriyan Laohaprapanon. &quot;Know Your IP.&quot; https://gsood.com/research/know-your-ip/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodknow,
   author = {Gaurav Sood and Suriyan Laohaprapanon},
   title = {{Know Your IP}},
   url = {https://github.com/themains/know-your-ip/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -88,7 +85,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

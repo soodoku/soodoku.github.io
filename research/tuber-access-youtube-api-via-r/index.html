@@ -64,18 +64,15 @@
       <p class="entry-breadcrumb"><a href="/research/#tools">&larr; Software and Tools</a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/gojiplus/tuber" class="entry-title">🍠 tuber: Access YouTube API via R</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/gojiplus/tubern" target="_blank">tubern: YouTube Analytics and Reporting</a></span></span></span></div>
       <div class="abstract">An R client for searching and retrieving YouTube videos, channels, playlists, comments, and captions. It also supports selected authenticated operations, including uploads, moderation, and playlist updates.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;🍠 tuber: Access YouTube API via R.&quot; https://gsood.com/research/tuber-access-youtube-api-via-r/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@software{soodtuber,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;🍠 tuber: Access YouTube API via R.&quot; https://gsood.com/research/tuber-access-youtube-api-via-r/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@software{soodtuber,
   author = {Gaurav Sood},
   title = {{🍠 tuber: Access YouTube API via R}},
   url = {https://github.com/gojiplus/tuber}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -83,7 +80,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

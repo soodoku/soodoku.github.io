@@ -65,19 +65,16 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Software Use and Credit</a></p>
       <div class="entry-meta"><a href="/research/papers/downloads_are_cheap.pdf" target="_blank" class="entry-title">Downloads Are Cheap: Validated Use as a Measure of Research Software</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/recite/softverse" target="_blank">Code</a> <span class="entry-icon">📊</span><a href="https://doi.org/10.5281/zenodo.21943908" target="_blank">Data</a> <span class="entry-icon">📦</span><a href="https://doi.org/10.5281/zenodo.21926099" target="_blank">Stata command index</a> <span class="entry-icon">🔍</span><a href="https://recite.github.io/softverse/lookup/" target="_blank">Look up a package</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://github.com/recite/recode" target="_blank">Recode: citation reminders</a></span>; <span class="supporting-item" role="listitem"><a href="https://github.com/recite/pip-fund" target="_blank">pip-fund: funding software</a></span></span></span></div>
       <div class="abstract">Counts of research software use allocate credit, and the available ones are cheap to produce: a download is one fetch of a file. I propose validated use, a package loaded in replication code deposited at a journal that checks it, as a costly signal, and measure it in 13,245 deposits from 75 economics and political science journal collections, which load 4,565 R, Python and Stata packages. Among packages the corpus uses, validated use and downloads agree loosely, and least where automatic installation is commonest: the rank correlation is 0.61 for Stata, 0.53 for R and 0.36 for Python. Downloads track a package&#x27;s position in the dependency graph more closely than its use. The most used software prepares exhibits: estout is in 43% of Stata deposits. Stata appears in 1.4 times as many deposits as R and is missing from studies of research software because its packages are scattered across SSC, two journals&#x27; archives and authors&#x27; sites with no index across them. I build that index, 10,147 commands in 5,581 packages, and release it with the mention-level data.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood. &quot;Downloads Are Cheap: Validated Use as a Measure of Research Software.&quot; https://gsood.com/research/downloads-are-cheap-validated-use-as-a-measure-of-research-software/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{sooddownloads,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Downloads Are Cheap: Validated Use as a Measure of Research Software.&quot; https://gsood.com/research/downloads-are-cheap-validated-use-as-a-measure-of-research-software/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{sooddownloads,
   author = {Gaurav Sood},
   title = {{Downloads Are Cheap: Validated Use as a Measure of Research Software}},
   note = {Working paper},
   url = {https://gsood.com/research/downloads-are-cheap-validated-use-as-a-measure-of-research-software/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -85,7 +82,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;

@@ -70,19 +70,16 @@
       <p class="entry-breadcrumb"><a href="/research/#meta-science">&larr; Meta Science › Miscitations</a></p>
       <div class="entry-meta"><a href="/research/papers/error.pdf" class="entry-title">Propagation of Error: Citations to Retracted Research</a><br>With Ken Cor.<br><span class="entry-icon">🗃</span><a href="https://github.com/recite/propagation_of_error/" target="_blank">Replication Materials</a></div>
       <div class="abstract">We compare each of 8,627 retracted research articles, published 2000–2019 and retracted 2005–2022, with up to five articles from the same journal and publication year matched on pre-retraction citations, using OpenAlex citation histories through 2025 for both. In the three complete years after the retraction year, citations to retracted articles were 62% lower than the path of their comparison articles implies, and the gap keeps widening for a decade. Retracted articles nonetheless continue to be cited: across 8,963 retracted articles, 27% of all citations arrived after the retraction year, five years on 39% of the articles observed that long were still being cited, and in a hand-coded sample 91% of post-retraction citations noted no concern with the cited article.</div>
-      <details class="citation-toggle">
-        <summary>Cite</summary>
-        <div class="citation-box">
-          <p class="citation-text">Gaurav Sood and Ken Cor. &quot;Propagation of Error: Citations to Retracted Research.&quot; https://gsood.com/research/propagation-of-error-approving-citations-to-problematic-research/</p>
-          <div class="bibtex-header"><span>BibTeX</span><button type="button" class="copy-btn">Copy</button></div>
-          <pre class="bibtex-block"><code>@misc{soodpropagation,
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood and Ken Cor. &quot;Propagation of Error: Citations to Retracted Research.&quot; https://gsood.com/research/propagation-of-error-approving-citations-to-problematic-research/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodpropagation,
   author = {Gaurav Sood and Ken Cor},
   title = {{Propagation of Error: Citations to Retracted Research}},
   note = {Working paper},
   url = {https://gsood.com/research/propagation-of-error-approving-citations-to-problematic-research/}
 }</code></pre>
-        </div>
-      </details>
+      </section>
     </article>
   </main>
 </div>
@@ -90,7 +87,7 @@
 document.addEventListener("click", function (event) {
   var btn = event.target.closest(".copy-btn");
   if (!btn) return;
-  var pre = btn.closest(".citation-box").querySelector("pre");
+  var pre = btn.closest(".citation-section").querySelector("pre");
   if (!pre || !navigator.clipboard) return;
   navigator.clipboard.writeText(pre.textContent).then(function () {
     var orig = btn.textContent;
