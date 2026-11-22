@@ -458,14 +458,51 @@ def render_schema(catalog):
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
+def catalog_heading(title):
+    minor_words = {
+        "a",
+        "an",
+        "and",
+        "as",
+        "at",
+        "but",
+        "by",
+        "for",
+        "in",
+        "of",
+        "on",
+        "or",
+        "the",
+        "to",
+        "via",
+        "with",
+    }
+    words = title.split()
+    rendered = []
+    for i, word in enumerate(words):
+        label = html.escape(word)
+        if word[0].islower() and any(c.isupper() for c in word):
+            label = f'<span class="keep-case">{label}</span>'
+        elif (
+            0 < i < len(words) - 1
+            and not word.isupper()
+            and word.lower() in minor_words
+        ):
+            label = f'<span class="minor-word">{label}</span>'
+        rendered.append(label)
+    return '<span class="catalog-heading">' + " ".join(rendered) + "</span>"
+
+
 def render_entry_pages(catalog, template):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     pages = {}
     for top, subsection, entry_id in placements(catalog):
         entry = entries[entry_id]
-        breadcrumb = top["title"]
+        breadcrumb = catalog_heading(top["title"])
         if subsection:
-            breadcrumb += f" › {subsection}"
+            breadcrumb += " › " + " › ".join(
+                map(catalog_heading, subsection.split(" › "))
+            )
         canonical = entry_page_url(entry)
         desc = plain_text(entry["description"], entry)
         schema_obj = {"@context": "https://schema.org", **entry_schema_object(entry)}
@@ -473,7 +510,7 @@ def render_entry_pages(catalog, template):
         abstract_html = rich_text(entry["description"], entry, url_prefix="/research/")
         details_blocks = []
         for section_block in entry.get("details", []):
-            heading_html = html.escape(section_block["heading"])
+            heading_html = catalog_heading(section_block["heading"])
             section_body = rich_text(
                 section_block["body"], entry, url_prefix="/research/"
             )
@@ -511,7 +548,7 @@ def render_entry_pages(catalog, template):
             meta_tags=render_scholar_meta(entry),
             schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
             section_id=html.escape(top["id"], quote=True),
-            breadcrumb=html.escape(breadcrumb),
+            breadcrumb=breadcrumb,
             entry_body=body,
         )
     return pages
@@ -531,7 +568,7 @@ def render(catalog, template):
         seen_sections.add(value["id"])
         parts = [
             f'<details class="category-toggle"{sec_id}>',
-            f'<summary>{html.escape(value["title"])}</summary>',
+            f'<summary>{catalog_heading(value["title"])}</summary>',
         ]
         for child in value["children"]:
             if "entry" not in child:
@@ -590,9 +627,10 @@ def render_swipe(catalog, template):
         entry = entries[entry_id]
         if not chips or chips[-1][0] != top["id"]:
             chips.append((top["id"], top["title"], number))
-        where = html.escape(top["title"])
+        where = catalog_heading(top["title"])
         if subsection:
-            where += f' <span class="sub">› {html.escape(subsection)}</span>'
+            path = " › ".join(map(catalog_heading, subsection.split(" › ")))
+            where += f' <span class="sub">› {path}</span>'
         cards.append(
             f'<article class="card" id="card-{number}" data-section="{top["id"]}"'
             f' style="--hue: {hues[top["id"]]}">'
@@ -605,7 +643,7 @@ def render_swipe(catalog, template):
         )
     chip_links = "\n".join(
         f'<a href="#card-{number}" data-section="{section_id}"'
-        f' style="--hue: {hues[section_id]}">{html.escape(title)}</a>'
+        f' style="--hue: {hues[section_id]}">{catalog_heading(title)}</a>'
         for section_id, title, number in chips
     )
     return fill(

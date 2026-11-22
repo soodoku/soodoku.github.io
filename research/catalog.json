@@ -605,7 +605,7 @@
       "children": [
         {
           "id": "cricket-research-and-ratings",
-          "title": "Analysis and ratings",
+          "title": "Analysis and Ratings",
           "children": [
             {
               "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
@@ -626,7 +626,7 @@
         },
         {
           "id": "cricket-data-and-software",
-          "title": "Data and software",
+          "title": "Data and Software",
           "children": [
             {
               "entry": "espncricinfo-python-client"

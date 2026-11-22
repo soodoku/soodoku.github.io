@@ -87,7 +87,19 @@ class CatalogTests(unittest.TestCase):
         self.entry["title"] = "A < B"
         generated = render_swipe(self.catalog, SWIPE)
         self.assertIn("A &lt; B</a>", generated)
-        self.assertIn('<span class="sub">\u203a Prediction Stability</span>', generated)
+        self.assertIn(
+            '<span class="sub">\u203a <span class="catalog-heading">Prediction '
+            "Stability</span></span>",
+            generated,
+        )
+
+    def test_catalog_heading_marks_connectors_and_preserves_names(self):
+        heading = research_catalog.catalog_heading("the IPL And iOS <ratings>")
+        self.assertEqual(
+            heading,
+            '<span class="catalog-heading">the IPL <span class="minor-word">And</span> '
+            '<span class="keep-case">iOS</span> &lt;ratings&gt;</span>',
+        )
 
     def test_templates_require_each_placeholder_once(self):
         for template in ("{{chips}}|{{cards}}", SWIPE + "{{cards}}"):
@@ -171,7 +183,10 @@ class CatalogTests(unittest.TestCase):
         ]
         rendered = render_entry_pages(sample, template)
         first_page = rendered[f"research/{self.entry['id']}/index.html"]
-        self.assertIn("<h2>Experimental Design</h2>", first_page)
+        self.assertIn(
+            '<h2><span class="catalog-heading">Experimental Design</span></h2>',
+            first_page,
+        )
         self.assertIn("Two field experiments.", first_page)
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):

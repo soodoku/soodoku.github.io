@@ -1,0 +1,11 @@
+.catalog-heading {
+  text-transform: capitalize;
+}
+
+.catalog-heading .minor-word {
+  text-transform: lowercase;
+}
+
+.catalog-heading .keep-case {
+  text-transform: none;
+}

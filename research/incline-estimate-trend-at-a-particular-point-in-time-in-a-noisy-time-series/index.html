@@ -43,6 +43,7 @@
   "codeRepository": "https://github.com/finite-sample/incline"
 }
 </script>
+<link rel="stylesheet" href="/research/headings.css">
 </head>
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -62,7 +63,7 @@
   </nav>
   <main class="content">
     <article id="research" class="entry-page">
-      <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Other</a></p>
+      <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; <span class="catalog-heading">Statistics <span class="minor-word">and</span> Research Methods</span> › <span class="catalog-heading">Other</span></a></p>
       <div class="entry-meta"><span class="entry-icon">📦</span><a href="https://github.com/finite-sample/incline" target="_blank" class="entry-title">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></div>
       <div class="abstract">Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories.</div>
       <section class="citation-section">

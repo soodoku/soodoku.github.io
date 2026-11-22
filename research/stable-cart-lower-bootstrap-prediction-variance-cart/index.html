@@ -43,6 +43,7 @@
   "codeRepository": "https://github.com/finite-sample/stable-cart"
 }
 </script>
+<link rel="stylesheet" href="/research/headings.css">
 </head>
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -62,7 +63,7 @@
   </nav>
   <main class="content">
     <article id="research" class="entry-page">
-      <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; Statistics and Research Methods › Prediction Stability</a></p>
+      <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; <span class="catalog-heading">Statistics <span class="minor-word">and</span> Research Methods</span> › <span class="catalog-heading">Prediction Stability</span></a></p>
       <div class="entry-meta"><span class="entry-icon">🌱</span><a href="https://github.com/finite-sample/stable-cart" target="_blank" class="entry-title">Stable CART: Lower Bootstrap Prediction Variance CART</a><br><a href="https://pypi.org/project/stable-cart/">Install package</a></div>
       <div class="abstract">Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets).</div>
       <section class="citation-section">
