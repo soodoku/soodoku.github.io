@@ -281,6 +281,9 @@
           "title": "Other",
           "children": [
             {
+              "entry": "big-if-true"
+            },
+            {
               "entry": "a-benchmark-for-benchmarks"
             },
             {
@@ -2715,6 +2718,54 @@
         "text_type": "summary"
       },
       "software_type": "package"
+    },
+    {
+      "id": "big-if-true",
+      "kind": "paper",
+      "title": "Big If True: Fragility of the Manipulable-Voter Model and the Implications for Politics and Social Science",
+      "coauthors": [
+        "Andrew Gelman",
+        "John Bullock"
+      ],
+      "site_author_position": 3,
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://sites.stat.columbia.edu/gelman/research/unpublished/manipulable.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "source",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/recite/big_if_true",
+          "label": "Manuscript Source",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "source"
+        }
+      ],
+      "description": [
+        "Can seemingly minor events change how people vote? The paper examines the evidence for that claim and asks which research practices made weak evidence for large effects look convincing."
+      ],
+      "description_source": {
+        "url": "https://sites.stat.columbia.edu/gelman/research/unpublished/manipulable.pdf",
+        "kind": "manuscript",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      }
     },
     {
       "id": "a-benchmark-for-benchmarks",
