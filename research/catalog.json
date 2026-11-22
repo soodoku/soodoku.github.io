@@ -199,6 +199,9 @@
           "entry": "know-your-ip"
         },
         {
+          "entry": "piinata"
+        },
+        {
           "entry": "virustotal-r-client-for-the-virustotal-public-api-2-0"
         }
       ]
@@ -2254,6 +2257,54 @@
         "Suriyan Laohaprapanon"
       ],
       "software_type": "package"
+    },
+    {
+      "id": "piinata",
+      "kind": "software",
+      "software_type": "package",
+      "title": "piinata: Find Personal Data in Research Files",
+      "first_published": "2026-11-14",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://gojiplus.github.io/piinata/",
+          "new_tab": true
+        },
+        {
+          "id": "self-redaction",
+          "kind": "repository",
+          "role": "related",
+          "label": "self-redaction: Testing record matching on synthetic support chats",
+          "url": "https://github.com/gojiplus/self-redaction",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "An R package that flags likely personal data in survey exports, spreadsheets, and statistical files. It shows which fields need review and can write a redacted copy."
+      ],
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "self-redaction"
+            }
+          ]
+        ]
+      },
+      "description_source": {
+        "url": "https://github.com/gojiplus/piinata#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-22",
+        "text_type": "summary"
+      }
     },
     {
       "id": "virustotal-r-client-for-the-virustotal-public-api-2-0",
