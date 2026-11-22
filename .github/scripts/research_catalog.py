@@ -98,8 +98,6 @@ def validate_catalog(catalog, root=ROOT):
         nodes(entry.get("publication", []))
         for section_block in entry.get("details", []):
             nodes(section_block["body"])
-        if entry.get("status") == "draft" and "publication" in entry:
-            raise ValueError(f"{entry['id']}: a draft cannot have a publication")
         if "publication_url" in entry and "publication" not in entry:
             raise ValueError(
                 f"{entry['id']}: publication_url requires a publication field"
@@ -226,8 +224,6 @@ def entry_summary(entry, entries, url_prefix=""):
             f'role="img" aria-label="First published {published}" '
             f'title="First published {published}"> 🌱</span>'
         )
-    if entry.get("status") == "draft":
-        metadata += ' <span class="status">Draft</span>'
     if coauthors := entry.get("coauthors"):
         metadata += f"<br>With {html.escape(credit(coauthors))}."
     if publication := entry.get("publication"):
@@ -761,8 +757,6 @@ def render_llms_txt(catalog, _template=None):
         page_url = entry_page_url(entry)
         desc = plain_text(entry["description"], entry)
         meta = []
-        if entry.get("status") == "draft":
-            meta.append("Draft.")
         if coauthors := entry.get("coauthors"):
             meta.append(f"With {credit(coauthors)}.")
         if publication := entry.get("publication"):

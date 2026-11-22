@@ -61,7 +61,13 @@
                 "em",
                 "strong",
                 "sup",
-                "sub"
+                "sub",
+                "table",
+                "thead",
+                "tbody",
+                "tr",
+                "th",
+                "td"
               ]
             },
             "class": {
@@ -302,12 +308,6 @@
             "minLength": 1
           },
           "uniqueItems": true
-        },
-        "status": {
-          "enum": [
-            "draft"
-          ],
-          "description": "Work in progress that will change; renders a Draft label after the title. Omit for finished work."
         },
         "details": {
           "type": "array",

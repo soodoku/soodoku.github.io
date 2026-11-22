@@ -10,11 +10,14 @@
 :root {
   --site-accent: #005f9e;
   --heading-color: #333;
+  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --reading-size: 1rem;
+  --reading-color: #222;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--body-font);
   background: #ffffff;
   
   /* CHANGED: Increased Base Font Size to 1.15rem (approx 18.5px) */
@@ -129,7 +132,7 @@ a.home {
 /* Sidebar Navigation Styling */
 .sidebar ul {
   list-style: none;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: var(--body-font);
   margin: 0;
   padding: 0;
   text-align: right; 
@@ -145,26 +148,17 @@ a.home {
 }
 
 .sidebar ul li a {
-  font-weight: 200;
-  color: #333;
+  font-weight: 400;
+  font-size: var(--reading-size);
+  color: var(--reading-color);
 }
 
 .sidebar ul li a:hover {
-  color: #333;
+  color: var(--site-accent);
 }
 
 .sidebar .site-title {
   text-align: right;
-}
-
-.research-sidebar ul {
-  font-family: 'Inter', sans-serif;
-}
-
-.research-sidebar ul li a {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
 }
 
 .research-sidebar ul li a[aria-current="page"] {
@@ -247,7 +241,7 @@ details {
 }
 
 #research details {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--body-font);
 }
 
 details summary {
@@ -344,9 +338,9 @@ details[open] > summary::before {
 #research .coauthor,
 #research .abstract,
 #research a {
-  font-size: 1rem;
+  font-size: var(--reading-size);
   font-weight: 400;
-  color: #333;
+  color: var(--reading-color);
 }
 
 #research a {
@@ -397,19 +391,6 @@ details details {
   letter-spacing: 0;
 }
 
-#research .status {
-  margin-left: 0.4em;
-  padding: 0 0.4em;
-  border: 1px solid #990000;
-  border-radius: 3px;
-  color: #990000;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  vertical-align: 0.15em;
-  white-space: nowrap;
-}
 
 #research .entry-icon {
   margin-right: 0.45em;
@@ -556,8 +537,12 @@ details details {
   margin: 0 0 0.4rem;
 }
 
+.entry-section-body table { border-collapse: collapse; }
+.entry-section-body th, .entry-section-body td { padding: 0.35em; text-align: right; border-bottom: 1px solid #ddd; }
+.entry-section-body th:first-child, .entry-section-body td:first-child { text-align: left; }
+
 .entry-page .entry-section-body {
-  font-size: 1rem;
+  font-size: var(--reading-size);
   line-height: 1.6;
   color: #222;
 }
@@ -640,12 +625,7 @@ details details {
   .sidebar ul li a {
     display: block;
     padding: 0.375rem 0;
-    font-size: 0.75rem;
     line-height: 1.5;
-  }
-
-  .research-sidebar ul li a {
-    font-size: 0.8125rem;
   }
 
   .content {
@@ -678,6 +658,12 @@ details details {
 
   #research summary {
     padding-left: 1.4rem;
+  }
+
+  .entry-page .entry-section,
+  #research.entry-page .abstract,
+  .entry-page .citation-section {
+    max-width: 100%;
   }
 
   /* 4. Fix Home Page Mobile Padding */

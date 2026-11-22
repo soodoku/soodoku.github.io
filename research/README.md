@@ -33,12 +33,13 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   a stable `id`, a `kind`, a `title`, a `primary_resource`, and a list of resources.
   Every software entry requires `software_type`. Choose the form a reader uses:
   `package` 📦, GitHub `action` ⚙️, `app` 📱, standalone `script` or notebooks 📜,
-  or `theme` 🎨. Use the spelling from the package documentation in titles and prose.
+  or `theme` 🎨. Use the declared package name from its Python or R package metadata in titles and prose, including its capitalization.
   A secondary resource can specify its own `software_type`, including a package
   linked from a paper. The renderer supplies the icon on each catalog view.
   Set optional `first_published` to the verified date the work first became public
   (YYYY-MM-DD). A browser shows 🌱 from that UTC date until its three-month
-  anniversary, clamped to the last day of the month. Omit unknown dates.
+  anniversary, clamped to the last day of the month. Use the earliest documented
+  public release of the work (UTC). A later revision does not restart the clock. Omit unknown dates.
   Keep IDs stable when renaming work. `related_entries` can reference other entries
   without copying their records; the generator adds links to those entries.
   Optional `coauthors` is an ordered list of collaborators, excluding Gaurav Sood.
@@ -99,7 +100,7 @@ Keep credits in `coauthors` and citations in `publication`, rather than embeddin
 them in `summary`. For example, `"coauthors": ["Alice Smith", "Bob Jones"]` and
 `"publication": [{"tag": "i", "children": ["Journal Name"]}, ", 2026."]`.
 Resource URLs and primary titles each have one authoritative field. Formatting
-nodes allow `br`, `span`, `i`, `p`, `b`, `em`, `strong`, `sup`, and `sub`; non-break
+nodes allow `br`, `span`, `i`, `p`, `b`, `em`, `strong`, `sup`, and `sub`, and the table elements `table`, `thead`, `tbody`, `tr`, `th`, and `td`; non-break
 nodes use a `children` array. Only the `highlight`, `entry-icon`, and `resource-links`
 span classes and the `paper-toggle` entry class are supported.
 Use a `resource-links` span containing resource references to group RELATED or

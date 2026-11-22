@@ -308,23 +308,6 @@ class CatalogTests(unittest.TestCase):
         generated = render(self.catalog, "{{catalog}}")
         self.assertIn(f'{self.entry["title"]}</a></summary>', generated)
 
-    def test_draft_label_follows_title_and_excludes_publication(self):
-        self.entry.pop("publication", None)
-        self.entry["status"] = "draft"
-        self.entry["summary"] = [{"resource": self.entry["primary_resource"]}]
-        generated = render(self.catalog, "{{catalog}}")
-        self.assertIn(
-            f'{self.entry["title"]}</a> <span class="status">Draft</span>', generated
-        )
-        self.entry["publication"] = ["Test Journal, 2026."]
-        with self.assertRaisesRegex(ValueError, "draft cannot have a publication"):
-            validate_catalog(self.catalog)
-        self.entry.pop("publication")
-        self.entry["status"] = "finished"
-        schema = json.loads((ROOT / "research/catalog.schema.json").read_text())
-        with self.assertRaises(ValidationError):
-            Draft202012Validator(schema).validate(self.catalog)
-
     def test_software_types_and_publication_dates(self):
         schema = json.loads((ROOT / "research/catalog.schema.json").read_text())
         validator = Draft202012Validator(
