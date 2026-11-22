@@ -1,0 +1,33 @@
+.output-filter:not([hidden]) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+  font: inherit;
+}
+.content .output-filter {
+  margin: 0 0 1rem;
+}
+.output-filter a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+.output-filter a[aria-current],
+.output-filter a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.output-filter a[aria-current] {
+  font-weight: 700;
+}
+.top + .output-filter {
+  color: white;
+  padding: 0 0.75rem 0.4rem;
+  font-size: 0.9rem;
+}
+[data-kind][hidden],
+.category-toggle[hidden],
+.chips a[hidden] {
+  display: none;
+}

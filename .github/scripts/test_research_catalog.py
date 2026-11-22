@@ -25,7 +25,8 @@ from research_catalog import (
     validate_catalog,
 )
 
-SWIPE = "{{chips}}|{{cards}}|{{total}}"
+LIST = "{{filters}}{{catalog}}"
+SWIPE = "{{filters}}{{chips}}|{{cards}}|{{total}}"
 
 
 class CatalogTests(unittest.TestCase):
@@ -55,6 +56,25 @@ class CatalogTests(unittest.TestCase):
             generated.count('<article class="card"'), len(catalog["entries"])
         )
         self.assertTrue(generated.endswith(f"|{len(catalog['entries'])}"))
+
+    def test_output_filters_match_the_entry_kinds_in_both_views(self):
+        kinds = {entry["kind"] for entry in self.catalog["entries"]}
+        catalog_kinds = {
+            entry["id"]: entry["kind"] for entry in self.catalog["entries"]
+        }
+        page = render(self.catalog, LIST)
+        cards = render_swipe(self.catalog, SWIPE)
+        for view in (page, cards):
+            self.assertEqual(
+                set(re.findall(r'data-type="([^"]*)"', view)), kinds | {""}
+            )
+        self.assertEqual(
+            dict(re.findall(r'<details id="([^"]+)"[^>]* data-kind="([^"]+)"', page)),
+            catalog_kinds,
+        )
+        self.assertCountEqual(
+            re.findall(r'data-kind="([^"]+)"', cards), catalog_kinds.values()
+        )
 
     def test_swipe_keeps_first_position_and_section_order(self):
         order = [entry_id for _, _, entry_id in placements(self.catalog)]
@@ -182,7 +202,7 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("Two field experiments.", first_page)
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         for entry in self.catalog["entries"]:
             self.assertEqual(
                 generated.count(f'<details id="{entry["id"]}"'),
@@ -239,7 +259,7 @@ class CatalogTests(unittest.TestCase):
     def test_title_and_url_edits_drive_output(self):
         self.entry["title"] = 'A < B & "quoted"'
         self.entry["resources"][0]["url"] = "https://example.org/?a=1&b=2"
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertIn("A &lt; B &amp; &quot;quoted&quot;", generated)
         self.assertIn("https://example.org/?a=1&amp;b=2", generated)
         self.assertNotIn("< B", generated)
@@ -252,7 +272,7 @@ class CatalogTests(unittest.TestCase):
         ]
         related = self.catalog["entries"][1]
         self.entry["related_entries"] = [related["id"]]
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertIn("With First Author and Second Author.", generated)
         self.assertIn("<i>A &amp; B</i>, 2026.", generated)
         self.assertIn('<span class="supporting-label">Related:</span>', generated)
@@ -268,7 +288,7 @@ class CatalogTests(unittest.TestCase):
         for names, expected in cases:
             with self.subTest(names=names):
                 self.entry["coauthors"] = names
-                generated = render(self.catalog, "{{catalog}}")
+                generated = render(self.catalog, LIST)
                 self.assertIn(f"</a><br>{expected}", generated)
 
     def test_metadata_precedes_resources_and_is_not_repeated_in_related_links(self):
@@ -280,7 +300,7 @@ class CatalogTests(unittest.TestCase):
             "Supporting resources",
         ]
         self.catalog["entries"][1]["related_entries"] = [self.entry["id"]]
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertIn(
             "</a><br>With Test Collaborator.<br>Test Journal, 2026."
             "<br>Supporting resources",
@@ -292,12 +312,12 @@ class CatalogTests(unittest.TestCase):
         self.entry.pop("coauthors", None)
         self.entry["summary"] = [{"resource": self.entry["primary_resource"]}]
         self.entry["publication"] = ["Test Journal, 2026."]
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertIn(
             f'{self.entry["title"]}</a><br>Test Journal, 2026.</summary>', generated
         )
         self.entry.pop("publication")
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertIn(f'{self.entry["title"]}</a></summary>', generated)
 
     def test_software_types_and_publication_dates(self):
@@ -370,7 +390,7 @@ class CatalogTests(unittest.TestCase):
             "press": [["Coverage <one>"]],
             "related": [[{"resource": self.entry["primary_resource"]}, " A note"]],
         }
-        generated = render(self.catalog, "{{catalog}}")
+        generated = render(self.catalog, LIST)
         self.assertLess(
             generated.index('class="supporting-label">Related:'),
             generated.index('class="supporting-label">Press:'),

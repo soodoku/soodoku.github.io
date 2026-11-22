@@ -15,6 +15,10 @@ edits that leave any generated file out of date.
 The page shell lives in `page.template.html` (and `entry.template.html` for
 dedicated entry pages); shared styling stays in `/style.css`.
 
+The index and swipe feed can be filtered with `?type=paper`, `?type=software`,
+`?type=analysis`, or `?type=dataset`. Both views use the entry's `kind` and keep
+its subject placement. Without JavaScript, both show the complete catalog.
+
 The same command also writes `research/swipe.html`, a phone-first feed with one
 card per entry (each entry once, at its first position in `sections`). Its shell,
 CSS, and the small script for topic chips and the card counter live in

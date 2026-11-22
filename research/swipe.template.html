@@ -225,6 +225,7 @@ a:focus-visible, button:focus-visible {
 }
 </style>
 <link rel="stylesheet" href="/research/headings.css">
+<link rel="stylesheet" href="/research/output-filter.css">
 <script defer src="/research/recent.js"></script>
 </head>
 <body>
@@ -234,25 +235,34 @@ a:focus-visible, button:focus-visible {
 {{chips}}
   </nav>
 </header>
+{{filters}}
 <main class="feed" tabindex="-1">
 {{cards}}
 <section class="end">
   <div class="end-inner">
-    <h2>That's all {{total}}.</h2>
-    <p><a href="./">See everything as a list</a> or <a href="#card-1">start over</a>.</p>
+    <h2>That's all <span id="end-total">{{total}}</span>.</h2>
+    <p><a href="./" data-catalog-view>See everything as a list</a> or <a href="#card-1" id="start-over">start over</a>.</p>
   </div>
 </section>
 </main>
 <p class="hud" hidden><span id="at">1</span> / <span id="of"></span></p>
+<script src="/research/output-filter.js"></script>
 <script>
 document.documentElement.classList.add("js");
 (function () {
   var feed = document.querySelector(".feed");
-  var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".card:not([hidden])"));
   var chips = document.querySelector(".chips");
   var hud = document.querySelector(".hud");
   var at = document.getElementById("at");
   document.getElementById("of").textContent = cards.length;
+  document.getElementById("end-total").textContent = cards.length;
+  document.getElementById("start-over").hash = cards[0].id;
+  for (const chip of chips.children) {
+    const first = cards.find(card => card.dataset.section === chip.dataset.section);
+    chip.hidden = !first;
+    if (first) chip.hash = first.id;
+  }
   hud.hidden = false;
   cards[0].querySelector(".card-inner").insertAdjacentHTML(
     "beforeend", '<span class="hint" aria-hidden="true">swipe up ↑</span>');
@@ -291,7 +301,7 @@ document.documentElement.classList.add("js");
     event.preventDefault();
     feed.scrollBy({top: step * feed.clientHeight});
   });
-  feed.focus({preventScroll: true});
+  if (!location.search) feed.focus({preventScroll: true});
 })();
 </script>
 </body>

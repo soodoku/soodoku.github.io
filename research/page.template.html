@@ -25,6 +25,7 @@
 {{schema}}
 </script>
 <link rel="stylesheet" href="/research/headings.css">
+<link rel="stylesheet" href="/research/output-filter.css">
 <script defer src="/research/recent.js"></script>
 </head>
 
@@ -46,19 +47,21 @@
   </nav>
   <main class="content">
    
-<a class="swipe-banner" href="swipe.html">Swipe through it, one card at a time &rarr;</a>
+<a class="swipe-banner" data-catalog-view href="swipe.html">Swipe through it, one card at a time &rarr;</a>
 <h3 class="research-heading catalog-heading">Data, Research, <span class="minor-word">and</span> Software</h3>
+{{filters}}
 <div id="research">
 {{catalog}}
 </div>
   </main>
 </div>
+<script src="/research/output-filter.js"></script>
 <script>
 (function () {
   function openHash() {
     if (!location.hash || location.hash.length < 2) return;
     var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (!el) return;
+    if (!el || el.closest("[hidden]")) return;
     var node = el;
     while (node && node.id !== "research") {
       if (node.tagName === "DETAILS") node.open = true;

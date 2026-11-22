@@ -606,6 +606,26 @@ def render_entry_pages(catalog, template):
     return pages
 
 
+def output_filter(catalog):
+    labels = {
+        "paper": "Papers",
+        "software": "Software",
+        "analysis": "Analyses",
+        "dataset": "Datasets",
+        "blog": "Blog posts",
+    }
+    kinds = {entry["kind"] for entry in catalog["entries"]}
+    links = ['<a href="?" data-type="">All</a>']
+    for kind, label in labels.items():
+        if kind in kinds:
+            links.append(f'<a href="?type={kind}" data-type="{kind}">{label}</a>')
+    return (
+        '<nav class="output-filter" aria-label="Output type" hidden>'
+        + " ".join(links)
+        + "</nav>"
+    )
+
+
 def render(catalog, template):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     seen_sections = set()
@@ -636,7 +656,7 @@ def render(catalog, template):
             css = f' class="{entry["class"]}"' if "class" in entry else ""
             parts.extend(
                 [
-                    f"<details{entry_id}{css}>",
+                    f'<details{entry_id}{css} data-kind="{entry["kind"]}">',
                     f"<summary>{entry_summary(entry, entries)}</summary>",
                     f'<div class="abstract">{rich_text(entry["description"], entry)}'
                     "</div>",
@@ -646,7 +666,10 @@ def render(catalog, template):
         parts.append("</details>")
         return "\n".join(parts)
 
-    values = {"catalog": "\n".join(map(section, catalog["sections"]))}
+    values = {
+        "catalog": "\n".join(map(section, catalog["sections"])),
+        "filters": output_filter(catalog),
+    }
     if "{{schema}}" in template:
         values["schema"] = render_schema(catalog)
     return fill(template, **values)
@@ -685,7 +708,7 @@ def render_swipe(catalog, template):
             where += f' <span class="sub">› {path}</span>'
         cards.append(
             f'<article class="card" id="card-{number}" data-section="{top["id"]}"'
-            f' style="--hue: {hues[top["id"]]}">'
+            f' data-kind="{entry["kind"]}" style="--hue: {hues[top["id"]]}">'
             '<div class="card-inner">'
             f'<p class="where"><span class="kind">{entry["kind"]}</span> {where}</p>'
             f'<div class="summary">{entry_summary(entry, entries)}</div>'
@@ -699,7 +722,11 @@ def render_swipe(catalog, template):
         for section_id, title, number in chips
     )
     return fill(
-        template, chips=chip_links, cards="\n".join(cards), total=str(len(cards))
+        template,
+        chips=chip_links,
+        cards="\n".join(cards),
+        total=str(len(cards)),
+        filters=output_filter(catalog),
     )
 
 
