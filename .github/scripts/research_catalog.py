@@ -70,6 +70,8 @@ def validate_catalog(catalog, root=ROOT):
     if displayed != entry_ids:
         raise ValueError("Every entry must appear in a section")
     for entry in catalog["entries"]:
+        if entry.get("site_author_position", 1) > 1 + len(entry.get("coauthors", [])):
+            raise ValueError("Author position exceeds the number of authors")
         for name in entry.get("coauthors", []):
             if not name.strip() or name != name.strip() or name == "Gaurav Sood":
                 raise ValueError("Coauthors must be trimmed collaborator names")
@@ -322,7 +324,9 @@ def parse_publication(entry):
 
 
 def entry_authors(entry):
-    return ["Gaurav Sood"] + list(entry.get("coauthors", []))
+    authors = list(entry.get("coauthors", []))
+    authors.insert(entry.get("site_author_position", 1) - 1, "Gaurav Sood")
+    return authors
 
 
 def extract_doi(entry):
@@ -422,9 +426,12 @@ def render_scholar_meta(entry):
 def entry_schema_object(entry):
     resources = {r["id"]: r for r in entry["resources"]}
     primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
-    authors = [{"@type": "Person", "name": "Gaurav Sood", "url": SITE_URL}] + [
-        {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
-    ]
+    authors = []
+    for name in entry_authors(entry):
+        author = {"@type": "Person", "name": name}
+        if name == "Gaurav Sood":
+            author["url"] = SITE_URL
+        authors.append(author)
     page_url = entry_page_url(entry)
     work = {
         "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),

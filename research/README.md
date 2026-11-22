@@ -42,7 +42,8 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   Keep IDs stable when renaming work. `related_entries` can reference other entries
   without copying their records; the generator adds links to those entries.
   Optional `coauthors` is an ordered list of collaborators, excluding Gaurav Sood.
-  Omit it for solo work. The generator places credits directly below the title,
+  Use `site_author_position` when Gaurav appears after a coauthor in the byline
+  (for example, `3` for third author). Omit `coauthors` for solo work. The generator places credits directly below the title,
   using “With Alice Smith.”, “With Alice Smith and Bob Jones.”, or
   “With Alice Smith, Bob Jones, and Carol Lee.” Preserve the existing name order.
   Optional `publication` is a rich-text array containing the citation, including

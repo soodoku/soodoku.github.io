@@ -3165,23 +3165,15 @@
     },
     {
       "id": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
-      "kind": "software",
-      "title": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
+      "kind": "paper",
+      "title": "Predicting Race and Ethnicity From the Sequence of Characters in a Name",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
-          "kind": "repository",
-          "role": "code",
-          "url": "https://github.com/appeler/ethnicolr_v2",
-          "new_tab": true
-        },
-        {
-          "id": "link-2",
           "kind": "webpage",
-          "role": "related",
+          "role": "manuscript",
           "url": "https://arxiv.org/abs/1805.02109",
-          "label": "arXiv.org",
           "new_tab": true
         },
         {
@@ -3189,7 +3181,7 @@
           "kind": "repository",
           "role": "related",
           "url": "https://github.com/appeler/ethnicolr",
-          "label": "Python Package",
+          "label": "ethnicolr Python package",
           "new_tab": true,
           "software_type": "package"
         },
@@ -3218,21 +3210,13 @@
           "tag": "br"
         },
         {
-          "resource": "link-2"
+          "resource": "link-3"
         }
       ],
       "description": [
-        "This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person's identity."
+        "The authors compare models that use the letters in a name to estimate recorded race and ethnicity. Their best model classifies 85% of held-out cases correctly using full names. With surnames alone, the best model classifies 81% correctly."
       ],
       "supporting": {
-        "related": [
-          [
-            {
-              "resource": "link-3"
-            },
-            " for implementing the method."
-          ]
-        ],
         "press": [
           [
             {
@@ -3247,16 +3231,21 @@
         ]
       },
       "description_source": {
-        "url": "https://github.com/appeler/ethnicolr_v2#readme",
-        "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
+        "url": "https://arxiv.org/abs/1805.02109",
+        "kind": "manuscript",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       },
       "coauthors": [
         "Rajashekar Chintalapati",
         "Suriyan Laohaprapanon"
       ],
-      "software_type": "script"
+      "first_published": "2018-05-05",
+      "publication": [
+        "arXiv:1805.02109, first posted in 2018 and revised in 2023."
+      ],
+      "publication_url": "https://doi.org/10.48550/arXiv.1805.02109",
+      "site_author_position": 3
     },
     {
       "id": "sound-names-classify-names-based-on-sequence-of-sounds",

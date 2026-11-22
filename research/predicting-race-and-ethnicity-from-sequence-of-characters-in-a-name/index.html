@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Predicting Race and Ethnicity From Sequence of Characters in a Name | Gaurav Sood</title>
+	<title>Predicting Race and Ethnicity From the Sequence of Characters in a Name | Gaurav Sood</title>
 
 	<meta charset="utf-8" />
-	<meta name="description" content="This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person&#x27;s identity." />
+	<meta name="description" content="The authors compare models that use the letters in a name to estimate recorded race and ethnicity. Their best model classifies 85% of held-out cases correctly using full names. With surnames alone, the best model classifies 81% correctly." />
 	<link rel="canonical" href="https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/" />
 	<meta name="distribution" content="global" />
 	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
@@ -21,24 +21,22 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="citation_title" content="Predicting Race and Ethnicity From Sequence of Characters in a Name" />
-	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_title" content="Predicting Race and Ethnicity From the Sequence of Characters in a Name" />
 	<meta name="citation_author" content="Rajashekar Chintalapati" />
 	<meta name="citation_author" content="Suriyan Laohaprapanon" />
+	<meta name="citation_author" content="Gaurav Sood" />
+	<meta name="citation_publication_date" content="2023" />
+	<meta name="citation_doi" content="10.48550/arXiv.1805.02109" />
+	<meta name="citation_public_url" content="https://doi.org/10.48550/arXiv.1805.02109" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareSourceCode",
+  "@type": "ScholarlyArticle",
   "@id": "https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/",
-  "name": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
-  "headline": "Predicting Race and Ethnicity From Sequence of Characters in a Name",
+  "name": "Predicting Race and Ethnicity From the Sequence of Characters in a Name",
+  "headline": "Predicting Race and Ethnicity From the Sequence of Characters in a Name",
   "url": "https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/",
   "author": [
-    {
-      "@type": "Person",
-      "name": "Gaurav Sood",
-      "url": "https://gsood.com/"
-    },
     {
       "@type": "Person",
       "name": "Rajashekar Chintalapati"
@@ -46,11 +44,18 @@
     {
       "@type": "Person",
       "name": "Suriyan Laohaprapanon"
+    },
+    {
+      "@type": "Person",
+      "name": "Gaurav Sood",
+      "url": "https://gsood.com/"
     }
   ],
-  "description": "This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person's identity.",
-  "sameAs": "https://github.com/appeler/ethnicolr_v2",
-  "codeRepository": "https://github.com/appeler/ethnicolr_v2"
+  "description": "The authors compare models that use the letters in a name to estimate recorded race and ethnicity. Their best model classifies 85% of held-out cases correctly using full names. With surnames alone, the best model classifies 81% correctly.",
+  "sameAs": [
+    "https://arxiv.org/abs/1805.02109",
+    "https://doi.org/10.48550/arXiv.1805.02109"
+  ]
 }
 </script>
 <link rel="stylesheet" href="/research/headings.css">
@@ -75,15 +80,17 @@
   <main class="content">
     <article id="research" class="entry-page">
       <p class="entry-breadcrumb"><a href="/research/#names">&larr; <span class="catalog-heading">Names <span class="minor-word">and</span> Name-Based Inference</span></a></p>
-      <div class="entry-meta"><span class="entry-icon" role="img" aria-label="Scripts and notebooks" title="Scripts and notebooks">📜</span><a href="https://github.com/appeler/ethnicolr_v2" target="_blank" class="entry-title">Predicting Race and Ethnicity From Sequence of Characters in a Name</a><br>With Rajashekar Chintalapati and Suriyan Laohaprapanon.<br><a href="https://arxiv.org/abs/1805.02109" target="_blank">arXiv.org</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/appeler/ethnicolr" target="_blank">Python Package</a> for implementing the method.</span></span></span><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target="_blank">InfoQ</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.youtube.com/watch?v=fuHAPENWVIU" target="_blank">AnacondaCON presentation (Video)</a></span></span></span></div>
-      <div class="abstract">This repository compares models that estimate race and ethnicity labels from name patterns, using voter-registration data and external validation datasets. It includes preprocessing, character-based and neural models, and evaluation notebooks; these are statistical estimates from source labels rather than observations of a person&#x27;s identity.</div>
+      <div class="entry-meta"><a href="https://arxiv.org/abs/1805.02109" target="_blank" class="entry-title">Predicting Race and Ethnicity From the Sequence of Characters in a Name</a><span hidden data-first-published="2018-05-05" role="img" aria-label="First published 2018-05-05" title="First published 2018-05-05"> 🌱</span><br>With Rajashekar Chintalapati and Suriyan Laohaprapanon.<br><a href="https://doi.org/10.48550/arXiv.1805.02109" target="_blank">arXiv:1805.02109, first posted in 2018 and revised in 2023.</a><br><span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/appeler/ethnicolr" target="_blank">ethnicolr Python package</a><span class="supporting-row"><span class="supporting-label">Press:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="https://www.infoq.com/news/2019/04/gaurav-sood-predict-race" target="_blank">InfoQ</a></span>; <span class="supporting-item" role="listitem"><a href="https://www.youtube.com/watch?v=fuHAPENWVIU" target="_blank">AnacondaCON presentation (Video)</a></span></span></span></div>
+      <div class="abstract">The authors compare models that use the letters in a name to estimate recorded race and ethnicity. Their best model classifies 85% of held-out cases correctly using full names. With surnames alone, the best model classifies 81% correctly.</div>
       <section class="citation-section">
-        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood, Rajashekar Chintalapati, and Suriyan Laohaprapanon. &quot;Predicting Race and Ethnicity From Sequence of Characters in a Name.&quot; https://gsood.com/research/predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/</p>
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Rajashekar Chintalapati, Suriyan Laohaprapanon, and Gaurav Sood (2023). &quot;Predicting Race and Ethnicity From the Sequence of Characters in a Name.&quot; arXiv:1805.02109, first posted in 2018 and revised in 2023. https://doi.org/10.48550/arXiv.1805.02109</p>
         <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
-        <pre class="bibtex-block"><code>@software{soodpredicting,
-  author = {Gaurav Sood and Rajashekar Chintalapati and Suriyan Laohaprapanon},
-  title = {{Predicting Race and Ethnicity From Sequence of Characters in a Name}},
-  url = {https://github.com/appeler/ethnicolr_v2}
+        <pre class="bibtex-block"><code>@misc{sood2023predicting,
+  author = {Rajashekar Chintalapati and Suriyan Laohaprapanon and Gaurav Sood},
+  title = {{Predicting Race and Ethnicity From the Sequence of Characters in a Name}},
+  year = {2023},
+  doi = {10.48550/arXiv.1805.02109},
+  url = {https://doi.org/10.48550/arXiv.1805.02109}
 }</code></pre>
       </section>
     </article>

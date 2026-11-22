@@ -337,6 +337,11 @@
           "type": "string",
           "format": "date",
           "description": "Date the work first became public, in YYYY-MM-DD format."
+        },
+        "site_author_position": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Gaurav Sood’s one-based position in the paper’s byline. Defaults to first."
         }
       },
       "required": [
