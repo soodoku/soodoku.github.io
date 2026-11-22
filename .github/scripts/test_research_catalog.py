@@ -25,8 +25,8 @@ from research_catalog import (
     validate_catalog,
 )
 
-LIST = "{{filters}}{{catalog}}"
-SWIPE = "{{filters}}{{chips}}|{{cards}}|{{total}}"
+LIST = "{{catalog}}"
+SWIPE = "{{chips}}|{{cards}}|{{total}}"
 
 
 class CatalogTests(unittest.TestCase):
@@ -57,17 +57,12 @@ class CatalogTests(unittest.TestCase):
         )
         self.assertTrue(generated.endswith(f"|{len(catalog['entries'])}"))
 
-    def test_output_filters_match_the_entry_kinds_in_both_views(self):
-        kinds = {entry["kind"] for entry in self.catalog["entries"]}
+    def test_both_views_expose_catalog_kinds_on_entries(self):
         catalog_kinds = {
             entry["id"]: entry["kind"] for entry in self.catalog["entries"]
         }
         page = render(self.catalog, LIST)
         cards = render_swipe(self.catalog, SWIPE)
-        for view in (page, cards):
-            self.assertEqual(
-                set(re.findall(r'data-type="([^"]*)"', view)), kinds | {""}
-            )
         self.assertEqual(
             dict(re.findall(r'<details id="([^"]+)"[^>]* data-kind="([^"]+)"', page)),
             catalog_kinds,

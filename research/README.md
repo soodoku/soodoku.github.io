@@ -15,7 +15,8 @@ edits that leave any generated file out of date.
 The page shell lives in `page.template.html` (and `entry.template.html` for
 dedicated entry pages); shared styling stays in `/style.css`.
 
-The index and swipe feed can be filtered with `?type=paper`, `?type=software`,
+The index and swipe feed open by subject. To share a view filtered by output
+type, append `?type=paper`, `?type=software`,
 `?type=analysis`, or `?type=dataset`. Both views use the entry's `kind` and keep
 its subject placement. Without JavaScript, both show the complete catalog.
 

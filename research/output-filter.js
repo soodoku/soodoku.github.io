@@ -1,15 +1,10 @@
 (() => {
-  const nav = document.querySelector(".output-filter");
-  const requested = new URLSearchParams(location.search).get("type") || "";
-  const links = [...nav.querySelectorAll("a")];
-  const active = links.find(link => link.dataset.type === requested) || links[0];
-  active.setAttribute("aria-current", "page");
-  nav.hidden = false;
-
-  const type = active.dataset.type;
+  const type = new URLSearchParams(location.search).get("type");
   if (!type) return;
+  const entries = [...document.querySelectorAll("[data-kind]")];
+  if (!entries.some(entry => entry.dataset.kind === type)) return;
 
-  for (const entry of document.querySelectorAll("[data-kind]")) {
+  for (const entry of entries) {
     entry.hidden = entry.dataset.kind !== type;
   }
   for (const group of document.querySelectorAll("#research .category-toggle")) {

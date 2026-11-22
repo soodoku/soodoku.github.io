@@ -606,26 +606,6 @@ def render_entry_pages(catalog, template):
     return pages
 
 
-def output_filter(catalog):
-    labels = {
-        "paper": "Papers",
-        "software": "Software",
-        "analysis": "Analyses",
-        "dataset": "Datasets",
-        "blog": "Blog posts",
-    }
-    kinds = {entry["kind"] for entry in catalog["entries"]}
-    links = ['<a href="?" data-type="">All</a>']
-    for kind, label in labels.items():
-        if kind in kinds:
-            links.append(f'<a href="?type={kind}" data-type="{kind}">{label}</a>')
-    return (
-        '<nav class="output-filter" aria-label="Output type" hidden>'
-        + " ".join(links)
-        + "</nav>"
-    )
-
-
 def render(catalog, template):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     seen_sections = set()
@@ -666,10 +646,7 @@ def render(catalog, template):
         parts.append("</details>")
         return "\n".join(parts)
 
-    values = {
-        "catalog": "\n".join(map(section, catalog["sections"])),
-        "filters": output_filter(catalog),
-    }
+    values = {"catalog": "\n".join(map(section, catalog["sections"]))}
     if "{{schema}}" in template:
         values["schema"] = render_schema(catalog)
     return fill(template, **values)
@@ -726,7 +703,6 @@ def render_swipe(catalog, template):
         chips=chip_links,
         cards="\n".join(cards),
         total=str(len(cards)),
-        filters=output_filter(catalog),
     )
 
 
