@@ -2014,7 +2014,7 @@
             {
               "tag": "p",
               "children": [
-                "The 2019 paper reported 2.10 nonspam breaches per person. Its calculation kept the 858 people with no records but dropped the 553 with only spam-list records. Restoring their zeros lowers the mean to 1.866. Removing 26 duplicate nonspam records brings it to 1.861. The reported share with any exposure, 82.84%, is the same in both versions."
+                "Applying the 2019 analysis to the archived data gives 2.10 nonspam records per person. The calculation kept the 858 people with no records but dropped the 553 with only spam-list records. Restoring their zeros lowers the mean to 1.866. Removing 26 duplicate nonspam records brings it to 1.861. The reported share with any exposure, 82.84%, is the same in both versions."
               ]
             },
             {
