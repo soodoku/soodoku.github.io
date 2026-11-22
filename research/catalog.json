@@ -272,9 +272,6 @@
               "entry": "get-notified-when-cited-article-is-retracted"
             },
             {
-              "entry": "highlight-citations-to-retracted-articles"
-            },
-            {
               "entry": "autosum-summarize-publications-automatically-and-discover-miscitations"
             }
           ]
@@ -2742,6 +2739,14 @@
           "role": "documentation",
           "url": "https://github.com/recite/retract#github-action",
           "label": "Use GitHub Action"
+        },
+        {
+          "id": "archived-app",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/recite/re-cite.org",
+          "label": "Highlight Citations to Retracted Articles (archived web app)",
+          "software_type": "app"
         }
       ],
       "summary": [
@@ -2764,37 +2769,16 @@
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
       },
-      "software_type": "action"
-    },
-    {
-      "id": "highlight-citations-to-retracted-articles",
-      "kind": "software",
-      "title": "Highlight Citations to Retracted Articles",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "webpage",
-          "role": "related",
-          "url": "http://github.com/recite/re-cite.org",
-          "new_tab": true
-        }
-      ],
-      "summary": [
-        {
-          "resource": "primary"
-        }
-      ],
-      "description": [
-        "An archived web application for finding citations to retracted articles in pasted APA references. It compares parsed citations with a database of retractions and highlights possible matches for review."
-      ],
-      "description_source": {
-        "url": "http://github.com/recite/re-cite.org#readme",
-        "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
-        "text_type": "summary"
-      },
-      "software_type": "app"
+      "software_type": "action",
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "archived-app"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "downloads-are-cheap-validated-use-as-a-measure-of-research-software",
