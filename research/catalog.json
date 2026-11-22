@@ -574,6 +574,9 @@
           "entry": "missing-women-on-global-streets"
         },
         {
+          "entry": "google-street-view-98-cities"
+        },
+        {
           "entry": "missing-women-on-indian-streets"
         },
         {
@@ -5676,6 +5679,55 @@
       ]
     },
     {
+      "id": "google-street-view-98-cities",
+      "kind": "paper",
+      "title": "Measuring Women’s and Men’s Presence on Urban Streets: Evidence from Google Street View in 98 Cities",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "papers/street_presence_98_cities.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "geosensing/mw_streetview",
+            "ref": "main",
+            "path": "paper/street_presence.pdf"
+          }
+        },
+        {
+          "id": "replication",
+          "kind": "repository",
+          "role": "replication",
+          "url": "https://github.com/geosensing/mw_streetview",
+          "label": "Replication Materials",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "tag": "span",
+          "class": "entry-icon",
+          "children": [
+            "🗃"
+          ]
+        },
+        {
+          "resource": "replication"
+        }
+      ],
+      "description": [
+        "The study sampled 98,000 street and walking-route locations in 98 cities and obtained 9,997 Google Street View images from 82 cities. Among sightings the model could classify, women accounted for 28.8% of pedestrians and 5.4% of two-wheeler riders. The model could not classify 66% of all sightings."
+      ]
+    },
+    {
       "id": "missing-women-on-indian-streets",
       "kind": "paper",
       "title": "Missing women on Indian streets",
@@ -5761,7 +5813,7 @@
     {
       "id": "delhi-street-food-videos",
       "kind": "project",
-      "title": "Who Eats in Delhi Street-Food Videos?",
+      "title": "Women’s Share of Diners at Delhi Food Stalls and Restaurants: Evidence from YouTube Videos",
       "primary_resource": "primary",
       "resources": [
         {
