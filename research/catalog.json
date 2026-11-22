@@ -2599,24 +2599,11 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/gojiplus/adjacent/"
-        },
-        {
-          "id": "setup",
-          "kind": "webpage",
-          "role": "documentation",
-          "url": "https://github.com/gojiplus/adjacent#setup",
-          "label": "Use GitHub Action"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "setup"
         }
       ],
       "description": [
@@ -2641,24 +2628,11 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/gojiplus/advertiser"
-        },
-        {
-          "id": "setup",
-          "kind": "webpage",
-          "role": "documentation",
-          "url": "https://github.com/gojiplus/advertiser#use-in-another-repository",
-          "label": "Use GitHub Action"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "setup"
         }
       ],
       "description": [
@@ -2966,13 +2940,6 @@
           "new_tab": true
         },
         {
-          "id": "setup",
-          "kind": "webpage",
-          "role": "documentation",
-          "url": "https://github.com/recite/retract#github-action",
-          "label": "Use GitHub Action"
-        },
-        {
           "id": "archived-app",
           "kind": "repository",
           "role": "related",
@@ -2984,12 +2951,6 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "setup"
         }
       ],
       "description": [
