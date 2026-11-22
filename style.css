@@ -696,3 +696,28 @@ details details {
     margin-right: 0.5rem;
   }
 }
+
+
+.study-layout .compact-label { display: none; }
+
+@media (max-width: 768px) {
+  .study-layout { display: block; }
+  .study-layout .sidebar {
+    display: flex;
+    width: auto;
+    max-width: none;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .study-layout .site-title, .study-layout .sidebar ul { margin: 0; }
+  .study-layout .sidebar ul { display: flex; align-items: baseline; gap: .85rem; }
+  .study-layout .sidebar li { margin: 0; }
+  .study-layout .wide-label { display: none; }
+  .study-layout .compact-label { display: inline; }
+  .study-layout .content { padding: 1.25rem 1rem 3rem; }
+}

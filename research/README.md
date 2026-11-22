@@ -26,6 +26,11 @@ CSS, and the small script for topic chips and the card counter live in
 `swipe.template.html`; the feed itself scrolls and snaps without JavaScript. The
 main page links to the feed on narrow screens. Section navigation works without JavaScript.
 
+The Missing Women overview is generated from `missing-women/program.template.html`.
+Its catalog section sets `program_page` to true. Each study’s `study_group`
+sets its heading in the list. Titles and links come from the catalog. The
+section’s study pages link back to the overview. Both layouts use `study-nav.html`.
+
 ## Entries, resources, and sections
 
 The catalog uses JSON Schema, plus validation for references and sync destinations.

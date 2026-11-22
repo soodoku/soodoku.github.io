@@ -404,6 +404,10 @@
                   "entry": {
                     "type": "string",
                     "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  "study_group": {
+                    "type": "string",
+                    "minLength": 1
                   }
                 },
                 "required": [
@@ -416,6 +420,9 @@
               }
             ]
           }
+        },
+        "program_page": {
+          "type": "boolean"
         }
       },
       "required": [

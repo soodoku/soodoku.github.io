@@ -31,22 +31,11 @@
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
 
-<div class="container">
-  <nav class="sidebar research-sidebar" aria-label="Main navigation">
-  	<div class="site-title">
-  		<a href="/">
-  			<span class="first">g</span><span class="last">sood</span>
-  		</a>
-		</div>
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/research/">Data, Research, and Software</a></li>
-      <li><a href="https://gojiberries.io">Blog</a></li>
-    </ul>
-  </nav>
+<div class="container study-layout">
+{{study_nav}}
   <main class="content">
     <article id="research" class="entry-page">
-      <p class="entry-breadcrumb"><a href="/research/#{{section_id}}">&larr; {{breadcrumb}}</a></p>
+      <p class="entry-breadcrumb"><a href="{{section_url}}">&larr; {{breadcrumb}}</a></p>
 {{entry_body}}
     </article>
   </main>

@@ -9,16 +9,15 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/style.css">
   <style>
-    .program { max-width: 48rem; margin: 0 auto; padding: 1.5rem clamp(1.2rem, 4vw, 3rem) 4rem; }
-    .masthead { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #c9ced1; padding-bottom: 1rem; }
-    .masthead .site-title { margin: 0; }
-    .masthead > a { font-size: var(--reading-size); }
-    main { font-size: var(--reading-size); }
-    main h1 { margin: 2.5rem 0 1rem; font-size: clamp(2.6rem, 7vw, 4rem); letter-spacing: -.045em; }
-    main h2 { color: #17252d; margin: 2.3rem 0 .6rem; font-size: clamp(1.35rem, 4vw, 1.65rem); line-height: 1.25; }
-    main p { margin: .7rem 0; max-width: 70ch; }
-    main .lead { font-size: 1.22rem; line-height: 1.5; }
-    main a { font: inherit; color: var(--site-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .16em; }
+    .program-page { max-width: 70ch; font-size: var(--reading-size); }
+    .program-page h1 { margin: 0 0 .85rem; font-size: 1.65rem; font-weight: 500; }
+    .program-page h2 { margin: 1.65rem 0 .5rem; font-size: 1.2rem; font-weight: 600; }
+    .program-page h3 { margin: .8rem 0 .25rem; font: 500 1rem/1.5 var(--body-font); }
+    .program-page p { margin: .7rem 0; }
+    .program-page a { font: inherit; color: var(--site-accent); text-decoration: underline; text-underline-offset: .16em; }
+    .program-page ul { list-style: disc; margin: .2rem 0 1rem; padding-left: 1.25rem; }
+    .program-page li { padding-left: .1rem; }
+    .program-page li::before { content: none; }
     figure { margin: 1.25rem 0; padding: 1.15rem clamp(.8rem, 3vw, 1.5rem); background: #f1f5f6; }
     table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
     caption { text-align: left; font-weight: 600; margin: 0 0 .7rem; }
@@ -29,14 +28,21 @@
   </style>
 </head>
 <body>
-<div class="program">
-  <nav class="masthead" aria-label="Main navigation">
-    <div class="site-title"><a href="/" aria-label="Gaurav Sood, home"><span class="first">g</span><span class="last">sood</span></a></div>
-    <a href="/research/">All research</a>
+<div class="container study-layout">
+  <nav class="sidebar research-sidebar" aria-label="Main navigation">
+    <div class="site-title">
+      <a href="/" aria-label="Gaurav Sood, home"><span class="first">g</span><span class="last">sood</span></a>
+    </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/research/"><span class="wide-label">Data, Research, and Software</span><span class="compact-label">Research</span></a></li>
+      <li><a href="https://gojiberries.io">Blog</a></li>
+    </ul>
   </nav>
-  <main>
+  <main class="content">
+    <article class="program-page">
     <h1>Missing Women</h1>
-    <p class="lead">In Delhi, women made up about one in five pedestrians in our street photographs. Why so few? We counted people on the street, then used time-use surveys to see how often women and men left home.</p>
+    <p>In Delhi, women made up about one in five pedestrians in our street photographs. Why so few? We counted people on the street, then used time-use surveys to see how often women and men left home.</p>
     <p>The name comes from <a href="https://www.nybooks.com/articles/1990/12/20/more-than-100-million-women-are-missing/">Amartya Sen’s 1990 essay</a>. Sen asked how many more women would have been alive had they received the same care as men. My work starts with a related question about public life. Given how many women live in a city, how many do we see on its streets?</p>
 
     <h2>Who is out on the street?</h2>
@@ -65,6 +71,25 @@
     <h2>Who appears in the record?</h2>
     <p>A different way to count is to ask whose names people write down. In India, <a href="../which-women-are-missing-adult-sex-ratio-by-last-name/">electoral rolls</a> let us compare the numbers of registered women and men who share a surname. <a href="../missing-daughters-of-indian-politicians/">Members of Parliament’s biographies</a> let us count the sons and daughters they report. In each case, the people omitted from a record matter to its interpretation.</p>
     <p>Sometimes the choice of whom to name is itself the question. Walter Guillioli and I searched <a href="../son-bias-in-the-us-evidence-from-business-names/">US business registries</a> for the words “son” or “sons” and “daughter” or “daughters.” Across the states we searched, the median ratio was twelve to one. <a href="../epic-children-sex-ratio-of-children-of-key-characters-in-epics/">Epic Children</a> asks whom a family story preserves by counting the sons and daughters attributed to figures in epic and mythological traditions.</p>
+    <section aria-labelledby="studies">
+      <h2 id="studies">Studies</h2>
+      <h3>Streets and public life</h3>
+      <ul>
+        <li><a href="../missing-women-on-global-streets/">Women and Men on Urban Streets: Evidence from Crowdsourced Photographs in 101 Cities</a></li>
+        <li><a href="../google-street-view-98-cities/">Measuring Women’s and Men’s Presence on Urban Streets: Evidence from Google Street View in 98 Cities</a></li>
+        <li><a href="../missing-women-on-indian-streets/">Missing women on Indian streets</a></li>
+        <li><a href="../delhi-street-food-videos/">Who Eats in Delhi Street-Food Videos?</a></li>
+        <li><a href="../missing-women-on-the-streets/">Women and Men on Delhi’s Streets: Evidence from Field Photographs, 2016–2017</a></li>
+      </ul>
+      <h3>Names and records</h3>
+      <ul>
+        <li><a href="../son-bias-in-the-us-evidence-from-business-names/">Son Bias in the US: Evidence from Business Names</a></li>
+        <li><a href="../which-women-are-missing-adult-sex-ratio-by-last-name/">Which Women Are Missing? Adult Sex Ratio By Last Name</a></li>
+        <li><a href="../epic-children-sex-ratio-of-children-of-key-characters-in-epics/">Epic Children: Sex Ratio of Children of Key Characters in Epics</a></li>
+        <li><a href="../missing-daughters-of-indian-politicians/">Missing Daughters of Indian Politicians</a></li>
+      </ul>
+    </section>
+    </article>
   </main>
 </div>
 </body>

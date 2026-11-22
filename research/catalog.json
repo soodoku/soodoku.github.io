@@ -577,33 +577,43 @@
       "title": "Missing Women",
       "children": [
         {
-          "entry": "missing-women-on-global-streets"
+          "entry": "missing-women-on-global-streets",
+          "study_group": "Streets and public life"
         },
         {
-          "entry": "google-street-view-98-cities"
+          "entry": "google-street-view-98-cities",
+          "study_group": "Streets and public life"
         },
         {
-          "entry": "missing-women-on-indian-streets"
+          "entry": "missing-women-on-indian-streets",
+          "study_group": "Streets and public life"
         },
         {
-          "entry": "delhi-street-food-videos"
+          "entry": "delhi-street-food-videos",
+          "study_group": "Streets and public life"
         },
         {
-          "entry": "son-bias-in-the-us-evidence-from-business-names"
+          "entry": "son-bias-in-the-us-evidence-from-business-names",
+          "study_group": "Names and records"
         },
         {
-          "entry": "which-women-are-missing-adult-sex-ratio-by-last-name"
+          "entry": "which-women-are-missing-adult-sex-ratio-by-last-name",
+          "study_group": "Names and records"
         },
         {
-          "entry": "missing-women-on-the-streets"
+          "entry": "missing-women-on-the-streets",
+          "study_group": "Streets and public life"
         },
         {
-          "entry": "epic-children-sex-ratio-of-children-of-key-characters-in-epics"
+          "entry": "epic-children-sex-ratio-of-children-of-key-characters-in-epics",
+          "study_group": "Names and records"
         },
         {
-          "entry": "missing-daughters-of-indian-politicians"
+          "entry": "missing-daughters-of-indian-politicians",
+          "study_group": "Names and records"
         }
-      ]
+      ],
+      "program_page": true
     },
     {
       "id": "cricket",

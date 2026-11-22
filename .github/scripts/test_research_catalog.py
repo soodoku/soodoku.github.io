@@ -1,6 +1,7 @@
 """Behavioral checks for catalog validation and page generation."""
 
 import copy
+import html
 import json
 import re
 import sys
@@ -126,9 +127,16 @@ class CatalogTests(unittest.TestCase):
                 "swipe.template.html",
                 "swipe.html",
                 "entry.template.html",
+                "study-nav.html",
             ):
                 (root / "research" / name).write_text(
                     (ROOT / "research" / name).read_text()
+                )
+            program = Path("research/missing-women")
+            (root / program).mkdir()
+            for name in ("index.html", "program.template.html"):
+                (root / program / name).write_bytes(
+                    (ROOT / program / name).read_bytes()
                 )
             for name in ("sitemap.xml", "llms.txt"):
                 (root / name).write_text((ROOT / name).read_text())
@@ -195,6 +203,27 @@ class CatalogTests(unittest.TestCase):
             first_page,
         )
         self.assertIn("Two field experiments.", first_page)
+
+    def test_program_study_titles_and_return_links(self):
+        section = next(
+            s for s in self.catalog["sections"] if s["id"] == "missing-women"
+        )
+        catalog_titles = {e["id"]: e["title"] for e in self.catalog["entries"]}
+        expected = {
+            child["entry"]: catalog_titles[child["entry"]]
+            for child in section["children"]
+        }
+        content = (ROOT / "research/missing-women/index.html").read_text()
+        study_list = content.split('<h2 id="studies">Studies</h2>', 1)[1]
+        links = re.findall(r'<li><a href="\.\./([^/]+)/">([^<]+)</a>', study_list)
+        self.assertCountEqual(
+            [(slug, html.unescape(title)) for slug, title in links], expected.items()
+        )
+        for slug in expected:
+            entry = (ROOT / "research" / slug / "index.html").read_text()
+            self.assertIn(
+                '<p class="entry-breadcrumb"><a href="/research/missing-women/">', entry
+            )
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):
         generated = render(self.catalog, LIST)

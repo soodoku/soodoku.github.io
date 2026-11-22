@@ -545,7 +545,33 @@ def catalog_heading(title):
     return '<span class="catalog-heading">' + " ".join(rendered) + "</span>"
 
 
+def render_program(section, catalog, template, study_nav):
+    entries = {entry["id"]: entry for entry in catalog["entries"]}
+    groups = {}
+
+    def collect(children):
+        for child in children:
+            if "entry" in child:
+                entry = entries[child["entry"]]
+                groups.setdefault(child.get("study_group", ""), {})[entry["id"]] = entry
+            else:
+                collect(child["children"])
+
+    collect(section["children"])
+    blocks = []
+    for group, studies in groups.items():
+        if group:
+            blocks.append(f"      <h3>{html.escape(group)}</h3>")
+        blocks.append("      <ul>")
+        for entry in studies.values():
+            title = html.escape(entry["title"])
+            blocks.append(f'        <li><a href="../{entry["id"]}/">{title}</a></li>')
+        blocks.append("      </ul>")
+    return fill(template, study_nav=study_nav, study_list="\n".join(blocks))
+
+
 def render_entry_pages(catalog, template):
+    study_nav = (ROOT / "research/study-nav.html").read_text().rstrip()
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     pages = {}
     for top, subsection, entry_id in placements(catalog):
@@ -599,7 +625,12 @@ def render_entry_pages(catalog, template):
             canonical_url=html.escape(canonical, quote=True),
             meta_tags=render_scholar_meta(entry),
             schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
-            section_id=html.escape(top["id"], quote=True),
+            study_nav=study_nav,
+            section_url=(
+                f'/research/{top["id"]}/'
+                if top.get("program_page")
+                else f'/research/#{top["id"]}'
+            ),
             breadcrumb=breadcrumb,
             entry_body=body,
         )
@@ -804,6 +835,18 @@ def main():
     entry_template_path = ROOT / "research/entry.template.html"
     if entry_template_path.is_file():
         outputs.update(render_entry_pages(catalog, entry_template_path.read_text()))
+    for section in catalog["sections"]:
+        if section.get("program_page"):
+            folder = f'research/{section["id"]}'
+            destination = f"{folder}/index.html"
+            if destination in outputs:
+                raise ValueError(f"Program and entry share a URL: {destination}")
+            outputs[destination] = render_program(
+                section,
+                catalog,
+                (ROOT / folder / "program.template.html").read_text(),
+                (ROOT / "research/study-nav.html").read_text().rstrip(),
+            )
     for output, generated in outputs.items():
         destination = ROOT / output
         if not args.check:
