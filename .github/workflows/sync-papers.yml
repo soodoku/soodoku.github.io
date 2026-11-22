@@ -10,9 +10,7 @@ on:
       - research/catalog.json
       - research/catalog.schema.json
       - research/page.template.html
-      - research/entry.template.html
       - research/index.html
-      - research/*/index.html
       - research/swipe.template.html
       - research/swipe.html
       - sitemap.xml
@@ -25,9 +23,7 @@ on:
       - research/catalog.json
       - research/catalog.schema.json
       - research/page.template.html
-      - research/entry.template.html
       - research/index.html
-      - research/*/index.html
       - research/swipe.template.html
       - research/swipe.html
       - sitemap.xml

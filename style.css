@@ -521,45 +521,6 @@ details details {
   display: none;
 }
 
-.entry-page-link {
-  margin-left: 0.4em;
-  color: #666;
-  font-size: 0.85em;
-  white-space: nowrap;
-}
-
-#research a.entry-page-link {
-  color: #666;
-  font-size: 0.85em;
-}
-
-#research a.entry-page-link:hover {
-  color: var(--site-accent);
-}
-
-.entry-page .entry-breadcrumb {
-  margin: 0 0 1.25rem;
-  font-size: 0.95rem;
-}
-
-#research.entry-page .entry-meta > a.entry-title,
-#research.entry-page .entry-meta > .entry-icon + a.entry-title {
-  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
-  font-weight: 500;
-  line-height: 1.35;
-}
-
-.entry-page .entry-meta {
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
-}
-
-.entry-page .abstract {
-  padding-left: 0;
-  margin-top: 1rem;
-  max-width: calc(100% - 100px);
-}
-
 /* =========================================
    8. Mobile Strategy (Responsive Design)
    ========================================= */

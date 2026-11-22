@@ -665,8 +665,7 @@
       ],
       "description": [
         "When classifier predictions route cases to specialized queues, a model update changes both accuracy and the work each team receives. Queue Shift chooses the batch assignment that maximizes candidate-model probability subject to budgets on work moved between queues, counted in cases, hours, or money, and on expected negative flips. At the movement and expected flips of any comparison rule, it has at least that rule's expected accuracy under the candidate's probabilities. Simulations show that holding queue totals fixed costs little when an update mostly reorders cases and a great deal when it moves volume between queues, and that learned queue prices nearly match exact assignment in accuracy but miss the movement budget in most batches."
-      ],
-      "slug": "queue-shift"
+      ]
     },
     {
       "id": "stable-cart-lower-bootstrap-prediction-variance-cart",
@@ -754,8 +753,7 @@
         "kind": "manuscript",
         "reviewed_on": "2026-10-12",
         "text_type": "summary"
-      },
-      "slug": "probability-calibration-calibre"
+      }
     },
     {
       "id": "fairlex-leximin-calibration",
@@ -1120,8 +1118,7 @@
           ]
         },
         " 2021."
-      ],
-      "slug": "mturk-data-quality-lemons"
+      ]
     },
     {
       "id": "optimal-data-collection-when-strata-and-strata-variances-are-known",
@@ -1358,8 +1355,7 @@
       ],
       "related_entries": [
         "unbiased-regression-with-costly-item-labels"
-      ],
-      "slug": "shared-prediction-error-regression"
+      ]
     },
     {
       "id": "unbiased-regression-with-costly-item-labels",
@@ -1504,8 +1500,7 @@
         "kind": "manuscript",
         "reviewed_on": "2026-10-17",
         "text_type": "summary"
-      },
-      "slug": "regression-calibration-ml-covariates"
+      }
     },
     {
       "id": "partial-credit-diagnosing-proxy-covariates-with-validation-swaps",
@@ -1567,8 +1562,7 @@
         "kind": "manuscript",
         "reviewed_on": "2026-10-17",
         "text_type": "summary"
-      },
-      "slug": "validation-swaps-proxy-covariates"
+      }
     },
     {
       "id": "smooth-operator-optimal-filtering-of-event-study-estimates",
@@ -2289,8 +2283,7 @@
             "Journal of Online Trust and Safety, 2026."
           ]
         }
-      ],
-      "slug": "github-stars-downloads"
+      ]
     },
     {
       "id": "rmcp-r-mcp-community-server",
@@ -2795,8 +2788,7 @@
       },
       "coauthors": [
         "Ken Cor"
-      ],
-      "slug": "methodological-criticism-citations"
+      ]
     },
     {
       "id": "propagation-of-error-approving-citations-to-problematic-research",
@@ -2853,8 +2845,7 @@
       },
       "coauthors": [
         "Ken Cor"
-      ],
-      "slug": "citations-to-retracted-research"
+      ]
     },
     {
       "id": "get-notified-when-cited-article-is-retracted",
@@ -3056,8 +3047,7 @@
             }
           ]
         ]
-      },
-      "slug": "downloads-are-cheap"
+      }
     },
     {
       "id": "user-auto-compute-citations-to-software-from-github",

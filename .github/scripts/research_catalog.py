@@ -12,7 +12,6 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[2]
 SITE_URL = "https://gsood.com/"
 RESEARCH_URL = "https://gsood.com/research/"
-RESERVED_SLUGS = {"papers", "press", "replication"}
 SCHEMA_TYPES = {
     "paper": "ScholarlyArticle",
     "software": "SoftwareSourceCode",
@@ -59,14 +58,7 @@ def validate_catalog(catalog, root=ROOT):
         section(value)
     if displayed != entry_ids:
         raise ValueError("Every entry must appear in a section")
-    slugs = set()
     for entry in catalog["entries"]:
-        if slug := entry.get("slug"):
-            if slug in RESERVED_SLUGS:
-                raise ValueError(f"Reserved entry slug: {slug}")
-            if slug in slugs:
-                raise ValueError(f"Duplicate entry slug: {slug}")
-            slugs.add(slug)
         for name in entry.get("coauthors", []):
             if not name.strip() or name != name.strip() or name == "Gaurav Sood":
                 raise ValueError("Coauthors must be trimmed collaborator names")
@@ -178,14 +170,11 @@ def credit(coauthors):
     return ", ".join(coauthors[:-1]) + ", and " + coauthors[-1]
 
 
-def entry_summary(entry, entries, url_prefix="", include_page_link=True):
+def entry_summary(entry, entries, url_prefix=""):
     """Title line, credits, citation, resources, and related/press rows."""
     metadata = ""
     if entry.get("status") == "draft":
         metadata += ' <span class="status">Draft</span>'
-    if include_page_link and (slug := entry.get("slug")):
-        href = html.escape(f"{url_prefix}{slug}/", quote=True)
-        metadata += f' <a href="{href}" class="entry-page-link">[page]</a>'
     if coauthors := entry.get("coauthors"):
         metadata += f"<br>With {html.escape(credit(coauthors))}."
     if publication := entry.get("publication"):
@@ -251,45 +240,26 @@ def absolute_url(url, base=RESEARCH_URL):
     return urljoin(base, url)
 
 
-def entry_page_url(entry):
-    if slug := entry.get("slug"):
-        return f"{RESEARCH_URL}{slug}/"
-    return f"{RESEARCH_URL}#{entry['id']}"
-
-
-def entry_schema_object(entry):
-    resources = {r["id"]: r for r in entry["resources"]}
-    primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
-    authors = [{"@type": "Person", "name": "Gaurav Sood", "url": SITE_URL}] + [
-        {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
-    ]
-    page_url = entry_page_url(entry)
-    work = {
-        "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),
-        "@id": page_url,
-        "name": entry["title"],
-        "headline": entry["title"],
-        "url": page_url if "slug" in entry else primary_url,
-        "author": authors,
-        "description": plain_text(entry["description"], entry),
-    }
-    if "slug" in entry and primary_url != page_url:
-        work["sameAs"] = primary_url
-    return work
-
-
 def render_schema(catalog):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     items = []
     for position, (_, _, entry_id) in enumerate(placements(catalog), 1):
         entry = entries[entry_id]
-        items.append(
-            {
-                "@type": "ListItem",
-                "position": position,
-                "item": entry_schema_object(entry),
-            }
-        )
+        resources = {r["id"]: r for r in entry["resources"]}
+        primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
+        authors = [{"@type": "Person", "name": "Gaurav Sood", "url": SITE_URL}] + [
+            {"@type": "Person", "name": name} for name in entry.get("coauthors", [])
+        ]
+        work = {
+            "@type": SCHEMA_TYPES.get(entry["kind"], "CreativeWork"),
+            "@id": f"{RESEARCH_URL}#{entry['id']}",
+            "name": entry["title"],
+            "headline": entry["title"],
+            "url": primary_url,
+            "author": authors,
+            "description": plain_text(entry["description"], entry),
+        }
+        items.append({"@type": "ListItem", "position": position, "item": work})
     data = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
@@ -309,41 +279,6 @@ def render_schema(catalog):
         },
     }
     return json.dumps(data, ensure_ascii=False, indent=2)
-
-
-def render_entry_pages(catalog, template):
-    entries = {entry["id"]: entry for entry in catalog["entries"]}
-    pages = {}
-    for top, subsection, entry_id in placements(catalog):
-        entry = entries[entry_id]
-        slug = entry.get("slug")
-        if not slug:
-            continue
-        breadcrumb = top["title"]
-        if subsection:
-            breadcrumb += f" › {subsection}"
-        canonical = entry_page_url(entry)
-        desc = plain_text(entry["description"], entry)
-        schema_obj = {"@context": "https://schema.org", **entry_schema_object(entry)}
-        summary_html = entry_summary(
-            entry, entries, url_prefix="/research/", include_page_link=False
-        )
-        abstract_html = rich_text(entry["description"], entry, url_prefix="/research/")
-        body = (
-            f'      <div class="entry-meta">{summary_html}</div>\n'
-            f'      <div class="abstract">{abstract_html}</div>'
-        )
-        pages[f"research/{slug}/index.html"] = fill(
-            template,
-            title=html.escape(entry["title"]),
-            meta_description=html.escape(desc, quote=True),
-            canonical_url=html.escape(canonical, quote=True),
-            schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
-            section_id=html.escape(top["id"], quote=True),
-            breadcrumb=html.escape(breadcrumb),
-            entry_body=body,
-        )
-    return pages
 
 
 def render(catalog, template):
@@ -445,11 +380,6 @@ def render_swipe(catalog, template):
 def render_sitemap(catalog, _template=None):
     urls = [SITE_URL, RESEARCH_URL]
     for entry in catalog["entries"]:
-        if "slug" in entry:
-            page_url = entry_page_url(entry)
-            if page_url not in urls:
-                urls.append(page_url)
-    for entry in catalog["entries"]:
         for resource in entry["resources"]:
             url = resource["url"]
             if not urlsplit(url).scheme:
@@ -497,7 +427,7 @@ def render_llms_txt(catalog, _template=None):
         entry = entries[entry_id]
         resources = {r["id"]: r for r in entry["resources"]}
         primary_url = absolute_url(resources[entry["primary_resource"]]["url"])
-        page_url = entry_page_url(entry)
+        page_url = f"{RESEARCH_URL}#{entry['id']}"
         desc = plain_text(entry["description"], entry)
         meta = []
         if entry.get("status") == "draft":
@@ -515,7 +445,7 @@ def render_llms_txt(catalog, _template=None):
         suffix = (" Links: " + ", ".join(extras) + ".") if extras else ""
         lines.append(
             f"- [{entry['title']}]({primary_url}) "
-            f"([page]({page_url})): "
+            f"([entry]({page_url})): "
             f"{prefix}{desc}{suffix}"
         )
     lines.append("")
@@ -535,17 +465,11 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     catalog = load_catalog()
-    outputs = {}
     for renderer, template, output in PAGES:
         template_text = (ROOT / template).read_text() if template else None
-        outputs[output] = renderer(catalog, template_text)
-    entry_template_path = ROOT / "research/entry.template.html"
-    if entry_template_path.is_file():
-        outputs.update(render_entry_pages(catalog, entry_template_path.read_text()))
-    for output, generated in outputs.items():
+        generated = renderer(catalog, template_text)
         destination = ROOT / output
         if not args.check:
-            destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(generated)
         elif not destination.is_file() or destination.read_text() != generated:
             parser.exit(

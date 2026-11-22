@@ -295,11 +295,6 @@
             "draft"
           ],
           "description": "Work in progress that will change; renders a Draft label after the title. Omit for finished work."
-        },
-        "slug": {
-          "type": "string",
-          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-          "description": "Optional URL slug for generating a dedicated HTML page at /research/<slug>/index.html."
         }
       },
       "required": [

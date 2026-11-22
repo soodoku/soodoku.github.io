@@ -2,16 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://gsood.com/</loc></url>
   <url><loc>https://gsood.com/research/</loc></url>
-  <url><loc>https://gsood.com/research/queue-shift/</loc></url>
-  <url><loc>https://gsood.com/research/probability-calibration-calibre/</loc></url>
-  <url><loc>https://gsood.com/research/mturk-data-quality-lemons/</loc></url>
-  <url><loc>https://gsood.com/research/shared-prediction-error-regression/</loc></url>
-  <url><loc>https://gsood.com/research/regression-calibration-ml-covariates/</loc></url>
-  <url><loc>https://gsood.com/research/validation-swaps-proxy-covariates/</loc></url>
-  <url><loc>https://gsood.com/research/github-stars-downloads/</loc></url>
-  <url><loc>https://gsood.com/research/methodological-criticism-citations/</loc></url>
-  <url><loc>https://gsood.com/research/citations-to-retracted-research/</loc></url>
-  <url><loc>https://gsood.com/research/downloads-are-cheap/</loc></url>
   <url><loc>https://gsood.com/research/papers/queue_shift.pdf</loc></url>
   <url><loc>https://gsood.com/research/papers/calibre.pdf</loc></url>
   <url><loc>https://gsood.com/research/papers/multiclass-rank-calibration.pdf</loc></url>
