@@ -49,6 +49,9 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   Optional `publication` is a rich-text array containing the citation, including
   any volume, issue, pages, or publisher. End the citation with a period. It
   renders on its own line after the credits and before supporting resources.
+  For published work, link the title to the author manuscript when available.
+  Put the publisher’s DOI or publication page in `publication_url` so readers
+  can reach the version of record from the journal or book citation.
 - **Resources** have an ID local to their entry, a URL, a kind (such as `pdf` or
   `repository`), and a role (such as `manuscript`, `replication`, `blog`, or `press`).
   The primary resource uses the entry title as its label; other resources have
@@ -126,8 +129,10 @@ Each distinct local `papers/*.pdf` in the catalog needs either a verified
 manually. Record this once per file, even if several entries link to it. A
 replication repository can hold code, an older or anonymous draft, or a
 separate reanalysis. Check the upstream PDF's title, byline, edition, and
-appendices before mapping it. Direct links to publisher and GitHub PDFs
-do not have a local copy to synchronize.
+appendices before mapping it. For PDFs kept in GitHub, serve a copy under
+`research/papers/` and map it to the repository file. GitHub’s raw host serves
+PDFs as generic binary downloads. The site serves them as `application/pdf`,
+which lets readers use their browser’s PDF viewer.
 
 The workflow reports how many PDFs it compared and lists every manual file
 with its reason. The catalog check catches a newly added local PDF without

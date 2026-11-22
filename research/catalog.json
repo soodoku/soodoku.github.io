@@ -1095,8 +1095,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/finite-sample/optimal_data_collection/main/ms/optimal_data_collection.pdf",
-          "new_tab": true
+          "url": "papers/optimal_data_collection.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/optimal_data_collection",
+            "ref": "main",
+            "path": "ms/optimal_data_collection.pdf"
+          }
         },
         {
           "id": "replication",
@@ -1350,8 +1355,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://raw.githubusercontent.com/finite-sample/late/main/note/inferred_compliance_note.pdf",
-          "new_tab": true
+          "url": "papers/inferred_compliance_note.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/late",
+            "ref": "main",
+            "path": "note/inferred_compliance_note.pdf"
+          }
         },
         {
           "id": "repository",
@@ -1496,8 +1506,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://raw.githubusercontent.com/finite-sample/smooth-operator/main/ms/smoother_trends_sharper_tests.pdf",
-          "new_tab": true
+          "url": "papers/smooth_operator.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/smooth-operator",
+            "ref": "main",
+            "path": "ms/smoother_trends_sharper_tests.pdf"
+          }
         },
         {
           "id": "repository",
@@ -1880,8 +1895,13 @@
           "id": "link-2",
           "kind": "pdf",
           "role": "related",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/themains/domain_knowledge/master/ms/domain_knowledge.pdf",
-          "label": "Domain Knowledge: Predicting the Kind of Content Hosted by a Domain."
+          "url": "papers/domain_knowledge.pdf",
+          "label": "Domain Knowledge: Predicting the Kind of Content Hosted by a Domain.",
+          "source": {
+            "repo": "themains/domain_knowledge",
+            "ref": "master",
+            "path": "ms/domain_knowledge.pdf"
+          }
         },
         {
           "id": "rdomains",
@@ -3070,7 +3090,8 @@
           ]
         },
         "."
-      ]
+      ],
+      "publication_url": "https://polmeth.org/blog/numbers-toward-more-precise-numerical-summaries"
     },
     {
       "id": "the-review-production-and-consumption-of-apsr-articles",
@@ -4143,7 +4164,8 @@
           ]
         },
         " 2018."
-      ]
+      ],
+      "publication_url": "https://doi.org/10.4324/9781351215947-11"
     },
     {
       "id": "coming-to-dislike-your-opponents-the-polarizing-impact-of-political-campaigns",
@@ -4389,11 +4411,7 @@
           "role": "manuscript",
           "url": "papers/adult.pdf",
           "new_tab": true,
-          "source": {
-            "repo": "themains/adult",
-            "ref": "main",
-            "path": "ms/adult.pdf"
-          }
+          "sync_note": "The site serves the March 2023 author manuscript. The repository contains the journal edition and an earlier January 2023 draft."
         },
         {
           "id": "link-2",
@@ -4840,7 +4858,8 @@
           ]
         },
         " 41–58, 2014. ECPR Press."
-      ]
+      ],
+      "publication_url": "https://ecpr.eu/Shop/ShopProductInfo?productID=123"
     },
     {
       "id": "how-can-you-think-that-deliberation-and-the-learning-of-opposing-arguments",
@@ -5764,8 +5783,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf",
-          "new_tab": true
+          "url": "papers/sonny_side.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/sonny_side",
+            "ref": "master",
+            "path": "ms/sonny_side.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -5801,7 +5825,7 @@
         "We compare businesses named with 'son' or 'sons' and 'daughter' or 'daughters' using state business registries. Across 40 states, the median ratio is 12 to 1, with limitations in registry searches making the analysis a conservative accounting of the imbalance."
       ],
       "description_source": {
-        "url": "https://raw.githubusercontent.com/soodoku/sonny_side/master/ms/sonny_side.pdf",
+        "url": "papers/sonny_side.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -5939,8 +5963,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf",
-          "new_tab": true
+          "url": "papers/not_news_uk.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/uk_not_news",
+            "ref": "master",
+            "path": "ms/not_news_uk.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -5972,7 +6001,7 @@
         "We classify roughly 5.4 million webpages from 276 British news outlets to estimate how much coverage concerns topics outside public affairs. A classifier trained using article URL categories and checked against hand coding estimates that about 39% of articles are apolitical news."
       ],
       "description_source": {
-        "url": "https://raw.githubusercontent.com/notnews/uk_not_news/master/ms/not_news_uk.pdf",
+        "url": "papers/not_news_uk.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -5991,8 +6020,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf",
-          "new_tab": true
+          "url": "papers/multiple_measures.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/uk_media_ideology",
+            "ref": "main",
+            "path": "ms/multiple_measures.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -6024,7 +6058,7 @@
         "We combine text-based and audience-based measures of British news outlets' ideology. Parliamentary speeches, party manifestos, and Twitter following patterns provide complementary information about ideological position and differences between measurement approaches."
       ],
       "description_source": {
-        "url": "https://raw.githubusercontent.com/notnews/uk_media_ideology/main/ms/multiple_measures.pdf",
+        "url": "papers/multiple_measures.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -6043,8 +6077,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf",
-          "new_tab": true
+          "url": "papers/issue_ideology.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/issue_ideology",
+            "ref": "main",
+            "path": "ms/issue_ideology.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -6077,7 +6116,7 @@
         "We distinguish which issues news outlets cover from the positions they take within those issues. A supervised topic model and congressional-speech-based slant measures reveal systematic differences across 255 news programs on 50 television channels."
       ],
       "description_source": {
-        "url": "https://raw.githubusercontent.com/notnews/issue_ideology/main/ms/issue_ideology.pdf",
+        "url": "papers/issue_ideology.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -6394,8 +6433,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf",
-          "new_tab": true
+          "url": "papers/us_news.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/hard_news",
+            "ref": "master",
+            "path": "ms/us_news.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -6428,7 +6472,7 @@
         "A coded sample of more than 5,000 network television news segments from 1968 to 2019 documents changes in political content and geographic focus. Coverage unrelated to politics increases over time, and local news becomes a substantially larger share in the later years."
       ],
       "description_source": {
-        "url": "https://raw.githubusercontent.com/notnews/hard_news/master/ms/us_news.pdf",
+        "url": "papers/us_news.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
@@ -6729,10 +6773,15 @@
       "resources": [
         {
           "id": "primary",
-          "kind": "webpage",
+          "kind": "pdf",
           "role": "manuscript",
-          "url": "https://doi.org/10.1007/s11109-017-9395-7",
-          "new_tab": true
+          "url": "papers/partisanlearning.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/know_motivated",
+            "ref": "main",
+            "path": "data/reference/paper/partisan_learning.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -7539,7 +7588,8 @@
           ]
         },
         " 2018. University of Texas Press."
-      ]
+      ],
+      "publication_url": "https://doi.org/10.7560/314555-006"
     },
     {
       "id": "streetsense-learning-from-google-street-view",
@@ -7551,8 +7601,13 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/geosensing/streetsense/master/ms/street_sense.pdf",
-          "new_tab": true
+          "url": "papers/street_sense.pdf",
+          "new_tab": true,
+          "source": {
+            "repo": "geosensing/streetsense",
+            "ref": "master",
+            "path": "ms/street_sense.pdf"
+          }
         },
         {
           "id": "link-2",
