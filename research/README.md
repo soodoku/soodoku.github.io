@@ -147,7 +147,10 @@ python .github/scripts/sync_papers.py --report /tmp/paper-updates.md
 ```
 
 Add `--apply` to replace local copies. The script resolves each repository/ref to
-a commit, downloads its mapped PDFs, validates them, and compares first-page text.
+a commit, downloads its mapped PDFs, removes the site author’s email from text,
+links, and metadata, validates the PDFs, and compares first-page text.
+The public copy keeps coauthors’ contact information. A file that needs no
+contact removal retains its original bytes.
 It stages all downloads before replacing any local files, so a download or PDF
 validation failure leaves the existing files intact. It does not infer which
 version is newer from timestamps, and a changed PDF may still be an older draft.

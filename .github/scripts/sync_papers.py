@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
+from paper_contacts import clean_pdf
 from research_catalog import load_catalog, paper_sources
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -94,7 +95,10 @@ def sync(directory, *, apply=False):
             commit = revisions[key]
             data = download(f"https://raw.githubusercontent.com/{repo}/{commit}/{path}")
             destination = directory / name
-            if data == destination.read_bytes():
+            existing = destination.read_bytes()
+            if data != existing:
+                data = clean_pdf(data)
+            if data == existing:
                 print(f"Unchanged: {name}")
                 continue
             staged = Path(temporary) / name
@@ -134,7 +138,9 @@ def sync(directory, *, apply=False):
             for destination, staged in changes:
                 destination.write_bytes(staged.read_bytes())
     if not changes:
-        report.extend(["", "All mapped PDFs match their source files."])
+        report.extend(
+            ["", "All mapped PDFs match their source files after contact removal."]
+        )
     report.extend(["", f"Coverage: {len(sources)} mapped, {len(manual)} manual."])
     if manual:
         report.extend(["", "<details><summary>Manually maintained PDFs</summary>", ""])

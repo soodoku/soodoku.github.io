@@ -3,3 +3,4 @@ black==26.5.1
 isort==8.0.1
 flake8==7.3.0
 codespell==2.4.1
+PyMuPDF==2.1
