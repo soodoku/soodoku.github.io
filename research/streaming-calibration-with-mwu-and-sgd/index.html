@@ -45,6 +45,7 @@
 }
 </script>
 <link rel="stylesheet" href="/research/headings.css">
+<script defer src="/research/recent.js"></script>
 </head>
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -65,7 +66,7 @@
   <main class="content">
     <article id="research" class="entry-page">
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; <span class="catalog-heading">Statistics <span class="minor-word">and</span> Research Methods</span> › <span class="catalog-heading">Calibration <span class="minor-word">and</span> Weighting</span></a></p>
-      <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Raking in Fixed Memory</a><br> <span class="entry-icon">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></div>
+      <div class="entry-meta"><a href="/research/papers/onlinerake.pdf" target="_blank" class="entry-title">Streaming Raking in Fixed Memory</a><br> <span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/finite-sample/onlinerake" target="_blank">Python Package</a></div>
       <div class="abstract">Raking needs every row seen so far, so keeping weights current on a stream means storing it and refitting. This paper gives a raking method whose state is a fixed set of running totals: each arriving row gets, in closed form, the weight that balances closeness to its design weight against the running gap to population targets. In simulations it comes close to full-data raking with moderate targets at constant cost per row; it falls short with extreme targets and many margins, and where rows can be stored, periodic raking remains the better choice.</div>
       <section class="citation-section">
         <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Streaming Raking in Fixed Memory.&quot; https://gsood.com/research/streaming-calibration-with-mwu-and-sgd/</p>

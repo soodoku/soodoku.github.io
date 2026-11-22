@@ -672,13 +672,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -703,7 +696,7 @@
     {
       "id": "stable-cart-lower-bootstrap-prediction-variance-cart",
       "kind": "software",
-      "title": "Stable CART: Lower Bootstrap Prediction Variance CART",
+      "title": "stable-cart: Lower Bootstrap Prediction Variance CART",
       "primary_resource": "primary",
       "resources": [
         {
@@ -723,13 +716,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -740,8 +726,9 @@
         }
       ],
       "description": [
-        "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. Stable CART addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
-      ]
+        "Standard CART decision trees are unstable—small changes in training data can produce substantially different tree structures and predictions. stable-cart addresses this by trading a small amount of accuracy for lower cross-bootstrap prediction variance through techniques like honest estimation (using separate data subsets for learning tree structure vs. estimating leaf values), lookahead search (considering multiple future splits before committing rather than making greedy single-step decisions), and bootstrap-aware split selection (penalizing or filtering out splits that are unstable across resampled datasets)."
+      ],
+      "software_type": "package"
     },
     {
       "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
@@ -762,17 +749,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
           "label": "calibre: Probability Calibration and Evaluation",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -780,13 +761,6 @@
           "tag": "br"
         },
         " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "link-2"
         }
@@ -817,19 +791,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "Standard calibration minimizes average calibration error, which can hide large errors for minority groups. Leximin calibration instead minimizes the worst-off group's calibration error first, then the second-worst, and so on—applying the Rawlsian leximin criterion to the distribution of calibration quality across groups."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "rank-preserving-calibration-for-multiclass-classification",
@@ -855,17 +823,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/rank-preserving-calibration",
           "label": "Rank Preserving Calibration of Multiclass Probabilities",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -873,13 +835,6 @@
           "tag": "br"
         },
         " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "link-2"
         }
@@ -912,17 +867,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/onlinerake",
           "label": "Python Package",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -930,13 +879,6 @@
           "tag": "br"
         },
         " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "link-2"
         }
@@ -961,19 +903,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "streamcal keeps a deployed model's binary probabilities calibrated as outcomes arrive, without retaining its prediction history. It fits a monotone (isotonic) correction from fixed-size per-bin sufficient statistics, can down-weight stale history, and predicts before observing each outcome so a forecast never uses its own label."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "from-scores-to-signs-pairwise-win-rate-estimation-with-calibrated-llm-judges",
@@ -1035,19 +971,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "setjoin implements group-constrained record matching: it assigns source groups to target groups, then matches records within the assigned groups. This is useful when both files have trustworthy group membership and the linkage should preserve it. Its current performance example is synthetic; gains on observed panel data have not been established."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "tether-high-precision-record-linkage",
@@ -1065,19 +995,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "A 7-step record linkage pipeline—preprocess, deduplicate, block, score, filter, decide, inspect—with multi-pass support for progressively relaxed thresholds. Implements Hungarian, greedy, and row-sequential decision rules over pairwise string similarity scores."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "bloomjoin-bloom-filter-based-joins",
@@ -1095,19 +1019,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "An R package implementing Bloom filter-based joins for improved performance with large datasets. Bloom filters provide a probabilistic test for set membership that can dramatically reduce the number of expensive exact comparisons needed during a join."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "the-micro-task-market-for-lemons-collecting-data-on-amazon-s-mechanical-turk",
@@ -1217,7 +1135,7 @@
     {
       "id": "geo-sampling-sampling-randomly-from-the-streets",
       "kind": "software",
-      "title": "Geo-sampling: Sampling Randomly From the Streets",
+      "title": "geo-sampling: Sampling Randomly From the Streets",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1233,23 +1151,17 @@
           "role": "related",
           "url": "https://github.com/geosensing/geoestimate",
           "label": "geoestimate: inference from street samples",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
       ],
       "description": [
-        "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. Geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
+        "Estimating quantities like average potholes per kilometer or pedestrian density requires randomly sampling street locations within a region. geo-sampling addresses this by downloading street network data from OpenStreetMap for a specified administrative region, splitting each street into 0.5km segments (recording the lat/long of segment endpoints), building a database of all segments, and then drawing a random sample that can be exported as a CSV or visualized on a map for field data collection."
       ],
       "supporting": {
         "related": [
@@ -1262,12 +1174,13 @@
       },
       "coauthors": [
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "allocator-optimal-itineraries-for-spatially-distributed-tasks",
       "kind": "software",
-      "title": "Allocator: Optimal Itineraries For Spatially Distributed Tasks",
+      "title": "allocator: Optimal Itineraries For Spatially Distributed Tasks",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1283,23 +1196,17 @@
           "role": "related",
           "url": "https://github.com/geosensing/ybar",
           "label": "ybar: mobile field data collection",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "app"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
       ],
       "description": [
-        "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), Allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
+        "Given a set of spatially distributed tasks (e.g., field survey locations, audit sites), allocator computes optimal itineraries that minimize total travel time or distance, assigning tasks to enumerators and sequencing visits within each assignment."
       ],
       "supporting": {
         "related": [
@@ -1312,12 +1219,13 @@
       },
       "coauthors": [
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "reporoulette-randomly-sample-github-repositories",
       "kind": "software",
-      "title": "reporoulette: Randomly Sample GitHub Repositories",
+      "title": "RepoRoulette: Randomly Sample GitHub Repositories",
       "primary_resource": "primary",
       "resources": [
         {
@@ -1330,19 +1238,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "Randomly sample GitHub repositories, optionally filtered by language, creation date, or star count. Useful for constructing representative samples of open-source projects for empirical software engineering research."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "total-error",
@@ -1372,13 +1274,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -1423,17 +1318,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/fewlab",
           "label": "fewlab: fewest items to label for unbiased OLS on shares",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -1441,13 +1330,6 @@
           "tag": "br"
         },
         " ",
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "link-2"
         },
@@ -1479,13 +1361,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         },
@@ -1528,13 +1403,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "manuscript"
         },
@@ -1591,13 +1459,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "manuscript"
         },
         {
@@ -1647,13 +1508,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -1683,13 +1537,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -1712,13 +1559,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -1743,49 +1583,54 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
-        "Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. Incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories."
-      ]
+        "Estimating the trend (derivative) at a specific point in a noisy time series is difficult because naive approaches like computing differences between consecutive observations amplify noise rather than reveal the underlying signal. incline addresses this by first smoothing the time series using either Savitzky-Golay filters (local polynomial fitting) or smoothing splines, then estimating the first or second derivative of the smoothed function at chosen points in time. The difference between naive and smoothed estimates can be substantial: in the provided example, the correlation between them is -0.47, making the choice of method consequential for applications like detecting sudden cost increases or identifying rapidly changing patient health trajectories."
+      ],
+      "software_type": "package"
     },
     {
       "id": "analytic-hessian-bandwidth-selection",
       "kind": "software",
-      "title": "Analytic‑Hessian Bandwidth Selection",
+      "title": "hbw: Bandwidth Selection for Kernel Density Estimation and Regression",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/finite-sample/hessband",
+          "url": "https://github.com/finite-sample/hbw",
           "new_tab": true
+        },
+        {
+          "id": "predecessor",
+          "kind": "repository",
+          "role": "related",
+          "url": "https://github.com/finite-sample/hessband",
+          "label": "hessband (archived predecessor)",
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
       ],
       "description": [
-        "Bandwidth selection for Nadaraya-Watson kernel regression and kernel density estimation typically relies on cross-validation, which is computationally expensive. This package implements an analytic bandwidth selector based on the Hessian of the cross-validation objective, giving a closed-form approximation that avoids the grid search."
-      ]
+        "hbw selects smoothing bandwidths by cross-validation for kernel density estimation and Nadaraya–Watson regression. It extends hessband to multivariate data."
+      ],
+      "software_type": "package",
+      "supporting": {
+        "related": [
+          [
+            {
+              "resource": "predecessor"
+            }
+          ]
+        ]
+      }
     },
     {
       "id": "a-lightweight-als-solver-for-iterative-gls",
@@ -1803,19 +1648,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "Generalized least squares requires estimating and inverting the error covariance matrix, which is expensive when the matrix is large or unstructured. This package uses alternating least squares with a low-rank factor-analytic decomposition of the covariance, making iterative GLS feasible for problems where the full covariance is too large to invert directly."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "optimal-classification-cutoffs-for-f1-score-etc",
@@ -1840,13 +1679,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🗃"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -1858,7 +1690,8 @@
       ],
       "description": [
         "Classifiers produce continuous scores; deployment requires a threshold. The optimal threshold depends on the metric you care about—F1, balanced accuracy, or a custom cost function—and the score distribution. This script computes the exact threshold that maximizes a given stepwise metric, avoiding the grid-search approximation common in practice."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "pyppur-projection-pursuit-dimension-reduction-with-reconstruction-loss",
@@ -1876,19 +1709,13 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
         "pyppur is a Python package that implements projection pursuit methods for dimensionality reduction. Unlike traditional PP objectives geared toward finding 'interesting' projections (non-gaussian), pyppur focuses on finding non-linear projections by minimizing either reconstruction loss or distance distortion."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "exposed-shedding-blacklight-on-online-privacy",
@@ -2035,7 +1862,7 @@
     {
       "id": "piedomains-predict-the-kind-of-content-hosted-by-a-domain",
       "kind": "software",
-      "title": "Piedomains: Predict the Kind of Content Hosted by a Domain",
+      "title": "piedomains: Predict the Kind of Content Hosted by a Domain",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2057,17 +1884,11 @@
           "role": "related",
           "url": "https://github.com/themains/rdomains",
           "label": "rdomains: domain classification in R",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -2101,7 +1922,8 @@
       },
       "coauthors": [
         "Rajashekar Chintalapati"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "pass-fail-using-a-password-generator-to-improve-password-strength",
@@ -2261,13 +2083,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -2282,7 +2097,8 @@
       },
       "coauthors": [
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "virustotal-r-client-for-the-virustotal-public-api-2-0",
@@ -2299,13 +2115,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -2317,7 +2126,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads",
@@ -2378,7 +2188,7 @@
     {
       "id": "rmcp-r-mcp-community-server",
       "kind": "software",
-      "title": "rmcp: R MCP Community Server",
+      "title": "RMCP: R MCP Community Server",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2391,13 +2201,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -2409,7 +2212,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "statqa-extract-multimodal-stats-q-a-from-tables-with-provenance",
@@ -2426,13 +2230,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -2441,7 +2238,8 @@
       ],
       "description": [
         "StatQA is a modern Python framework for automatically extracting structured facts, statistical insights, and multimodal Q/A pairs from tabular datasets. It converts raw columns and values into clear, human-readable statements paired with rich visualizations, enabling rapid knowledge discovery, CLIP-style multimodal RAG corpus construction, and LLM training."
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "lost-years-expected-number-of-years-lost",
@@ -2458,13 +2256,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -2473,7 +2264,8 @@
       ],
       "coauthors": [
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "repaper-convert-photo-of-a-form-to-a-web-based-form-or-an-editable-pdf-form",
@@ -2493,23 +2285,17 @@
           "role": "related",
           "url": "https://github.com/gojiplus/image-to-text",
           "label": "image-to-text: batch OCR",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "script"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
       ],
       "description": [
-        "Repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool."
+        "repaper converts photographed forms into editable digital forms. The documented workflow includes generating a Google Form from an image through a Python interface or command-line tool."
       ],
       "supporting": {
         "related": [
@@ -2528,12 +2314,13 @@
       },
       "coauthors": [
         "Bhanu Teja"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "indicate-transliterate-indic-languages-to-english",
       "kind": "software",
-      "title": "indicate: transliterate indic languages to english",
+      "title": "Indicate: Transliterate Indic Languages to English",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2544,13 +2331,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -2566,7 +2346,8 @@
       },
       "coauthors": [
         "Rajashekar Chintalapati"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "layoutlens-ai-assisted-ui-testing",
@@ -2586,7 +2367,8 @@
           "role": "related",
           "url": "https://github.com/gojiplus/layoutlens-action",
           "label": "LayoutLens GitHub Action",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "action"
         },
         {
           "id": "uijudge-bench",
@@ -2598,13 +2380,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -2631,12 +2406,13 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "adjacent-related-repositories-recommender",
       "kind": "software",
-      "title": "Adjacent — Related Repositories Recommender",
+      "title": "adjacent — Related Repositories Recommender",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2655,13 +2431,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -2679,12 +2448,13 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "action"
     },
     {
       "id": "advertiser-promote-your-github-repositories-on-bluesky",
       "kind": "software",
-      "title": "Advertiser: Promote Your GitHub Repositories on BlueSky",
+      "title": "Advertiser: Promote Your GitHub Repositories on Bluesky",
       "primary_resource": "primary",
       "resources": [
         {
@@ -2703,13 +2473,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -2727,7 +2490,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "action"
     },
     {
       "id": "tuber-access-youtube-api-via-r",
@@ -2747,17 +2511,11 @@
           "role": "related",
           "url": "https://github.com/gojiplus/tubern",
           "label": "tubern: YouTube Analytics and Reporting",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -2779,7 +2537,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "a-benchmark-for-benchmarks",
@@ -2987,13 +2746,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📱"
-          ]
-        },
-        {
           "resource": "primary"
         },
         {
@@ -3011,7 +2763,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "action"
     },
     {
       "id": "highlight-citations-to-retracted-articles",
@@ -3040,7 +2793,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "app"
     },
     {
       "id": "downloads-are-cheap-validated-use-as-a-measure-of-research-software",
@@ -3106,7 +2860,8 @@
           "role": "related",
           "url": "https://github.com/recite/pip-fund",
           "label": "pip-fund: funding software",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
@@ -3143,7 +2898,7 @@
           "tag": "span",
           "class": "entry-icon",
           "children": [
-            "📦"
+            "📊"
           ]
         },
         {
@@ -3198,7 +2953,8 @@
           "role": "related",
           "url": "https://github.com/recite/countpy",
           "label": "Python metrics",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "app"
         }
       ],
       "summary": [
@@ -3213,13 +2969,6 @@
         "related": [
           [
             {
-              "tag": "span",
-              "class": "entry-icon",
-              "children": [
-                "📦"
-              ]
-            },
-            {
               "resource": "link-2"
             }
           ]
@@ -3230,7 +2979,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "script"
     },
     {
       "id": "autosum-summarize-publications-automatically-and-discover-miscitations",
@@ -3259,7 +3009,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "script"
     },
     {
       "id": "by-the-numbers-toward-more-precise-numerical-summaries-of-results",
@@ -3355,7 +3106,7 @@
     {
       "id": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes",
       "kind": "software",
-      "title": "superdf: Persistent Metadata for R Data Frames",
+      "title": "studyframe: Persistent Metadata for R Data Frames",
       "primary_resource": "primary",
       "resources": [
         {
@@ -3372,14 +3123,15 @@
         }
       ],
       "description": [
-        "SuperDF extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data."
+        "studyframe extends R data frames with metadata such as version, author, and notes. The metadata is designed to persist through common data operations and input/output, keeping documentation attached to the data."
       ],
       "description_source": {
         "url": "https://github.com/gojiplus/superdf#readme",
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts",
@@ -3408,7 +3160,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
@@ -3437,7 +3190,8 @@
           "role": "related",
           "url": "https://github.com/appeler/ethnicolr",
           "label": "Python Package",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         },
         {
           "id": "link-4",
@@ -3474,13 +3228,6 @@
         "related": [
           [
             {
-              "tag": "span",
-              "class": "entry-icon",
-              "children": [
-                "📦"
-              ]
-            },
-            {
               "resource": "link-3"
             },
             " for implementing the method."
@@ -3508,7 +3255,8 @@
       "coauthors": [
         "Rajashekar Chintalapati",
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "script"
     },
     {
       "id": "sound-names-classify-names-based-on-sequence-of-sounds",
@@ -3571,7 +3319,7 @@
     {
       "id": "naampy-infer-sociodemographic-characteristics-from-indian-names",
       "kind": "software",
-      "title": "Naampy: Infer Sociodemographic Characteristics from Indian Names",
+      "title": "naampy: Infer Sociodemographic Characteristics from Indian Names",
       "primary_resource": "primary",
       "resources": [
         {
@@ -3587,7 +3335,8 @@
           "role": "related",
           "url": "https://github.com/appeler/outkast",
           "label": "outkast: caste-name data",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         },
         {
           "id": "electoral-rolls",
@@ -3600,18 +3349,11 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
-        "Naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender."
+        "naampy estimates aggregate patterns associated with Indian first names using calibrated model scores or exact source-data lookups. Results include abstention and artifact provenance; the scores describe patterns in recorded labels, not an individual's gender."
       ],
       "supporting": {
         "related": [
@@ -3636,7 +3378,8 @@
       "coauthors": [
         "Rajashekar Chintalapati",
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "pranaam-predict-religion-from-name",
@@ -3654,13 +3397,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -3675,7 +3411,8 @@
       },
       "coauthors": [
         "Rajashekar Chintalapati"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "naamkaran-a-generative-model-for-names",
@@ -3693,13 +3430,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -3714,7 +3444,8 @@
       },
       "coauthors": [
         "Rajashekar Chintalapati"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "parsernaam-ml-assisted-name-parser",
@@ -3735,23 +3466,17 @@
           "role": "related",
           "url": "https://github.com/appeler/clean-names",
           "label": "clean-names: parsing and deduplication",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
       ],
       "description": [
-        "Parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention."
+        "parsernaam uses character-level models to distinguish first-name from last-name tokens and infer their order in multi-token strings. It helps parse combined name fields, while its limited label set cannot represent every naming convention."
       ],
       "supporting": {
         "related": [
@@ -3770,7 +3495,8 @@
       },
       "coauthors": [
         "Rajashekar Chintalapati"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "instate-predict-spoken-language-from-last-name",
@@ -3796,18 +3522,11 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
-        "Instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language."
+        "instate estimates state composition associated with Indian surnames using electoral-roll lookups and a calibrated character model. It combines state shares with census mother-tongue shares to derive aggregate language compositions; these are name-pattern estimates, not a person's location or language."
       ],
       "supporting": {
         "related": [
@@ -3831,7 +3550,8 @@
       "coauthors": [
         "Rajashekar Chintalapati",
         "Atul Dhingra"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "inter-group-prejudice",
@@ -6318,7 +6038,7 @@
     {
       "id": "notnews-predict-the-type-of-news-based-on-story-text-and-url",
       "kind": "software",
-      "title": "Notnews: Predict the Type of News Based on Story Text and URL",
+      "title": "notnews: Predict the Type of News Based on Story Text and URL",
       "primary_resource": "primary",
       "resources": [
         {
@@ -6330,13 +6050,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -6352,7 +6065,8 @@
       },
       "coauthors": [
         "Suriyan Laohaprapanon"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "unreadable-news-how-readable-is-american-news",
@@ -6507,7 +6221,8 @@
           "role": "related",
           "url": "https://github.com/themains/piedomains",
           "label": "Categorizing the Content of Domains",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         },
         {
           "id": "link-4",
@@ -7432,7 +7147,8 @@
           "role": "related",
           "url": "https://github.com/finite-sample/guess",
           "label": "R Package",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         },
         {
           "id": "link-5",
@@ -7482,13 +7198,6 @@
       "supporting": {
         "related": [
           [
-            {
-              "tag": "span",
-              "class": "entry-icon",
-              "children": [
-                "📦"
-              ]
-            },
             {
               "resource": "link-4"
             },
@@ -7864,7 +7573,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "script"
     },
     {
       "id": "get-in-line-waiting-times-at-the-dmv",
@@ -8092,7 +7802,8 @@
           "role": "related",
           "url": "https://github.com/outside-edge/python-espncricinfo",
           "label": "python-espncricinfo",
-          "new_tab": true
+          "new_tab": true,
+          "software_type": "package"
         },
         {
           "id": "cricket-data",
@@ -8533,7 +8244,7 @@
     {
       "id": "preen-python-package-development",
       "kind": "software",
-      "title": "Preen: Python Package Development Checks",
+      "title": "preen: Python Package Development Checks",
       "primary_resource": "primary",
       "resources": [
         {
@@ -8562,18 +8273,11 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
       "description": [
-        "Preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases."
+        "preen helps Python packages adopt and maintain the py-canon development standard. Its command-line tools scaffold repositories, update shared templates, check conformance, apply fixes, and guide tag-based releases."
       ],
       "supporting": {
         "related": [
@@ -8594,7 +8298,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "offprint-academic-website-theme",
@@ -8612,13 +8317,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -8630,7 +8328,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "theme"
     },
     {
       "id": "indian-electoral-rolls",
@@ -8753,13 +8452,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📦"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -8771,7 +8463,8 @@
         "kind": "repository-readme",
         "reviewed_on": "2026-09-19",
         "text_type": "summary"
-      }
+      },
+      "software_type": "package"
     },
     {
       "id": "deliberation-and-learning-evidence-from-deliberative-polls",
@@ -9108,13 +8801,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "🌱"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -9401,7 +9087,8 @@
       },
       "coauthors": [
         "Derek Willis"
-      ]
+      ],
+      "software_type": "package"
     },
     {
       "id": "cricket-match-data",

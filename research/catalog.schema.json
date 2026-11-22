@@ -152,6 +152,9 @@
         },
         "source": {
           "$ref": "#/$defs/source"
+        },
+        "software_type": {
+          "$ref": "#/$defs/softwareType"
         }
       },
       "required": [
@@ -326,6 +329,14 @@
             "additionalProperties": false
           },
           "description": "Optional additional sections rendered on the entry's dedicated HTML page."
+        },
+        "software_type": {
+          "$ref": "#/$defs/softwareType"
+        },
+        "first_published": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the work first became public, in YYYY-MM-DD format."
         }
       },
       "required": [
@@ -337,7 +348,30 @@
         "summary",
         "description"
       ],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "software"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "software_type"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "software_type"
+              ]
+            }
+          }
+        }
+      ]
     },
     "section": {
       "type": "object",
@@ -380,6 +414,15 @@
         "children"
       ],
       "additionalProperties": false
+    },
+    "softwareType": {
+      "enum": [
+        "package",
+        "action",
+        "app",
+        "script",
+        "theme"
+      ]
     }
   }
 }

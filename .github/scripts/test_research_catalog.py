@@ -325,6 +325,27 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(ValidationError):
             Draft202012Validator(schema).validate(self.catalog)
 
+    def test_software_types_and_publication_dates(self):
+        schema = json.loads((ROOT / "research/catalog.schema.json").read_text())
+        validator = Draft202012Validator(
+            schema["$defs"]["entry"] | {"$defs": schema["$defs"]},
+            format_checker=Draft202012Validator.FORMAT_CHECKER,
+        )
+        entry = next(e for e in self.catalog["entries"] if e["kind"] == "software")
+        validator.validate(entry | {"first_published": "2024-02-29"})
+        for field in ({"first_published": "2025-02-29"}, {"software_type": "misc"}):
+            self.assertFalse(validator.is_valid(entry | field))
+        self.assertFalse(
+            validator.is_valid({k: v for k, v in entry.items() if k != "software_type"})
+        )
+        self.assertFalse(validator.is_valid(self.entry | {"software_type": "package"}))
+        for kind, (symbol, _) in research_catalog.SOFTWARE_ICONS.items():
+            marked = entry | {"software_type": kind, "first_published": "2024-02-29"}
+            line = research_catalog.entry_summary(marked, {})
+            self.assertIn(symbol, line)
+            self.assertIn('hidden data-first-published="2024-02-29"', line)
+        self.assertNotIn("🌱", research_catalog.entry_summary(entry, {}))
+
     def test_rejects_invalid_coauthor_names(self):
         for name in ("Gaurav Sood", " ", " Alice", "Alice "):
             with self.subTest(name=name):

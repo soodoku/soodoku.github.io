@@ -21,10 +21,21 @@ SCHEMA_TYPES = {
 }
 
 
+SOFTWARE_ICONS = {
+    "action": ("⚙️", "GitHub Action"),
+    "app": ("📱", "Application"),
+    "package": ("📦", "Package"),
+    "script": ("📜", "Scripts and notebooks"),
+    "theme": ("🎨", "Theme"),
+}
+
+
 def load_catalog(root=ROOT):
     catalog = json.loads((root / "research/catalog.json").read_text())
     schema = json.loads((root / "research/catalog.schema.json").read_text())
-    Draft202012Validator(schema).validate(catalog)
+    Draft202012Validator(
+        schema, format_checker=Draft202012Validator.FORMAT_CHECKER
+    ).validate(catalog)
     validate_catalog(catalog, root)
     return catalog
 
@@ -93,6 +104,11 @@ def validate_catalog(catalog, root=ROOT):
             for item in items:
                 nodes(item)
         for resource in entry["resources"]:
+            if (
+                resource["id"] == entry["primary_resource"]
+                and "software_type" in resource
+            ):
+                raise ValueError("Set the primary software type on the entry")
             if resource["id"] != entry["primary_resource"] and not resource.get(
                 "label"
             ):
@@ -143,6 +159,13 @@ def rich_text(nodes, entry, metadata="", url_prefix=""):
         elif "resource" in node:
             resource = resources[node["resource"]]
             primary = resource["id"] == entry["primary_resource"]
+            software_type = (entry if primary else resource).get("software_type")
+            if software_type:
+                emoji, name = SOFTWARE_ICONS[software_type]
+                parts.append(
+                    f'<span class="entry-icon" role="img" aria-label="{name}" '
+                    f'title="{name}">{emoji}</span>'
+                )
             label = entry["title"] if primary else resource["label"]
             target = ' target="_blank"' if resource.get("new_tab") else ""
             css = ' class="entry-title"' if primary else ""
@@ -179,6 +202,12 @@ def credit(coauthors):
 def entry_summary(entry, entries, url_prefix=""):
     """Title line, credits, citation, resources, and related/press rows."""
     metadata = ""
+    if published := entry.get("first_published"):
+        metadata += (
+            f'<span hidden data-first-published="{published}" '
+            f'role="img" aria-label="First published {published}" '
+            f'title="First published {published}"> 🌱</span>'
+        )
     if entry.get("status") == "draft":
         metadata += ' <span class="status">Draft</span>'
     if coauthors := entry.get("coauthors"):

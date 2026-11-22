@@ -19,7 +19,7 @@ The same command also writes `research/swipe.html`, a phone-first feed with one
 card per entry (each entry once, at its first position in `sections`). Its shell,
 CSS, and the small script for topic chips and the card counter live in
 `swipe.template.html`; the feed itself scrolls and snaps without JavaScript. The
-main page stays script-free and only gains a link to the feed on narrow screens.
+main page links to the feed on narrow screens. Section navigation works without JavaScript.
 
 ## Entries, resources, and sections
 
@@ -31,6 +31,14 @@ The catalog uses JSON Schema, plus validation for references and sync destinatio
   tool someone can run (including packages, GitHub Actions, and web apps), and
   `blog` for a blog post. An analysis can link to its data and code. Each entry has
   a stable `id`, a `kind`, a `title`, a `primary_resource`, and a list of resources.
+  Every software entry requires `software_type`. Choose the form a reader uses:
+  `package` 📦, GitHub `action` ⚙️, `app` 📱, standalone `script` or notebooks 📜,
+  or `theme` 🎨. Use the spelling from the package documentation in titles and prose.
+  A secondary resource can specify its own `software_type`, including a package
+  linked from a paper. The renderer supplies the icon on each catalog view.
+  Set optional `first_published` to the verified date the work first became public
+  (YYYY-MM-DD). A browser shows 🌱 from that UTC date until its three-month
+  anniversary, clamped to the last day of the month. Omit unknown dates.
   Keep IDs stable when renaming work. `related_entries` can reference other entries
   without copying their records; the generator adds links to those entries.
   Optional `coauthors` is an ordered list of collaborators, excluding Gaurav Sood.

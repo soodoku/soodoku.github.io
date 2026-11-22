@@ -45,6 +45,7 @@
 }
 </script>
 <link rel="stylesheet" href="/research/headings.css">
+<script defer src="/research/recent.js"></script>
 </head>
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -65,7 +66,7 @@
   <main class="content">
     <article id="research" class="entry-page">
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; <span class="catalog-heading">Statistics <span class="minor-word">and</span> Research Methods</span> › <span class="catalog-heading">Causal Inference</span></a></p>
-      <div class="entry-meta"><span class="entry-icon">🌱</span><a href="/research/papers/validation_swaps.pdf" target="_blank" class="entry-title">Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/swaps" target="_blank">Replication Materials</a></div>
+      <div class="entry-meta"><a href="/research/papers/validation_swaps.pdf" target="_blank" class="entry-title">Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/swaps" target="_blank">Replication Materials</a></div>
       <div class="abstract">Correcting errors in machine-learned covariates can change a treatment-effect estimate in ways that separate corrections do not predict. Each correction changes the regression&#x27;s adjustment for other variables, so its effect can depend on which errors have already been corrected. Existing methods use verified measurements to correct inference and guide validation. We study the joint effects of finite corrections on a fitted coefficient. Our diagnostic replaces sets of proxy covariates with verified values and compares the resulting refits with the sum of isolated correction effects. Exact least-squares identities locate the source of nonadditivity in changes to the regression&#x27;s cross-product matrix. Correction paths describe how the coefficient moves as more measurements are corrected, and their dispersion describes how much the choice of correction set matters. Established Shapley methods attribute the endpoint change. Simulations illustrate these distinctions. Applications to housing and text-coded incivility compare refits with three additive approximations: isolated corrections track small random correction sets closely but misstate the full correction. The resulting diagnostic measures both the consequences of individual errors and the additional changes produced by correcting them together.</div>
       <section class="citation-section">
         <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression.&quot; https://gsood.com/research/partial-credit-diagnosing-proxy-covariates-with-validation-swaps/</p>
