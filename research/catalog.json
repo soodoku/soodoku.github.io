@@ -699,24 +699,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/stable-cart",
           "new_tab": true
-        },
-        {
-          "id": "install",
-          "kind": "webpage",
-          "role": "documentation",
-          "url": "https://pypi.org/project/stable-cart/",
-          "label": "Install package"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "install"
         }
       ],
       "description": [
@@ -1683,24 +1670,11 @@
           "role": "code",
           "url": "https://github.com/finite-sample/optimal-classification-cutoffs",
           "new_tab": true
-        },
-        {
-          "id": "install",
-          "kind": "webpage",
-          "role": "documentation",
-          "url": "https://pypi.org/project/optimal-classification-cutoffs/",
-          "label": "Install package"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "install"
         }
       ],
       "description": [
