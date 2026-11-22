@@ -1,6 +1,7 @@
 """Behavioral checks for catalog validation and page generation."""
 
 import copy
+import json
 import re
 import sys
 import tempfile
@@ -9,13 +10,17 @@ from pathlib import Path
 from unittest import mock
 
 import research_catalog
-from jsonschema import ValidationError
+from jsonschema import Draft202012Validator, ValidationError
 from research_catalog import (
     ROOT,
     load_catalog,
     paper_sources,
     placements,
     render,
+    render_entry_pages,
+    render_llms_txt,
+    render_schema,
+    render_sitemap,
     render_swipe,
     validate_catalog,
 )
@@ -101,10 +106,20 @@ class CatalogTests(unittest.TestCase):
                 "index.html",
                 "swipe.template.html",
                 "swipe.html",
+                "entry.template.html",
             ):
                 (root / "research" / name).write_text(
                     (ROOT / "research" / name).read_text()
                 )
+            for name in ("sitemap.xml", "llms.txt"):
+                (root / name).write_text((ROOT / name).read_text())
+            for entry in self.catalog["entries"]:
+                if slug := entry.get("slug"):
+                    sub = root / "research" / slug
+                    sub.mkdir(parents=True, exist_ok=True)
+                    (sub / "index.html").write_text(
+                        (ROOT / "research" / slug / "index.html").read_text()
+                    )
             with (
                 mock.patch.object(research_catalog, "ROOT", root),
                 mock.patch.object(
@@ -117,6 +132,52 @@ class CatalogTests(unittest.TestCase):
                 with self.assertRaises(SystemExit) as raised:
                     research_catalog.main()
             self.assertEqual(raised.exception.code, 1)
+
+    def test_schema_sitemap_and_llms_txt_match_catalog(self):
+        schema_data = json.loads(render_schema(self.catalog))
+        self.assertEqual(schema_data["@type"], "CollectionPage")
+        items = schema_data["mainEntity"]["itemListElement"]
+        self.assertEqual(len(items), len(self.catalog["entries"]))
+        self.assertEqual(
+            items[0]["item"]["@id"],
+            f"https://gsood.com/research/{self.entry['slug']}/",
+        )
+        sitemap = render_sitemap(self.catalog)
+        self.assertIn("<loc>https://gsood.com/</loc>", sitemap)
+        self.assertIn("<loc>https://gsood.com/research/</loc>", sitemap)
+        self.assertIn(
+            f"<loc>https://gsood.com/research/{self.entry['slug']}/</loc>", sitemap
+        )
+        self.assertIn(
+            "<loc>https://gsood.com/research/papers/queue_shift.pdf</loc>", sitemap
+        )
+        llms = render_llms_txt(self.catalog)
+        self.assertTrue(llms.startswith("# Gaurav Sood\n"))
+        self.assertIn(
+            f"https://gsood.com/research/{self.entry['slug']}/",
+            llms,
+        )
+
+    def test_dedicated_entry_pages_render_and_validate_slugs(self):
+        template = (ROOT / "research/entry.template.html").read_text()
+        pages = render_entry_pages(self.catalog, template)
+        self.assertEqual(len(pages), 10)
+        for rel_path, content in pages.items():
+            self.assertEqual(content, (ROOT / rel_path).read_text())
+        self.catalog["entries"][1]["slug"] = self.entry["slug"]
+        with self.assertRaisesRegex(ValueError, "Duplicate entry slug"):
+            validate_catalog(self.catalog)
+        self.catalog["entries"][1]["slug"] = "papers"
+        with self.assertRaisesRegex(ValueError, "Reserved entry slug"):
+            validate_catalog(self.catalog)
+
+    def test_anchor_ids_are_unique_when_entry_appears_twice(self):
+        generated = render(self.catalog, "{{catalog}}")
+        for entry in self.catalog["entries"]:
+            self.assertEqual(
+                generated.count(f'<details id="{entry["id"]}"'),
+                1,
+            )
 
     def test_rejects_duplicate_entry_and_resource_ids(self):
         self.catalog["entries"].append(copy.deepcopy(self.entry))
@@ -188,6 +249,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(generated.count(related["title"]), 2)
 
     def test_coauthor_punctuation_order_and_escaping(self):
+        self.entry.pop("slug", None)
         cases = [
             (["Zoe"], "With Zoe."),
             (["Zoe", "Alice"], "With Zoe and Alice."),
@@ -201,6 +263,7 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(f"</a><br>{expected}", generated)
 
     def test_metadata_precedes_resources_and_is_not_repeated_in_related_links(self):
+        self.entry.pop("slug", None)
         self.entry["coauthors"] = ["Test Collaborator"]
         self.entry["publication"] = ["Test Journal, 2026."]
         self.entry["summary"] = [
@@ -218,6 +281,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(generated.count("With Test Collaborator."), 1)
 
     def test_solo_entry_has_no_credit_line(self):
+        self.entry.pop("slug", None)
         self.entry.pop("coauthors", None)
         self.entry["summary"] = [{"resource": self.entry["primary_resource"]}]
         self.entry["publication"] = ["Test Journal, 2026."]
@@ -228,6 +292,23 @@ class CatalogTests(unittest.TestCase):
         self.entry.pop("publication")
         generated = render(self.catalog, "{{catalog}}")
         self.assertIn(f'{self.entry["title"]}</a></summary>', generated)
+
+    def test_draft_label_follows_title_and_excludes_publication(self):
+        self.entry.pop("publication", None)
+        self.entry["status"] = "draft"
+        self.entry["summary"] = [{"resource": self.entry["primary_resource"]}]
+        generated = render(self.catalog, "{{catalog}}")
+        self.assertIn(
+            f'{self.entry["title"]}</a> <span class="status">Draft</span>', generated
+        )
+        self.entry["publication"] = ["Test Journal, 2026."]
+        with self.assertRaisesRegex(ValueError, "draft cannot have a publication"):
+            validate_catalog(self.catalog)
+        self.entry.pop("publication")
+        self.entry["status"] = "finished"
+        schema = json.loads((ROOT / "research/catalog.schema.json").read_text())
+        with self.assertRaises(ValidationError):
+            Draft202012Validator(schema).validate(self.catalog)
 
     def test_rejects_invalid_coauthor_names(self):
         for name in ("Gaurav Sood", " ", " Alice", "Alice "):

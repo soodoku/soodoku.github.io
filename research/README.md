@@ -8,10 +8,12 @@ python .github/scripts/research_catalog.py
 ```
 
 Run commands from the repository root. Commit the catalog and the generated
-`research/index.html` and `research/swipe.html`. GitHub Pages serves that HTML
-directly; it needs no build service. CI rejects edits that leave either generated
-page out of date.
-The page shell lives in `page.template.html`; shared styling stays in `/style.css`.
+`research/index.html`, `research/swipe.html`, `research/<slug>/index.html` (for
+entries with a `slug`), `sitemap.xml`, and `llms.txt`.
+GitHub Pages serves that HTML directly; it needs no build service. CI rejects
+edits that leave any generated file out of date.
+The page shell lives in `page.template.html` (and `entry.template.html` for
+dedicated entry pages); shared styling stays in `/style.css`.
 
 The same command also writes `research/swipe.html`, a phone-first feed with one
 card per entry (each entry once, at its first position in `sections`). Its shell,

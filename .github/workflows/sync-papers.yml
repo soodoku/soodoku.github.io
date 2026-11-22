@@ -10,9 +10,13 @@ on:
       - research/catalog.json
       - research/catalog.schema.json
       - research/page.template.html
+      - research/entry.template.html
       - research/index.html
+      - research/*/index.html
       - research/swipe.template.html
       - research/swipe.html
+      - sitemap.xml
+      - llms.txt
       - research/papers/*.pdf
       - .github/scripts/**
       - .github/workflows/sync-papers.yml
@@ -21,9 +25,13 @@ on:
       - research/catalog.json
       - research/catalog.schema.json
       - research/page.template.html
+      - research/entry.template.html
       - research/index.html
+      - research/*/index.html
       - research/swipe.template.html
       - research/swipe.html
+      - sitemap.xml
+      - llms.txt
       - research/papers/*.pdf
       - .github/scripts/**
       - .github/workflows/sync-papers.yml

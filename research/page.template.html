@@ -1,10 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Gaurav Sood - Outputs</title>
+	<title>Gaurav Sood - Data, Research, and Software</title>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="revisit- after" content="14 days" />
+	<meta charset="utf-8" />
+	<meta name="description" content="Papers, open-source software, and datasets by Gaurav Sood across statistics, calibration, record linkage, causal inference, name-based inference, online privacy, misinformation, and Indian political economy." />
+	<link rel="canonical" href="https://gsood.com/research/" />
 	<meta name="distribution" content="global" />
 	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
 	<meta name="rating" content="General" />
@@ -20,8 +21,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<script type="application/ld+json">
+{{schema}}
+</script>
 </head>
 
 <body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
@@ -49,6 +51,22 @@
 </div>
   </main>
 </div>
-
+<script>
+(function () {
+  function openHash() {
+    if (!location.hash || location.hash.length < 2) return;
+    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!el) return;
+    var node = el;
+    while (node && node.id !== "research") {
+      if (node.tagName === "DETAILS") node.open = true;
+      node = node.parentElement;
+    }
+    el.scrollIntoView();
+  }
+  openHash();
+  window.addEventListener("hashchange", openHash);
+})();
+</script>
 </body>
 </html>
