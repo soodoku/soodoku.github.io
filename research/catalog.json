@@ -2056,6 +2056,13 @@
           "label": "rdomains: domain classification in R",
           "new_tab": true,
           "software_type": "package"
+        },
+        {
+          "id": "cisis-paper",
+          "kind": "webpage",
+          "role": "related",
+          "url": "https://doi.org/10.1007/978-3-030-57805-3_15",
+          "label": "13th International Conference on Computational Intelligence in Security for Information Systems (CISIS 2020), pp. 152–162."
         }
       ],
       "summary": [
@@ -2079,7 +2086,9 @@
             {
               "tag": "i",
               "children": [
-                "Complex, Intelligent and Software Intensive Systems (CISIS), 2020."
+                {
+                  "resource": "cisis-paper"
+                }
               ]
             }
           ],
