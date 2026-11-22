@@ -605,7 +605,7 @@
       "children": [
         {
           "id": "cricket-research-and-ratings",
-          "title": "Research and ratings",
+          "title": "Analysis and ratings",
           "children": [
             {
               "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
@@ -702,7 +702,7 @@
     },
     {
       "id": "stable-cart-lower-bootstrap-prediction-variance-cart",
-      "kind": "project",
+      "kind": "software",
       "title": "Stable CART: Lower Bootstrap Prediction Variance CART",
       "primary_resource": "primary",
       "resources": [
@@ -712,6 +712,13 @@
           "role": "code",
           "url": "https://github.com/finite-sample/stable-cart",
           "new_tab": true
+        },
+        {
+          "id": "install",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://pypi.org/project/stable-cart/",
+          "label": "Install package"
         }
       ],
       "summary": [
@@ -724,6 +731,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "install"
         }
       ],
       "description": [
@@ -1446,16 +1459,23 @@
     },
     {
       "id": "inferring-treatment-compliance-from-delivery-window-data",
-      "kind": "project",
+      "kind": "paper",
       "title": "Inferring Treatment Compliance from Delivery-Window Data",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://raw.githubusercontent.com/finite-sample/late/main/note/inferred_compliance_note.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/late/",
-          "new_tab": true
+          "label": "Source code"
         }
       ],
       "summary": [
@@ -1468,6 +1488,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
         }
       ],
       "description": [
@@ -1600,16 +1626,23 @@
     },
     {
       "id": "smooth-operator-optimal-filtering-of-event-study-estimates",
-      "kind": "project",
+      "kind": "paper",
       "title": "Smooth Operator: Optimal Filtering of Event Study Estimates",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "pdf",
+          "role": "manuscript",
+          "url": "https://raw.githubusercontent.com/finite-sample/smooth-operator/main/ms/smoother_trends_sharper_tests.pdf",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/smooth-operator",
-          "new_tab": true
+          "label": "Source code"
         }
       ],
       "summary": [
@@ -1622,6 +1655,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
         }
       ],
       "description": [
@@ -1780,7 +1819,7 @@
     },
     {
       "id": "optimal-classification-cutoffs-for-f1-score-etc",
-      "kind": "project",
+      "kind": "software",
       "title": "Optimal Classification Cutoffs for F1-score, etc.",
       "primary_resource": "primary",
       "resources": [
@@ -1790,6 +1829,13 @@
           "role": "code",
           "url": "https://github.com/finite-sample/optimal-classification-cutoffs",
           "new_tab": true
+        },
+        {
+          "id": "install",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://pypi.org/project/optimal-classification-cutoffs/",
+          "label": "Install package"
         }
       ],
       "summary": [
@@ -1802,6 +1848,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "install"
         }
       ],
       "description": [
@@ -1840,14 +1892,14 @@
     },
     {
       "id": "exposed-shedding-blacklight-on-online-privacy",
-      "kind": "project",
+      "kind": "paper",
       "title": "Exposed: Shedding Blacklight On Online Privacy",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "webpage",
-          "role": "related",
+          "role": "manuscript",
           "url": "https://arxiv.org/abs/2512.24041",
           "new_tab": true
         },
@@ -2053,7 +2105,7 @@
     },
     {
       "id": "pass-fail-using-a-password-generator-to-improve-password-strength",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Pass-Fail: Using a Password Generator to Improve Password Strength",
       "primary_resource": "primary",
       "resources": [
@@ -2583,7 +2635,7 @@
     },
     {
       "id": "adjacent-related-repositories-recommender",
-      "kind": "project",
+      "kind": "software",
       "title": "Adjacent — Related Repositories Recommender",
       "primary_resource": "primary",
       "resources": [
@@ -2592,6 +2644,13 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/gojiplus/adjacent/"
+        },
+        {
+          "id": "setup",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://github.com/gojiplus/adjacent#setup",
+          "label": "Use GitHub Action"
         }
       ],
       "summary": [
@@ -2604,6 +2663,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "setup"
         }
       ],
       "description": [
@@ -2618,7 +2683,7 @@
     },
     {
       "id": "advertiser-promote-your-github-repositories-on-bluesky",
-      "kind": "project",
+      "kind": "software",
       "title": "Advertiser: Promote Your GitHub Repositories on BlueSky",
       "primary_resource": "primary",
       "resources": [
@@ -2627,6 +2692,13 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/gojiplus/advertiser"
+        },
+        {
+          "id": "setup",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://github.com/gojiplus/advertiser#use-in-another-repository",
+          "label": "Use GitHub Action"
         }
       ],
       "summary": [
@@ -2639,6 +2711,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "setup"
         }
       ],
       "description": [
@@ -2888,7 +2966,7 @@
     },
     {
       "id": "get-notified-when-cited-article-is-retracted",
-      "kind": "project",
+      "kind": "software",
       "title": "Get Notified When Cited Article is Retracted",
       "primary_resource": "primary",
       "resources": [
@@ -2898,6 +2976,13 @@
           "role": "code",
           "url": "https://github.com/recite/retract",
           "new_tab": true
+        },
+        {
+          "id": "setup",
+          "kind": "webpage",
+          "role": "documentation",
+          "url": "https://github.com/recite/retract#github-action",
+          "label": "Use GitHub Action"
         }
       ],
       "summary": [
@@ -2910,6 +2995,12 @@
         },
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "setup"
         }
       ],
       "description": [
@@ -2924,7 +3015,7 @@
     },
     {
       "id": "highlight-citations-to-retracted-articles",
-      "kind": "project",
+      "kind": "software",
       "title": "Highlight Citations to Retracted Articles",
       "primary_resource": "primary",
       "resources": [
@@ -3143,7 +3234,7 @@
     },
     {
       "id": "autosum-summarize-publications-automatically-and-discover-miscitations",
-      "kind": "project",
+      "kind": "software",
       "title": "AutoSum: Summarize Publications Automatically and Discover Miscitations",
       "primary_resource": "primary",
       "resources": [
@@ -3234,7 +3325,7 @@
     },
     {
       "id": "the-review-production-and-consumption-of-apsr-articles",
-      "kind": "project",
+      "kind": "analysis",
       "title": "The Review: Production and Consumption of APSR Articles",
       "primary_resource": "primary",
       "resources": [
@@ -3263,7 +3354,7 @@
     },
     {
       "id": "superdf-save-metadata-with-the-data-in-r-and-python-dataframes",
-      "kind": "project",
+      "kind": "software",
       "title": "superdf: Persistent Metadata for R Data Frames",
       "primary_resource": "primary",
       "resources": [
@@ -3292,14 +3383,14 @@
     },
     {
       "id": "not-to-code-evidence-from-static-code-analysis-of-replication-scripts",
-      "kind": "project",
+      "kind": "software",
       "title": "Not to Code: Evidence From Static Code Analysis of Replication Scripts",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "repository",
-          "role": "replication",
+          "role": "code",
           "url": "https://github.com/recite/not_to_code",
           "new_tab": true
         }
@@ -3421,7 +3512,7 @@
     },
     {
       "id": "sound-names-classify-names-based-on-sequence-of-sounds",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Sound Names: Classify Names Based on Sequence of Sounds",
       "primary_resource": "primary",
       "resources": [
@@ -3450,7 +3541,7 @@
     },
     {
       "id": "graphic-names-classify-names-using-google-image-search-and-clarifai",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Graphic Names: Classify Names Using Google Image Search and Clarifai",
       "primary_resource": "primary",
       "resources": [
@@ -4747,7 +4838,7 @@
     },
     {
       "id": "what-and-who-is-on-network-television",
-      "kind": "project",
+      "kind": "analysis",
       "title": "What and Who is on Network Television?",
       "primary_resource": "primary",
       "resources": [
@@ -4776,7 +4867,7 @@
     },
     {
       "id": "working-women-on-indian-tv",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Working Women on Indian TV",
       "primary_resource": "primary",
       "resources": [
@@ -5406,7 +5497,7 @@
     },
     {
       "id": "mixed-signals-movie-quality-assessments-across-platforms",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Mixed Signals: Movie Quality Assessments Across Platforms",
       "primary_resource": "primary",
       "resources": [
@@ -5865,7 +5956,7 @@
     },
     {
       "id": "delhi-street-food-videos",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Who Eats in Delhi Street-Food Videos?",
       "primary_resource": "primary",
       "resources": [
@@ -5950,7 +6041,7 @@
     },
     {
       "id": "which-women-are-missing-adult-sex-ratio-by-last-name",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Which Women Are Missing? Adult Sex Ratio By Last Name",
       "primary_resource": "primary",
       "resources": [
@@ -5982,7 +6073,7 @@
     },
     {
       "id": "missing-women-on-the-streets",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Women and Men on Delhi’s Streets: Evidence from Field Photographs, 2016–2017",
       "primary_resource": "primary",
       "resources": [
@@ -6011,7 +6102,7 @@
     },
     {
       "id": "epic-children-sex-ratio-of-children-of-key-characters-in-epics",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Epic Children: Sex Ratio of Children of Key Characters in Epics",
       "primary_resource": "primary",
       "resources": [
@@ -6040,7 +6131,7 @@
     },
     {
       "id": "missing-daughters-of-indian-politicians",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Missing Daughters of Indian Politicians",
       "primary_resource": "primary",
       "resources": [
@@ -6265,7 +6356,7 @@
     },
     {
       "id": "unreadable-news-how-readable-is-american-news",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Unreadable News: How Readable is American News?",
       "primary_resource": "primary",
       "resources": [
@@ -6497,7 +6588,7 @@
     },
     {
       "id": "the-good-nyt-provision-of-apolitical-news-in-the-new-york-times",
-      "kind": "project",
+      "kind": "analysis",
       "title": "The Good NYT: Provision of Apolitical News in the New York Times",
       "primary_resource": "primary",
       "resources": [
@@ -6579,7 +6670,7 @@
     },
     {
       "id": "partisan-imbalance-in-politifact",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Partisan Imbalance in Politifact?",
       "primary_resource": "primary",
       "resources": [
@@ -6608,7 +6699,7 @@
     },
     {
       "id": "top-news-urls-from-news-feeds-of-major-national-news-sites-2022",
-      "kind": "project",
+      "kind": "dataset",
       "title": "Top News! URLs from News Feeds of Major National News Sites (2022-)",
       "primary_resource": "primary",
       "resources": [
@@ -6647,7 +6738,7 @@
     },
     {
       "id": "cnn-transcripts-2000-2025",
-      "kind": "project",
+      "kind": "dataset",
       "title": "CNN Transcripts 2000--2025",
       "primary_resource": "primary",
       "resources": [
@@ -6860,15 +6951,15 @@
     },
     {
       "id": "motivated-responding-in-studies-of-factual-learning",
-      "kind": "project",
+      "kind": "paper",
       "title": "Motivated Responding in Studies of Factual Learning",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "webpage",
-          "role": "related",
-          "url": "http://rdcu.be/HNE5",
+          "role": "manuscript",
+          "url": "https://doi.org/10.1007/s11109-017-9395-7",
           "new_tab": true
         },
         {
@@ -7741,7 +7832,7 @@
     },
     {
       "id": "autosense-automated-street-condition-assessment",
-      "kind": "project",
+      "kind": "software",
       "title": "AutoSense: Automated Street Condition Assessment",
       "primary_resource": "primary",
       "resources": [
@@ -7777,7 +7868,7 @@
     },
     {
       "id": "get-in-line-waiting-times-at-the-dmv",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Get in Line: Waiting Times at the DMV",
       "primary_resource": "primary",
       "resources": [
@@ -7810,7 +7901,7 @@
     },
     {
       "id": "elo-ratings-of-international-cricket-teams-by-format",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Side Order: Rating International Cricket Teams",
       "primary_resource": "primary",
       "resources": [
@@ -7836,6 +7927,20 @@
           "url": "press/EloDutch.pdf",
           "label": "The Hindu",
           "new_tab": true
+        },
+        {
+          "id": "ratings",
+          "kind": "webpage",
+          "role": "demo",
+          "url": "https://outside-edge.github.io/side_order/#read-the-ratings",
+          "label": "View ratings"
+        },
+        {
+          "id": "data",
+          "kind": "webpage",
+          "role": "data",
+          "url": "https://outside-edge.github.io/side_order/docs/data.html",
+          "label": "Download data"
         }
       ],
       "summary": [
@@ -7846,7 +7951,19 @@
           "tag": "br"
         },
         {
-          "resource": "repository"
+          "tag": "span",
+          "class": "resource-links",
+          "children": [
+            {
+              "resource": "ratings"
+            },
+            {
+              "resource": "data"
+            },
+            {
+              "resource": "repository"
+            }
+          ]
         }
       ],
       "description": [
@@ -7873,7 +7990,7 @@
     },
     {
       "id": "war-ratings-for-cricketers",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Player Value: Rating International Cricketers",
       "primary_resource": "primary",
       "resources": [
@@ -8251,7 +8368,7 @@
     },
     {
       "id": "the-older-half-spousal-age-gap-in-india",
-      "kind": "project",
+      "kind": "analysis",
       "title": "The Older Half: Spousal Age Gap in India",
       "primary_resource": "primary",
       "resources": [
@@ -9170,7 +9287,7 @@
     },
     {
       "id": "ipl-international-debuts",
-      "kind": "project",
+      "kind": "analysis",
       "title": "Which IPL Players Go On to Play International Cricket?",
       "primary_resource": "primary",
       "resources": [
@@ -9213,7 +9330,7 @@
     },
     {
       "id": "ipl-auction-prices",
-      "kind": "project",
+      "kind": "analysis",
       "title": "IPL Auction Prices and Player Performance",
       "primary_resource": "primary",
       "resources": [

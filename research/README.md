@@ -25,7 +25,11 @@ main page stays script-free and only gains a link to the feed on narrow screens.
 
 The catalog uses JSON Schema, plus validation for references and sync destinations.
 
-- **Entries** describe projects, papers, software, datasets, or blog posts. Each has
+- **Entries** identify the main output a reader will find. Use `paper` for a standalone
+  manuscript, `analysis` for findings or ratings presented directly on a site or
+  in a repository, `dataset` for records published for reuse, `software` for a
+  tool someone can run (including packages, GitHub Actions, and web apps), and
+  `blog` for a blog post. An analysis can link to its data and code. Each entry has
   a stable `id`, a `kind`, a `title`, a `primary_resource`, and a list of resources.
   Keep IDs stable when renaming work. `related_entries` can reference other entries
   without copying their records; the generator adds links to those entries.
@@ -51,9 +55,9 @@ line breaks. For example:
 
 ```json
 {
-  "id": "example-project",
-  "kind": "project",
-  "title": "Example Project",
+  "id": "example-analysis",
+  "kind": "analysis",
+  "title": "Example Analysis",
   "primary_resource": "code",
   "resources": [
     {
@@ -66,7 +70,7 @@ line breaks. For example:
       "id": "blog",
       "kind": "webpage",
       "role": "blog",
-      "label": "Project introduction",
+      "label": "Introduction to the analysis",
       "url": "https://example.org/introduction"
     }
   ],
@@ -75,7 +79,7 @@ line breaks. For example:
     {"tag": "br"},
     {"resource": "blog"}
   ],
-  "description": ["What the project does."]
+  "description": ["What the analysis finds."]
 }
 ```
 

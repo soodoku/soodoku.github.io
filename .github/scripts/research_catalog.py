@@ -16,7 +16,7 @@ SCHEMA_TYPES = {
     "paper": "ScholarlyArticle",
     "software": "SoftwareSourceCode",
     "dataset": "Dataset",
-    "project": "CreativeWork",
+    "analysis": "CreativeWork",
     "blog": "BlogPosting",
 }
 
