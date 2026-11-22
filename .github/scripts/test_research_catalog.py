@@ -46,23 +46,15 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(generated, (ROOT / "research/swipe.html").read_text())
 
     def test_swipe_has_one_card_per_entry_even_when_listed_twice(self):
-        listed = []
-
-        def walk(value):
-            for child in value["children"]:
-                if "entry" in child:
-                    listed.append(child["entry"])
-                else:
-                    walk(child)
-
-        for value in self.catalog["sections"]:
-            walk(value)
-        self.assertGreater(len(listed), len(set(listed)))
-        generated = render_swipe(self.catalog, SWIPE)
-        self.assertEqual(
-            generated.count('<article class="card"'), len(self.catalog["entries"])
+        catalog = copy.deepcopy(self.catalog)
+        catalog["sections"][-1]["children"][0]["children"].append(
+            {"entry": self.entry["id"]}
         )
-        self.assertTrue(generated.endswith(f"|{len(self.catalog['entries'])}"))
+        generated = render_swipe(catalog, SWIPE)
+        self.assertEqual(
+            generated.count('<article class="card"'), len(catalog["entries"])
+        )
+        self.assertTrue(generated.endswith(f"|{len(catalog['entries'])}"))
 
     def test_swipe_keeps_first_position_and_section_order(self):
         order = [entry_id for _, _, entry_id in placements(self.catalog)]
