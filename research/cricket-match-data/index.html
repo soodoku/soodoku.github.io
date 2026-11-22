@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cricket Match Data: More Than 43,000 Matches | Gaurav Sood</title>
+
+	<meta charset="utf-8" />
+	<meta name="description" content="Match-level records collected from ESPNcricinfo, with the scripts used to retrieve and parse the scorecards." />
+	<link rel="canonical" href="https://gsood.com/research/cricket-match-data/" />
+	<meta name="distribution" content="global" />
+	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
+	<meta name="rating" content="General" />
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1D4ED8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="citation_title" content="Cricket Match Data: More Than 43,000 Matches" />
+	<meta name="citation_author" content="Gaurav Sood" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://gsood.com/research/cricket-match-data/",
+  "name": "Cricket Match Data: More Than 43,000 Matches",
+  "headline": "Cricket Match Data: More Than 43,000 Matches",
+  "url": "https://gsood.com/research/cricket-match-data/",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Gaurav Sood",
+      "url": "https://gsood.com/"
+    }
+  ],
+  "description": "Match-level records collected from ESPNcricinfo, with the scripts used to retrieve and parse the scorecards.",
+  "sameAs": "https://github.com/outside-edge/get_cricket_data"
+}
+</script>
+</head>
+
+<body bgcolor="#ffffff" background="/images/bg.gif" topmargin="0" leftmargin="0" rightmargin="0">
+
+<div class="container">
+  <nav class="sidebar research-sidebar" aria-label="Main navigation">
+  	<div class="site-title">
+  		<a href="/">
+  			<span class="first">g</span><span class="last">sood</span>
+  		</a>
+		</div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/research/">Data, Research, and Software</a></li>
+      <li><a href="https://gojiberries.io">Blog</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <article id="research" class="entry-page">
+      <p class="entry-breadcrumb"><a href="/research/#cricket">&larr; Cricket › Data and software</a></p>
+      <div class="entry-meta"><a href="https://github.com/outside-edge/get_cricket_data" target="_blank" class="entry-title">Cricket Match Data: More Than 43,000 Matches</a><br><a href="https://raw.githubusercontent.com/outside-edge/get_cricket_data/master/data/final_output.csv">Download CSV</a></div>
+      <div class="abstract">Match-level records collected from ESPNcricinfo, with the scripts used to retrieve and parse the scorecards.</div>
+      <section class="citation-section">
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Cricket Match Data: More Than 43,000 Matches.&quot; https://gsood.com/research/cricket-match-data/</p>
+        <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
+        <pre class="bibtex-block"><code>@misc{soodcricket,
+  author = {Gaurav Sood},
+  title = {{Cricket Match Data: More Than 43,000 Matches}},
+  url = {https://github.com/outside-edge/get_cricket_data}
+}</code></pre>
+      </section>
+    </article>
+  </main>
+</div>
+<script>
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  var pre = btn.closest(".citation-section").querySelector("pre");
+  if (!pre || !navigator.clipboard) return;
+  navigator.clipboard.writeText(pre.textContent).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = "Copied";
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  });
+});
+</script>
+</body>
+</html>

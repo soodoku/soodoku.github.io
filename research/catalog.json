@@ -604,13 +604,40 @@
       "title": "Cricket",
       "children": [
         {
-          "entry": "elo-ratings-of-international-cricket-teams-by-format"
+          "id": "cricket-research-and-ratings",
+          "title": "Research and ratings",
+          "children": [
+            {
+              "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
+            },
+            {
+              "entry": "elo-ratings-of-international-cricket-teams-by-format"
+            },
+            {
+              "entry": "war-ratings-for-cricketers"
+            },
+            {
+              "entry": "ipl-international-debuts"
+            },
+            {
+              "entry": "ipl-auction-prices"
+            }
+          ]
         },
         {
-          "entry": "war-ratings-for-cricketers"
-        },
-        {
-          "entry": "fairly-random-the-effect-of-winning-the-toss-on-winning-the-match"
+          "id": "cricket-data-and-software",
+          "title": "Data and software",
+          "children": [
+            {
+              "entry": "espncricinfo-python-client"
+            },
+            {
+              "entry": "cricket-match-data"
+            },
+            {
+              "entry": "cricket-grounds-and-jurisdictions"
+            }
+          ]
         }
       ]
     }
@@ -5763,6 +5790,14 @@
           "url": "https://music.amazon.co.uk/podcasts/37424666-0994-4d1b-9703-ae037bc10d9d/episodes/e3305856-5472-47be-8fb8-648470cb6f43/watching-the-wheels-ep-1-where-have-all-the-women-gone",
           "label": "Watching the Wheels (podcast)",
           "new_tab": true
+        },
+        {
+          "id": "the-wire",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://thewire.in/women/70-of-women-in-mumbai-navi-mumbai-missing-from-the-cities-streets-finds-study",
+          "label": "The Wire",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -5788,6 +5823,11 @@
       ],
       "supporting": {
         "press": [
+          [
+            {
+              "resource": "the-wire"
+            }
+          ],
           [
             {
               "resource": "marginal-revolution"
@@ -7758,14 +7798,22 @@
     {
       "id": "elo-ratings-of-international-cricket-teams-by-format",
       "kind": "project",
-      "title": "Elo Ratings of International Cricket Teams By Format",
+      "title": "Side Order: Rating International Cricket Teams",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "webpage",
+          "role": "demo",
+          "url": "https://outside-edge.github.io/side_order/",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/outside-edge/elo_cricket",
+          "url": "https://github.com/outside-edge/side_order",
+          "label": "Source code",
           "new_tab": true
         },
         {
@@ -7780,10 +7828,16 @@
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
         }
       ],
       "description": [
-        "We construct historical monthly Elo ratings for international cricket teams, separately for Tests, one-day internationals, and T20 internationals. The repository provides match outcomes, rating scripts, and downloadable series for comparing team strength over time."
+        "Weekly Elo ratings track men's international teams separately in Tests, one-day internationals, and Twenty20 internationals. Monthly histories are available to download, alongside ratings from four other methods."
       ],
       "supporting": {
         "press": [
@@ -7795,9 +7849,9 @@
         ]
       },
       "description_source": {
-        "url": "https://github.com/outside-edge/elo_cricket#readme",
+        "url": "https://github.com/outside-edge/side_order#readme",
         "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       },
       "coauthors": [
@@ -7807,29 +7861,43 @@
     {
       "id": "war-ratings-for-cricketers",
       "kind": "project",
-      "title": "WAR Ratings for Cricketers",
+      "title": "Player Value: Rating International Cricketers",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
+          "kind": "webpage",
+          "role": "demo",
+          "url": "https://outside-edge.github.io/player_value/",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/outside-edge/war",
+          "url": "https://github.com/outside-edge/player_value",
+          "label": "Source code",
           "new_tab": true
         }
       ],
       "summary": [
         {
           "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
         }
       ],
       "description": [
-        "We develop batting and bowling Wins Above Replacement measures for men's and women's one-day international cricket. The project compares simple aggregate measures with context-adjusted approaches, with results depending on the chosen replacement baseline and conversion from runs to wins."
+        "Player rankings use five years of lineups and match outcomes to estimate how playing strength varies across cricketers. Separate tables cover men's and women's Tests, one-day internationals, and Twenty20 internationals."
       ],
       "description_source": {
-        "url": "https://github.com/outside-edge/war#readme",
+        "url": "https://github.com/outside-edge/player_value#readme",
         "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       },
       "coauthors": [
@@ -9084,6 +9152,208 @@
         "url": "papers/candidate_namesakes.pdf",
         "kind": "manuscript",
         "reviewed_on": "2026-11-16",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "ipl-international-debuts",
+      "kind": "project",
+      "title": "Which IPL Players Go On to Play International Cricket?",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "webpage",
+          "role": "demo",
+          "url": "https://outside-edge.github.io/national_selection/",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/outside-edge/national_selection",
+          "label": "Source code",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
+        }
+      ],
+      "description": [
+        "For Indian Premier League players who have yet to play for a national side, the project forecasts a first international appearance in the next 12 months. Historical forecasts show how well IPL performance predicts debuts."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/national_selection#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "ipl-auction-prices",
+      "kind": "project",
+      "title": "IPL Auction Prices and Player Performance",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/outside-edge/ipl_auction",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "The study compares Indian Premier League auction prices with players' subsequent batting and bowling performances. Ball-by-ball records link each purchase to an estimate of wins above replacement."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/ipl_auction#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "espncricinfo-python-client",
+      "kind": "software",
+      "title": "ESPNcricinfo Python Client",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "documentation",
+          "role": "documentation",
+          "url": "https://outside-edge.github.io/python-espncricinfo/",
+          "new_tab": true
+        },
+        {
+          "id": "repository",
+          "kind": "repository",
+          "role": "code",
+          "url": "https://github.com/outside-edge/python-espncricinfo",
+          "label": "Source code",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "repository"
+        }
+      ],
+      "description": [
+        "A Python package for retrieving match, series, season, team, and player records from ESPNcricinfo."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/python-espncricinfo#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      },
+      "coauthors": [
+        "Derek Willis"
+      ]
+    },
+    {
+      "id": "cricket-match-data",
+      "kind": "dataset",
+      "title": "Cricket Match Data: More Than 43,000 Matches",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/outside-edge/get_cricket_data",
+          "new_tab": true
+        },
+        {
+          "id": "download",
+          "kind": "dataset",
+          "role": "data",
+          "url": "https://raw.githubusercontent.com/outside-edge/get_cricket_data/master/data/final_output.csv",
+          "label": "Download CSV"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "download"
+        }
+      ],
+      "description": [
+        "Match-level records collected from ESPNcricinfo, with the scripts used to retrieve and parse the scorecards."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/get_cricket_data#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
+        "text_type": "summary"
+      }
+    },
+    {
+      "id": "cricket-grounds-and-jurisdictions",
+      "kind": "dataset",
+      "title": "Cricket Grounds and Jurisdictions",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "repository",
+          "role": "data",
+          "url": "https://github.com/outside-edge/cricket_grounds",
+          "new_tab": true
+        },
+        {
+          "id": "download",
+          "kind": "dataset",
+          "role": "data",
+          "url": "https://raw.githubusercontent.com/outside-edge/cricket_grounds/main/grounds.csv",
+          "label": "Download CSV"
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        },
+        {
+          "tag": "br"
+        },
+        {
+          "resource": "download"
+        }
+      ],
+      "description": [
+        "A dated lookup table connects ESPNcricinfo ground IDs to cricket jurisdictions. Match dates determine which jurisdiction applies when a ground's affiliation has changed."
+      ],
+      "description_source": {
+        "url": "https://github.com/outside-edge/cricket_grounds#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       }
     }
