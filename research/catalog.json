@@ -7026,7 +7026,7 @@
           "source": {
             "repo": "finite-sample/know_motivated",
             "ref": "main",
-            "path": "data/reference/paper/partisan_learning.pdf"
+            "path": "paper/main.pdf"
           }
         },
         {
@@ -7073,7 +7073,7 @@
         }
       ],
       "description": [
-        "Three experiments use accuracy incentives to distinguish biased learning from biased reporting of learned information. Incentives increase accurate reporting of politically uncongenial results, but also increase skepticism about their credibility, suggesting that bias can shift from one judgment to another."
+        "Three experiments asked people to interpret data on concealed carry and the minimum wage. Small payments for accuracy changed the answers people gave. The experiments leave open how much of that change came from reporting what they already knew, recalling the data, or reasoning through the problem. The estimated increase in skepticism about politically unwelcome results was too imprecise to establish that incentives shifted bias into judgments of credibility."
       ],
       "supporting": {
         "related": [
@@ -7092,7 +7092,7 @@
       "description_source": {
         "url": "papers/partisanlearning.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-22",
         "text_type": "summary"
       },
       "coauthors": [
@@ -7107,7 +7107,8 @@
         },
         ". 40(1): 79–101, 2018."
       ],
-      "publication_url": "https://doi.org/10.1007/s11109-017-9395-7"
+      "publication_url": "https://doi.org/10.1007/s11109-017-9395-7",
+      "site_author_position": 2
     },
     {
       "id": "a-gap-in-our-understanding-reconsidering-the-evidence-for-partisan-knowledge-gaps",
