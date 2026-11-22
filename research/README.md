@@ -26,10 +26,14 @@ CSS, and the small script for topic chips and the card counter live in
 `swipe.template.html`; the feed itself scrolls and snaps without JavaScript. The
 main page links to the feed on narrow screens. Section navigation works without JavaScript.
 
-The Missing Women overview is generated from `missing-women/program.template.html`.
-Its catalog section sets `program_page` to true. Each study’s `study_group`
-sets its heading in the list. Titles and links come from the catalog. The
-section’s study pages link back to the overview. Both layouts use `study-nav.html`.
+To publish a top-level category at `/research/<section-id>/`, add a
+`program_page` object to that section in `catalog.json`. Its `description`
+is the opening paragraph and search description. The optional `body` is an
+array of Markdown blocks. The Missing Women comparison uses an HTML table
+to retain its caption and row headers. Set `list_title` to customize the
+heading above the entries. Each placement’s optional `study_group` sets its
+subheading. The generator builds the overview from `program.template.html`,
+lists it in the sitemap, and links its entries back through their breadcrumbs.
 
 ## Entries, resources, and sections
 

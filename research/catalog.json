@@ -145,30 +145,50 @@
       "title": "Names and Name-Based Inference",
       "children": [
         {
-          "entry": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name"
+          "entry": "predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name",
+          "study_group": "Research"
         },
         {
-          "entry": "sound-names-classify-names-based-on-sequence-of-sounds"
+          "entry": "sound-names-classify-names-based-on-sequence-of-sounds",
+          "study_group": "Research"
         },
         {
-          "entry": "graphic-names-classify-names-using-google-image-search-and-clarifai"
+          "entry": "graphic-names-classify-names-using-google-image-search-and-clarifai",
+          "study_group": "Research"
         },
         {
-          "entry": "naampy-infer-sociodemographic-characteristics-from-indian-names"
+          "entry": "naampy-infer-sociodemographic-characteristics-from-indian-names",
+          "study_group": "Population estimates"
         },
         {
-          "entry": "pranaam-predict-religion-from-name"
+          "entry": "pranaam-predict-religion-from-name",
+          "study_group": "Population estimates"
         },
         {
-          "entry": "naamkaran-a-generative-model-for-names"
+          "entry": "naamkaran-a-generative-model-for-names",
+          "study_group": "Parsing and generating names"
         },
         {
-          "entry": "parsernaam-ml-assisted-name-parser"
+          "entry": "parsernaam-ml-assisted-name-parser",
+          "study_group": "Parsing and generating names"
         },
         {
-          "entry": "instate-predict-spoken-language-from-last-name"
+          "entry": "instate-predict-spoken-language-from-last-name",
+          "study_group": "Population estimates"
         }
-      ]
+      ],
+      "program_page": {
+        "description": "US campaign finance records name donors and report how much each gave. How much money came from donors of different racial and ethnic groups? A name offers a clue. To use it, we need records in which people reported their race or ethnicity, and a way to check how well the patterns in those records hold elsewhere.",
+        "body": [
+          "## What can the spelling tell us?",
+          "Rajashekar Chintalapati, Suriyan Laohaprapanon, and I [compared models that read the letters in a name](../predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/). On records held out for testing, the best model using a full name matched the recorded race or ethnicity in 85% of cases. The best surname-only model matched in 81%. We used the models to estimate shares of campaign donations. That accuracy figure alone cannot tell us how far off a group’s estimated share will be. It matters which groups the model confuses, and how much those donors gave.",
+          "Two smaller projects explore other clues. [Sound Names](../sound-names-classify-names-based-on-sequence-of-sounds/) compared spellings with a phonetic encoding. The model did worse when spellings that sounded alike were collapsed. [Graphic Names](../graphic-names-classify-names-using-google-image-search-and-clarifai/) looked at the images a search engine returned for a first name. The people who turn up in search results can differ from the people who bear that name.",
+          "## What can we estimate from Indian names?",
+          "[naampy](../naampy-infer-sociodemographic-characteristics-from-indian-names/) lets a researcher look up how often a first name appears with female and male labels in its source records. It also offers a model score for the pattern in a name. [pranaam](../pranaam-predict-religion-from-name/) scores the extent to which a name resembles names associated with Muslims in its training data. Both packages report when they cannot return a score. For a population estimate, it matters how many records went unscored and whether the scored names resemble the population being studied.",
+          "[instate](../instate-predict-spoken-language-from-last-name/) starts with the states in which a surname appears on electoral rolls. To estimate a language distribution, it weights each state’s census mother-tongue shares by the surname’s distribution across states. The rolls supply evidence about geography. The language estimate assumes that people with the surname speak the same mix of languages as others in their state."
+        ],
+        "list_title": "Papers, analyses, and software"
+      }
     },
     {
       "id": "online-safety",
@@ -613,7 +633,23 @@
           "study_group": "Names and records"
         }
       ],
-      "program_page": true
+      "program_page": {
+        "description": "In Delhi, women made up about one in five pedestrians in our street photographs. Why so few? We counted people on the street, then used time-use surveys to see how often women and men left home.",
+        "body": [
+          "The name comes from [Amartya Sen’s 1990 essay](https://www.nybooks.com/articles/1990/12/20/more-than-100-million-women-are-missing/). Sen asked how many more women would have been alive had they received the same care as men. My work starts with a related question about public life. Given how many women live in a city, how many do we see on its streets?",
+          "## Who is out on the street?",
+          "In 2016 and 2017, I asked people to photograph [196 locations in Delhi](../missing-women-on-the-streets/). Women accounted for 18.5% of the people counted in the photographs. The photographers departed from the sampling plan, which made it hard to say how well those streets represented Delhi.",
+          "Varun Karekurve-Ramachandra and I later [sampled roads in four Indian cities](../missing-women-on-indian-streets/) and sent motorcyclists along them with chest-mounted cameras. Would we get the same answer from photographs taken by someone else? We could check in three cities where we also had Google Street View images.",
+          "<figure>\n<table>\n<caption>Women’s share of pedestrian sightings</caption>\n<thead><tr><th scope=\"col\">City</th><th scope=\"col\">Bike cameras</th><th scope=\"col\">Street View</th></tr></thead>\n<tbody>\n<tr><th scope=\"row\">Delhi</th><td>19.8%</td><td>20.0%</td></tr>\n<tr><th scope=\"row\">Mumbai</th><td>19.1%</td><td>20.5%</td></tr>\n<tr><th scope=\"row\">Navi Mumbai</th><td>18.0%</td><td>24.8%</td></tr>\n</tbody>\n</table>\n<figcaption>Each percentage counts women among pedestrians classified as women or men. The two sources covered different streets at different times. Data from the <a href=\"../missing-women-on-indian-streets/\">bike-camera study</a> and the <a href=\"https://github.com/geosensing/streetsight\">Street View comparison</a>.</figcaption>\n</figure>",
+          "The two sources agree closely in Delhi and Mumbai. In Navi Mumbai, the answer depends more on which photographs we use. India’s time-use survey offers a clue to the wider pattern. Women were less likely than men to leave home on the survey day. Even among those who went out, women made fewer trips.",
+          "## How does the picture change across countries?",
+          "I tried two ways of extending the counts. Starting with [28,794 photographs contributed by the public in 101 cities](../missing-women-on-global-streets/), I found that women made up 36.0% of pedestrian sightings a vision model could classify. But contributors choose where to take pictures. In a second study, I [sampled streets and walking routes in 98 cities](../google-street-view-98-cities/) before looking for images. Google returned no panoramas in 16 cities. In the images obtained, women accounted for 28.8% of classified pedestrian sightings. The model could not classify 66% of all sightings, including riders.",
+          "Sometimes the question is what people are doing once they are out. In [30 Delhi street-food videos](../delhi-street-food-videos/), women accounted for 13.5% of apparent diner sightings that could be classified, giving each video equal weight. That describes whom the filmmakers showed eating.",
+          "## Who appears in the record?",
+          "A different way to count is to ask whose names people write down. In India, [electoral rolls](../which-women-are-missing-adult-sex-ratio-by-last-name/) let us compare the numbers of registered women and men who share a surname. [Members of Parliament’s biographies](../missing-daughters-of-indian-politicians/) let us count the sons and daughters they report. In each case, the people omitted from a record matter to its interpretation.",
+          "Sometimes the choice of whom to name is itself the question. Walter Guillioli and I searched [US business registries](../son-bias-in-the-us-evidence-from-business-names/) for the words “son” or “sons” and “daughter” or “daughters.” Across the states we searched, the median ratio was twelve to one. [Epic Children](../epic-children-sex-ratio-of-children-of-key-characters-in-epics/) asks whom a family story preserves by counting the sons and daughters attributed to figures in epic and mythological traditions."
+        ]
+      }
     },
     {
       "id": "cricket",

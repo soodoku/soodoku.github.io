@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://gsood.com/</loc></url>
   <url><loc>https://gsood.com/research/</loc></url>
+  <url><loc>https://gsood.com/research/names/</loc></url>
+  <url><loc>https://gsood.com/research/missing-women/</loc></url>
   <url><loc>https://gsood.com/research/queue-shift-updating-classifiers-under-a-staffing-budget/</loc></url>
   <url><loc>https://gsood.com/research/stable-cart-lower-bootstrap-prediction-variance-cart/</loc></url>
   <url><loc>https://gsood.com/research/calibration-where-it-counts-cost-and-data-informed-isotonic-regression/</loc></url>

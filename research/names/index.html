@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Names and Name-Based Inference | Gaurav Sood</title>
+  <meta name="description" content="US campaign finance records name donors and report how much each gave. How much money came from donors of different racial and ethnic groups? A name offers a clue. To use it, we need records in which people reported their race or ethnicity, and a way to check how well the patterns in those records hold elsewhere.">
+  <link rel="canonical" href="https://gsood.com/research/names/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .program-page { max-width: 70ch; font-size: var(--reading-size); }
+    .program-page h1 { margin: 0 0 .85rem; font-size: 1.65rem; font-weight: 500; }
+    .program-page h2 { margin: 1.65rem 0 .5rem; font-size: 1.2rem; font-weight: 600; }
+    .program-page h3 { margin: .8rem 0 .25rem; font: 500 1rem/1.5 var(--body-font); }
+    .program-page p { margin: .7rem 0; }
+    .program-page a { font: inherit; color: var(--site-accent); text-decoration: underline; text-underline-offset: .16em; }
+    .program-page ul { list-style: disc; margin: .2rem 0 1rem; padding-left: 1.25rem; }
+    .program-page li { padding-left: .1rem; }
+    .program-page li::before { content: none; }
+    figure { margin: 1.25rem 0; padding: 1.15rem clamp(.8rem, 3vw, 1.5rem); background: #f1f5f6; }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    caption { text-align: left; font-weight: 600; margin: 0 0 .7rem; }
+    th, td { padding: .35rem .25rem; border-bottom: 1px solid #cbd6db; text-align: right; }
+    th:first-child { text-align: left; }
+    tbody th, thead th { font-weight: 500; }
+    figcaption { margin-top: .8rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+<div class="container study-layout">
+  <nav class="sidebar research-sidebar" aria-label="Main navigation">
+    <div class="site-title">
+      <a href="/" aria-label="Gaurav Sood, home"><span class="first">g</span><span class="last">sood</span></a>
+    </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/research/"><span class="wide-label">Data, Research, and Software</span><span class="compact-label">Research</span></a></li>
+      <li><a href="https://gojiberries.io">Blog</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <article class="program-page">
+    <nav class="program-breadcrumb" aria-label="Breadcrumb"><a href="/research/">Research</a> <span aria-hidden="true">›</span> <span aria-current="page">Names and Name-Based Inference</span></nav>
+    <h1>Names and Name-Based Inference</h1>
+<p>US campaign finance records name donors and report how much each gave. How much money came from donors of different racial and ethnic groups? A name offers a clue. To use it, we need records in which people reported their race or ethnicity, and a way to check how well the patterns in those records hold elsewhere.</p>
+<h2>What can the spelling tell us?</h2>
+<p>Rajashekar Chintalapati, Suriyan Laohaprapanon, and I <a href="../predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/">compared models that read the letters in a name</a>. On records held out for testing, the best model using a full name matched the recorded race or ethnicity in 85% of cases. The best surname-only model matched in 81%. We used the models to estimate shares of campaign donations. That accuracy figure alone cannot tell us how far off a group’s estimated share will be. It matters which groups the model confuses, and how much those donors gave.</p>
+<p>Two smaller projects explore other clues. <a href="../sound-names-classify-names-based-on-sequence-of-sounds/">Sound Names</a> compared spellings with a phonetic encoding. The model did worse when spellings that sounded alike were collapsed. <a href="../graphic-names-classify-names-using-google-image-search-and-clarifai/">Graphic Names</a> looked at the images a search engine returned for a first name. The people who turn up in search results can differ from the people who bear that name.</p>
+<h2>What can we estimate from Indian names?</h2>
+<p><a href="../naampy-infer-sociodemographic-characteristics-from-indian-names/">naampy</a> lets a researcher look up how often a first name appears with female and male labels in its source records. It also offers a model score for the pattern in a name. <a href="../pranaam-predict-religion-from-name/">pranaam</a> scores the extent to which a name resembles names associated with Muslims in its training data. Both packages report when they cannot return a score. For a population estimate, it matters how many records went unscored and whether the scored names resemble the population being studied.</p>
+<p><a href="../instate-predict-spoken-language-from-last-name/">instate</a> starts with the states in which a surname appears on electoral rolls. To estimate a language distribution, it weights each state’s census mother-tongue shares by the surname’s distribution across states. The rolls supply evidence about geography. The language estimate assumes that people with the surname speak the same mix of languages as others in their state.</p>
+    <section aria-labelledby="studies">
+      <h2 id="studies">Papers, analyses, and software</h2>
+      <h3>Research</h3>
+      <ul>
+        <li><a href="../predicting-race-and-ethnicity-from-sequence-of-characters-in-a-name/">Predicting Race and Ethnicity From the Sequence of Characters in a Name</a></li>
+        <li><a href="../sound-names-classify-names-based-on-sequence-of-sounds/">Sound Names: Classify Names Based on Sequence of Sounds</a></li>
+        <li><a href="../graphic-names-classify-names-using-google-image-search-and-clarifai/">Graphic Names: Classify Names Using Google Image Search and Clarifai</a></li>
+      </ul>
+      <h3>Population estimates</h3>
+      <ul>
+        <li><a href="../naampy-infer-sociodemographic-characteristics-from-indian-names/">naampy: Infer Sociodemographic Characteristics from Indian Names</a></li>
+        <li><a href="../pranaam-predict-religion-from-name/">pranaam: Predict Religion From Name</a></li>
+        <li><a href="../instate-predict-spoken-language-from-last-name/">instate: State and Language Composition from Indian Surnames</a></li>
+      </ul>
+      <h3>Parsing and generating names</h3>
+      <ul>
+        <li><a href="../naamkaran-a-generative-model-for-names/">naamkaran: a generative model for names</a></li>
+        <li><a href="../parsernaam-ml-assisted-name-parser/">parsernaam: ML-assisted name parser</a></li>
+      </ul>
+    </section>
+    </article>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page_title}} | Gaurav Sood</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .program-page { max-width: 70ch; font-size: var(--reading-size); }
+    .program-page h1 { margin: 0 0 .85rem; font-size: 1.65rem; font-weight: 500; }
+    .program-page h2 { margin: 1.65rem 0 .5rem; font-size: 1.2rem; font-weight: 600; }
+    .program-page h3 { margin: .8rem 0 .25rem; font: 500 1rem/1.5 var(--body-font); }
+    .program-page p { margin: .7rem 0; }
+    .program-page a { font: inherit; color: var(--site-accent); text-decoration: underline; text-underline-offset: .16em; }
+    .program-page ul { list-style: disc; margin: .2rem 0 1rem; padding-left: 1.25rem; }
+    .program-page li { padding-left: .1rem; }
+    .program-page li::before { content: none; }
+    figure { margin: 1.25rem 0; padding: 1.15rem clamp(.8rem, 3vw, 1.5rem); background: #f1f5f6; }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    caption { text-align: left; font-weight: 600; margin: 0 0 .7rem; }
+    th, td { padding: .35rem .25rem; border-bottom: 1px solid #cbd6db; text-align: right; }
+    th:first-child { text-align: left; }
+    tbody th, thead th { font-weight: 500; }
+    figcaption { margin-top: .8rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+<div class="container study-layout">
+{{study_nav}}
+  <main class="content">
+    <article class="program-page">
+    {{breadcrumb}}
+    <h1>{{heading}}</h1>
+{{overview}}
+    <section aria-labelledby="studies">
+      <h2 id="studies">{{list_title}}</h2>
+{{study_list}}
+    </section>
+    </article>
+  </main>
+</div>
+</body>
+</html>

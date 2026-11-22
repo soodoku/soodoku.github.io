@@ -8,6 +8,7 @@ from pathlib import Path, PurePosixPath
 from urllib.parse import urljoin, urlsplit
 
 from jsonschema import Draft202012Validator
+from markdown_it import MarkdownIt
 
 ROOT = Path(__file__).resolve().parents[2]
 SITE_URL = "https://gsood.com/"
@@ -581,8 +582,19 @@ def render_program(section, catalog, template, study_nav):
             title = html.escape(entry["title"])
             blocks.append(f'        <li><a href="../{entry["id"]}/">{title}</a></li>')
         blocks.append("      </ul>")
+    program = section["program_page"]
+    title = html.escape(section["title"])
+    overview = [f'<p>{html.escape(program["description"])}</p>']
+    if program.get("body"):
+        overview.append(MarkdownIt().render("\n\n".join(program["body"])).rstrip())
     return fill(
         template,
+        page_title=title,
+        heading=title,
+        canonical=absolute_url(section["id"] + "/"),
+        description=html.escape(program["description"], quote=True),
+        overview="\n".join(overview),
+        list_title=html.escape(program.get("list_title", "Studies")),
         study_nav=study_nav,
         breadcrumb=program_breadcrumb(section, current=True),
         study_list="\n".join(blocks),
@@ -760,6 +772,11 @@ def render_swipe(catalog, template):
 
 def render_sitemap(catalog, _template=None):
     urls = [SITE_URL, RESEARCH_URL]
+    urls.extend(
+        absolute_url(section["id"] + "/")
+        for section in catalog["sections"]
+        if section.get("program_page")
+    )
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     for _, _, entry_id in placements(catalog):
         page_url = entry_page_url(entries[entry_id])
@@ -865,7 +882,7 @@ def main():
             outputs[destination] = render_program(
                 section,
                 catalog,
-                (ROOT / folder / "program.template.html").read_text(),
+                (ROOT / "research/program.template.html").read_text(),
                 (ROOT / "research/study-nav.html").read_text().rstrip(),
             )
     for output, generated in outputs.items():

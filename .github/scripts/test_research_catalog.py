@@ -128,16 +128,18 @@ class CatalogTests(unittest.TestCase):
                 "swipe.html",
                 "entry.template.html",
                 "study-nav.html",
+                "program.template.html",
             ):
                 (root / "research" / name).write_text(
                     (ROOT / "research" / name).read_text()
                 )
-            program = Path("research/missing-women")
-            (root / program).mkdir()
-            for name in ("index.html", "program.template.html"):
-                (root / program / name).write_bytes(
-                    (ROOT / program / name).read_bytes()
-                )
+            for section in self.catalog["sections"]:
+                if section.get("program_page"):
+                    folder = Path("research") / section["id"]
+                    (root / folder).mkdir()
+                    (root / folder / "index.html").write_bytes(
+                        (ROOT / folder / "index.html").read_bytes()
+                    )
             for name in ("sitemap.xml", "llms.txt"):
                 (root / name).write_text((ROOT / name).read_text())
             for entry in self.catalog["entries"]:
@@ -205,30 +207,36 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("Two field experiments.", first_page)
 
     def test_program_study_titles_and_return_links(self):
-        section = next(
-            s for s in self.catalog["sections"] if s["id"] == "missing-women"
-        )
         catalog_titles = {e["id"]: e["title"] for e in self.catalog["entries"]}
-        expected = {
-            child["entry"]: catalog_titles[child["entry"]]
-            for child in section["children"]
-        }
-        content = (ROOT / "research/missing-women/index.html").read_text()
-        study_list = content.split('<h2 id="studies">Studies</h2>', 1)[1]
-        links = re.findall(r'<li><a href="\.\./([^/]+)/">([^<]+)</a>', study_list)
-        self.assertCountEqual(
-            [(slug, html.unescape(title)) for slug, title in links], expected.items()
-        )
-        trail = '<nav class="program-breadcrumb" aria-label="Breadcrumb">'
-        root_link = '<a href="/research/">Research</a>'
-        self.assertIn(trail + root_link, content)
-        self.assertIn('<span aria-current="page">Missing Women</span></nav>', content)
-        for slug in expected:
-            entry = (ROOT / "research" / slug / "index.html").read_text()
-            self.assertIn(trail + root_link, entry)
-            self.assertIn(
-                '<a href="/research/missing-women/">Missing Women</a></nav>', entry
-            )
+        for section in self.catalog["sections"]:
+            program = section.get("program_page")
+            if not program:
+                continue
+            with self.subTest(section=section["id"]):
+                slug = section["id"]
+                content = (ROOT / "research" / slug / "index.html").read_text()
+                title = html.escape(section["title"])
+                self.assertIn(
+                    f'<span aria-current="page">{title}</span></nav>', content
+                )
+                self.assertIn(f'<p>{html.escape(program["description"])}</p>', content)
+                study_list = content.split('<section aria-labelledby="studies">', 1)[1]
+                links = re.findall(
+                    r'<li><a href="\.\./([^/]+)/">([^<]+)</a>', study_list
+                )
+                expected = {
+                    child["entry"]: catalog_titles[child["entry"]]
+                    for child in section["children"]
+                }
+                self.assertCountEqual(
+                    [(key, html.unescape(label)) for key, label in links],
+                    expected.items(),
+                )
+                for key in expected:
+                    entry = (ROOT / "research" / key / "index.html").read_text()
+                    self.assertIn(
+                        f'<a href="/research/{slug}/">{title}</a></nav>', entry
+                    )
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):
         generated = render(self.catalog, LIST)

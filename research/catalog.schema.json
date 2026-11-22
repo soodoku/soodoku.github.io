@@ -346,7 +346,7 @@
         "site_author_position": {
           "type": "integer",
           "minimum": 1,
-          "description": "Gaurav Sood’s one-based position in the paper’s byline. Defaults to first."
+          "description": "Gaurav Sood\u2019s one-based position in the paper\u2019s byline. Defaults to first."
         }
       },
       "required": [
@@ -422,7 +422,28 @@
           }
         },
         "program_page": {
-          "type": "boolean"
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "body": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "list_title": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "description"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
