@@ -738,7 +738,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/calibre.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The public research repository contains manuscript TeX. No tracked or released manuscript PDF was verified."
         },
         {
           "id": "link-2",
@@ -919,7 +920,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/score_signs.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The repository documents how to compile the manuscript. No public manuscript PDF was verified there."
         },
         {
           "id": "replication",
@@ -1035,7 +1037,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/turk.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The site serves the 67-page author draft. The repository offers a 20-page journal article and a 24-page reanalysis."
         },
         {
           "id": "link-2",
@@ -1307,7 +1310,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/fewest-items.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The public research repository contains manuscript TeX. No tracked or released manuscript PDF was verified."
         },
         {
           "id": "link-2",
@@ -1529,7 +1533,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/causalml.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -1552,7 +1557,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/steer.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -1771,7 +1777,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/pwned.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The research repository offers a revised analysis and supplement. Confirm whether this entry should follow the revised edition of the published study."
         },
         {
           "id": "link-2",
@@ -1800,7 +1807,8 @@
           "role": "appendix",
           "url": "papers/pwned_si.pdf",
           "label": "Supporting Information",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The research repository offers a revised analysis and supplement. Confirm whether this entry should follow the revised edition of the published study."
         }
       ],
       "summary": [
@@ -1963,7 +1971,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/pwned_politicians.pdf"
+          "url": "papers/pwned_politicians.pdf",
+          "sync_note": "The repository manuscript is anonymized. The site copy identifies the authors."
         },
         {
           "id": "link-2",
@@ -2014,7 +2023,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/bad_domains.pdf"
+          "url": "papers/bad_domains.pdf",
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -2136,7 +2146,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/social_proof_stars.pdf"
+          "url": "papers/social_proof_stars.pdf",
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -2548,7 +2559,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/benchmark.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The latest public release inspected contains a five-page version. The site has a twelve-page manuscript."
         }
       ],
       "summary": [
@@ -2576,7 +2588,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/noise_review.pdf"
+          "url": "papers/noise_review.pdf",
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -3007,7 +3020,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/quant.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "Both repository PDFs are dated January 27, 2017. The site manuscript is dated February 24, 2017."
         },
         {
           "id": "code",
@@ -3490,7 +3504,12 @@
           "role": "related",
           "url": "papers/instate.pdf",
           "label": "Instate: Predict the State of Residence from Last Name.",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "appeler/instate",
+            "ref": "main",
+            "path": "ms/instate.pdf"
+          }
         }
       ],
       "summary": [
@@ -3537,7 +3556,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/inter_group_prejudice.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -3569,7 +3589,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/AffectNotIdeology.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -3740,7 +3761,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/partisanComposition.pdf"
+          "url": "papers/partisanComposition.pdf",
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -3807,7 +3829,8 @@
           "kind": "pdf",
           "role": "related",
           "url": "papers/guesswho.pdf",
-          "label": "The Partisans in our Heads"
+          "label": "The Partisans in our Heads",
+          "sync_note": "Historical August 2015 edition. The available reanalysis has a different title and does not establish a source for this edition."
         },
         {
           "id": "supplement",
@@ -3815,7 +3838,8 @@
           "role": "appendix",
           "url": "papers/partisanCompositionSupplement.pdf",
           "label": "Supplement to the 2015 Draft",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "Historical August 2015 edition. The available reanalysis has a different title and does not establish a source for this edition."
         }
       ],
       "summary": [
@@ -3920,7 +3944,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/typecast.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/partisan_typecast",
+            "ref": "main",
+            "path": "ms/typecast.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -3933,10 +3962,15 @@
         {
           "id": "link-3",
           "kind": "pdf",
-          "role": "manuscript",
+          "role": "appendix",
           "url": "papers/typecast_si.pdf",
           "label": "Appendix",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/partisan_typecast",
+            "ref": "main",
+            "path": "ms/typecast_si.pdf"
+          }
         },
         {
           "id": "link-4",
@@ -4012,7 +4046,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/inNout.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -4028,7 +4063,8 @@
           "role": "related",
           "url": "papers/moving_further.pdf",
           "label": "Still Close: Perceived Ideological Distance to Own and Main Opposing Party",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "A distinct related manuscript. No upstream PDF for this title was verified."
         },
         {
           "id": "link-4",
@@ -4199,7 +4235,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/partisan_vision.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/partisan_vision",
+            "ref": "main",
+            "path": "ms/partisan_vision.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4252,7 +4293,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/BroadbandPolarization.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -4276,7 +4318,8 @@
           "role": "manuscript",
           "url": "papers/ajps12237_LRyl.pdf",
           "label": "Published Version",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "Historical publisher edition of The Hostile Audience. No corresponding PDF in the research repository was verified."
         }
       ],
       "summary": [
@@ -4345,7 +4388,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/adult.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "themains/adult",
+            "ref": "main",
+            "path": "ms/adult.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4463,7 +4511,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/StereotypesAboutSD.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         },
         {
           "id": "link-2",
@@ -4479,7 +4528,8 @@
           "role": "appendix",
           "url": "papers/StereotypesAboutSDAppendix.pdf",
           "label": "Online Supplement",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -4761,7 +4811,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/DahlSays.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -4861,7 +4912,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/DeliberativeDistortions.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The site includes appendices in its 81-page author copy. The tracked journal article is 21 pages, and the current release is a separate extension."
         },
         {
           "id": "link-2",
@@ -4987,7 +5039,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/kirkuk.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -5003,7 +5056,8 @@
           "role": "manuscript",
           "url": "papers/kirkuk_si.pdf",
           "label": "Supporting Information",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         }
       ],
       "summary": [
@@ -5064,7 +5118,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/problem_solving.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -5093,7 +5148,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/uncertainty.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/uncertainty",
+            "ref": "main",
+            "path": "ms/uncertainty.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -5233,7 +5293,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/ACAKnowledgeFavorability.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         },
         {
           "id": "link-2",
@@ -5314,7 +5375,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/ACA_beliefs_attitudes.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -5362,7 +5424,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/daughters.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/daughters",
+            "ref": "main",
+            "path": "ms/ms.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -5378,7 +5445,12 @@
           "role": "manuscript",
           "url": "papers/daughters_si.pdf",
           "label": "Supporting Information",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "soodoku/daughters",
+            "ref": "main",
+            "path": "ms/si.pdf"
+          }
         },
         {
           "id": "link-4",
@@ -5554,7 +5626,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/missing_women.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The research repository publishes a release PDF. The checked release and site PDF have the same title-page date but different figures and captions."
         },
         {
           "id": "link-2",
@@ -6089,7 +6162,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/mediabias.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         }
       ],
       "summary": [
@@ -6120,7 +6194,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/hr.pdf"
+          "url": "papers/hr.pdf",
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -6184,7 +6259,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/selexp.pdf"
+          "url": "papers/selexp.pdf",
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -6519,7 +6595,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/PartisanBias.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "A replication and audit repository exists. No maintained source for this edition was verified."
         },
         {
           "id": "link-2",
@@ -6527,7 +6604,8 @@
           "role": "manuscript",
           "url": "papers/PartisanCheerleadingAppendix.pdf",
           "label": "Online Appendix",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "A replication and audit repository exists. No maintained source for this edition was verified."
         },
         {
           "id": "link-4",
@@ -6558,7 +6636,8 @@
           "role": "related",
           "url": "papers/partisanRetrospection.pdf",
           "label": "Partisan Gaps in Retrospection are Highly Variable",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "A distinct related manuscript. No upstream PDF for this title was verified."
         },
         {
           "id": "link-8",
@@ -6746,7 +6825,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/partisan_gap.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "finite-sample/know_pgap_review",
+            "ref": "main",
+            "path": "ms/partisan_gap_gs.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -7020,7 +7104,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/ACAMisinformed.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         },
         {
           "id": "link-2",
@@ -7028,7 +7113,8 @@
           "role": "manuscript",
           "url": "papers/ACAMisinformedSI.pdf",
           "label": "Supporting Information",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No public research repository with a verified PDF for this edition was identified."
         },
         {
           "id": "link-3",
@@ -7275,7 +7361,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/measurement_gap.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The public repository PDF is dated October 23, 2023. The site manuscript is dated September 25, 2025."
         },
         {
           "id": "link-2",
@@ -7390,7 +7477,8 @@
           "id": "primary",
           "kind": "pdf",
           "role": "manuscript",
-          "url": "papers/measuring_shares.pdf"
+          "url": "papers/measuring_shares.pdf",
+          "sync_note": "The site serves a 50-page manuscript. The research repository presents a retitled, corrected 17-page manuscript with a separate appendix."
         },
         {
           "id": "link-2",
@@ -7733,7 +7821,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/cricket_paper.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "outside-edge/fairly_random",
+            "ref": "master",
+            "path": "ms/cricket_paper.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -8115,7 +8208,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/land.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "No maintained PDF for this edition was verified in the linked research repository."
         },
         {
           "id": "link-2",
@@ -8774,7 +8868,8 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/randaba.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "sync_note": "The public research repository contains manuscript TeX. No tracked or released manuscript PDF was verified."
         }
       ],
       "summary": [

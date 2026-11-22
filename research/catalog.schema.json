@@ -155,6 +155,11 @@
         },
         "software_type": {
           "$ref": "#/$defs/softwareType"
+        },
+        "sync_note": {
+          "type": "string",
+          "pattern": "\\S",
+          "description": "Why this locally served research PDF is maintained manually."
         }
       },
       "required": [

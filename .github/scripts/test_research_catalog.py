@@ -418,7 +418,25 @@ class CatalogTests(unittest.TestCase):
             },
         )
         self.assertEqual(sources["downloads_are_cheap.pdf"]["repo"], "recite/softverse")
-        self.assertNotIn("partisan_vision.pdf", sources)
+        self.assertEqual(
+            sources["partisan_vision.pdf"]["path"], "ms/partisan_vision.pdf"
+        )
+
+    def test_copied_pdf_needs_a_source_or_manual_reason(self):
+        resource = next(
+            r
+            for e in self.catalog["entries"]
+            for r in e["resources"]
+            if r.get("url") == "papers/extreme_recall.pdf"
+        )
+        source = resource.pop("source")
+        with self.assertRaisesRegex(ValueError, "source or sync note"):
+            validate_catalog(self.catalog)
+        resource["sync_note"] = "No author PDF is available."
+        validate_catalog(self.catalog)
+        resource["source"] = source
+        with self.assertRaisesRegex(ValueError, "Conflicting source"):
+            validate_catalog(self.catalog)
 
     def test_schema_rejects_unsupported_markup(self):
         import json

@@ -52,6 +52,8 @@ def validate_catalog(catalog, root=ROOT):
     section_ids = set()
     displayed = set()
     destinations = set()
+    manual = set()
+    local_pdfs = set()
 
     def section(value):
         if value["id"] in section_ids:
@@ -119,6 +121,15 @@ def validate_catalog(catalog, root=ROOT):
             parsed = urlsplit(url)
             if parsed.scheme not in ("", "http", "https") or url.startswith("//"):
                 raise ValueError(f"Unsupported resource URL: {url}")
+            local_pdf = resource["kind"] == "pdf" and url.startswith("papers/")
+            if local_pdf:
+                local_pdfs.add(url)
+            if "sync_note" in resource:
+                if not local_pdf or not resource["sync_note"].strip():
+                    raise ValueError("A sync note must explain a local PDF")
+                if url in manual:
+                    raise ValueError(f"Duplicate sync note: {url}")
+                manual.add(url)
             if not resource.get("source"):
                 continue
             if resource["kind"] != "pdf" or not re.fullmatch(
@@ -141,6 +152,11 @@ def validate_catalog(catalog, root=ROOT):
                     raise ValueError(f"Invalid source {field}: {value}")
             if not resource["source"]["path"].endswith(".pdf"):
                 raise ValueError("Source must be a PDF")
+
+    if conflict := destinations & manual:
+        raise ValueError(f"Conflicting source and sync note: {sorted(conflict)}")
+    if uncovered := local_pdfs - destinations - manual:
+        raise ValueError(f"Local PDFs need a source or sync note: {sorted(uncovered)}")
 
 
 def paper_sources(catalog):

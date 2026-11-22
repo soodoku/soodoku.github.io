@@ -33,7 +33,14 @@ def download(url, api=False):
 
 
 def load_sources(directory):
-    return paper_sources(load_catalog(directory.parent.parent))
+    catalog = load_catalog(directory.parent.parent)
+    manual = {
+        resource["url"].removeprefix("papers/"): resource["sync_note"]
+        for entry in catalog["entries"]
+        for resource in entry["resources"]
+        if "sync_note" in resource
+    }
+    return paper_sources(catalog), manual
 
 
 def validate_pdf(path):
@@ -59,7 +66,7 @@ def first_page(path):
 
 
 def sync(directory, *, apply=False):
-    sources = load_sources(directory)
+    sources, manual = load_sources(directory)
     revisions = {}
     changes = []
     report = [
@@ -128,6 +135,11 @@ def sync(directory, *, apply=False):
                 destination.write_bytes(staged.read_bytes())
     if not changes:
         report.extend(["", "All mapped PDFs match their source files."])
+    report.extend(["", f"Coverage: {len(sources)} mapped, {len(manual)} manual."])
+    if manual:
+        report.extend(["", "<details><summary>Manually maintained PDFs</summary>", ""])
+        report.extend(f"- `{name}`: {manual[name]}" for name in sorted(manual))
+        report.extend(["", "</details>"])
     return "\n".join(report) + "\n"
 
 

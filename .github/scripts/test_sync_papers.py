@@ -47,7 +47,11 @@ class SyncTests(unittest.TestCase):
         self.calls = []
         self.payload = self.new
         self.addCleanup(patch.stopall)
-        patch.object(sync_papers, "load_sources", return_value=self.sources).start()
+        patch.object(
+            sync_papers,
+            "load_sources",
+            return_value=(self.sources, {"manual.pdf": "Publisher copy."}),
+        ).start()
         patch.object(sync_papers, "download", side_effect=self.download).start()
 
     def download(self, url, api=False):
@@ -57,6 +61,8 @@ class SyncTests(unittest.TestCase):
     def test_dry_run_leaves_pdf_unchanged_and_reports_diff(self):
         report = sync_papers.sync(self.directory)
         self.assertEqual(self.destination.read_bytes(), self.old)
+        self.assertIn("Coverage: 1 mapped, 1 manual", report)
+        self.assertIn("`manual.pdf`: Publisher copy.", report)
         self.assertIn("-Old title", report)
         self.assertIn("+New title", report)
         self.assertIn("Pages: 1 → 1", report)

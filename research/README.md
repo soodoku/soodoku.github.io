@@ -121,11 +121,17 @@ A resource is synchronized only when it has an explicit `source`:
 }
 ```
 
-Use an existing local `papers/*.pdf` destination and the tracked PDF path in a
-public source repository. A repository link by itself does not authorize syncing
-any files. The catalog maps explicitly verified source PDFs. Unmapped papers remain
-manual; this is not a freshness guarantee for the whole site. Missing Women
-currently has only a local manuscript PDF, so it has no sync source.
+Each distinct local `papers/*.pdf` in the catalog needs either a verified
+`source` or a `sync_note` explaining why the website maintains that edition
+manually. Record this once per file, even if several entries link to it. A
+replication repository can hold code, an older or anonymous draft, or a
+separate reanalysis. Check the upstream PDF's title, byline, edition, and
+appendices before mapping it. Direct links to publisher and GitHub PDFs
+do not have a local copy to synchronize.
+
+The workflow reports how many PDFs it compared and lists every manual file
+with its reason. The catalog check catches a newly added local PDF without
+either designation.
 
 Install Poppler (`brew install poppler` on macOS or `apt-get install poppler-utils`
 on Debian/Ubuntu) for PDF validation and text extraction. Preview updates with:
