@@ -5813,7 +5813,7 @@
     {
       "id": "delhi-street-food-videos",
       "kind": "project",
-      "title": "Women’s Share of Diners at Delhi Food Stalls and Restaurants: Evidence from YouTube Videos",
+      "title": "Who Eats in Delhi Street-Food Videos?",
       "primary_resource": "primary",
       "resources": [
         {
@@ -5930,14 +5930,14 @@
     {
       "id": "missing-women-on-the-streets",
       "kind": "project",
-      "title": "Missing Women on the Streets",
+      "title": "Women and Men on Delhi’s Streets: Evidence from Field Photographs, 2016–2017",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
           "kind": "repository",
           "role": "code",
-          "url": "https://github.com/geosensing/women-count",
+          "url": "https://github.com/geosensing/mw_survey_delhi",
           "new_tab": true
         }
       ],
@@ -5947,12 +5947,12 @@
         }
       ],
       "description": [
-        "An exploratory project on measuring women's presence in public space using observations of people on streets. It develops sampling and data-collection approaches and discusses the assumptions needed to compare observed street populations with a gender-balance baseline."
+        "Reviewers counted people in 1,958 street photographs taken at 196 Delhi locations between November 2016 and January 2017. Women accounted for 18.5% of sightings across the photographs. Field collection departed from the planned random sample, limiting what the photographs can establish about Delhi as a whole."
       ],
       "description_source": {
-        "url": "https://github.com/geosensing/women-count#readme",
+        "url": "https://github.com/geosensing/mw_survey_delhi#readme",
         "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       }
     },
