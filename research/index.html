@@ -507,6 +507,27 @@
         "position": 22,
         "item": {
           "@type": "ScholarlyArticle",
+          "@id": "https://gsood.com/research/total-error/",
+          "name": "One Label, Many Records: Shared Prediction Error in Regression",
+          "headline": "One Label, Many Records: Shared Prediction Error in Regression",
+          "url": "https://gsood.com/research/total-error/",
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Gaurav Sood",
+              "url": "https://gsood.com/"
+            }
+          ],
+          "description": "One predicted item label can enter many records and several constructed variables. This paper traces the consequences for coefficients and standard errors when aggregates are regression outcomes, covariates, or both. It connects generated-variable and shared-source inference, gives joint moment corrections and covariance estimates under item validation, and states the additional conditions required for normal coefficient intervals. Simulations distinguish coefficient bias, empirical variability, estimated standard errors, and coverage, including failures with influential or few items. Browsing-data illustrations show the roles of reuse, visit concentration, and observed classifier disagreement.",
+          "sameAs": "https://gsood.com/research/papers/total_error.pdf",
+          "codeRepository": "https://github.com/finite-sample/total_error"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 23,
+        "item": {
+          "@type": "ScholarlyArticle",
           "@id": "https://gsood.com/research/smooth-operator-optimal-filtering-of-event-study-estimates/",
           "name": "Smooth Operator: Optimal Filtering of Event Study Estimates",
           "headline": "Smooth Operator: Optimal Filtering of Event Study Estimates",
@@ -525,7 +546,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 23,
+        "position": 24,
         "item": {
           "@type": "ScholarlyArticle",
           "@id": "https://gsood.com/research/causal-debiasing-for-robust-machine-learning/",
@@ -545,7 +566,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 24,
+        "position": 25,
         "item": {
           "@type": "ScholarlyArticle",
           "@id": "https://gsood.com/research/randomized-assignment-based-anticlustering-for-experiments-with-many-arms/",
@@ -565,7 +586,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 25,
+        "position": 26,
         "item": {
           "@type": "ScholarlyArticle",
           "@id": "https://gsood.com/research/one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments/",
@@ -581,27 +602,6 @@
           ],
           "description": "Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.",
           "sameAs": "https://gsood.com/research/papers/steer.pdf"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 26,
-        "item": {
-          "@type": "ScholarlyArticle",
-          "@id": "https://gsood.com/research/total-error/",
-          "name": "One Label, Many Records: Shared Prediction Error in Regression",
-          "headline": "One Label, Many Records: Shared Prediction Error in Regression",
-          "url": "https://gsood.com/research/total-error/",
-          "author": [
-            {
-              "@type": "Person",
-              "name": "Gaurav Sood",
-              "url": "https://gsood.com/"
-            }
-          ],
-          "description": "One predicted item label can enter many records and several constructed variables. This paper traces the consequences for coefficients and standard errors when aggregates are regression outcomes, covariates, or both. It connects generated-variable and shared-source inference, gives joint moment corrections and covariance estimates under item validation, and states the additional conditions required for normal coefficient intervals. Simulations distinguish coefficient bias, empirical variability, estimated standard errors, and coverage, including failures with influential or few items. Browsing-data illustrations show the roles of reuse, visit concentration, and observed classifier disagreement.",
-          "sameAs": "https://gsood.com/research/papers/total_error.pdf",
-          "codeRepository": "https://github.com/finite-sample/total_error"
         }
       },
       {
@@ -4085,6 +4085,10 @@
 <summary><a href="papers/validation_swaps.pdf" target="_blank" class="entry-title">Which Prediction Errors Matter? Finite Covariate-Correction Paths for Downstream Regression</a><br><span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/swaps" target="_blank">Replication Materials</a></summary>
 <div class="abstract">Correcting errors in machine-learned covariates can change a treatment-effect estimate in ways that separate corrections do not predict. Each correction changes the regression&#x27;s adjustment for other variables, so its effect can depend on which errors have already been corrected. Existing methods use verified measurements to correct inference and guide validation. We study the joint effects of finite corrections on a fitted coefficient. Our diagnostic replaces sets of proxy covariates with verified values and compares the resulting refits with the sum of isolated correction effects. Exact least-squares identities locate the source of nonadditivity in changes to the regression&#x27;s cross-product matrix. Correction paths describe how the coefficient moves as more measurements are corrected, and their dispersion describes how much the choice of correction set matters. Established Shapley methods attribute the endpoint change. Simulations illustrate these distinctions. Applications to housing and text-coded incivility compare refits with three additive approximations: isolated corrections track small random correction sets closely but misstate the full correction. The resulting diagnostic measures both the consequences of individual errors and the additional changes produced by correcting them together.</div>
 </details>
+<details id="total-error">
+<summary><a href="papers/total_error.pdf" target="_blank" class="entry-title">One Label, Many Records: Shared Prediction Error in Regression</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/total_error" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="papers/fewest-items.pdf" target="_blank" class="entry-title">Unbiased Regression with Costly Item Labels</a></span></span></span></summary>
+<div class="abstract">One predicted item label can enter many records and several constructed variables. This paper traces the consequences for coefficients and standard errors when aggregates are regression outcomes, covariates, or both. It connects generated-variable and shared-source inference, gives joint moment corrections and covariance estimates under item validation, and states the additional conditions required for normal coefficient intervals. Simulations distinguish coefficient bias, empirical variability, estimated standard errors, and coverage, including failures with influential or few items. Browsing-data illustrations show the roles of reuse, visit concentration, and observed classifier disagreement.</div>
+</details>
 <details id="smooth-operator-optimal-filtering-of-event-study-estimates">
 <summary><a href="papers/smooth_operator.pdf" target="_blank" class="entry-title">Smooth Operator: Optimal Filtering of Event Study Estimates</a><br><a href="https://github.com/finite-sample/smooth-operator">Source code</a></summary>
 <div class="abstract">Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period&#x27;s estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size.</div>
@@ -4103,10 +4107,6 @@
 <details id="one-concept-at-a-time-subspace-constrained-causal-inference-for-high-dimensional-treatments">
 <summary><a href="papers/steer.pdf" target="_blank" class="entry-title">One Concept at a Time: Subspace-Constrained Causal Inference for High-Dimensional Treatments</a></summary>
 <div class="abstract">Social scientists increasingly wish to reason causally about high-dimensional treatments (texts, images, prompts) while isolating the effect of a single latent concept. We treat a pretrained model as a measurement device and use minimal edit pairs to estimate a concept-tangent subspace in activation space, with diagnostics that can explicitly reject the existence of a clean subspace for a given encoder and concept. When diagnostics are favorable, activation-steering maps constrained to the subspace generate approximate minimal edits, and concept coordinates serve as treatments in a double/debiased ML estimator. The resulting estimand is a local, representation-dependent linear effect—not a universal causal effect of the underlying human concept.</div>
-</details>
-<details id="total-error">
-<summary><a href="papers/total_error.pdf" target="_blank" class="entry-title">One Label, Many Records: Shared Prediction Error in Regression</a><br> <span class="entry-icon">🗃</span><a href="https://github.com/finite-sample/total_error" target="_blank">Replication Materials</a><span class="supporting-row"><span class="supporting-label">Related:</span> <span class="supporting-items" role="list"><span class="supporting-item" role="listitem"><a href="papers/fewest-items.pdf" target="_blank" class="entry-title">Unbiased Regression with Costly Item Labels</a></span></span></span></summary>
-<div class="abstract">One predicted item label can enter many records and several constructed variables. This paper traces the consequences for coefficients and standard errors when aggregates are regression outcomes, covariates, or both. It connects generated-variable and shared-source inference, gives joint moment corrections and covariance estimates under item validation, and states the additional conditions required for normal coefficient intervals. Simulations distinguish coefficient bias, empirical variability, estimated standard errors, and coverage, including failures with influential or few items. Browsing-data illustrations show the roles of reuse, visit concentration, and observed classifier disagreement.</div>
 </details>
 <details id="incline-estimate-trend-at-a-particular-point-in-time-in-a-noisy-time-series">
 <summary><span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/finite-sample/incline" target="_blank" class="entry-title">incline: Estimate Trend at a Particular Point in Time in a Noisy Time Series</a></summary>
