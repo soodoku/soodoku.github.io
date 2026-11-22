@@ -193,6 +193,9 @@
           "entry": "bad-domains-exposure-to-malicious-content-online"
         },
         {
+          "entry": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads"
+        },
+        {
           "entry": "know-your-ip"
         },
         {
@@ -252,9 +255,6 @@
             },
             {
               "entry": "user-auto-compute-citations-to-software-from-github"
-            },
-            {
-              "entry": "social-proof-is-in-the-pudding-the-non-impact-of-social-proof-on-software-downloads"
             }
           ]
         },
