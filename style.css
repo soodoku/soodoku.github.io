@@ -502,6 +502,7 @@ details details {
   display: none;
 }
 
+.program-breadcrumb,
 .entry-page .entry-breadcrumb {
   margin: 0 0 1.25rem;
   font-size: 0.95rem;

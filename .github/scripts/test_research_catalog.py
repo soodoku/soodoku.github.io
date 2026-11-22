@@ -219,10 +219,15 @@ class CatalogTests(unittest.TestCase):
         self.assertCountEqual(
             [(slug, html.unescape(title)) for slug, title in links], expected.items()
         )
+        trail = '<nav class="program-breadcrumb" aria-label="Breadcrumb">'
+        root_link = '<a href="/research/">Research</a>'
+        self.assertIn(trail + root_link, content)
+        self.assertIn('<span aria-current="page">Missing Women</span></nav>', content)
         for slug in expected:
             entry = (ROOT / "research" / slug / "index.html").read_text()
+            self.assertIn(trail + root_link, entry)
             self.assertIn(
-                '<p class="entry-breadcrumb"><a href="/research/missing-women/">', entry
+                '<a href="/research/missing-women/">Missing Women</a></nav>', entry
             )
 
     def test_anchor_ids_are_unique_when_entry_appears_twice(self):

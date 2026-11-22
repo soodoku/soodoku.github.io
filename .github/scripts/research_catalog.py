@@ -545,6 +545,20 @@ def catalog_heading(title):
     return '<span class="catalog-heading">' + " ".join(rendered) + "</span>"
 
 
+def program_breadcrumb(section, *, current=False):
+    title = html.escape(section["title"])
+    program = (
+        f'<span aria-current="page">{title}</span>'
+        if current
+        else f'<a href="/research/{section["id"]}/">{title}</a>'
+    )
+    return (
+        '<nav class="program-breadcrumb" aria-label="Breadcrumb">'
+        '<a href="/research/">Research</a> <span aria-hidden="true">›</span> '
+        f"{program}</nav>"
+    )
+
+
 def render_program(section, catalog, template, study_nav):
     entries = {entry["id"]: entry for entry in catalog["entries"]}
     groups = {}
@@ -567,7 +581,12 @@ def render_program(section, catalog, template, study_nav):
             title = html.escape(entry["title"])
             blocks.append(f'        <li><a href="../{entry["id"]}/">{title}</a></li>')
         blocks.append("      </ul>")
-    return fill(template, study_nav=study_nav, study_list="\n".join(blocks))
+    return fill(
+        template,
+        study_nav=study_nav,
+        breadcrumb=program_breadcrumb(section, current=True),
+        study_list="\n".join(blocks),
+    )
 
 
 def render_entry_pages(catalog, template):
@@ -580,6 +599,13 @@ def render_entry_pages(catalog, template):
         if subsection:
             breadcrumb += " › " + " › ".join(
                 map(catalog_heading, subsection.split(" › "))
+            )
+        if top.get("program_page"):
+            breadcrumb = program_breadcrumb(top)
+        else:
+            breadcrumb = (
+                f'<p class="entry-breadcrumb"><a href="/research/#{top["id"]}">'
+                f"&larr; {breadcrumb}</a></p>"
             )
         canonical = entry_page_url(entry)
         desc = plain_text(entry["description"], entry)
@@ -626,11 +652,6 @@ def render_entry_pages(catalog, template):
             meta_tags=render_scholar_meta(entry),
             schema=json.dumps(schema_obj, ensure_ascii=False, indent=2),
             study_nav=study_nav,
-            section_url=(
-                f'/research/{top["id"]}/'
-                if top.get("program_page")
-                else f'/research/#{top["id"]}'
-            ),
             breadcrumb=breadcrumb,
             entry_body=body,
         )
