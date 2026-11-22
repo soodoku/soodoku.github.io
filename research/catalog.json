@@ -4676,7 +4676,12 @@
           "kind": "pdf",
           "role": "manuscript",
           "url": "papers/extreme_recall.pdf",
-          "new_tab": true
+          "new_tab": true,
+          "source": {
+            "repo": "notnews/extreme_recall_2023",
+            "ref": "main",
+            "path": "ms/recall.pdf"
+          }
         },
         {
           "id": "link-2",
@@ -4728,7 +4733,7 @@
       "description_source": {
         "url": "papers/extreme_recall.pdf",
         "kind": "manuscript",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-21",
         "text_type": "summary"
       },
       "coauthors": [
