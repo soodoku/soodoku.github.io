@@ -5798,6 +5798,14 @@
           "url": "https://thewire.in/women/70-of-women-in-mumbai-navi-mumbai-missing-from-the-cities-streets-finds-study",
           "label": "The Wire",
           "new_tab": true
+        },
+        {
+          "id": "invisible-women-newsletter",
+          "kind": "webpage",
+          "role": "press",
+          "url": "https://newsletter.carolinecriadoperez.com/p/pervert-glasses-and-missing-women",
+          "label": "Invisible Women (Caroline Criado Perez)",
+          "new_tab": true
         }
       ],
       "summary": [
@@ -5826,6 +5834,11 @@
           [
             {
               "resource": "the-wire"
+            }
+          ],
+          [
+            {
+              "resource": "invisible-women-newsletter"
             }
           ],
           [
