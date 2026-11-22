@@ -556,6 +556,9 @@
           "entry": "unlanded-distribution-of-land-in-bihar"
         },
         {
+          "entry": "local-elections-in-india"
+        },
+        {
           "entry": "indian-electoral-rolls"
         }
       ]
@@ -2994,7 +2997,7 @@
           "kind": "webpage",
           "role": "related",
           "url": "https://recite.github.io/softverse/lookup/",
-          "label": "Look up a package",
+          "label": "Package lookup",
           "new_tab": true
         },
         {
@@ -7895,20 +7898,6 @@
           "url": "press/EloDutch.pdf",
           "label": "The Hindu",
           "new_tab": true
-        },
-        {
-          "id": "ratings",
-          "kind": "webpage",
-          "role": "demo",
-          "url": "https://outside-edge.github.io/side_order/#read-the-ratings",
-          "label": "View ratings"
-        },
-        {
-          "id": "data",
-          "kind": "webpage",
-          "role": "data",
-          "url": "https://outside-edge.github.io/side_order/docs/data.html",
-          "label": "Download data"
         }
       ],
       "summary": [
@@ -7919,19 +7908,7 @@
           "tag": "br"
         },
         {
-          "tag": "span",
-          "class": "resource-links",
-          "children": [
-            {
-              "resource": "ratings"
-            },
-            {
-              "resource": "data"
-            },
-            {
-              "resource": "repository"
-            }
-          ]
+          "resource": "repository"
         }
       ],
       "description": [
@@ -8594,6 +8571,35 @@
         "text_type": "summary"
       },
       "software_type": "theme"
+    },
+    {
+      "id": "local-elections-in-india",
+      "kind": "dataset",
+      "title": "Local Elections in India",
+      "primary_resource": "primary",
+      "resources": [
+        {
+          "id": "primary",
+          "kind": "dataset",
+          "role": "data",
+          "url": "https://in-rolls.github.io/local_elections/",
+          "new_tab": true
+        }
+      ],
+      "summary": [
+        {
+          "resource": "primary"
+        }
+      ],
+      "description": [
+        "Seat reservations, candidates, and results for elections to India’s local governments. Coverage varies by state, year, and office. Some sources cover only selected districts or reserved seats."
+      ],
+      "description_source": {
+        "url": "https://github.com/in-rolls/local_elections#readme",
+        "kind": "repository-readme",
+        "reviewed_on": "2026-11-22",
+        "text_type": "summary"
+      }
     },
     {
       "id": "indian-electoral-rolls",
@@ -9367,24 +9373,11 @@
           "role": "data",
           "url": "https://github.com/outside-edge/get_cricket_data",
           "new_tab": true
-        },
-        {
-          "id": "download",
-          "kind": "dataset",
-          "role": "data",
-          "url": "https://raw.githubusercontent.com/outside-edge/get_cricket_data/master/data/final_output.csv",
-          "label": "Download CSV"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "download"
         }
       ],
       "description": [
@@ -9409,24 +9402,11 @@
           "role": "data",
           "url": "https://github.com/outside-edge/cricket_grounds",
           "new_tab": true
-        },
-        {
-          "id": "download",
-          "kind": "dataset",
-          "role": "data",
-          "url": "https://raw.githubusercontent.com/outside-edge/cricket_grounds/main/grounds.csv",
-          "label": "Download CSV"
         }
       ],
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        {
-          "resource": "download"
         }
       ],
       "description": [
