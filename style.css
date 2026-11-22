@@ -508,6 +508,10 @@ details details {
   font-size: 0.95rem;
 }
 
+.program-page .program-breadcrumb {
+  margin-bottom: clamp(2rem, 4vw, 2.5rem);
+}
+
 #research.entry-page .entry-meta > a.entry-title,
 #research.entry-page .entry-meta > .entry-icon + a.entry-title {
   font-size: 1.0625rem;

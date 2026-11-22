@@ -167,6 +167,17 @@ def paper_sources(catalog):
     }
 
 
+def icon_html(icon):
+    emoji, name = icon
+    return (
+        f'<span class="entry-icon" role="img" aria-label="{name}" '
+        f'title="{name}">{emoji}</span>'
+    )
+
+
+DATASET_ICON = ("💾", "Dataset")
+
+
 def rich_text(nodes, entry, metadata=None, url_prefix=""):
     resources = {resource["id"]: resource for resource in entry["resources"]}
     parts = []
@@ -177,12 +188,10 @@ def rich_text(nodes, entry, metadata=None, url_prefix=""):
             resource = resources[node["resource"]]
             primary = resource["id"] == entry["primary_resource"]
             software_type = (entry if primary else resource).get("software_type")
-            if software_type:
-                emoji, name = SOFTWARE_ICONS[software_type]
-                parts.append(
-                    f'<span class="entry-icon" role="img" aria-label="{name}" '
-                    f'title="{name}">{emoji}</span>'
-                )
+            if primary and entry["kind"] == "dataset":
+                parts.append(icon_html(DATASET_ICON))
+            elif software_type:
+                parts.append(icon_html(SOFTWARE_ICONS[software_type]))
             if (
                 primary
                 and metadata is not None
@@ -580,7 +589,10 @@ def render_program(section, catalog, template, study_nav):
         blocks.append("      <ul>")
         for entry in studies.values():
             title = html.escape(entry["title"])
-            blocks.append(f'        <li><a href="../{entry["id"]}/">{title}</a></li>')
+            icon = icon_html(DATASET_ICON) + " " if entry["kind"] == "dataset" else ""
+            blocks.append(
+                f'        <li>{icon}<a href="../{entry["id"]}/">{title}</a></li>'
+            )
         blocks.append("      </ul>")
     program = section["program_page"]
     title = html.escape(section["title"])

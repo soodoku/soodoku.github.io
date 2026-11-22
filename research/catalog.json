@@ -6786,13 +6786,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "💾"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -6848,13 +6841,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "💾"
-          ]
-        },
         {
           "resource": "primary"
         }
@@ -8753,13 +8739,6 @@
       ],
       "summary": [
         {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📊"
-          ]
-        },
-        {
           "resource": "primary"
         }
       ],
@@ -8805,13 +8784,6 @@
         }
       ],
       "summary": [
-        {
-          "tag": "span",
-          "class": "entry-icon",
-          "children": [
-            "📊"
-          ]
-        },
         {
           "resource": "primary"
         }

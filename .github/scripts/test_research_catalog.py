@@ -221,9 +221,7 @@ class CatalogTests(unittest.TestCase):
                 )
                 self.assertIn(f'<p>{html.escape(program["description"])}</p>', content)
                 study_list = content.split('<section aria-labelledby="studies">', 1)[1]
-                links = re.findall(
-                    r'<li><a href="\.\./([^/]+)/">([^<]+)</a>', study_list
-                )
+                links = re.findall(r'<a href="\.\./([^/]+)/">([^<]+)</a>', study_list)
                 expected = {
                     child["entry"]: catalog_titles[child["entry"]]
                     for child in section["children"]
@@ -378,6 +376,15 @@ class CatalogTests(unittest.TestCase):
             self.assertRegex(line, r'🌱 </span><a [^>]*class="entry-title"')
             self.assertIn('hidden data-first-published="2024-02-29"', line)
         self.assertNotIn("🌱", research_catalog.entry_summary(entry, {}))
+
+    def test_dataset_titles_have_one_catalog_icon(self):
+        for entry in self.catalog["entries"]:
+            if entry["kind"] == "dataset":
+                line = research_catalog.entry_summary(entry, {})
+                self.assertEqual(line.count('aria-label="Dataset"'), 1)
+                self.assertEqual(line.count("💾"), 1)
+                self.assertNotIn("📊", line)
+                self.assertLess(line.index("💾"), line.index('class="entry-title"'))
 
     def test_rejects_invalid_coauthor_names(self):
         for name in ("Gaurav Sood", " ", " Alice", "Alice "):
