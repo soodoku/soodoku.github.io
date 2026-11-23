@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Rank-Preserving Calibration for Multiclass Classification | Gaurav Sood</title>
+	<title>When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities | Gaurav Sood</title>
 
 	<meta charset="utf-8" />
-	<meta name="description" content="Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability." />
+	<meta name="description" content="For binary outcomes, intercept correction preserves every unit&#x27;s rank while matching a known total. For three or more classes, multinomial intercept correction (Iterative Proportional Fitting) depends on an instance-specific denominator and can reverse within-class rankings. We formalize when reversals occur, prove that exact Bayes optimality under pure label shift, exact marginal matching, and strict within-class rank preservation are mutually incompatible, and develop exact weak-order KL calibration via monotone block-boundary constraints. Across 3,024 real-data runs (6 datasets including US Census CPS, 4 model families, 2 shift regimes), soft KL calibration and anchor-reference-decoupled temperature-plus-KL calibration achieve 98-99% solver convergence (versus 15% for Euclidean projection), recover most rank inversions at negligible Brier cost under pure label shift, and simultaneously improve Brier score and rank preservation under covariate shift." />
 	<link rel="canonical" href="https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/" />
 	<meta name="distribution" content="global" />
 	<meta name="copyright" content="All material on this website is copyrighted to Gaurav Sood" />
@@ -21,7 +21,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="citation_title" content="Rank-Preserving Calibration for Multiclass Classification" />
+	<meta name="citation_title" content="When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities" />
 	<meta name="citation_author" content="Gaurav Sood" />
 	<meta name="citation_pdf_url" content="https://gsood.com/research/papers/multiclass-rank-calibration.pdf" />
 <script type="application/ld+json">
@@ -29,8 +29,8 @@
   "@context": "https://schema.org",
   "@type": "ScholarlyArticle",
   "@id": "https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/",
-  "name": "Rank-Preserving Calibration for Multiclass Classification",
-  "headline": "Rank-Preserving Calibration for Multiclass Classification",
+  "name": "When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities",
+  "headline": "When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities",
   "url": "https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/",
   "author": [
     {
@@ -39,7 +39,7 @@
       "url": "https://gsood.com/"
     }
   ],
-  "description": "Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.",
+  "description": "For binary outcomes, intercept correction preserves every unit's rank while matching a known total. For three or more classes, multinomial intercept correction (Iterative Proportional Fitting) depends on an instance-specific denominator and can reverse within-class rankings. We formalize when reversals occur, prove that exact Bayes optimality under pure label shift, exact marginal matching, and strict within-class rank preservation are mutually incompatible, and develop exact weak-order KL calibration via monotone block-boundary constraints. Across 3,024 real-data runs (6 datasets including US Census CPS, 4 model families, 2 shift regimes), soft KL calibration and anchor-reference-decoupled temperature-plus-KL calibration achieve 98-99% solver convergence (versus 15% for Euclidean projection), recover most rank inversions at negligible Brier cost under pure label shift, and simultaneously improve Brier score and rank preservation under covariate shift.",
   "sameAs": "https://gsood.com/research/papers/multiclass-rank-calibration.pdf",
   "codeRepository": "https://github.com/finite-sample/rank-preserving-calibration"
 }
@@ -64,14 +64,14 @@
   <main class="content">
     <article id="research" class="entry-page">
       <p class="entry-breadcrumb"><a href="/research/#econometrics-statistics-and-data-collection">&larr; <span class="catalog-heading">Statistics <span class="minor-word">and</span> Research Methods</span> › <span class="catalog-heading">Calibration <span class="minor-word">and</span> Weighting</span></a></p>
-      <div class="entry-meta"><a href="/research/papers/multiclass-rank-calibration.pdf" target="_blank" class="entry-title">Rank-Preserving Calibration for Multiclass Classification</a><br> <span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/finite-sample/rank-preserving-calibration" target="_blank">Rank Preserving Calibration of Multiclass Probabilities</a></div>
-      <div class="abstract">Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability.</div>
+      <div class="entry-meta"><a href="/research/papers/multiclass-rank-calibration.pdf" target="_blank" class="entry-title">When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities</a><br> <span class="entry-icon" role="img" aria-label="Package" title="Package">📦</span><a href="https://github.com/finite-sample/rank-preserving-calibration" target="_blank">Rank Preserving Calibration of Multiclass Probabilities</a></div>
+      <div class="abstract">For binary outcomes, intercept correction preserves every unit&#x27;s rank while matching a known total. For three or more classes, multinomial intercept correction (Iterative Proportional Fitting) depends on an instance-specific denominator and can reverse within-class rankings. We formalize when reversals occur, prove that exact Bayes optimality under pure label shift, exact marginal matching, and strict within-class rank preservation are mutually incompatible, and develop exact weak-order KL calibration via monotone block-boundary constraints. Across 3,024 real-data runs (6 datasets including US Census CPS, 4 model families, 2 shift regimes), soft KL calibration and anchor-reference-decoupled temperature-plus-KL calibration achieve 98-99% solver convergence (versus 15% for Euclidean projection), recover most rank inversions at negligible Brier cost under pure label shift, and simultaneously improve Brier score and rank preservation under covariate shift.</div>
       <section class="citation-section">
-        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;Rank-Preserving Calibration for Multiclass Classification.&quot; https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/</p>
+        <p class="citation-text"><span class="supporting-label">Cite:</span> Gaurav Sood. &quot;When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities.&quot; https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/</p>
         <div class="bibtex-header"><span class="supporting-label">BibTeX:</span> <button type="button" class="copy-btn">Copy</button></div>
         <pre class="bibtex-block"><code>@misc{soodrank,
   author = {Gaurav Sood},
-  title = {{Rank-Preserving Calibration for Multiclass Classification}},
+  title = {{When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities}},
   note = {Working paper},
   url = {https://gsood.com/research/rank-preserving-calibration-for-multiclass-classification/}
 }</code></pre>

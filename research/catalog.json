@@ -821,7 +821,7 @@
     {
       "id": "rank-preserving-calibration-for-multiclass-classification",
       "kind": "paper",
-      "title": "Rank-Preserving Calibration for Multiclass Classification",
+      "title": "When Marginal Calibration Scrambles Ranks: Weak-Order KL Calibration for Multiclass Probabilities",
       "primary_resource": "primary",
       "resources": [
         {
@@ -859,7 +859,7 @@
         }
       ],
       "description": [
-        "Multiclass calibration methods can reorder predicted class probabilities, so the class a calibrated model ranks first may differ from the class the original model ranked first. This is problematic when downstream decisions depend on the ranking, not just the probabilities. We develop calibration methods that guarantee the within-example class ranking is preserved while still improving probability reliability."
+        "For binary outcomes, intercept correction preserves every unit's rank while matching a known total. For three or more classes, multinomial intercept correction (Iterative Proportional Fitting) depends on an instance-specific denominator and can reverse within-class rankings. We formalize when reversals occur, prove that exact Bayes optimality under pure label shift, exact marginal matching, and strict within-class rank preservation are mutually incompatible, and develop exact weak-order KL calibration via monotone block-boundary constraints. Across 3,024 real-data runs (6 datasets including US Census CPS, 4 model families, 2 shift regimes), soft KL calibration and anchor-reference-decoupled temperature-plus-KL calibration achieve 98-99% solver convergence (versus 15% for Euclidean projection), recover most rank inversions at negligible Brier cost under pure label shift, and simultaneously improve Brier score and rank preservation under covariate shift."
       ]
     },
     {
