@@ -104,9 +104,6 @@
               "entry": "smooth-operator-optimal-filtering-of-event-study-estimates"
             },
             {
-              "entry": "causal-debiasing-for-robust-machine-learning"
-            },
-            {
               "entry": "randomized-assignment-based-anticlustering-for-experiments-with-many-arms"
             },
             {
@@ -780,8 +777,7 @@
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
-          "new_tab": true,
-          "software_type": "package"
+          "new_tab": true
         }
       ],
       "summary": [
@@ -1556,30 +1552,6 @@
       ],
       "description": [
         "Event study designs estimate period-specific treatment effects with known standard errors from two-way fixed effects regressions. We treat the coefficient sequence as observations from a local linear trend state-space model and apply the Rauch–Tung–Striebel (Kalman) smoother, using the known heteroskedastic regression standard errors as observation noise. The smoother adapts to local precision—trusting the trend model when a period's estimate is noisy and trusting the data when it is tight—reducing level MSE by 80% and derivative MSE by 98% versus raw estimates, while also providing a derivative-based parallel trends test with correct size."
-      ]
-    },
-    {
-      "id": "causal-debiasing-for-robust-machine-learning",
-      "kind": "paper",
-      "title": "Causal Debiasing for Robust Machine Learning",
-      "primary_resource": "primary",
-      "resources": [
-        {
-          "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/causalml.pdf",
-          "new_tab": true,
-          "sync_note": "No public research repository with a verified PDF for this edition was identified."
-        }
-      ],
-      "summary": [
-        {
-          "resource": "primary"
-        }
-      ],
-      "description": [
-        "Spurious associations in training data arise because models learn correlations rather than causal relations. We propose a composite loss that incorporates causal and behavioral priors: an invariance penalty for label-preserving perturbations (e.g., swapping gendered pronouns should not change predictions), a directional penalty for perturbations that should change the label in a known direction, and a falsification penalty inspired by epidemiological negative controls that discourages reliance on features with no causal relationship to the outcome. The framework unifies ideas from CheckList-style behavioral testing, causal inference, and adversarial robustness into a single training objective."
       ]
     },
     {
