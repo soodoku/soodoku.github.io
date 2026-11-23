@@ -23,7 +23,7 @@
           "title": "Calibration and Weighting",
           "children": [
             {
-              "entry": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression"
+              "entry": "calibre-probability-calibration"
             },
             {
               "entry": "fairlex-leximin-calibration"
@@ -770,25 +770,16 @@
       "software_type": "package"
     },
     {
-      "id": "calibration-where-it-counts-cost-and-data-informed-isotonic-regression",
-      "kind": "paper",
-      "title": "When Pooling Costs a Decision: Probability Calibration with Calibre",
+      "id": "calibre-probability-calibration",
+      "kind": "software",
+      "title": "calibre: Probability Calibration and Evaluation",
       "primary_resource": "primary",
       "resources": [
         {
           "id": "primary",
-          "kind": "pdf",
-          "role": "manuscript",
-          "url": "papers/calibre.pdf",
-          "new_tab": true,
-          "sync_note": "The public research repository contains manuscript TeX. No tracked or released manuscript PDF was verified."
-        },
-        {
-          "id": "link-2",
           "kind": "repository",
           "role": "code",
           "url": "https://github.com/finite-sample/calibre",
-          "label": "calibre: Probability Calibration and Evaluation",
           "new_tab": true,
           "software_type": "package"
         }
@@ -796,24 +787,12 @@
       "summary": [
         {
           "resource": "primary"
-        },
-        {
-          "tag": "br"
-        },
-        " ",
-        {
-          "resource": "link-2"
         }
       ],
       "description": [
-        "Isotonic calibration fits flat regions: runs of scores that receive one probability. A flat region costs a decision only when the cases it pools fall on both sides of the decision's threshold, and a ranking only when its ties are broken at random. Using an exact known-risk simulation and a pre-registered benchmark, the paper finds flat regions cheap for cost-threshold decisions: choosing a calibrator by validation payoff did no better than choosing it by Brier score. For allocation, random tie-breaking costs up to 1.7 successes per 1,000 cases, which breaking ties by the original score recovers exactly."
+        "calibre is a Python package for probability calibration, proper-score diagnostics, and decision evaluation. It implements isotonic, centered isotonic, monotone I-spline, nearly isotonic, and relaxed-PAVA calibrators alongside Brier decompositions (MCB, DSC, UNC), smooth and debiased ECE, and threshold and capacity decision checks."
       ],
-      "description_source": {
-        "url": "papers/calibre.pdf",
-        "kind": "manuscript",
-        "reviewed_on": "2026-10-12",
-        "text_type": "summary"
-      }
+      "software_type": "package"
     },
     {
       "id": "fairlex-leximin-calibration",
