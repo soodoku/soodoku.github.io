@@ -378,6 +378,12 @@
           "entry": "misinformed-about-the-affordable-care-act-leveraging-certainty-to-assess-the-prevalence-of-misinformation"
         },
         {
+          "entry": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability"
+        },
+        {
+          "entry": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play"
+        },
+        {
           "entry": "guessing-and-forgetting-a-latent-class-model-for-measuring-learning"
         },
         {
@@ -399,6 +405,24 @@
       "title": "Decision Making",
       "children": [
         {
+          "id": "political-perception",
+          "title": "Political Perception",
+          "children": [
+            {
+              "entry": "extreme-recall-which-politicians-come-to-mind"
+            },
+            {
+              "entry": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences"
+            },
+            {
+              "entry": "typecast-a-routine-mental-shortcut-causes-party-stereotyping"
+            },
+            {
+              "entry": "is-cynicism-taken-as-evidence-of-political-sophistication"
+            }
+          ]
+        },
+        {
           "id": "group-affect",
           "title": "Partisanship and Intergroup Attitudes",
           "children": [
@@ -407,12 +431,6 @@
             },
             {
               "entry": "affect-not-ideology-a-social-identity-perspective-on-polarization"
-            },
-            {
-              "entry": "the-parties-in-our-heads-misperceptions-about-party-composition-and-their-consequences"
-            },
-            {
-              "entry": "typecast-a-routine-mental-shortcut-causes-party-stereotyping"
             },
             {
               "entry": "all-in-the-eye-of-the-beholder-partisan-affect-and-ideological-accountability"
@@ -474,6 +492,18 @@
           ]
         },
         {
+          "id": "choice-under-risk",
+          "title": "Choice Under Risk",
+          "children": [
+            {
+              "entry": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect"
+            },
+            {
+              "entry": "description-invariance-in-risky-choice-framing"
+            }
+          ]
+        },
+        {
           "id": "other-2",
           "title": "Other",
           "children": [
@@ -481,28 +511,10 @@
               "entry": "problem-solving"
             },
             {
-              "entry": "is-an-uncertain-prospect-less-preferred-than-its-worst-possible-outcome-new-evidence-on-the-uncertainty-effect"
-            },
-            {
-              "entry": "description-invariance-in-risky-choice-framing"
-            },
-            {
-              "entry": "is-cynicism-taken-as-evidence-of-political-sophistication"
-            },
-            {
               "entry": "mixed-signals-movie-quality-assessments-across-platforms"
             },
             {
-              "entry": "americans-attitudes-toward-the-affordable-care-act-would-better-public-understanding-increase-or-decrease-favorability"
-            },
-            {
-              "entry": "americans-attitudes-toward-the-affordable-care-act-what-role-do-beliefs-play"
-            },
-            {
               "entry": "revisiting-a-natural-experiment-do-legislators-with-daughters-vote-more-liberally-on-women-s-issues"
-            },
-            {
-              "entry": "extreme-recall-which-politicians-come-to-mind"
             }
           ]
         }
@@ -5500,12 +5512,12 @@
         }
       ],
       "description": [
-        "We compare movie ratings across platforms using data on 16,319 American films released between 1950 and 2020. Among platforms with sufficient coverage, average ratings are only moderately correlated, revealing substantial differences in assessments of the same films."
+        "Audiences put I Am Sam near the 90th percentile among 3,148 films. Critics put it near the 15th. Does averaging help predict another audience’s verdict? For 1,276 films, an equal blend of four published scores missed the later MovieLens average by 0.159 stars. IMDb alone missed by 0.117."
       ],
       "description_source": {
         "url": "https://github.com/soodoku/mixed_signals#readme",
         "kind": "repository-readme",
-        "reviewed_on": "2026-09-19",
+        "reviewed_on": "2026-11-24",
         "text_type": "summary"
       }
     },
